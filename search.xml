@@ -175,53 +175,6 @@
       </tags>
   </entry>
   <entry>
-    <title>LabelImg_使用</title>
-    <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
-<p>它是用 Python 编写的，并使用 Qt 作为其图形界面。</p>
-<p>注释以 PASCAL VOC 格式保存为 XML 文件，ImageNet使用的格式。此外，它还支持 YOLO 和 CreateML 格式。</p>
-<p><img src="https://www.codekp.cn/download/img/labelImg/labelimg.jpg" alt=""></p>
-<p>参考地址 ： <a href="https://github.com/tzutalin/labelImg" target="_blank" rel="noopener">https://github.com/tzutalin/labelImg</a></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">conda install pyqt&#x3D;5</span><br><span class="line">conda install -c anaconda lxml</span><br><span class="line">pyrcc5 -o libs&#x2F;resources.py resources.qrc</span><br><span class="line">python labelImg.py</span><br><span class="line">python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]</span><br></pre></td></tr></table></figure>
-<p>有基础的同学可以直接<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install labelimg</span><br></pre></td></tr></table></figure></p>
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
-<li><code>JPEGImage 目录</code>：存储的是图片的名字</li>
-<li><code>Annotation 目录</code>：用于存放标注图片的标签文件</li>
-<li><code>class.txt 文件</code>：定义自己要标注的所有类别</li>
-</ul>
-<p>例如：我的<code>class.txt</code>中定义的类别如下：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">one</span><br><span class="line">two</span><br><span class="line">ct5</span><br><span class="line">other</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li><code>Open Dir</code>：待标注图片数据的路径文件夹，即选择JPEGImage文件夹</li>
-<li><code>Change Save Dir</code>：保存类别标签的路径文件夹，即选择Annotation文件夹</li>
-<li><code>PascalVOC</code>：标注的标签保存成VOC格式，在鼠标点一下就变成YOLO，即此时就会把标注的标签变成YOLO格式</li>
-</ul>
-<h3 id="view-快捷指令"><a href="#view-快捷指令" class="headerlink" title="view 快捷指令"></a>view 快捷指令</h3><ul>
-<li><code>Auto Save mode</code>：当你切换到下一张图片时，就会自动把上一张标注的图片标签自动保存下来，这样就不用每标注一样图片都按Ctrl+S保存一下了</li>
-<li><code>Display Labels</code>：标注好图片之后，会把框和标签都显示出来</li>
-<li><code>Advanced Mode</code>：这样标注的十字架就会一直悬浮在窗口，不用每次标完一个目标，再按一次W快捷键，调出标注的十字架。</li>
-</ul>
-<h3 id="标注常用的快捷键"><a href="#标注常用的快捷键" class="headerlink" title="标注常用的快捷键"></a>标注常用的快捷键</h3><ul>
-<li><code>W</code>：调出标注的十字架，开始标注</li>
-<li><code>A</code>：切换到上一张图片</li>
-<li><code>D</code>：切换到下一张图片</li>
-<li><code>Ctrl+S</code>：保存标注好的标签</li>
-<li><code>del</code>：删除标注的矩形框</li>
-<li><code>Ctrl+鼠标滚轮</code>：按住Ctrl，然后滚动鼠标滚轮，可以调整标注图片的显示大小</li>
-<li><code>Ctrl+u</code>：选择要标注图片的文件夹</li>
-<li><code>Ctrl+r</code>：选择标注好的label标签存放的文件夹</li>
-<li><code>↑→↓←</code>：移动标注的矩形框的位置</li>
-</ul>
-<p>标注的时候，会把classe.txt预定义的标加载出来，然后我们只要选择对应的标签即可<br>右上角会显示已经标注目标的标签</p>
-<h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><p>以yolo格式进行保存使用。</p>
-]]></content>
-      <categories>
-        <category>目标检测</category>
-      </categories>
-      <tags>
-        <tag>目标检测</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>English_learning</title>
     <url>/2020/07/31/English-learning/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
@@ -335,6 +288,53 @@ If you are talking to a group of managers, you may refer to the disorganized met
       </tags>
   </entry>
   <entry>
+    <title>LabelImg_使用</title>
+    <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
+<p>它是用 Python 编写的，并使用 Qt 作为其图形界面。</p>
+<p>注释以 PASCAL VOC 格式保存为 XML 文件，ImageNet使用的格式。此外，它还支持 YOLO 和 CreateML 格式。</p>
+<p><img src="https://www.codekp.cn/download/img/labelImg/labelimg.jpg" alt=""></p>
+<p>参考地址 ： <a href="https://github.com/tzutalin/labelImg" target="_blank" rel="noopener">https://github.com/tzutalin/labelImg</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">conda install pyqt&#x3D;5</span><br><span class="line">conda install -c anaconda lxml</span><br><span class="line">pyrcc5 -o libs&#x2F;resources.py resources.qrc</span><br><span class="line">python labelImg.py</span><br><span class="line">python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]</span><br></pre></td></tr></table></figure>
+<p>有基础的同学可以直接<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install labelimg</span><br></pre></td></tr></table></figure></p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
+<li><code>JPEGImage 目录</code>：存储的是图片的名字</li>
+<li><code>Annotation 目录</code>：用于存放标注图片的标签文件</li>
+<li><code>class.txt 文件</code>：定义自己要标注的所有类别</li>
+</ul>
+<p>例如：我的<code>class.txt</code>中定义的类别如下：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">one</span><br><span class="line">two</span><br><span class="line">ct5</span><br><span class="line">other</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><code>Open Dir</code>：待标注图片数据的路径文件夹，即选择JPEGImage文件夹</li>
+<li><code>Change Save Dir</code>：保存类别标签的路径文件夹，即选择Annotation文件夹</li>
+<li><code>PascalVOC</code>：标注的标签保存成VOC格式，在鼠标点一下就变成YOLO，即此时就会把标注的标签变成YOLO格式</li>
+</ul>
+<h3 id="view-快捷指令"><a href="#view-快捷指令" class="headerlink" title="view 快捷指令"></a>view 快捷指令</h3><ul>
+<li><code>Auto Save mode</code>：当你切换到下一张图片时，就会自动把上一张标注的图片标签自动保存下来，这样就不用每标注一样图片都按Ctrl+S保存一下了</li>
+<li><code>Display Labels</code>：标注好图片之后，会把框和标签都显示出来</li>
+<li><code>Advanced Mode</code>：这样标注的十字架就会一直悬浮在窗口，不用每次标完一个目标，再按一次W快捷键，调出标注的十字架。</li>
+</ul>
+<h3 id="标注常用的快捷键"><a href="#标注常用的快捷键" class="headerlink" title="标注常用的快捷键"></a>标注常用的快捷键</h3><ul>
+<li><code>W</code>：调出标注的十字架，开始标注</li>
+<li><code>A</code>：切换到上一张图片</li>
+<li><code>D</code>：切换到下一张图片</li>
+<li><code>Ctrl+S</code>：保存标注好的标签</li>
+<li><code>del</code>：删除标注的矩形框</li>
+<li><code>Ctrl+鼠标滚轮</code>：按住Ctrl，然后滚动鼠标滚轮，可以调整标注图片的显示大小</li>
+<li><code>Ctrl+u</code>：选择要标注图片的文件夹</li>
+<li><code>Ctrl+r</code>：选择标注好的label标签存放的文件夹</li>
+<li><code>↑→↓←</code>：移动标注的矩形框的位置</li>
+</ul>
+<p>标注的时候，会把classe.txt预定义的标加载出来，然后我们只要选择对应的标签即可<br>右上角会显示已经标注目标的标签</p>
+<h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><p>以yolo格式进行保存使用。</p>
+]]></content>
+      <categories>
+        <category>目标检测</category>
+      </categories>
+      <tags>
+        <tag>目标检测</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux进程断连重新进入该进程方法</title>
     <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
@@ -401,6 +401,34 @@ If you are talking to a group of managers, you may refer to the disorganized met
       </categories>
       <tags>
         <tag>研究生课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>OCR_实时翻译</title>
+    <url>/2021/10/27/OCR-%E5%AE%9E%E6%97%B6%E7%BF%BB%E8%AF%91/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="OCR-实时翻译"><a href="#OCR-实时翻译" class="headerlink" title="OCR_实时翻译"></a>OCR_实时翻译</h1><ul>
+<li>采用了easyocr</li>
+<li>爬虫，调取百度翻译接口</li>
+</ul>
+<h2 id="调用屏幕接口"><a href="#调用屏幕接口" class="headerlink" title="调用屏幕接口"></a>调用屏幕接口</h2><p>调用屏幕的方法很简单：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import pyautogui</span><br><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 1920, 100])  # x,y,w,h</span><br><span class="line"># img.save(&#39;screenshot.png&#39;)</span><br><span class="line">img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)</span><br><span class="line">cv2.imshow(&quot;1&quot;,img)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure><br>但感觉效率很低，最后改成了虚拟摄像头+cap=cv2.VideoCapture(1)的方式捕获。</p>
+<h2 id="调用百度翻译接口"><a href="#调用百度翻译接口" class="headerlink" title="调用百度翻译接口"></a>调用百度翻译接口</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import urllib.request</span><br><span class="line">import urllib.parse</span><br><span class="line">import json</span><br><span class="line">import pyautogui</span><br><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;</span><br><span class="line">headers &#x3D; &#123;</span><br><span class="line">    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;</span><br><span class="line">&#125;</span><br><span class="line">data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)</span><br><span class="line">request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)</span><br><span class="line">response &#x3D; urllib.request.urlopen(request)</span><br><span class="line">content &#x3D; response.read().decode(&#39;utf-8&#39;)</span><br><span class="line">obj &#x3D; json.loads(content)</span><br><span class="line">print(obj)</span><br></pre></td></tr></table></figure>
+<p>这个只能做单词翻译，还需要进一步优化。</p>
+<h2 id="easyocr"><a href="#easyocr" class="headerlink" title="easyocr"></a>easyocr</h2><p>这个参考<a href="https://www.codekp.cn/2021/10/25/EasyOCR%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB/" target="_blank" rel="noopener">EasyOCR光学字符识别</a></p>
+<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><blockquote>
+<p>最终实现效果，在摄像头上和屏幕截取上都进行了测试.</p>
+</blockquote>
+<h3 id="首先是摄像头"><a href="#首先是摄像头" class="headerlink" title="首先是摄像头"></a>首先是摄像头</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu2.png" alt=""></p>
+<h3 id="然后是屏幕"><a href="#然后是屏幕" class="headerlink" title="然后是屏幕"></a>然后是屏幕</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu1.png" alt=""></p>
+<h2 id="最后是源码"><a href="#最后是源码" class="headerlink" title="最后是源码"></a>最后是源码</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import time</span><br><span class="line"></span><br><span class="line">import easyocr</span><br><span class="line">import ssl</span><br><span class="line">import cv2</span><br><span class="line"># from matplotlib import pyplot as plt</span><br><span class="line"></span><br><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">from PIL import Image, ImageDraw, ImageFont</span><br><span class="line">import urllib.request</span><br><span class="line">import urllib.parse</span><br><span class="line">import json</span><br><span class="line">import pyautogui</span><br><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ssl._create_default_https_context &#x3D; ssl._create_unverified_context</span><br><span class="line"># 设置识别中英文两种语言</span><br><span class="line">reader &#x3D; easyocr.Reader([&#39;ch_sim&#39;, &#39;en&#39;])  # need to run only once to load model into memory</span><br><span class="line">Image3&#x3D;&#39;https:&#x2F;&#x2F;www.codekp.cn&#x2F;download&#x2F;img&#x2F;ubuntu&#x2F;NVIDIA1.png&#39;</span><br><span class="line">Image2&#x3D;r&quot;H:\blog\wan_lab\blog_2020\source\download\img\ubuntu\NVIDIA1.png&quot;</span><br><span class="line">Image4&#x3D;&quot;1.jpg&quot;</span><br><span class="line">url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;</span><br><span class="line">headers &#x3D; &#123;</span><br><span class="line">    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cap&#x3D;cv2.VideoCapture(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line">    ret,img&#x3D;cap.read()</span><br><span class="line">    # img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 500, 500])  # x,y,w,h</span><br><span class="line">    # img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)</span><br><span class="line">    cv2.imwrite(&quot;1.jpg&quot;,img)</span><br><span class="line">    result &#x3D; reader.readtext(Image4, paragraph&#x3D;&quot;False&quot;)</span><br><span class="line"></span><br><span class="line">    start&#x3D;time.time()</span><br><span class="line">    for detection in result:</span><br><span class="line">        top_left &#x3D; tuple(detection[0][0])</span><br><span class="line">        bottom_right &#x3D; tuple(detection[0][2])</span><br><span class="line">        text &#x3D; detection[1]</span><br><span class="line">        img &#x3D; cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 3)</span><br><span class="line">        img &#x3D; cv2ImgAddText(img, text, bottom_right[0], bottom_right[1], (0, 255, 0), 18)</span><br><span class="line">        data &#x3D; &#123;</span><br><span class="line">            &#39;kw&#39;: text</span><br><span class="line">        &#125;</span><br><span class="line">        data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)</span><br><span class="line">        request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)</span><br><span class="line">        response &#x3D; urllib.request.urlopen(request)</span><br><span class="line">        content &#x3D; response.read().decode(&#39;utf-8&#39;)</span><br><span class="line">        obj &#x3D; json.loads(content)</span><br><span class="line">        print(obj)</span><br><span class="line">        try:</span><br><span class="line">            text2 &#x3D; str(obj[&#39;data&#39;][0][&#39;v&#39;])</span><br><span class="line">            img &#x3D; cv2ImgAddText(img, text2, bottom_right[0], bottom_right[1]+20, (0, 255, 0), 18)</span><br><span class="line">        except:</span><br><span class="line">            pass</span><br><span class="line">    cv2.imshow(&quot;1&quot;,img)</span><br><span class="line">    cv2.waitKey(1)</span><br><span class="line">    print((time.time()-start)*1000)</span><br><span class="line">capture.release()</span><br></pre></td></tr></table></figure>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><pre><code>将百度翻译的内容，和原始图像显示出来并列到一起就有了一个比较完整的东西。
+</code></pre><p><img src="https://www.codekp.cn/download/img/baidu/baidu3.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>OCR</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -562,34 +590,6 @@ If you are talking to a group of managers, you may refer to the disorganized met
       </categories>
       <tags>
         <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OCR_实时翻译</title>
-    <url>/2021/10/27/OCR-%E5%AE%9E%E6%97%B6%E7%BF%BB%E8%AF%91/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="OCR-实时翻译"><a href="#OCR-实时翻译" class="headerlink" title="OCR_实时翻译"></a>OCR_实时翻译</h1><ul>
-<li>采用了easyocr</li>
-<li>爬虫，调取百度翻译接口</li>
-</ul>
-<h2 id="调用屏幕接口"><a href="#调用屏幕接口" class="headerlink" title="调用屏幕接口"></a>调用屏幕接口</h2><p>调用屏幕的方法很简单：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import pyautogui</span><br><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 1920, 100])  # x,y,w,h</span><br><span class="line"># img.save(&#39;screenshot.png&#39;)</span><br><span class="line">img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)</span><br><span class="line">cv2.imshow(&quot;1&quot;,img)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure><br>但感觉效率很低，最后改成了虚拟摄像头+cap=cv2.VideoCapture(1)的方式捕获。</p>
-<h2 id="调用百度翻译接口"><a href="#调用百度翻译接口" class="headerlink" title="调用百度翻译接口"></a>调用百度翻译接口</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import urllib.request</span><br><span class="line">import urllib.parse</span><br><span class="line">import json</span><br><span class="line">import pyautogui</span><br><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;</span><br><span class="line">headers &#x3D; &#123;</span><br><span class="line">    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;</span><br><span class="line">&#125;</span><br><span class="line">data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)</span><br><span class="line">request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)</span><br><span class="line">response &#x3D; urllib.request.urlopen(request)</span><br><span class="line">content &#x3D; response.read().decode(&#39;utf-8&#39;)</span><br><span class="line">obj &#x3D; json.loads(content)</span><br><span class="line">print(obj)</span><br></pre></td></tr></table></figure>
-<p>这个只能做单词翻译，还需要进一步优化。</p>
-<h2 id="easyocr"><a href="#easyocr" class="headerlink" title="easyocr"></a>easyocr</h2><p>这个参考<a href="https://www.codekp.cn/2021/10/25/EasyOCR%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB/" target="_blank" rel="noopener">EasyOCR光学字符识别</a></p>
-<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><blockquote>
-<p>最终实现效果，在摄像头上和屏幕截取上都进行了测试.</p>
-</blockquote>
-<h3 id="首先是摄像头"><a href="#首先是摄像头" class="headerlink" title="首先是摄像头"></a>首先是摄像头</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu2.png" alt=""></p>
-<h3 id="然后是屏幕"><a href="#然后是屏幕" class="headerlink" title="然后是屏幕"></a>然后是屏幕</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu1.png" alt=""></p>
-<h2 id="最后是源码"><a href="#最后是源码" class="headerlink" title="最后是源码"></a>最后是源码</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import time</span><br><span class="line"></span><br><span class="line">import easyocr</span><br><span class="line">import ssl</span><br><span class="line">import cv2</span><br><span class="line"># from matplotlib import pyplot as plt</span><br><span class="line"></span><br><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">from PIL import Image, ImageDraw, ImageFont</span><br><span class="line">import urllib.request</span><br><span class="line">import urllib.parse</span><br><span class="line">import json</span><br><span class="line">import pyautogui</span><br><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ssl._create_default_https_context &#x3D; ssl._create_unverified_context</span><br><span class="line"># 设置识别中英文两种语言</span><br><span class="line">reader &#x3D; easyocr.Reader([&#39;ch_sim&#39;, &#39;en&#39;])  # need to run only once to load model into memory</span><br><span class="line">Image3&#x3D;&#39;https:&#x2F;&#x2F;www.codekp.cn&#x2F;download&#x2F;img&#x2F;ubuntu&#x2F;NVIDIA1.png&#39;</span><br><span class="line">Image2&#x3D;r&quot;H:\blog\wan_lab\blog_2020\source\download\img\ubuntu\NVIDIA1.png&quot;</span><br><span class="line">Image4&#x3D;&quot;1.jpg&quot;</span><br><span class="line">url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;</span><br><span class="line">headers &#x3D; &#123;</span><br><span class="line">    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cap&#x3D;cv2.VideoCapture(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line">    ret,img&#x3D;cap.read()</span><br><span class="line">    # img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 500, 500])  # x,y,w,h</span><br><span class="line">    # img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)</span><br><span class="line">    cv2.imwrite(&quot;1.jpg&quot;,img)</span><br><span class="line">    result &#x3D; reader.readtext(Image4, paragraph&#x3D;&quot;False&quot;)</span><br><span class="line"></span><br><span class="line">    start&#x3D;time.time()</span><br><span class="line">    for detection in result:</span><br><span class="line">        top_left &#x3D; tuple(detection[0][0])</span><br><span class="line">        bottom_right &#x3D; tuple(detection[0][2])</span><br><span class="line">        text &#x3D; detection[1]</span><br><span class="line">        img &#x3D; cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 3)</span><br><span class="line">        img &#x3D; cv2ImgAddText(img, text, bottom_right[0], bottom_right[1], (0, 255, 0), 18)</span><br><span class="line">        data &#x3D; &#123;</span><br><span class="line">            &#39;kw&#39;: text</span><br><span class="line">        &#125;</span><br><span class="line">        data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)</span><br><span class="line">        request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)</span><br><span class="line">        response &#x3D; urllib.request.urlopen(request)</span><br><span class="line">        content &#x3D; response.read().decode(&#39;utf-8&#39;)</span><br><span class="line">        obj &#x3D; json.loads(content)</span><br><span class="line">        print(obj)</span><br><span class="line">        try:</span><br><span class="line">            text2 &#x3D; str(obj[&#39;data&#39;][0][&#39;v&#39;])</span><br><span class="line">            img &#x3D; cv2ImgAddText(img, text2, bottom_right[0], bottom_right[1]+20, (0, 255, 0), 18)</span><br><span class="line">        except:</span><br><span class="line">            pass</span><br><span class="line">    cv2.imshow(&quot;1&quot;,img)</span><br><span class="line">    cv2.waitKey(1)</span><br><span class="line">    print((time.time()-start)*1000)</span><br><span class="line">capture.release()</span><br></pre></td></tr></table></figure>
-<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><pre><code>将百度翻译的内容，和原始图像显示出来并列到一起就有了一个比较完整的东西。
-</code></pre><p><img src="https://www.codekp.cn/download/img/baidu/baidu3.png" alt=""></p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>OCR</tag>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -919,6 +919,94 @@ If you are talking to a group of managers, you may refer to the disorganized met
       </tags>
   </entry>
   <entry>
+    <title>TensorFlow-lite模型训练</title>
+    <url>/2021/06/11/TensorFlow-lite%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="TensorFlow-lite模型训练"><a href="#TensorFlow-lite模型训练" class="headerlink" title="TensorFlow-lite模型训练"></a>TensorFlow-lite模型训练</h1><h2 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h2><h3 id="安装pytorch、conda"><a href="#安装pytorch、conda" class="headerlink" title="安装pytorch、conda"></a>安装pytorch、conda</h3><p>  该教程详情请见：<a href="https://segmentfault.com/a/1190000020889696" target="_blank" rel="noopener">PyTorch环境配置及安装</a></p>
+<h3 id="从github安装一个目标检测的库"><a href="#从github安装一个目标检测的库" class="headerlink" title="从github安装一个目标检测的库"></a>从github安装一个目标检测的库</h3><p>在c盘新建一个文件夹 C:\tensorflow1</p>
+<h4 id="安装tensorflow"><a href="#安装tensorflow" class="headerlink" title="安装tensorflow"></a>安装tensorflow</h4><p>通过单击”克隆或下载”按钮并下载 zip 文件，下载位于<a href="https://github.com/tensorflow/models/tree/r1.13.0" target="_blank" rel="noopener">https://github.com/tensorflow/models/tree/r1.13.0</a> 的完整 TensorFlow 对象检测存储库。打开下载的 zip 文件，将”模型主”文件夹直接提取到您刚刚创建的 C：\tensorflow1 目录中。将”models-master”更名为”models”。</p>
+<h3 id="下载模型从-TensorFlow-的模型下载-Faster-RCNN-Inception-V2-COCO-模型"><a href="#下载模型从-TensorFlow-的模型下载-Faster-RCNN-Inception-V2-COCO-模型" class="headerlink" title="下载模型从 TensorFlow 的模型下载 Faster-RCNN-Inception-V2-COCO 模型"></a>下载模型从 TensorFlow 的模型下载 Faster-RCNN-Inception-V2-COCO 模型</h3><p><a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md" target="_blank" rel="noopener">模型库</a></p>
+<p>本教程将使用 Faster-RCNN-Inception-V2 模型。在此处下载模型。使用 WinZip 或 7-Zip 等文件归档程序打开下载的 fast_rcnn_inception_v2_coco_2018_01_28.tar.gz 文件，并将 fast_rcnn_inception_v2_coco_2018_01_28 文件夹解压到 C:\tensorflow1\models\research\object_detection 文件夹。（注意：模型日期和版本将来可能会发生变化，但它仍然适用于本教程。）</p>
+<h3 id="下载API存储库"><a href="#下载API存储库" class="headerlink" title="下载API存储库"></a>下载API存储库</h3><p>打开git bash 然后输入下列命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;EdjeElectronics&#x2F;TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git</span><br></pre></td></tr></table></figure>
+<p>将提取到的文件保存到C:\tensorflow1\models\research\bject_detection</p>
+<p>如图所示：</p>
+<p><img src="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/doc/object_detection_directory.jpg" alt=""></p>
+<p><a href="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10" target="_blank" rel="noopener">https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10</a></p>
+<h3 id="设置新的anaconda虚拟环境"><a href="#设置新的anaconda虚拟环境" class="headerlink" title="设置新的anaconda虚拟环境"></a>设置新的anaconda虚拟环境</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\&gt; conda create -n tensorflow1 pip python&#x3D;3.7</span><br></pre></td></tr></table></figure>
+<p>然后发布激活环境<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\&gt; activate tensorflow1</span><br><span class="line">(tensorflow1) C:\&gt;python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure></p>
+<p>在此环境中安装tensorflow-gpu：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; pip install --ignore-installed --upgrade tensorflow-gpu</span><br></pre></td></tr></table></figure>
+<p>由于我们使用anaconda，安装tensorflow-gpu也将自动下载和安装正确的版本的CUDA和cuDNN。</p>
+<p>没有gpu可以只是用cpu进行训练，如下所示可以这样修改（用cpu会很慢，可我没有GPU）：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; pip install --ignore-installed --upgrade tensorflow</span><br></pre></td></tr></table></figure></p>
+<p>安装其他必要的包：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; conda install -c anaconda protobuf</span><br><span class="line">(tensorflow1) C:\&gt; pip install pillow</span><br><span class="line">(tensorflow1) C:\&gt; pip install lxml</span><br><span class="line">(tensorflow1) C:\&gt; pip install Cython</span><br><span class="line">(tensorflow1) C:\&gt; pip install contextlib2</span><br><span class="line">(tensorflow1) C:\&gt; pip install jupyter</span><br><span class="line">(tensorflow1) C:\&gt; pip install matplotlib</span><br><span class="line">(tensorflow1) C:\&gt; pip install pandas</span><br><span class="line">(tensorflow1) C:\&gt; pip install opencv-python</span><br></pre></td></tr></table></figure></p>
+<h3 id="PYTH环境变量设置"><a href="#PYTH环境变量设置" class="headerlink" title="PYTH环境变量设置"></a>PYTH环境变量设置</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; set PYTHONPATH&#x3D;C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim</span><br></pre></td></tr></table></figure>
+<h3 id="编译原型运行setup-py"><a href="#编译原型运行setup-py" class="headerlink" title="编译原型运行setup.py"></a>编译原型运行setup.py</h3><p>在 Anaconda 命令提示中，将目录更改为 “模型” 研究目录：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; cd C:\tensorflow1\models\research</span><br></pre></td></tr></table></figure>
+<p>然后将以下命令复制并粘贴到命令行中并按”输入”</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">protoc --python_out&#x3D;. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto</span><br></pre></td></tr></table></figure>
+<p>在目录 C:\tensorflow1\models\research\delf directory:中运行<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\tensorflow1\models\research\delf&gt; python setup.py build</span><br><span class="line">(tensorflow1) C:\tensorflow1\models\research\delf&gt; python setup.py install</span><br></pre></td></tr></table></figure></p>
+<h3 id="测试tensorflow设置验证工作原理"><a href="#测试tensorflow设置验证工作原理" class="headerlink" title="测试tensorflow设置验证工作原理"></a>测试tensorflow设置验证工作原理</h3><p>TensorFlow 对象检测 API 现已全部设置，用于使用经过预先训练的对象检测模型，或培训新的模型。您可以通过启动与 Jupyter 的object_detection_tutorial.ipynb 脚本来测试它并验证您的安装是否正常工作。从 [object_detection 目录中，发布此命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd C:\tensorflow1\models\research\object_detection\colab_tutorials</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\tensorflow1\models\research\object_detection\colab_tutorials&gt; jupyter notebook object_detection_tutorial.ipynb</span><br></pre></td></tr></table></figure>
+<h3 id="json转xml-参考自CSDN"><a href="#json转xml-参考自CSDN" class="headerlink" title="json转xml(参考自CSDN)"></a>json转xml(<a href="https://blog.csdn.net/u013894391/article/details/103006594" target="_blank" rel="noopener">参考自CSDN</a>)</h3><ul>
+<li><p>python 安装</p>
+<p><code>pip install dicttoxml</code></p>
+</li>
+</ul>
+<ul>
+<li>源码<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import os</span><br><span class="line">from json import loads</span><br><span class="line">from dicttoxml import dicttoxml</span><br><span class="line">from xml.dom.minidom import parseString</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def jsonToXml(json_path, xml_path):</span><br><span class="line">    # @abstract: transfer json file to xml file</span><br><span class="line">    # json_path: complete path of the json file</span><br><span class="line">    # xml_path: complete path of the xml file</span><br><span class="line">    with open(json_path, &#39;r&#39;, encoding&#x3D;&#39;UTF-8&#39;)as json_file:</span><br><span class="line">        load_dict &#x3D; loads(json_file.read())</span><br><span class="line">    # print(load_dict)</span><br><span class="line">    my_item_func &#x3D; lambda x: &#39;Annotation&#39;</span><br><span class="line">    xml &#x3D; dicttoxml(load_dict, custom_root&#x3D;&#39;Annotations&#39;, item_func&#x3D;my_item_func, attr_type&#x3D;False)</span><br><span class="line">    dom &#x3D; parseString(xml)</span><br><span class="line">    # print(dom.toprettyxml())</span><br><span class="line">    # print(type(dom.toprettyxml()))</span><br><span class="line">    with open(xml_path, &#39;w&#39;, encoding&#x3D;&#39;UTF-8&#39;)as xml_file:</span><br><span class="line">        xml_file.write(dom.toprettyxml())</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def json_to_xml(json_dir, xml_dir):</span><br><span class="line">    # transfer all json file which in the json_dir to xml_dir</span><br><span class="line">    if (os.path.exists(xml_dir) &#x3D;&#x3D; False):</span><br><span class="line">        os.makedirs(xml_dir)</span><br><span class="line">    dir &#x3D; os.listdir(json_dir)</span><br><span class="line">    for file in dir:</span><br><span class="line">        file_list &#x3D; file.split(&quot;.&quot;)</span><br><span class="line">        if (file_list[-1] &#x3D;&#x3D; &#39;json&#39;):</span><br><span class="line">            jsonToXml(os.path.join(json_dir, file), os.path.join(xml_dir, file_list[0] + &#39;.xml&#39;))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ &#x3D;&#x3D; &#39;__main__&#39;:</span><br><span class="line">    # trandfer singal file</span><br><span class="line">    j_path &#x3D; &quot;annotations_all.json&quot;</span><br><span class="line">    x_path &#x3D; &quot;annotations_all.xml&quot;</span><br><span class="line">    jsonToXml(j_path, x_path)</span><br><span class="line"></span><br><span class="line">    # # transfer multi files</span><br><span class="line">    # j_dir &#x3D; &quot;F:&#x2F;清影科技&#x2F;work&#x2F;jsontoxml&#x2F;json&#x2F;&quot;</span><br><span class="line">    # x_dir &#x3D; &quot;F:&#x2F;清影科技&#x2F;work&#x2F;jsontoxml&#x2F;xml&#x2F;&quot;</span><br><span class="line">    # json_to_xml(j_dir, x_dir)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h2><h3 id="步骤-1b。配置训练"><a href="#步骤-1b。配置训练" class="headerlink" title="步骤 1b。配置训练"></a>步骤 1b。配置训练</h3><p>如果您正在训练自己的 TensorFlow Lite 模型，请确保已完成我之前指南中的以下项目：</p>
+<ul>
+<li>训练和测试图像及其 XML 标签文件放置在 \object_detection\images\train 和 \object_detection\images\test 文件夹中</li>
+<li>train_labels.csv 和 test_labels.csv 已生成并位于 \object_detection\images 文件夹中</li>
+<li>train.record 和 test.record 已生成并位于 \object_detection 文件夹中</li>
+<li>labelmap.pbtxt 文件已创建并位于 \object_detection\training 文件夹中</li>
+<li>\object_detection\protos 中的 proto 文件已经生成<br>如果您对这些文件有任何疑问或不知道如何生成它们，我之前教程的第 2、3、4 和 5 步展示了它们是如何创建的。</li>
+</ul>
+<p>将 ssd_mobilenet_v2_quantized_300x300_coco.config 文件从 \object_detection\samples\configs 文件夹复制到 \object_detection\training 文件夹。然后，使用文本编辑器打开文件。</p>
+<p>对 ssd_mobilenet_v2_quantized_300x300_coco.config 文件进行以下更改。注意：路径必须用单个正斜杠（不是反斜杠）输入，否则 TensorFlow 在尝试训练模型时会给出文件路径错误！此外，路径必须包含在双引号 ( “ ) 中，而不是单引号 ( ‘ ) 中。</p>
+<ul>
+<li><p>第 9 行。将 num_classes 更改为您希望分类器检测的不同对象的数量。对于我的鸟/松鼠/浣熊检测器示例，有三个类，所以我设置了 num_classes: 3</p>
+</li>
+<li><p>第 141 行。将 batch_size: 24 更改为 batch_size: 6 。较小的批大小将防止训练期间出现 OOM（内存不足）错误。</p>
+</li>
+<li><p>第 156 行。将fine_tune_checkpoint 更改为：“C:/tensorflow1/models/research/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03/model.ckpt”</p>
+</li>
+<li><p>第 175 行。将 input_path 更改为：“C:/tensorflow1/models/research/object_detection/train.record”</p>
+</li>
+<li><p>第 177 行。将 label_map_path 更改为：“C:/tensorflow1/models/research/object_detection/training/labelmap.pbtxt”</p>
+</li>
+<li><p>第 181 行。将 num_examples 更改为您在 \images\test 目录中拥有的图像数量。对于我的鸟/松鼠/浣熊检测器示例，有 582 个测试图像，因此我设置了 num_examples: 582。</p>
+</li>
+<li><p>第 189 行。将 input_path 更改为：“C:/tensorflow1/models/research/object_detection/test.record”</p>
+</li>
+<li><p>第 191 行。将 label_map_path 更改为：“C:/tensorflow1/models/research/object_detection/training/labelmap.pbtxt”</p>
+</li>
+</ul>
+<p>更改完成后保存并退出训练文件。</p>
+<h3 id="步骤-1c。在-Anaconda-虚拟环境中运行训练"><a href="#步骤-1c。在-Anaconda-虚拟环境中运行训练" class="headerlink" title="步骤 1c。在 Anaconda 虚拟环境中运行训练"></a>步骤 1c。在 Anaconda 虚拟环境中运行训练</h3><p>剩下要做的就是训练模型！首先，将“train.py”文件从 \object_detection\legacy 文件夹移动到主 \object_detection 文件夹中。（有关为什么我使用旧版 train.py 脚本而不是 model_main.py 进行训练，请参阅常见问题解答。）</p>
+<p>然后，通过在“开始”菜单中搜索“Anaconda Prompt”并单击它来打开一个新的 Anaconda Prompt 窗口。通过发出以下命令激活“tensorflow1”虚拟环境（在我之前的教程中设置）：<br><code>activate tensorflow1</code></p>
+<p>然后，通过发出以下命令来设置 PYTHONPATH 环境变量：</p>
+<p><code>set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim</code></p>
+<p>接下来，将目录更改为 \object_detection 文件夹：</p>
+<p><code>cd C:\tensorflow1\models\research\object_detection</code></p>
+<p>最后，通过发出以下命令来训练模型：<br><code>cd legacy</code></p>
+<p><code>python train.py --logtostderr –train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v2_quantized_300x300_coco.config</code></p>
+<p>如果一切设置正确，模型将在初始化几分钟后开始训练。</p>
+<p>允许模型训练，直到损失始终低于 2。对于我的鸟/松鼠/浣熊检测器模型，这需要大约 9000 步，或 8 小时的训练。（时间会根据您的 CPU 和 GPU 的强大程度而有所不同。有关训练的更多信息以及如何使用 TensorBoard 查看训练作业进度的说明，请参阅我之前教程的第 6 步。）</p>
+<p>一旦训练完成（即损失一直低于 2），按 Ctrl+C 停止训练。最新的检查点将保存在 \object_detection\training 文件夹中，我们将使用该检查点导出冻结的 TensorFlow Lite 图。记下training文件夹（即model.ckpt-XXXX）中model.ckpt文件的checkpoint号，后面会用到。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">protoc --python_out&#x3D;. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">protoc --python_out&#x3D;. C:\tensorflow1\models\research\object_detection\protos\anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\argmax_matcher.proto C:\tensorflow1\models\research\object_detection\protos\bipartite_matcher.proto C:\tensorflow1\models\research\object_detection\protos\box_coder.proto C:\tensorflow1\models\research\object_detection\protos\box_predictor.proto C:\tensorflow1\models\research\object_detection\protos\eval.proto C:\tensorflow1\models\research\object_detection\protos\faster_rcnn.proto C:\tensorflow1\models\research\object_detection\protos\faster_rcnn_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\FILELIST.TXT C:\tensorflow1\models\research\object_detection\protos\graph_rewriter.proto C:\tensorflow1\models\research\object_detection\protos\grid_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\hyperparams.proto C:\tensorflow1\models\research\object_detection\protos\image_resizer.proto C:\tensorflow1\models\research\object_detection\protos\input_reader.proto C:\tensorflow1\models\research\object_detection\protos\keypoint_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\LIST.TXT C:\tensorflow1\models\research\object_detection\protos\losses.proto C:\tensorflow1\models\research\object_detection\protos\matcher.proto C:\tensorflow1\models\research\object_detection\protos\mean_stddev_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\model.proto C:\tensorflow1\models\research\object_detection\protos\multiscale_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\optimizer.proto C:\tensorflow1\models\research\object_detection\protos\pipeline.proto C:\tensorflow1\models\research\object_detection\protos\post_processing.proto C:\tensorflow1\models\research\object_detection\protos\preprocessor.proto C:\tensorflow1\models\research\object_detection\protos\region_similarity_calculator.proto C:\tensorflow1\models\research\object_detection\protos\square_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\ssd.proto C:\tensorflow1\models\research\object_detection\protos\ssd_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\string_int_label_map.proto C:\tensorflow1\models\research\object_detection\protos\train.proto</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>微型计算机</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>b站up主推荐</title>
     <url>/2021/04/14/b%E7%AB%99up%E4%B8%BB%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="position:relative; padding-bottom:75%; width:100%; height:0">
@@ -1043,94 +1131,6 @@ If you are talking to a group of managers, you may refer to the disorganized met
       </tags>
   </entry>
   <entry>
-    <title>TensorFlow-lite模型训练</title>
-    <url>/2021/06/11/TensorFlow-lite%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="TensorFlow-lite模型训练"><a href="#TensorFlow-lite模型训练" class="headerlink" title="TensorFlow-lite模型训练"></a>TensorFlow-lite模型训练</h1><h2 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h2><h3 id="安装pytorch、conda"><a href="#安装pytorch、conda" class="headerlink" title="安装pytorch、conda"></a>安装pytorch、conda</h3><p>  该教程详情请见：<a href="https://segmentfault.com/a/1190000020889696" target="_blank" rel="noopener">PyTorch环境配置及安装</a></p>
-<h3 id="从github安装一个目标检测的库"><a href="#从github安装一个目标检测的库" class="headerlink" title="从github安装一个目标检测的库"></a>从github安装一个目标检测的库</h3><p>在c盘新建一个文件夹 C:\tensorflow1</p>
-<h4 id="安装tensorflow"><a href="#安装tensorflow" class="headerlink" title="安装tensorflow"></a>安装tensorflow</h4><p>通过单击”克隆或下载”按钮并下载 zip 文件，下载位于<a href="https://github.com/tensorflow/models/tree/r1.13.0" target="_blank" rel="noopener">https://github.com/tensorflow/models/tree/r1.13.0</a> 的完整 TensorFlow 对象检测存储库。打开下载的 zip 文件，将”模型主”文件夹直接提取到您刚刚创建的 C：\tensorflow1 目录中。将”models-master”更名为”models”。</p>
-<h3 id="下载模型从-TensorFlow-的模型下载-Faster-RCNN-Inception-V2-COCO-模型"><a href="#下载模型从-TensorFlow-的模型下载-Faster-RCNN-Inception-V2-COCO-模型" class="headerlink" title="下载模型从 TensorFlow 的模型下载 Faster-RCNN-Inception-V2-COCO 模型"></a>下载模型从 TensorFlow 的模型下载 Faster-RCNN-Inception-V2-COCO 模型</h3><p><a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md" target="_blank" rel="noopener">模型库</a></p>
-<p>本教程将使用 Faster-RCNN-Inception-V2 模型。在此处下载模型。使用 WinZip 或 7-Zip 等文件归档程序打开下载的 fast_rcnn_inception_v2_coco_2018_01_28.tar.gz 文件，并将 fast_rcnn_inception_v2_coco_2018_01_28 文件夹解压到 C:\tensorflow1\models\research\object_detection 文件夹。（注意：模型日期和版本将来可能会发生变化，但它仍然适用于本教程。）</p>
-<h3 id="下载API存储库"><a href="#下载API存储库" class="headerlink" title="下载API存储库"></a>下载API存储库</h3><p>打开git bash 然后输入下列命令：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;EdjeElectronics&#x2F;TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git</span><br></pre></td></tr></table></figure>
-<p>将提取到的文件保存到C:\tensorflow1\models\research\bject_detection</p>
-<p>如图所示：</p>
-<p><img src="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/doc/object_detection_directory.jpg" alt=""></p>
-<p><a href="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10" target="_blank" rel="noopener">https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10</a></p>
-<h3 id="设置新的anaconda虚拟环境"><a href="#设置新的anaconda虚拟环境" class="headerlink" title="设置新的anaconda虚拟环境"></a>设置新的anaconda虚拟环境</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\&gt; conda create -n tensorflow1 pip python&#x3D;3.7</span><br></pre></td></tr></table></figure>
-<p>然后发布激活环境<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\&gt; activate tensorflow1</span><br><span class="line">(tensorflow1) C:\&gt;python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure></p>
-<p>在此环境中安装tensorflow-gpu：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; pip install --ignore-installed --upgrade tensorflow-gpu</span><br></pre></td></tr></table></figure>
-<p>由于我们使用anaconda，安装tensorflow-gpu也将自动下载和安装正确的版本的CUDA和cuDNN。</p>
-<p>没有gpu可以只是用cpu进行训练，如下所示可以这样修改（用cpu会很慢，可我没有GPU）：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; pip install --ignore-installed --upgrade tensorflow</span><br></pre></td></tr></table></figure></p>
-<p>安装其他必要的包：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; conda install -c anaconda protobuf</span><br><span class="line">(tensorflow1) C:\&gt; pip install pillow</span><br><span class="line">(tensorflow1) C:\&gt; pip install lxml</span><br><span class="line">(tensorflow1) C:\&gt; pip install Cython</span><br><span class="line">(tensorflow1) C:\&gt; pip install contextlib2</span><br><span class="line">(tensorflow1) C:\&gt; pip install jupyter</span><br><span class="line">(tensorflow1) C:\&gt; pip install matplotlib</span><br><span class="line">(tensorflow1) C:\&gt; pip install pandas</span><br><span class="line">(tensorflow1) C:\&gt; pip install opencv-python</span><br></pre></td></tr></table></figure></p>
-<h3 id="PYTH环境变量设置"><a href="#PYTH环境变量设置" class="headerlink" title="PYTH环境变量设置"></a>PYTH环境变量设置</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; set PYTHONPATH&#x3D;C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim</span><br></pre></td></tr></table></figure>
-<h3 id="编译原型运行setup-py"><a href="#编译原型运行setup-py" class="headerlink" title="编译原型运行setup.py"></a>编译原型运行setup.py</h3><p>在 Anaconda 命令提示中，将目录更改为 “模型” 研究目录：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; cd C:\tensorflow1\models\research</span><br></pre></td></tr></table></figure>
-<p>然后将以下命令复制并粘贴到命令行中并按”输入”</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">protoc --python_out&#x3D;. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto</span><br></pre></td></tr></table></figure>
-<p>在目录 C:\tensorflow1\models\research\delf directory:中运行<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\tensorflow1\models\research\delf&gt; python setup.py build</span><br><span class="line">(tensorflow1) C:\tensorflow1\models\research\delf&gt; python setup.py install</span><br></pre></td></tr></table></figure></p>
-<h3 id="测试tensorflow设置验证工作原理"><a href="#测试tensorflow设置验证工作原理" class="headerlink" title="测试tensorflow设置验证工作原理"></a>测试tensorflow设置验证工作原理</h3><p>TensorFlow 对象检测 API 现已全部设置，用于使用经过预先训练的对象检测模型，或培训新的模型。您可以通过启动与 Jupyter 的object_detection_tutorial.ipynb 脚本来测试它并验证您的安装是否正常工作。从 [object_detection 目录中，发布此命令：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd C:\tensorflow1\models\research\object_detection\colab_tutorials</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(tensorflow1) C:\tensorflow1\models\research\object_detection\colab_tutorials&gt; jupyter notebook object_detection_tutorial.ipynb</span><br></pre></td></tr></table></figure>
-<h3 id="json转xml-参考自CSDN"><a href="#json转xml-参考自CSDN" class="headerlink" title="json转xml(参考自CSDN)"></a>json转xml(<a href="https://blog.csdn.net/u013894391/article/details/103006594" target="_blank" rel="noopener">参考自CSDN</a>)</h3><ul>
-<li><p>python 安装</p>
-<p><code>pip install dicttoxml</code></p>
-</li>
-</ul>
-<ul>
-<li>源码<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import os</span><br><span class="line">from json import loads</span><br><span class="line">from dicttoxml import dicttoxml</span><br><span class="line">from xml.dom.minidom import parseString</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def jsonToXml(json_path, xml_path):</span><br><span class="line">    # @abstract: transfer json file to xml file</span><br><span class="line">    # json_path: complete path of the json file</span><br><span class="line">    # xml_path: complete path of the xml file</span><br><span class="line">    with open(json_path, &#39;r&#39;, encoding&#x3D;&#39;UTF-8&#39;)as json_file:</span><br><span class="line">        load_dict &#x3D; loads(json_file.read())</span><br><span class="line">    # print(load_dict)</span><br><span class="line">    my_item_func &#x3D; lambda x: &#39;Annotation&#39;</span><br><span class="line">    xml &#x3D; dicttoxml(load_dict, custom_root&#x3D;&#39;Annotations&#39;, item_func&#x3D;my_item_func, attr_type&#x3D;False)</span><br><span class="line">    dom &#x3D; parseString(xml)</span><br><span class="line">    # print(dom.toprettyxml())</span><br><span class="line">    # print(type(dom.toprettyxml()))</span><br><span class="line">    with open(xml_path, &#39;w&#39;, encoding&#x3D;&#39;UTF-8&#39;)as xml_file:</span><br><span class="line">        xml_file.write(dom.toprettyxml())</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def json_to_xml(json_dir, xml_dir):</span><br><span class="line">    # transfer all json file which in the json_dir to xml_dir</span><br><span class="line">    if (os.path.exists(xml_dir) &#x3D;&#x3D; False):</span><br><span class="line">        os.makedirs(xml_dir)</span><br><span class="line">    dir &#x3D; os.listdir(json_dir)</span><br><span class="line">    for file in dir:</span><br><span class="line">        file_list &#x3D; file.split(&quot;.&quot;)</span><br><span class="line">        if (file_list[-1] &#x3D;&#x3D; &#39;json&#39;):</span><br><span class="line">            jsonToXml(os.path.join(json_dir, file), os.path.join(xml_dir, file_list[0] + &#39;.xml&#39;))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ &#x3D;&#x3D; &#39;__main__&#39;:</span><br><span class="line">    # trandfer singal file</span><br><span class="line">    j_path &#x3D; &quot;annotations_all.json&quot;</span><br><span class="line">    x_path &#x3D; &quot;annotations_all.xml&quot;</span><br><span class="line">    jsonToXml(j_path, x_path)</span><br><span class="line"></span><br><span class="line">    # # transfer multi files</span><br><span class="line">    # j_dir &#x3D; &quot;F:&#x2F;清影科技&#x2F;work&#x2F;jsontoxml&#x2F;json&#x2F;&quot;</span><br><span class="line">    # x_dir &#x3D; &quot;F:&#x2F;清影科技&#x2F;work&#x2F;jsontoxml&#x2F;xml&#x2F;&quot;</span><br><span class="line">    # json_to_xml(j_dir, x_dir)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h2><h3 id="步骤-1b。配置训练"><a href="#步骤-1b。配置训练" class="headerlink" title="步骤 1b。配置训练"></a>步骤 1b。配置训练</h3><p>如果您正在训练自己的 TensorFlow Lite 模型，请确保已完成我之前指南中的以下项目：</p>
-<ul>
-<li>训练和测试图像及其 XML 标签文件放置在 \object_detection\images\train 和 \object_detection\images\test 文件夹中</li>
-<li>train_labels.csv 和 test_labels.csv 已生成并位于 \object_detection\images 文件夹中</li>
-<li>train.record 和 test.record 已生成并位于 \object_detection 文件夹中</li>
-<li>labelmap.pbtxt 文件已创建并位于 \object_detection\training 文件夹中</li>
-<li>\object_detection\protos 中的 proto 文件已经生成<br>如果您对这些文件有任何疑问或不知道如何生成它们，我之前教程的第 2、3、4 和 5 步展示了它们是如何创建的。</li>
-</ul>
-<p>将 ssd_mobilenet_v2_quantized_300x300_coco.config 文件从 \object_detection\samples\configs 文件夹复制到 \object_detection\training 文件夹。然后，使用文本编辑器打开文件。</p>
-<p>对 ssd_mobilenet_v2_quantized_300x300_coco.config 文件进行以下更改。注意：路径必须用单个正斜杠（不是反斜杠）输入，否则 TensorFlow 在尝试训练模型时会给出文件路径错误！此外，路径必须包含在双引号 ( “ ) 中，而不是单引号 ( ‘ ) 中。</p>
-<ul>
-<li><p>第 9 行。将 num_classes 更改为您希望分类器检测的不同对象的数量。对于我的鸟/松鼠/浣熊检测器示例，有三个类，所以我设置了 num_classes: 3</p>
-</li>
-<li><p>第 141 行。将 batch_size: 24 更改为 batch_size: 6 。较小的批大小将防止训练期间出现 OOM（内存不足）错误。</p>
-</li>
-<li><p>第 156 行。将fine_tune_checkpoint 更改为：“C:/tensorflow1/models/research/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03/model.ckpt”</p>
-</li>
-<li><p>第 175 行。将 input_path 更改为：“C:/tensorflow1/models/research/object_detection/train.record”</p>
-</li>
-<li><p>第 177 行。将 label_map_path 更改为：“C:/tensorflow1/models/research/object_detection/training/labelmap.pbtxt”</p>
-</li>
-<li><p>第 181 行。将 num_examples 更改为您在 \images\test 目录中拥有的图像数量。对于我的鸟/松鼠/浣熊检测器示例，有 582 个测试图像，因此我设置了 num_examples: 582。</p>
-</li>
-<li><p>第 189 行。将 input_path 更改为：“C:/tensorflow1/models/research/object_detection/test.record”</p>
-</li>
-<li><p>第 191 行。将 label_map_path 更改为：“C:/tensorflow1/models/research/object_detection/training/labelmap.pbtxt”</p>
-</li>
-</ul>
-<p>更改完成后保存并退出训练文件。</p>
-<h3 id="步骤-1c。在-Anaconda-虚拟环境中运行训练"><a href="#步骤-1c。在-Anaconda-虚拟环境中运行训练" class="headerlink" title="步骤 1c。在 Anaconda 虚拟环境中运行训练"></a>步骤 1c。在 Anaconda 虚拟环境中运行训练</h3><p>剩下要做的就是训练模型！首先，将“train.py”文件从 \object_detection\legacy 文件夹移动到主 \object_detection 文件夹中。（有关为什么我使用旧版 train.py 脚本而不是 model_main.py 进行训练，请参阅常见问题解答。）</p>
-<p>然后，通过在“开始”菜单中搜索“Anaconda Prompt”并单击它来打开一个新的 Anaconda Prompt 窗口。通过发出以下命令激活“tensorflow1”虚拟环境（在我之前的教程中设置）：<br><code>activate tensorflow1</code></p>
-<p>然后，通过发出以下命令来设置 PYTHONPATH 环境变量：</p>
-<p><code>set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim</code></p>
-<p>接下来，将目录更改为 \object_detection 文件夹：</p>
-<p><code>cd C:\tensorflow1\models\research\object_detection</code></p>
-<p>最后，通过发出以下命令来训练模型：<br><code>cd legacy</code></p>
-<p><code>python train.py --logtostderr –train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v2_quantized_300x300_coco.config</code></p>
-<p>如果一切设置正确，模型将在初始化几分钟后开始训练。</p>
-<p>允许模型训练，直到损失始终低于 2。对于我的鸟/松鼠/浣熊检测器模型，这需要大约 9000 步，或 8 小时的训练。（时间会根据您的 CPU 和 GPU 的强大程度而有所不同。有关训练的更多信息以及如何使用 TensorBoard 查看训练作业进度的说明，请参阅我之前教程的第 6 步。）</p>
-<p>一旦训练完成（即损失一直低于 2），按 Ctrl+C 停止训练。最新的检查点将保存在 \object_detection\training 文件夹中，我们将使用该检查点导出冻结的 TensorFlow Lite 图。记下training文件夹（即model.ckpt-XXXX）中model.ckpt文件的checkpoint号，后面会用到。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">protoc --python_out&#x3D;. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">protoc --python_out&#x3D;. C:\tensorflow1\models\research\object_detection\protos\anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\argmax_matcher.proto C:\tensorflow1\models\research\object_detection\protos\bipartite_matcher.proto C:\tensorflow1\models\research\object_detection\protos\box_coder.proto C:\tensorflow1\models\research\object_detection\protos\box_predictor.proto C:\tensorflow1\models\research\object_detection\protos\eval.proto C:\tensorflow1\models\research\object_detection\protos\faster_rcnn.proto C:\tensorflow1\models\research\object_detection\protos\faster_rcnn_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\FILELIST.TXT C:\tensorflow1\models\research\object_detection\protos\graph_rewriter.proto C:\tensorflow1\models\research\object_detection\protos\grid_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\hyperparams.proto C:\tensorflow1\models\research\object_detection\protos\image_resizer.proto C:\tensorflow1\models\research\object_detection\protos\input_reader.proto C:\tensorflow1\models\research\object_detection\protos\keypoint_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\LIST.TXT C:\tensorflow1\models\research\object_detection\protos\losses.proto C:\tensorflow1\models\research\object_detection\protos\matcher.proto C:\tensorflow1\models\research\object_detection\protos\mean_stddev_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\model.proto C:\tensorflow1\models\research\object_detection\protos\multiscale_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\optimizer.proto C:\tensorflow1\models\research\object_detection\protos\pipeline.proto C:\tensorflow1\models\research\object_detection\protos\post_processing.proto C:\tensorflow1\models\research\object_detection\protos\preprocessor.proto C:\tensorflow1\models\research\object_detection\protos\region_similarity_calculator.proto C:\tensorflow1\models\research\object_detection\protos\square_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\ssd.proto C:\tensorflow1\models\research\object_detection\protos\ssd_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\string_int_label_map.proto C:\tensorflow1\models\research\object_detection\protos\train.proto</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>微型计算机</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>b站视频分享</title>
     <url>/2017/11/17/b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><div style="position:relative; padding-bottom:75%; width:100%; height:0">
@@ -1241,29 +1241,6 @@ If you are talking to a group of managers, you may refer to the disorganized met
       </tags>
   </entry>
   <entry>
-    <title>linux_rssi_信号强度获取</title>
-    <url>/2021/07/13/linux-rssi-%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6%E8%8E%B7%E5%8F%96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linuxrssi信号强度获取"><a href="#linuxrssi信号强度获取" class="headerlink" title="linuxrssi信号强度获取"></a>linux<em>rssi</em>信号强度获取</h1><h2 id="测试环境中，无线网卡的接口id为wlan0"><a href="#测试环境中，无线网卡的接口id为wlan0" class="headerlink" title="测试环境中，无线网卡的接口id为wlan0"></a>测试环境中，无线网卡的接口id为wlan0</h2><h2 id="一秒周期查看无线网卡信息"><a href="#一秒周期查看无线网卡信息" class="headerlink" title="一秒周期查看无线网卡信息"></a>一秒周期查看无线网卡信息</h2><p><code>watch -n 1 cat /proc/net/wireless</code></p>
-<h2 id="获取信号强度："><a href="#获取信号强度：" class="headerlink" title="获取信号强度："></a>获取信号强度：</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;{print $3}&#39;</code><br>70.</p>
-<h2 id="获取信号质量：单位dBm"><a href="#获取信号质量：单位dBm" class="headerlink" title="获取信号质量：单位dBm"></a>获取信号质量：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;{print $4}&#39;</code><br>-38.</p>
-<h2 id="网口的背景噪声：单位dBm"><a href="#网口的背景噪声：单位dBm" class="headerlink" title="网口的背景噪声：单位dBm"></a>网口的背景噪声：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;{print $5}&#39;</code></p>
-<p>-256</p>
-<h2 id="网口的传输速率：Mb-s-1000000bps"><a href="#网口的传输速率：Mb-s-1000000bps" class="headerlink" title="网口的传输速率：Mb/s = 1000000bps"></a>网口的传输速率：Mb/s = 1000000bps</h2><p><code>iwconfig wlan0 | sed &#39;s/ /\n/g&#39; | grep -i Rate | sed &#39;s/=/ /g&#39;|awk &#39;{print $2}&#39;</code></p>
-<p>在程序中执行这些命令后需要获取返回结果，最简单的方法是，将命令行结果重定向到一个临时文件，然后读取这个临时文件，从而获得外部命令执行结果。</p>
-<p>参考：</p>
-<ul>
-<li><a href="https://www.jb51.net/LINUXjishu/421311.html" target="_blank" rel="noopener">Linux系统中iwconfig命令使用详解</a></li>
-<li><a href="https://blog.csdn.net/lbyyy/article/details/51392629" target="_blank" rel="noopener">无线信号强度解析及linux如何查看wifi信号强弱等</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>deepin_wordpress</title>
     <url>/2021/04/15/deepin-wordpress/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="deepin-wordpress"><a href="#deepin-wordpress" class="headerlink" title="deepin_wordpress"></a>deepin_wordpress</h1><h2 id="安装基础软件"><a href="#安装基础软件" class="headerlink" title="安装基础软件"></a>安装基础软件</h2><h3 id="安装apache2"><a href="#安装apache2" class="headerlink" title="安装apache2"></a>安装apache2</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install apache2 -y</span><br></pre></td></tr></table></figure>
@@ -1350,6 +1327,29 @@ If you are talking to a group of managers, you may refer to the disorganized met
       <tags>
         <tag>B站</tag>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux_rssi_信号强度获取</title>
+    <url>/2021/07/13/linux-rssi-%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6%E8%8E%B7%E5%8F%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linuxrssi信号强度获取"><a href="#linuxrssi信号强度获取" class="headerlink" title="linuxrssi信号强度获取"></a>linux<em>rssi</em>信号强度获取</h1><h2 id="测试环境中，无线网卡的接口id为wlan0"><a href="#测试环境中，无线网卡的接口id为wlan0" class="headerlink" title="测试环境中，无线网卡的接口id为wlan0"></a>测试环境中，无线网卡的接口id为wlan0</h2><h2 id="一秒周期查看无线网卡信息"><a href="#一秒周期查看无线网卡信息" class="headerlink" title="一秒周期查看无线网卡信息"></a>一秒周期查看无线网卡信息</h2><p><code>watch -n 1 cat /proc/net/wireless</code></p>
+<h2 id="获取信号强度："><a href="#获取信号强度：" class="headerlink" title="获取信号强度："></a>获取信号强度：</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;{print $3}&#39;</code><br>70.</p>
+<h2 id="获取信号质量：单位dBm"><a href="#获取信号质量：单位dBm" class="headerlink" title="获取信号质量：单位dBm"></a>获取信号质量：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;{print $4}&#39;</code><br>-38.</p>
+<h2 id="网口的背景噪声：单位dBm"><a href="#网口的背景噪声：单位dBm" class="headerlink" title="网口的背景噪声：单位dBm"></a>网口的背景噪声：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;{print $5}&#39;</code></p>
+<p>-256</p>
+<h2 id="网口的传输速率：Mb-s-1000000bps"><a href="#网口的传输速率：Mb-s-1000000bps" class="headerlink" title="网口的传输速率：Mb/s = 1000000bps"></a>网口的传输速率：Mb/s = 1000000bps</h2><p><code>iwconfig wlan0 | sed &#39;s/ /\n/g&#39; | grep -i Rate | sed &#39;s/=/ /g&#39;|awk &#39;{print $2}&#39;</code></p>
+<p>在程序中执行这些命令后需要获取返回结果，最简单的方法是，将命令行结果重定向到一个临时文件，然后读取这个临时文件，从而获得外部命令执行结果。</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.jb51.net/LINUXjishu/421311.html" target="_blank" rel="noopener">Linux系统中iwconfig命令使用详解</a></li>
+<li><a href="https://blog.csdn.net/lbyyy/article/details/51392629" target="_blank" rel="noopener">无线信号强度解析及linux如何查看wifi信号强弱等</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -2199,6 +2199,39 @@ If you are talking to a group of managers, you may refer to the disorganized met
       </tags>
   </entry>
   <entry>
+    <title>python放大按图片中心剪切、缩小</title>
+    <url>/2021/03/31/python%E6%94%BE%E5%A4%A7%E6%8C%89%E5%9B%BE%E7%89%87%E4%B8%AD%E5%BF%83%E5%89%AA%E5%88%87%E3%80%81%E7%BC%A9%E5%B0%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="python放大并按图片中心剪切、放大"><a href="#python放大并按图片中心剪切、放大" class="headerlink" title="python放大并按图片中心剪切、放大"></a>python放大并按图片中心剪切、放大</h1><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>缩小</th>
+<th>原始大小</th>
+<th>放大并剪切后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://img-blog.csdnimg.cn/20210331104832232.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></td>
+<td><img src="https://img-blog.csdnimg.cn/20210331103805575.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></td>
+<td><img src="https://img-blog.csdnimg.cn/20210331103730206.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="放大"><a href="#放大" class="headerlink" title="放大"></a>放大</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">img&#x3D;crop_image(cv2.resize(img, None, fx&#x3D;1, fy&#x3D;1, interpolation&#x3D;cv2.INTER_CUBIC),new_height,new_width)</span><br></pre></td></tr></table></figure>
+<h3 id="缩小"><a href="#缩小" class="headerlink" title="缩小"></a>缩小</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mini&#x3D; cv2.resize(cv2.copyMakeBorder(img, P_A, P_A, P_A, P_A, cv2.BORDER_REPLICATE), (150, 150))</span><br></pre></td></tr></table></figure>
+<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p>其中有将矩阵转Image、Image转矩阵两个过程。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def crop_image(re_img,new_height,new_width):</span><br><span class="line">    re_img&#x3D;Image.fromarray(np.uint8(re_img))</span><br><span class="line">    width, height &#x3D; re_img.size</span><br><span class="line">    left &#x3D; (width - new_width)&#x2F;2</span><br><span class="line">    top &#x3D; (height - new_height)&#x2F;2</span><br><span class="line">    right &#x3D; (width + new_width)&#x2F;2</span><br><span class="line">    bottom &#x3D; (height + new_height)&#x2F;2</span><br><span class="line">    crop_im &#x3D; re_img.crop((left, top, right, bottom)) #Cropping Image</span><br><span class="line">    crop_im &#x3D; np.asarray(crop_im)</span><br><span class="line">    return crop_im</span><br><span class="line"></span><br><span class="line">new_width &#x3D; 150     #Enter the crop image width</span><br><span class="line">new_height &#x3D; 150    #Enter the crop image height</span><br><span class="line"></span><br><span class="line">img &#x3D; cv2.imread(&quot;learn&#x2F;cats&#x2F;cat.3.jpg&quot;)</span><br><span class="line">img&#x3D;cv2.resize(img,(150,150))</span><br><span class="line">P_A&#x3D;50</span><br><span class="line">img&#x3D;crop_image(cv2.resize(img, None, fx&#x3D;1, fy&#x3D;1, interpolation&#x3D;cv2.INTER_CUBIC),new_height,new_width)</span><br><span class="line"></span><br><span class="line">plt.imshow(img)</span><br><span class="line">plt.title(&#39;cat&#39;)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>python抓取网页数据</title>
     <url>/2021/10/26/python%E6%8A%93%E5%8F%96%E7%BD%91%E9%A1%B5%E6%95%B0%E6%8D%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="python抓取网页数据"><a href="#python抓取网页数据" class="headerlink" title="python抓取网页数据"></a>python抓取网页数据</h1><blockquote>
@@ -2267,39 +2300,6 @@ If you are talking to a group of managers, you may refer to the disorganized met
       <tags>
         <tag>python</tag>
         <tag>爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python放大按图片中心剪切、缩小</title>
-    <url>/2021/03/31/python%E6%94%BE%E5%A4%A7%E6%8C%89%E5%9B%BE%E7%89%87%E4%B8%AD%E5%BF%83%E5%89%AA%E5%88%87%E3%80%81%E7%BC%A9%E5%B0%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="python放大并按图片中心剪切、放大"><a href="#python放大并按图片中心剪切、放大" class="headerlink" title="python放大并按图片中心剪切、放大"></a>python放大并按图片中心剪切、放大</h1><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>缩小</th>
-<th>原始大小</th>
-<th>放大并剪切后</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="https://img-blog.csdnimg.cn/20210331104832232.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></td>
-<td><img src="https://img-blog.csdnimg.cn/20210331103805575.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></td>
-<td><img src="https://img-blog.csdnimg.cn/20210331103730206.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="放大"><a href="#放大" class="headerlink" title="放大"></a>放大</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">img&#x3D;crop_image(cv2.resize(img, None, fx&#x3D;1, fy&#x3D;1, interpolation&#x3D;cv2.INTER_CUBIC),new_height,new_width)</span><br></pre></td></tr></table></figure>
-<h3 id="缩小"><a href="#缩小" class="headerlink" title="缩小"></a>缩小</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mini&#x3D; cv2.resize(cv2.copyMakeBorder(img, P_A, P_A, P_A, P_A, cv2.BORDER_REPLICATE), (150, 150))</span><br></pre></td></tr></table></figure>
-<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p>其中有将矩阵转Image、Image转矩阵两个过程。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def crop_image(re_img,new_height,new_width):</span><br><span class="line">    re_img&#x3D;Image.fromarray(np.uint8(re_img))</span><br><span class="line">    width, height &#x3D; re_img.size</span><br><span class="line">    left &#x3D; (width - new_width)&#x2F;2</span><br><span class="line">    top &#x3D; (height - new_height)&#x2F;2</span><br><span class="line">    right &#x3D; (width + new_width)&#x2F;2</span><br><span class="line">    bottom &#x3D; (height + new_height)&#x2F;2</span><br><span class="line">    crop_im &#x3D; re_img.crop((left, top, right, bottom)) #Cropping Image</span><br><span class="line">    crop_im &#x3D; np.asarray(crop_im)</span><br><span class="line">    return crop_im</span><br><span class="line"></span><br><span class="line">new_width &#x3D; 150     #Enter the crop image width</span><br><span class="line">new_height &#x3D; 150    #Enter the crop image height</span><br><span class="line"></span><br><span class="line">img &#x3D; cv2.imread(&quot;learn&#x2F;cats&#x2F;cat.3.jpg&quot;)</span><br><span class="line">img&#x3D;cv2.resize(img,(150,150))</span><br><span class="line">P_A&#x3D;50</span><br><span class="line">img&#x3D;crop_image(cv2.resize(img, None, fx&#x3D;1, fy&#x3D;1, interpolation&#x3D;cv2.INTER_CUBIC),new_height,new_width)</span><br><span class="line"></span><br><span class="line">plt.imshow(img)</span><br><span class="line">plt.title(&#39;cat&#39;)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -2396,6 +2396,76 @@ If you are talking to a group of managers, you may refer to the disorganized met
       </tags>
   </entry>
   <entry>
+    <title>信息论一个小实例</title>
+    <url>/2020/10/23/%E2%80%9C%E4%B8%8D%E9%97%AE%EF%BC%8C%E7%9F%A5%E4%BD%A0%E5%90%8D%E2%80%9D%E7%9A%84%E7%8E%84%E5%AD%A6%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>ssh-keygen -t rsa -C v@mmrsl.cn<br>ssh-keygen -t rsa -C kp@mmrsl.cn</p>
+<h1 id="不用问知道你名字的玄学问题"><a href="#不用问知道你名字的玄学问题" class="headerlink" title="不用问知道你名字的玄学问题"></a><center>不用问知道你名字的玄学问题</center></h1><a id="more"></a>
+<h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h1><p>  不知道大家有没有遇到路边有人问你，不用问你的姓就能知道你姓什么，当然我也遇到了。我怕被要钱就没有问，但后来仔细寻思挺有趣的，到底是什么原理呢，很多人都在网上给出了自己的解释，但在我看来却没有完全解决我的疑惑。近期看信息论有感，感觉是很有智慧的信息编码技术。</p>
+<h2 id="2-理论分析"><a href="#2-理论分析" class="headerlink" title="2.理论分析"></a>2.理论分析</h2><h3 id="2-1-信息论"><a href="#2-1-信息论" class="headerlink" title="2.1 信息论"></a>2.1 信息论</h3><p>  这个问题，看起来是一道玄学题，本质上其实是信息论问题。解决这个问题并不是我们的最终目的，我们应该通过这个简单的问题了解信息论的本质，以小见大，一通百通。<br>  信息论可以很好的给一个问题快速找到他的一个边界，每个信息所包含的信息量。最让人吃惊的是信息论的作者在上世纪中叶就给所有人类可以接触的所有信息问题设置了边界。人类遇到的全部都是经典问题，为这种问题设置了一个绝对的边界，无论你怎么设置也不能逾越的一个最大边界。任何人想要压缩数据、用一个事件发生去必然寻找另一个小概率事件所需要的数量等都已经被信息论所决定。<br>  当别人还在寻找问题的解决方案的时候，信息论可以让你迅速从理论角度找到答案，降维打击。让我们知道这个问题的极限在哪里，不需要做很多没意义的工作。<br>  所以我首先给大家介绍一下信息熵。</p>
+<h3 id="2-2-信息熵"><a href="#2-2-信息熵" class="headerlink" title="2.2 信息熵"></a>2.2 信息熵</h3><blockquote>
+<p>热力学的熵主要指的是：在一个孤立系统中没有外力做功的情况下，该系统的混乱程度（熵）会不断的增大。<br>信息论中的熵则指的是：信息的不确定程度</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>种类</th>
+<th>区别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热力学熵</td>
+<td>系统的混乱程度</td>
+</tr>
+<tr>
+<td>信息熵</td>
+<td>信息的不确定度</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>根据定义我们不难想到，一个信息的出现概率越小，这个信息的熵也就越大。那么举个例子：<br>两个人进行博弈，A和B这两个人如果势均力敌两者获胜的概率都是0.5，则这个两人无论谁获胜，获胜者的熵是:</p>
+<script type="math/tex; mode=display">
+H(x) =\sum_{i=1}^np_i(x)log_2(\frac 1 {p_i(x)})</script><p>b=2的时候单位是bits<br>上述例子的熵即可简单计算得到为$H(x) =\frac 1 2log_2(\frac 1 {\frac 1 2}))+\frac 1 2log_2(\frac 1 {\frac 1 2}))=1$</p>
+<p>而如果两个人的概率并不相等，比如两个人打球一个是乔丹，一个是小白。那小白获胜的概率基本上是百万分之一，那么一旦小白获胜这个事件发生的信息熵是相当大的，也就是这个事件发生的信息论巨大。</p>
+<p>因此综上所述：接下来的问题用信息论进行解决。</p>
+<h3 id="2-3-百家姓的编码"><a href="#2-3-百家姓的编码" class="headerlink" title="2.3 百家姓的编码"></a>2.3 百家姓的编码</h3><p>有了信息熵的基础，我们现在就可以很容易的将中国500多个姓进行编码，那么就可以很用以的从图片是否有你的姓名这个信息很容易，找到你自己的姓。</p>
+<blockquote>
+<p>姓名: {“赵”,”钱”,”孙”,”李”,”周”,”吴”,”郑”,”王”,”冯”,”陈”,”褚”,”卫”,”蒋”,”沈”,”韩”,”杨”,”朱”,”秦”,”尤”,”许”,”何”,”吕”,”施”,”张”,”孔”,”曹”,”严”,”华”,”金”,”魏”,”陶”,”姜”,”戚”,”谢”,”邹”,”喻”,”柏”,”水”,”窦”,”章”,”云”,”苏”,”潘”,”葛”,”奚”,”范”,”彭”,”郎”,”鲁”,”韦”,”昌”,”马”,”苗”,”凤”,”花”,”方”,”俞”,”任”,”袁”,”柳”,”酆”,”鲍”,”史”,”唐”,”费”,”廉”,”岑”,”薛”,”雷”,”贺”,”倪”,”汤”,”滕”,”殷”,”罗”,”毕”,”郝”,”邬”,”安”,”常”,”乐”,”于”,”时”,”傅”,”皮”,”卞”,”齐”,”康”,”伍”,”余”,”元”,”卜”,”顾”,”孟”,”平”,”黄”,”和”,”穆”,”萧”,”尹”,”姚”,”邵”,”湛”,”汪”,”祁”,”毛”,”禹”,”狄”,”米”,”贝”,”明”,”臧”,”计”,”伏”,”成”,”戴”,”谈”,”宋”,”茅”,”庞”,”熊”,”纪”,”舒”,”屈”,”项”,”祝”,”董”,”梁”,”杜”,”阮”,”蓝”,”闵”,”席”,”季”,”麻”,”强”,”贾”,”路”,”娄”,”危”,”江”,”童”,”颜”,”郭”,”梅”,”盛”,”林”,”刁”,”钟”,”徐”,”邱”,”骆”,”高”,”夏”,”蔡”,”田”,”樊”,”胡”,”凌”,”霍”,”虞”,”万”,”支”,”柯”,”昝”,”管”,”卢”,”莫”,”经”,”房”,”裘”,”缪”,”干”,”解”,”应”,”宗”,”丁”,”宣”,”贲”,”邓”,”郁”,”单”,”杭”,”洪”,”包”,”诸”,”左”,”石”,”崔”,”吉”,”钮”,”龚”,”程”,”嵇”,”邢”,”滑”,”裴”,”陆”,”荣”,”翁”,”荀”,”羊”,”於”,”惠”,”甄”,”麴”,”家”,”封”,”芮”,”羿”,”储”,”靳”,”汲”,”邴”,”糜”,”松”,”井”,”段”,”富”,”巫”,”乌”,”焦”,”巴”,”弓”,”牧”,”隗”,”山”,”谷”,”车”,”侯”,”宓”,”蓬”,”全”,”郗”,”班”,”仰”,”秋”,”仲”,”伊”,”宫”,”宁”,”仇”,”栾”,”暴”,”甘”,”钭”,”厉”,”戎”,”祖”,”武”,”符”,”刘”,”景”,”詹”,”束”,”龙”,”叶”,”幸”,”司”,”韶”,”郜”,”黎”,”蓟”,”薄”,”印”,”宿”,”白”,”怀”,”蒲”,”邰”,”从”,”鄂”,”索”,”咸”,”籍”,”赖”,”卓”,”蔺”,”屠”,”蒙”,”池”,”乔”,”阴”,”欎”,”胥”,”能”,”苍”,”双”,”闻”,”莘”,”党”,”翟”,”谭”,”贡”,”劳”,”逄”,”姬”,”申”,”扶”,”堵”,”冉”,”宰”,”郦”,”雍”,”舄”,”璩”,”桑”,”桂”,”濮”,”牛”,”寿”,”通”,”边”,”扈”,”燕”,”冀”,”郏”,”浦”,”尚”,”农”,”温”,”别”,”庄”,”晏”,”柴”,”瞿”,”阎”,”充”,”慕”,”连”,”茹”,”习”,”宦”,”艾”,”鱼”,”容”,”向”,”古”,”易”,”慎”,”戈”,”廖”,”庾”,”终”,”暨”,”居”,”衡”,”步”,”都”,”耿”,”满”,”弘”,”匡”,”国”,”文”,”寇”,”广”,”禄”,”阙”,”东”,”殴”,”殳”,”沃”,”利”,”蔚”,”越”,”夔”,”隆”,”师”,”巩”,”厍”,”聂”,”晁”,”勾”,”敖”,”融”,”冷”,”訾”,”辛”,”阚”,”那”,”简”,”饶”,”空”,”曾”,”毋”,”沙”,”乜”,”养”,”鞠”,”须”,”丰”,”巢”,”关”,”蒯”,”相”,”查”,”後”,”荆”,”红”,”游”,”竺”,”权”,”逯”,”盖”,”益”,”桓”,”公”,”万俟”,”司马”,”上官”,”欧阳”,”夏侯”,”诸葛”,”闻人”,”东方”,”赫连”,”皇甫”,”尉迟”,”公羊”,”澹台”,”公冶”,”宗政”,”濮阳”,”淳于”,”单于”,”太叔”,”申屠”,”公孙”,”仲孙”,”轩辕”,”令狐”,”钟离”,”宇文”,”长孙”,”慕容”,”鲜于”,”闾丘”,”司徒”,”司空”,”亓官”,”司寇”,”仉”,”督”,”子车”,”颛孙”,”端木”,”巫马”,”公西”,”漆雕”,”乐正”,”壤驷”,”公良”,”拓跋”,”夹谷”,”宰父”,”谷梁”,”晋”,”楚”,”闫”,”法”,”汝”,”鄢”,”涂”,”钦”,”段干”,”百里”,”东郭”,”南门”,”呼延”,”归”,”海”,”羊舌”,”微生”,”岳”,”帅”,”缑”,”亢”,”况”,”后”,”有”,”琴”,”梁丘”,”左丘”,”东门”,”西门”,”商”,”牟”,”佘”,”佴”,”伯”,”赏”,”南宫”,”墨”,”哈”,”谯”,”笪”,”年”,”爱”,”阳”,”佟”,”第五”,”言”,”福”}<br> 源自:<a href="https://zhidao.baidu.com/question/213833749.html" target="_blank" rel="noopener">百度知道-百家姓</a>.<br>可以找到比如从里面找到”万”这个姓的概率是$P_{“万”}(x)=\frac 1 {500}$.<br>那么你正好选中这个字的信息熵就等于$H(x)=log(\frac 1{500})\approx8.96$</p>
+<h4 id="2-3-1方式的选择"><a href="#2-3-1方式的选择" class="headerlink" title="2.3.1方式的选择"></a>2.3.1方式的选择</h4><p>1、让人只能选择一张图片里面可以选择出来他的姓，根据信息论可以知道直选一次需要至少在500个字中选择。<br>由此可见，咱们不可能用500多张图去考一个人，而且这一点也不玄学。<br>2、我们采用两次选择图片则我们可以有以下计算：<br>由于上诉我们已经知道找到万这个姓的信息熵是8.96<br>那么如果选两张图片里面可能有万这个姓的信息熵至少要达到4.48<br>那么至少需要$2^{4.48}=22.3$张图片，及两个22进制的选择提供给被测试者选择，大概就是从44张图片中选两张。<br>3、三次选择呢我们可以有以下计算：<br>由于上诉我们已经知道找到万这个姓的信息熵是8.96<br>那么如果选三张图片里面可能有万这个姓的信息熵至少要达到2.98<br>那么至少需要$2^{2.98}=7.8$张图片，及3个8张图的选择提供给被测试者选择，大概就是从24张图片中选三张。这就给选择者降低了很多难度<br>4、四次选择呢我们可以有以下计算：<br>由于上诉我们已经知道找到万这个姓的信息熵是8.96<br>那么如果选三张图片里面可能有万这个姓的信息熵至少要达到2.24<br>那么至少需要$2^{2.98}=4.72$张图片，及3个5张图的选择提供给被测试者选择，大概就是从15张图片中选四张。这就给选择者更加降低了难度<br>5、同理咱么可以不断的增加选择次数可以选择9次<br>那么我们信息熵就可以是2张图选择9次：18张图选9张</p>
+</blockquote>
+<p>但是大家可能会困惑，那么为什么不采用更多的选择次数：<br>首先：选择次数为9时，每次选择图片的时候你需要从200多个里面选一个。<br>其次：当你选了3-4次在我看来是最好的，每次选择的字不会太多大概是32-64个里面选一个降低了选择难度，其次你给的信息少，更能够让你感觉到不可思议。</p>
+<p>因此接下来我选择3次8选1，从中选择你的姓，你们可以选择其他方法进行实现。</p>
+<h2 id="3-程序设计"><a href="#3-程序设计" class="headerlink" title="3. 程序设计"></a>3. 程序设计</h2><p>读者可以参考本文代码，将百家姓进行编码，通过程序咱们可以找到你的姓名。(3x8)<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">clear;</span><br><span class="line">Book_of_Family_Names = [<span class="string">"赵"</span>,<span class="string">"钱"</span>,<span class="string">"孙"</span>,<span class="string">"李"</span>,<span class="string">"周"</span>,<span class="string">"吴"</span>,<span class="string">"郑"</span>,<span class="string">"王"</span>,<span class="string">"冯"</span>,<span class="string">"陈"</span>,<span class="string">"褚"</span>,<span class="string">"卫"</span>,<span class="string">"蒋"</span>,<span class="string">"沈"</span>,<span class="string">"韩"</span>,<span class="string">"杨"</span>,<span class="string">"朱"</span>,<span class="string">"秦"</span>,<span class="string">"尤"</span>,<span class="string">"许"</span>,<span class="string">"何"</span>,<span class="string">"吕"</span>,<span class="string">"施"</span>,<span class="string">"张"</span>,<span class="string">"孔"</span>,<span class="string">"曹"</span>,<span class="string">"严"</span>,<span class="string">"华"</span>,<span class="string">"金"</span>,<span class="string">"魏"</span>,<span class="string">"陶"</span>,<span class="string">"姜"</span>,<span class="string">"戚"</span>,<span class="string">"谢"</span>,<span class="string">"邹"</span>,<span class="string">"喻"</span>,<span class="string">"柏"</span>,<span class="string">"水"</span>,<span class="string">"窦"</span>,<span class="string">"章"</span>,<span class="string">"云"</span>,<span class="string">"苏"</span>,<span class="string">"潘"</span>,<span class="string">"葛"</span>,<span class="string">"奚"</span>,<span class="string">"范"</span>,<span class="string">"彭"</span>,<span class="string">"郎"</span>,<span class="string">"鲁"</span>,<span class="string">"韦"</span>,<span class="string">"昌"</span>,<span class="string">"马"</span>,<span class="string">"苗"</span>,<span class="string">"凤"</span>,<span class="string">"花"</span>,<span class="string">"方"</span>,<span class="string">"俞"</span>,<span class="string">"任"</span>,<span class="string">"袁"</span>,<span class="string">"柳"</span>,<span class="string">"酆"</span>,<span class="string">"鲍"</span>,<span class="string">"史"</span>,<span class="string">"唐"</span>,<span class="string">"费"</span>,<span class="string">"廉"</span>,<span class="string">"岑"</span>,<span class="string">"薛"</span>,<span class="string">"雷"</span>,<span class="string">"贺"</span>,<span class="string">"倪"</span>,<span class="string">"汤"</span>,<span class="string">"滕"</span>,<span class="string">"殷"</span>,<span class="string">"罗"</span>,<span class="string">"毕"</span>,<span class="string">"郝"</span>,<span class="string">"邬"</span>,<span class="string">"安"</span>,<span class="string">"常"</span>,<span class="string">"乐"</span>,<span class="string">"于"</span>,<span class="string">"时"</span>,<span class="string">"傅"</span>,<span class="string">"皮"</span>,<span class="string">"卞"</span>,<span class="string">"齐"</span>,<span class="string">"康"</span>,<span class="string">"伍"</span>,<span class="string">"余"</span>,<span class="string">"元"</span>,<span class="string">"卜"</span>,<span class="string">"顾"</span>,<span class="string">"孟"</span>,<span class="string">"平"</span>,<span class="string">"黄"</span>,<span class="string">"和"</span>,<span class="string">"穆"</span>,<span class="string">"萧"</span>,<span class="string">"尹"</span>,<span class="string">"姚"</span>,<span class="string">"邵"</span>,<span class="string">"湛"</span>,<span class="string">"汪"</span>,<span class="string">"祁"</span>,<span class="string">"毛"</span>,<span class="string">"禹"</span>,<span class="string">"狄"</span>,<span class="string">"米"</span>,<span class="string">"贝"</span>,<span class="string">"明"</span>,<span class="string">"臧"</span>,<span class="string">"计"</span>,<span class="string">"伏"</span>,<span class="string">"成"</span>,<span class="string">"戴"</span>,<span class="string">"谈"</span>,<span class="string">"宋"</span>,<span class="string">"茅"</span>,<span class="string">"庞"</span>,<span class="string">"熊"</span>,<span class="string">"纪"</span>,<span class="string">"舒"</span>,<span class="string">"屈"</span>,<span class="string">"项"</span>,<span class="string">"祝"</span>,<span class="string">"董"</span>,<span class="string">"梁"</span>,<span class="string">"杜"</span>,<span class="string">"阮"</span>,<span class="string">"蓝"</span>,<span class="string">"闵"</span>,<span class="string">"席"</span>,<span class="string">"季"</span>,<span class="string">"麻"</span>,<span class="string">"强"</span>,<span class="string">"贾"</span>,<span class="string">"路"</span>,<span class="string">"娄"</span>,<span class="string">"危"</span>,<span class="string">"江"</span>,<span class="string">"童"</span>,<span class="string">"颜"</span>,<span class="string">"郭"</span>,<span class="string">"梅"</span>,<span class="string">"盛"</span>,<span class="string">"林"</span>,<span class="string">"刁"</span>,<span class="string">"钟"</span>,<span class="string">"徐"</span>,<span class="string">"邱"</span>,<span class="string">"骆"</span>,<span class="string">"高"</span>,<span class="string">"夏"</span>,<span class="string">"蔡"</span>,<span class="string">"田"</span>,<span class="string">"樊"</span>,<span class="string">"胡"</span>,<span class="string">"凌"</span>,<span class="string">"霍"</span>,<span class="string">"虞"</span>,<span class="string">"万"</span>,<span class="string">"支"</span>,<span class="string">"柯"</span>,<span class="string">"昝"</span>,<span class="string">"管"</span>,<span class="string">"卢"</span>,<span class="string">"莫"</span>,<span class="string">"经"</span>,<span class="string">"房"</span>,<span class="string">"裘"</span>,<span class="string">"缪"</span>,<span class="string">"干"</span>,<span class="string">"解"</span>,<span class="string">"应"</span>,<span class="string">"宗"</span>,<span class="string">"丁"</span>,<span class="string">"宣"</span>,<span class="string">"贲"</span>,<span class="string">"邓"</span>,<span class="string">"郁"</span>,<span class="string">"单"</span>,<span class="string">"杭"</span>,<span class="string">"洪"</span>,<span class="string">"包"</span>,<span class="string">"诸"</span>,<span class="string">"左"</span>,<span class="string">"石"</span>,<span class="string">"崔"</span>,<span class="string">"吉"</span>,<span class="string">"钮"</span>,<span class="string">"龚"</span>,<span class="string">"程"</span>,<span class="string">"嵇"</span>,<span class="string">"邢"</span>,<span class="string">"滑"</span>,<span class="string">"裴"</span>,<span class="string">"陆"</span>,<span class="string">"荣"</span>,<span class="string">"翁"</span>,<span class="string">"荀"</span>,<span class="string">"羊"</span>,<span class="string">"於"</span>,<span class="string">"惠"</span>,<span class="string">"甄"</span>,<span class="string">"麴"</span>,<span class="string">"家"</span>,<span class="string">"封"</span>,<span class="string">"芮"</span>,<span class="string">"羿"</span>,<span class="string">"储"</span>,<span class="string">"靳"</span>,<span class="string">"汲"</span>,<span class="string">"邴"</span>,<span class="string">"糜"</span>,<span class="string">"松"</span>,<span class="string">"井"</span>,<span class="string">"段"</span>,<span class="string">"富"</span>,<span class="string">"巫"</span>,<span class="string">"乌"</span>,<span class="string">"焦"</span>,<span class="string">"巴"</span>,<span class="string">"弓"</span>,<span class="string">"牧"</span>,<span class="string">"隗"</span>,<span class="string">"山"</span>,<span class="string">"谷"</span>,<span class="string">"车"</span>,<span class="string">"侯"</span>,<span class="string">"宓"</span>,<span class="string">"蓬"</span>,<span class="string">"全"</span>,<span class="string">"郗"</span>,<span class="string">"班"</span>,<span class="string">"仰"</span>,<span class="string">"秋"</span>,<span class="string">"仲"</span>,<span class="string">"伊"</span>,<span class="string">"宫"</span>,<span class="string">"宁"</span>,<span class="string">"仇"</span>,<span class="string">"栾"</span>,<span class="string">"暴"</span>,<span class="string">"甘"</span>,<span class="string">"钭"</span>,<span class="string">"厉"</span>,<span class="string">"戎"</span>,<span class="string">"祖"</span>,<span class="string">"武"</span>,<span class="string">"符"</span>,<span class="string">"刘"</span>,<span class="string">"景"</span>,<span class="string">"詹"</span>,<span class="string">"束"</span>,<span class="string">"龙"</span>,<span class="string">"叶"</span>,<span class="string">"幸"</span>,<span class="string">"司"</span>,<span class="string">"韶"</span>,<span class="string">"郜"</span>,<span class="string">"黎"</span>,<span class="string">"蓟"</span>,<span class="string">"薄"</span>,<span class="string">"印"</span>,<span class="string">"宿"</span>,<span class="string">"白"</span>,<span class="string">"怀"</span>,<span class="string">"蒲"</span>,<span class="string">"邰"</span>,<span class="string">"从"</span>,<span class="string">"鄂"</span>,<span class="string">"索"</span>,<span class="string">"咸"</span>,<span class="string">"籍"</span>,<span class="string">"赖"</span>,<span class="string">"卓"</span>,<span class="string">"蔺"</span>,<span class="string">"屠"</span>,<span class="string">"蒙"</span>,<span class="string">"池"</span>,<span class="string">"乔"</span>,<span class="string">"阴"</span>,<span class="string">"欎"</span>,<span class="string">"胥"</span>,<span class="string">"能"</span>,<span class="string">"苍"</span>,<span class="string">"双"</span>,<span class="string">"闻"</span>,<span class="string">"莘"</span>,<span class="string">"党"</span>,<span class="string">"翟"</span>,<span class="string">"谭"</span>,<span class="string">"贡"</span>,<span class="string">"劳"</span>,<span class="string">"逄"</span>,<span class="string">"姬"</span>,<span class="string">"申"</span>,<span class="string">"扶"</span>,<span class="string">"堵"</span>,<span class="string">"冉"</span>,<span class="string">"宰"</span>,<span class="string">"郦"</span>,<span class="string">"雍"</span>,<span class="string">"舄"</span>,<span class="string">"璩"</span>,<span class="string">"桑"</span>,<span class="string">"桂"</span>,<span class="string">"濮"</span>,<span class="string">"牛"</span>,<span class="string">"寿"</span>,<span class="string">"通"</span>,<span class="string">"边"</span>,<span class="string">"扈"</span>,<span class="string">"燕"</span>,<span class="string">"冀"</span>,<span class="string">"郏"</span>,<span class="string">"浦"</span>,<span class="string">"尚"</span>,<span class="string">"农"</span>,<span class="string">"温"</span>,<span class="string">"别"</span>,<span class="string">"庄"</span>,<span class="string">"晏"</span>,<span class="string">"柴"</span>,<span class="string">"瞿"</span>,<span class="string">"阎"</span>,<span class="string">"充"</span>,<span class="string">"慕"</span>,<span class="string">"连"</span>,<span class="string">"茹"</span>,<span class="string">"习"</span>,<span class="string">"宦"</span>,<span class="string">"艾"</span>,<span class="string">"鱼"</span>,<span class="string">"容"</span>,<span class="string">"向"</span>,<span class="string">"古"</span>,<span class="string">"易"</span>,<span class="string">"慎"</span>,<span class="string">"戈"</span>,<span class="string">"廖"</span>,<span class="string">"庾"</span>,<span class="string">"终"</span>,<span class="string">"暨"</span>,<span class="string">"居"</span>,<span class="string">"衡"</span>,<span class="string">"步"</span>,<span class="string">"都"</span>,<span class="string">"耿"</span>,<span class="string">"满"</span>,<span class="string">"弘"</span>,<span class="string">"匡"</span>,<span class="string">"国"</span>,<span class="string">"文"</span>,<span class="string">"寇"</span>,<span class="string">"广"</span>,<span class="string">"禄"</span>,<span class="string">"阙"</span>,<span class="string">"东"</span>,<span class="string">"殴"</span>,<span class="string">"殳"</span>,<span class="string">"沃"</span>,<span class="string">"利"</span>,<span class="string">"蔚"</span>,<span class="string">"越"</span>,<span class="string">"夔"</span>,<span class="string">"隆"</span>,<span class="string">"师"</span>,<span class="string">"巩"</span>,<span class="string">"厍"</span>,<span class="string">"聂"</span>,<span class="string">"晁"</span>,<span class="string">"勾"</span>,<span class="string">"敖"</span>,<span class="string">"融"</span>,<span class="string">"冷"</span>,<span class="string">"訾"</span>,<span class="string">"辛"</span>,<span class="string">"阚"</span>,<span class="string">"那"</span>,<span class="string">"简"</span>,<span class="string">"饶"</span>,<span class="string">"空"</span>,<span class="string">"曾"</span>,<span class="string">"毋"</span>,<span class="string">"沙"</span>,<span class="string">"乜"</span>,<span class="string">"养"</span>,<span class="string">"鞠"</span>,<span class="string">"须"</span>,<span class="string">"丰"</span>,<span class="string">"巢"</span>,<span class="string">"关"</span>,<span class="string">"蒯"</span>,<span class="string">"相"</span>,<span class="string">"查"</span>,<span class="string">"後"</span>,<span class="string">"荆"</span>,<span class="string">"红"</span>,<span class="string">"游"</span>,<span class="string">"竺"</span>,<span class="string">"权"</span>,<span class="string">"逯"</span>,<span class="string">"盖"</span>,<span class="string">"益"</span>,<span class="string">"桓"</span>,<span class="string">"公"</span>,<span class="string">"万俟"</span>,<span class="string">"司马"</span>,<span class="string">"上官"</span>,<span class="string">"欧阳"</span>,<span class="string">"夏侯"</span>,<span class="string">"诸葛"</span>,<span class="string">"闻人"</span>,<span class="string">"东方"</span>,<span class="string">"赫连"</span>,<span class="string">"皇甫"</span>,<span class="string">"尉迟"</span>,<span class="string">"公羊"</span>,<span class="string">"澹台"</span>,<span class="string">"公冶"</span>,<span class="string">"宗政"</span>,<span class="string">"濮阳"</span>,<span class="string">"淳于"</span>,<span class="string">"单于"</span>,<span class="string">"太叔"</span>,<span class="string">"申屠"</span>,<span class="string">"公孙"</span>,<span class="string">"仲孙"</span>,<span class="string">"轩辕"</span>,<span class="string">"令狐"</span>,<span class="string">"钟离"</span>,<span class="string">"宇文"</span>,<span class="string">"长孙"</span>,<span class="string">"慕容"</span>,<span class="string">"鲜于"</span>,<span class="string">"闾丘"</span>,<span class="string">"司徒"</span>,<span class="string">"司空"</span>,<span class="string">"亓官"</span>,<span class="string">"司寇"</span>,<span class="string">"仉"</span>,<span class="string">"督"</span>,<span class="string">"子车"</span>,<span class="string">"颛孙"</span>,<span class="string">"端木"</span>,<span class="string">"巫马"</span>,<span class="string">"公西"</span>,<span class="string">"漆雕"</span>,<span class="string">"乐正"</span>,<span class="string">"壤驷"</span>,<span class="string">"公良"</span>,<span class="string">"拓跋"</span>,<span class="string">"夹谷"</span>,<span class="string">"宰父"</span>,<span class="string">"谷梁"</span>,<span class="string">"晋"</span>,<span class="string">"楚"</span>,<span class="string">"闫"</span>,<span class="string">"法"</span>,<span class="string">"汝"</span>,<span class="string">"鄢"</span>,<span class="string">"涂"</span>,<span class="string">"钦"</span>,<span class="string">"段干"</span>,<span class="string">"百里"</span>,<span class="string">"东郭"</span>,<span class="string">"南门"</span>,<span class="string">"呼延"</span>,<span class="string">"归"</span>,<span class="string">"海"</span>,<span class="string">"羊舌"</span>,<span class="string">"微生"</span>,<span class="string">"岳"</span>,<span class="string">"帅"</span>,<span class="string">"缑"</span>,<span class="string">"亢"</span>,<span class="string">"况"</span>,<span class="string">"后"</span>,<span class="string">"有"</span>,<span class="string">"琴"</span>,<span class="string">"梁丘"</span>,<span class="string">"左丘"</span>,<span class="string">"东门"</span>,<span class="string">"西门"</span>,<span class="string">"商"</span>,<span class="string">"牟"</span>,<span class="string">"佘"</span>,<span class="string">"佴"</span>,<span class="string">"伯"</span>,<span class="string">"赏"</span>,<span class="string">"南宫"</span>,<span class="string">"墨"</span>,<span class="string">"哈"</span>,<span class="string">"谯"</span>,<span class="string">"笪"</span>,<span class="string">"年"</span>,<span class="string">"爱"</span>,<span class="string">"阳"</span>,<span class="string">"佟"</span>,<span class="string">"第五"</span>,<span class="string">"言"</span>,<span class="string">"福"</span>];</span><br><span class="line">save Book_of_Family_Names.mat  Book_of_Family_Names;</span><br><span class="line">%信息量 log <span class="number">500</span> <span class="number">9</span>   [<span class="number">1</span><span class="number">-8</span>][<span class="number">1</span><span class="number">-8</span>][<span class="number">1</span><span class="number">-8</span>]</span><br><span class="line">Names_code= [<span class="string">"赵"</span>,<span class="string">"钱"</span>,<span class="string">"孙"</span>,<span class="string">"李"</span>,<span class="string">"周"</span>,<span class="string">"吴"</span>,<span class="string">"郑"</span>,<span class="string">"王"</span>];</span><br><span class="line"><span class="keyword">for</span> i=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">Names_code_N2(i,:)=Names_code;</span><br><span class="line">end</span><br><span class="line"><span class="keyword">for</span> i=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">Names_code_N3(i,:,:)=Names_code_N2;</span><br><span class="line">end</span><br><span class="line"><span class="keyword">for</span> a = <span class="number">1</span>:<span class="number">8</span></span><br><span class="line">    <span class="keyword">for</span> b=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">        <span class="keyword">for</span> c=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">            <span class="keyword">if</span> (a<span class="number">-1</span>)*<span class="number">8</span>^<span class="number">2</span>+(b<span class="number">-1</span>)*<span class="number">8</span>+c<span class="number">-1</span>&lt;length(Book_of_Family_Names)</span><br><span class="line">                Names_code_N(a,b,c)=Book_of_Family_Names((a<span class="number">-1</span>)*<span class="number">8</span>^<span class="number">2</span>+(b<span class="number">-1</span>)*<span class="number">8</span>+c);</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                Names_code_N(a,b,c)= <span class="string">"猫"</span>;</span><br><span class="line">            end</span><br><span class="line">        end</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> a=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">  <span class="keyword">for</span> b=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">        <span class="keyword">for</span> c=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">            figure(c)</span><br><span class="line">                    text(a*<span class="number">0.1</span>,b*<span class="number">0.1</span>,Names_code_N(a,b,c));  </span><br><span class="line">           hold on</span><br><span class="line">        end</span><br><span class="line">  end</span><br><span class="line"> end</span><br><span class="line"> </span><br><span class="line">a1=input(<span class="string">'choice the your Chinese name'</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> a=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">  <span class="keyword">for</span> b=<span class="number">1</span>:<span class="number">8</span>                 </span><br><span class="line">        <span class="keyword">for</span> c=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">            figure(<span class="number">2</span>*b)</span><br><span class="line">                    text(a*<span class="number">0.1</span>,c*<span class="number">0.1</span>,Names_code_N(a,b,c));  </span><br><span class="line">            hold on</span><br><span class="line">        end</span><br><span class="line">  end</span><br><span class="line"> end</span><br><span class="line"> </span><br><span class="line">b1=input(<span class="string">'choice the your Chinese name'</span>);</span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> a=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">  <span class="keyword">for</span> b=<span class="number">1</span>:<span class="number">8</span>                 </span><br><span class="line">        <span class="keyword">for</span> c=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">            figure(<span class="number">3</span>*a)</span><br><span class="line">                    text(b*<span class="number">0.1</span>,c*<span class="number">0.1</span>,Names_code_N(a,b,c));  </span><br><span class="line">            hold on</span><br><span class="line">        end</span><br><span class="line">  end</span><br><span class="line"> end</span><br><span class="line"> </span><br><span class="line">c1=input(<span class="string">'choice the your Chinese name'</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">disp(Names_code_N(a1,b2,c1));</span><br></pre></td></tr></table></figure></p>
+<h2 id="4-图形用户界面设计"><a href="#4-图形用户界面设计" class="headerlink" title="4.图形用户界面设计"></a>4.图形用户界面设计</h2><ul>
+<li><p>1.第一次选择<br><img src="https://img-blog.csdnimg.cn/20201023212813254.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+</li>
+<li><p>2.第二次选择<br><img src="https://img-blog.csdnimg.cn/20201023215340588.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+</li>
+<li><p>3.第三次选择</p>
+</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20201023215522191.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<ul>
+<li><p>结果：<br><img src="https://img-blog.csdnimg.cn/20201023215814953.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+</li>
+<li><p>[x] 你的姓是万对吗？</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gantt</span><br><span class="line">        dateFormat  2020-10-23</span><br><span class="line">        title  不用告诉我就能知道你的姓</span><br><span class="line">        section 已经完成</span><br><span class="line">        已完成               :done,    des1, 2020-10-06,2020-10-16</span><br><span class="line">        进行中               :active,  des2, 2020-10-023, 3d</span><br><span class="line">        选择2               :         des3, after des2, 4d</span><br><span class="line">        选择3               :         des4, after des3, 2d</span><br></pre></td></tr></table></figure>
+<h2 id="5-结论"><a href="#5-结论" class="headerlink" title="5.结论"></a>5.结论</h2><p>可以修改尝试进行4x4进行选择[4,4,4,4]</p>
+<p> 源代码:<a href="https://zhidao.baidu.com/question/213833749.html" target="_blank" rel="noopener">不问知其名-赚点小积分</a>.</p>
+]]></content>
+      <categories>
+        <category>普通设计</category>
+      </categories>
+      <tags>
+        <tag>信息论</tag>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Yolo5使用</title>
     <url>/2021/07/19/yolo5%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Yolov5-训练and识别"><a href="#Yolov5-训练and识别" class="headerlink" title="Yolov5_训练and识别"></a>Yolov5_训练and识别</h1><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>python 3.8.5</p>
@@ -2471,76 +2541,6 @@ If you are talking to a group of managers, you may refer to the disorganized met
       </tags>
   </entry>
   <entry>
-    <title>信息论一个小实例</title>
-    <url>/2020/10/23/%E2%80%9C%E4%B8%8D%E9%97%AE%EF%BC%8C%E7%9F%A5%E4%BD%A0%E5%90%8D%E2%80%9D%E7%9A%84%E7%8E%84%E5%AD%A6%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>ssh-keygen -t rsa -C v@mmrsl.cn<br>ssh-keygen -t rsa -C kp@mmrsl.cn</p>
-<h1 id="不用问知道你名字的玄学问题"><a href="#不用问知道你名字的玄学问题" class="headerlink" title="不用问知道你名字的玄学问题"></a><center>不用问知道你名字的玄学问题</center></h1><a id="more"></a>
-<h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h1><p>  不知道大家有没有遇到路边有人问你，不用问你的姓就能知道你姓什么，当然我也遇到了。我怕被要钱就没有问，但后来仔细寻思挺有趣的，到底是什么原理呢，很多人都在网上给出了自己的解释，但在我看来却没有完全解决我的疑惑。近期看信息论有感，感觉是很有智慧的信息编码技术。</p>
-<h2 id="2-理论分析"><a href="#2-理论分析" class="headerlink" title="2.理论分析"></a>2.理论分析</h2><h3 id="2-1-信息论"><a href="#2-1-信息论" class="headerlink" title="2.1 信息论"></a>2.1 信息论</h3><p>  这个问题，看起来是一道玄学题，本质上其实是信息论问题。解决这个问题并不是我们的最终目的，我们应该通过这个简单的问题了解信息论的本质，以小见大，一通百通。<br>  信息论可以很好的给一个问题快速找到他的一个边界，每个信息所包含的信息量。最让人吃惊的是信息论的作者在上世纪中叶就给所有人类可以接触的所有信息问题设置了边界。人类遇到的全部都是经典问题，为这种问题设置了一个绝对的边界，无论你怎么设置也不能逾越的一个最大边界。任何人想要压缩数据、用一个事件发生去必然寻找另一个小概率事件所需要的数量等都已经被信息论所决定。<br>  当别人还在寻找问题的解决方案的时候，信息论可以让你迅速从理论角度找到答案，降维打击。让我们知道这个问题的极限在哪里，不需要做很多没意义的工作。<br>  所以我首先给大家介绍一下信息熵。</p>
-<h3 id="2-2-信息熵"><a href="#2-2-信息熵" class="headerlink" title="2.2 信息熵"></a>2.2 信息熵</h3><blockquote>
-<p>热力学的熵主要指的是：在一个孤立系统中没有外力做功的情况下，该系统的混乱程度（熵）会不断的增大。<br>信息论中的熵则指的是：信息的不确定程度</p>
-</blockquote>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>种类</th>
-<th>区别</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>热力学熵</td>
-<td>系统的混乱程度</td>
-</tr>
-<tr>
-<td>信息熵</td>
-<td>信息的不确定度</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>根据定义我们不难想到，一个信息的出现概率越小，这个信息的熵也就越大。那么举个例子：<br>两个人进行博弈，A和B这两个人如果势均力敌两者获胜的概率都是0.5，则这个两人无论谁获胜，获胜者的熵是:</p>
-<script type="math/tex; mode=display">
-H(x) =\sum_{i=1}^np_i(x)log_2(\frac 1 {p_i(x)})</script><p>b=2的时候单位是bits<br>上述例子的熵即可简单计算得到为$H(x) =\frac 1 2log_2(\frac 1 {\frac 1 2}))+\frac 1 2log_2(\frac 1 {\frac 1 2}))=1$</p>
-<p>而如果两个人的概率并不相等，比如两个人打球一个是乔丹，一个是小白。那小白获胜的概率基本上是百万分之一，那么一旦小白获胜这个事件发生的信息熵是相当大的，也就是这个事件发生的信息论巨大。</p>
-<p>因此综上所述：接下来的问题用信息论进行解决。</p>
-<h3 id="2-3-百家姓的编码"><a href="#2-3-百家姓的编码" class="headerlink" title="2.3 百家姓的编码"></a>2.3 百家姓的编码</h3><p>有了信息熵的基础，我们现在就可以很容易的将中国500多个姓进行编码，那么就可以很用以的从图片是否有你的姓名这个信息很容易，找到你自己的姓。</p>
-<blockquote>
-<p>姓名: {“赵”,”钱”,”孙”,”李”,”周”,”吴”,”郑”,”王”,”冯”,”陈”,”褚”,”卫”,”蒋”,”沈”,”韩”,”杨”,”朱”,”秦”,”尤”,”许”,”何”,”吕”,”施”,”张”,”孔”,”曹”,”严”,”华”,”金”,”魏”,”陶”,”姜”,”戚”,”谢”,”邹”,”喻”,”柏”,”水”,”窦”,”章”,”云”,”苏”,”潘”,”葛”,”奚”,”范”,”彭”,”郎”,”鲁”,”韦”,”昌”,”马”,”苗”,”凤”,”花”,”方”,”俞”,”任”,”袁”,”柳”,”酆”,”鲍”,”史”,”唐”,”费”,”廉”,”岑”,”薛”,”雷”,”贺”,”倪”,”汤”,”滕”,”殷”,”罗”,”毕”,”郝”,”邬”,”安”,”常”,”乐”,”于”,”时”,”傅”,”皮”,”卞”,”齐”,”康”,”伍”,”余”,”元”,”卜”,”顾”,”孟”,”平”,”黄”,”和”,”穆”,”萧”,”尹”,”姚”,”邵”,”湛”,”汪”,”祁”,”毛”,”禹”,”狄”,”米”,”贝”,”明”,”臧”,”计”,”伏”,”成”,”戴”,”谈”,”宋”,”茅”,”庞”,”熊”,”纪”,”舒”,”屈”,”项”,”祝”,”董”,”梁”,”杜”,”阮”,”蓝”,”闵”,”席”,”季”,”麻”,”强”,”贾”,”路”,”娄”,”危”,”江”,”童”,”颜”,”郭”,”梅”,”盛”,”林”,”刁”,”钟”,”徐”,”邱”,”骆”,”高”,”夏”,”蔡”,”田”,”樊”,”胡”,”凌”,”霍”,”虞”,”万”,”支”,”柯”,”昝”,”管”,”卢”,”莫”,”经”,”房”,”裘”,”缪”,”干”,”解”,”应”,”宗”,”丁”,”宣”,”贲”,”邓”,”郁”,”单”,”杭”,”洪”,”包”,”诸”,”左”,”石”,”崔”,”吉”,”钮”,”龚”,”程”,”嵇”,”邢”,”滑”,”裴”,”陆”,”荣”,”翁”,”荀”,”羊”,”於”,”惠”,”甄”,”麴”,”家”,”封”,”芮”,”羿”,”储”,”靳”,”汲”,”邴”,”糜”,”松”,”井”,”段”,”富”,”巫”,”乌”,”焦”,”巴”,”弓”,”牧”,”隗”,”山”,”谷”,”车”,”侯”,”宓”,”蓬”,”全”,”郗”,”班”,”仰”,”秋”,”仲”,”伊”,”宫”,”宁”,”仇”,”栾”,”暴”,”甘”,”钭”,”厉”,”戎”,”祖”,”武”,”符”,”刘”,”景”,”詹”,”束”,”龙”,”叶”,”幸”,”司”,”韶”,”郜”,”黎”,”蓟”,”薄”,”印”,”宿”,”白”,”怀”,”蒲”,”邰”,”从”,”鄂”,”索”,”咸”,”籍”,”赖”,”卓”,”蔺”,”屠”,”蒙”,”池”,”乔”,”阴”,”欎”,”胥”,”能”,”苍”,”双”,”闻”,”莘”,”党”,”翟”,”谭”,”贡”,”劳”,”逄”,”姬”,”申”,”扶”,”堵”,”冉”,”宰”,”郦”,”雍”,”舄”,”璩”,”桑”,”桂”,”濮”,”牛”,”寿”,”通”,”边”,”扈”,”燕”,”冀”,”郏”,”浦”,”尚”,”农”,”温”,”别”,”庄”,”晏”,”柴”,”瞿”,”阎”,”充”,”慕”,”连”,”茹”,”习”,”宦”,”艾”,”鱼”,”容”,”向”,”古”,”易”,”慎”,”戈”,”廖”,”庾”,”终”,”暨”,”居”,”衡”,”步”,”都”,”耿”,”满”,”弘”,”匡”,”国”,”文”,”寇”,”广”,”禄”,”阙”,”东”,”殴”,”殳”,”沃”,”利”,”蔚”,”越”,”夔”,”隆”,”师”,”巩”,”厍”,”聂”,”晁”,”勾”,”敖”,”融”,”冷”,”訾”,”辛”,”阚”,”那”,”简”,”饶”,”空”,”曾”,”毋”,”沙”,”乜”,”养”,”鞠”,”须”,”丰”,”巢”,”关”,”蒯”,”相”,”查”,”後”,”荆”,”红”,”游”,”竺”,”权”,”逯”,”盖”,”益”,”桓”,”公”,”万俟”,”司马”,”上官”,”欧阳”,”夏侯”,”诸葛”,”闻人”,”东方”,”赫连”,”皇甫”,”尉迟”,”公羊”,”澹台”,”公冶”,”宗政”,”濮阳”,”淳于”,”单于”,”太叔”,”申屠”,”公孙”,”仲孙”,”轩辕”,”令狐”,”钟离”,”宇文”,”长孙”,”慕容”,”鲜于”,”闾丘”,”司徒”,”司空”,”亓官”,”司寇”,”仉”,”督”,”子车”,”颛孙”,”端木”,”巫马”,”公西”,”漆雕”,”乐正”,”壤驷”,”公良”,”拓跋”,”夹谷”,”宰父”,”谷梁”,”晋”,”楚”,”闫”,”法”,”汝”,”鄢”,”涂”,”钦”,”段干”,”百里”,”东郭”,”南门”,”呼延”,”归”,”海”,”羊舌”,”微生”,”岳”,”帅”,”缑”,”亢”,”况”,”后”,”有”,”琴”,”梁丘”,”左丘”,”东门”,”西门”,”商”,”牟”,”佘”,”佴”,”伯”,”赏”,”南宫”,”墨”,”哈”,”谯”,”笪”,”年”,”爱”,”阳”,”佟”,”第五”,”言”,”福”}<br> 源自:<a href="https://zhidao.baidu.com/question/213833749.html" target="_blank" rel="noopener">百度知道-百家姓</a>.<br>可以找到比如从里面找到”万”这个姓的概率是$P_{“万”}(x)=\frac 1 {500}$.<br>那么你正好选中这个字的信息熵就等于$H(x)=log(\frac 1{500})\approx8.96$</p>
-<h4 id="2-3-1方式的选择"><a href="#2-3-1方式的选择" class="headerlink" title="2.3.1方式的选择"></a>2.3.1方式的选择</h4><p>1、让人只能选择一张图片里面可以选择出来他的姓，根据信息论可以知道直选一次需要至少在500个字中选择。<br>由此可见，咱们不可能用500多张图去考一个人，而且这一点也不玄学。<br>2、我们采用两次选择图片则我们可以有以下计算：<br>由于上诉我们已经知道找到万这个姓的信息熵是8.96<br>那么如果选两张图片里面可能有万这个姓的信息熵至少要达到4.48<br>那么至少需要$2^{4.48}=22.3$张图片，及两个22进制的选择提供给被测试者选择，大概就是从44张图片中选两张。<br>3、三次选择呢我们可以有以下计算：<br>由于上诉我们已经知道找到万这个姓的信息熵是8.96<br>那么如果选三张图片里面可能有万这个姓的信息熵至少要达到2.98<br>那么至少需要$2^{2.98}=7.8$张图片，及3个8张图的选择提供给被测试者选择，大概就是从24张图片中选三张。这就给选择者降低了很多难度<br>4、四次选择呢我们可以有以下计算：<br>由于上诉我们已经知道找到万这个姓的信息熵是8.96<br>那么如果选三张图片里面可能有万这个姓的信息熵至少要达到2.24<br>那么至少需要$2^{2.98}=4.72$张图片，及3个5张图的选择提供给被测试者选择，大概就是从15张图片中选四张。这就给选择者更加降低了难度<br>5、同理咱么可以不断的增加选择次数可以选择9次<br>那么我们信息熵就可以是2张图选择9次：18张图选9张</p>
-</blockquote>
-<p>但是大家可能会困惑，那么为什么不采用更多的选择次数：<br>首先：选择次数为9时，每次选择图片的时候你需要从200多个里面选一个。<br>其次：当你选了3-4次在我看来是最好的，每次选择的字不会太多大概是32-64个里面选一个降低了选择难度，其次你给的信息少，更能够让你感觉到不可思议。</p>
-<p>因此接下来我选择3次8选1，从中选择你的姓，你们可以选择其他方法进行实现。</p>
-<h2 id="3-程序设计"><a href="#3-程序设计" class="headerlink" title="3. 程序设计"></a>3. 程序设计</h2><p>读者可以参考本文代码，将百家姓进行编码，通过程序咱们可以找到你的姓名。(3x8)<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">clear;</span><br><span class="line">Book_of_Family_Names = [<span class="string">"赵"</span>,<span class="string">"钱"</span>,<span class="string">"孙"</span>,<span class="string">"李"</span>,<span class="string">"周"</span>,<span class="string">"吴"</span>,<span class="string">"郑"</span>,<span class="string">"王"</span>,<span class="string">"冯"</span>,<span class="string">"陈"</span>,<span class="string">"褚"</span>,<span class="string">"卫"</span>,<span class="string">"蒋"</span>,<span class="string">"沈"</span>,<span class="string">"韩"</span>,<span class="string">"杨"</span>,<span class="string">"朱"</span>,<span class="string">"秦"</span>,<span class="string">"尤"</span>,<span class="string">"许"</span>,<span class="string">"何"</span>,<span class="string">"吕"</span>,<span class="string">"施"</span>,<span class="string">"张"</span>,<span class="string">"孔"</span>,<span class="string">"曹"</span>,<span class="string">"严"</span>,<span class="string">"华"</span>,<span class="string">"金"</span>,<span class="string">"魏"</span>,<span class="string">"陶"</span>,<span class="string">"姜"</span>,<span class="string">"戚"</span>,<span class="string">"谢"</span>,<span class="string">"邹"</span>,<span class="string">"喻"</span>,<span class="string">"柏"</span>,<span class="string">"水"</span>,<span class="string">"窦"</span>,<span class="string">"章"</span>,<span class="string">"云"</span>,<span class="string">"苏"</span>,<span class="string">"潘"</span>,<span class="string">"葛"</span>,<span class="string">"奚"</span>,<span class="string">"范"</span>,<span class="string">"彭"</span>,<span class="string">"郎"</span>,<span class="string">"鲁"</span>,<span class="string">"韦"</span>,<span class="string">"昌"</span>,<span class="string">"马"</span>,<span class="string">"苗"</span>,<span class="string">"凤"</span>,<span class="string">"花"</span>,<span class="string">"方"</span>,<span class="string">"俞"</span>,<span class="string">"任"</span>,<span class="string">"袁"</span>,<span class="string">"柳"</span>,<span class="string">"酆"</span>,<span class="string">"鲍"</span>,<span class="string">"史"</span>,<span class="string">"唐"</span>,<span class="string">"费"</span>,<span class="string">"廉"</span>,<span class="string">"岑"</span>,<span class="string">"薛"</span>,<span class="string">"雷"</span>,<span class="string">"贺"</span>,<span class="string">"倪"</span>,<span class="string">"汤"</span>,<span class="string">"滕"</span>,<span class="string">"殷"</span>,<span class="string">"罗"</span>,<span class="string">"毕"</span>,<span class="string">"郝"</span>,<span class="string">"邬"</span>,<span class="string">"安"</span>,<span class="string">"常"</span>,<span class="string">"乐"</span>,<span class="string">"于"</span>,<span class="string">"时"</span>,<span class="string">"傅"</span>,<span class="string">"皮"</span>,<span class="string">"卞"</span>,<span class="string">"齐"</span>,<span class="string">"康"</span>,<span class="string">"伍"</span>,<span class="string">"余"</span>,<span class="string">"元"</span>,<span class="string">"卜"</span>,<span class="string">"顾"</span>,<span class="string">"孟"</span>,<span class="string">"平"</span>,<span class="string">"黄"</span>,<span class="string">"和"</span>,<span class="string">"穆"</span>,<span class="string">"萧"</span>,<span class="string">"尹"</span>,<span class="string">"姚"</span>,<span class="string">"邵"</span>,<span class="string">"湛"</span>,<span class="string">"汪"</span>,<span class="string">"祁"</span>,<span class="string">"毛"</span>,<span class="string">"禹"</span>,<span class="string">"狄"</span>,<span class="string">"米"</span>,<span class="string">"贝"</span>,<span class="string">"明"</span>,<span class="string">"臧"</span>,<span class="string">"计"</span>,<span class="string">"伏"</span>,<span class="string">"成"</span>,<span class="string">"戴"</span>,<span class="string">"谈"</span>,<span class="string">"宋"</span>,<span class="string">"茅"</span>,<span class="string">"庞"</span>,<span class="string">"熊"</span>,<span class="string">"纪"</span>,<span class="string">"舒"</span>,<span class="string">"屈"</span>,<span class="string">"项"</span>,<span class="string">"祝"</span>,<span class="string">"董"</span>,<span class="string">"梁"</span>,<span class="string">"杜"</span>,<span class="string">"阮"</span>,<span class="string">"蓝"</span>,<span class="string">"闵"</span>,<span class="string">"席"</span>,<span class="string">"季"</span>,<span class="string">"麻"</span>,<span class="string">"强"</span>,<span class="string">"贾"</span>,<span class="string">"路"</span>,<span class="string">"娄"</span>,<span class="string">"危"</span>,<span class="string">"江"</span>,<span class="string">"童"</span>,<span class="string">"颜"</span>,<span class="string">"郭"</span>,<span class="string">"梅"</span>,<span class="string">"盛"</span>,<span class="string">"林"</span>,<span class="string">"刁"</span>,<span class="string">"钟"</span>,<span class="string">"徐"</span>,<span class="string">"邱"</span>,<span class="string">"骆"</span>,<span class="string">"高"</span>,<span class="string">"夏"</span>,<span class="string">"蔡"</span>,<span class="string">"田"</span>,<span class="string">"樊"</span>,<span class="string">"胡"</span>,<span class="string">"凌"</span>,<span class="string">"霍"</span>,<span class="string">"虞"</span>,<span class="string">"万"</span>,<span class="string">"支"</span>,<span class="string">"柯"</span>,<span class="string">"昝"</span>,<span class="string">"管"</span>,<span class="string">"卢"</span>,<span class="string">"莫"</span>,<span class="string">"经"</span>,<span class="string">"房"</span>,<span class="string">"裘"</span>,<span class="string">"缪"</span>,<span class="string">"干"</span>,<span class="string">"解"</span>,<span class="string">"应"</span>,<span class="string">"宗"</span>,<span class="string">"丁"</span>,<span class="string">"宣"</span>,<span class="string">"贲"</span>,<span class="string">"邓"</span>,<span class="string">"郁"</span>,<span class="string">"单"</span>,<span class="string">"杭"</span>,<span class="string">"洪"</span>,<span class="string">"包"</span>,<span class="string">"诸"</span>,<span class="string">"左"</span>,<span class="string">"石"</span>,<span class="string">"崔"</span>,<span class="string">"吉"</span>,<span class="string">"钮"</span>,<span class="string">"龚"</span>,<span class="string">"程"</span>,<span class="string">"嵇"</span>,<span class="string">"邢"</span>,<span class="string">"滑"</span>,<span class="string">"裴"</span>,<span class="string">"陆"</span>,<span class="string">"荣"</span>,<span class="string">"翁"</span>,<span class="string">"荀"</span>,<span class="string">"羊"</span>,<span class="string">"於"</span>,<span class="string">"惠"</span>,<span class="string">"甄"</span>,<span class="string">"麴"</span>,<span class="string">"家"</span>,<span class="string">"封"</span>,<span class="string">"芮"</span>,<span class="string">"羿"</span>,<span class="string">"储"</span>,<span class="string">"靳"</span>,<span class="string">"汲"</span>,<span class="string">"邴"</span>,<span class="string">"糜"</span>,<span class="string">"松"</span>,<span class="string">"井"</span>,<span class="string">"段"</span>,<span class="string">"富"</span>,<span class="string">"巫"</span>,<span class="string">"乌"</span>,<span class="string">"焦"</span>,<span class="string">"巴"</span>,<span class="string">"弓"</span>,<span class="string">"牧"</span>,<span class="string">"隗"</span>,<span class="string">"山"</span>,<span class="string">"谷"</span>,<span class="string">"车"</span>,<span class="string">"侯"</span>,<span class="string">"宓"</span>,<span class="string">"蓬"</span>,<span class="string">"全"</span>,<span class="string">"郗"</span>,<span class="string">"班"</span>,<span class="string">"仰"</span>,<span class="string">"秋"</span>,<span class="string">"仲"</span>,<span class="string">"伊"</span>,<span class="string">"宫"</span>,<span class="string">"宁"</span>,<span class="string">"仇"</span>,<span class="string">"栾"</span>,<span class="string">"暴"</span>,<span class="string">"甘"</span>,<span class="string">"钭"</span>,<span class="string">"厉"</span>,<span class="string">"戎"</span>,<span class="string">"祖"</span>,<span class="string">"武"</span>,<span class="string">"符"</span>,<span class="string">"刘"</span>,<span class="string">"景"</span>,<span class="string">"詹"</span>,<span class="string">"束"</span>,<span class="string">"龙"</span>,<span class="string">"叶"</span>,<span class="string">"幸"</span>,<span class="string">"司"</span>,<span class="string">"韶"</span>,<span class="string">"郜"</span>,<span class="string">"黎"</span>,<span class="string">"蓟"</span>,<span class="string">"薄"</span>,<span class="string">"印"</span>,<span class="string">"宿"</span>,<span class="string">"白"</span>,<span class="string">"怀"</span>,<span class="string">"蒲"</span>,<span class="string">"邰"</span>,<span class="string">"从"</span>,<span class="string">"鄂"</span>,<span class="string">"索"</span>,<span class="string">"咸"</span>,<span class="string">"籍"</span>,<span class="string">"赖"</span>,<span class="string">"卓"</span>,<span class="string">"蔺"</span>,<span class="string">"屠"</span>,<span class="string">"蒙"</span>,<span class="string">"池"</span>,<span class="string">"乔"</span>,<span class="string">"阴"</span>,<span class="string">"欎"</span>,<span class="string">"胥"</span>,<span class="string">"能"</span>,<span class="string">"苍"</span>,<span class="string">"双"</span>,<span class="string">"闻"</span>,<span class="string">"莘"</span>,<span class="string">"党"</span>,<span class="string">"翟"</span>,<span class="string">"谭"</span>,<span class="string">"贡"</span>,<span class="string">"劳"</span>,<span class="string">"逄"</span>,<span class="string">"姬"</span>,<span class="string">"申"</span>,<span class="string">"扶"</span>,<span class="string">"堵"</span>,<span class="string">"冉"</span>,<span class="string">"宰"</span>,<span class="string">"郦"</span>,<span class="string">"雍"</span>,<span class="string">"舄"</span>,<span class="string">"璩"</span>,<span class="string">"桑"</span>,<span class="string">"桂"</span>,<span class="string">"濮"</span>,<span class="string">"牛"</span>,<span class="string">"寿"</span>,<span class="string">"通"</span>,<span class="string">"边"</span>,<span class="string">"扈"</span>,<span class="string">"燕"</span>,<span class="string">"冀"</span>,<span class="string">"郏"</span>,<span class="string">"浦"</span>,<span class="string">"尚"</span>,<span class="string">"农"</span>,<span class="string">"温"</span>,<span class="string">"别"</span>,<span class="string">"庄"</span>,<span class="string">"晏"</span>,<span class="string">"柴"</span>,<span class="string">"瞿"</span>,<span class="string">"阎"</span>,<span class="string">"充"</span>,<span class="string">"慕"</span>,<span class="string">"连"</span>,<span class="string">"茹"</span>,<span class="string">"习"</span>,<span class="string">"宦"</span>,<span class="string">"艾"</span>,<span class="string">"鱼"</span>,<span class="string">"容"</span>,<span class="string">"向"</span>,<span class="string">"古"</span>,<span class="string">"易"</span>,<span class="string">"慎"</span>,<span class="string">"戈"</span>,<span class="string">"廖"</span>,<span class="string">"庾"</span>,<span class="string">"终"</span>,<span class="string">"暨"</span>,<span class="string">"居"</span>,<span class="string">"衡"</span>,<span class="string">"步"</span>,<span class="string">"都"</span>,<span class="string">"耿"</span>,<span class="string">"满"</span>,<span class="string">"弘"</span>,<span class="string">"匡"</span>,<span class="string">"国"</span>,<span class="string">"文"</span>,<span class="string">"寇"</span>,<span class="string">"广"</span>,<span class="string">"禄"</span>,<span class="string">"阙"</span>,<span class="string">"东"</span>,<span class="string">"殴"</span>,<span class="string">"殳"</span>,<span class="string">"沃"</span>,<span class="string">"利"</span>,<span class="string">"蔚"</span>,<span class="string">"越"</span>,<span class="string">"夔"</span>,<span class="string">"隆"</span>,<span class="string">"师"</span>,<span class="string">"巩"</span>,<span class="string">"厍"</span>,<span class="string">"聂"</span>,<span class="string">"晁"</span>,<span class="string">"勾"</span>,<span class="string">"敖"</span>,<span class="string">"融"</span>,<span class="string">"冷"</span>,<span class="string">"訾"</span>,<span class="string">"辛"</span>,<span class="string">"阚"</span>,<span class="string">"那"</span>,<span class="string">"简"</span>,<span class="string">"饶"</span>,<span class="string">"空"</span>,<span class="string">"曾"</span>,<span class="string">"毋"</span>,<span class="string">"沙"</span>,<span class="string">"乜"</span>,<span class="string">"养"</span>,<span class="string">"鞠"</span>,<span class="string">"须"</span>,<span class="string">"丰"</span>,<span class="string">"巢"</span>,<span class="string">"关"</span>,<span class="string">"蒯"</span>,<span class="string">"相"</span>,<span class="string">"查"</span>,<span class="string">"後"</span>,<span class="string">"荆"</span>,<span class="string">"红"</span>,<span class="string">"游"</span>,<span class="string">"竺"</span>,<span class="string">"权"</span>,<span class="string">"逯"</span>,<span class="string">"盖"</span>,<span class="string">"益"</span>,<span class="string">"桓"</span>,<span class="string">"公"</span>,<span class="string">"万俟"</span>,<span class="string">"司马"</span>,<span class="string">"上官"</span>,<span class="string">"欧阳"</span>,<span class="string">"夏侯"</span>,<span class="string">"诸葛"</span>,<span class="string">"闻人"</span>,<span class="string">"东方"</span>,<span class="string">"赫连"</span>,<span class="string">"皇甫"</span>,<span class="string">"尉迟"</span>,<span class="string">"公羊"</span>,<span class="string">"澹台"</span>,<span class="string">"公冶"</span>,<span class="string">"宗政"</span>,<span class="string">"濮阳"</span>,<span class="string">"淳于"</span>,<span class="string">"单于"</span>,<span class="string">"太叔"</span>,<span class="string">"申屠"</span>,<span class="string">"公孙"</span>,<span class="string">"仲孙"</span>,<span class="string">"轩辕"</span>,<span class="string">"令狐"</span>,<span class="string">"钟离"</span>,<span class="string">"宇文"</span>,<span class="string">"长孙"</span>,<span class="string">"慕容"</span>,<span class="string">"鲜于"</span>,<span class="string">"闾丘"</span>,<span class="string">"司徒"</span>,<span class="string">"司空"</span>,<span class="string">"亓官"</span>,<span class="string">"司寇"</span>,<span class="string">"仉"</span>,<span class="string">"督"</span>,<span class="string">"子车"</span>,<span class="string">"颛孙"</span>,<span class="string">"端木"</span>,<span class="string">"巫马"</span>,<span class="string">"公西"</span>,<span class="string">"漆雕"</span>,<span class="string">"乐正"</span>,<span class="string">"壤驷"</span>,<span class="string">"公良"</span>,<span class="string">"拓跋"</span>,<span class="string">"夹谷"</span>,<span class="string">"宰父"</span>,<span class="string">"谷梁"</span>,<span class="string">"晋"</span>,<span class="string">"楚"</span>,<span class="string">"闫"</span>,<span class="string">"法"</span>,<span class="string">"汝"</span>,<span class="string">"鄢"</span>,<span class="string">"涂"</span>,<span class="string">"钦"</span>,<span class="string">"段干"</span>,<span class="string">"百里"</span>,<span class="string">"东郭"</span>,<span class="string">"南门"</span>,<span class="string">"呼延"</span>,<span class="string">"归"</span>,<span class="string">"海"</span>,<span class="string">"羊舌"</span>,<span class="string">"微生"</span>,<span class="string">"岳"</span>,<span class="string">"帅"</span>,<span class="string">"缑"</span>,<span class="string">"亢"</span>,<span class="string">"况"</span>,<span class="string">"后"</span>,<span class="string">"有"</span>,<span class="string">"琴"</span>,<span class="string">"梁丘"</span>,<span class="string">"左丘"</span>,<span class="string">"东门"</span>,<span class="string">"西门"</span>,<span class="string">"商"</span>,<span class="string">"牟"</span>,<span class="string">"佘"</span>,<span class="string">"佴"</span>,<span class="string">"伯"</span>,<span class="string">"赏"</span>,<span class="string">"南宫"</span>,<span class="string">"墨"</span>,<span class="string">"哈"</span>,<span class="string">"谯"</span>,<span class="string">"笪"</span>,<span class="string">"年"</span>,<span class="string">"爱"</span>,<span class="string">"阳"</span>,<span class="string">"佟"</span>,<span class="string">"第五"</span>,<span class="string">"言"</span>,<span class="string">"福"</span>];</span><br><span class="line">save Book_of_Family_Names.mat  Book_of_Family_Names;</span><br><span class="line">%信息量 log <span class="number">500</span> <span class="number">9</span>   [<span class="number">1</span><span class="number">-8</span>][<span class="number">1</span><span class="number">-8</span>][<span class="number">1</span><span class="number">-8</span>]</span><br><span class="line">Names_code= [<span class="string">"赵"</span>,<span class="string">"钱"</span>,<span class="string">"孙"</span>,<span class="string">"李"</span>,<span class="string">"周"</span>,<span class="string">"吴"</span>,<span class="string">"郑"</span>,<span class="string">"王"</span>];</span><br><span class="line"><span class="keyword">for</span> i=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">Names_code_N2(i,:)=Names_code;</span><br><span class="line">end</span><br><span class="line"><span class="keyword">for</span> i=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">Names_code_N3(i,:,:)=Names_code_N2;</span><br><span class="line">end</span><br><span class="line"><span class="keyword">for</span> a = <span class="number">1</span>:<span class="number">8</span></span><br><span class="line">    <span class="keyword">for</span> b=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">        <span class="keyword">for</span> c=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">            <span class="keyword">if</span> (a<span class="number">-1</span>)*<span class="number">8</span>^<span class="number">2</span>+(b<span class="number">-1</span>)*<span class="number">8</span>+c<span class="number">-1</span>&lt;length(Book_of_Family_Names)</span><br><span class="line">                Names_code_N(a,b,c)=Book_of_Family_Names((a<span class="number">-1</span>)*<span class="number">8</span>^<span class="number">2</span>+(b<span class="number">-1</span>)*<span class="number">8</span>+c);</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                Names_code_N(a,b,c)= <span class="string">"猫"</span>;</span><br><span class="line">            end</span><br><span class="line">        end</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> a=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">  <span class="keyword">for</span> b=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">        <span class="keyword">for</span> c=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">            figure(c)</span><br><span class="line">                    text(a*<span class="number">0.1</span>,b*<span class="number">0.1</span>,Names_code_N(a,b,c));  </span><br><span class="line">           hold on</span><br><span class="line">        end</span><br><span class="line">  end</span><br><span class="line"> end</span><br><span class="line"> </span><br><span class="line">a1=input(<span class="string">'choice the your Chinese name'</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> a=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">  <span class="keyword">for</span> b=<span class="number">1</span>:<span class="number">8</span>                 </span><br><span class="line">        <span class="keyword">for</span> c=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">            figure(<span class="number">2</span>*b)</span><br><span class="line">                    text(a*<span class="number">0.1</span>,c*<span class="number">0.1</span>,Names_code_N(a,b,c));  </span><br><span class="line">            hold on</span><br><span class="line">        end</span><br><span class="line">  end</span><br><span class="line"> end</span><br><span class="line"> </span><br><span class="line">b1=input(<span class="string">'choice the your Chinese name'</span>);</span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> a=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">  <span class="keyword">for</span> b=<span class="number">1</span>:<span class="number">8</span>                 </span><br><span class="line">        <span class="keyword">for</span> c=<span class="number">1</span>:<span class="number">8</span></span><br><span class="line">            figure(<span class="number">3</span>*a)</span><br><span class="line">                    text(b*<span class="number">0.1</span>,c*<span class="number">0.1</span>,Names_code_N(a,b,c));  </span><br><span class="line">            hold on</span><br><span class="line">        end</span><br><span class="line">  end</span><br><span class="line"> end</span><br><span class="line"> </span><br><span class="line">c1=input(<span class="string">'choice the your Chinese name'</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">disp(Names_code_N(a1,b2,c1));</span><br></pre></td></tr></table></figure></p>
-<h2 id="4-图形用户界面设计"><a href="#4-图形用户界面设计" class="headerlink" title="4.图形用户界面设计"></a>4.图形用户界面设计</h2><ul>
-<li><p>1.第一次选择<br><img src="https://img-blog.csdnimg.cn/20201023212813254.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-</li>
-<li><p>2.第二次选择<br><img src="https://img-blog.csdnimg.cn/20201023215340588.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-</li>
-<li><p>3.第三次选择</p>
-</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/20201023215522191.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<ul>
-<li><p>结果：<br><img src="https://img-blog.csdnimg.cn/20201023215814953.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-</li>
-<li><p>[x] 你的姓是万对吗？</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gantt</span><br><span class="line">        dateFormat  2020-10-23</span><br><span class="line">        title  不用告诉我就能知道你的姓</span><br><span class="line">        section 已经完成</span><br><span class="line">        已完成               :done,    des1, 2020-10-06,2020-10-16</span><br><span class="line">        进行中               :active,  des2, 2020-10-023, 3d</span><br><span class="line">        选择2               :         des3, after des2, 4d</span><br><span class="line">        选择3               :         des4, after des3, 2d</span><br></pre></td></tr></table></figure>
-<h2 id="5-结论"><a href="#5-结论" class="headerlink" title="5.结论"></a>5.结论</h2><p>可以修改尝试进行4x4进行选择[4,4,4,4]</p>
-<p> 源代码:<a href="https://zhidao.baidu.com/question/213833749.html" target="_blank" rel="noopener">不问知其名-赚点小积分</a>.</p>
-]]></content>
-      <categories>
-        <category>普通设计</category>
-      </categories>
-      <tags>
-        <tag>信息论</tag>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>保研经历</title>
     <url>/2019/09/28/%E4%BF%9D%E7%A0%94%E7%BB%8F%E5%8E%86/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
@@ -2613,55 +2613,6 @@ H(x) =\sum_{i=1}^np_i(x)log_2(\frac 1 {p_i(x)})</script><p>b=2的时候单位是
       <tags>
         <tag>合成大西瓜</tag>
         <tag>厦门大学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>xmu健康打卡ios快捷指令</title>
-    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><a id="more"></a>
-<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
-<li>浏览器</li>
-<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
-<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
-<li>接着，选择network<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center></li>
-<li><p>找到POST，不要寻找GET</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-</li>
-<li><p>如下：<br><center>
-<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu" target="_blank" rel="noopener">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
-</li>
-</ul>
-<p>即找到了我们需要的登录网址。</p>
-<p>接下来记录 username和userpassword，依次填入ios。</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-
-<ul>
-<li>将得到的数据填入一下列表<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ul>
-<blockquote>
-<p>仅只写到这里有兴趣的自己继续探索。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>厦门大学</category>
-      </categories>
-      <tags>
-        <tag>厦门大学</tag>
-        <tag>健康打卡</tag>
       </tags>
   </entry>
   <entry>
@@ -2844,6 +2795,55 @@ H(x) =\sum_{i=1}^np_i(x)log_2(\frac 1 {p_i(x)})</script><p>b=2的时候单位是
       </tags>
   </entry>
   <entry>
+    <title>xmu健康打卡ios快捷指令</title>
+    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><a id="more"></a>
+<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
+<li>浏览器</li>
+<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
+<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
+<li>接着，选择network<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center></li>
+<li><p>找到POST，不要寻找GET</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+</li>
+<li><p>如下：<br><center>
+<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu" target="_blank" rel="noopener">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
+</li>
+</ul>
+<p>即找到了我们需要的登录网址。</p>
+<p>接下来记录 username和userpassword，依次填入ios。</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+
+<ul>
+<li>将得到的数据填入一下列表<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ul>
+<blockquote>
+<p>仅只写到这里有兴趣的自己继续探索。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>厦门大学</category>
+      </categories>
+      <tags>
+        <tag>厦门大学</tag>
+        <tag>健康打卡</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>实时视频传输APP</title>
     <url>/2021/01/15/%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93APP/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- wp:heading -->
@@ -2989,6 +2989,79 @@ H(x) =\sum_{i=1}^np_i(x)log_2(\frac 1 {p_i(x)})</script><p>b=2的时候单位是
       </tags>
   </entry>
   <entry>
+    <title>机器学习</title>
+    <url>/2020/11/20/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a><center>机器学习</center></h1><a id="more"></a>
+<h2 id="6-支持向量机"><a href="#6-支持向量机" class="headerlink" title="6 支持向量机"></a>6 支持向量机</h2><h3 id="6-1-间隔与支持向量"><a href="#6-1-间隔与支持向量" class="headerlink" title="6.1 间隔与支持向量"></a>6.1 间隔与支持向量</h3><ol>
+<li>问题<br>给定训练样本 <script type="math/tex">D=\lbrace(x_1,y_1),(x_1,y_1),...,(x_m,y_m)\rbrace,y_i\in \lbrace{-1,+1}\rbrace</script>分类学习的关键就是基于训练集找出一个划分超平面，将不同类别的样本分开，而这种平面很多，如何选择最好的划分超平面？</li>
+</ol>
+<p><img src="https://www.codekp.cn/download/img/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E8%B6%85%E5%B9%B3%E9%9D%A2%E5%88%92%E5%88%86%E8%AE%AD%E7%BB%83%E9%9B%86.PNG" width = "681" height = "302" alt="图片名称" align=center /></p>
+<center>
+图6.1存在划分超平面将两个训练样本分开
+</center>
+
+
+<p>正中间那根具有更强的鲁棒性，对未示例的泛化能力更强，因此会获得更好的性能。<br>划分超平面可以通过如下线性方程来描述：</p>
+<script type="math/tex; mode=display">w^Tx+b=0</script><p>其中<script type="math/tex">w=(w_1;w_2;...;w_d)</script>为法向量决定平面的方向，b为位移向项决定平面距离原点的距离。<br>其中任意一点到超平面的距离可写为</p>
+<script type="math/tex; mode=display">
+r = \frac{|w^Tx+b|}{||w||}</script><ol>
+<li>支持向量<br>距离划分超平面最近的几个训练样本点。且这些点满足以下不等式。<br>$ w^Tx_i+b\geq+1,  y_i=+1 $<br>$w^Tx_i+b\leq-1,  y_i=+1$</li>
+<li>间隔<br>两个异类支持向量到超平面的距离之和：<script type="math/tex; mode=display">r=\frac{2}{||w||}</script></li>
+<li>最大间隔<br>对应的划分超平面 <script type="math/tex; mode=display">max(r=\frac{2}{||w||})  \\s.t. y_i(w^Tx_i+b)\geq1,i=1,2,...,m</script></li>
+<li>最小间隔<br>支持向量机基本型<script type="math/tex; mode=display">min(r=\frac{2}{||w||}) \\s.t. y_i(w^Tx_i+b)\geq1,i=1,2,...,m</script></li>
+</ol>
+<h3 id="6-2-对偶问题"><a href="#6-2-对偶问题" class="headerlink" title="6.2 对偶问题"></a>6.2 对偶问题</h3><h4 id="6-2-1-对偶问题"><a href="#6-2-1-对偶问题" class="headerlink" title="6.2.1 对偶问题"></a>6.2.1 对偶问题</h4><p>  突二次规划问题</p>
+<h4 id="6-2-2-对偶问题"><a href="#6-2-2-对偶问题" class="headerlink" title="6.2.2 对偶问题"></a>6.2.2 对偶问题</h4><ol>
+<li>更有效求解参数w和b的方法:拉格朗日乘子法</li>
+</ol>
+<ul>
+<li>对svm基本型式子的每个约束添加大于等于零的拉格朗日乘子，得到该问题的拉格朗日函数。<br>$ L(w,b,a)=\frac{1}{2}||w||^2+ \sum_{i=1}^ma_i(1-y_i(w^Tx_i+b)) $<ul>
+<li>令L(w,b,a)对w和b求偏导为零。<br>$ w = \sum<em>{i=1}^{m}a_iy_ix_i$<br>$ 0=\sum</em>{i=1}^{m}a_iy_i$</li>
+<li>将L(w,b,a)中的w和b消去，得到svm基本式子的对偶问题<br>${max}<em>{a}a_i-\frac{1}{2}\sum</em>{i=1}^m\sum<em>{j=1}^ma_ia_jy_iy_jx_i^Tx_j$<br>$s.t. \sum</em>{i=1}{m}a_iy_i=0,a_i\geq0,i=1,2,…,m$</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>KKT条件<script type="math/tex; mode=display">f= \begin{cases} a_i\geq0;\\ y_if(x_i)-1\geq0\\ a_i(y_if(x_i)-1)=0 \end{cases}</script></li>
+<li>如何求解对偶问题中的a？<ul>
+<li>当二次规划问题求解<br>算法：二次规划算法<br>缺点：问题规模正比例于训练样本数，这样会在实际任务中造成很大开销。<br>算法：SMO算法<br>选取一对所需更新的变量$a_i和a_j$<br>固定$a_j和a_i$ 以外的参数，求解对偶问题获取新的$a_i和a_j$<br>不断执行上述两个步骤直到收敛</li>
+</ul>
+<ol>
+<li>如何确定偏移项b？</li>
+</ol>
+<ul>
+<li>使用支持向量机求解平均值<br>$b=\frac{1}{|s|}\sum<em>{s\in S}(y_s-a_iy_ix_i^Tx_s)$<br>$y_s(\sum</em>{i\in S}a_iy_ix_i^Tx_s+b)=1$<br>$\lbrace S={i=a_i&gt;0,i=1,2…,m}\rbrace$为所有向量机下标集<h4 id="6-2-2-支持向量机的一个重要性质"><a href="#6-2-2-支持向量机的一个重要性质" class="headerlink" title="6.2.2 支持向量机的一个重要性质"></a>6.2.2 支持向量机的一个重要性质</h4>训练结束后，大部分训练样本都不需要保留，最终模型与支持向量有关。<h3 id="6-3-核函数"><a href="#6-3-核函数" class="headerlink" title="6.3 核函数"></a>6.3 核函数</h3>对线性可分问题，可以将原始空间映射到一个更高维的特征空间，使得样本在这个特征空间内线性可分。<h4 id="6-3-1-令y表示x映射后的特征向量"><a href="#6-3-1-令y表示x映射后的特征向量" class="headerlink" title="6.3.1 令y表示x映射后的特征向量"></a>6.3.1 令y表示x映射后的特征向量</h4>对偶问题<h4 id="6-3-2-支持向量展示"><a href="#6-3-2-支持向量展示" class="headerlink" title="6.3.2 支持向量展示"></a>6.3.2 支持向量展示</h4>模型训练最优解可通过训练样本核函数展开。<h4 id="6-3-3-常用核函数"><a href="#6-3-3-常用核函数" class="headerlink" title="6.3.3 常用核函数"></a>6.3.3 常用核函数</h4></li>
+<li>线性核函数</li>
+<li>多项式核函数</li>
+<li>高斯核函数</li>
+<li>拉普拉斯核函数</li>
+<li>sigmoid核函数<h4 id="6-3-4-核函数定理"><a href="#6-3-4-核函数定理" class="headerlink" title="6.3.4 核函数定理"></a>6.3.4 核函数定理</h4></li>
+<li>核矩阵总是半正定的</li>
+<li>只要一个堆成函数的核函数半正定，就可以被用于核函数</li>
+<li>半正定矩阵必然有对应的映射</li>
+<li>任何一个核函数都定义了一个希尔伯特空间<blockquote>
+<p>注意：特征空间的好坏对支持向量机至关重要<br>“核函数选择”成为支持向量机最大变数</p>
+<h3 id="6-4-软间隔和正则化"><a href="#6-4-软间隔和正则化" class="headerlink" title="6.4 软间隔和正则化"></a>6.4 软间隔和正则化</h3><h4 id="6-4-1-硬间隔"><a href="#6-4-1-硬间隔" class="headerlink" title="6.4.1 硬间隔"></a>6.4.1 硬间隔</h4><p>要求所有样本均满足约束，所有样本必须划分正确。</p>
+<h4 id="6-4-2-软间隔"><a href="#6-4-2-软间隔" class="headerlink" title="6.4.2 软间隔"></a>6.4.2 软间隔</h4></blockquote>
+</li>
+</ul>
+<ol>
+<li>解决现实任务：很难确定合适的核函数使得训练到的样本在特征空间中线性可分，或者是否过拟合。</li>
+<li>解决方法：允许部分样本可以出错。允许某些样本不满足约束<br>$y_i(w^Tx_i+b)\geq1$<br>不满足样本尽可能少。</li>
+<li>新的目标函数<h4 id="6-4-3-正则化"><a href="#6-4-3-正则化" class="headerlink" title="6.4.3 正则化"></a>6.4.3 正则化</h4></li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>信息论</tag>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>微信小程序开发</title>
     <url>/2021/10/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="微信小程序"><a href="#微信小程序" class="headerlink" title="微信小程序"></a>微信小程序</h1><h2 id="微信小程序开发环境"><a href="#微信小程序开发环境" class="headerlink" title="微信小程序开发环境"></a>微信小程序开发环境</h2><ul>
@@ -3076,79 +3149,6 @@ H(x) =\sum_{i=1}^np_i(x)log_2(\frac 1 {p_i(x)})</script><p>b=2的时候单位是
       </tags>
   </entry>
   <entry>
-    <title>机器学习</title>
-    <url>/2020/11/20/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a><center>机器学习</center></h1><a id="more"></a>
-<h2 id="6-支持向量机"><a href="#6-支持向量机" class="headerlink" title="6 支持向量机"></a>6 支持向量机</h2><h3 id="6-1-间隔与支持向量"><a href="#6-1-间隔与支持向量" class="headerlink" title="6.1 间隔与支持向量"></a>6.1 间隔与支持向量</h3><ol>
-<li>问题<br>给定训练样本 <script type="math/tex">D=\lbrace(x_1,y_1),(x_1,y_1),...,(x_m,y_m)\rbrace,y_i\in \lbrace{-1,+1}\rbrace</script>分类学习的关键就是基于训练集找出一个划分超平面，将不同类别的样本分开，而这种平面很多，如何选择最好的划分超平面？</li>
-</ol>
-<p><img src="https://www.codekp.cn/download/img/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E8%B6%85%E5%B9%B3%E9%9D%A2%E5%88%92%E5%88%86%E8%AE%AD%E7%BB%83%E9%9B%86.PNG" width = "681" height = "302" alt="图片名称" align=center /></p>
-<center>
-图6.1存在划分超平面将两个训练样本分开
-</center>
-
-
-<p>正中间那根具有更强的鲁棒性，对未示例的泛化能力更强，因此会获得更好的性能。<br>划分超平面可以通过如下线性方程来描述：</p>
-<script type="math/tex; mode=display">w^Tx+b=0</script><p>其中<script type="math/tex">w=(w_1;w_2;...;w_d)</script>为法向量决定平面的方向，b为位移向项决定平面距离原点的距离。<br>其中任意一点到超平面的距离可写为</p>
-<script type="math/tex; mode=display">
-r = \frac{|w^Tx+b|}{||w||}</script><ol>
-<li>支持向量<br>距离划分超平面最近的几个训练样本点。且这些点满足以下不等式。<br>$ w^Tx_i+b\geq+1,  y_i=+1 $<br>$w^Tx_i+b\leq-1,  y_i=+1$</li>
-<li>间隔<br>两个异类支持向量到超平面的距离之和：<script type="math/tex; mode=display">r=\frac{2}{||w||}</script></li>
-<li>最大间隔<br>对应的划分超平面 <script type="math/tex; mode=display">max(r=\frac{2}{||w||})  \\s.t. y_i(w^Tx_i+b)\geq1,i=1,2,...,m</script></li>
-<li>最小间隔<br>支持向量机基本型<script type="math/tex; mode=display">min(r=\frac{2}{||w||}) \\s.t. y_i(w^Tx_i+b)\geq1,i=1,2,...,m</script></li>
-</ol>
-<h3 id="6-2-对偶问题"><a href="#6-2-对偶问题" class="headerlink" title="6.2 对偶问题"></a>6.2 对偶问题</h3><h4 id="6-2-1-对偶问题"><a href="#6-2-1-对偶问题" class="headerlink" title="6.2.1 对偶问题"></a>6.2.1 对偶问题</h4><p>  突二次规划问题</p>
-<h4 id="6-2-2-对偶问题"><a href="#6-2-2-对偶问题" class="headerlink" title="6.2.2 对偶问题"></a>6.2.2 对偶问题</h4><ol>
-<li>更有效求解参数w和b的方法:拉格朗日乘子法</li>
-</ol>
-<ul>
-<li>对svm基本型式子的每个约束添加大于等于零的拉格朗日乘子，得到该问题的拉格朗日函数。<br>$ L(w,b,a)=\frac{1}{2}||w||^2+ \sum_{i=1}^ma_i(1-y_i(w^Tx_i+b)) $<ul>
-<li>令L(w,b,a)对w和b求偏导为零。<br>$ w = \sum<em>{i=1}^{m}a_iy_ix_i$<br>$ 0=\sum</em>{i=1}^{m}a_iy_i$</li>
-<li>将L(w,b,a)中的w和b消去，得到svm基本式子的对偶问题<br>${max}<em>{a}a_i-\frac{1}{2}\sum</em>{i=1}^m\sum<em>{j=1}^ma_ia_jy_iy_jx_i^Tx_j$<br>$s.t. \sum</em>{i=1}{m}a_iy_i=0,a_i\geq0,i=1,2,…,m$</li>
-</ul>
-</li>
-</ul>
-<ol>
-<li>KKT条件<script type="math/tex; mode=display">f= \begin{cases} a_i\geq0;\\ y_if(x_i)-1\geq0\\ a_i(y_if(x_i)-1)=0 \end{cases}</script></li>
-<li>如何求解对偶问题中的a？<ul>
-<li>当二次规划问题求解<br>算法：二次规划算法<br>缺点：问题规模正比例于训练样本数，这样会在实际任务中造成很大开销。<br>算法：SMO算法<br>选取一对所需更新的变量$a_i和a_j$<br>固定$a_j和a_i$ 以外的参数，求解对偶问题获取新的$a_i和a_j$<br>不断执行上述两个步骤直到收敛</li>
-</ul>
-<ol>
-<li>如何确定偏移项b？</li>
-</ol>
-<ul>
-<li>使用支持向量机求解平均值<br>$b=\frac{1}{|s|}\sum<em>{s\in S}(y_s-a_iy_ix_i^Tx_s)$<br>$y_s(\sum</em>{i\in S}a_iy_ix_i^Tx_s+b)=1$<br>$\lbrace S={i=a_i&gt;0,i=1,2…,m}\rbrace$为所有向量机下标集<h4 id="6-2-2-支持向量机的一个重要性质"><a href="#6-2-2-支持向量机的一个重要性质" class="headerlink" title="6.2.2 支持向量机的一个重要性质"></a>6.2.2 支持向量机的一个重要性质</h4>训练结束后，大部分训练样本都不需要保留，最终模型与支持向量有关。<h3 id="6-3-核函数"><a href="#6-3-核函数" class="headerlink" title="6.3 核函数"></a>6.3 核函数</h3>对线性可分问题，可以将原始空间映射到一个更高维的特征空间，使得样本在这个特征空间内线性可分。<h4 id="6-3-1-令y表示x映射后的特征向量"><a href="#6-3-1-令y表示x映射后的特征向量" class="headerlink" title="6.3.1 令y表示x映射后的特征向量"></a>6.3.1 令y表示x映射后的特征向量</h4>对偶问题<h4 id="6-3-2-支持向量展示"><a href="#6-3-2-支持向量展示" class="headerlink" title="6.3.2 支持向量展示"></a>6.3.2 支持向量展示</h4>模型训练最优解可通过训练样本核函数展开。<h4 id="6-3-3-常用核函数"><a href="#6-3-3-常用核函数" class="headerlink" title="6.3.3 常用核函数"></a>6.3.3 常用核函数</h4></li>
-<li>线性核函数</li>
-<li>多项式核函数</li>
-<li>高斯核函数</li>
-<li>拉普拉斯核函数</li>
-<li>sigmoid核函数<h4 id="6-3-4-核函数定理"><a href="#6-3-4-核函数定理" class="headerlink" title="6.3.4 核函数定理"></a>6.3.4 核函数定理</h4></li>
-<li>核矩阵总是半正定的</li>
-<li>只要一个堆成函数的核函数半正定，就可以被用于核函数</li>
-<li>半正定矩阵必然有对应的映射</li>
-<li>任何一个核函数都定义了一个希尔伯特空间<blockquote>
-<p>注意：特征空间的好坏对支持向量机至关重要<br>“核函数选择”成为支持向量机最大变数</p>
-<h3 id="6-4-软间隔和正则化"><a href="#6-4-软间隔和正则化" class="headerlink" title="6.4 软间隔和正则化"></a>6.4 软间隔和正则化</h3><h4 id="6-4-1-硬间隔"><a href="#6-4-1-硬间隔" class="headerlink" title="6.4.1 硬间隔"></a>6.4.1 硬间隔</h4><p>要求所有样本均满足约束，所有样本必须划分正确。</p>
-<h4 id="6-4-2-软间隔"><a href="#6-4-2-软间隔" class="headerlink" title="6.4.2 软间隔"></a>6.4.2 软间隔</h4></blockquote>
-</li>
-</ul>
-<ol>
-<li>解决现实任务：很难确定合适的核函数使得训练到的样本在特征空间中线性可分，或者是否过拟合。</li>
-<li>解决方法：允许部分样本可以出错。允许某些样本不满足约束<br>$y_i(w^Tx_i+b)\geq1$<br>不满足样本尽可能少。</li>
-<li>新的目标函数<h4 id="6-4-3-正则化"><a href="#6-4-3-正则化" class="headerlink" title="6.4.3 正则化"></a>6.4.3 正则化</h4></li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>信息论</tag>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>树莓派_命令行连接wifi</title>
     <url>/2021/06/28/%E6%A0%91%E8%8E%93%E6%B4%BE-%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5wifi/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
@@ -3165,6 +3165,30 @@ r = \frac{|w^Tx+b|}{||w||}</script><ol>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>树莓派</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>树莓派3BTL-WN726N驱动</title>
+    <url>/2021/04/20/%E6%A0%91%E8%8E%93%E6%B4%BE3BTL-WN726N%E9%A9%B1%E5%8A%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="树莓派3BTL-WN726N驱动"><a href="#树莓派3BTL-WN726N驱动" class="headerlink" title="树莓派3BTL-WN726N驱动"></a>树莓派3BTL-WN726N驱动</h1><h2 id="给树莓派3B装两个网卡"><a href="#给树莓派3B装两个网卡" class="headerlink" title="给树莓派3B装两个网卡"></a>给树莓派3B装两个网卡</h2><ul>
+<li>为了得到两条独立的非干扰信道，采用外接usb网卡的形式。</li>
+</ul>
+<p>但是遇到了一个问题，无线网卡插入树莓派无法识别。于是只好安装驱动，网络上有很多方法，但一点用都没得。</p>
+<p>最终只能在树莓派的官方文档中找解决方法<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=62371" target="_blank" rel="noopener">教程</a></p>
+<p>根据帖子内容，找到自己内核版本对应的驱动</p>
+<p><code>3.18.11+ #780, #781 - 8188eu--3.18.3-739.tar.gz</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir TP-Link</span><br><span class="line">cd TP-Link</span><br><span class="line">sudo wget http:&#x2F;&#x2F;downloads.fars-robotics.net&#x2F;wifi-drivers&#x2F;8188eu-drivers&#x2F;8188eu-3.18.3-739.tar.gz</span><br><span class="line"></span><br><span class="line">tar -zxvf 8188eu-3.18.3-739.tar.gz</span><br><span class="line"></span><br><span class="line">mkdir -p &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;kernel&#x2F;drivers&#x2F;net&#x2F;wireless</span><br><span class="line">sudo vim &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;modules.order</span><br><span class="line">sudo .&#x2F;install.sh</span><br></pre></td></tr></table></figure>
+<h2 id="对本地网络地址进行配置"><a href="#对本地网络地址进行配置" class="headerlink" title="对本地网络地址进行配置"></a>对本地网络地址进行配置</h2><p>由于在实验室，所用的路由器的端口号是10.xxx.xxx.xxx 然后直接ip连接到了该位置，这肯定有问题。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo nano &#x2F;etc&#x2F;network&#x2F;interfaces</span><br></pre></td></tr></table></figure>
+<p>修改以下内容设置默认网关，具体数值可以根据自身情况增加</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">auto wlan1</span><br><span class="line">iface wlan1 inet dhcp</span><br><span class="line">pre-up wpa_supplicant -Dwext -i wlan0 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf$</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">allow-hotplug wlan1</span><br><span class="line">iface wlan1 inet manual</span><br><span class="line">    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf</span><br></pre></td></tr></table></figure>
+<h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo depmod -a </span><br><span class="line">sudo modprobe 8188eu</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>linux</category>
       </categories>
       <tags>
         <tag>linux</tag>
@@ -3348,30 +3372,6 @@ b.8FSK不同信道下误码性能对比</center>
         <tag>研究生课程</tag>
         <tag>matlab</tag>
         <tag>水声通信</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>树莓派3BTL-WN726N驱动</title>
-    <url>/2021/04/20/%E6%A0%91%E8%8E%93%E6%B4%BE3BTL-WN726N%E9%A9%B1%E5%8A%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="树莓派3BTL-WN726N驱动"><a href="#树莓派3BTL-WN726N驱动" class="headerlink" title="树莓派3BTL-WN726N驱动"></a>树莓派3BTL-WN726N驱动</h1><h2 id="给树莓派3B装两个网卡"><a href="#给树莓派3B装两个网卡" class="headerlink" title="给树莓派3B装两个网卡"></a>给树莓派3B装两个网卡</h2><ul>
-<li>为了得到两条独立的非干扰信道，采用外接usb网卡的形式。</li>
-</ul>
-<p>但是遇到了一个问题，无线网卡插入树莓派无法识别。于是只好安装驱动，网络上有很多方法，但一点用都没得。</p>
-<p>最终只能在树莓派的官方文档中找解决方法<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=62371" target="_blank" rel="noopener">教程</a></p>
-<p>根据帖子内容，找到自己内核版本对应的驱动</p>
-<p><code>3.18.11+ #780, #781 - 8188eu--3.18.3-739.tar.gz</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir TP-Link</span><br><span class="line">cd TP-Link</span><br><span class="line">sudo wget http:&#x2F;&#x2F;downloads.fars-robotics.net&#x2F;wifi-drivers&#x2F;8188eu-drivers&#x2F;8188eu-3.18.3-739.tar.gz</span><br><span class="line"></span><br><span class="line">tar -zxvf 8188eu-3.18.3-739.tar.gz</span><br><span class="line"></span><br><span class="line">mkdir -p &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;kernel&#x2F;drivers&#x2F;net&#x2F;wireless</span><br><span class="line">sudo vim &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;modules.order</span><br><span class="line">sudo .&#x2F;install.sh</span><br></pre></td></tr></table></figure>
-<h2 id="对本地网络地址进行配置"><a href="#对本地网络地址进行配置" class="headerlink" title="对本地网络地址进行配置"></a>对本地网络地址进行配置</h2><p>由于在实验室，所用的路由器的端口号是10.xxx.xxx.xxx 然后直接ip连接到了该位置，这肯定有问题。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo nano &#x2F;etc&#x2F;network&#x2F;interfaces</span><br></pre></td></tr></table></figure>
-<p>修改以下内容设置默认网关，具体数值可以根据自身情况增加</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">auto wlan1</span><br><span class="line">iface wlan1 inet dhcp</span><br><span class="line">pre-up wpa_supplicant -Dwext -i wlan0 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf$</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">allow-hotplug wlan1</span><br><span class="line">iface wlan1 inet manual</span><br><span class="line">    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf</span><br></pre></td></tr></table></figure>
-<h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo depmod -a </span><br><span class="line">sudo modprobe 8188eu</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
