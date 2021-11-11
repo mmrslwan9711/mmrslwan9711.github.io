@@ -29,18 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="漫漫人生路" type="application/atom+xml">
+</head>
 
-
-
-   <style>
-    body{
-       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
 
 
 
@@ -531,7 +522,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    611
+                    698
                 </div>
                 
 
@@ -553,6 +544,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -562,8 +556,30 @@
 <li>采用了easyocr</li>
 <li>爬虫，调取百度翻译接口</li>
 </ul>
-<h2 id="调用屏幕接口"><a href="#调用屏幕接口" class="headerlink" title="调用屏幕接口"></a>调用屏幕接口</h2><p>调用屏幕的方法很简单：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import pyautogui</span><br><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">img = pyautogui.screenshot(region=[0, 0, 1920, 100])  # x,y,w,h</span><br><span class="line"># img.save(&#x27;screenshot.png&#x27;)</span><br><span class="line">img = cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)</span><br><span class="line">cv2.imshow(&quot;1&quot;,img)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure><br>但感觉效率很低，最后改成了虚拟摄像头+cap=cv2.VideoCapture(1)的方式捕获。</p>
-<h2 id="调用百度翻译接口"><a href="#调用百度翻译接口" class="headerlink" title="调用百度翻译接口"></a>调用百度翻译接口</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import urllib.request</span><br><span class="line">import urllib.parse</span><br><span class="line">import json</span><br><span class="line">import pyautogui</span><br><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">url = &#x27;https://fanyi.baidu.com/sug&#x27;</span><br><span class="line">headers = &#123;</span><br><span class="line">    &#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36&#x27;</span><br><span class="line">&#125;</span><br><span class="line">data = urllib.parse.urlencode(data).encode(&#x27;utf-8&#x27;)</span><br><span class="line">request = urllib.request.Request(url=url, data=data, headers=headers)</span><br><span class="line">response = urllib.request.urlopen(request)</span><br><span class="line">content = response.read().decode(&#x27;utf-8&#x27;)</span><br><span class="line">obj = json.loads(content)</span><br><span class="line">print(obj)</span><br></pre></td></tr></table></figure>
+<h2 id="调用屏幕接口"><a href="#调用屏幕接口" class="headerlink" title="调用屏幕接口"></a>调用屏幕接口</h2><p>调用屏幕的方法很简单：<br><pre class="line-numbers language-none"><code class="language-none">import pyautogui
+import cv2
+import numpy as np
+img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 1920, 100])  # x,y,w,h
+# img.save(&#39;screenshot.png&#39;)
+img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
+cv2.imshow(&quot;1&quot;,img)
+cv2.waitKey(0)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>但感觉效率很低，最后改成了虚拟摄像头+cap=cv2.VideoCapture(1)的方式捕获。</p>
+<h2 id="调用百度翻译接口"><a href="#调用百度翻译接口" class="headerlink" title="调用百度翻译接口"></a>调用百度翻译接口</h2><pre class="line-numbers language-none"><code class="language-none">import urllib.request
+import urllib.parse
+import json
+import pyautogui
+import cv2
+import numpy as np
+url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
+headers &#x3D; &#123;
+    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
+&#125;
+data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
+request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
+response &#x3D; urllib.request.urlopen(request)
+content &#x3D; response.read().decode(&#39;utf-8&#39;)
+obj &#x3D; json.loads(content)
+print(obj)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>这个只能做单词翻译，还需要进一步优化。</p>
 <h2 id="easyocr"><a href="#easyocr" class="headerlink" title="easyocr"></a>easyocr</h2><p>这个参考<a target="_blank" rel="noopener" href="https://www.codekp.cn/2021/10/25/EasyOCR%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB/">EasyOCR光学字符识别</a></p>
 <h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><blockquote>
@@ -571,7 +587,71 @@
 </blockquote>
 <h3 id="首先是摄像头"><a href="#首先是摄像头" class="headerlink" title="首先是摄像头"></a>首先是摄像头</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu2.png" alt=""></p>
 <h3 id="然后是屏幕"><a href="#然后是屏幕" class="headerlink" title="然后是屏幕"></a>然后是屏幕</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu1.png" alt=""></p>
-<h2 id="最后是源码"><a href="#最后是源码" class="headerlink" title="最后是源码"></a>最后是源码</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">import time</span><br><span class="line"></span><br><span class="line">import easyocr</span><br><span class="line">import ssl</span><br><span class="line">import cv2</span><br><span class="line"># from matplotlib import pyplot as plt</span><br><span class="line"></span><br><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">from PIL import Image, ImageDraw, ImageFont</span><br><span class="line">import urllib.request</span><br><span class="line">import urllib.parse</span><br><span class="line">import json</span><br><span class="line">import pyautogui</span><br><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ssl._create_default_https_context = ssl._create_unverified_context</span><br><span class="line"># 设置识别中英文两种语言</span><br><span class="line">reader = easyocr.Reader([&#x27;ch_sim&#x27;, &#x27;en&#x27;])  # need to run only once to load model into memory</span><br><span class="line">Image3=&#x27;https://www.codekp.cn/download/img/ubuntu/NVIDIA1.png&#x27;</span><br><span class="line">Image2=r&quot;H:\blog\wan_lab\blog_2020\source\download\img\ubuntu\NVIDIA1.png&quot;</span><br><span class="line">Image4=&quot;1.jpg&quot;</span><br><span class="line">url = &#x27;https://fanyi.baidu.com/sug&#x27;</span><br><span class="line">headers = &#123;</span><br><span class="line">    &#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36&#x27;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cap=cv2.VideoCapture(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line">    ret,img=cap.read()</span><br><span class="line">    # img = pyautogui.screenshot(region=[0, 0, 500, 500])  # x,y,w,h</span><br><span class="line">    # img = cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)</span><br><span class="line">    cv2.imwrite(&quot;1.jpg&quot;,img)</span><br><span class="line">    result = reader.readtext(Image4, paragraph=&quot;False&quot;)</span><br><span class="line"></span><br><span class="line">    start=time.time()</span><br><span class="line">    for detection in result:</span><br><span class="line">        top_left = tuple(detection[0][0])</span><br><span class="line">        bottom_right = tuple(detection[0][2])</span><br><span class="line">        text = detection[1]</span><br><span class="line">        img = cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 3)</span><br><span class="line">        img = cv2ImgAddText(img, text, bottom_right[0], bottom_right[1], (0, 255, 0), 18)</span><br><span class="line">        data = &#123;</span><br><span class="line">            &#x27;kw&#x27;: text</span><br><span class="line">        &#125;</span><br><span class="line">        data = urllib.parse.urlencode(data).encode(&#x27;utf-8&#x27;)</span><br><span class="line">        request = urllib.request.Request(url=url, data=data, headers=headers)</span><br><span class="line">        response = urllib.request.urlopen(request)</span><br><span class="line">        content = response.read().decode(&#x27;utf-8&#x27;)</span><br><span class="line">        obj = json.loads(content)</span><br><span class="line">        print(obj)</span><br><span class="line">        try:</span><br><span class="line">            text2 = str(obj[&#x27;data&#x27;][0][&#x27;v&#x27;])</span><br><span class="line">            img = cv2ImgAddText(img, text2, bottom_right[0], bottom_right[1]+20, (0, 255, 0), 18)</span><br><span class="line">        except:</span><br><span class="line">            pass</span><br><span class="line">    cv2.imshow(&quot;1&quot;,img)</span><br><span class="line">    cv2.waitKey(1)</span><br><span class="line">    print((time.time()-start)*1000)</span><br><span class="line">capture.release()</span><br></pre></td></tr></table></figure>
+<h2 id="最后是源码"><a href="#最后是源码" class="headerlink" title="最后是源码"></a>最后是源码</h2><pre class="line-numbers language-none"><code class="language-none">import time
+
+import easyocr
+import ssl
+import cv2
+# from matplotlib import pyplot as plt
+
+import cv2
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+import urllib.request
+import urllib.parse
+import json
+import pyautogui
+import cv2
+import numpy as np
+
+
+ssl._create_default_https_context &#x3D; ssl._create_unverified_context
+# 设置识别中英文两种语言
+reader &#x3D; easyocr.Reader([&#39;ch_sim&#39;, &#39;en&#39;])  # need to run only once to load model into memory
+Image3&#x3D;&#39;https:&#x2F;&#x2F;www.codekp.cn&#x2F;download&#x2F;img&#x2F;ubuntu&#x2F;NVIDIA1.png&#39;
+Image2&#x3D;r&quot;H:\blog\wan_lab\blog_2020\source\download\img\ubuntu\NVIDIA1.png&quot;
+Image4&#x3D;&quot;1.jpg&quot;
+url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
+headers &#x3D; &#123;
+    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
+&#125;
+
+
+cap&#x3D;cv2.VideoCapture(0)
+
+
+while True:
+    ret,img&#x3D;cap.read()
+    # img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 500, 500])  # x,y,w,h
+    # img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
+    cv2.imwrite(&quot;1.jpg&quot;,img)
+    result &#x3D; reader.readtext(Image4, paragraph&#x3D;&quot;False&quot;)
+
+    start&#x3D;time.time()
+    for detection in result:
+        top_left &#x3D; tuple(detection[0][0])
+        bottom_right &#x3D; tuple(detection[0][2])
+        text &#x3D; detection[1]
+        img &#x3D; cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 3)
+        img &#x3D; cv2ImgAddText(img, text, bottom_right[0], bottom_right[1], (0, 255, 0), 18)
+        data &#x3D; &#123;
+            &#39;kw&#39;: text
+        &#125;
+        data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
+        request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
+        response &#x3D; urllib.request.urlopen(request)
+        content &#x3D; response.read().decode(&#39;utf-8&#39;)
+        obj &#x3D; json.loads(content)
+        print(obj)
+        try:
+            text2 &#x3D; str(obj[&#39;data&#39;][0][&#39;v&#39;])
+            img &#x3D; cv2ImgAddText(img, text2, bottom_right[0], bottom_right[1]+20, (0, 255, 0), 18)
+        except:
+            pass
+    cv2.imshow(&quot;1&quot;,img)
+    cv2.waitKey(1)
+    print((time.time()-start)*1000)
+capture.release()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><pre><code>将百度翻译的内容，和原始图像显示出来并列到一起就有了一个比较完整的东西。
 </code></pre><p><img src="https://www.codekp.cn/download/img/baidu/baidu3.png" alt=""></p>
 
@@ -1170,7 +1250,7 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -1183,7 +1263,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">82.2k</span>&nbsp;字
+                class="white-color">83.8k</span>&nbsp;字
             
             
             
@@ -1202,6 +1282,50 @@
             </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2017";
+                    var startMonth = "11";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
@@ -1444,6 +1568,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     

@@ -29,18 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="漫漫人生路" type="application/atom+xml">
+</head>
 
-
-
-   <style>
-    body{
-       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
 
 
 
@@ -549,6 +540,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -560,34 +554,89 @@
 <h3 id="下载模型从-TensorFlow-的模型下载-Faster-RCNN-Inception-V2-COCO-模型"><a href="#下载模型从-TensorFlow-的模型下载-Faster-RCNN-Inception-V2-COCO-模型" class="headerlink" title="下载模型从 TensorFlow 的模型下载 Faster-RCNN-Inception-V2-COCO 模型"></a>下载模型从 TensorFlow 的模型下载 Faster-RCNN-Inception-V2-COCO 模型</h3><p><a target="_blank" rel="noopener" href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md">模型库</a></p>
 <p>本教程将使用 Faster-RCNN-Inception-V2 模型。在此处下载模型。使用 WinZip 或 7-Zip 等文件归档程序打开下载的 fast_rcnn_inception_v2_coco_2018_01_28.tar.gz 文件，并将 fast_rcnn_inception_v2_coco_2018_01_28 文件夹解压到 C:\tensorflow1\models\research\object_detection 文件夹。（注意：模型日期和版本将来可能会发生变化，但它仍然适用于本教程。）</p>
 <h3 id="下载API存储库"><a href="#下载API存储库" class="headerlink" title="下载API存储库"></a>下载API存储库</h3><p>打开git bash 然后输入下列命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;EdjeElectronics&#x2F;TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>将提取到的文件保存到C:\tensorflow1\models\research\bject_detection</p>
 <p>如图所示：</p>
 <p><img src="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/doc/object_detection_directory.jpg" alt=""></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10">https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10</a></p>
-<h3 id="设置新的anaconda虚拟环境"><a href="#设置新的anaconda虚拟环境" class="headerlink" title="设置新的anaconda虚拟环境"></a>设置新的anaconda虚拟环境</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\&gt; conda create -n tensorflow1 pip python=3.7</span><br></pre></td></tr></table></figure>
-<p>然后发布激活环境<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\&gt; activate tensorflow1</span><br><span class="line">(tensorflow1) C:\&gt;python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure></p>
+<h3 id="设置新的anaconda虚拟环境"><a href="#设置新的anaconda虚拟环境" class="headerlink" title="设置新的anaconda虚拟环境"></a>设置新的anaconda虚拟环境</h3><pre class="line-numbers language-none"><code class="language-none">C:\&gt; conda create -n tensorflow1 pip python&#x3D;3.7<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后发布激活环境<br><pre class="line-numbers language-none"><code class="language-none">C:\&gt; activate tensorflow1
+(tensorflow1) C:\&gt;python -m pip install --upgrade pip<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p>
 <p>在此环境中安装tensorflow-gpu：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; pip install --ignore-installed --upgrade tensorflow-gpu</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; pip install --ignore-installed --upgrade tensorflow-gpu<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>由于我们使用anaconda，安装tensorflow-gpu也将自动下载和安装正确的版本的CUDA和cuDNN。</p>
-<p>没有gpu可以只是用cpu进行训练，如下所示可以这样修改（用cpu会很慢，可我没有GPU）：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; pip install --ignore-installed --upgrade tensorflow</span><br></pre></td></tr></table></figure></p>
-<p>安装其他必要的包：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; conda install -c anaconda protobuf</span><br><span class="line">(tensorflow1) C:\&gt; pip install pillow</span><br><span class="line">(tensorflow1) C:\&gt; pip install lxml</span><br><span class="line">(tensorflow1) C:\&gt; pip install Cython</span><br><span class="line">(tensorflow1) C:\&gt; pip install contextlib2</span><br><span class="line">(tensorflow1) C:\&gt; pip install jupyter</span><br><span class="line">(tensorflow1) C:\&gt; pip install matplotlib</span><br><span class="line">(tensorflow1) C:\&gt; pip install pandas</span><br><span class="line">(tensorflow1) C:\&gt; pip install opencv-python</span><br></pre></td></tr></table></figure></p>
-<h3 id="PYTH环境变量设置"><a href="#PYTH环境变量设置" class="headerlink" title="PYTH环境变量设置"></a>PYTH环境变量设置</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim</span><br></pre></td></tr></table></figure>
+<p>没有gpu可以只是用cpu进行训练，如下所示可以这样修改（用cpu会很慢，可我没有GPU）：<br><pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; pip install --ignore-installed --upgrade tensorflow<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
+<p>安装其他必要的包：<br><pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; conda install -c anaconda protobuf
+(tensorflow1) C:\&gt; pip install pillow
+(tensorflow1) C:\&gt; pip install lxml
+(tensorflow1) C:\&gt; pip install Cython
+(tensorflow1) C:\&gt; pip install contextlib2
+(tensorflow1) C:\&gt; pip install jupyter
+(tensorflow1) C:\&gt; pip install matplotlib
+(tensorflow1) C:\&gt; pip install pandas
+(tensorflow1) C:\&gt; pip install opencv-python<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h3 id="PYTH环境变量设置"><a href="#PYTH环境变量设置" class="headerlink" title="PYTH环境变量设置"></a>PYTH环境变量设置</h3><pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; set PYTHONPATH&#x3D;C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="编译原型运行setup-py"><a href="#编译原型运行setup-py" class="headerlink" title="编译原型运行setup.py"></a>编译原型运行setup.py</h3><p>在 Anaconda 命令提示中，将目录更改为 “模型” 研究目录：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(tensorflow1) C:\&gt; cd C:\tensorflow1\models\research</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; cd C:\tensorflow1\models\research<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>然后将以下命令复制并粘贴到命令行中并按”输入”</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>在目录 C:\tensorflow1\models\research\delf directory:中运行<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(tensorflow1) C:\tensorflow1\models\research\delf&gt; python setup.py build</span><br><span class="line">(tensorflow1) C:\tensorflow1\models\research\delf&gt; python setup.py install</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<pre class="line-numbers language-none"><code class="language-none">protoc --python_out&#x3D;. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在目录 C:\tensorflow1\models\research\delf directory:中运行<br><pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\tensorflow1\models\research\delf&gt; python setup.py build
+(tensorflow1) C:\tensorflow1\models\research\delf&gt; python setup.py install
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p>
 <h3 id="测试tensorflow设置验证工作原理"><a href="#测试tensorflow设置验证工作原理" class="headerlink" title="测试tensorflow设置验证工作原理"></a>测试tensorflow设置验证工作原理</h3><p>TensorFlow 对象检测 API 现已全部设置，用于使用经过预先训练的对象检测模型，或培训新的模型。您可以通过启动与 Jupyter 的object_detection_tutorial.ipynb 脚本来测试它并验证您的安装是否正常工作。从 [object_detection 目录中，发布此命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd C:\tensorflow1\models\research\object_detection\colab_tutorials</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(tensorflow1) C:\tensorflow1\models\research\object_detection\colab_tutorials&gt; jupyter notebook object_detection_tutorial.ipynb</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">cd C:\tensorflow1\models\research\object_detection\colab_tutorials<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\tensorflow1\models\research\object_detection\colab_tutorials&gt; jupyter notebook object_detection_tutorial.ipynb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="json转xml-参考自CSDN"><a href="#json转xml-参考自CSDN" class="headerlink" title="json转xml(参考自CSDN)"></a>json转xml(<a target="_blank" rel="noopener" href="https://blog.csdn.net/u013894391/article/details/103006594">参考自CSDN</a>)</h3><ul>
 <li><p>python 安装</p>
 <p><code>pip install dicttoxml</code></p>
 </li>
 </ul>
 <ul>
-<li>源码<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line">from json import loads</span><br><span class="line">from dicttoxml import dicttoxml</span><br><span class="line">from xml.dom.minidom import parseString</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def jsonToXml(json_path, xml_path):</span><br><span class="line">    # @abstract: transfer json file to xml file</span><br><span class="line">    # json_path: complete path of the json file</span><br><span class="line">    # xml_path: complete path of the xml file</span><br><span class="line">    with open(json_path, &#x27;r&#x27;, encoding=&#x27;UTF-8&#x27;)as json_file:</span><br><span class="line">        load_dict = loads(json_file.read())</span><br><span class="line">    # print(load_dict)</span><br><span class="line">    my_item_func = lambda x: &#x27;Annotation&#x27;</span><br><span class="line">    xml = dicttoxml(load_dict, custom_root=&#x27;Annotations&#x27;, item_func=my_item_func, attr_type=False)</span><br><span class="line">    dom = parseString(xml)</span><br><span class="line">    # print(dom.toprettyxml())</span><br><span class="line">    # print(type(dom.toprettyxml()))</span><br><span class="line">    with open(xml_path, &#x27;w&#x27;, encoding=&#x27;UTF-8&#x27;)as xml_file:</span><br><span class="line">        xml_file.write(dom.toprettyxml())</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def json_to_xml(json_dir, xml_dir):</span><br><span class="line">    # transfer all json file which in the json_dir to xml_dir</span><br><span class="line">    if (os.path.exists(xml_dir) == False):</span><br><span class="line">        os.makedirs(xml_dir)</span><br><span class="line">    dir = os.listdir(json_dir)</span><br><span class="line">    for file in dir:</span><br><span class="line">        file_list = file.split(&quot;.&quot;)</span><br><span class="line">        if (file_list[-1] == &#x27;json&#x27;):</span><br><span class="line">            jsonToXml(os.path.join(json_dir, file), os.path.join(xml_dir, file_list[0] + &#x27;.xml&#x27;))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &#x27;__main__&#x27;:</span><br><span class="line">    # trandfer singal file</span><br><span class="line">    j_path = &quot;annotations_all.json&quot;</span><br><span class="line">    x_path = &quot;annotations_all.xml&quot;</span><br><span class="line">    jsonToXml(j_path, x_path)</span><br><span class="line"></span><br><span class="line">    # # transfer multi files</span><br><span class="line">    # j_dir = &quot;F:/清影科技/work/jsontoxml/json/&quot;</span><br><span class="line">    # x_dir = &quot;F:/清影科技/work/jsontoxml/xml/&quot;</span><br><span class="line">    # json_to_xml(j_dir, x_dir)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<li>源码<pre class="line-numbers language-none"><code class="language-none">import os
+from json import loads
+from dicttoxml import dicttoxml
+from xml.dom.minidom import parseString
+
+
+def jsonToXml(json_path, xml_path):
+    # @abstract: transfer json file to xml file
+    # json_path: complete path of the json file
+    # xml_path: complete path of the xml file
+    with open(json_path, &#39;r&#39;, encoding&#x3D;&#39;UTF-8&#39;)as json_file:
+        load_dict &#x3D; loads(json_file.read())
+    # print(load_dict)
+    my_item_func &#x3D; lambda x: &#39;Annotation&#39;
+    xml &#x3D; dicttoxml(load_dict, custom_root&#x3D;&#39;Annotations&#39;, item_func&#x3D;my_item_func, attr_type&#x3D;False)
+    dom &#x3D; parseString(xml)
+    # print(dom.toprettyxml())
+    # print(type(dom.toprettyxml()))
+    with open(xml_path, &#39;w&#39;, encoding&#x3D;&#39;UTF-8&#39;)as xml_file:
+        xml_file.write(dom.toprettyxml())
+
+
+def json_to_xml(json_dir, xml_dir):
+    # transfer all json file which in the json_dir to xml_dir
+    if (os.path.exists(xml_dir) &#x3D;&#x3D; False):
+        os.makedirs(xml_dir)
+    dir &#x3D; os.listdir(json_dir)
+    for file in dir:
+        file_list &#x3D; file.split(&quot;.&quot;)
+        if (file_list[-1] &#x3D;&#x3D; &#39;json&#39;):
+            jsonToXml(os.path.join(json_dir, file), os.path.join(xml_dir, file_list[0] + &#39;.xml&#39;))
+
+
+if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    # trandfer singal file
+    j_path &#x3D; &quot;annotations_all.json&quot;
+    x_path &#x3D; &quot;annotations_all.xml&quot;
+    jsonToXml(j_path, x_path)
+
+    # # transfer multi files
+    # j_dir &#x3D; &quot;F:&#x2F;清影科技&#x2F;work&#x2F;jsontoxml&#x2F;json&#x2F;&quot;
+    # x_dir &#x3D; &quot;F:&#x2F;清影科技&#x2F;work&#x2F;jsontoxml&#x2F;xml&#x2F;&quot;
+    # json_to_xml(j_dir, x_dir)
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ul>
 <h2 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h2><h3 id="步骤-1b。配置训练"><a href="#步骤-1b。配置训练" class="headerlink" title="步骤 1b。配置训练"></a>步骤 1b。配置训练</h3><p>如果您正在训练自己的 TensorFlow Lite 模型，请确保已完成我之前指南中的以下项目：</p>
@@ -630,7 +679,10 @@
 <p>如果一切设置正确，模型将在初始化几分钟后开始训练。</p>
 <p>允许模型训练，直到损失始终低于 2。对于我的鸟/松鼠/浣熊检测器模型，这需要大约 9000 步，或 8 小时的训练。（时间会根据您的 CPU 和 GPU 的强大程度而有所不同。有关训练的更多信息以及如何使用 TensorBoard 查看训练作业进度的说明，请参阅我之前教程的第 6 步。）</p>
 <p>一旦训练完成（即损失一直低于 2），按 Ctrl+C 停止训练。最新的检查点将保存在 \object_detection\training 文件夹中，我们将使用该检查点导出冻结的 TensorFlow Lite 图。记下training文件夹（即model.ckpt-XXXX）中model.ckpt文件的checkpoint号，后面会用到。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">protoc --python_out=. C:\tensorflow1\models\research\object_detection\protos\anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\argmax_matcher.proto C:\tensorflow1\models\research\object_detection\protos\bipartite_matcher.proto C:\tensorflow1\models\research\object_detection\protos\box_coder.proto C:\tensorflow1\models\research\object_detection\protos\box_predictor.proto C:\tensorflow1\models\research\object_detection\protos\eval.proto C:\tensorflow1\models\research\object_detection\protos\faster_rcnn.proto C:\tensorflow1\models\research\object_detection\protos\faster_rcnn_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\FILELIST.TXT C:\tensorflow1\models\research\object_detection\protos\graph_rewriter.proto C:\tensorflow1\models\research\object_detection\protos\grid_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\hyperparams.proto C:\tensorflow1\models\research\object_detection\protos\image_resizer.proto C:\tensorflow1\models\research\object_detection\protos\input_reader.proto C:\tensorflow1\models\research\object_detection\protos\keypoint_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\LIST.TXT C:\tensorflow1\models\research\object_detection\protos\losses.proto C:\tensorflow1\models\research\object_detection\protos\matcher.proto C:\tensorflow1\models\research\object_detection\protos\mean_stddev_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\model.proto C:\tensorflow1\models\research\object_detection\protos\multiscale_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\optimizer.proto C:\tensorflow1\models\research\object_detection\protos\pipeline.proto C:\tensorflow1\models\research\object_detection\protos\post_processing.proto C:\tensorflow1\models\research\object_detection\protos\preprocessor.proto C:\tensorflow1\models\research\object_detection\protos\region_similarity_calculator.proto C:\tensorflow1\models\research\object_detection\protos\square_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\ssd.proto C:\tensorflow1\models\research\object_detection\protos\ssd_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\string_int_label_map.proto C:\tensorflow1\models\research\object_detection\protos\train.proto </span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">protoc --python_out&#x3D;. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto
+
+
+protoc --python_out&#x3D;. C:\tensorflow1\models\research\object_detection\protos\anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\argmax_matcher.proto C:\tensorflow1\models\research\object_detection\protos\bipartite_matcher.proto C:\tensorflow1\models\research\object_detection\protos\box_coder.proto C:\tensorflow1\models\research\object_detection\protos\box_predictor.proto C:\tensorflow1\models\research\object_detection\protos\eval.proto C:\tensorflow1\models\research\object_detection\protos\faster_rcnn.proto C:\tensorflow1\models\research\object_detection\protos\faster_rcnn_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\FILELIST.TXT C:\tensorflow1\models\research\object_detection\protos\graph_rewriter.proto C:\tensorflow1\models\research\object_detection\protos\grid_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\hyperparams.proto C:\tensorflow1\models\research\object_detection\protos\image_resizer.proto C:\tensorflow1\models\research\object_detection\protos\input_reader.proto C:\tensorflow1\models\research\object_detection\protos\keypoint_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\LIST.TXT C:\tensorflow1\models\research\object_detection\protos\losses.proto C:\tensorflow1\models\research\object_detection\protos\matcher.proto C:\tensorflow1\models\research\object_detection\protos\mean_stddev_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\model.proto C:\tensorflow1\models\research\object_detection\protos\multiscale_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\optimizer.proto C:\tensorflow1\models\research\object_detection\protos\pipeline.proto C:\tensorflow1\models\research\object_detection\protos\post_processing.proto C:\tensorflow1\models\research\object_detection\protos\preprocessor.proto C:\tensorflow1\models\research\object_detection\protos\region_similarity_calculator.proto C:\tensorflow1\models\research\object_detection\protos\square_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\ssd.proto C:\tensorflow1\models\research\object_detection\protos\ssd_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\string_int_label_map.proto C:\tensorflow1\models\research\object_detection\protos\train.proto <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -1219,7 +1271,7 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -1232,7 +1284,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">82.2k</span>&nbsp;字
+                class="white-color">83.8k</span>&nbsp;字
             
             
             
@@ -1251,6 +1303,50 @@
             </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2017";
+                    var startMonth = "11";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
@@ -1493,6 +1589,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     

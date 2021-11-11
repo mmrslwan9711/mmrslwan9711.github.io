@@ -29,18 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="漫漫人生路" type="application/atom+xml">
+</head>
 
-
-
-   <style>
-    body{
-       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
 
 
 
@@ -527,7 +518,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    437
+                    459
                 </div>
                 
 
@@ -549,6 +540,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -558,22 +552,41 @@
 <h1 id="Quantum-Mini-Linux—网络配置"><a href="#Quantum-Mini-Linux—网络配置" class="headerlink" title="Quantum-Mini-Linux—网络配置"></a><center>Quantum-Mini-Linux—网络配置</center></h1><p><img src="https://files.seeedstudio.com/wiki/Quantum-Mini-Linux-Dev-Kit/Quantum-Mini-Linux-Dev-Kit.png" alt=""></p>
 <h2 id="wifi账号密码设置"><a href="#wifi账号密码设置" class="headerlink" title="wifi账号密码设置"></a>wifi账号密码设置</h2><p><code>sudo vi /etc/wpa_supplicant/wpa_supplicant.conf</code></p>
 <p>修改如下的文件中的部分数据。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">network=&#123;</span><br><span class="line"></span><br><span class="line">               ssid=&quot;[你的网络名称]&quot;</span><br><span class="line"></span><br><span class="line">               psk=&quot;[你的网络密码]&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">network&#x3D;&#123;
+
+               ssid&#x3D;&quot;[你的网络名称]&quot;
+
+               psk&#x3D;&quot;[你的网络密码]&quot;
+
+
+
+        &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>如图<img src="https://exp-picture.cdn.bcebos.com/a44e8afc508c9bcec61993c2d6dd884ce44afa75.jpg?x-bce-process=image%2Fresize%2Cm_lfit%2Cw_500%2Climit_1%2Fformat%2Cf_jpg%2Fquality%2Cq_80" alt=""></p>
 <h2 id="对本地网络地址进行配置"><a href="#对本地网络地址进行配置" class="headerlink" title="对本地网络地址进行配置"></a>对本地网络地址进行配置</h2><p>由于在实验室，所用的路由器的端口号是10.xxx.xxx.xxx 然后直接ip连接到了该位置，这肯定有问题。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/network/interfaces</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;network&#x2F;interfaces<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>修改以下内容设置默认网关，具体数值可以根据自身情况修改</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">auto lo</span><br><span class="line">iface lo inet loopback</span><br><span class="line">auto enxb827bb3ef8a  //就是前面查看的名字</span><br><span class="line">iface enxb827bb3ef8a inet static</span><br><span class="line">address 192.168.1.2    //IP地址</span><br><span class="line">netmask 255.255.255.0    //掩码</span><br><span class="line">gateway 192.168.1.1     //网关</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">auto lo
+iface lo inet loopback
+auto enxb827bb3ef8a  &#x2F;&#x2F;就是前面查看的名字
+iface enxb827bb3ef8a inet static
+address 192.168.1.2    &#x2F;&#x2F;IP地址
+netmask 255.255.255.0    &#x2F;&#x2F;掩码
+gateway 192.168.1.1     &#x2F;&#x2F;网关<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="查看是否连接成功"><a href="#查看是否连接成功" class="headerlink" title="查看是否连接成功"></a>查看是否连接成功</h2><p>ping 192.168.1.2可以但是无法ping www.baidu.com</p>
 <p>报错，unknown host www.baidu.com</p>
-<h2 id="设置端口"><a href="#设置端口" class="headerlink" title="设置端口"></a>设置端口</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/resolv.conf</span><br></pre></td></tr></table></figure>
+<h2 id="设置端口"><a href="#设置端口" class="headerlink" title="设置端口"></a>设置端口</h2><pre class="line-numbers language-none"><code class="language-none">sudo vi &#x2F;etc&#x2F;resolv.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>如果你们网络不行的话，那么一定是这个nameserver的问题。</p>
 <p>所以，修改</p>
 <p>直接在那里面修改。</p>
 <p>改成8.8.8.8</p>
 <p>:wq保存就可以了。</p>
 <p>但是尝试后发现不是因为dns域名解析的问题。</p>
-<h2 id="windows找到www-baidu-com的ip地址"><a href="#windows找到www-baidu-com的ip地址" class="headerlink" title="windows找到www.baidu.com的ip地址"></a>windows找到www.baidu.com的ip地址</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">win+R</span><br><span class="line"></span><br><span class="line">cmd</span><br><span class="line"></span><br><span class="line">ping www.baidu.com</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="windows找到www-baidu-com的ip地址"><a href="#windows找到www-baidu-com的ip地址" class="headerlink" title="windows找到www.baidu.com的ip地址"></a>windows找到www.baidu.com的ip地址</h2><pre class="line-numbers language-none"><code class="language-none">win+R
+
+cmd
+
+ping www.baidu.com
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>百度的地址为14.215.177.39</p>
 <p>用linux ping该地址，发现还是无法连接，证明linux没有连接到外网。</p>
 <h2 id="linux增加路由"><a href="#linux增加路由" class="headerlink" title="linux增加路由"></a>linux增加路由</h2><p>由于linux无法ping通外网，搜索后发现</p>
@@ -1172,7 +1185,7 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -1185,7 +1198,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">82.2k</span>&nbsp;字
+                class="white-color">83.8k</span>&nbsp;字
             
             
             
@@ -1204,6 +1217,50 @@
             </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2017";
+                    var startMonth = "11";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
@@ -1446,6 +1503,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     

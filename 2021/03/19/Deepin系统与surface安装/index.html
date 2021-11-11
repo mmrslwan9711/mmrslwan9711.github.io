@@ -29,18 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="漫漫人生路" type="application/atom+xml">
+</head>
 
-
-
-   <style>
-    body{
-       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
 
 
 
@@ -535,7 +526,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    1.8k
                 </div>
                 
 
@@ -556,6 +547,9 @@
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -587,10 +581,27 @@
 <p>然后开始安装。重启。</p>
 <h2 id="安装触摸屏驱动"><a href="#安装触摸屏驱动" class="headerlink" title="安装触摸屏驱动"></a>安装触摸屏驱动</h2><h3 id="deepin-1"><a href="#deepin-1" class="headerlink" title="deepin"></a>deepin</h3><p>这里很神奇如果你也装的是deepin操作系统，触摸屏是可以直接使用的，可能因为华为封锁，目前华为用的均为deepin操作系统，华为也有触控笔记本电脑。</p>
 <h3 id="其他linux系统"><a href="#其他linux系统" class="headerlink" title="其他linux系统"></a>其他linux系统</h3><p>请详见<a target="_blank" rel="noopener" href="https://github.com/jakeday/linux-surface">github大神</a>的surface驱动安装教程。</p>
-<p>进入系统以后使用Terminal安装了Peter Hunter整理的内核<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:tigerite/kernel</span><br><span class="line"></span><br><span class="line">sudo apt-get update</span><br><span class="line"></span><br><span class="line">sudo apt-get install linux-surface</span><br></pre></td></tr></table></figure><br>然后使用编辑器nano或者gedit编辑/<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lib/udev/rules.d/50-bluetooth-hci-auto-poweron.rules</span><br></pre></td></tr></table></figure><br>用#注释掉里面唯一的那一行，再打开/etc/bluetooth/main.conf<br>把#[Policy]<br>改成[Policy]<br>并把最后一排的<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#AutoEnable=false改成AutoEnable=true</span><br><span class="line">=================================安装rEFIndsudo</span><br><span class="line"></span><br><span class="line">apt-add-repository ppa:rodsmith/refind</span><br><span class="line"></span><br><span class="line">sudo apt-get update</span><br><span class="line"></span><br><span class="line">sudo apt-get install refind</span><br></pre></td></tr></table></figure><br>用Shim给rEFind增加Secure Boot的启动方式<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">refind-install --shim /boot/efi/EFI/ubuntu/shimx64.efi --localkeys</span><br></pre></td></tr></table></figure><br>然后把rEFind设为第一启动项refind-mkdefault开启Secure Boot</p>
+<p>进入系统以后使用Terminal安装了Peter Hunter整理的内核<br><pre class="line-numbers language-none"><code class="language-none">sudo add-apt-repository ppa:tigerite&#x2F;kernel
+
+sudo apt-get update
+
+sudo apt-get install linux-surface<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>然后使用编辑器nano或者gedit编辑/<br><pre class="line-numbers language-none"><code class="language-none">lib&#x2F;udev&#x2F;rules.d&#x2F;50-bluetooth-hci-auto-poweron.rules<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>用#注释掉里面唯一的那一行，再打开/etc/bluetooth/main.conf<br>把#[Policy]<br>改成[Policy]<br>并把最后一排的<br><pre class="line-numbers language-none"><code class="language-none">#AutoEnable&#x3D;false改成AutoEnable&#x3D;true
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;安装rEFIndsudo
+
+apt-add-repository ppa:rodsmith&#x2F;refind
+
+sudo apt-get update
+
+sudo apt-get install refind<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>用Shim给rEFind增加Secure Boot的启动方式<br><pre class="line-numbers language-none"><code class="language-none">refind-install --shim &#x2F;boot&#x2F;efi&#x2F;EFI&#x2F;ubuntu&#x2F;shimx64.efi --localkeys<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>然后把rEFind设为第一启动项refind-mkdefault开启Secure Boot</p>
 <h2 id="蓝牙驱动安装"><a href="#蓝牙驱动安装" class="headerlink" title="蓝牙驱动安装"></a>蓝牙驱动安装</h2><p>蓝牙（Bluetooth），是一种无线个人局域网（Wireless PAN），最初由爱立信创制，后来由蓝牙技术联盟订定技术标准。这个词的来源是10世纪丹麦和挪威国王蓝牙哈拉尔（丹麦语：Harald Blåtand Gormsen），借国王的绰号“Blåtand”当名称，直接翻译成中文为“蓝牙”（blå＝蓝，tand＝牙）。蓝牙是一种通用的射频频率是2.45GHZ的无线电接口，它使带有电子端口的设备能够在小范围内进行无线通信。</p>
 <h3 id="安装应用"><a href="#安装应用" class="headerlink" title="安装应用"></a>安装应用</h3><p>Blueman旨在提供最为常见的蓝牙管理功能。</p>
-<p>命令安装，终端执行：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install blueman</span><br><span class="line">````</span><br><span class="line">命令卸载，终端执行：</span><br></pre></td></tr></table></figure><br>sudo apt-get remove blueman<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## Hexo安装</span><br><span class="line">### 安装nodejs:生成静态页面</span><br></pre></td></tr></table></figure><br>sudo apt-get install nodejs<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">### 安装npm：一会用来安装hexo</span><br></pre></td></tr></table></figure><br>sudo apt-get insall npm<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">### 正式安装hexo</span><br></pre></td></tr></table></figure><br>sudo npm install -g hexo<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">### hexo部署</span><br></pre></td></tr></table></figure><br>hexo clean<br>hexo g-d<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">## git SSH Linux</span><br><span class="line"></span><br><span class="line">打开终端依次输入一下命令</span><br></pre></td></tr></table></figure><br>Git Bash Here</p>
+<p>命令安装，终端执行：<br><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install blueman
+&#96;&#96;&#96;&#96;
+命令卸载，终端执行：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get remove blueman<br><pre class="line-numbers language-none"><code class="language-none">
+## Hexo安装
+### 安装nodejs:生成静态页面<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get install nodejs<br><pre class="line-numbers language-none"><code class="language-none">### 安装npm：一会用来安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo apt-get insall npm<br><pre class="line-numbers language-none"><code class="language-none">### 正式安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo npm install -g hexo<br><pre class="line-numbers language-none"><code class="language-none">### hexo部署<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>hexo clean<br>hexo g-d<br><pre class="line-numbers language-none"><code class="language-none">## git SSH Linux
+
+打开终端依次输入一下命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>Git Bash Here</p>
 <p>mkdir ~/.ssh</p>
 <p>cd .ssh/</p>
 <p>git config —global  user.name “mmrsl”</p>
@@ -1195,7 +1206,7 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -1208,7 +1219,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">82.2k</span>&nbsp;字
+                class="white-color">83.8k</span>&nbsp;字
             
             
             
@@ -1227,6 +1238,50 @@
             </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2017";
+                    var startMonth = "11";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
@@ -1469,6 +1524,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     

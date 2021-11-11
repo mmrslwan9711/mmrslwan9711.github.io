@@ -29,18 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="漫漫人生路" type="application/atom+xml">
+</head>
 
-
-
-   <style>
-    body{
-       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
 
 
 
@@ -527,14 +518,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    545
+                    609
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
 
@@ -549,22 +540,109 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="linux常用指令"><a href="#linux常用指令" class="headerlink" title="linux常用指令"></a>linux常用指令</h1><ul>
-<li>保存ip地址<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/hosts</span><br><span class="line">::1     ip6-localhost ip6-loopback</span><br><span class="line">fe00::0 ip6-localnet</span><br><span class="line">ff00::0 ip6-mcastprefix</span><br><span class="line">ff02::1 ip6-allnodes</span><br><span class="line">ff02::2 ip6-allrouters</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh name@ipname</span><br></pre></td></tr></table></figure>
+<li>保存ip地址<pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h2><pre class="line-numbers language-none"><code class="language-none">ssh name@ipname<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 </ul>
-<h2 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">上传</span><br><span class="line">scp -r 源地址 name@ipname:目的地址目录</span><br><span class="line"></span><br><span class="line">下载</span><br><span class="line">scp -r name@ipname:目的地址目录 源地址 </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h2><pre class="line-numbers language-none"><code class="language-none">上传
+scp -r 源地址 name@ipname:目的地址目录
+
+下载
+scp -r name@ipname:目的地址目录 源地址 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>./ 当前目录<br>～  根目录</p>
-<h3 id="压缩文件指令"><a href="#压缩文件指令" class="headerlink" title="压缩文件指令"></a>压缩文件指令</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">unzip 文件.zip</span><br><span class="line">zip -r xxx.zip 文件目录</span><br><span class="line">tar zxvf 文件</span><br></pre></td></tr></table></figure>
-<h3 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">ps -ef|grep python   #当前运行的程序PID</span><br><span class="line"></span><br><span class="line">tail -f out.log    #持续看输出结果</span><br><span class="line"></span><br><span class="line">cat     # 文件内容</span><br><span class="line"></span><br><span class="line">pwd   # 当前文件地址</span><br><span class="line"></span><br><span class="line">sudo passwd # 修改密码</span><br><span class="line"></span><br><span class="line">watch</span><br><span class="line"></span><br><span class="line">ifconfig  # 端口</span><br><span class="line"></span><br><span class="line">iwconfig # 网卡信息</span><br><span class="line"></span><br><span class="line">df -h  # 磁盘占用情况</span><br><span class="line"></span><br><span class="line">ls -l  # 详细信息</span><br><span class="line"></span><br><span class="line">cd # 进入某文件目录</span><br><span class="line"></span><br><span class="line">rm -f filename</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">scp -r name@ip:/home/wkp/datasets/targe/images/bz_3647.jpg /home/wkp/wan_lab/旋转扩充数据集/YOLO_code/img</span><br><span class="line"></span><br><span class="line">scp -r wkp@xmu_1:/home/wkp/datasets/targe/labels/classes.txt /home/wkp/wan_lab/旋转扩充数据集/YOLO_code/label</span><br><span class="line"></span><br><span class="line">scp -r wkp@xmu_1:/home/wkp/datasets/targe/labels/3647.txt /home/wkp/wan_lab/旋转扩充数据集/YOLO_code/label</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="wacth"><a href="#wacth" class="headerlink" title="wacth"></a>wacth</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">Usage: watch [-dhntv] [--differences[=cumulative]] [--help] [--interval=&lt;n&gt;] [--no-title] [--version] &lt;command&gt;</span><br><span class="line">  -d, --differences[=cumulative]        highlight changes between updates</span><br><span class="line">                (cumulative means highlighting is cumulative)</span><br><span class="line">  -h, --help                            print a summary of the options</span><br><span class="line">  -n, --interval=&lt;seconds&gt;              seconds to wait between updates</span><br><span class="line">  -v, --version                         print the version number</span><br><span class="line">  -t, --no-title                        turns off showing the header</span><br><span class="line"></span><br><span class="line">每隔一秒高亮显示网络链接数的变化情况</span><br><span class="line"></span><br><span class="line">watch -n 1 -d netstat -ant 【-n 设置间隔，-d,difference，高亮显示不同】</span><br><span class="line"> </span><br><span class="line">   watch -d &#x27;ls /home/omd&#x27;       【-d 高亮显示】</span><br><span class="line"> </span><br><span class="line">   watch -t &#x27;ls /home/omd&#x27;       【-t会关闭watch命令在顶部的时间间隔】</span><br><span class="line"></span><br><span class="line">watch -n 1 -d &#x27;pstree|grep http&#x27;</span><br><span class="line"></span><br><span class="line">实时查看模拟攻击客户机建立起来的连接数</span><br><span class="line"> </span><br><span class="line">watch -n 1 -d &#x27;netstat -an | grep &quot;21&quot; | egrep &quot;192.168.25.100&quot;| wc -l&#x27;</span><br><span class="line"> </span><br><span class="line">监测当前目录中 scf&#x27; 的文件的变化</span><br><span class="line"> </span><br><span class="line">watch -d &#x27;ls -l|grep scf&#x27;</span><br><span class="line"> </span><br><span class="line">10秒一次输出系统的平均负载</span><br><span class="line"> </span><br><span class="line">watch -n 1 -d &quot;uptime&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">看网口连接状态</span><br><span class="line">watch -n 1 iwconfig wlx0ccf89606c44</span><br><span class="line"></span><br><span class="line">wlx0ccf89606c44  IEEE 802.11  ESSID:&quot;SSID&quot;  </span><br><span class="line">          Mode:Managed  Frequency:2.462 GHz  Access Point: EC:26:CA:2A:01:E4   </span><br><span class="line">          Bit Rate=1 Mb/s   Tx-Power=20 dBm   </span><br><span class="line">          Retry short limit:7   RTS thr:off   Fragment thr:off</span><br><span class="line">          Power Management:off</span><br><span class="line">          Link Quality=70/70  Signal level=-19 dBm  </span><br><span class="line">          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0</span><br><span class="line">          Tx excessive retries:1  Invalid misc:10   Missed beacon:0</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="压缩文件指令"><a href="#压缩文件指令" class="headerlink" title="压缩文件指令"></a>压缩文件指令</h3><pre class="line-numbers language-none"><code class="language-none">unzip 文件.zip
+zip -r xxx.zip 文件目录
+tar zxvf 文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h3><pre class="line-numbers language-none"><code class="language-none">ps -ef|grep python   #当前运行的程序PID
+
+tail -f out.log    #持续看输出结果
+
+cat     # 文件内容
+
+pwd   # 当前文件地址
+
+sudo passwd # 修改密码
+
+watch
+
+ifconfig  # 端口
+
+iwconfig # 网卡信息
+
+df -h  # 磁盘占用情况
+
+ls -l  # 详细信息
+
+cd # 进入某文件目录
+
+rm -f filename
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h3><pre class="line-numbers language-none"><code class="language-none">scp -r name@ip:&#x2F;home&#x2F;wkp&#x2F;datasets&#x2F;targe&#x2F;images&#x2F;bz_3647.jpg &#x2F;home&#x2F;wkp&#x2F;wan_lab&#x2F;旋转扩充数据集&#x2F;YOLO_code&#x2F;img
+
+scp -r wkp@xmu_1:&#x2F;home&#x2F;wkp&#x2F;datasets&#x2F;targe&#x2F;labels&#x2F;classes.txt &#x2F;home&#x2F;wkp&#x2F;wan_lab&#x2F;旋转扩充数据集&#x2F;YOLO_code&#x2F;label
+
+scp -r wkp@xmu_1:&#x2F;home&#x2F;wkp&#x2F;datasets&#x2F;targe&#x2F;labels&#x2F;3647.txt &#x2F;home&#x2F;wkp&#x2F;wan_lab&#x2F;旋转扩充数据集&#x2F;YOLO_code&#x2F;label
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="wacth"><a href="#wacth" class="headerlink" title="wacth"></a>wacth</h4><pre class="line-numbers language-none"><code class="language-none">Usage: watch [-dhntv] [--differences[&#x3D;cumulative]] [--help] [--interval&#x3D;&lt;n&gt;] [--no-title] [--version] &lt;command&gt;
+  -d, --differences[&#x3D;cumulative]        highlight changes between updates
+                (cumulative means highlighting is cumulative)
+  -h, --help                            print a summary of the options
+  -n, --interval&#x3D;&lt;seconds&gt;              seconds to wait between updates
+  -v, --version                         print the version number
+  -t, --no-title                        turns off showing the header
+
+每隔一秒高亮显示网络链接数的变化情况
+
+watch -n 1 -d netstat -ant 【-n 设置间隔，-d,difference，高亮显示不同】
+ 
+   watch -d &#39;ls &#x2F;home&#x2F;omd&#39;       【-d 高亮显示】
+ 
+   watch -t &#39;ls &#x2F;home&#x2F;omd&#39;       【-t会关闭watch命令在顶部的时间间隔】
+
+watch -n 1 -d &#39;pstree|grep http&#39;
+
+实时查看模拟攻击客户机建立起来的连接数
+ 
+watch -n 1 -d &#39;netstat -an | grep &quot;21&quot; | egrep &quot;192.168.25.100&quot;| wc -l&#39;
+ 
+监测当前目录中 scf&#39; 的文件的变化
+ 
+watch -d &#39;ls -l|grep scf&#39;
+ 
+10秒一次输出系统的平均负载
+ 
+watch -n 1 -d &quot;uptime&quot;
+
+
+看网口连接状态
+watch -n 1 iwconfig wlx0ccf89606c44
+
+wlx0ccf89606c44  IEEE 802.11  ESSID:&quot;SSID&quot;  
+          Mode:Managed  Frequency:2.462 GHz  Access Point: EC:26:CA:2A:01:E4   
+          Bit Rate&#x3D;1 Mb&#x2F;s   Tx-Power&#x3D;20 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:off
+          Link Quality&#x3D;70&#x2F;70  Signal level&#x3D;-19 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:1  Invalid misc:10   Missed beacon:0
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -1153,7 +1231,7 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -1166,7 +1244,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">82.2k</span>&nbsp;字
+                class="white-color">83.8k</span>&nbsp;字
             
             
             
@@ -1185,6 +1263,50 @@
             </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2017";
+                    var startMonth = "11";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
@@ -1427,6 +1549,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     

@@ -29,18 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="漫漫人生路" type="application/atom+xml">
+</head>
 
-
-
-   <style>
-    body{
-       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
 
 
 
@@ -527,14 +518,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6k
+                    6.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    36 分
+                    39 分
                 </div>
                 
 
@@ -549,26 +540,915 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="抗干扰树莓派操作系统双网卡"><a href="#抗干扰树莓派操作系统双网卡" class="headerlink" title="抗干扰树莓派操作系统双网卡"></a>抗干扰树莓派操作系统双网卡</h1><h2 id="本文主要是讲解如何让一个设备具有两条独立的信道"><a href="#本文主要是讲解如何让一个设备具有两条独立的信道" class="headerlink" title="本文主要是讲解如何让一个设备具有两条独立的信道"></a>本文主要是讲解如何让一个设备具有两条独立的信道</h2><p>首先是我在解决问题中所写的一些东西，就随手的一个笔记。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">auto lo</span><br><span class="line">iface lo inet loopback</span><br><span class="line"></span><br><span class="line">iface eth0 inet manual</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">auto wlan0</span><br><span class="line">iface wlan0 inet static </span><br><span class="line">address 192.168.201.165</span><br><span class="line">netmask 255.255.255.0</span><br><span class="line">gateway 192.168.201.1</span><br><span class="line">pre-up wpa_supplicant -Dwext -i wlan0 -c/etc/wpa_supplicant/wpa_supplicant2.conf -B</span><br><span class="line"></span><br><span class="line">allow-hotplug wlan0</span><br><span class="line">iface wlan0 inet manual</span><br><span class="line">    wpa-conf /etc/wpa_supplicant/wpa_supplicant2.conf</span><br><span class="line"></span><br><span class="line">auto wlan1</span><br><span class="line">iface wlan1 inet static </span><br><span class="line">address 192.168.201.165</span><br><span class="line">netmask 255.255.255.0</span><br><span class="line">gateway 192.168.201.1</span><br><span class="line">pre-up wpa_supplicant -Dwext -i wlan1 -c/etc/wpa_supplicant/wpa_supplicant.conf -B</span><br><span class="line"></span><br><span class="line">allow-hotplug wlan1</span><br><span class="line">iface wlan1 inet manual</span><br><span class="line">    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf</span><br><span class="line"></span><br></pre></td></tr></table></figure><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">sudo create_ap -n wlan0 car_wifi 12345678 -c 1</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev</span><br><span class="line">update_config=1</span><br><span class="line">country=CN</span><br><span class="line"></span><br><span class="line">network=&#123;</span><br><span class="line">        ssid=&quot;xxx&quot;</span><br><span class="line">        psk=&quot;xxx&quot;</span><br><span class="line">        key_mgmt=WPA-PSK</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> sudo nano /media/pi/rootfs/etc/network/interfaces</span><br><span class="line"> sudo nano /etc/network/interfaces</span><br><span class="line"> cd /media/pi/rootfs/etc/wpa_supplicant/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">sudo nano /media/pi/rootfs/etc/dhcpcd.conf</span><br><span class="line">sudo nano /etc/dhcpcd.conf</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
-<h2 id="安装一些库"><a href="#安装一些库" class="headerlink" title="安装一些库"></a>安装一些库</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install util-linux procps hostapd iproute2 iw haveged dnsmasq</span><br></pre></td></tr></table></figure>
-<h3 id="安装开源软件"><a href="#安装开源软件" class="headerlink" title="安装开源软件"></a>安装开源软件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo git clone https://github.com/oblique/create_ap</span><br><span class="line">cd create_ap</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
-<h2 id="设置开机启动项"><a href="#设置开机启动项" class="headerlink" title="设置开机启动项"></a>设置开机启动项</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd .config/</span><br><span class="line">mkdir autostart</span><br><span class="line">cd autostart/</span><br><span class="line">sudo nano local.desktop</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Type=Application</span><br><span class="line">Exec=sudo sh run.sh</span><br></pre></td></tr></table></figure>
+                <h1 id="抗干扰树莓派操作系统双网卡"><a href="#抗干扰树莓派操作系统双网卡" class="headerlink" title="抗干扰树莓派操作系统双网卡"></a>抗干扰树莓派操作系统双网卡</h1><h2 id="本文主要是讲解如何让一个设备具有两条独立的信道"><a href="#本文主要是讲解如何让一个设备具有两条独立的信道" class="headerlink" title="本文主要是讲解如何让一个设备具有两条独立的信道"></a>本文主要是讲解如何让一个设备具有两条独立的信道</h2><p>首先是我在解决问题中所写的一些东西，就随手的一个笔记。<br><pre class="line-numbers language-none"><code class="language-none">auto lo
+iface lo inet loopback
+
+iface eth0 inet manual
+
+
+auto wlan0
+iface wlan0 inet static 
+address 192.168.201.165
+netmask 255.255.255.0
+gateway 192.168.201.1
+pre-up wpa_supplicant -Dwext -i wlan0 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant2.conf -B
+
+allow-hotplug wlan0
+iface wlan0 inet manual
+    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant2.conf
+
+auto wlan1
+iface wlan1 inet static 
+address 192.168.201.165
+netmask 255.255.255.0
+gateway 192.168.201.1
+pre-up wpa_supplicant -Dwext -i wlan1 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf -B
+
+allow-hotplug wlan1
+iface wlan1 inet manual
+    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><pre class="line-numbers language-none"><code class="language-none">
+sudo create_ap -n wlan0 car_wifi 12345678 -c 1
+
+
+
+
+ctrl_interface&#x3D;DIR&#x3D;&#x2F;var&#x2F;run&#x2F;wpa_supplicant GROUP&#x3D;netdev
+update_config&#x3D;1
+country&#x3D;CN
+
+network&#x3D;&#123;
+        ssid&#x3D;&quot;xxx&quot;
+        psk&#x3D;&quot;xxx&quot;
+        key_mgmt&#x3D;WPA-PSK
+&#125;
+
+
+
+
+ sudo nano &#x2F;media&#x2F;pi&#x2F;rootfs&#x2F;etc&#x2F;network&#x2F;interfaces
+ sudo nano &#x2F;etc&#x2F;network&#x2F;interfaces
+ cd &#x2F;media&#x2F;pi&#x2F;rootfs&#x2F;etc&#x2F;wpa_supplicant&#x2F;
+
+
+sudo nano &#x2F;media&#x2F;pi&#x2F;rootfs&#x2F;etc&#x2F;dhcpcd.conf
+sudo nano &#x2F;etc&#x2F;dhcpcd.conf
+
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h2 id="安装一些库"><a href="#安装一些库" class="headerlink" title="安装一些库"></a>安装一些库</h2><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install util-linux procps hostapd iproute2 iw haveged dnsmasq<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="安装开源软件"><a href="#安装开源软件" class="headerlink" title="安装开源软件"></a>安装开源软件</h3><pre class="line-numbers language-none"><code class="language-none">sudo git clone https:&#x2F;&#x2F;github.com&#x2F;oblique&#x2F;create_ap
+cd create_ap
+sudo make install<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="设置开机启动项"><a href="#设置开机启动项" class="headerlink" title="设置开机启动项"></a>设置开机启动项</h2><pre class="line-numbers language-none"><code class="language-none">cd .config&#x2F;
+mkdir autostart
+cd autostart&#x2F;
+sudo nano local.desktop<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">[Desktop Entry]
+Type&#x3D;Application
+Exec&#x3D;sudo sh run.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><code>sudo nano run.sh</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sudo service hostapd stop</span><br><span class="line">sudo service dnsmasq stop</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">sudo ifup wlan1</span><br><span class="line">sudo ifup wlan0</span><br><span class="line">sudo ifdown wlan0</span><br><span class="line">sudo create_ap -n wlan0 carwifi 12345678 -c 1</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">sudo service hostapd stop
+sudo service dnsmasq stop
+
+
+sudo ifup wlan1
+sudo ifup wlan0
+sudo ifdown wlan0
+sudo create_ap -n wlan0 carwifi 12345678 -c 1
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="本人一些配置文件修改"><a href="#本人一些配置文件修改" class="headerlink" title="本人一些配置文件修改"></a>本人一些配置文件修改</h2><h3 id="配置interfaces"><a href="#配置interfaces" class="headerlink" title="配置interfaces"></a>配置interfaces</h3><p><code>sudo vim /etc/network/interfaces</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">#root@raspberrypi:/etc/network# cat interfaces</span><br><span class="line"># interfaces(5) file used by ifup(8) and ifdown(8)</span><br><span class="line"># Please note that this file is written to be used with dhcpcd</span><br><span class="line"># For static IP, consult /etc/dhcpcd.conf and &#x27;man dhcpcd.conf&#x27;</span><br><span class="line"></span><br><span class="line"># Include files from /etc/network/interfaces.d:</span><br><span class="line">source-directory /etc/network/interfaces.d</span><br><span class="line"></span><br><span class="line">#auto lo</span><br><span class="line">#iface lo inet loopback</span><br><span class="line"></span><br><span class="line">#inface enth0 inet manual</span><br><span class="line">#auto wlan0</span><br><span class="line">#iface wlan0 inet dhcp</span><br><span class="line">#iface wlan0 inet dhcp</span><br><span class="line">#wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf</span><br><span class="line">auto eth0</span><br><span class="line">iface eth0 inet manual</span><br><span class="line"></span><br><span class="line">#auto wlan0</span><br><span class="line">#allow-hotplug wlan0</span><br><span class="line">iface wlan0 inet manual</span><br><span class="line"></span><br><span class="line">#iface wlan0 inet dhcp</span><br><span class="line">wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#auto wlan0</span><br><span class="line">#iface wlan0 inet static</span><br><span class="line">#address 192.168.201.165</span><br><span class="line">#netmask 255.255.255.0</span><br><span class="line">#gateway 192.168.201.1</span><br><span class="line">#pre-up wpa_supplicant -Dwext -i wlan0 -c/etc/wpa_supplicant/wpa_supplicant.conf -B</span><br><span class="line"></span><br><span class="line">#allow-hotplug wlan0</span><br><span class="line">#wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">iface wlan1 inet dhcp</span><br><span class="line">wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="配置hostapd"><a href="#配置hostapd" class="headerlink" title="配置hostapd"></a>配置hostapd</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">interface=wlan0</span><br><span class="line">driver=nl80211</span><br><span class="line">ssid=pi3</span><br><span class="line">hw_mode=g</span><br><span class="line">channel=6</span><br><span class="line">ieee80211n=1</span><br><span class="line">wmm_enabled=1</span><br><span class="line">ht_capab=[HT40][SHORT-GT-20][DSSS_CCK-40]</span><br><span class="line">macaddr_acl=0</span><br><span class="line">auth_algs=1</span><br><span class="line">ignore_broadcast_ssid=0</span><br><span class="line">wpa=2</span><br><span class="line">wpa_key_mgmt=WPA-PSK</span><br><span class="line">wpa_passphrase=12345678</span><br><span class="line">rsn_pairwise=CCMP</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">#root@raspberrypi:&#x2F;etc&#x2F;network# cat interfaces
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Please note that this file is written to be used with dhcpcd
+# For static IP, consult &#x2F;etc&#x2F;dhcpcd.conf and &#39;man dhcpcd.conf&#39;
+
+# Include files from &#x2F;etc&#x2F;network&#x2F;interfaces.d:
+source-directory &#x2F;etc&#x2F;network&#x2F;interfaces.d
+
+#auto lo
+#iface lo inet loopback
+
+#inface enth0 inet manual
+#auto wlan0
+#iface wlan0 inet dhcp
+#iface wlan0 inet dhcp
+#wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf
+auto eth0
+iface eth0 inet manual
+
+#auto wlan0
+#allow-hotplug wlan0
+iface wlan0 inet manual
+
+#iface wlan0 inet dhcp
+wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf
+
+
+#auto wlan0
+#iface wlan0 inet static
+#address 192.168.201.165
+#netmask 255.255.255.0
+#gateway 192.168.201.1
+#pre-up wpa_supplicant -Dwext -i wlan0 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf -B
+
+#allow-hotplug wlan0
+#wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf
+
+
+iface wlan1 inet dhcp
+wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="配置hostapd"><a href="#配置hostapd" class="headerlink" title="配置hostapd"></a>配置hostapd</h3><pre class="line-numbers language-none"><code class="language-none">interface&#x3D;wlan0
+driver&#x3D;nl80211
+ssid&#x3D;pi3
+hw_mode&#x3D;g
+channel&#x3D;6
+ieee80211n&#x3D;1
+wmm_enabled&#x3D;1
+ht_capab&#x3D;[HT40][SHORT-GT-20][DSSS_CCK-40]
+macaddr_acl&#x3D;0
+auth_algs&#x3D;1
+ignore_broadcast_ssid&#x3D;0
+wpa&#x3D;2
+wpa_key_mgmt&#x3D;WPA-PSK
+wpa_passphrase&#x3D;12345678
+rsn_pairwise&#x3D;CCMP<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="配置dhcp"><a href="#配置dhcp" class="headerlink" title="配置dhcp"></a>配置dhcp</h3><p><code>sudo nano /etc/dhcpcd.conf</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># A sample configuration for dhcpcd.</span><br><span class="line"># See dhcpcd.conf(5) for details.</span><br><span class="line"></span><br><span class="line"># Allow users of this group to interact with dhcpcd via the control socket.</span><br><span class="line">#controlgroup wheel</span><br><span class="line"></span><br><span class="line"># Inform the DHCP server of our hostname for DDNS.</span><br><span class="line">hostname</span><br><span class="line"></span><br><span class="line"># Use the hardware address of the interface for the Client ID.</span><br><span class="line">clientid</span><br><span class="line"># or</span><br><span class="line"># Use the same DUID + IAID as set in DHCPv6 for DHCPv4 ClientID as per RFC4361.</span><br><span class="line">#duid</span><br><span class="line"></span><br><span class="line"># Persist interface configuration when dhcpcd exits.</span><br><span class="line">persistent</span><br><span class="line"></span><br><span class="line"># Rapid commit support.</span><br><span class="line"># Safe to enable by default because it requires the equivalent option set</span><br><span class="line"># on the server to actually work.</span><br><span class="line">option rapid_commit</span><br><span class="line"></span><br><span class="line"># A list of options to request from the DHCP server.</span><br><span class="line">option domain_name_servers, domain_name, domain_search, host_name</span><br><span class="line">option classless_static_routes</span><br><span class="line"># Most distributions have NTP support.</span><br><span class="line">option ntp_servers</span><br><span class="line"># Respect the network MTU.</span><br><span class="line"># Some interface drivers reset when changing the MTU so disabled by default.</span><br><span class="line">#option interface_mtu</span><br><span class="line"></span><br><span class="line"># A ServerID is required by RFC2131.</span><br><span class="line">require dhcp_server_identifier</span><br><span class="line"></span><br><span class="line"># Generate Stable Private IPv6 Addresses instead of hardware based ones</span><br><span class="line">slaac private</span><br><span class="line"></span><br><span class="line"># A hook script is provided to lookup the hostname if not set by the DHCP</span><br><span class="line"># server, but it should not be run by default.</span><br><span class="line">nohook lookup-hostname</span><br><span class="line"></span><br><span class="line">interface eth0</span><br><span class="line">static ip_address=192.168.3.233/24</span><br><span class="line">static routers=192.168.3.1</span><br><span class="line">static domain_name_servers=114.114.114.114</span><br><span class="line"></span><br><span class="line">interface wlan0</span><br><span class="line">#static ip_address=172.16.233.233/16</span><br><span class="line">#static routers=172.16.0.1</span><br><span class="line">static domain_name_servers=114.114.114.114</span><br><span class="line"></span><br><span class="line">static ip_address=10.42.0.233/24</span><br><span class="line">static routers=10.42.0.1</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">
+# A sample configuration for dhcpcd.
+# See dhcpcd.conf(5) for details.
+
+# Allow users of this group to interact with dhcpcd via the control socket.
+#controlgroup wheel
+
+# Inform the DHCP server of our hostname for DDNS.
+hostname
+
+# Use the hardware address of the interface for the Client ID.
+clientid
+# or
+# Use the same DUID + IAID as set in DHCPv6 for DHCPv4 ClientID as per RFC4361.
+#duid
+
+# Persist interface configuration when dhcpcd exits.
+persistent
+
+# Rapid commit support.
+# Safe to enable by default because it requires the equivalent option set
+# on the server to actually work.
+option rapid_commit
+
+# A list of options to request from the DHCP server.
+option domain_name_servers, domain_name, domain_search, host_name
+option classless_static_routes
+# Most distributions have NTP support.
+option ntp_servers
+# Respect the network MTU.
+# Some interface drivers reset when changing the MTU so disabled by default.
+#option interface_mtu
+
+# A ServerID is required by RFC2131.
+require dhcp_server_identifier
+
+# Generate Stable Private IPv6 Addresses instead of hardware based ones
+slaac private
+
+# A hook script is provided to lookup the hostname if not set by the DHCP
+# server, but it should not be run by default.
+nohook lookup-hostname
+
+interface eth0
+static ip_address&#x3D;192.168.3.233&#x2F;24
+static routers&#x3D;192.168.3.1
+static domain_name_servers&#x3D;114.114.114.114
+
+interface wlan0
+#static ip_address&#x3D;172.16.233.233&#x2F;16
+#static routers&#x3D;172.16.0.1
+static domain_name_servers&#x3D;114.114.114.114
+
+static ip_address&#x3D;10.42.0.233&#x2F;24
+static routers&#x3D;10.42.0.1
+
+
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="配置dnsmaq"><a href="#配置dnsmaq" class="headerlink" title="配置dnsmaq"></a>配置dnsmaq</h3><p><code>sudo vim /etc/dhcpcd.conf</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br><span class="line">395</span><br><span class="line">396</span><br><span class="line">397</span><br><span class="line">398</span><br><span class="line">399</span><br><span class="line">400</span><br><span class="line">401</span><br><span class="line">402</span><br><span class="line">403</span><br><span class="line">404</span><br><span class="line">405</span><br><span class="line">406</span><br><span class="line">407</span><br><span class="line">408</span><br><span class="line">409</span><br><span class="line">410</span><br><span class="line">411</span><br><span class="line">412</span><br><span class="line">413</span><br><span class="line">414</span><br><span class="line">415</span><br><span class="line">416</span><br><span class="line">417</span><br><span class="line">418</span><br><span class="line">419</span><br><span class="line">420</span><br><span class="line">421</span><br><span class="line">422</span><br><span class="line">423</span><br><span class="line">424</span><br><span class="line">425</span><br><span class="line">426</span><br><span class="line">427</span><br><span class="line">428</span><br><span class="line">429</span><br><span class="line">430</span><br><span class="line">431</span><br><span class="line">432</span><br><span class="line">433</span><br><span class="line">434</span><br><span class="line">435</span><br><span class="line">436</span><br><span class="line">437</span><br><span class="line">438</span><br><span class="line">439</span><br><span class="line">440</span><br><span class="line">441</span><br><span class="line">442</span><br><span class="line">443</span><br><span class="line">444</span><br><span class="line">445</span><br><span class="line">446</span><br><span class="line">447</span><br><span class="line">448</span><br><span class="line">449</span><br><span class="line">450</span><br><span class="line">451</span><br><span class="line">452</span><br><span class="line">453</span><br><span class="line">454</span><br><span class="line">455</span><br><span class="line">456</span><br><span class="line">457</span><br><span class="line">458</span><br><span class="line">459</span><br><span class="line">460</span><br><span class="line">461</span><br><span class="line">462</span><br><span class="line">463</span><br><span class="line">464</span><br><span class="line">465</span><br><span class="line">466</span><br><span class="line">467</span><br><span class="line">468</span><br><span class="line">469</span><br><span class="line">470</span><br><span class="line">471</span><br><span class="line">472</span><br><span class="line">473</span><br><span class="line">474</span><br><span class="line">475</span><br><span class="line">476</span><br><span class="line">477</span><br><span class="line">478</span><br><span class="line">479</span><br><span class="line">480</span><br><span class="line">481</span><br><span class="line">482</span><br><span class="line">483</span><br><span class="line">484</span><br><span class="line">485</span><br><span class="line">486</span><br><span class="line">487</span><br><span class="line">488</span><br><span class="line">489</span><br><span class="line">490</span><br><span class="line">491</span><br><span class="line">492</span><br><span class="line">493</span><br><span class="line">494</span><br><span class="line">495</span><br><span class="line">496</span><br><span class="line">497</span><br><span class="line">498</span><br><span class="line">499</span><br><span class="line">500</span><br><span class="line">501</span><br><span class="line">502</span><br><span class="line">503</span><br><span class="line">504</span><br><span class="line">505</span><br><span class="line">506</span><br><span class="line">507</span><br><span class="line">508</span><br><span class="line">509</span><br><span class="line">510</span><br><span class="line">511</span><br><span class="line">512</span><br><span class="line">513</span><br><span class="line">514</span><br><span class="line">515</span><br><span class="line">516</span><br><span class="line">517</span><br><span class="line">518</span><br><span class="line">519</span><br><span class="line">520</span><br><span class="line">521</span><br><span class="line">522</span><br><span class="line">523</span><br><span class="line">524</span><br><span class="line">525</span><br><span class="line">526</span><br><span class="line">527</span><br><span class="line">528</span><br><span class="line">529</span><br><span class="line">530</span><br><span class="line">531</span><br><span class="line">532</span><br><span class="line">533</span><br><span class="line">534</span><br><span class="line">535</span><br><span class="line">536</span><br><span class="line">537</span><br><span class="line">538</span><br><span class="line">539</span><br><span class="line">540</span><br><span class="line">541</span><br><span class="line">542</span><br><span class="line">543</span><br><span class="line">544</span><br><span class="line">545</span><br><span class="line">546</span><br><span class="line">547</span><br><span class="line">548</span><br><span class="line">549</span><br><span class="line">550</span><br><span class="line">551</span><br><span class="line">552</span><br><span class="line">553</span><br><span class="line">554</span><br><span class="line">555</span><br><span class="line">556</span><br><span class="line">557</span><br><span class="line">558</span><br><span class="line">559</span><br><span class="line">560</span><br><span class="line">561</span><br><span class="line">562</span><br><span class="line">563</span><br><span class="line">564</span><br><span class="line">565</span><br><span class="line">566</span><br><span class="line">567</span><br><span class="line">568</span><br><span class="line">569</span><br><span class="line">570</span><br><span class="line">571</span><br><span class="line">572</span><br><span class="line">573</span><br><span class="line">574</span><br><span class="line">575</span><br><span class="line">576</span><br><span class="line">577</span><br><span class="line">578</span><br><span class="line">579</span><br><span class="line">580</span><br><span class="line">581</span><br><span class="line">582</span><br><span class="line">583</span><br><span class="line">584</span><br><span class="line">585</span><br><span class="line">586</span><br><span class="line">587</span><br><span class="line">588</span><br><span class="line">589</span><br><span class="line">590</span><br><span class="line">591</span><br><span class="line">592</span><br><span class="line">593</span><br><span class="line">594</span><br><span class="line">595</span><br><span class="line">596</span><br><span class="line">597</span><br><span class="line">598</span><br><span class="line">599</span><br><span class="line">600</span><br><span class="line">601</span><br><span class="line">602</span><br><span class="line">603</span><br><span class="line">604</span><br><span class="line">605</span><br><span class="line">606</span><br><span class="line">607</span><br><span class="line">608</span><br><span class="line">609</span><br><span class="line">610</span><br><span class="line">611</span><br><span class="line">612</span><br><span class="line">613</span><br><span class="line">614</span><br><span class="line">615</span><br><span class="line">616</span><br><span class="line">617</span><br><span class="line">618</span><br><span class="line">619</span><br><span class="line">620</span><br><span class="line">621</span><br><span class="line">622</span><br><span class="line">623</span><br><span class="line">624</span><br><span class="line">625</span><br><span class="line">626</span><br><span class="line">627</span><br><span class="line">628</span><br><span class="line">629</span><br><span class="line">630</span><br><span class="line">631</span><br><span class="line">632</span><br><span class="line">633</span><br><span class="line">634</span><br><span class="line">635</span><br><span class="line">636</span><br><span class="line">637</span><br><span class="line">638</span><br><span class="line">639</span><br><span class="line">640</span><br><span class="line">641</span><br><span class="line">642</span><br><span class="line">643</span><br><span class="line">644</span><br><span class="line">645</span><br><span class="line">646</span><br><span class="line">647</span><br><span class="line">648</span><br><span class="line">649</span><br><span class="line">650</span><br><span class="line">651</span><br><span class="line">652</span><br><span class="line">653</span><br><span class="line">654</span><br><span class="line">655</span><br><span class="line">656</span><br><span class="line">657</span><br><span class="line">658</span><br><span class="line">659</span><br><span class="line">660</span><br><span class="line">661</span><br><span class="line">662</span><br><span class="line">663</span><br><span class="line">664</span><br><span class="line">665</span><br><span class="line">666</span><br><span class="line">667</span><br><span class="line">668</span><br><span class="line">669</span><br><span class="line">670</span><br><span class="line">671</span><br><span class="line">672</span><br><span class="line">673</span><br><span class="line">674</span><br><span class="line">675</span><br><span class="line">676</span><br><span class="line">677</span><br><span class="line">678</span><br><span class="line">679</span><br><span class="line">680</span><br><span class="line">681</span><br><span class="line">682</span><br><span class="line">683</span><br></pre></td><td class="code"><pre><span class="line"># Configuration file for dnsmasq.</span><br><span class="line">#</span><br><span class="line"># Format is one option per line, legal options are the same</span><br><span class="line"># as the long options legal on the command line. See</span><br><span class="line"># &quot;/usr/sbin/dnsmasq --help&quot; or &quot;man 8 dnsmasq&quot; for details.</span><br><span class="line"></span><br><span class="line"># Listen on this specific port instead of the standard DNS port</span><br><span class="line"># (53). Setting this to zero completely disables DNS function,</span><br><span class="line"># leaving only DHCP and/or TFTP.</span><br><span class="line">#port=5353</span><br><span class="line"></span><br><span class="line"># The following two options make you a better netizen, since they</span><br><span class="line"># tell dnsmasq to filter out queries which the public DNS cannot</span><br><span class="line"># answer, and which load the servers (especially the root servers)</span><br><span class="line"># unnecessarily. If you have a dial-on-demand link they also stop</span><br><span class="line"># these requests from bringing up the link unnecessarily.</span><br><span class="line"></span><br><span class="line"># Never forward plain names (without a dot or domain part)</span><br><span class="line">#domain-needed</span><br><span class="line"># Never forward addresses in the non-routed address spaces.</span><br><span class="line">#bogus-priv</span><br><span class="line"></span><br><span class="line"># Uncomment these to enable DNSSEC validation and caching:</span><br><span class="line"># (Requires dnsmasq to be built with DNSSEC option.)</span><br><span class="line">#conf-file=%%PREFIX%%/share/dnsmasq/trust-anchors.conf</span><br><span class="line">#dnssec</span><br><span class="line"></span><br><span class="line"># Replies which are not DNSSEC signed may be legitimate, because the domain</span><br><span class="line"># is unsigned, or may be forgeries. Setting this option tells dnsmasq to</span><br><span class="line"># check that an unsigned reply is OK, by finding a secure proof that a DS </span><br><span class="line"># record somewhere between the root and the domain does not exist. </span><br><span class="line"># The cost of setting this is that even queries in unsigned domains will need</span><br><span class="line"># one or more extra DNS queries to verify.</span><br><span class="line">#dnssec-check-unsigned</span><br><span class="line"></span><br><span class="line"># Uncomment this to filter useless windows-originated DNS requests</span><br><span class="line"># which can trigger dial-on-demand links needlessly.</span><br><span class="line"># Note that (amongst other things) this blocks all SRV requests,</span><br><span class="line"># so don&#x27;t use it if you use eg Kerberos, SIP, XMMP or Google-talk.</span><br><span class="line"># This option only affects forwarding, SRV records originating for</span><br><span class="line"># dnsmasq (via srv-host= lines) are not suppressed by it.</span><br><span class="line">#filterwin2k</span><br><span class="line"></span><br><span class="line"># Change this line if you want dns to get its upstream servers from</span><br><span class="line"># somewhere other that /etc/resolv.conf</span><br><span class="line">#resolv-file=</span><br><span class="line"></span><br><span class="line"># By  default,  dnsmasq  will  send queries to any of the upstream</span><br><span class="line"># servers it knows about and tries to favour servers to are  known</span><br><span class="line"># to  be  up.  Uncommenting this forces dnsmasq to try each query</span><br><span class="line"># with  each  server  strictly  in  the  order  they   appear   in</span><br><span class="line"># /etc/resolv.conf</span><br><span class="line">#strict-order</span><br><span class="line"></span><br><span class="line"># If you don&#x27;t want dnsmasq to read /etc/resolv.conf or any other</span><br><span class="line"># file, getting its servers from this file instead (see below), then</span><br><span class="line"># uncomment this.</span><br><span class="line">#no-resolv</span><br><span class="line"></span><br><span class="line"># If you don&#x27;t want dnsmasq to poll /etc/resolv.conf or other resolv</span><br><span class="line"># files for changes and re-read them then uncomment this.</span><br><span class="line">#no-poll</span><br><span class="line"></span><br><span class="line"># Add other name servers here, with domain specs if they are for</span><br><span class="line"># non-public domains.</span><br><span class="line">#server=/localnet/192.168.0.1</span><br><span class="line"></span><br><span class="line"># Example of routing PTR queries to nameservers: this will send all</span><br><span class="line"># address-&gt;name queries for 192.168.3/24 to nameserver 10.1.2.3</span><br><span class="line">#server=/3.168.192.in-addr.arpa/10.1.2.3</span><br><span class="line"></span><br><span class="line"># Add local-only domains here, queries in these domains are answered</span><br><span class="line"># from /etc/hosts or DHCP only.</span><br><span class="line">#local=/localnet/</span><br><span class="line"></span><br><span class="line"># Add domains which you want to force to an IP address here.</span><br><span class="line"># The example below send any host in double-click.net to a local</span><br><span class="line"># web-server.</span><br><span class="line">#address=/double-click.net/127.0.0.1</span><br><span class="line"></span><br><span class="line"># --address (and --server) work with IPv6 addresses too.</span><br><span class="line">#address=/www.thekelleys.org.uk/fe80::20d:60ff:fe36:f83</span><br><span class="line"></span><br><span class="line"># Add the IPs of all queries to yahoo.com, google.com, and their</span><br><span class="line"># subdomains to the vpn and search ipsets:</span><br><span class="line">#ipset=/yahoo.com/google.com/vpn,search</span><br><span class="line"></span><br><span class="line"># You can control how dnsmasq talks to a server: this forces</span><br><span class="line"># queries to 10.1.2.3 to be routed via eth1</span><br><span class="line"># server=10.1.2.3@eth1</span><br><span class="line"></span><br><span class="line"># and this sets the source (ie local) address used to talk to</span><br><span class="line"># 10.1.2.3 to 192.168.1.1 port 55 (there must be an interface with that</span><br><span class="line"># IP on the machine, obviously).</span><br><span class="line"># server=10.1.2.3@192.168.1.1#55</span><br><span class="line"></span><br><span class="line"># If you want dnsmasq to change uid and gid to something other</span><br><span class="line"># than the default, edit the following lines.</span><br><span class="line">#user=</span><br><span class="line">#group=</span><br><span class="line"></span><br><span class="line"># If you want dnsmasq to listen for DHCP and DNS requests only on</span><br><span class="line"># specified interfaces (and the loopback) give the name of the</span><br><span class="line"># interface (eg eth0) here.</span><br><span class="line"># Repeat the line for more than one interface.</span><br><span class="line">#interface=</span><br><span class="line"># Or you can specify which interface _not_ to listen on</span><br><span class="line">#except-interface=</span><br><span class="line"># Or which to listen on by address (remember to include 127.0.0.1 if</span><br><span class="line"># you use this.)</span><br><span class="line">#listen-address=</span><br><span class="line"># If you want dnsmasq to provide only DNS service on an interface,</span><br><span class="line"># configure it as shown above, and then use the following line to</span><br><span class="line"># disable DHCP and TFTP on it.</span><br><span class="line">#no-dhcp-interface=</span><br><span class="line"></span><br><span class="line"># On systems which support it, dnsmasq binds the wildcard address,</span><br><span class="line"># even when it is listening on only some interfaces. It then discards</span><br><span class="line"># requests that it shouldn&#x27;t reply to. This has the advantage of</span><br><span class="line"># working even when interfaces come and go and change address. If you</span><br><span class="line"># want dnsmasq to really bind only the interfaces it is listening on,</span><br><span class="line"># uncomment this option. About the only time you may need this is when</span><br><span class="line"># running another nameserver on the same machine.</span><br><span class="line">#bind-interfaces</span><br><span class="line"></span><br><span class="line"># If you don&#x27;t want dnsmasq to read /etc/hosts, uncomment the</span><br><span class="line"># following line.</span><br><span class="line">#no-hosts</span><br><span class="line"># or if you want it to read another file, as well as /etc/hosts, use</span><br><span class="line"># this.</span><br><span class="line">#addn-hosts=/etc/banner_add_hosts</span><br><span class="line"></span><br><span class="line"># Set this (and domain: see below) if you want to have a domain</span><br><span class="line"># automatically added to simple names in a hosts-file.</span><br><span class="line">#expand-hosts</span><br><span class="line"></span><br><span class="line"># Set the domain for dnsmasq. this is optional, but if it is set, it</span><br><span class="line"># does the following things.</span><br><span class="line"># 1) Allows DHCP hosts to have fully qualified domain names, as long</span><br><span class="line">#     as the domain part matches this setting.</span><br><span class="line"># 2) Sets the &quot;domain&quot; DHCP option thereby potentially setting the</span><br><span class="line">#    domain of all systems configured by DHCP</span><br><span class="line"># 3) Provides the domain part for &quot;expand-hosts&quot;</span><br><span class="line">#domain=thekelleys.org.uk</span><br><span class="line"></span><br><span class="line"># Set a different domain for a particular subnet</span><br><span class="line">#domain=wireless.thekelleys.org.uk,192.168.2.0/24</span><br><span class="line"></span><br><span class="line"># Same idea, but range rather then subnet</span><br><span class="line">#domain=reserved.thekelleys.org.uk,192.68.3.100,192.168.3.200</span><br><span class="line"></span><br><span class="line"># Uncomment this to enable the integrated DHCP server, you need</span><br><span class="line"># to supply the range of addresses available for lease and optionally</span><br><span class="line"># a lease time. If you have more than one network, you will need to</span><br><span class="line"># repeat this for each network on which you want to supply DHCP</span><br><span class="line"># service.</span><br><span class="line">#dhcp-range=192.168.0.50,192.168.0.150,12h</span><br><span class="line"></span><br><span class="line"># This is an example of a DHCP range where the netmask is given. This</span><br><span class="line"># is needed for networks we reach the dnsmasq DHCP server via a relay</span><br><span class="line"># agent. If you don&#x27;t know what a DHCP relay agent is, you probably</span><br><span class="line"># don&#x27;t need to worry about this.</span><br><span class="line">#dhcp-range=192.168.0.50,192.168.0.150,255.255.255.0,12h</span><br><span class="line"></span><br><span class="line"># This is an example of a DHCP range which sets a tag, so that</span><br><span class="line"># some DHCP options may be set only for this network.</span><br><span class="line">#dhcp-range=set:red,192.168.0.50,192.168.0.150</span><br><span class="line"></span><br><span class="line"># Use this DHCP range only when the tag &quot;green&quot; is set.</span><br><span class="line">#dhcp-range=tag:green,192.168.0.50,192.168.0.150,12h</span><br><span class="line"></span><br><span class="line"># Specify a subnet which can&#x27;t be used for dynamic address allocation,</span><br><span class="line"># is available for hosts with matching --dhcp-host lines. Note that</span><br><span class="line"># dhcp-host declarations will be ignored unless there is a dhcp-range</span><br><span class="line"># of some type for the subnet in question.</span><br><span class="line"># In this case the netmask is implied (it comes from the network</span><br><span class="line"># configuration on the machine running dnsmasq) it is possible to give</span><br><span class="line"># an explicit netmask instead.</span><br><span class="line">#dhcp-range=192.168.0.0,static</span><br><span class="line"></span><br><span class="line"># Enable DHCPv6. Note that the prefix-length does not need to be specified</span><br><span class="line"># and defaults to 64 if missing/</span><br><span class="line">#dhcp-range=1234::2, 1234::500, 64, 12h</span><br><span class="line"></span><br><span class="line"># Do Router Advertisements, BUT NOT DHCP for this subnet.</span><br><span class="line">#dhcp-range=1234::, ra-only </span><br><span class="line"></span><br><span class="line"># Do Router Advertisements, BUT NOT DHCP for this subnet, also try and</span><br><span class="line"># add names to the DNS for the IPv6 address of SLAAC-configured dual-stack </span><br><span class="line"># hosts. Use the DHCPv4 lease to derive the name, network segment and </span><br><span class="line"># MAC address and assume that the host will also have an</span><br><span class="line"># IPv6 address calculated using the SLAAC algorithm.</span><br><span class="line">#dhcp-range=1234::, ra-names</span><br><span class="line"></span><br><span class="line"># Do Router Advertisements, BUT NOT DHCP for this subnet.</span><br><span class="line"># Set the lifetime to 46 hours. (Note: minimum lifetime is 2 hours.)</span><br><span class="line">#dhcp-range=1234::, ra-only, 48h</span><br><span class="line"></span><br><span class="line"># Do DHCP and Router Advertisements for this subnet. Set the A bit in the RA</span><br><span class="line"># so that clients can use SLAAC addresses as well as DHCP ones.</span><br><span class="line">#dhcp-range=1234::2, 1234::500, slaac</span><br><span class="line"></span><br><span class="line"># Do Router Advertisements and stateless DHCP for this subnet. Clients will</span><br><span class="line"># not get addresses from DHCP, but they will get other configuration information.</span><br><span class="line"># They will use SLAAC for addresses.</span><br><span class="line">#dhcp-range=1234::, ra-stateless</span><br><span class="line"></span><br><span class="line"># Do stateless DHCP, SLAAC, and generate DNS names for SLAAC addresses</span><br><span class="line"># from DHCPv4 leases.</span><br><span class="line">#dhcp-range=1234::, ra-stateless, ra-names</span><br><span class="line"></span><br><span class="line"># Do router advertisements for all subnets where we&#x27;re doing DHCPv6</span><br><span class="line"># Unless overridden by ra-stateless, ra-names, et al, the router </span><br><span class="line"># advertisements will have the M and O bits set, so that the clients</span><br><span class="line"># get addresses and configuration from DHCPv6, and the A bit reset, so the </span><br><span class="line"># clients don&#x27;t use SLAAC addresses.</span><br><span class="line">#enable-ra</span><br><span class="line"></span><br><span class="line"># Supply parameters for specified hosts using DHCP. There are lots</span><br><span class="line"># of valid alternatives, so we will give examples of each. Note that</span><br><span class="line"># IP addresses DO NOT have to be in the range given above, they just</span><br><span class="line"># need to be on the same network. The order of the parameters in these</span><br><span class="line"># do not matter, it&#x27;s permissible to give name, address and MAC in any</span><br><span class="line"># order.</span><br><span class="line"></span><br><span class="line"># Always allocate the host with Ethernet address 11:22:33:44:55:66</span><br><span class="line"># The IP address 192.168.0.60</span><br><span class="line">#dhcp-host=11:22:33:44:55:66,192.168.0.60</span><br><span class="line"></span><br><span class="line"># Always set the name of the host with hardware address</span><br><span class="line"># 11:22:33:44:55:66 to be &quot;fred&quot;</span><br><span class="line">#dhcp-host=11:22:33:44:55:66,fred</span><br><span class="line"></span><br><span class="line"># Always give the host with Ethernet address 11:22:33:44:55:66</span><br><span class="line"># the name fred and IP address 192.168.0.60 and lease time 45 minutes</span><br><span class="line">#dhcp-host=11:22:33:44:55:66,fred,192.168.0.60,45m</span><br><span class="line"></span><br><span class="line"># Give a host with Ethernet address 11:22:33:44:55:66 or</span><br><span class="line"># 12:34:56:78:90:12 the IP address 192.168.0.60. Dnsmasq will assume</span><br><span class="line"># that these two Ethernet interfaces will never be in use at the same</span><br><span class="line"># time, and give the IP address to the second, even if it is already</span><br><span class="line"># in use by the first. Useful for laptops with wired and wireless</span><br><span class="line"># addresses.</span><br><span class="line">#dhcp-host=11:22:33:44:55:66,12:34:56:78:90:12,192.168.0.60</span><br><span class="line"></span><br><span class="line"># Give the machine which says its name is &quot;bert&quot; IP address</span><br><span class="line"># 192.168.0.70 and an infinite lease</span><br><span class="line">#dhcp-host=bert,192.168.0.70,infinite</span><br><span class="line"></span><br><span class="line"># Always give the host with client identifier 01:02:02:04</span><br><span class="line"># the IP address 192.168.0.60</span><br><span class="line">#dhcp-host=id:01:02:02:04,192.168.0.60</span><br><span class="line"></span><br><span class="line"># Always give the InfiniBand interface with hardware address</span><br><span class="line"># 80:00:00:48:fe:80:00:00:00:00:00:00:f4:52:14:03:00:28:05:81 the</span><br><span class="line"># ip address 192.168.0.61. The client id is derived from the prefix</span><br><span class="line"># ff:00:00:00:00:00:02:00:00:02:c9:00 and the last 8 pairs of</span><br><span class="line"># hex digits of the hardware address.</span><br><span class="line">#dhcp-host=id:ff:00:00:00:00:00:02:00:00:02:c9:00:f4:52:14:03:00:28:05:81,192.168.0.61</span><br><span class="line"></span><br><span class="line"># Always give the host with client identifier &quot;marjorie&quot;</span><br><span class="line"># the IP address 192.168.0.60</span><br><span class="line">#dhcp-host=id:marjorie,192.168.0.60</span><br><span class="line"></span><br><span class="line"># Enable the address given for &quot;judge&quot; in /etc/hosts</span><br><span class="line"># to be given to a machine presenting the name &quot;judge&quot; when</span><br><span class="line"># it asks for a DHCP lease.</span><br><span class="line">#dhcp-host=judge</span><br><span class="line"></span><br><span class="line"># Never offer DHCP service to a machine whose Ethernet</span><br><span class="line"># address is 11:22:33:44:55:66</span><br><span class="line">#dhcp-host=11:22:33:44:55:66,ignore</span><br><span class="line"></span><br><span class="line"># Ignore any client-id presented by the machine with Ethernet</span><br><span class="line"># address 11:22:33:44:55:66. This is useful to prevent a machine</span><br><span class="line"># being treated differently when running under different OS&#x27;s or</span><br><span class="line"># between PXE boot and OS boot.</span><br><span class="line">#dhcp-host=11:22:33:44:55:66,id:*</span><br><span class="line"></span><br><span class="line"># Send extra options which are tagged as &quot;red&quot; to</span><br><span class="line"># the machine with Ethernet address 11:22:33:44:55:66</span><br><span class="line">#dhcp-host=11:22:33:44:55:66,set:red</span><br><span class="line"></span><br><span class="line"># Send extra options which are tagged as &quot;red&quot; to</span><br><span class="line"># any machine with Ethernet address starting 11:22:33:</span><br><span class="line">#dhcp-host=11:22:33:*:*:*,set:red</span><br><span class="line"></span><br><span class="line"># Give a fixed IPv6 address and name to client with </span><br><span class="line"># DUID 00:01:00:01:16:d2:83:fc:92:d4:19:e2:d8:b2</span><br><span class="line"># Note the MAC addresses CANNOT be used to identify DHCPv6 clients.</span><br><span class="line"># Note also that the [] around the IPv6 address are obligatory.</span><br><span class="line">#dhcp-host=id:00:01:00:01:16:d2:83:fc:92:d4:19:e2:d8:b2, fred, [1234::5] </span><br><span class="line"></span><br><span class="line"># Ignore any clients which are not specified in dhcp-host lines</span><br><span class="line"># or /etc/ethers. Equivalent to ISC &quot;deny unknown-clients&quot;.</span><br><span class="line"># This relies on the special &quot;known&quot; tag which is set when</span><br><span class="line"># a host is matched.</span><br><span class="line">#dhcp-ignore=tag:!known</span><br><span class="line"></span><br><span class="line"># Send extra options which are tagged as &quot;red&quot; to any machine whose</span><br><span class="line"># DHCP vendorclass string includes the substring &quot;Linux&quot;</span><br><span class="line">#dhcp-vendorclass=set:red,Linux</span><br><span class="line"></span><br><span class="line"># Send extra options which are tagged as &quot;red&quot; to any machine one</span><br><span class="line"># of whose DHCP userclass strings includes the substring &quot;accounts&quot;</span><br><span class="line">#dhcp-userclass=set:red,accounts</span><br><span class="line"></span><br><span class="line"># Send extra options which are tagged as &quot;red&quot; to any machine whose</span><br><span class="line"># MAC address matches the pattern.</span><br><span class="line">#dhcp-mac=set:red,00:60:8C:*:*:*</span><br><span class="line"></span><br><span class="line"># If this line is uncommented, dnsmasq will read /etc/ethers and act</span><br><span class="line"># on the ethernet-address/IP pairs found there just as if they had</span><br><span class="line"># been given as --dhcp-host options. Useful if you keep</span><br><span class="line"># MAC-address/host mappings there for other purposes.</span><br><span class="line">#read-ethers</span><br><span class="line"></span><br><span class="line"># Send options to hosts which ask for a DHCP lease.</span><br><span class="line"># See RFC 2132 for details of available options.</span><br><span class="line"># Common options can be given to dnsmasq by name:</span><br><span class="line"># run &quot;dnsmasq --help dhcp&quot; to get a list.</span><br><span class="line"># Note that all the common settings, such as netmask and</span><br><span class="line"># broadcast address, DNS server and default route, are given</span><br><span class="line"># sane defaults by dnsmasq. You very likely will not need</span><br><span class="line"># any dhcp-options. If you use Windows clients and Samba, there</span><br><span class="line"># are some options which are recommended, they are detailed at the</span><br><span class="line"># end of this section.</span><br><span class="line"></span><br><span class="line"># Override the default route supplied by dnsmasq, which assumes the</span><br><span class="line"># router is the same machine as the one running dnsmasq.</span><br><span class="line">#dhcp-option=3,1.2.3.4</span><br><span class="line"></span><br><span class="line"># Do the same thing, but using the option name</span><br><span class="line">#dhcp-option=option:router,1.2.3.4</span><br><span class="line"></span><br><span class="line"># Override the default route supplied by dnsmasq and send no default</span><br><span class="line"># route at all. Note that this only works for the options sent by</span><br><span class="line"># default (1, 3, 6, 12, 28) the same line will send a zero-length option</span><br><span class="line"># for all other option numbers.</span><br><span class="line">#dhcp-option=3</span><br><span class="line"></span><br><span class="line"># Set the NTP time server addresses to 192.168.0.4 and 10.10.0.5</span><br><span class="line">#dhcp-option=option:ntp-server,192.168.0.4,10.10.0.5</span><br><span class="line"></span><br><span class="line"># Send DHCPv6 option. Note [] around IPv6 addresses.</span><br><span class="line">#dhcp-option=option6:dns-server,[1234::77],[1234::88]</span><br><span class="line"></span><br><span class="line"># Send DHCPv6 option for namservers as the machine running </span><br><span class="line"># dnsmasq and another.</span><br><span class="line">#dhcp-option=option6:dns-server,[::],[1234::88]</span><br><span class="line"></span><br><span class="line"># Ask client to poll for option changes every six hours. (RFC4242)</span><br><span class="line">#dhcp-option=option6:information-refresh-time,6h</span><br><span class="line"></span><br><span class="line"># Set option 58 client renewal time (T1). Defaults to half of the</span><br><span class="line"># lease time if not specified. (RFC2132)</span><br><span class="line">#dhcp-option=option:T1,1m</span><br><span class="line"></span><br><span class="line"># Set option 59 rebinding time (T2). Defaults to 7/8 of the</span><br><span class="line"># lease time if not specified. (RFC2132)</span><br><span class="line">#dhcp-option=option:T2,2m</span><br><span class="line"></span><br><span class="line"># Set the NTP time server address to be the same machine as</span><br><span class="line"># is running dnsmasq</span><br><span class="line">#dhcp-option=42,0.0.0.0</span><br><span class="line"></span><br><span class="line"># Set the NIS domain name to &quot;welly&quot;</span><br><span class="line">#dhcp-option=40,welly</span><br><span class="line"></span><br><span class="line"># Set the default time-to-live to 50</span><br><span class="line">#dhcp-option=23,50</span><br><span class="line"></span><br><span class="line"># Set the &quot;all subnets are local&quot; flag</span><br><span class="line">#dhcp-option=27,1</span><br><span class="line"></span><br><span class="line"># Send the etherboot magic flag and then etherboot options (a string).</span><br><span class="line">#dhcp-option=128,e4:45:74:68:00:00</span><br><span class="line">#dhcp-option=129,NIC=eepro100</span><br><span class="line"></span><br><span class="line"># Specify an option which will only be sent to the &quot;red&quot; network</span><br><span class="line"># (see dhcp-range for the declaration of the &quot;red&quot; network)</span><br><span class="line"># Note that the tag: part must precede the option: part.</span><br><span class="line">#dhcp-option = tag:red, option:ntp-server, 192.168.1.1</span><br><span class="line"></span><br><span class="line"># The following DHCP options set up dnsmasq in the same way as is specified</span><br><span class="line"># for the ISC dhcpcd in</span><br><span class="line"># http://www.samba.org/samba/ftp/docs/textdocs/DHCP-Server-Configuration.txt</span><br><span class="line"># adapted for a typical dnsmasq installation where the host running</span><br><span class="line"># dnsmasq is also the host running samba.</span><br><span class="line"># you may want to uncomment some or all of them if you use</span><br><span class="line"># Windows clients and Samba.</span><br><span class="line">#dhcp-option=19,0           # option ip-forwarding off</span><br><span class="line">#dhcp-option=44,0.0.0.0     # set netbios-over-TCP/IP nameserver(s) aka WINS server(s)</span><br><span class="line">#dhcp-option=45,0.0.0.0     # netbios datagram distribution server</span><br><span class="line">#dhcp-option=46,8           # netbios node type</span><br><span class="line"></span><br><span class="line"># Send an empty WPAD option. This may be REQUIRED to get windows 7 to behave.</span><br><span class="line">#dhcp-option=252,&quot;\n&quot;</span><br><span class="line"></span><br><span class="line"># Send RFC-3397 DNS domain search DHCP option. WARNING: Your DHCP client</span><br><span class="line"># probably doesn&#x27;t support this......</span><br><span class="line">#dhcp-option=option:domain-search,eng.apple.com,marketing.apple.com</span><br><span class="line"></span><br><span class="line"># Send RFC-3442 classless static routes (note the netmask encoding)</span><br><span class="line">#dhcp-option=121,192.168.1.0/24,1.2.3.4,10.0.0.0/8,5.6.7.8</span><br><span class="line"></span><br><span class="line"># Send vendor-class specific options encapsulated in DHCP option 43.</span><br><span class="line"># The meaning of the options is defined by the vendor-class so</span><br><span class="line"># options are sent only when the client supplied vendor class</span><br><span class="line"># matches the class given here. (A substring match is OK, so &quot;MSFT&quot;</span><br><span class="line"># matches &quot;MSFT&quot; and &quot;MSFT 5.0&quot;). This example sets the</span><br><span class="line"># mtftp address to 0.0.0.0 for PXEClients.</span><br><span class="line">#dhcp-option=vendor:PXEClient,1,0.0.0.0</span><br><span class="line"></span><br><span class="line"># Send microsoft-specific option to tell windows to release the DHCP lease</span><br><span class="line"># when it shuts down. Note the &quot;i&quot; flag, to tell dnsmasq to send the</span><br><span class="line"># value as a four-byte integer - that&#x27;s what microsoft wants. See</span><br><span class="line"># http://technet2.microsoft.com/WindowsServer/en/library/a70f1bb7-d2d4-49f0-96d6-4b7414ecfaae1033.mspx?mfr=true</span><br><span class="line">#dhcp-option=vendor:MSFT,2,1i</span><br><span class="line"></span><br><span class="line"># Send the Encapsulated-vendor-class ID needed by some configurations of</span><br><span class="line"># Etherboot to allow is to recognise the DHCP server.</span><br><span class="line">#dhcp-option=vendor:Etherboot,60,&quot;Etherboot&quot;</span><br><span class="line"></span><br><span class="line"># Send options to PXELinux. Note that we need to send the options even</span><br><span class="line"># though they don&#x27;t appear in the parameter request list, so we need</span><br><span class="line"># to use dhcp-option-force here.</span><br><span class="line"># See http://syslinux.zytor.com/pxe.php#special for details.</span><br><span class="line"># Magic number - needed before anything else is recognised</span><br><span class="line">#dhcp-option-force=208,f1:00:74:7e</span><br><span class="line"># Configuration file name</span><br><span class="line">#dhcp-option-force=209,configs/common</span><br><span class="line"># Path prefix</span><br><span class="line">#dhcp-option-force=210,/tftpboot/pxelinux/files/</span><br><span class="line"># Reboot time. (Note &#x27;i&#x27; to send 32-bit value)</span><br><span class="line">#dhcp-option-force=211,30i</span><br><span class="line"></span><br><span class="line"># Set the boot filename for netboot/PXE. You will only need</span><br><span class="line"># this if you want to boot machines over the network and you will need</span><br><span class="line"># a TFTP server; either dnsmasq&#x27;s built-in TFTP server or an</span><br><span class="line"># external one. (See below for how to enable the TFTP server.)</span><br><span class="line">#dhcp-boot=pxelinux.0</span><br><span class="line"></span><br><span class="line"># The same as above, but use custom tftp-server instead machine running dnsmasq</span><br><span class="line">#dhcp-boot=pxelinux,server.name,192.168.1.100</span><br><span class="line"></span><br><span class="line"># Boot for iPXE. The idea is to send two different</span><br><span class="line"># filenames, the first loads iPXE, and the second tells iPXE what to</span><br><span class="line"># load. The dhcp-match sets the ipxe tag for requests from iPXE.</span><br><span class="line">#dhcp-boot=undionly.kpxe</span><br><span class="line">#dhcp-match=set:ipxe,175 # iPXE sends a 175 option.</span><br><span class="line">#dhcp-boot=tag:ipxe,http://boot.ipxe.org/demo/boot.php</span><br><span class="line"></span><br><span class="line"># Encapsulated options for iPXE. All the options are</span><br><span class="line"># encapsulated within option 175</span><br><span class="line">#dhcp-option=encap:175, 1, 5b         # priority code</span><br><span class="line">#dhcp-option=encap:175, 176, 1b       # no-proxydhcp</span><br><span class="line">#dhcp-option=encap:175, 177, string   # bus-id</span><br><span class="line">#dhcp-option=encap:175, 189, 1b       # BIOS drive code</span><br><span class="line">#dhcp-option=encap:175, 190, user     # iSCSI username</span><br><span class="line">#dhcp-option=encap:175, 191, pass     # iSCSI password</span><br><span class="line"></span><br><span class="line"># Test for the architecture of a netboot client. PXE clients are</span><br><span class="line"># supposed to send their architecture as option 93. (See RFC 4578)</span><br><span class="line">#dhcp-match=peecees, option:client-arch, 0 #x86-32</span><br><span class="line">#dhcp-match=itanics, option:client-arch, 2 #IA64</span><br><span class="line">#dhcp-match=hammers, option:client-arch, 6 #x86-64</span><br><span class="line">#dhcp-match=mactels, option:client-arch, 7 #EFI x86-64</span><br><span class="line"></span><br><span class="line"># Do real PXE, rather than just booting a single file, this is an</span><br><span class="line"># alternative to dhcp-boot.</span><br><span class="line">#pxe-prompt=&quot;What system shall I netboot?&quot;</span><br><span class="line"># or with timeout before first available action is taken:</span><br><span class="line">#pxe-prompt=&quot;Press F8 for menu.&quot;, 60</span><br><span class="line"></span><br><span class="line"># Available boot services. for PXE.</span><br><span class="line">#pxe-service=x86PC, &quot;Boot from local disk&quot;</span><br><span class="line"></span><br><span class="line"># Loads &lt;tftp-root&gt;/pxelinux.0 from dnsmasq TFTP server.</span><br><span class="line">#pxe-service=x86PC, &quot;Install Linux&quot;, pxelinux</span><br><span class="line"></span><br><span class="line"># Loads &lt;tftp-root&gt;/pxelinux.0 from TFTP server at 1.2.3.4.</span><br><span class="line"># Beware this fails on old PXE ROMS.</span><br><span class="line">#pxe-service=x86PC, &quot;Install Linux&quot;, pxelinux, 1.2.3.4</span><br><span class="line"></span><br><span class="line"># Use bootserver on network, found my multicast or broadcast.</span><br><span class="line">#pxe-service=x86PC, &quot;Install windows from RIS server&quot;, 1</span><br><span class="line"></span><br><span class="line"># Use bootserver at a known IP address.</span><br><span class="line">#pxe-service=x86PC, &quot;Install windows from RIS server&quot;, 1, 1.2.3.4</span><br><span class="line"></span><br><span class="line"># If you have multicast-FTP available,</span><br><span class="line"># information for that can be passed in a similar way using options 1</span><br><span class="line"># to 5. See page 19 of</span><br><span class="line"># http://download.intel.com/design/archives/wfm/downloads/pxespec.pdf</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Enable dnsmasq&#x27;s built-in TFTP server</span><br><span class="line">#enable-tftp</span><br><span class="line"></span><br><span class="line"># Set the root directory for files available via FTP.</span><br><span class="line">#tftp-root=/var/ftpd</span><br><span class="line"></span><br><span class="line"># Do not abort if the tftp-root is unavailable</span><br><span class="line">#tftp-no-fail</span><br><span class="line"></span><br><span class="line"># Make the TFTP server more secure: with this set, only files owned by</span><br><span class="line"># the user dnsmasq is running as will be send over the net.</span><br><span class="line">#tftp-secure</span><br><span class="line"></span><br><span class="line"># This option stops dnsmasq from negotiating a larger blocksize for TFTP</span><br><span class="line"># transfers. It will slow things down, but may rescue some broken TFTP</span><br><span class="line"># clients.</span><br><span class="line">#tftp-no-blocksize</span><br><span class="line"></span><br><span class="line"># Set the boot file name only when the &quot;red&quot; tag is set.</span><br><span class="line">#dhcp-boot=tag:red,pxelinux.red-net</span><br><span class="line"></span><br><span class="line"># An example of dhcp-boot with an external TFTP server: the name and IP</span><br><span class="line"># address of the server are given after the filename.</span><br><span class="line"># Can fail with old PXE ROMS. Overridden by --pxe-service.</span><br><span class="line">#dhcp-boot=/var/ftpd/pxelinux.0,boothost,192.168.0.3</span><br><span class="line"></span><br><span class="line"># If there are multiple external tftp servers having a same name</span><br><span class="line"># (using /etc/hosts) then that name can be specified as the</span><br><span class="line"># tftp_servername (the third option to dhcp-boot) and in that</span><br><span class="line"># case dnsmasq resolves this name and returns the resultant IP</span><br><span class="line"># addresses in round robin fashion. This facility can be used to</span><br><span class="line"># load balance the tftp load among a set of servers.</span><br><span class="line">#dhcp-boot=/var/ftpd/pxelinux.0,boothost,tftp_server_name</span><br><span class="line"></span><br><span class="line"># Set the limit on DHCP leases, the default is 150</span><br><span class="line">#dhcp-lease-max=150</span><br><span class="line"></span><br><span class="line"># The DHCP server needs somewhere on disk to keep its lease database.</span><br><span class="line"># This defaults to a sane location, but if you want to change it, use</span><br><span class="line"># the line below.</span><br><span class="line">#dhcp-leasefile=/var/lib/misc/dnsmasq.leases</span><br><span class="line"></span><br><span class="line"># Set the DHCP server to authoritative mode. In this mode it will barge in</span><br><span class="line"># and take over the lease for any client which broadcasts on the network,</span><br><span class="line"># whether it has a record of the lease or not. This avoids long timeouts</span><br><span class="line"># when a machine wakes up on a new network. DO NOT enable this if there&#x27;s</span><br><span class="line"># the slightest chance that you might end up accidentally configuring a DHCP</span><br><span class="line"># server for your campus/company accidentally. The ISC server uses</span><br><span class="line"># the same option, and this URL provides more information:</span><br><span class="line"># http://www.isc.org/files/auth.html</span><br><span class="line">#dhcp-authoritative</span><br><span class="line"></span><br><span class="line"># Set the DHCP server to enable DHCPv4 Rapid Commit Option per RFC 4039.</span><br><span class="line"># In this mode it will respond to a DHCPDISCOVER message including a Rapid Commit</span><br><span class="line"># option with a DHCPACK including a Rapid Commit option and fully committed address</span><br><span class="line"># and configuration information. This must only be enabled if either the server is </span><br><span class="line"># the only server for the subnet, or multiple servers are present and they each</span><br><span class="line"># commit a binding for all clients.</span><br><span class="line">#dhcp-rapid-commit</span><br><span class="line"></span><br><span class="line"># Run an executable when a DHCP lease is created or destroyed.</span><br><span class="line"># The arguments sent to the script are &quot;add&quot; or &quot;del&quot;,</span><br><span class="line"># then the MAC address, the IP address and finally the hostname</span><br><span class="line"># if there is one.</span><br><span class="line">#dhcp-script=/bin/echo</span><br><span class="line"></span><br><span class="line"># Set the cachesize here.</span><br><span class="line">#cache-size=150</span><br><span class="line"></span><br><span class="line"># If you want to disable negative caching, uncomment this.</span><br><span class="line">#no-negcache</span><br><span class="line"></span><br><span class="line"># Normally responses which come from /etc/hosts and the DHCP lease</span><br><span class="line"># file have Time-To-Live set as zero, which conventionally means</span><br><span class="line"># do not cache further. If you are happy to trade lower load on the</span><br><span class="line"># server for potentially stale date, you can set a time-to-live (in</span><br><span class="line"># seconds) here.</span><br><span class="line">#local-ttl=</span><br><span class="line"></span><br><span class="line"># If you want dnsmasq to detect attempts by Verisign to send queries</span><br><span class="line"># to unregistered .com and .net hosts to its sitefinder service and</span><br><span class="line"># have dnsmasq instead return the correct NXDOMAIN response, uncomment</span><br><span class="line"># this line. You can add similar lines to do the same for other</span><br><span class="line"># registries which have implemented wildcard A records.</span><br><span class="line">#bogus-nxdomain=64.94.110.11</span><br><span class="line"></span><br><span class="line"># If you want to fix up DNS results from upstream servers, use the</span><br><span class="line"># alias option. This only works for IPv4.</span><br><span class="line"># This alias makes a result of 1.2.3.4 appear as 5.6.7.8</span><br><span class="line">#alias=1.2.3.4,5.6.7.8</span><br><span class="line"># and this maps 1.2.3.x to 5.6.7.x</span><br><span class="line">#alias=1.2.3.0,5.6.7.0,255.255.255.0</span><br><span class="line"># and this maps 192.168.0.10-&gt;192.168.0.40 to 10.0.0.10-&gt;10.0.0.40</span><br><span class="line">#alias=192.168.0.10-192.168.0.40,10.0.0.0,255.255.255.0</span><br><span class="line"></span><br><span class="line"># Change these lines if you want dnsmasq to serve MX records.</span><br><span class="line"></span><br><span class="line"># Return an MX record named &quot;maildomain.com&quot; with target</span><br><span class="line"># servermachine.com and preference 50</span><br><span class="line">#mx-host=maildomain.com,servermachine.com,50</span><br><span class="line"></span><br><span class="line"># Set the default target for MX records created using the localmx option.</span><br><span class="line">#mx-target=servermachine.com</span><br><span class="line"></span><br><span class="line"># Return an MX record pointing to the mx-target for all local</span><br><span class="line"># machines.</span><br><span class="line">#localmx</span><br><span class="line"></span><br><span class="line"># Return an MX record pointing to itself for all local machines.</span><br><span class="line">#selfmx</span><br><span class="line"></span><br><span class="line"># Change the following lines if you want dnsmasq to serve SRV</span><br><span class="line"># records.  These are useful if you want to serve ldap requests for</span><br><span class="line"># Active Directory and other windows-originated DNS requests.</span><br><span class="line"># See RFC 2782.</span><br><span class="line"># You may add multiple srv-host lines.</span><br><span class="line"># The fields are &lt;name&gt;,&lt;target&gt;,&lt;port&gt;,&lt;priority&gt;,&lt;weight&gt;</span><br><span class="line"># If the domain part if missing from the name (so that is just has the</span><br><span class="line"># service and protocol sections) then the domain given by the domain=</span><br><span class="line"># config option is used. (Note that expand-hosts does not need to be</span><br><span class="line"># set for this to work.)</span><br><span class="line"></span><br><span class="line"># A SRV record sending LDAP for the example.com domain to</span><br><span class="line"># ldapserver.example.com port 389</span><br><span class="line">#srv-host=_ldap._tcp.example.com,ldapserver.example.com,389</span><br><span class="line"></span><br><span class="line"># A SRV record sending LDAP for the example.com domain to</span><br><span class="line"># ldapserver.example.com port 389 (using domain=)</span><br><span class="line">#domain=example.com</span><br><span class="line">#srv-host=_ldap._tcp,ldapserver.example.com,389</span><br><span class="line"></span><br><span class="line"># Two SRV records for LDAP, each with different priorities</span><br><span class="line">#srv-host=_ldap._tcp.example.com,ldapserver.example.com,389,1</span><br><span class="line">#srv-host=_ldap._tcp.example.com,ldapserver.example.com,389,2</span><br><span class="line"></span><br><span class="line"># A SRV record indicating that there is no LDAP server for the domain</span><br><span class="line"># example.com</span><br><span class="line">#srv-host=_ldap._tcp.example.com</span><br><span class="line"></span><br><span class="line"># The following line shows how to make dnsmasq serve an arbitrary PTR</span><br><span class="line"># record. This is useful for DNS-SD. (Note that the</span><br><span class="line"># domain-name expansion done for SRV records _does_not</span><br><span class="line"># occur for PTR records.)</span><br><span class="line">#ptr-record=_http._tcp.dns-sd-services,&quot;New Employee Page._http._tcp.dns-sd-services&quot;</span><br><span class="line"></span><br><span class="line"># Change the following lines to enable dnsmasq to serve TXT records.</span><br><span class="line"># These are used for things like SPF and zeroconf. (Note that the</span><br><span class="line"># domain-name expansion done for SRV records _does_not</span><br><span class="line"># occur for TXT records.)</span><br><span class="line"></span><br><span class="line">#Example SPF.</span><br><span class="line">#txt-record=example.com,&quot;v=spf1 a -all&quot;</span><br><span class="line"></span><br><span class="line">#Example zeroconf</span><br><span class="line">#txt-record=_http._tcp.example.com,name=value,paper=A4</span><br><span class="line"></span><br><span class="line"># Provide an alias for a &quot;local&quot; DNS name. Note that this _only_ works</span><br><span class="line"># for targets which are names from DHCP or /etc/hosts. Give host</span><br><span class="line"># &quot;bert&quot; another name, bertrand</span><br><span class="line">#cname=bertand,bert</span><br><span class="line"></span><br><span class="line"># For debugging purposes, log each DNS query as it passes through</span><br><span class="line"># dnsmasq.</span><br><span class="line">#log-queries</span><br><span class="line"></span><br><span class="line"># Log lots of extra information about DHCP transactions.</span><br><span class="line">#log-dhcp</span><br><span class="line"></span><br><span class="line"># Include another lot of configuration options.</span><br><span class="line">#conf-file=/etc/dnsmasq.more.conf</span><br><span class="line">#conf-dir=/etc/dnsmasq.d</span><br><span class="line"></span><br><span class="line"># Include all the files in a directory except those ending in .bak</span><br><span class="line">#conf-dir=/etc/dnsmasq.d,.bak</span><br><span class="line"></span><br><span class="line"># Include all files in a directory which end in .conf</span><br><span class="line">#conf-dir=/etc/dnsmasq.d/,*.conf</span><br><span class="line"></span><br><span class="line"># If a DHCP client claims that its name is &quot;wpad&quot;, ignore that.</span><br><span class="line"># This fixes a security hole. see CERT Vulnerability VU#598349</span><br><span class="line">#dhcp-name-match=set:wpad-ignore,wpad</span><br><span class="line">#dhcp-ignore-names=tag:wpad-ignore</span><br><span class="line"></span><br><span class="line"># Delays sending DHCPOFFER and proxydhcp replies for at least the specified number of seconds.</span><br><span class="line">dhcp-mac=set:client_is_a_pi,B8:27:EB:*:*:*</span><br><span class="line">dhcp-reply-delay=tag:client_is_a_pi,2</span><br></pre></td></tr></table></figure>
-<h3 id="ipv4转发"><a href="#ipv4转发" class="headerlink" title="ipv4转发"></a>ipv4转发</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">// 打开sysctl.conf文件</span><br><span class="line">sudo vim /etc/sysctl.conf</span><br><span class="line">// 去掉“#net.ipv4.ip_forward=1”前的#注释</span><br><span class="line"></span><br><span class="line">// 立即生效</span><br><span class="line">sudo sh -c &quot;echo 1 &gt; /proc/sys/net/ipv4/ip_forward&quot;</span><br><span class="line">// 在WiFi的配置接口eth0接口wlan0之间建立NAT，分享有线网到无线上</span><br><span class="line"></span><br><span class="line">#sudo iptables -A INPUT -p tcp --dport 139 -j ACCEPT</span><br><span class="line">#sudo iptables -A OUTPUT -p tcp --sport 139 -j ACCEPT</span><br><span class="line">#sudo iptables -A INPUT -p tcp --dport 445 -j ACCEPT</span><br><span class="line">#sudo iptables -A OUTPUT -p tcp --sport 445 -j ACCEPT</span><br><span class="line">sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE</span><br><span class="line">sudo iptables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT</span><br><span class="line">sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT</span><br><span class="line"></span><br><span class="line">// 将这些规应用于我们的每一次启动PI</span><br><span class="line">sudo sh -c &quot;iptables-save &gt; /etc/iptables.ipv4.nat&quot;</span><br><span class="line">sudo vim /etc/rc.local</span><br><span class="line">// 添加如下行，在 exit 0 之前</span><br><span class="line">iptables-restore &lt; /etc/iptables.ipv4.nat</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none"># Configuration file for dnsmasq.
+#
+# Format is one option per line, legal options are the same
+# as the long options legal on the command line. See
+# &quot;&#x2F;usr&#x2F;sbin&#x2F;dnsmasq --help&quot; or &quot;man 8 dnsmasq&quot; for details.
+
+# Listen on this specific port instead of the standard DNS port
+# (53). Setting this to zero completely disables DNS function,
+# leaving only DHCP and&#x2F;or TFTP.
+#port&#x3D;5353
+
+# The following two options make you a better netizen, since they
+# tell dnsmasq to filter out queries which the public DNS cannot
+# answer, and which load the servers (especially the root servers)
+# unnecessarily. If you have a dial-on-demand link they also stop
+# these requests from bringing up the link unnecessarily.
+
+# Never forward plain names (without a dot or domain part)
+#domain-needed
+# Never forward addresses in the non-routed address spaces.
+#bogus-priv
+
+# Uncomment these to enable DNSSEC validation and caching:
+# (Requires dnsmasq to be built with DNSSEC option.)
+#conf-file&#x3D;%%PREFIX%%&#x2F;share&#x2F;dnsmasq&#x2F;trust-anchors.conf
+#dnssec
+
+# Replies which are not DNSSEC signed may be legitimate, because the domain
+# is unsigned, or may be forgeries. Setting this option tells dnsmasq to
+# check that an unsigned reply is OK, by finding a secure proof that a DS 
+# record somewhere between the root and the domain does not exist. 
+# The cost of setting this is that even queries in unsigned domains will need
+# one or more extra DNS queries to verify.
+#dnssec-check-unsigned
+
+# Uncomment this to filter useless windows-originated DNS requests
+# which can trigger dial-on-demand links needlessly.
+# Note that (amongst other things) this blocks all SRV requests,
+# so don&#39;t use it if you use eg Kerberos, SIP, XMMP or Google-talk.
+# This option only affects forwarding, SRV records originating for
+# dnsmasq (via srv-host&#x3D; lines) are not suppressed by it.
+#filterwin2k
+
+# Change this line if you want dns to get its upstream servers from
+# somewhere other that &#x2F;etc&#x2F;resolv.conf
+#resolv-file&#x3D;
+
+# By  default,  dnsmasq  will  send queries to any of the upstream
+# servers it knows about and tries to favour servers to are  known
+# to  be  up.  Uncommenting this forces dnsmasq to try each query
+# with  each  server  strictly  in  the  order  they   appear   in
+# &#x2F;etc&#x2F;resolv.conf
+#strict-order
+
+# If you don&#39;t want dnsmasq to read &#x2F;etc&#x2F;resolv.conf or any other
+# file, getting its servers from this file instead (see below), then
+# uncomment this.
+#no-resolv
+
+# If you don&#39;t want dnsmasq to poll &#x2F;etc&#x2F;resolv.conf or other resolv
+# files for changes and re-read them then uncomment this.
+#no-poll
+
+# Add other name servers here, with domain specs if they are for
+# non-public domains.
+#server&#x3D;&#x2F;localnet&#x2F;192.168.0.1
+
+# Example of routing PTR queries to nameservers: this will send all
+# address-&gt;name queries for 192.168.3&#x2F;24 to nameserver 10.1.2.3
+#server&#x3D;&#x2F;3.168.192.in-addr.arpa&#x2F;10.1.2.3
+
+# Add local-only domains here, queries in these domains are answered
+# from &#x2F;etc&#x2F;hosts or DHCP only.
+#local&#x3D;&#x2F;localnet&#x2F;
+
+# Add domains which you want to force to an IP address here.
+# The example below send any host in double-click.net to a local
+# web-server.
+#address&#x3D;&#x2F;double-click.net&#x2F;127.0.0.1
+
+# --address (and --server) work with IPv6 addresses too.
+#address&#x3D;&#x2F;www.thekelleys.org.uk&#x2F;fe80::20d:60ff:fe36:f83
+
+# Add the IPs of all queries to yahoo.com, google.com, and their
+# subdomains to the vpn and search ipsets:
+#ipset&#x3D;&#x2F;yahoo.com&#x2F;google.com&#x2F;vpn,search
+
+# You can control how dnsmasq talks to a server: this forces
+# queries to 10.1.2.3 to be routed via eth1
+# server&#x3D;10.1.2.3@eth1
+
+# and this sets the source (ie local) address used to talk to
+# 10.1.2.3 to 192.168.1.1 port 55 (there must be an interface with that
+# IP on the machine, obviously).
+# server&#x3D;10.1.2.3@192.168.1.1#55
+
+# If you want dnsmasq to change uid and gid to something other
+# than the default, edit the following lines.
+#user&#x3D;
+#group&#x3D;
+
+# If you want dnsmasq to listen for DHCP and DNS requests only on
+# specified interfaces (and the loopback) give the name of the
+# interface (eg eth0) here.
+# Repeat the line for more than one interface.
+#interface&#x3D;
+# Or you can specify which interface _not_ to listen on
+#except-interface&#x3D;
+# Or which to listen on by address (remember to include 127.0.0.1 if
+# you use this.)
+#listen-address&#x3D;
+# If you want dnsmasq to provide only DNS service on an interface,
+# configure it as shown above, and then use the following line to
+# disable DHCP and TFTP on it.
+#no-dhcp-interface&#x3D;
+
+# On systems which support it, dnsmasq binds the wildcard address,
+# even when it is listening on only some interfaces. It then discards
+# requests that it shouldn&#39;t reply to. This has the advantage of
+# working even when interfaces come and go and change address. If you
+# want dnsmasq to really bind only the interfaces it is listening on,
+# uncomment this option. About the only time you may need this is when
+# running another nameserver on the same machine.
+#bind-interfaces
+
+# If you don&#39;t want dnsmasq to read &#x2F;etc&#x2F;hosts, uncomment the
+# following line.
+#no-hosts
+# or if you want it to read another file, as well as &#x2F;etc&#x2F;hosts, use
+# this.
+#addn-hosts&#x3D;&#x2F;etc&#x2F;banner_add_hosts
+
+# Set this (and domain: see below) if you want to have a domain
+# automatically added to simple names in a hosts-file.
+#expand-hosts
+
+# Set the domain for dnsmasq. this is optional, but if it is set, it
+# does the following things.
+# 1) Allows DHCP hosts to have fully qualified domain names, as long
+#     as the domain part matches this setting.
+# 2) Sets the &quot;domain&quot; DHCP option thereby potentially setting the
+#    domain of all systems configured by DHCP
+# 3) Provides the domain part for &quot;expand-hosts&quot;
+#domain&#x3D;thekelleys.org.uk
+
+# Set a different domain for a particular subnet
+#domain&#x3D;wireless.thekelleys.org.uk,192.168.2.0&#x2F;24
+
+# Same idea, but range rather then subnet
+#domain&#x3D;reserved.thekelleys.org.uk,192.68.3.100,192.168.3.200
+
+# Uncomment this to enable the integrated DHCP server, you need
+# to supply the range of addresses available for lease and optionally
+# a lease time. If you have more than one network, you will need to
+# repeat this for each network on which you want to supply DHCP
+# service.
+#dhcp-range&#x3D;192.168.0.50,192.168.0.150,12h
+
+# This is an example of a DHCP range where the netmask is given. This
+# is needed for networks we reach the dnsmasq DHCP server via a relay
+# agent. If you don&#39;t know what a DHCP relay agent is, you probably
+# don&#39;t need to worry about this.
+#dhcp-range&#x3D;192.168.0.50,192.168.0.150,255.255.255.0,12h
+
+# This is an example of a DHCP range which sets a tag, so that
+# some DHCP options may be set only for this network.
+#dhcp-range&#x3D;set:red,192.168.0.50,192.168.0.150
+
+# Use this DHCP range only when the tag &quot;green&quot; is set.
+#dhcp-range&#x3D;tag:green,192.168.0.50,192.168.0.150,12h
+
+# Specify a subnet which can&#39;t be used for dynamic address allocation,
+# is available for hosts with matching --dhcp-host lines. Note that
+# dhcp-host declarations will be ignored unless there is a dhcp-range
+# of some type for the subnet in question.
+# In this case the netmask is implied (it comes from the network
+# configuration on the machine running dnsmasq) it is possible to give
+# an explicit netmask instead.
+#dhcp-range&#x3D;192.168.0.0,static
+
+# Enable DHCPv6. Note that the prefix-length does not need to be specified
+# and defaults to 64 if missing&#x2F;
+#dhcp-range&#x3D;1234::2, 1234::500, 64, 12h
+
+# Do Router Advertisements, BUT NOT DHCP for this subnet.
+#dhcp-range&#x3D;1234::, ra-only 
+
+# Do Router Advertisements, BUT NOT DHCP for this subnet, also try and
+# add names to the DNS for the IPv6 address of SLAAC-configured dual-stack 
+# hosts. Use the DHCPv4 lease to derive the name, network segment and 
+# MAC address and assume that the host will also have an
+# IPv6 address calculated using the SLAAC algorithm.
+#dhcp-range&#x3D;1234::, ra-names
+
+# Do Router Advertisements, BUT NOT DHCP for this subnet.
+# Set the lifetime to 46 hours. (Note: minimum lifetime is 2 hours.)
+#dhcp-range&#x3D;1234::, ra-only, 48h
+
+# Do DHCP and Router Advertisements for this subnet. Set the A bit in the RA
+# so that clients can use SLAAC addresses as well as DHCP ones.
+#dhcp-range&#x3D;1234::2, 1234::500, slaac
+
+# Do Router Advertisements and stateless DHCP for this subnet. Clients will
+# not get addresses from DHCP, but they will get other configuration information.
+# They will use SLAAC for addresses.
+#dhcp-range&#x3D;1234::, ra-stateless
+
+# Do stateless DHCP, SLAAC, and generate DNS names for SLAAC addresses
+# from DHCPv4 leases.
+#dhcp-range&#x3D;1234::, ra-stateless, ra-names
+
+# Do router advertisements for all subnets where we&#39;re doing DHCPv6
+# Unless overridden by ra-stateless, ra-names, et al, the router 
+# advertisements will have the M and O bits set, so that the clients
+# get addresses and configuration from DHCPv6, and the A bit reset, so the 
+# clients don&#39;t use SLAAC addresses.
+#enable-ra
+
+# Supply parameters for specified hosts using DHCP. There are lots
+# of valid alternatives, so we will give examples of each. Note that
+# IP addresses DO NOT have to be in the range given above, they just
+# need to be on the same network. The order of the parameters in these
+# do not matter, it&#39;s permissible to give name, address and MAC in any
+# order.
+
+# Always allocate the host with Ethernet address 11:22:33:44:55:66
+# The IP address 192.168.0.60
+#dhcp-host&#x3D;11:22:33:44:55:66,192.168.0.60
+
+# Always set the name of the host with hardware address
+# 11:22:33:44:55:66 to be &quot;fred&quot;
+#dhcp-host&#x3D;11:22:33:44:55:66,fred
+
+# Always give the host with Ethernet address 11:22:33:44:55:66
+# the name fred and IP address 192.168.0.60 and lease time 45 minutes
+#dhcp-host&#x3D;11:22:33:44:55:66,fred,192.168.0.60,45m
+
+# Give a host with Ethernet address 11:22:33:44:55:66 or
+# 12:34:56:78:90:12 the IP address 192.168.0.60. Dnsmasq will assume
+# that these two Ethernet interfaces will never be in use at the same
+# time, and give the IP address to the second, even if it is already
+# in use by the first. Useful for laptops with wired and wireless
+# addresses.
+#dhcp-host&#x3D;11:22:33:44:55:66,12:34:56:78:90:12,192.168.0.60
+
+# Give the machine which says its name is &quot;bert&quot; IP address
+# 192.168.0.70 and an infinite lease
+#dhcp-host&#x3D;bert,192.168.0.70,infinite
+
+# Always give the host with client identifier 01:02:02:04
+# the IP address 192.168.0.60
+#dhcp-host&#x3D;id:01:02:02:04,192.168.0.60
+
+# Always give the InfiniBand interface with hardware address
+# 80:00:00:48:fe:80:00:00:00:00:00:00:f4:52:14:03:00:28:05:81 the
+# ip address 192.168.0.61. The client id is derived from the prefix
+# ff:00:00:00:00:00:02:00:00:02:c9:00 and the last 8 pairs of
+# hex digits of the hardware address.
+#dhcp-host&#x3D;id:ff:00:00:00:00:00:02:00:00:02:c9:00:f4:52:14:03:00:28:05:81,192.168.0.61
+
+# Always give the host with client identifier &quot;marjorie&quot;
+# the IP address 192.168.0.60
+#dhcp-host&#x3D;id:marjorie,192.168.0.60
+
+# Enable the address given for &quot;judge&quot; in &#x2F;etc&#x2F;hosts
+# to be given to a machine presenting the name &quot;judge&quot; when
+# it asks for a DHCP lease.
+#dhcp-host&#x3D;judge
+
+# Never offer DHCP service to a machine whose Ethernet
+# address is 11:22:33:44:55:66
+#dhcp-host&#x3D;11:22:33:44:55:66,ignore
+
+# Ignore any client-id presented by the machine with Ethernet
+# address 11:22:33:44:55:66. This is useful to prevent a machine
+# being treated differently when running under different OS&#39;s or
+# between PXE boot and OS boot.
+#dhcp-host&#x3D;11:22:33:44:55:66,id:*
+
+# Send extra options which are tagged as &quot;red&quot; to
+# the machine with Ethernet address 11:22:33:44:55:66
+#dhcp-host&#x3D;11:22:33:44:55:66,set:red
+
+# Send extra options which are tagged as &quot;red&quot; to
+# any machine with Ethernet address starting 11:22:33:
+#dhcp-host&#x3D;11:22:33:*:*:*,set:red
+
+# Give a fixed IPv6 address and name to client with 
+# DUID 00:01:00:01:16:d2:83:fc:92:d4:19:e2:d8:b2
+# Note the MAC addresses CANNOT be used to identify DHCPv6 clients.
+# Note also that the [] around the IPv6 address are obligatory.
+#dhcp-host&#x3D;id:00:01:00:01:16:d2:83:fc:92:d4:19:e2:d8:b2, fred, [1234::5] 
+
+# Ignore any clients which are not specified in dhcp-host lines
+# or &#x2F;etc&#x2F;ethers. Equivalent to ISC &quot;deny unknown-clients&quot;.
+# This relies on the special &quot;known&quot; tag which is set when
+# a host is matched.
+#dhcp-ignore&#x3D;tag:!known
+
+# Send extra options which are tagged as &quot;red&quot; to any machine whose
+# DHCP vendorclass string includes the substring &quot;Linux&quot;
+#dhcp-vendorclass&#x3D;set:red,Linux
+
+# Send extra options which are tagged as &quot;red&quot; to any machine one
+# of whose DHCP userclass strings includes the substring &quot;accounts&quot;
+#dhcp-userclass&#x3D;set:red,accounts
+
+# Send extra options which are tagged as &quot;red&quot; to any machine whose
+# MAC address matches the pattern.
+#dhcp-mac&#x3D;set:red,00:60:8C:*:*:*
+
+# If this line is uncommented, dnsmasq will read &#x2F;etc&#x2F;ethers and act
+# on the ethernet-address&#x2F;IP pairs found there just as if they had
+# been given as --dhcp-host options. Useful if you keep
+# MAC-address&#x2F;host mappings there for other purposes.
+#read-ethers
+
+# Send options to hosts which ask for a DHCP lease.
+# See RFC 2132 for details of available options.
+# Common options can be given to dnsmasq by name:
+# run &quot;dnsmasq --help dhcp&quot; to get a list.
+# Note that all the common settings, such as netmask and
+# broadcast address, DNS server and default route, are given
+# sane defaults by dnsmasq. You very likely will not need
+# any dhcp-options. If you use Windows clients and Samba, there
+# are some options which are recommended, they are detailed at the
+# end of this section.
+
+# Override the default route supplied by dnsmasq, which assumes the
+# router is the same machine as the one running dnsmasq.
+#dhcp-option&#x3D;3,1.2.3.4
+
+# Do the same thing, but using the option name
+#dhcp-option&#x3D;option:router,1.2.3.4
+
+# Override the default route supplied by dnsmasq and send no default
+# route at all. Note that this only works for the options sent by
+# default (1, 3, 6, 12, 28) the same line will send a zero-length option
+# for all other option numbers.
+#dhcp-option&#x3D;3
+
+# Set the NTP time server addresses to 192.168.0.4 and 10.10.0.5
+#dhcp-option&#x3D;option:ntp-server,192.168.0.4,10.10.0.5
+
+# Send DHCPv6 option. Note [] around IPv6 addresses.
+#dhcp-option&#x3D;option6:dns-server,[1234::77],[1234::88]
+
+# Send DHCPv6 option for namservers as the machine running 
+# dnsmasq and another.
+#dhcp-option&#x3D;option6:dns-server,[::],[1234::88]
+
+# Ask client to poll for option changes every six hours. (RFC4242)
+#dhcp-option&#x3D;option6:information-refresh-time,6h
+
+# Set option 58 client renewal time (T1). Defaults to half of the
+# lease time if not specified. (RFC2132)
+#dhcp-option&#x3D;option:T1,1m
+
+# Set option 59 rebinding time (T2). Defaults to 7&#x2F;8 of the
+# lease time if not specified. (RFC2132)
+#dhcp-option&#x3D;option:T2,2m
+
+# Set the NTP time server address to be the same machine as
+# is running dnsmasq
+#dhcp-option&#x3D;42,0.0.0.0
+
+# Set the NIS domain name to &quot;welly&quot;
+#dhcp-option&#x3D;40,welly
+
+# Set the default time-to-live to 50
+#dhcp-option&#x3D;23,50
+
+# Set the &quot;all subnets are local&quot; flag
+#dhcp-option&#x3D;27,1
+
+# Send the etherboot magic flag and then etherboot options (a string).
+#dhcp-option&#x3D;128,e4:45:74:68:00:00
+#dhcp-option&#x3D;129,NIC&#x3D;eepro100
+
+# Specify an option which will only be sent to the &quot;red&quot; network
+# (see dhcp-range for the declaration of the &quot;red&quot; network)
+# Note that the tag: part must precede the option: part.
+#dhcp-option &#x3D; tag:red, option:ntp-server, 192.168.1.1
+
+# The following DHCP options set up dnsmasq in the same way as is specified
+# for the ISC dhcpcd in
+# http:&#x2F;&#x2F;www.samba.org&#x2F;samba&#x2F;ftp&#x2F;docs&#x2F;textdocs&#x2F;DHCP-Server-Configuration.txt
+# adapted for a typical dnsmasq installation where the host running
+# dnsmasq is also the host running samba.
+# you may want to uncomment some or all of them if you use
+# Windows clients and Samba.
+#dhcp-option&#x3D;19,0           # option ip-forwarding off
+#dhcp-option&#x3D;44,0.0.0.0     # set netbios-over-TCP&#x2F;IP nameserver(s) aka WINS server(s)
+#dhcp-option&#x3D;45,0.0.0.0     # netbios datagram distribution server
+#dhcp-option&#x3D;46,8           # netbios node type
+
+# Send an empty WPAD option. This may be REQUIRED to get windows 7 to behave.
+#dhcp-option&#x3D;252,&quot;\n&quot;
+
+# Send RFC-3397 DNS domain search DHCP option. WARNING: Your DHCP client
+# probably doesn&#39;t support this......
+#dhcp-option&#x3D;option:domain-search,eng.apple.com,marketing.apple.com
+
+# Send RFC-3442 classless static routes (note the netmask encoding)
+#dhcp-option&#x3D;121,192.168.1.0&#x2F;24,1.2.3.4,10.0.0.0&#x2F;8,5.6.7.8
+
+# Send vendor-class specific options encapsulated in DHCP option 43.
+# The meaning of the options is defined by the vendor-class so
+# options are sent only when the client supplied vendor class
+# matches the class given here. (A substring match is OK, so &quot;MSFT&quot;
+# matches &quot;MSFT&quot; and &quot;MSFT 5.0&quot;). This example sets the
+# mtftp address to 0.0.0.0 for PXEClients.
+#dhcp-option&#x3D;vendor:PXEClient,1,0.0.0.0
+
+# Send microsoft-specific option to tell windows to release the DHCP lease
+# when it shuts down. Note the &quot;i&quot; flag, to tell dnsmasq to send the
+# value as a four-byte integer - that&#39;s what microsoft wants. See
+# http:&#x2F;&#x2F;technet2.microsoft.com&#x2F;WindowsServer&#x2F;en&#x2F;library&#x2F;a70f1bb7-d2d4-49f0-96d6-4b7414ecfaae1033.mspx?mfr&#x3D;true
+#dhcp-option&#x3D;vendor:MSFT,2,1i
+
+# Send the Encapsulated-vendor-class ID needed by some configurations of
+# Etherboot to allow is to recognise the DHCP server.
+#dhcp-option&#x3D;vendor:Etherboot,60,&quot;Etherboot&quot;
+
+# Send options to PXELinux. Note that we need to send the options even
+# though they don&#39;t appear in the parameter request list, so we need
+# to use dhcp-option-force here.
+# See http:&#x2F;&#x2F;syslinux.zytor.com&#x2F;pxe.php#special for details.
+# Magic number - needed before anything else is recognised
+#dhcp-option-force&#x3D;208,f1:00:74:7e
+# Configuration file name
+#dhcp-option-force&#x3D;209,configs&#x2F;common
+# Path prefix
+#dhcp-option-force&#x3D;210,&#x2F;tftpboot&#x2F;pxelinux&#x2F;files&#x2F;
+# Reboot time. (Note &#39;i&#39; to send 32-bit value)
+#dhcp-option-force&#x3D;211,30i
+
+# Set the boot filename for netboot&#x2F;PXE. You will only need
+# this if you want to boot machines over the network and you will need
+# a TFTP server; either dnsmasq&#39;s built-in TFTP server or an
+# external one. (See below for how to enable the TFTP server.)
+#dhcp-boot&#x3D;pxelinux.0
+
+# The same as above, but use custom tftp-server instead machine running dnsmasq
+#dhcp-boot&#x3D;pxelinux,server.name,192.168.1.100
+
+# Boot for iPXE. The idea is to send two different
+# filenames, the first loads iPXE, and the second tells iPXE what to
+# load. The dhcp-match sets the ipxe tag for requests from iPXE.
+#dhcp-boot&#x3D;undionly.kpxe
+#dhcp-match&#x3D;set:ipxe,175 # iPXE sends a 175 option.
+#dhcp-boot&#x3D;tag:ipxe,http:&#x2F;&#x2F;boot.ipxe.org&#x2F;demo&#x2F;boot.php
+
+# Encapsulated options for iPXE. All the options are
+# encapsulated within option 175
+#dhcp-option&#x3D;encap:175, 1, 5b         # priority code
+#dhcp-option&#x3D;encap:175, 176, 1b       # no-proxydhcp
+#dhcp-option&#x3D;encap:175, 177, string   # bus-id
+#dhcp-option&#x3D;encap:175, 189, 1b       # BIOS drive code
+#dhcp-option&#x3D;encap:175, 190, user     # iSCSI username
+#dhcp-option&#x3D;encap:175, 191, pass     # iSCSI password
+
+# Test for the architecture of a netboot client. PXE clients are
+# supposed to send their architecture as option 93. (See RFC 4578)
+#dhcp-match&#x3D;peecees, option:client-arch, 0 #x86-32
+#dhcp-match&#x3D;itanics, option:client-arch, 2 #IA64
+#dhcp-match&#x3D;hammers, option:client-arch, 6 #x86-64
+#dhcp-match&#x3D;mactels, option:client-arch, 7 #EFI x86-64
+
+# Do real PXE, rather than just booting a single file, this is an
+# alternative to dhcp-boot.
+#pxe-prompt&#x3D;&quot;What system shall I netboot?&quot;
+# or with timeout before first available action is taken:
+#pxe-prompt&#x3D;&quot;Press F8 for menu.&quot;, 60
+
+# Available boot services. for PXE.
+#pxe-service&#x3D;x86PC, &quot;Boot from local disk&quot;
+
+# Loads &lt;tftp-root&gt;&#x2F;pxelinux.0 from dnsmasq TFTP server.
+#pxe-service&#x3D;x86PC, &quot;Install Linux&quot;, pxelinux
+
+# Loads &lt;tftp-root&gt;&#x2F;pxelinux.0 from TFTP server at 1.2.3.4.
+# Beware this fails on old PXE ROMS.
+#pxe-service&#x3D;x86PC, &quot;Install Linux&quot;, pxelinux, 1.2.3.4
+
+# Use bootserver on network, found my multicast or broadcast.
+#pxe-service&#x3D;x86PC, &quot;Install windows from RIS server&quot;, 1
+
+# Use bootserver at a known IP address.
+#pxe-service&#x3D;x86PC, &quot;Install windows from RIS server&quot;, 1, 1.2.3.4
+
+# If you have multicast-FTP available,
+# information for that can be passed in a similar way using options 1
+# to 5. See page 19 of
+# http:&#x2F;&#x2F;download.intel.com&#x2F;design&#x2F;archives&#x2F;wfm&#x2F;downloads&#x2F;pxespec.pdf
+
+
+# Enable dnsmasq&#39;s built-in TFTP server
+#enable-tftp
+
+# Set the root directory for files available via FTP.
+#tftp-root&#x3D;&#x2F;var&#x2F;ftpd
+
+# Do not abort if the tftp-root is unavailable
+#tftp-no-fail
+
+# Make the TFTP server more secure: with this set, only files owned by
+# the user dnsmasq is running as will be send over the net.
+#tftp-secure
+
+# This option stops dnsmasq from negotiating a larger blocksize for TFTP
+# transfers. It will slow things down, but may rescue some broken TFTP
+# clients.
+#tftp-no-blocksize
+
+# Set the boot file name only when the &quot;red&quot; tag is set.
+#dhcp-boot&#x3D;tag:red,pxelinux.red-net
+
+# An example of dhcp-boot with an external TFTP server: the name and IP
+# address of the server are given after the filename.
+# Can fail with old PXE ROMS. Overridden by --pxe-service.
+#dhcp-boot&#x3D;&#x2F;var&#x2F;ftpd&#x2F;pxelinux.0,boothost,192.168.0.3
+
+# If there are multiple external tftp servers having a same name
+# (using &#x2F;etc&#x2F;hosts) then that name can be specified as the
+# tftp_servername (the third option to dhcp-boot) and in that
+# case dnsmasq resolves this name and returns the resultant IP
+# addresses in round robin fashion. This facility can be used to
+# load balance the tftp load among a set of servers.
+#dhcp-boot&#x3D;&#x2F;var&#x2F;ftpd&#x2F;pxelinux.0,boothost,tftp_server_name
+
+# Set the limit on DHCP leases, the default is 150
+#dhcp-lease-max&#x3D;150
+
+# The DHCP server needs somewhere on disk to keep its lease database.
+# This defaults to a sane location, but if you want to change it, use
+# the line below.
+#dhcp-leasefile&#x3D;&#x2F;var&#x2F;lib&#x2F;misc&#x2F;dnsmasq.leases
+
+# Set the DHCP server to authoritative mode. In this mode it will barge in
+# and take over the lease for any client which broadcasts on the network,
+# whether it has a record of the lease or not. This avoids long timeouts
+# when a machine wakes up on a new network. DO NOT enable this if there&#39;s
+# the slightest chance that you might end up accidentally configuring a DHCP
+# server for your campus&#x2F;company accidentally. The ISC server uses
+# the same option, and this URL provides more information:
+# http:&#x2F;&#x2F;www.isc.org&#x2F;files&#x2F;auth.html
+#dhcp-authoritative
+
+# Set the DHCP server to enable DHCPv4 Rapid Commit Option per RFC 4039.
+# In this mode it will respond to a DHCPDISCOVER message including a Rapid Commit
+# option with a DHCPACK including a Rapid Commit option and fully committed address
+# and configuration information. This must only be enabled if either the server is 
+# the only server for the subnet, or multiple servers are present and they each
+# commit a binding for all clients.
+#dhcp-rapid-commit
+
+# Run an executable when a DHCP lease is created or destroyed.
+# The arguments sent to the script are &quot;add&quot; or &quot;del&quot;,
+# then the MAC address, the IP address and finally the hostname
+# if there is one.
+#dhcp-script&#x3D;&#x2F;bin&#x2F;echo
+
+# Set the cachesize here.
+#cache-size&#x3D;150
+
+# If you want to disable negative caching, uncomment this.
+#no-negcache
+
+# Normally responses which come from &#x2F;etc&#x2F;hosts and the DHCP lease
+# file have Time-To-Live set as zero, which conventionally means
+# do not cache further. If you are happy to trade lower load on the
+# server for potentially stale date, you can set a time-to-live (in
+# seconds) here.
+#local-ttl&#x3D;
+
+# If you want dnsmasq to detect attempts by Verisign to send queries
+# to unregistered .com and .net hosts to its sitefinder service and
+# have dnsmasq instead return the correct NXDOMAIN response, uncomment
+# this line. You can add similar lines to do the same for other
+# registries which have implemented wildcard A records.
+#bogus-nxdomain&#x3D;64.94.110.11
+
+# If you want to fix up DNS results from upstream servers, use the
+# alias option. This only works for IPv4.
+# This alias makes a result of 1.2.3.4 appear as 5.6.7.8
+#alias&#x3D;1.2.3.4,5.6.7.8
+# and this maps 1.2.3.x to 5.6.7.x
+#alias&#x3D;1.2.3.0,5.6.7.0,255.255.255.0
+# and this maps 192.168.0.10-&gt;192.168.0.40 to 10.0.0.10-&gt;10.0.0.40
+#alias&#x3D;192.168.0.10-192.168.0.40,10.0.0.0,255.255.255.0
+
+# Change these lines if you want dnsmasq to serve MX records.
+
+# Return an MX record named &quot;maildomain.com&quot; with target
+# servermachine.com and preference 50
+#mx-host&#x3D;maildomain.com,servermachine.com,50
+
+# Set the default target for MX records created using the localmx option.
+#mx-target&#x3D;servermachine.com
+
+# Return an MX record pointing to the mx-target for all local
+# machines.
+#localmx
+
+# Return an MX record pointing to itself for all local machines.
+#selfmx
+
+# Change the following lines if you want dnsmasq to serve SRV
+# records.  These are useful if you want to serve ldap requests for
+# Active Directory and other windows-originated DNS requests.
+# See RFC 2782.
+# You may add multiple srv-host lines.
+# The fields are &lt;name&gt;,&lt;target&gt;,&lt;port&gt;,&lt;priority&gt;,&lt;weight&gt;
+# If the domain part if missing from the name (so that is just has the
+# service and protocol sections) then the domain given by the domain&#x3D;
+# config option is used. (Note that expand-hosts does not need to be
+# set for this to work.)
+
+# A SRV record sending LDAP for the example.com domain to
+# ldapserver.example.com port 389
+#srv-host&#x3D;_ldap._tcp.example.com,ldapserver.example.com,389
+
+# A SRV record sending LDAP for the example.com domain to
+# ldapserver.example.com port 389 (using domain&#x3D;)
+#domain&#x3D;example.com
+#srv-host&#x3D;_ldap._tcp,ldapserver.example.com,389
+
+# Two SRV records for LDAP, each with different priorities
+#srv-host&#x3D;_ldap._tcp.example.com,ldapserver.example.com,389,1
+#srv-host&#x3D;_ldap._tcp.example.com,ldapserver.example.com,389,2
+
+# A SRV record indicating that there is no LDAP server for the domain
+# example.com
+#srv-host&#x3D;_ldap._tcp.example.com
+
+# The following line shows how to make dnsmasq serve an arbitrary PTR
+# record. This is useful for DNS-SD. (Note that the
+# domain-name expansion done for SRV records _does_not
+# occur for PTR records.)
+#ptr-record&#x3D;_http._tcp.dns-sd-services,&quot;New Employee Page._http._tcp.dns-sd-services&quot;
+
+# Change the following lines to enable dnsmasq to serve TXT records.
+# These are used for things like SPF and zeroconf. (Note that the
+# domain-name expansion done for SRV records _does_not
+# occur for TXT records.)
+
+#Example SPF.
+#txt-record&#x3D;example.com,&quot;v&#x3D;spf1 a -all&quot;
+
+#Example zeroconf
+#txt-record&#x3D;_http._tcp.example.com,name&#x3D;value,paper&#x3D;A4
+
+# Provide an alias for a &quot;local&quot; DNS name. Note that this _only_ works
+# for targets which are names from DHCP or &#x2F;etc&#x2F;hosts. Give host
+# &quot;bert&quot; another name, bertrand
+#cname&#x3D;bertand,bert
+
+# For debugging purposes, log each DNS query as it passes through
+# dnsmasq.
+#log-queries
+
+# Log lots of extra information about DHCP transactions.
+#log-dhcp
+
+# Include another lot of configuration options.
+#conf-file&#x3D;&#x2F;etc&#x2F;dnsmasq.more.conf
+#conf-dir&#x3D;&#x2F;etc&#x2F;dnsmasq.d
+
+# Include all the files in a directory except those ending in .bak
+#conf-dir&#x3D;&#x2F;etc&#x2F;dnsmasq.d,.bak
+
+# Include all files in a directory which end in .conf
+#conf-dir&#x3D;&#x2F;etc&#x2F;dnsmasq.d&#x2F;,*.conf
+
+# If a DHCP client claims that its name is &quot;wpad&quot;, ignore that.
+# This fixes a security hole. see CERT Vulnerability VU#598349
+#dhcp-name-match&#x3D;set:wpad-ignore,wpad
+#dhcp-ignore-names&#x3D;tag:wpad-ignore
+
+# Delays sending DHCPOFFER and proxydhcp replies for at least the specified number of seconds.
+dhcp-mac&#x3D;set:client_is_a_pi,B8:27:EB:*:*:*
+dhcp-reply-delay&#x3D;tag:client_is_a_pi,2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="ipv4转发"><a href="#ipv4转发" class="headerlink" title="ipv4转发"></a>ipv4转发</h3><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; 打开sysctl.conf文件
+sudo vim &#x2F;etc&#x2F;sysctl.conf
+&#x2F;&#x2F; 去掉“#net.ipv4.ip_forward&#x3D;1”前的#注释
+
+&#x2F;&#x2F; 立即生效
+sudo sh -c &quot;echo 1 &gt; &#x2F;proc&#x2F;sys&#x2F;net&#x2F;ipv4&#x2F;ip_forward&quot;
+&#x2F;&#x2F; 在WiFi的配置接口eth0接口wlan0之间建立NAT，分享有线网到无线上
+
+#sudo iptables -A INPUT -p tcp --dport 139 -j ACCEPT
+#sudo iptables -A OUTPUT -p tcp --sport 139 -j ACCEPT
+#sudo iptables -A INPUT -p tcp --dport 445 -j ACCEPT
+#sudo iptables -A OUTPUT -p tcp --sport 445 -j ACCEPT
+sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+sudo iptables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
+
+&#x2F;&#x2F; 将这些规应用于我们的每一次启动PI
+sudo sh -c &quot;iptables-save &gt; &#x2F;etc&#x2F;iptables.ipv4.nat&quot;
+sudo vim &#x2F;etc&#x2F;rc.local
+&#x2F;&#x2F; 添加如下行，在 exit 0 之前
+iptables-restore &lt; &#x2F;etc&#x2F;iptables.ipv4.nat
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>就这样改是我尝试了两天的结果，就很烧脑，可以尝试都改成和我一样的就可以用了！</p>
 
                 
@@ -1154,7 +2034,7 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -1167,7 +2047,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">82.2k</span>&nbsp;字
+                class="white-color">83.8k</span>&nbsp;字
             
             
             
@@ -1186,6 +2066,50 @@
             </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2017";
+                    var startMonth = "11";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
@@ -1428,6 +2352,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     

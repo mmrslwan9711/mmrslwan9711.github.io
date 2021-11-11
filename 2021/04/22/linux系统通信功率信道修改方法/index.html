@@ -29,18 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="漫漫人生路" type="application/atom+xml">
+</head>
 
-
-
-   <style>
-    body{
-       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
 
 
 
@@ -527,14 +518,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4k
+                    4.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    20 分
+                    21 分
                 </div>
                 
 
@@ -549,16 +540,34 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="linux系统通信功率信道修改方法"><a href="#linux系统通信功率信道修改方法" class="headerlink" title="linux系统通信功率信道修改方法"></a>linux系统通信功率信道修改方法</h1><h2 id="配置频段"><a href="#配置频段" class="headerlink" title="配置频段"></a>配置频段</h2><h3 id="可以先查看有哪些频段："><a href="#可以先查看有哪些频段：" class="headerlink" title="可以先查看有哪些频段："></a>可以先查看有哪些频段：</h3><p><code>iwlist channel</code> </p>
-<p>可用信道<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">wlan0     13 channels in total; available frequencies :</span><br><span class="line">          Channel 01 : 2.412 GHz</span><br><span class="line">          Channel 02 : 2.417 GHz</span><br><span class="line">          Channel 03 : 2.422 GHz</span><br><span class="line">          Channel 04 : 2.427 GHz</span><br><span class="line">          Channel 05 : 2.432 GHz</span><br><span class="line">          Channel 06 : 2.437 GHz</span><br><span class="line">          Channel 07 : 2.442 GHz</span><br><span class="line">          Channel 08 : 2.447 GHz</span><br><span class="line">          Channel 09 : 2.452 GHz</span><br><span class="line">          Channel 10 : 2.457 GHz</span><br><span class="line">          Channel 11 : 2.462 GHz</span><br><span class="line">          Channel 12 : 2.467 GHz</span><br><span class="line">          Channel 13 : 2.472 GHz</span><br><span class="line">          Current Frequency:2.422 GHz (Channel 3)</span><br></pre></td></tr></table></figure></p>
+<p>可用信道<br><pre class="line-numbers language-none"><code class="language-none">wlan0     13 channels in total; available frequencies :
+          Channel 01 : 2.412 GHz
+          Channel 02 : 2.417 GHz
+          Channel 03 : 2.422 GHz
+          Channel 04 : 2.427 GHz
+          Channel 05 : 2.432 GHz
+          Channel 06 : 2.437 GHz
+          Channel 07 : 2.442 GHz
+          Channel 08 : 2.447 GHz
+          Channel 09 : 2.452 GHz
+          Channel 10 : 2.457 GHz
+          Channel 11 : 2.462 GHz
+          Channel 12 : 2.467 GHz
+          Channel 13 : 2.472 GHz
+          Current Frequency:2.422 GHz (Channel 3)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
 <h3 id="改变信道"><a href="#改变信道" class="headerlink" title="改变信道"></a>改变信道</h3><p><code>sudo iwconfig wlan1 channel 1</code></p>
 <p>iwlist channel显示：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">13 channels in total; available frequencies :</span><br><span class="line">        Current Frequency:2.412 GHz (Channel 1)</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">13 channels in total; available frequencies :
+        Current Frequency:2.412 GHz (Channel 1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="修改发射功率"><a href="#修改发射功率" class="headerlink" title="修改发射功率"></a>修改发射功率</h3><p><code>sudo iwconfig wlan1 txpower X</code></p>
 <p>Tx 是发射（Transmits）的简称。无线电波的发射功率是指在给定频段范围内的能量，通常有两种衡量或测量标准：</p>
 <ol>
@@ -572,7 +581,24 @@
 <li>dBm = 10 * lg[ 功率mW]               //即，以10为底数取[功率mW]对数，然再乘以10</li>
 <li>mW = 10^[增益dBm / 10dBm]     //即，以10为底数，[增益dBm/10dBm]为指数，计算取值</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">    10    W        的无线发射功率为  40 dBm</span><br><span class="line">    6.4   W        的无线发射功率为  38 dBm</span><br><span class="line">    3.2   W        的无线发射功率为  35 dBm</span><br><span class="line">    1.6   W        的无线发射功率为  32 dBm    </span><br><span class="line">    1000  mW       的无线发射功率为  30 dBm</span><br><span class="line">    800   mW       的无线发射功率为  29 dBm</span><br><span class="line">    400   mW       的无线发射功率为  26 dBm</span><br><span class="line">    200   mW       的无线发射功率为  23 dBm</span><br><span class="line">    100   mW       的无线发射功率为  20 dBm</span><br><span class="line">    50    mW       的无线发射功率为  17 dBm</span><br><span class="line">    25    mW       的无线发射功率为  14 dBm</span><br><span class="line">    12.5  mW       的无线发射功率为  11 dBm</span><br><span class="line">    10.34 mW       的无线发射功率为  10 dBm</span><br><span class="line">    8.26  mW       的无线发射功率为  9  dBm</span><br><span class="line">    6.25  mW       的无线发射功率为  8  dBm</span><br><span class="line">    3.125 mW       的无线发射功率为  5  dBm</span><br><span class="line">    1     mW       的无线发射功率为  0  dBm</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">    10    W        的无线发射功率为  40 dBm
+    6.4   W        的无线发射功率为  38 dBm
+    3.2   W        的无线发射功率为  35 dBm
+    1.6   W        的无线发射功率为  32 dBm    
+    1000  mW       的无线发射功率为  30 dBm
+    800   mW       的无线发射功率为  29 dBm
+    400   mW       的无线发射功率为  26 dBm
+    200   mW       的无线发射功率为  23 dBm
+    100   mW       的无线发射功率为  20 dBm
+    50    mW       的无线发射功率为  17 dBm
+    25    mW       的无线发射功率为  14 dBm
+    12.5  mW       的无线发射功率为  11 dBm
+    10.34 mW       的无线发射功率为  10 dBm
+    8.26  mW       的无线发射功率为  9  dBm
+    6.25  mW       的无线发射功率为  8  dBm
+    3.125 mW       的无线发射功率为  5  dBm
+    1     mW       的无线发射功率为  0  dBm
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>经测试树莓派的发射功率最大可以达到31dBm、linux电脑可以达到20dBm。<br>树莓派可以通过命令行切换信道，linux电脑无法切换信道。<br>和学长讨论后不知道是不是伪切换信道需要进行测试。</p>
 <h2 id="测试是否为伪切换"><a href="#测试是否为伪切换" class="headerlink" title="测试是否为伪切换"></a>测试是否为伪切换</h2><p>让树莓派连接到一个固定信道的路由器进行测试。</p>
 <ol>
@@ -582,32 +608,150 @@
 </li>
 </ol>
 <h2 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h2><pre><code>准备一个路由器，将信道调整为固定信道1，树莓派尝试进行连接(修改配置文件)。
-</code></pre><h3 id="测试是否连接到固定信道路由器"><a href="#测试是否连接到固定信道路由器" class="headerlink" title="测试是否连接到固定信道路由器"></a>测试是否连接到固定信道路由器</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">iwconfig</span><br><span class="line">wlan0     IEEE 802.11bgn  ESSID:&quot;CH1&quot;</span><br><span class="line">          Mode:Managed  Frequency:2.412 GHz  Access Point: C8:3A:35:58:A4:D8</span><br><span class="line">          Bit Rate=72.2 Mb/s   Tx-Power=31 dBm</span><br><span class="line">          Retry short limit:7   RTS thr:off   Fragment thr:off</span><br><span class="line">          Power Management:on</span><br><span class="line">          Link Quality=70/70  Signal level=-38 dBm</span><br><span class="line">          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0</span><br><span class="line">          Tx excessive retries:5  Invalid misc:0   Missed beacon:0</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ping 192.168.2.100</span><br><span class="line">PING 192.168.2.100 (192.168.2.100) 56(84) bytes of data.</span><br><span class="line">64 bytes from 192.168.2.100: icmp_seq=1 ttl=64 time=641 ms</span><br><span class="line">64 bytes from 192.168.2.100: icmp_seq=2 ttl=64 time=143 ms</span><br><span class="line">64 bytes from 192.168.2.100: icmp_seq=3 ttl=64 time=64.2 ms</span><br><span class="line">64 bytes from 192.168.2.100: icmp_seq=4 ttl=64 time=84.8 ms</span><br><span class="line">64 bytes from 192.168.2.100: icmp_seq=5 ttl=64 time=214 ms</span><br><span class="line">64 bytes from 192.168.2.100: icmp_seq=6 ttl=64 time=141 ms</span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="测试是否连接到固定信道路由器"><a href="#测试是否连接到固定信道路由器" class="headerlink" title="测试是否连接到固定信道路由器"></a>测试是否连接到固定信道路由器</h3><pre class="line-numbers language-none"><code class="language-none">iwconfig
+wlan0     IEEE 802.11bgn  ESSID:&quot;CH1&quot;
+          Mode:Managed  Frequency:2.412 GHz  Access Point: C8:3A:35:58:A4:D8
+          Bit Rate&#x3D;72.2 Mb&#x2F;s   Tx-Power&#x3D;31 dBm
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on
+          Link Quality&#x3D;70&#x2F;70  Signal level&#x3D;-38 dBm
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:5  Invalid misc:0   Missed beacon:0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">ping 192.168.2.100
+PING 192.168.2.100 (192.168.2.100) 56(84) bytes of data.
+64 bytes from 192.168.2.100: icmp_seq&#x3D;1 ttl&#x3D;64 time&#x3D;641 ms
+64 bytes from 192.168.2.100: icmp_seq&#x3D;2 ttl&#x3D;64 time&#x3D;143 ms
+64 bytes from 192.168.2.100: icmp_seq&#x3D;3 ttl&#x3D;64 time&#x3D;64.2 ms
+64 bytes from 192.168.2.100: icmp_seq&#x3D;4 ttl&#x3D;64 time&#x3D;84.8 ms
+64 bytes from 192.168.2.100: icmp_seq&#x3D;5 ttl&#x3D;64 time&#x3D;214 ms
+64 bytes from 192.168.2.100: icmp_seq&#x3D;6 ttl&#x3D;64 time&#x3D;141 ms<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>结论:以上测试证明树莓派有正确连接到路由器</p>
 <h3 id="测试树莓派是否能切换信道"><a href="#测试树莓派是否能切换信道" class="headerlink" title="测试树莓派是否能切换信道"></a>测试树莓派是否能切换信道</h3><ol>
-<li><code>iwlist channel</code>显示：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">wlan0     11 channels in total; available frequencies :</span><br><span class="line">          Channel 01 : 2.412 GHz</span><br><span class="line">          Channel 02 : 2.417 GHz</span><br><span class="line">          Channel 03 : 2.422 GHz</span><br><span class="line">          Channel 04 : 2.427 GHz</span><br><span class="line">          Channel 05 : 2.432 GHz</span><br><span class="line">          Channel 06 : 2.437 GHz</span><br><span class="line">          Channel 07 : 2.442 GHz</span><br><span class="line">          Channel 08 : 2.447 GHz</span><br><span class="line">          Channel 09 : 2.452 GHz</span><br><span class="line">          Channel 10 : 2.457 GHz</span><br><span class="line">          Channel 11 : 2.462 GHz</span><br><span class="line">          Current Frequency:2.412 GHz (Channel 1)</span><br></pre></td></tr></table></figure>
+<li><code>iwlist channel</code>显示：<pre class="line-numbers language-none"><code class="language-none">wlan0     11 channels in total; available frequencies :
+          Channel 01 : 2.412 GHz
+          Channel 02 : 2.417 GHz
+          Channel 03 : 2.422 GHz
+          Channel 04 : 2.427 GHz
+          Channel 05 : 2.432 GHz
+          Channel 06 : 2.437 GHz
+          Channel 07 : 2.442 GHz
+          Channel 08 : 2.447 GHz
+          Channel 09 : 2.452 GHz
+          Channel 10 : 2.457 GHz
+          Channel 11 : 2.462 GHz
+          Current Frequency:2.412 GHz (Channel 1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
 <p>2.切换信道</p>
 <p> <code>sudo iwconfig wlan0 channel 3</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">iwconfig</span><br><span class="line">wlan0     IEEE 802.11bgn  ESSID:&quot;CH1&quot;</span><br><span class="line">          Mode:Managed  Frequency:2.422 GHz  Access Point: Not-Associated</span><br><span class="line">          Tx-Power=31 dBm</span><br><span class="line">          Retry short limit:7   RTS thr:off   Fragment thr:off</span><br><span class="line">          Power Management:on</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">iwconfig
+wlan0     IEEE 802.11bgn  ESSID:&quot;CH1&quot;
+          Mode:Managed  Frequency:2.422 GHz  Access Point: Not-Associated
+          Tx-Power&#x3D;31 dBm
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>信道被修改了</p>
-<p>尝试进行ping<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ping 192.168.2.109</span><br><span class="line">PING 192.168.2.109 (192.168.2.109) 56(84) bytes of data.</span><br><span class="line">64 bytes from 192.168.2.109: icmp_seq=1 ttl=128 time=9.72 ms</span><br><span class="line">64 bytes from 192.168.2.109: icmp_seq=2 ttl=128 time=6.33 ms</span><br><span class="line">64 bytes from 192.168.2.109: icmp_seq=3 ttl=128 time=22.0 ms</span><br><span class="line">64 bytes from 192.168.2.109: icmp_seq=4 ttl=128 time=44.1 ms</span><br><span class="line">64 bytes from 192.168.2.109: icmp_seq=5 ttl=128 time=8.24 ms</span><br><span class="line">64 bytes from 192.168.2.109: icmp_seq=6 ttl=128 time=7.62 ms</span><br></pre></td></tr></table></figure></p>
+<p>尝试进行ping<br><pre class="line-numbers language-none"><code class="language-none">ping 192.168.2.109
+PING 192.168.2.109 (192.168.2.109) 56(84) bytes of data.
+64 bytes from 192.168.2.109: icmp_seq&#x3D;1 ttl&#x3D;128 time&#x3D;9.72 ms
+64 bytes from 192.168.2.109: icmp_seq&#x3D;2 ttl&#x3D;128 time&#x3D;6.33 ms
+64 bytes from 192.168.2.109: icmp_seq&#x3D;3 ttl&#x3D;128 time&#x3D;22.0 ms
+64 bytes from 192.168.2.109: icmp_seq&#x3D;4 ttl&#x3D;128 time&#x3D;44.1 ms
+64 bytes from 192.168.2.109: icmp_seq&#x3D;5 ttl&#x3D;128 time&#x3D;8.24 ms
+64 bytes from 192.168.2.109: icmp_seq&#x3D;6 ttl&#x3D;128 time&#x3D;7.62 ms<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
 <p>传输正常…</p>
 <p>结论:树莓派很有可能是伪切换上行信道，但是我没有办法排除固定信道路由器无法接受非该信道信号的这个可能性。</p>
 <h2 id="进一步实验"><a href="#进一步实验" class="headerlink" title="进一步实验"></a>进一步实验</h2><p>如果修改信道可能xmu201_1的信道会改变。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">iwlist scan</span><br><span class="line">Cell 05 - Address: D4:EE:07:49:19:FC</span><br><span class="line">                    Channel:3</span><br><span class="line">                    Frequency:2.422 GHz (Channel 3)</span><br><span class="line">                    Quality=70/70  Signal level=-39 dBm</span><br><span class="line">                    Encryption key:on</span><br><span class="line">                    ESSID:&quot;xmu201_1&quot;</span><br><span class="line">                    Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 9 Mb/s</span><br><span class="line">                              18 Mb/s; 36 Mb/s; 54 Mb/s</span><br><span class="line">                    Bit Rates:6 Mb/s; 12 Mb/s; 24 Mb/s; 48 Mb/s</span><br><span class="line">                    Mode:Master</span><br><span class="line">                    Extra:tsf=0000000000000000</span><br><span class="line">                    Extra: Last beacon: 27270ms ago</span><br><span class="line">                    IE: Unknown: 0008786D753230315F31</span><br><span class="line">                    IE: Unknown: 010882848B961224486C</span><br><span class="line">                    IE: Unknown: 030103</span><br><span class="line">                    IE: Unknown: 32040C183060</span><br><span class="line">                    IE: Unknown: 0706434E20010D14</span><br><span class="line">                    IE: Unknown: 33082001020304050607</span><br><span class="line">                    IE: Unknown: 33082105060708090A0B</span><br><span class="line">                    IE: Unknown: 050400010000</span><br><span class="line">                    IE: WPA Version 1</span><br><span class="line">                        Group Cipher : CCMP</span><br><span class="line">                        Pairwise Ciphers (1) : CCMP</span><br><span class="line">                        Authentication Suites (1) : PSK</span><br><span class="line">                    IE: IEEE 802.11i/WPA2 Version 1</span><br><span class="line">                        Group Cipher : CCMP</span><br><span class="line">                        Pairwise Ciphers (1) : CCMP</span><br><span class="line">                        Authentication Suites (1) : PSK</span><br><span class="line">                    IE: Unknown: 2A0106</span><br><span class="line">                    IE: Unknown: 2D1AAC0117FFFF000000000000000000000000000000000000000000</span><br><span class="line">                    IE: Unknown: 3D1603000400000000000000000000000000000000000000</span><br><span class="line">                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00</span><br><span class="line">                    IE: Unknown: 0B0502000B127A</span><br><span class="line">                    IE: Unknown: DD07000C4300000000</span><br><span class="line">                    IE: Unknown: DD06D4EE07010100</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">iwlist scan
+Cell 05 - Address: D4:EE:07:49:19:FC
+                    Channel:3
+                    Frequency:2.422 GHz (Channel 3)
+                    Quality&#x3D;70&#x2F;70  Signal level&#x3D;-39 dBm
+                    Encryption key:on
+                    ESSID:&quot;xmu201_1&quot;
+                    Bit Rates:1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s
+                              18 Mb&#x2F;s; 36 Mb&#x2F;s; 54 Mb&#x2F;s
+                    Bit Rates:6 Mb&#x2F;s; 12 Mb&#x2F;s; 24 Mb&#x2F;s; 48 Mb&#x2F;s
+                    Mode:Master
+                    Extra:tsf&#x3D;0000000000000000
+                    Extra: Last beacon: 27270ms ago
+                    IE: Unknown: 0008786D753230315F31
+                    IE: Unknown: 010882848B961224486C
+                    IE: Unknown: 030103
+                    IE: Unknown: 32040C183060
+                    IE: Unknown: 0706434E20010D14
+                    IE: Unknown: 33082001020304050607
+                    IE: Unknown: 33082105060708090A0B
+                    IE: Unknown: 050400010000
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: IEEE 802.11i&#x2F;WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: 2A0106
+                    IE: Unknown: 2D1AAC0117FFFF000000000000000000000000000000000000000000
+                    IE: Unknown: 3D1603000400000000000000000000000000000000000000
+                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00
+                    IE: Unknown: 0B0502000B127A
+                    IE: Unknown: DD07000C4300000000
+                    IE: Unknown: DD06D4EE07010100
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>进行测试</p>
 <p> <code>sudo iwconfig wlan0 channel 3</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">iwconfig</span><br><span class="line">wlan0     IEEE 802.11bgn  ESSID:&quot;CH1&quot;</span><br><span class="line">          Mode:Managed  Frequency:2.422 GHz  Access Point: Not-Associated</span><br><span class="line">          Tx-Power=31 dBm</span><br><span class="line">          Retry short limit:7   RTS thr:off   Fragment thr:off</span><br><span class="line">          Power Management:on</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">iwconfig
+wlan0     IEEE 802.11bgn  ESSID:&quot;CH1&quot;
+          Mode:Managed  Frequency:2.422 GHz  Access Point: Not-Associated
+          Tx-Power&#x3D;31 dBm
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>重新进行信道扫描</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">iwlist scan</span><br><span class="line">Cell 05 - Address: D4:EE:07:49:19:FC</span><br><span class="line">                    Channel:3</span><br><span class="line">                    Frequency:2.422 GHz (Channel 3)</span><br><span class="line">                    Quality=70/70  Signal level=-39 dBm</span><br><span class="line">                    Encryption key:on</span><br><span class="line">                    ESSID:&quot;xmu201_1&quot;</span><br><span class="line">                    Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 9 Mb/s</span><br><span class="line">                              18 Mb/s; 36 Mb/s; 54 Mb/s</span><br><span class="line">                    Bit Rates:6 Mb/s; 12 Mb/s; 24 Mb/s; 48 Mb/s</span><br><span class="line">                    Mode:Master</span><br><span class="line">                    Extra:tsf=0000000000000000</span><br><span class="line">                    Extra: Last beacon: 27270ms ago</span><br><span class="line">                    IE: Unknown: 0008786D753230315F31</span><br><span class="line">                    IE: Unknown: 010882848B961224486C</span><br><span class="line">                    IE: Unknown: 030103</span><br><span class="line">                    IE: Unknown: 32040C183060</span><br><span class="line">                    IE: Unknown: 0706434E20010D14</span><br><span class="line">                    IE: Unknown: 33082001020304050607</span><br><span class="line">                    IE: Unknown: 33082105060708090A0B</span><br><span class="line">                    IE: Unknown: 050400010000</span><br><span class="line">                    IE: WPA Version 1</span><br><span class="line">                        Group Cipher : CCMP</span><br><span class="line">                        Pairwise Ciphers (1) : CCMP</span><br><span class="line">                        Authentication Suites (1) : PSK</span><br><span class="line">                    IE: IEEE 802.11i/WPA2 Version 1</span><br><span class="line">                        Group Cipher : CCMP</span><br><span class="line">                        Pairwise Ciphers (1) : CCMP</span><br><span class="line">                        Authentication Suites (1) : PSK</span><br><span class="line">                    IE: Unknown: 2A0106</span><br><span class="line">                    IE: Unknown: 2D1AAC0117FFFF000000000000000000000000000000000000000000</span><br><span class="line">                    IE: Unknown: 3D1603000400000000000000000000000000000000000000</span><br><span class="line">                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00</span><br><span class="line">                    IE: Unknown: 0B0502000B127A</span><br><span class="line">                    IE: Unknown: DD07000C4300000000</span><br><span class="line">                    IE: Unknown: DD06D4EE07010100</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">iwlist scan
+Cell 05 - Address: D4:EE:07:49:19:FC
+                    Channel:3
+                    Frequency:2.422 GHz (Channel 3)
+                    Quality&#x3D;70&#x2F;70  Signal level&#x3D;-39 dBm
+                    Encryption key:on
+                    ESSID:&quot;xmu201_1&quot;
+                    Bit Rates:1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s
+                              18 Mb&#x2F;s; 36 Mb&#x2F;s; 54 Mb&#x2F;s
+                    Bit Rates:6 Mb&#x2F;s; 12 Mb&#x2F;s; 24 Mb&#x2F;s; 48 Mb&#x2F;s
+                    Mode:Master
+                    Extra:tsf&#x3D;0000000000000000
+                    Extra: Last beacon: 27270ms ago
+                    IE: Unknown: 0008786D753230315F31
+                    IE: Unknown: 010882848B961224486C
+                    IE: Unknown: 030103
+                    IE: Unknown: 32040C183060
+                    IE: Unknown: 0706434E20010D14
+                    IE: Unknown: 33082001020304050607
+                    IE: Unknown: 33082105060708090A0B
+                    IE: Unknown: 050400010000
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: IEEE 802.11i&#x2F;WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: 2A0106
+                    IE: Unknown: 2D1AAC0117FFFF000000000000000000000000000000000000000000
+                    IE: Unknown: 3D1603000400000000000000000000000000000000000000
+                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00
+                    IE: Unknown: 0B0502000B127A
+                    IE: Unknown: DD07000C4300000000
+                    IE: Unknown: DD06D4EE07010100
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>信道没有发生变化。</p>
 <h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>树莓派的 <code>sudo iwconfig wlan0 channel 3</code>极有可能是伪修改：即树莓派修改了某个寄存器的数值，但是并没有实际修改信道，这个可以通过进一步的研究进行验证。</p>
 <h2 id="树莓派开启热点功能"><a href="#树莓派开启热点功能" class="headerlink" title="树莓派开启热点功能"></a>树莓派开启热点功能</h2><p>研究了一下树莓派的开启热点方法，都有点不科学，最后找到一个比较稳定且合适的方法，需要使用HDMI线和鼠标键盘(因为断掉wifi后树莓派会和电脑断连接、若有插网线则可以无视)具体操作如下：</p>
 <p>创建WiFi热点使用的GitHub上一个开源项目：<br><a target="_blank" rel="noopener" href="https://github.com/oblique/create_ap">https://github.com/oblique/create_ap</a></p>
-<h3 id="下载开源项目包"><a href="#下载开源项目包" class="headerlink" title="下载开源项目包"></a>下载开源项目包</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo git clone https://github.com/oblique/create_ap</span><br><span class="line">cd create_ap</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+<h3 id="下载开源项目包"><a href="#下载开源项目包" class="headerlink" title="下载开源项目包"></a>下载开源项目包</h3><pre class="line-numbers language-none"><code class="language-none">sudo git clone https:&#x2F;&#x2F;github.com&#x2F;oblique&#x2F;create_ap
+cd create_ap
+sudo make install<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>可能会存在说树莓派连接不上github的可能性(ps:我就遇到了)</p>
 <ul>
 <li>参考以下步骤：</li>
@@ -615,7 +759,8 @@
 <ol>
 <li>用电脑从github下载zip格式文件</li>
 <li>通过xftp将zip文件转存入树莓派</li>
-<li>unzip xxx.zip文件<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd create_ap</span><br><span class="line">sudo make install </span><br></pre></td></tr></table></figure>
+<li>unzip xxx.zip文件<pre class="line-numbers language-none"><code class="language-none">cd create_ap
+sudo make install <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 </li>
 </ol>
 <h3 id="运用该开源项目"><a href="#运用该开源项目" class="headerlink" title="运用该开源项目"></a>运用该开源项目</h3><ul>
@@ -654,10 +799,14 @@
 <li>test：</li>
 </ol>
 <p>这时用<code>rfkill list</code>查看所有无线设备</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">0: phy0: Wireless LAN</span><br><span class="line">   Soft blocked: yes</span><br><span class="line">   Hard blocked: no</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">0: phy0: Wireless LAN
+   Soft blocked: yes
+   Hard blocked: no<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>发现wlan0软件关闭了。</p>
 <p>运行命令<code>rfkill unblock wlan</code>再查看无线设备</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">0: phy0: Wireless LAN</span><br><span class="line">    Soft blocked: no</span><br><span class="line">    Hard blocked: no</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">0: phy0: Wireless LAN
+    Soft blocked: no
+    Hard blocked: no<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>wlan0软件开启。</p>
 <ol>
 <li>再运行上面的<code>sudo create_ap -n wlan0 pi_wifi MyPassWord</code>出现：</li>
@@ -675,26 +824,162 @@
 <h2 id="实验-1"><a href="#实验-1" class="headerlink" title="实验"></a>实验</h2><h3 id="命令行修改信道"><a href="#命令行修改信道" class="headerlink" title="命令行修改信道"></a>命令行修改信道</h3><ol>
 <li><code>sudo iwconfig wlan0 channel 3</code></li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Error for wireless request &quot;Set Frequency&quot; (8B04) :</span><br><span class="line">    SET failed on device wlan0 ; Operation not supported.</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">Error for wireless request &quot;Set Frequency&quot; (8B04) :
+    SET failed on device wlan0 ; Operation not supported.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>直接报错，无法修改信道。</p>
 <ol>
 <li><code>iwconfig</code></li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">wlan0     IEEE 802.11bgn  Mode:Master  Tx-Power=20 dBm</span><br><span class="line">          Retry short limit:7   RTS thr:off   Fragment thr:off</span><br><span class="line">          Power Management:off</span><br><span class="line"></span><br><span class="line">lo        no wireless extensions.</span><br><span class="line"></span><br><span class="line">eth0      no wireless extensions.</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">wlan0     IEEE 802.11bgn  Mode:Master  Tx-Power&#x3D;20 dBm
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:off
+
+lo        no wireless extensions.
+
+eth0      no wireless extensions.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>这说明什么，命令行在ap状态下是无效的，没办法直接这样修改，该方案不可行。</p>
-<h3 id="查看该开源项目的内部文件"><a href="#查看该开源项目的内部文件" class="headerlink" title="查看该开源项目的内部文件"></a>查看该开源项目的内部文件</h3><p>这个热点开源项目一共有以下文件<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bash_completion  create_ap.conf    create_ap.service  LICENSE   README.md</span><br><span class="line">create_ap        create_ap.openrc  howto              Makefile</span><br></pre></td></tr></table></figure><br>于是一个一个的找（只花了几分钟而已哈哈）</p>
-<h3 id="项目源代码"><a href="#项目源代码" class="headerlink" title="项目源代码"></a>项目源代码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line">usage() &#123;</span><br><span class="line">    echo &quot;Usage: &quot;$PROGNAME&quot; [options] &lt;wifi-interface&gt; [&lt;interface-with-internet&gt;] [&lt;access-point-name&gt; [&lt;passphrase&gt;]]&quot;</span><br><span class="line">    echo</span><br><span class="line">    echo &quot;Options:&quot;</span><br><span class="line">    echo &quot;  -h, --help              Show this help&quot;</span><br><span class="line">    echo &quot;  --version               Print version number&quot;</span><br><span class="line">    echo &quot;  -c &lt;channel&gt;            Channel number (default: 1)&quot;</span><br><span class="line">    echo &quot;  -w &lt;WPA version&gt;        Use 1 for WPA, use 2 for WPA2, use 1+2 for both (default: 1+2)&quot;</span><br><span class="line">    echo &quot;  -n                      Disable Internet sharing (if you use this, don&#x27;t pass&quot;</span><br><span class="line">    echo &quot;                          the &lt;interface-with-internet&gt; argument)&quot;</span><br><span class="line">    echo &quot;  -m &lt;method&gt;             Method for Internet sharing.&quot;</span><br><span class="line">    echo &quot;                          Use: &#x27;nat&#x27; for NAT (default)&quot;</span><br><span class="line">    echo &quot;                               &#x27;bridge&#x27; for bridging&quot;</span><br><span class="line">    echo &quot;                               &#x27;none&#x27; for no Internet sharing (equivalent to -n)&quot;</span><br><span class="line">    echo &quot;  --psk                   Use 64 hex digits pre-shared-key instead of passphrase&quot;</span><br><span class="line">    echo &quot;  --hidden                Make the Access Point hidden (do not broadcast the SSID)&quot;</span><br><span class="line">    echo &quot;  --mac-filter            Enable MAC address filtering&quot;</span><br><span class="line">    echo &quot;  --mac-filter-accept     Location of MAC address filter list (defaults to /etc/hostapd/hostapd.accept)&quot;</span><br><span class="line">    echo &quot;  --redirect-to-localhost If -n is set, redirect every web request to localhost (useful for public information networks)&quot;</span><br><span class="line">    echo &quot;  --hostapd-debug &lt;level&gt; With level between 1 and 2, passes arguments -d or -dd to hostapd for debugging.&quot;</span><br><span class="line">    echo &quot;  --isolate-clients       Disable communication between clients&quot;</span><br><span class="line">    echo &quot;  --ieee80211n            Enable IEEE 802.11n (HT)&quot;</span><br><span class="line">    echo &quot;  --ieee80211ac           Enable IEEE 802.11ac (VHT)&quot;</span><br><span class="line">    echo &quot;  --ht_capab &lt;HT&gt;         HT capabilities (default: [HT40+])&quot;</span><br><span class="line">    echo &quot;  --vht_capab &lt;VHT&gt;       VHT capabilities&quot;</span><br><span class="line">    echo &quot;  --country &lt;code&gt;        Set two-letter country code for regularity (example: US)&quot;</span><br><span class="line">    echo &quot;  --freq-band &lt;GHz&gt;       Set frequency band. Valid inputs: 2.4, 5 (default: 2.4)&quot;</span><br><span class="line">    echo &quot;  --driver                Choose your WiFi adapter driver (default: nl80211)&quot;</span><br><span class="line">    echo &quot;  --no-virt               Do not create virtual interface&quot;</span><br><span class="line">    echo &quot;  --no-haveged            Do not run &#x27;haveged&#x27; automatically when needed&quot;</span><br><span class="line">    echo &quot;  --fix-unmanaged         If NetworkManager shows your interface as unmanaged after you&quot;</span><br><span class="line">    echo &quot;                          close create_ap, then use this option to switch your interface&quot;</span><br><span class="line">    echo &quot;                          back to managed&quot;</span><br><span class="line">    echo &quot;  --mac &lt;MAC&gt;             Set MAC address&quot;</span><br><span class="line">    echo &quot;  --dhcp-dns &lt;IP1[,IP2]&gt;  Set DNS returned by DHCP&quot;</span><br><span class="line">    echo &quot;  --daemon                Run create_ap in the background&quot;</span><br><span class="line">    echo &quot;  --pidfile &lt;pidfile&gt;     Save daemon PID to file&quot;</span><br><span class="line">    echo &quot;  --logfile &lt;logfile&gt;     Save daemon messages to file&quot;</span><br><span class="line">    echo &quot;  --stop &lt;id&gt;             Send stop command to an already running create_ap. For an &lt;id&gt;&quot;</span><br><span class="line">    echo &quot;                          you can put the PID of create_ap or the WiFi interface. You can&quot;</span><br><span class="line">    echo &quot;                          get them with --list-running&quot;</span><br><span class="line">    echo &quot;  --list-running          Show the create_ap processes that are already running&quot;</span><br><span class="line">    echo &quot;  --list-clients &lt;id&gt;     List the clients connected to create_ap instance associated with &lt;id&gt;.&quot;</span><br><span class="line">    echo &quot;                          For an &lt;id&gt; you can put the PID of create_ap or the WiFi interface.&quot;</span><br><span class="line">    echo &quot;                          If virtual WiFi interface was created, then use that one.&quot;</span><br><span class="line">    echo &quot;                          You can get them with --list-running&quot;</span><br><span class="line">    echo &quot;  --mkconfig &lt;conf_file&gt;  Store configs in conf_file&quot;</span><br><span class="line">    echo &quot;  --config &lt;conf_file&gt;    Load configs from conf_file&quot;</span><br><span class="line">    echo</span><br><span class="line">    echo &quot;Non-Bridging Options:&quot;</span><br><span class="line">    echo &quot;  --no-dns                Disable dnsmasq DNS server&quot;</span><br><span class="line">    echo &quot;  --no-dnsmasq            Disable dnsmasq server completely&quot;</span><br><span class="line">    echo &quot;  -g &lt;gateway&gt;            IPv4 Gateway for the Access Point (default: 192.168.12.1)&quot;</span><br><span class="line">    echo &quot;  -d                      DNS server will take into account /etc/hosts&quot;</span><br><span class="line">    echo &quot;  -e &lt;hosts_file&gt;         DNS server will take into account additional hosts file&quot;</span><br><span class="line">    echo</span><br><span class="line">    echo &quot;Useful informations:&quot;</span><br><span class="line">    echo &quot;  * If you&#x27;re not using the --no-virt option, then you can create an AP with the same&quot;</span><br><span class="line">    echo &quot;    interface you are getting your Internet connection.&quot;</span><br><span class="line">    echo &quot;  * You can pass your SSID and password through pipe or through arguments (see examples).&quot;</span><br><span class="line">    echo &quot;  * On bridge method if the &lt;interface-with-internet&gt; is not a bridge interface, then&quot;</span><br><span class="line">    echo &quot;    a bridge interface is created automatically.&quot;</span><br><span class="line">    echo</span><br><span class="line">    echo &quot;Examples:&quot;</span><br><span class="line">    echo &quot;  &quot;$PROGNAME&quot; wlan0 eth0 MyAccessPoint MyPassPhrase&quot;</span><br><span class="line">    echo &quot;  echo -e &#x27;MyAccessPoint\nMyPassPhrase&#x27; | &quot;$PROGNAME&quot; wlan0 eth0&quot;</span><br><span class="line">    echo &quot;  &quot;$PROGNAME&quot; wlan0 eth0 MyAccessPoint&quot;</span><br><span class="line">    echo &quot;  echo &#x27;MyAccessPoint&#x27; | &quot;$PROGNAME&quot; wlan0 eth0&quot;</span><br><span class="line">    echo &quot;  &quot;$PROGNAME&quot; wlan0 wlan0 MyAccessPoint MyPassPhrase&quot;</span><br><span class="line">    echo &quot;  &quot;$PROGNAME&quot; -n wlan0 MyAccessPoint MyPassPhrase&quot;</span><br><span class="line">    echo &quot;  &quot;$PROGNAME&quot; -m bridge wlan0 eth0 MyAccessPoint MyPassPhrase&quot;</span><br><span class="line">    echo &quot;  &quot;$PROGNAME&quot; -m bridge wlan0 br0 MyAccessPoint MyPassPhrase&quot;</span><br><span class="line">    echo &quot;  &quot;$PROGNAME&quot; --driver rtl871xdrv wlan0 eth0 MyAccessPoint MyPassPhrase&quot;</span><br><span class="line">    echo &quot;  &quot;$PROGNAME&quot; --daemon wlan0 eth0 MyAccessPoint MyPassPhrase&quot;</span><br><span class="line">    echo &quot;  &quot;$PROGNAME&quot; --stop wlan0&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="查看该开源项目的内部文件"><a href="#查看该开源项目的内部文件" class="headerlink" title="查看该开源项目的内部文件"></a>查看该开源项目的内部文件</h3><p>这个热点开源项目一共有以下文件<br><pre class="line-numbers language-none"><code class="language-none">bash_completion  create_ap.conf    create_ap.service  LICENSE   README.md
+create_ap        create_ap.openrc  howto              Makefile<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>于是一个一个的找（只花了几分钟而已哈哈）</p>
+<h3 id="项目源代码"><a href="#项目源代码" class="headerlink" title="项目源代码"></a>项目源代码</h3><pre class="line-numbers language-none"><code class="language-none">usage() &#123;
+    echo &quot;Usage: &quot;$PROGNAME&quot; [options] &lt;wifi-interface&gt; [&lt;interface-with-internet&gt;] [&lt;access-point-name&gt; [&lt;passphrase&gt;]]&quot;
+    echo
+    echo &quot;Options:&quot;
+    echo &quot;  -h, --help              Show this help&quot;
+    echo &quot;  --version               Print version number&quot;
+    echo &quot;  -c &lt;channel&gt;            Channel number (default: 1)&quot;
+    echo &quot;  -w &lt;WPA version&gt;        Use 1 for WPA, use 2 for WPA2, use 1+2 for both (default: 1+2)&quot;
+    echo &quot;  -n                      Disable Internet sharing (if you use this, don&#39;t pass&quot;
+    echo &quot;                          the &lt;interface-with-internet&gt; argument)&quot;
+    echo &quot;  -m &lt;method&gt;             Method for Internet sharing.&quot;
+    echo &quot;                          Use: &#39;nat&#39; for NAT (default)&quot;
+    echo &quot;                               &#39;bridge&#39; for bridging&quot;
+    echo &quot;                               &#39;none&#39; for no Internet sharing (equivalent to -n)&quot;
+    echo &quot;  --psk                   Use 64 hex digits pre-shared-key instead of passphrase&quot;
+    echo &quot;  --hidden                Make the Access Point hidden (do not broadcast the SSID)&quot;
+    echo &quot;  --mac-filter            Enable MAC address filtering&quot;
+    echo &quot;  --mac-filter-accept     Location of MAC address filter list (defaults to &#x2F;etc&#x2F;hostapd&#x2F;hostapd.accept)&quot;
+    echo &quot;  --redirect-to-localhost If -n is set, redirect every web request to localhost (useful for public information networks)&quot;
+    echo &quot;  --hostapd-debug &lt;level&gt; With level between 1 and 2, passes arguments -d or -dd to hostapd for debugging.&quot;
+    echo &quot;  --isolate-clients       Disable communication between clients&quot;
+    echo &quot;  --ieee80211n            Enable IEEE 802.11n (HT)&quot;
+    echo &quot;  --ieee80211ac           Enable IEEE 802.11ac (VHT)&quot;
+    echo &quot;  --ht_capab &lt;HT&gt;         HT capabilities (default: [HT40+])&quot;
+    echo &quot;  --vht_capab &lt;VHT&gt;       VHT capabilities&quot;
+    echo &quot;  --country &lt;code&gt;        Set two-letter country code for regularity (example: US)&quot;
+    echo &quot;  --freq-band &lt;GHz&gt;       Set frequency band. Valid inputs: 2.4, 5 (default: 2.4)&quot;
+    echo &quot;  --driver                Choose your WiFi adapter driver (default: nl80211)&quot;
+    echo &quot;  --no-virt               Do not create virtual interface&quot;
+    echo &quot;  --no-haveged            Do not run &#39;haveged&#39; automatically when needed&quot;
+    echo &quot;  --fix-unmanaged         If NetworkManager shows your interface as unmanaged after you&quot;
+    echo &quot;                          close create_ap, then use this option to switch your interface&quot;
+    echo &quot;                          back to managed&quot;
+    echo &quot;  --mac &lt;MAC&gt;             Set MAC address&quot;
+    echo &quot;  --dhcp-dns &lt;IP1[,IP2]&gt;  Set DNS returned by DHCP&quot;
+    echo &quot;  --daemon                Run create_ap in the background&quot;
+    echo &quot;  --pidfile &lt;pidfile&gt;     Save daemon PID to file&quot;
+    echo &quot;  --logfile &lt;logfile&gt;     Save daemon messages to file&quot;
+    echo &quot;  --stop &lt;id&gt;             Send stop command to an already running create_ap. For an &lt;id&gt;&quot;
+    echo &quot;                          you can put the PID of create_ap or the WiFi interface. You can&quot;
+    echo &quot;                          get them with --list-running&quot;
+    echo &quot;  --list-running          Show the create_ap processes that are already running&quot;
+    echo &quot;  --list-clients &lt;id&gt;     List the clients connected to create_ap instance associated with &lt;id&gt;.&quot;
+    echo &quot;                          For an &lt;id&gt; you can put the PID of create_ap or the WiFi interface.&quot;
+    echo &quot;                          If virtual WiFi interface was created, then use that one.&quot;
+    echo &quot;                          You can get them with --list-running&quot;
+    echo &quot;  --mkconfig &lt;conf_file&gt;  Store configs in conf_file&quot;
+    echo &quot;  --config &lt;conf_file&gt;    Load configs from conf_file&quot;
+    echo
+    echo &quot;Non-Bridging Options:&quot;
+    echo &quot;  --no-dns                Disable dnsmasq DNS server&quot;
+    echo &quot;  --no-dnsmasq            Disable dnsmasq server completely&quot;
+    echo &quot;  -g &lt;gateway&gt;            IPv4 Gateway for the Access Point (default: 192.168.12.1)&quot;
+    echo &quot;  -d                      DNS server will take into account &#x2F;etc&#x2F;hosts&quot;
+    echo &quot;  -e &lt;hosts_file&gt;         DNS server will take into account additional hosts file&quot;
+    echo
+    echo &quot;Useful informations:&quot;
+    echo &quot;  * If you&#39;re not using the --no-virt option, then you can create an AP with the same&quot;
+    echo &quot;    interface you are getting your Internet connection.&quot;
+    echo &quot;  * You can pass your SSID and password through pipe or through arguments (see examples).&quot;
+    echo &quot;  * On bridge method if the &lt;interface-with-internet&gt; is not a bridge interface, then&quot;
+    echo &quot;    a bridge interface is created automatically.&quot;
+    echo
+    echo &quot;Examples:&quot;
+    echo &quot;  &quot;$PROGNAME&quot; wlan0 eth0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  echo -e &#39;MyAccessPoint\nMyPassPhrase&#39; | &quot;$PROGNAME&quot; wlan0 eth0&quot;
+    echo &quot;  &quot;$PROGNAME&quot; wlan0 eth0 MyAccessPoint&quot;
+    echo &quot;  echo &#39;MyAccessPoint&#39; | &quot;$PROGNAME&quot; wlan0 eth0&quot;
+    echo &quot;  &quot;$PROGNAME&quot; wlan0 wlan0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  &quot;$PROGNAME&quot; -n wlan0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  &quot;$PROGNAME&quot; -m bridge wlan0 eth0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  &quot;$PROGNAME&quot; -m bridge wlan0 br0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  &quot;$PROGNAME&quot; --driver rtl871xdrv wlan0 eth0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  &quot;$PROGNAME&quot; --daemon wlan0 eth0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  &quot;$PROGNAME&quot; --stop wlan0&quot;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>这一行明显及其关键，一看就是可以利用的代码。</p>
 <p>其中：</p>
 <p><code>echo &quot;  -c &lt;channel&gt;            Channel number (default: 1)&quot;</code></p>
 <p>应该可以通过<code>sudo create_ap -n wlan0 pi_wifi MyPassWord -c 2</code>修改信道数值。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">WARN: brmfmac driver doesn&#x27;t work properly with virtual interfaces and</span><br><span class="line">      it can cause kernel panic. For this reason we disallow virtual</span><br><span class="line">      interfaces for your adapter.</span><br><span class="line">      For more info: https://github.com/oblique/create_ap/issues/203</span><br><span class="line">WARN: Your adapter does not fully support AP virtual interface, enabling --no-virt</span><br><span class="line">Config dir: /tmp/create_ap.wlan0.conf.d6khWCUL</span><br><span class="line">PID: 4794</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">WARN: brmfmac driver doesn&#39;t work properly with virtual interfaces and
+      it can cause kernel panic. For this reason we disallow virtual
+      interfaces for your adapter.
+      For more info: https:&#x2F;&#x2F;github.com&#x2F;oblique&#x2F;create_ap&#x2F;issues&#x2F;203
+WARN: Your adapter does not fully support AP virtual interface, enabling --no-virt
+Config dir: &#x2F;tmp&#x2F;create_ap.wlan0.conf.d6khWCUL
+PID: 4794<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>wlan0应该是被占用了</p>
 <h2 id="修改信道"><a href="#修改信道" class="headerlink" title="修改信道"></a>修改信道</h2><p><code>sudo create_ap --s wlan0</code></p>
 <p>通过<code>sudo create_ap -n wlan0 pi_wifi MyPassWord -c 1</code>修改信道数值。</p>
 <p>通过其他设备进行测试’iwlist scan’</p>
-<p>扫描信道结果：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">wlan0     Scan completed :</span><br><span class="line">          Cell 01 - Address: 18:64:72:92:EC:81</span><br><span class="line">                    Channel:1</span><br><span class="line">                    Frequency:2.412 GHz (Channel 1)</span><br><span class="line">                    Quality=46/70  Signal level=-64 dBm</span><br><span class="line">                    Encryption key:on</span><br><span class="line">                    ESSID:&quot;pi_wifi&quot;</span><br><span class="line">                    Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 6 Mb/s; 9 Mb/s</span><br><span class="line">                              11 Mb/s; 12 Mb/s; 18 Mb/s</span><br><span class="line">                    Bit Rates:24 Mb/s; 36 Mb/s; 48 Mb/s; 54 Mb/s</span><br><span class="line">                    Mode:Master</span><br><span class="line">                    Extra:tsf=0000000000000000</span><br><span class="line">                    Extra: Last beacon: 200ms ago</span><br><span class="line">                    IE: Unknown: 0007656475726F616D</span><br><span class="line">                    IE: Unknown: 010882840B0C12161824</span><br><span class="line">                    IE: Unknown: 030101</span><br><span class="line">                    IE: Unknown: 2A0102</span><br><span class="line">                    IE: Unknown: 32043048606C</span><br><span class="line">                    IE: IEEE 802.11i/WPA2 Version 1</span><br><span class="line">                        Group Cipher : CCMP</span><br><span class="line">                        Pairwise Ciphers (1) : CCMP</span><br><span class="line">                        Authentication Suites (1) : 802.1x</span><br><span class="line">                    IE: Unknown: 2D1AED111BFFFFFF0000000000000000000000000000000                                        000000000</span><br><span class="line">                    IE: Unknown: 3D1601000A0000000000000000000000000000000000000                                        0</span><br><span class="line">                    IE: Unknown: 7F080000080000000000</span><br><span class="line">                    IE: Unknown: DD180050F2020101800003A4000027A4000042435E00623                                        22F00</span><br></pre></td></tr></table></figure><br>通过<code>sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11</code>修改信道数值。<br>通过其他设备进行测试’iwlist scan’</p>
-<p>扫描信道结果：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">Cell 12 - Address: 18:64:72:92:EC:81</span><br><span class="line">                    Channel:11</span><br><span class="line">                    Frequency:2.462 GHz (Channel 11)</span><br><span class="line">                    Quality=66/70  Signal level=-44 dBm</span><br><span class="line">                    Encryption key:off</span><br><span class="line">                    ESSID:&quot;pi_wifi&quot;</span><br><span class="line">                    Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 6 Mb/s</span><br><span class="line">                              9 Mb/s; 12 Mb/s; 18 Mb/s</span><br><span class="line">                    Bit Rates:24 Mb/s; 36 Mb/s; 48 Mb/s; 54 Mb/s</span><br><span class="line">                    Mode:Master</span><br><span class="line">                    Extra:tsf=0000000000000000</span><br><span class="line">                    Extra: Last beacon: 17620ms ago</span><br><span class="line">                    IE: Unknown: 0003434832</span><br><span class="line">                    IE: Unknown: 010882848B960C121824</span><br><span class="line">                    IE: Unknown: 03010B</span><br><span class="line">                    IE: Unknown: 2A0100</span><br><span class="line">                    IE: Unknown: 32043048606C</span><br><span class="line">                    IE: Unknown: 2D1A2C0003FF00000000000000000000000000000000000000000000</span><br><span class="line">                    IE: Unknown: 3D160B001100000000000000000000000000000000000000</span><br><span class="line">                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00</span><br><span class="line">                    IE: Unknown: DD05000AEB0100</span><br><span class="line">                    IE: Unknown: DD8E0050F204104A0001101044000102103B0001031047001000000000000010000000FCD7330F3A461021000754502D4C494E4B10230009544C2D57523734324E10240003372E3010420007312E312E312E331054000800060050F204000110110018576972656C657373204E20526F757465722057523734324E100800022288103C0001011049000600372A000120</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>扫描信道结果：<br><pre class="line-numbers language-none"><code class="language-none">wlan0     Scan completed :
+          Cell 01 - Address: 18:64:72:92:EC:81
+                    Channel:1
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality&#x3D;46&#x2F;70  Signal level&#x3D;-64 dBm
+                    Encryption key:on
+                    ESSID:&quot;pi_wifi&quot;
+                    Bit Rates:1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 6 Mb&#x2F;s; 9 Mb&#x2F;s
+                              11 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s
+                    Bit Rates:24 Mb&#x2F;s; 36 Mb&#x2F;s; 48 Mb&#x2F;s; 54 Mb&#x2F;s
+                    Mode:Master
+                    Extra:tsf&#x3D;0000000000000000
+                    Extra: Last beacon: 200ms ago
+                    IE: Unknown: 0007656475726F616D
+                    IE: Unknown: 010882840B0C12161824
+                    IE: Unknown: 030101
+                    IE: Unknown: 2A0102
+                    IE: Unknown: 32043048606C
+                    IE: IEEE 802.11i&#x2F;WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+                    IE: Unknown: 2D1AED111BFFFFFF0000000000000000000000000000000                                        000000000
+                    IE: Unknown: 3D1601000A0000000000000000000000000000000000000                                        0
+                    IE: Unknown: 7F080000080000000000
+                    IE: Unknown: DD180050F2020101800003A4000027A4000042435E00623                                        22F00<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>通过<code>sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11</code>修改信道数值。<br>通过其他设备进行测试’iwlist scan’</p>
+<p>扫描信道结果：<br><pre class="line-numbers language-none"><code class="language-none">Cell 12 - Address: 18:64:72:92:EC:81
+                    Channel:11
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality&#x3D;66&#x2F;70  Signal level&#x3D;-44 dBm
+                    Encryption key:off
+                    ESSID:&quot;pi_wifi&quot;
+                    Bit Rates:1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 6 Mb&#x2F;s
+                              9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s
+                    Bit Rates:24 Mb&#x2F;s; 36 Mb&#x2F;s; 48 Mb&#x2F;s; 54 Mb&#x2F;s
+                    Mode:Master
+                    Extra:tsf&#x3D;0000000000000000
+                    Extra: Last beacon: 17620ms ago
+                    IE: Unknown: 0003434832
+                    IE: Unknown: 010882848B960C121824
+                    IE: Unknown: 03010B
+                    IE: Unknown: 2A0100
+                    IE: Unknown: 32043048606C
+                    IE: Unknown: 2D1A2C0003FF00000000000000000000000000000000000000000000
+                    IE: Unknown: 3D160B001100000000000000000000000000000000000000
+                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00
+                    IE: Unknown: DD05000AEB0100
+                    IE: Unknown: DD8E0050F204104A0001101044000102103B0001031047001000000000000010000000FCD7330F3A461021000754502D4C494E4B10230009544C2D57523734324E10240003372E3010420007312E312E312E331054000800060050F204000110110018576972656C657373204E20526F757465722057523734324E100800022288103C0001011049000600372A000120
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
 <p>成功修改信道！</p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>综上所示：</p>
 <ol>
@@ -702,12 +987,22 @@
 </ol>
 <p><code>sudo iwconfig wlan1 txpower X</code></p>
 <ol>
-<li>通过开源项目切换信道<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo create_ap --s wlan0</span><br><span class="line"></span><br><span class="line">sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11</span><br></pre></td></tr></table></figure>
+<li>通过开源项目切换信道<pre class="line-numbers language-none"><code class="language-none">sudo create_ap --s wlan0
+
+sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">生成ssh</span><br><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C &quot;kp@mmrsl.cn&quot;</span><br><span class="line"></span><br><span class="line">ssh-agent -s</span><br><span class="line"></span><br><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">生成ssh
+
+ssh-keygen -t rsa -C &quot;kp@mmrsl.cn&quot;
+
+ssh-agent -s
+
+ssh-add ~&#x2F;.ssh&#x2F;id_rsa<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="扩展：功率修改测试及方案"><a href="#扩展：功率修改测试及方案" class="headerlink" title="扩展：功率修改测试及方案"></a>扩展：功率修改测试及方案</h2><ol>
-<li>开启热点 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo create_ap --s wlan0</span><br><span class="line"></span><br><span class="line">sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11</span><br></pre></td></tr></table></figure></li>
+<li>开启热点 <pre class="line-numbers language-none"><code class="language-none">sudo create_ap --s wlan0
+
+sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
 <li>修改功率</li>
 </ol>
 <p><code>sudo iwconfig wlan1 txpower 30</code></p>
@@ -1298,7 +1593,7 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -1311,7 +1606,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">82.2k</span>&nbsp;字
+                class="white-color">83.8k</span>&nbsp;字
             
             
             
@@ -1330,6 +1625,50 @@
             </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2017";
+                    var startMonth = "11";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
@@ -1572,6 +1911,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     

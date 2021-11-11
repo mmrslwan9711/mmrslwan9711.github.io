@@ -29,18 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="漫漫人生路" type="application/atom+xml">
+</head>
 
-
-
-   <style>
-    body{
-       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
 
 
 
@@ -557,6 +548,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -601,7 +595,12 @@
 <p>在Q学习中，目标是达到奖励最高的状态，所以如果agent到达目标，它将永远在那里。这种类型的目标被称为“吸收目标”。</p>
 <p>想象一下，我们的agent是一个想象的虚拟机器人，可以通过经验学习。<br>agent可以从一个房间转移到另一个房间，但它没有上帝视角，也不知道哪一扇门通向外面。</p>
 <p>按照第一部分Q学习的理论，我们把每个房间抽象为一个状态，选择进入哪号房间作为动作，把状态图和即时奖励值放到下面的奖励值表“回报矩阵R”中：-1表示不可选择的动作，两个状态间没有连接）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">R = np.matrix([[-1, -1, -1, -1, 0, -1],  </span><br><span class="line">[-1, -1, -1, 0, -1, 100],  </span><br><span class="line">[-1, -1, -1, 0, -1, -1],  </span><br><span class="line">[-1, 0, 0, -1, 0, -1],  </span><br><span class="line">[ 0, -1, -1, 0, -1, 100],  </span><br><span class="line">[-1, 0, -1, -1, 0, 100]])</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">R &#x3D; np.matrix([[-1, -1, -1, -1, 0, -1],  
+[-1, -1, -1, 0, -1, 100],  
+[-1, -1, -1, 0, -1, -1],  
+[-1, 0, 0, -1, 0, -1],  
+[ 0, -1, -1, 0, -1, 100],  
+[-1, 0, -1, -1, 0, 100]])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>现在我们将添加一个类似的矩阵“Q”给我们agent的大脑，代表了通过经验学到的东西的记忆。<br>矩阵Q的行表示agent的当前状态，列表示导致下一个状态的可能动作（节点之间的连线）。</p>
 <p>agent开始什么都不知道，矩阵Q被初始化为零。<br>在这个例子中，为了解释简单，我们假设状态的数目是已知的（六个，0-5）。<br>如果我们不知道涉及多少个状态，矩阵Q可能从只有一个元素开始。<br>如果找到新的状态，则在矩阵Q中添加更多的列和行是一项简单的任务。</p>
 <p>Q学习的更新规则如下：</p>
@@ -638,7 +637,86 @@
 <li><p>因此，最优策略是2 - 3 - 1 - 5。</p>
 </li>
 </ul>
-<p>我们使用Python为训练agent编写代码：<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np  </span><br><span class="line">import random  </span><br><span class="line">  </span><br><span class="line">\# 初始化矩阵  </span><br><span class="line">Q = np.<span class="built_in">zeros</span>((<span class="number">6</span>, <span class="number">6</span>))  </span><br><span class="line">Q = np.matrix(Q)  </span><br><span class="line">  </span><br><span class="line">def wan_find(list, col, list2):  </span><br><span class="line">col_max = <span class="number">0</span>  </span><br><span class="line">col_y = <span class="number">0</span>  </span><br><span class="line">col=col  </span><br><span class="line">\# a = np.<span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">5</span>, <span class="number">5</span>);  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> in [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]:  </span><br><span class="line"><span class="keyword">if</span> col_max \&lt; list[<span class="built_in">i</span>, col] and (<span class="built_in">i</span> not in list2):  </span><br><span class="line">col_y = <span class="built_in">i</span>  </span><br><span class="line">col_max = list[<span class="built_in">i</span>, col]  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">return</span> col_y, col_max  </span><br><span class="line">  </span><br><span class="line">\# 回报矩阵R  </span><br><span class="line">R = np.matrix([[<span class="number">-1</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">0</span>, <span class="number">-1</span>],  </span><br><span class="line">[<span class="number">-1</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">100</span>],  </span><br><span class="line">[<span class="number">-1</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">-1</span>],  </span><br><span class="line">[<span class="number">-1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">0</span>, <span class="number">-1</span>],  </span><br><span class="line">[ <span class="number">0</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">100</span>],  </span><br><span class="line">[<span class="number">-1</span>, <span class="number">0</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">0</span>, <span class="number">100</span>]])  </span><br><span class="line">  </span><br><span class="line">\# 设立学习参数  </span><br><span class="line">γ = <span class="number">0.8</span>  </span><br><span class="line">  </span><br><span class="line">\# 训练  </span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> in range(<span class="number">2000</span>):  </span><br><span class="line">\# 对每一个训练,随机选择一种状态  </span><br><span class="line">state = random.randint(<span class="number">0</span>, <span class="number">5</span>)  </span><br><span class="line"><span class="keyword">while</span> True:  </span><br><span class="line">\# 选择当前状态下的所有可能动作  </span><br><span class="line">r_pos_action = []  </span><br><span class="line"><span class="keyword">for</span> action in range(<span class="number">6</span>):  </span><br><span class="line"><span class="keyword">if</span> R[state, action] \&gt;= <span class="number">0</span>:  </span><br><span class="line">r_pos_action.append(action)  </span><br><span class="line">  </span><br><span class="line">next_state = r_pos_action[random.randint(<span class="number">0</span>, len(r_pos_action) - <span class="number">1</span>)]  </span><br><span class="line">Q[state, next_state] = R[state, next_state] + γ \* (Q[next_state]).<span class="built_in">max</span>() \# 更新  </span><br><span class="line">state = next_state  </span><br><span class="line">\# 状态<span class="number">4</span>位最优库存状态  </span><br><span class="line"><span class="keyword">if</span> state == <span class="number">5</span>:  </span><br><span class="line"><span class="keyword">break</span>  </span><br><span class="line">  </span><br><span class="line">Q1=np.<span class="built_in">zeros</span>((<span class="number">6</span>, <span class="number">6</span>))  </span><br><span class="line">Q1=Q/Q.<span class="built_in">max</span>();  </span><br><span class="line">print(Q1)  </span><br><span class="line">\#frist_place = input(<span class="string">&quot;请输入在那个地方:&quot;</span>)  </span><br><span class="line">\#<span class="keyword">while</span> frist_place!=<span class="number">5</span> :  </span><br><span class="line">  </span><br><span class="line">next_place = int(input(<span class="string">&#x27;初始房间号&#x27;</span>))  </span><br><span class="line">list2 = [next_place]  </span><br><span class="line"><span class="keyword">while</span> next_place != <span class="number">5</span>:  </span><br><span class="line">next_place, value = wan_find(Q1, next_place, list2)  </span><br><span class="line">list2.append(next_place)  </span><br><span class="line">print(list2)</span><br><span class="line"></span><br><span class="line">运行结果为：</span><br><span class="line"></span><br><span class="line">[[<span class="number">0.</span> <span class="number">0.</span> <span class="number">0.</span> <span class="number">0.</span> <span class="number">0.8</span> <span class="number">0.</span> ]</span><br><span class="line"></span><br><span class="line">[<span class="number">0.</span> <span class="number">0.</span> <span class="number">0.</span> <span class="number">0.64</span> <span class="number">0.</span> <span class="number">1.</span> ]</span><br><span class="line"></span><br><span class="line">[<span class="number">0.</span> <span class="number">0.</span> <span class="number">0.</span> <span class="number">0.64</span> <span class="number">0.</span> <span class="number">0.</span> ]</span><br><span class="line"></span><br><span class="line">[<span class="number">0.</span> <span class="number">0.8</span> <span class="number">0.512</span> <span class="number">0.</span> <span class="number">0.8</span> <span class="number">0.</span> ]</span><br><span class="line"></span><br><span class="line">[<span class="number">0.64</span> <span class="number">0.</span> <span class="number">0.</span> <span class="number">0.64</span> <span class="number">0.</span> <span class="number">1.</span> ]</span><br><span class="line"></span><br><span class="line">[<span class="number">0.</span> <span class="number">0.8</span> <span class="number">0.</span> <span class="number">0.</span> <span class="number">0.8</span> <span class="number">1.</span> ]]</span><br><span class="line"></span><br><span class="line">初始房间号<span class="number">2</span></span><br><span class="line"></span><br><span class="line">[<span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">5</span>]</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>我们使用Python为训练agent编写代码：<br><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">import numpy as np  
+import random  
+  
+\# 初始化矩阵  
+Q &#x3D; np.zeros((6, 6))  
+Q &#x3D; np.matrix(Q)  
+  
+def wan_find(list, col, list2):  
+col_max &#x3D; 0  
+col_y &#x3D; 0  
+col&#x3D;col  
+\# a &#x3D; np.linspace(0, 5, 5);  
+  
+for i in [0, 1, 2, 3, 4, 5]:  
+if col_max \&lt; list[i, col] and (i not in list2):  
+col_y &#x3D; i  
+col_max &#x3D; list[i, col]  
+  
+return col_y, col_max  
+  
+\# 回报矩阵R  
+R &#x3D; np.matrix([[-1, -1, -1, -1, 0, -1],  
+[-1, -1, -1, 0, -1, 100],  
+[-1, -1, -1, 0, -1, -1],  
+[-1, 0, 0, -1, 0, -1],  
+[ 0, -1, -1, 0, -1, 100],  
+[-1, 0, -1, -1, 0, 100]])  
+  
+\# 设立学习参数  
+γ &#x3D; 0.8  
+  
+\# 训练  
+for i in range(2000):  
+\# 对每一个训练,随机选择一种状态  
+state &#x3D; random.randint(0, 5)  
+while True:  
+\# 选择当前状态下的所有可能动作  
+r_pos_action &#x3D; []  
+for action in range(6):  
+if R[state, action] \&gt;&#x3D; 0:  
+r_pos_action.append(action)  
+  
+next_state &#x3D; r_pos_action[random.randint(0, len(r_pos_action) - 1)]  
+Q[state, next_state] &#x3D; R[state, next_state] + γ \* (Q[next_state]).max() \# 更新  
+state &#x3D; next_state  
+\# 状态4位最优库存状态  
+if state &#x3D;&#x3D; 5:  
+break  
+  
+Q1&#x3D;np.zeros((6, 6))  
+Q1&#x3D;Q&#x2F;Q.max();  
+print(Q1)  
+\#frist_place &#x3D; input(&quot;请输入在那个地方:&quot;)  
+\#while frist_place!&#x3D;5 :  
+  
+next_place &#x3D; int(input(&#39;初始房间号&#39;))  
+list2 &#x3D; [next_place]  
+while next_place !&#x3D; 5:  
+next_place, value &#x3D; wan_find(Q1, next_place, list2)  
+list2.append(next_place)  
+print(list2)
+
+运行结果为：
+
+[[0. 0. 0. 0. 0.8 0. ]
+
+[0. 0. 0. 0.64 0. 1. ]
+
+[0. 0. 0. 0.64 0. 0. ]
+
+[0. 0.8 0.512 0. 0.8 0. ]
+
+[0.64 0. 0. 0.64 0. 1. ]
+
+[0. 0.8 0. 0. 0.8 1. ]]
+
+初始房间号2
+
+[2, 3, 1, 5]
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
 
                 
             </div>
@@ -1251,7 +1329,7 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -1264,7 +1342,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">82.2k</span>&nbsp;字
+                class="white-color">83.8k</span>&nbsp;字
             
             
             
@@ -1283,6 +1361,50 @@
             </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2017";
+                    var startMonth = "11";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
@@ -1525,6 +1647,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     

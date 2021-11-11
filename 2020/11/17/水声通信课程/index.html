@@ -29,18 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="漫漫人生路" type="application/atom+xml">
+</head>
 
-
-
-   <style>
-    body{
-       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
 
 
 
@@ -557,6 +548,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -679,7 +673,18 @@ b.8FSK不同信道下误码性能对比</center>
 图1冲激响应仿真</center>
 
 <ul>
-<li>程序：<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">fs = <span class="number">8e4</span>;        <span class="comment">%采样频率                           % Hz</span></span><br><span class="line">pathDelays = [<span class="number">0</span> <span class="number">15</span> <span class="number">30</span> <span class="number">60</span> <span class="number">120</span> <span class="number">150</span>]/<span class="number">1.5e3</span>;   <span class="comment">%设收发距离为100m,声速1500m/s</span></span><br><span class="line">avgPathGains = [<span class="number">0</span> <span class="number">-10</span> <span class="number">-13</span> <span class="number">-15</span> <span class="number">-18</span> <span class="number">-22</span>];<span class="comment">%信道增益</span></span><br><span class="line">fD = <span class="number">30</span>;     <span class="comment">%最大多普勒频移</span></span><br><span class="line">rchan = comm.RayleighChannel(<span class="string">&#x27;SampleRate&#x27;</span>,fs, ...</span><br><span class="line">    <span class="string">&#x27;PathDelays&#x27;</span>,pathDelays, ...</span><br><span class="line">    <span class="string">&#x27;AveragePathGains&#x27;</span>,avgPathGains, ...</span><br><span class="line">    <span class="string">&#x27;MaximumDopplerShift&#x27;</span>,fD, ...</span><br><span class="line">    <span class="string">&#x27;Visualization&#x27;</span>,<span class="string">&#x27;Impulse and frequency responses&#x27;</span>);</span><br><span class="line">x = randi([<span class="number">0</span> <span class="number">1</span>],<span class="number">1000</span>,<span class="number">1</span>);</span><br><span class="line">y = rchan(x);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<li>程序：<pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">fs &#x3D; 8e4;        %采样频率                           % Hz
+pathDelays &#x3D; [0 15 30 60 120 150]&#x2F;1.5e3;   %设收发距离为100m,声速1500m&#x2F;s
+avgPathGains &#x3D; [0 -10 -13 -15 -18 -22];%信道增益
+fD &#x3D; 30;     %最大多普勒频移
+rchan &#x3D; comm.RayleighChannel(&#39;SampleRate&#39;,fs, ...
+    &#39;PathDelays&#39;,pathDelays, ...
+    &#39;AveragePathGains&#39;,avgPathGains, ...
+    &#39;MaximumDopplerShift&#39;,fD, ...
+    &#39;Visualization&#39;,&#39;Impulse and frequency responses&#39;);
+x &#x3D; randi([0 1],1000,1);
+y &#x3D; rchan(x);
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="2-文献调研的实际冲激响应"><a href="#2-文献调研的实际冲激响应" class="headerlink" title="2.    文献调研的实际冲激响应"></a>2.    文献调研的实际冲激响应</h2></li>
 </ul>
 <center>
@@ -1307,7 +1312,7 @@ b.8FSK不同信道下误码性能对比</center>
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -1320,7 +1325,7 @@ b.8FSK不同信道下误码性能对比</center>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">82.2k</span>&nbsp;字
+                class="white-color">83.8k</span>&nbsp;字
             
             
             
@@ -1339,6 +1344,50 @@ b.8FSK不同信道下误码性能对比</center>
             </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2017";
+                    var startMonth = "11";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
@@ -1581,6 +1630,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     

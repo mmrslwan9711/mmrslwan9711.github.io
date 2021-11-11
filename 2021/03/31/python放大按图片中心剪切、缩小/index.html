@@ -29,18 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="漫漫人生路" type="application/atom+xml">
+</head>
 
-
-
-   <style>
-    body{
-       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
 
 
 
@@ -527,7 +518,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    175
+                    207
                 </div>
                 
 
@@ -548,6 +539,9 @@
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -572,10 +566,32 @@
 </tbody>
 </table>
 </div>
-<h3 id="放大"><a href="#放大" class="headerlink" title="放大"></a>放大</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">img=crop_image(cv2.resize(img, None, fx=1, fy=1, interpolation=cv2.INTER_CUBIC),new_height,new_width)</span><br></pre></td></tr></table></figure>
-<h3 id="缩小"><a href="#缩小" class="headerlink" title="缩小"></a>缩小</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mini= cv2.resize(cv2.copyMakeBorder(img, P_A, P_A, P_A, P_A, cv2.BORDER_REPLICATE), (150, 150))</span><br></pre></td></tr></table></figure>
+<h3 id="放大"><a href="#放大" class="headerlink" title="放大"></a>放大</h3><pre class="line-numbers language-none"><code class="language-none">img&#x3D;crop_image(cv2.resize(img, None, fx&#x3D;1, fy&#x3D;1, interpolation&#x3D;cv2.INTER_CUBIC),new_height,new_width)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="缩小"><a href="#缩小" class="headerlink" title="缩小"></a>缩小</h3><pre class="line-numbers language-none"><code class="language-none">mini&#x3D; cv2.resize(cv2.copyMakeBorder(img, P_A, P_A, P_A, P_A, cv2.BORDER_REPLICATE), (150, 150))<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p>其中有将矩阵转Image、Image转矩阵两个过程。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">def crop_image(re_img,new_height,new_width):</span><br><span class="line">    re_img=Image.fromarray(np.uint8(re_img))</span><br><span class="line">    width, height = re_img.size</span><br><span class="line">    left = (width - new_width)/2</span><br><span class="line">    top = (height - new_height)/2</span><br><span class="line">    right = (width + new_width)/2</span><br><span class="line">    bottom = (height + new_height)/2</span><br><span class="line">    crop_im = re_img.crop((left, top, right, bottom)) #Cropping Image</span><br><span class="line">    crop_im = np.asarray(crop_im)</span><br><span class="line">    return crop_im</span><br><span class="line"></span><br><span class="line">new_width = 150     #Enter the crop image width</span><br><span class="line">new_height = 150    #Enter the crop image height</span><br><span class="line"></span><br><span class="line">img = cv2.imread(&quot;learn/cats/cat.3.jpg&quot;)</span><br><span class="line">img=cv2.resize(img,(150,150))</span><br><span class="line">P_A=50</span><br><span class="line">img=crop_image(cv2.resize(img, None, fx=1, fy=1, interpolation=cv2.INTER_CUBIC),new_height,new_width)</span><br><span class="line"></span><br><span class="line">plt.imshow(img)</span><br><span class="line">plt.title(&#x27;cat&#x27;)</span><br><span class="line">plt.show()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">def crop_image(re_img,new_height,new_width):
+    re_img&#x3D;Image.fromarray(np.uint8(re_img))
+    width, height &#x3D; re_img.size
+    left &#x3D; (width - new_width)&#x2F;2
+    top &#x3D; (height - new_height)&#x2F;2
+    right &#x3D; (width + new_width)&#x2F;2
+    bottom &#x3D; (height + new_height)&#x2F;2
+    crop_im &#x3D; re_img.crop((left, top, right, bottom)) #Cropping Image
+    crop_im &#x3D; np.asarray(crop_im)
+    return crop_im
+
+new_width &#x3D; 150     #Enter the crop image width
+new_height &#x3D; 150    #Enter the crop image height
+
+img &#x3D; cv2.imread(&quot;learn&#x2F;cats&#x2F;cat.3.jpg&quot;)
+img&#x3D;cv2.resize(img,(150,150))
+P_A&#x3D;50
+img&#x3D;crop_image(cv2.resize(img, None, fx&#x3D;1, fy&#x3D;1, interpolation&#x3D;cv2.INTER_CUBIC),new_height,new_width)
+
+plt.imshow(img)
+plt.title(&#39;cat&#39;)
+plt.show()
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -1160,7 +1176,7 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -1173,7 +1189,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">82.2k</span>&nbsp;字
+                class="white-color">83.8k</span>&nbsp;字
             
             
             
@@ -1192,6 +1208,50 @@
             </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2017";
+                    var startMonth = "11";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
@@ -1434,6 +1494,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     

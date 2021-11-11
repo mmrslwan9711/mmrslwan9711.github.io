@@ -29,18 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="漫漫人生路" type="application/atom+xml">
+</head>
 
-
-
-   <style>
-    body{
-       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
 
 
 
@@ -553,6 +544,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -722,7 +716,8 @@
 <ol>
 <li>关闭mesh0并设置mesh id</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ip link set mesh0 down</span><br><span class="line">iw dev mesh0 set meshid mymesh</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">ip link set mesh0 down
+iw dev mesh0 set meshid mymesh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ol>
 <li>启动mesh0</li>
 </ol>
@@ -738,7 +733,8 @@
 <li>使用phy接口，使用iw list，查看网卡对应的phy，我的wlan1对应的phy1,先关掉wlan1</li>
 </ol>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ip link set wlan1 down</span><br><span class="line">iw phy phy1 interface add mesh0 type mp mesh_id mymesh</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">ip link set wlan1 down
+iw phy phy1 interface add mesh0 type mp mesh_id mymesh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ol>
 <li>验证是否创建成功</li>
 </ol>
@@ -760,8 +756,63 @@
 <li>连接测试 Mesh 网络状态，各终端使用 ping 命令测试网络通断、丢包率等；</li>
 <li>为了使无线骨干网与移动网络等网系联通，这只 桥 接 网 卡 用 于 连 接 eth0，wlan0，wlan1，同 时 配 置iptables 出入站规则；将 MPP 网关节点的 eth0 网卡接口通过有线连接至 4G 无线网关 CPE 上；为 eth0 配置 4G 固定 IP地址，测试 MPP，MP等节点与 4G 网络通畅状态。</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">iw dev wlan1 del</span><br><span class="line">iw phy phy1 interface add Mesh0 type Mesh</span><br><span class="line">iw dev Mesh0 set Meshid myMesh</span><br><span class="line">iw dev Mesh0 set channel 1</span><br><span class="line">ifconfig Mesh0 hw ether 00：1C：11：11：11：11</span><br><span class="line">ifconfig Mesh0 up</span><br><span class="line">ifconfig Mesh0 192.168.2.1</span><br><span class="line">配置 iptables出入站规则</span><br><span class="line">iptables -F</span><br><span class="line">iptables -X</span><br><span class="line">iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE</span><br><span class="line">iptables -A FORWARD -i eth0 -o Mesh0 -j ACCEPT</span><br><span class="line">iptables -A FORWARD -i Mesh0 -o eth0 -j ACCEPT</span><br><span class="line">iptables -L -n</span><br></pre></td></tr></table></figure>
-<p>验证使用iw dev mesh0 station dump和iw dev mesh0 mpath dump命令检查已建立的对等链接：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Station e8:4e:06:96:a2:44 (on mesh0)</span><br><span class="line">        inactive time:  950 ms</span><br><span class="line">        rx bytes:       3530</span><br><span class="line">        rx packets:     89</span><br><span class="line">        tx bytes:       170</span><br><span class="line">        tx packets:     3</span><br><span class="line">        tx retries:     0</span><br><span class="line">        tx failed:      0</span><br><span class="line">        rx drop misc:   9</span><br><span class="line">        signal:         -30 dBm</span><br><span class="line">        signal avg:     -30 dBm</span><br><span class="line">        Toffset:        1395514681956 us</span><br><span class="line">        tx bitrate:     54.0 MBit/s</span><br><span class="line">        tx duration:    0 us</span><br><span class="line">        rx bitrate:     54.0 MBit/s</span><br><span class="line">        rx duration:    0 us</span><br><span class="line">        mesh llid:      39650</span><br><span class="line">        mesh plid:      29147</span><br><span class="line">        mesh plink:     ESTAB</span><br><span class="line">        mesh airtime link metric: 1906</span><br><span class="line">        mesh connected to gate: no</span><br><span class="line">        mesh connected to auth server:  no</span><br><span class="line">        mesh local PS mode:     ACTIVE</span><br><span class="line">        mesh peer PS mode:      ACTIVE</span><br><span class="line">        mesh non-peer PS mode:  ACTIVE</span><br><span class="line">        authorized:     yes</span><br><span class="line">        authenticated:  yes</span><br><span class="line">        associated:     yes</span><br><span class="line">        preamble:       long</span><br><span class="line">        WMM/WME:        yes</span><br><span class="line">        MFP:            no</span><br><span class="line">        TDLS peer:      no</span><br><span class="line">        DTIM period:    2</span><br><span class="line">        beacon interval:1000</span><br><span class="line">        short slot time:yes</span><br><span class="line">        connected time: 61 seconds</span><br><span class="line">        associated at [boottime]:       274.466s</span><br><span class="line">        associated at:  1636042217164 ms</span><br><span class="line">        current time:   1636042278531 ms</span><br><span class="line"></span><br></pre></td></tr></table></figure><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">DEST ADDR         NEXT HOP          IFACE       SN      METRIC  QLEN    EXPTIMEDTIM     DRET    FLAGS   HOP_COUNT       PATH_CHANGE</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>一些解释：<br>Destination MAC Address：目地mac地址。此mesh路径的目的地。直接路径的目的地和下一跳具有相同的MAC地址。<br>Next-hop MAC address：下一跳地址。直接路径的目的地和下一跳具有相同的MAC地址。<br>IFACE ：专属网的名称<br>SN：此路径的目标序列号。 DSN用于确定节点路径信息的“新鲜度”。例如，假设节点接收到其路径表中已经存在的目的地的路径响应。如果路径响应的DSN较高，则它将替换现有路径，因为它将被认为是较新的。<br>Air Time Link Metric：路径的度量（或“成本”）。较低的度量标准是首选，并且在选择了多个路径的情况下，协议栈将选择成本最低的协议（即：空中链路度量最低的协议）。该值是使用预期的吞吐量得出的（metric = 1 + 8192 / Expected_throughput_mbps）预期吞吐量（Expected_throughput_mbps）取决于驱动程序（例如，某些包含重传）。<br>Frame Queue Length：此网格路径的排队帧数。<br>Expiration Time：此mesh路径过期的时间（以jiffies为单位）<br>Discovery Timeout：路径发现的剩余时间（如果正在发现此路径）。<br>Discovery Retries：重试发现的次数（如果正在发现此路径）。<br>Flags：它是一个位掩码，由该路径的以下状态标志组成：</p>
+<pre class="line-numbers language-none"><code class="language-none">iw dev wlan1 del
+iw phy phy1 interface add Mesh0 type Mesh
+iw dev Mesh0 set Meshid myMesh
+iw dev Mesh0 set channel 1
+ifconfig Mesh0 hw ether 00：1C：11：11：11：11
+ifconfig Mesh0 up
+ifconfig Mesh0 192.168.2.1
+配置 iptables出入站规则
+iptables -F
+iptables -X
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+iptables -A FORWARD -i eth0 -o Mesh0 -j ACCEPT
+iptables -A FORWARD -i Mesh0 -o eth0 -j ACCEPT
+iptables -L -n<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>验证使用iw dev mesh0 station dump和iw dev mesh0 mpath dump命令检查已建立的对等链接：<br><pre class="line-numbers language-none"><code class="language-none">
+Station e8:4e:06:96:a2:44 (on mesh0)
+        inactive time:  950 ms
+        rx bytes:       3530
+        rx packets:     89
+        tx bytes:       170
+        tx packets:     3
+        tx retries:     0
+        tx failed:      0
+        rx drop misc:   9
+        signal:         -30 dBm
+        signal avg:     -30 dBm
+        Toffset:        1395514681956 us
+        tx bitrate:     54.0 MBit&#x2F;s
+        tx duration:    0 us
+        rx bitrate:     54.0 MBit&#x2F;s
+        rx duration:    0 us
+        mesh llid:      39650
+        mesh plid:      29147
+        mesh plink:     ESTAB
+        mesh airtime link metric: 1906
+        mesh connected to gate: no
+        mesh connected to auth server:  no
+        mesh local PS mode:     ACTIVE
+        mesh peer PS mode:      ACTIVE
+        mesh non-peer PS mode:  ACTIVE
+        authorized:     yes
+        authenticated:  yes
+        associated:     yes
+        preamble:       long
+        WMM&#x2F;WME:        yes
+        MFP:            no
+        TDLS peer:      no
+        DTIM period:    2
+        beacon interval:1000
+        short slot time:yes
+        connected time: 61 seconds
+        associated at [boottime]:       274.466s
+        associated at:  1636042217164 ms
+        current time:   1636042278531 ms
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><pre class="line-numbers language-none"><code class="language-none">
+DEST ADDR         NEXT HOP          IFACE       SN      METRIC  QLEN    EXPTIMEDTIM     DRET    FLAGS   HOP_COUNT       PATH_CHANGE
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>一些解释：<br>Destination MAC Address：目地mac地址。此mesh路径的目的地。直接路径的目的地和下一跳具有相同的MAC地址。<br>Next-hop MAC address：下一跳地址。直接路径的目的地和下一跳具有相同的MAC地址。<br>IFACE ：专属网的名称<br>SN：此路径的目标序列号。 DSN用于确定节点路径信息的“新鲜度”。例如，假设节点接收到其路径表中已经存在的目的地的路径响应。如果路径响应的DSN较高，则它将替换现有路径，因为它将被认为是较新的。<br>Air Time Link Metric：路径的度量（或“成本”）。较低的度量标准是首选，并且在选择了多个路径的情况下，协议栈将选择成本最低的协议（即：空中链路度量最低的协议）。该值是使用预期的吞吐量得出的（metric = 1 + 8192 / Expected_throughput_mbps）预期吞吐量（Expected_throughput_mbps）取决于驱动程序（例如，某些包含重传）。<br>Frame Queue Length：此网格路径的排队帧数。<br>Expiration Time：此mesh路径过期的时间（以jiffies为单位）<br>Discovery Timeout：路径发现的剩余时间（如果正在发现此路径）。<br>Discovery Retries：重试发现的次数（如果正在发现此路径）。<br>Flags：它是一个位掩码，由该路径的以下状态标志组成：</p>
 <p>MESH_PATH_ACTIVE = BIT(0),<br>MESH_PATH_RESOLVING = BIT(1),<br>MESH_PATH_DSN_VALID = BIT(2),<br>MESH_PATH_FIXED = BIT(3),<br>MESH_PATH_RESOLVED = BIT(4),</p>
 <h2 id="无线网桥"><a href="#无线网桥" class="headerlink" title="无线网桥"></a>无线网桥</h2><blockquote>
 <p>即一个路由器做中心路由器，开启dhcp，其他的路由器，自动分配ip地址，关闭dhcp，连接上其他路由器即可。其若非中心路由器脱离网络，其他路由器依旧可以维持通信正常。</p>
@@ -1376,7 +1427,7 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -1389,7 +1440,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">82.2k</span>&nbsp;字
+                class="white-color">83.8k</span>&nbsp;字
             
             
             
@@ -1408,6 +1459,50 @@
             </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2017";
+                    var startMonth = "11";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
@@ -1650,6 +1745,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     
