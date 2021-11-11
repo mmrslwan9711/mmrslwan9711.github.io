@@ -266,6 +266,60 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       </tags>
   </entry>
   <entry>
+    <title>LabelImg_使用</title>
+    <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
+<p>它是用 Python 编写的，并使用 Qt 作为其图形界面。</p>
+<p>注释以 PASCAL VOC 格式保存为 XML 文件，ImageNet使用的格式。此外，它还支持 YOLO 和 CreateML 格式。</p>
+<p><img src="https://www.codekp.cn/download/img/labelImg/labelimg.jpg" alt=""></p>
+<p>参考地址 ： <a href="https://github.com/tzutalin/labelImg">https://github.com/tzutalin/labelImg</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-none"><code class="language-none">conda install pyqt&#x3D;5
+conda install -c anaconda lxml
+pyrcc5 -o libs&#x2F;resources.py resources.qrc
+python labelImg.py
+python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>有基础的同学可以直接<br><pre class="line-numbers language-none"><code class="language-none">pip install labelimg <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
+<li><code>JPEGImage 目录</code>：存储的是图片的名字</li>
+<li><code>Annotation 目录</code>：用于存放标注图片的标签文件</li>
+<li><code>class.txt 文件</code>：定义自己要标注的所有类别</li>
+</ul>
+<p>例如：我的<code>class.txt</code>中定义的类别如下：<br><pre class="line-numbers language-none"><code class="language-none">one
+two
+ct5
+other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></p>
+<ul>
+<li><code>Open Dir</code>：待标注图片数据的路径文件夹，即选择JPEGImage文件夹</li>
+<li><code>Change Save Dir</code>：保存类别标签的路径文件夹，即选择Annotation文件夹</li>
+<li><code>PascalVOC</code>：标注的标签保存成VOC格式，在鼠标点一下就变成YOLO，即此时就会把标注的标签变成YOLO格式</li>
+</ul>
+<h3 id="view-快捷指令"><a href="#view-快捷指令" class="headerlink" title="view 快捷指令"></a>view 快捷指令</h3><ul>
+<li><code>Auto Save mode</code>：当你切换到下一张图片时，就会自动把上一张标注的图片标签自动保存下来，这样就不用每标注一样图片都按Ctrl+S保存一下了</li>
+<li><code>Display Labels</code>：标注好图片之后，会把框和标签都显示出来</li>
+<li><code>Advanced Mode</code>：这样标注的十字架就会一直悬浮在窗口，不用每次标完一个目标，再按一次W快捷键，调出标注的十字架。</li>
+</ul>
+<h3 id="标注常用的快捷键"><a href="#标注常用的快捷键" class="headerlink" title="标注常用的快捷键"></a>标注常用的快捷键</h3><ul>
+<li><code>W</code>：调出标注的十字架，开始标注</li>
+<li><code>A</code>：切换到上一张图片</li>
+<li><code>D</code>：切换到下一张图片</li>
+<li><code>Ctrl+S</code>：保存标注好的标签</li>
+<li><code>del</code>：删除标注的矩形框</li>
+<li><code>Ctrl+鼠标滚轮</code>：按住Ctrl，然后滚动鼠标滚轮，可以调整标注图片的显示大小</li>
+<li><code>Ctrl+u</code>：选择要标注图片的文件夹</li>
+<li><code>Ctrl+r</code>：选择标注好的label标签存放的文件夹</li>
+<li><code>↑→↓←</code>：移动标注的矩形框的位置</li>
+</ul>
+<p>标注的时候，会把classe.txt预定义的标加载出来，然后我们只要选择对应的标签即可<br>右上角会显示已经标注目标的标签</p>
+<h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><p>以yolo格式进行保存使用。</p>
+]]></content>
+      <categories>
+        <category>目标检测</category>
+      </categories>
+      <tags>
+        <tag>目标检测</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>English_learning</title>
     <url>/2020/07/31/English-learning/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
@@ -376,60 +430,6 @@ If you are talking to a group of managers, you may refer to the disorganized met
         <tag>英语</tag>
         <tag>英语阅读</tag>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LabelImg_使用</title>
-    <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
-<p>它是用 Python 编写的，并使用 Qt 作为其图形界面。</p>
-<p>注释以 PASCAL VOC 格式保存为 XML 文件，ImageNet使用的格式。此外，它还支持 YOLO 和 CreateML 格式。</p>
-<p><img src="https://www.codekp.cn/download/img/labelImg/labelimg.jpg" alt=""></p>
-<p>参考地址 ： <a href="https://github.com/tzutalin/labelImg">https://github.com/tzutalin/labelImg</a></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-none"><code class="language-none">conda install pyqt&#x3D;5
-conda install -c anaconda lxml
-pyrcc5 -o libs&#x2F;resources.py resources.qrc
-python labelImg.py
-python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>有基础的同学可以直接<br><pre class="line-numbers language-none"><code class="language-none">pip install labelimg <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
-<li><code>JPEGImage 目录</code>：存储的是图片的名字</li>
-<li><code>Annotation 目录</code>：用于存放标注图片的标签文件</li>
-<li><code>class.txt 文件</code>：定义自己要标注的所有类别</li>
-</ul>
-<p>例如：我的<code>class.txt</code>中定义的类别如下：<br><pre class="line-numbers language-none"><code class="language-none">one
-two
-ct5
-other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></p>
-<ul>
-<li><code>Open Dir</code>：待标注图片数据的路径文件夹，即选择JPEGImage文件夹</li>
-<li><code>Change Save Dir</code>：保存类别标签的路径文件夹，即选择Annotation文件夹</li>
-<li><code>PascalVOC</code>：标注的标签保存成VOC格式，在鼠标点一下就变成YOLO，即此时就会把标注的标签变成YOLO格式</li>
-</ul>
-<h3 id="view-快捷指令"><a href="#view-快捷指令" class="headerlink" title="view 快捷指令"></a>view 快捷指令</h3><ul>
-<li><code>Auto Save mode</code>：当你切换到下一张图片时，就会自动把上一张标注的图片标签自动保存下来，这样就不用每标注一样图片都按Ctrl+S保存一下了</li>
-<li><code>Display Labels</code>：标注好图片之后，会把框和标签都显示出来</li>
-<li><code>Advanced Mode</code>：这样标注的十字架就会一直悬浮在窗口，不用每次标完一个目标，再按一次W快捷键，调出标注的十字架。</li>
-</ul>
-<h3 id="标注常用的快捷键"><a href="#标注常用的快捷键" class="headerlink" title="标注常用的快捷键"></a>标注常用的快捷键</h3><ul>
-<li><code>W</code>：调出标注的十字架，开始标注</li>
-<li><code>A</code>：切换到上一张图片</li>
-<li><code>D</code>：切换到下一张图片</li>
-<li><code>Ctrl+S</code>：保存标注好的标签</li>
-<li><code>del</code>：删除标注的矩形框</li>
-<li><code>Ctrl+鼠标滚轮</code>：按住Ctrl，然后滚动鼠标滚轮，可以调整标注图片的显示大小</li>
-<li><code>Ctrl+u</code>：选择要标注图片的文件夹</li>
-<li><code>Ctrl+r</code>：选择标注好的label标签存放的文件夹</li>
-<li><code>↑→↓←</code>：移动标注的矩形框的位置</li>
-</ul>
-<p>标注的时候，会把classe.txt预定义的标加载出来，然后我们只要选择对应的标签即可<br>右上角会显示已经标注目标的标签</p>
-<h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><p>以yolo格式进行保存使用。</p>
-]]></content>
-      <categories>
-        <category>目标检测</category>
-      </categories>
-      <tags>
-        <tag>目标检测</tag>
       </tags>
   </entry>
   <entry>
@@ -618,6 +618,70 @@ capture.release()<span aria-hidden="true" class="line-numbers-rows"><span></span
       <tags>
         <tag>OCR</tag>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Quantum-Mini-Linux—配置</title>
+    <url>/2021/04/13/Quantum-Mini-Linux%E2%80%94%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span>
+<h1 id="Quantum-Mini-Linux—网络配置"><a href="#Quantum-Mini-Linux—网络配置" class="headerlink" title="Quantum-Mini-Linux—网络配置"></a><center>Quantum-Mini-Linux—网络配置</center></h1><p><img src="https://files.seeedstudio.com/wiki/Quantum-Mini-Linux-Dev-Kit/Quantum-Mini-Linux-Dev-Kit.png" alt=""></p>
+<h2 id="wifi账号密码设置"><a href="#wifi账号密码设置" class="headerlink" title="wifi账号密码设置"></a>wifi账号密码设置</h2><p><code>sudo vi /etc/wpa_supplicant/wpa_supplicant.conf</code></p>
+<p>修改如下的文件中的部分数据。</p>
+<pre class="line-numbers language-none"><code class="language-none">network&#x3D;&#123;
+
+               ssid&#x3D;&quot;[你的网络名称]&quot;
+
+               psk&#x3D;&quot;[你的网络密码]&quot;
+
+
+
+        &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如图<img src="https://exp-picture.cdn.bcebos.com/a44e8afc508c9bcec61993c2d6dd884ce44afa75.jpg?x-bce-process=image%2Fresize%2Cm_lfit%2Cw_500%2Climit_1%2Fformat%2Cf_jpg%2Fquality%2Cq_80" alt=""></p>
+<h2 id="对本地网络地址进行配置"><a href="#对本地网络地址进行配置" class="headerlink" title="对本地网络地址进行配置"></a>对本地网络地址进行配置</h2><p>由于在实验室，所用的路由器的端口号是10.xxx.xxx.xxx 然后直接ip连接到了该位置，这肯定有问题。</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;network&#x2F;interfaces<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>修改以下内容设置默认网关，具体数值可以根据自身情况修改</p>
+<pre class="line-numbers language-none"><code class="language-none">auto lo
+iface lo inet loopback
+auto enxb827bb3ef8a  &#x2F;&#x2F;就是前面查看的名字
+iface enxb827bb3ef8a inet static
+address 192.168.1.2    &#x2F;&#x2F;IP地址
+netmask 255.255.255.0    &#x2F;&#x2F;掩码
+gateway 192.168.1.1     &#x2F;&#x2F;网关<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="查看是否连接成功"><a href="#查看是否连接成功" class="headerlink" title="查看是否连接成功"></a>查看是否连接成功</h2><p>ping 192.168.1.2可以但是无法ping www.baidu.com</p>
+<p>报错，unknown host www.baidu.com</p>
+<h2 id="设置端口"><a href="#设置端口" class="headerlink" title="设置端口"></a>设置端口</h2><pre class="line-numbers language-none"><code class="language-none">sudo vi &#x2F;etc&#x2F;resolv.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>如果你们网络不行的话，那么一定是这个nameserver的问题。</p>
+<p>所以，修改</p>
+<p>直接在那里面修改。</p>
+<p>改成8.8.8.8</p>
+<p>:wq保存就可以了。</p>
+<p>但是尝试后发现不是因为dns域名解析的问题。</p>
+<h2 id="windows找到www-baidu-com的ip地址"><a href="#windows找到www-baidu-com的ip地址" class="headerlink" title="windows找到www.baidu.com的ip地址"></a>windows找到www.baidu.com的ip地址</h2><pre class="line-numbers language-none"><code class="language-none">win+R
+
+cmd
+
+ping www.baidu.com
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>百度的地址为14.215.177.39</p>
+<p>用linux ping该地址，发现还是无法连接，证明linux没有连接到外网。</p>
+<h2 id="linux增加路由"><a href="#linux增加路由" class="headerlink" title="linux增加路由"></a>linux增加路由</h2><p>由于linux无法ping通外网，搜索后发现</p>
+<p>route</p>
+<p>查看路由表，很神奇的是路由表是空的，于是在思考后。</p>
+<p>route add default gw 192.168.1.1</p>
+<p>route</p>
+<p>成功解决树莓派无法上网问题。</p>
+<p>shutdown -r now</p>
+<h2 id="通过putty可以从局域网ssh访问Quantum-linux"><a href="#通过putty可以从局域网ssh访问Quantum-linux" class="headerlink" title="通过putty可以从局域网ssh访问Quantum-linux"></a>通过putty可以从局域网ssh访问Quantum-linux</h2><ul>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
+</ul>
+<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>微型计算机</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1537,67 +1601,127 @@ systemctl status rc-local.service<span aria-hidden="true" class="line-numbers-ro
       </tags>
   </entry>
   <entry>
-    <title>Quantum-Mini-Linux—配置</title>
-    <url>/2021/04/13/Quantum-Mini-Linux%E2%80%94%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span>
-<h1 id="Quantum-Mini-Linux—网络配置"><a href="#Quantum-Mini-Linux—网络配置" class="headerlink" title="Quantum-Mini-Linux—网络配置"></a><center>Quantum-Mini-Linux—网络配置</center></h1><p><img src="https://files.seeedstudio.com/wiki/Quantum-Mini-Linux-Dev-Kit/Quantum-Mini-Linux-Dev-Kit.png" alt=""></p>
-<h2 id="wifi账号密码设置"><a href="#wifi账号密码设置" class="headerlink" title="wifi账号密码设置"></a>wifi账号密码设置</h2><p><code>sudo vi /etc/wpa_supplicant/wpa_supplicant.conf</code></p>
-<p>修改如下的文件中的部分数据。</p>
-<pre class="line-numbers language-none"><code class="language-none">network&#x3D;&#123;
-
-               ssid&#x3D;&quot;[你的网络名称]&quot;
-
-               psk&#x3D;&quot;[你的网络密码]&quot;
+    <title>b站up主推荐</title>
+    <url>/2021/04/14/b%E7%AB%99up%E4%B8%BB%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=96244032&bvid=BV1jE41137eu&cid=164144278&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
 
 
 
-        &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>如图<img src="https://exp-picture.cdn.bcebos.com/a44e8afc508c9bcec61993c2d6dd884ce44afa75.jpg?x-bce-process=image%2Fresize%2Cm_lfit%2Cw_500%2Climit_1%2Fformat%2Cf_jpg%2Fquality%2Cq_80" alt=""></p>
-<h2 id="对本地网络地址进行配置"><a href="#对本地网络地址进行配置" class="headerlink" title="对本地网络地址进行配置"></a>对本地网络地址进行配置</h2><p>由于在实验室，所用的路由器的端口号是10.xxx.xxx.xxx 然后直接ip连接到了该位置，这肯定有问题。</p>
-<pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;network&#x2F;interfaces<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>修改以下内容设置默认网关，具体数值可以根据自身情况修改</p>
-<pre class="line-numbers language-none"><code class="language-none">auto lo
-iface lo inet loopback
-auto enxb827bb3ef8a  &#x2F;&#x2F;就是前面查看的名字
-iface enxb827bb3ef8a inet static
-address 192.168.1.2    &#x2F;&#x2F;IP地址
-netmask 255.255.255.0    &#x2F;&#x2F;掩码
-gateway 192.168.1.1     &#x2F;&#x2F;网关<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="查看是否连接成功"><a href="#查看是否连接成功" class="headerlink" title="查看是否连接成功"></a>查看是否连接成功</h2><p>ping 192.168.1.2可以但是无法ping www.baidu.com</p>
-<p>报错，unknown host www.baidu.com</p>
-<h2 id="设置端口"><a href="#设置端口" class="headerlink" title="设置端口"></a>设置端口</h2><pre class="line-numbers language-none"><code class="language-none">sudo vi &#x2F;etc&#x2F;resolv.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>如果你们网络不行的话，那么一定是这个nameserver的问题。</p>
-<p>所以，修改</p>
-<p>直接在那里面修改。</p>
-<p>改成8.8.8.8</p>
-<p>:wq保存就可以了。</p>
-<p>但是尝试后发现不是因为dns域名解析的问题。</p>
-<h2 id="windows找到www-baidu-com的ip地址"><a href="#windows找到www-baidu-com的ip地址" class="headerlink" title="windows找到www.baidu.com的ip地址"></a>windows找到www.baidu.com的ip地址</h2><pre class="line-numbers language-none"><code class="language-none">win+R
-
-cmd
-
-ping www.baidu.com
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>百度的地址为14.215.177.39</p>
-<p>用linux ping该地址，发现还是无法连接，证明linux没有连接到外网。</p>
-<h2 id="linux增加路由"><a href="#linux增加路由" class="headerlink" title="linux增加路由"></a>linux增加路由</h2><p>由于linux无法ping通外网，搜索后发现</p>
-<p>route</p>
-<p>查看路由表，很神奇的是路由表是空的，于是在思考后。</p>
-<p>route add default gw 192.168.1.1</p>
-<p>route</p>
-<p>成功解决树莓派无法上网问题。</p>
-<p>shutdown -r now</p>
-<h2 id="通过putty可以从局域网ssh访问Quantum-linux"><a href="#通过putty可以从局域网ssh访问Quantum-linux" class="headerlink" title="通过putty可以从局域网ssh访问Quantum-linux"></a>通过putty可以从局域网ssh访问Quantum-linux</h2><ul>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
+<span id="more"></span>
+<h1 id="b站up主推荐"><a href="#b站up主推荐" class="headerlink" title="b站up主推荐"></a>b站up主推荐</h1><p>稚晖君，最近堕落了两三年就啥也没认真学吃老本，最近看到了这个up主，就感觉我荒废了一段时间，他会的其实我理应都会，就是最近开始有点颓废了。</p>
+<p>就感觉他给了我一些启发，让我觉得不能在这样下去了，人家都华为天才少年了，我还在咸鱼的路上越走越远，要努力！要奋斗！</p>
+<p>引用稚晖君最后的一句话，</p>
+<blockquote>
+<p>越热爱越幸运，<br>资源会跟着你的决心走的。</p>
+</blockquote>
+<ul>
+<li>[x] <a href="http://www.pengzhihui.com/">稚晖君的个人博客</a></li>
 </ul>
-<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=91299923&bvid=BV1F7411u71s&cid=155884314&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+
+<h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><ul>
+<li>[x] XMind ZEN : 思维导图</li>
+<li>[x] Typora : markdown</li>
+<li>[x] 有道云笔记：同步，私有云图床</li>
+<li><p>[x] 电路</p>
+</li>
+<li><p>[x] AD：主要设计工具</p>
+</li>
+<li>[ ] Eagle：转换一些开源的eagle格式PCB文档</li>
+<li>[x] fritzing：EDA软件，也可以用作矢量风格说明软件</li>
+</ul>
+<h3 id="机械"><a href="#机械" class="headerlink" title="机械"></a>机械</h3><ul>
+<li>[ ] Rhinocores：参数化建模，不适合不规则曲面</li>
+<li>[ ] Fusion360：全能</li>
+<li>[ ] Cinema4D</li>
+<li>[ ] KeyShot：仿真</li>
+<li>[ ] inkScape：矢量图轨迹</li>
+<li>[ ] ArtCAM：生成雕刻机的刀路文件</li>
+</ul>
+<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ul>
+<li>[x] Visual Studio</li>
+<li>[x] Android Studio：手机APP开发</li>
+<li>[ ] Jetbrain全家桶</li>
+<li>[x] pycharm：python</li>
+<li>[x] Rider：C#开发</li>
+<li>[x] Clion：C &amp; C++</li>
+<li>[ ] Unity：3D仿真</li>
+<li>[x] Keil</li>
+<li>[ ] CubeMX</li>
+<li>[x] Arduino</li>
+<li>[ ] KendryteIDE：K210</li>
+<li>[ ] Processing：数字多媒体艺术</li>
+<li>[x] matlab：建模仿真</li>
+</ul>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
+<li>[x] XShell &amp; Xftp</li>
+<li>[x] 串口调试助手 &amp; 网络调试助手</li>
+<li>[ ] Cmake</li>
+<li>[x] GitGUI</li>
+<li>[ ] CoolFormat：代码格式</li>
+<li>[ ] IDA：反编译</li>
+<li>[ ] wireshark：网络抓包</li>
+<li>[ ] SerialChart：串口绘图</li>
+<li>[ ] Netron：图形化查看神经网络模型</li>
+<li>[ ] beyond Compare：代码比对</li>
+</ul>
+<h2 id="硬件环境"><a href="#硬件环境" class="headerlink" title="硬件环境"></a>硬件环境</h2><p>总结来自稚晖君的硬件篇视频</p>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=73533882&bvid=BV19E411a7Sf&cid=125772471&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+
+<p>电脑桌：转角桌（右边电脑区+左边电工区）</p>
+<h3 id="电脑区"><a href="#电脑区" class="headerlink" title="电脑区"></a>电脑区</h3><ul>
+<li>[] iQniX红轴机械键盘</li>
+<li>[] Xbox one</li>
+<li>[x] 个人服务器</li>
+</ul>
+<h3 id="电工区"><a href="#电工区" class="headerlink" title="电工区"></a>电工区</h3><ul>
+<li>[] 防割板</li>
+<li>[] 热风枪</li>
+<li>[] 控温电烙铁</li>
+<li>[] 焊接辅助：飞线，锡球，焊锡膏，铁丝球，助焊剂，洗板水……</li>
+<li>[] 数控电源</li>
+<li>[] 元器件盒： 装主控</li>
+<li>[] 电阻电容样品本</li>
+<li>[] 示波器：袖珍 20Mhz</li>
+</ul>
+<h3 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h3><ul>
+<li>[x] Android Studio</li>
+<li>[x] Linux设备驱动开发详解</li>
+<li>[x] 程序员的数学</li>
+<li>[ ] 雷军传</li>
+<li>[ ] 三体</li>
+<li>[x] 算法导论</li>
+<li>[ ] Android 设计模式</li>
+<li>[ ] 大话计算机</li>
+</ul>
+<h3 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h3><ul>
+<li>[x] 路由器</li>
+<li>[ ] 移动硬盘柜 （10T x 2）：深度学习数据集</li>
+<li>[ ] 合莱SP-20</li>
+<li><p>[ ] 机械</p>
+</li>
+<li><p>[ ] LCD的光固化3D打印机：体积比较小精度高的模型</p>
+</li>
+<li>[ ] FDM的3D打印机：居家创客必备</li>
+<li>[ ] 小型雕刻机</li>
+</ul>
+<ul>
+<li>[x] 打钩是已经会的和拥有的，未来工作了希望可以也买这么多东西哈哈。</li>
+</ul>
 ]]></content>
       <categories>
-        <category>微型计算机</category>
+        <category>b站</category>
       </categories>
       <tags>
-        <tag>linux</tag>
+        <tag>b站</tag>
       </tags>
   </entry>
   <entry>
@@ -1759,130 +1883,6 @@ protoc --python_out&#x3D;. C:\tensorflow1\models\research\object_detection\proto
       <tags>
         <tag>b站视频</tag>
         <tag>分享</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>b站up主推荐</title>
-    <url>/2021/04/14/b%E7%AB%99up%E4%B8%BB%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=96244032&bvid=BV1jE41137eu&cid=164144278&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-
-
-<span id="more"></span>
-<h1 id="b站up主推荐"><a href="#b站up主推荐" class="headerlink" title="b站up主推荐"></a>b站up主推荐</h1><p>稚晖君，最近堕落了两三年就啥也没认真学吃老本，最近看到了这个up主，就感觉我荒废了一段时间，他会的其实我理应都会，就是最近开始有点颓废了。</p>
-<p>就感觉他给了我一些启发，让我觉得不能在这样下去了，人家都华为天才少年了，我还在咸鱼的路上越走越远，要努力！要奋斗！</p>
-<p>引用稚晖君最后的一句话，</p>
-<blockquote>
-<p>越热爱越幸运，<br>资源会跟着你的决心走的。</p>
-</blockquote>
-<ul>
-<li>[x] <a href="http://www.pengzhihui.com/">稚晖君的个人博客</a></li>
-</ul>
-<h2 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=91299923&bvid=BV1F7411u71s&cid=155884314&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-
-<h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><ul>
-<li>[x] XMind ZEN : 思维导图</li>
-<li>[x] Typora : markdown</li>
-<li>[x] 有道云笔记：同步，私有云图床</li>
-<li><p>[x] 电路</p>
-</li>
-<li><p>[x] AD：主要设计工具</p>
-</li>
-<li>[ ] Eagle：转换一些开源的eagle格式PCB文档</li>
-<li>[x] fritzing：EDA软件，也可以用作矢量风格说明软件</li>
-</ul>
-<h3 id="机械"><a href="#机械" class="headerlink" title="机械"></a>机械</h3><ul>
-<li>[ ] Rhinocores：参数化建模，不适合不规则曲面</li>
-<li>[ ] Fusion360：全能</li>
-<li>[ ] Cinema4D</li>
-<li>[ ] KeyShot：仿真</li>
-<li>[ ] inkScape：矢量图轨迹</li>
-<li>[ ] ArtCAM：生成雕刻机的刀路文件</li>
-</ul>
-<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ul>
-<li>[x] Visual Studio</li>
-<li>[x] Android Studio：手机APP开发</li>
-<li>[ ] Jetbrain全家桶</li>
-<li>[x] pycharm：python</li>
-<li>[x] Rider：C#开发</li>
-<li>[x] Clion：C &amp; C++</li>
-<li>[ ] Unity：3D仿真</li>
-<li>[x] Keil</li>
-<li>[ ] CubeMX</li>
-<li>[x] Arduino</li>
-<li>[ ] KendryteIDE：K210</li>
-<li>[ ] Processing：数字多媒体艺术</li>
-<li>[x] matlab：建模仿真</li>
-</ul>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
-<li>[x] XShell &amp; Xftp</li>
-<li>[x] 串口调试助手 &amp; 网络调试助手</li>
-<li>[ ] Cmake</li>
-<li>[x] GitGUI</li>
-<li>[ ] CoolFormat：代码格式</li>
-<li>[ ] IDA：反编译</li>
-<li>[ ] wireshark：网络抓包</li>
-<li>[ ] SerialChart：串口绘图</li>
-<li>[ ] Netron：图形化查看神经网络模型</li>
-<li>[ ] beyond Compare：代码比对</li>
-</ul>
-<h2 id="硬件环境"><a href="#硬件环境" class="headerlink" title="硬件环境"></a>硬件环境</h2><p>总结来自稚晖君的硬件篇视频</p>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=73533882&bvid=BV19E411a7Sf&cid=125772471&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-
-<p>电脑桌：转角桌（右边电脑区+左边电工区）</p>
-<h3 id="电脑区"><a href="#电脑区" class="headerlink" title="电脑区"></a>电脑区</h3><ul>
-<li>[] iQniX红轴机械键盘</li>
-<li>[] Xbox one</li>
-<li>[x] 个人服务器</li>
-</ul>
-<h3 id="电工区"><a href="#电工区" class="headerlink" title="电工区"></a>电工区</h3><ul>
-<li>[] 防割板</li>
-<li>[] 热风枪</li>
-<li>[] 控温电烙铁</li>
-<li>[] 焊接辅助：飞线，锡球，焊锡膏，铁丝球，助焊剂，洗板水……</li>
-<li>[] 数控电源</li>
-<li>[] 元器件盒： 装主控</li>
-<li>[] 电阻电容样品本</li>
-<li>[] 示波器：袖珍 20Mhz</li>
-</ul>
-<h3 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h3><ul>
-<li>[x] Android Studio</li>
-<li>[x] Linux设备驱动开发详解</li>
-<li>[x] 程序员的数学</li>
-<li>[ ] 雷军传</li>
-<li>[ ] 三体</li>
-<li>[x] 算法导论</li>
-<li>[ ] Android 设计模式</li>
-<li>[ ] 大话计算机</li>
-</ul>
-<h3 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h3><ul>
-<li>[x] 路由器</li>
-<li>[ ] 移动硬盘柜 （10T x 2）：深度学习数据集</li>
-<li>[ ] 合莱SP-20</li>
-<li><p>[ ] 机械</p>
-</li>
-<li><p>[ ] LCD的光固化3D打印机：体积比较小精度高的模型</p>
-</li>
-<li>[ ] FDM的3D打印机：居家创客必备</li>
-<li>[ ] 小型雕刻机</li>
-</ul>
-<ul>
-<li>[x] 打钩是已经会的和拥有的，未来工作了希望可以也买这么多东西哈哈。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>b站</category>
-      </categories>
-      <tags>
-        <tag>b站</tag>
       </tags>
   </entry>
   <entry>
@@ -3574,28 +3574,6 @@ git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><spa
       </tags>
   </entry>
   <entry>
-    <title>network map</title>
-    <url>/2021/04/14/nmap/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>network map</category>
-      </categories>
-      <tags>
-        <tag>nmap</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux系统通信功率信道修改方法</title>
     <url>/2021/04/22/linux%E7%B3%BB%E7%BB%9F%E9%80%9A%E4%BF%A1%E5%8A%9F%E7%8E%87%E4%BF%A1%E9%81%93%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux系统通信功率信道修改方法"><a href="#linux系统通信功率信道修改方法" class="headerlink" title="linux系统通信功率信道修改方法"></a>linux系统通信功率信道修改方法</h1><h2 id="配置频段"><a href="#配置频段" class="headerlink" title="配置频段"></a>配置频段</h2><h3 id="可以先查看有哪些频段："><a href="#可以先查看有哪些频段：" class="headerlink" title="可以先查看有哪些频段："></a>可以先查看有哪些频段：</h3><p><code>iwlist channel</code> </p>
@@ -4065,6 +4043,28 @@ sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="
       </categories>
       <tags>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>network map</title>
+    <url>/2021/04/14/nmap/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>network map</category>
+      </categories>
+      <tags>
+        <tag>nmap</tag>
       </tags>
   </entry>
   <entry>
@@ -5387,29 +5387,6 @@ c1<span class="token operator">=</span><span class="token function">input</span>
       </tags>
   </entry>
   <entry>
-    <title>保研经历</title>
-    <url>/2019/09/28/%E4%BF%9D%E7%A0%94%E7%BB%8F%E5%8E%86/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="2feee347f81a4ae77037db5b7a086e0ff9cf6c318d3469f8756eed623233ac81">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f0410fccf8773ba3e911613ea7724d97e23308b31ae231fddf04245e170677088a8da3c2511e2c0f7111906998326dec24790e160e95739d65f68fcc90e9844f9a423b6a8c3c00c83d0029b0a42d3620bebde8da160142d25d318b3ac7e123f4e71434ee099b89e81bb1957f51cfd20e77e70d7af1b457c5efff0c023aa7df303880b044a115cdfebd84a80799f7ce97af6dc04d3513b7b2d65532c68010f2347e31630ecfb1edc0d73d45a0e4454e06c53b0dc9a892dc5145e9ca505704429fbaa6d831f199a20c79c40797ee58e5658bec9f040b883bae2d53bf38b154e45383143aa78b7bb3c1f7c38705c15c891e9235d336fb48d54d2cfbc43001bd33416a560778987e2927cf07a6a4ca84746a06d4650681382ff239c7f61c645ff31e7a73be2f0057400dc8b011f1db191d39104f49bea86096982ae17debb41b9fa819816204e88c7a86fe9721ff75a8cb1e3093281a51868c755f19f6c550acc1d6cc0a2fd922e12661586870cba0b175705a1d03fc3a15c605ef84ff5cea9636459a1124d75e11d10c3b4d3a382a6c9c3e73933dd10541b87b7bf0ce3aa5696dd19148f79c6cb3dbd952fffdadbc1a8abe04ea4be8bf93550d43228a9461a08fc83054eac9ef58fe4ecb7f05868b2c4c6ba33defd8a72034493580b3b1a915e5ef9e80ba13402661fba8fed423f038a61fc31bd75a915cf82d14fcdc7474ef759bef03d53a841fcf1787c5660e073efb02b22e0994731410310b8c13796972ad7f32f35b04234252c1151024d46e922e85c2da1e8e7a86032b5a74cccc8ef287e76f435a9941d3fb2f34206648f6bdf9aa50eee0b087c1a9dd9ea385e2c7b643d3d39335f64804a4ed982264b23e23720fef9900e0d97132d56a9dc0a3ea67dcd3cac7cc752130200ccbfffd802bae7145ed6c25fed06f6eb99ea5e6f61fc9b4d21733db4101f2d2cdf890cf7e38948640867a5c9052a0965e99141cd1e0b37c5380131d53e436dfa25b1b7b52c18e2c81e34fc9b2f1db365f225d6ec405ff87959921b267516849bf8f439ee4adba8973a6e698eceecaa81aaa3419c5112830f7d4d4dc66324bc052bbf16bfe413e2a887e25a3d76627f976d182b0aee02a9a67436c7ee108a7d6f16257adebe5a14476b5d9dd6c6e58c086f69ed4b9a0557a4ad5aa7aaa9c1222f0b884515bed48a075755fa43c25934fcfb3fbf3b9d8abb981541768f251ff44b2d2ec9739556ee18f66a1f01c1eda641a9a2b1fe3551e4fd2478e50069ba223b3f61ff42ac5a0e16e8b89c3d52a5db24c62be01317eacdc0d7a00bfcda4a28ba8f301d1a101f6abbb860115cd5d9e7f9007269432abd04b91dee52e1ae95c85d98d06b693d324e8f3c4d1e43ae98fd749c9bab03a530e1a8ea7323c4c2fe16d8de72857e8e02435c6bf21a7823e1978ff31d76691a298bcbe05746c8736db87487dbb044ac1fbcafb7a1c5a3f914991f724a2971133dce4880c470fb660a9b516728ad19dd1b0f6bb403ad3851a89abe14aa55c7a4b01f7353a152b800b74f9ca76b780cf4b81ac87a2f149d771de815b1b02d8080fa3ec2cf1fd609691dc10c982016232d11d8c5f3acaaa14a68b729c5da615438f14591c7db2ab2c05e019ba057852e8c97febb31cffe3ccc587cf95978e698b471091dd71cbe3bd6d7bd4c23d7bce31c7a199f9057bbaf5ac9dd9a3354d7fdf9e85bf133b2f7a61d6d831d3af82b0c1620892eee0556e9823d6b48dd46bd39909e01f1f2b1b6e65d05ac65b4b5fdccc7dea95129be41662e10ac14d1b6d078a6f26af3fcd052f1667a53f482b68d6ede203d573ef2b5506c071692168f086eaab2c6a1e61e717886dc97a50b5bba36fe8081dc2bee356fe8f04f1676ffdf34d4762ac9ad76199a5ad0a819cba6a8cb5cc350aadf06cb2c56122e240dc71593a0fd65f434ef6d1d0d1ca6bdc4dfb9ecc9b49b0c0cc4ddbfc7f75760fdef9c9cb3b00fb8bd79770edfbef87374bcb8ced4291f17d7d15a20f8d3286f97e21232762a892ccd2782a4d8c21d74eded8b99e88523d24773111547f5caceece273a2a8cc52dbecc4aab7b15e25e249f83d71c37305ccf51031cfce0727eeaa5b83939f33691419a634d43c18c055fb7fc534cb30e511e0c4097da5cec7db830cd83075d8ca3d812821012bd2c55ca47aa8076aa067ba4860635aa9678e85a0aadac328f2ab6d4cad2ab7fbf522fc84895d6fc83f50a74e643a61b1de4f20b5ad466960d7b9597f841ee6329589b02f1e342a86d9a939ddd1685c3366e41aeabe1cde5f0c17d1b754e5052f9ec0ce70538fa1c05ee74a48ad3ee82e779a64571040c977f397745eb7296fe7547d33c98cba9d5f6af2f4005c49720b1acba6ab46e4b32e943c13eeb36d44a66645c36bf79375fcfca62dbdeb1157111017f66c2481e1eb83f4d59c6ec888dd01e8d885a890ae51f7318259099a6d2cb420d589d43d1ca603a805bdee83dd9740973717e4bca893e0a382ce73dca5301becd34d3d8bd433b98de0fec28c319bdfc8f3aedfe83984a2766bbb6577b22180c86d8aaf85f9fdd5857cd9e5e47f65f6fe382c7b6b398a07417cfd22535d6f815fc7e02cdb5db4ca170a2e57c616988be55f6e286ef04c1b2ba41c448df69135ed030fbc3463afb9592a7a9a54e11ad3f8d650bc2b2718678ca1e3f4fd0cf9b20efd4f1d31e3161a28349e2492020ad331927b56a9b3b4a3ef058ec89f354afbf8f3eddeaa00ae7e7d0049ce4fa4770b1d68db8ee5d54e26f10c57a9853fc3ec898836f15a570550b4fd88589d57dbb708c6446547f46f5dd4e35c5a20834ce9dc1261b781d43c78d8f7a4da7329089550ba39afb63f75b5758456c9edcffb803905da69bae608d8184776904356f61c942f8d8ffdc4d5f423fd4d644aa48cd42bd97ee993b44231d33af54132f64603cc50127384ff9291746b8c0b97c004bd9844793f19757930d6150e1447d79f558f22dd5b94e4970d2cb0d6a3fc27978e4f05208e6de1e2ab3cb700556905a60a318158f7d9a99ad59ac4e769402d1e4b5b4f3218d9b15750f2baf5d336f6265efbf670e59dc9ed7ba0ce61bdf91f53936dcff8dfac6ba7867d976f5c0fbb437cd6e658e6f08e3b9e41fb924c5801e998ceb450876cf9f96b6d26e5d98b9c9ff683dcefb0bf40536506d305c8a1e9e3750a962b69fe07acd2ccdfba2bd693c7c1c965d1307e4c2890b5d7205c269649cb3f55a54e1a66a158087ae18cec5022cef66b144807c023b5185fc8508df1f4ab2a9a89faa9c22921ba8f3ddcb82b729f3818000cd2ffb87fe292b3ad5a04c45f4161addf33636cde5f548d6a4267bf9b7042f21bd76a7497cae5ac642a6a7a406e96ecac57802034e8c827af766ad4395c7167ad19d1abfd61e09886837e2674ec7e8e9aa6d2b84f9f09cf54339f2eed565291caaf5e43539c3d3044ab36abd6c8948b5bf7c5729ca1e715b524db7624a56e837ca7cf75cbcd27a50ac8188bc3b26ed5cb0ad2bf7aae25307c3f4e276562eb9e3e9d56a4d11c7710f8ee8d5de11dbb38e980dced8326161e6a5826d63d954443edfaacff26862c7a4edd581d8f1f8c3ae60c2c43cbc9cdc9340b8c83934a3272fa31308a229264eeaa96fa52b369602acd676cdecfe53b15fce06c011190e5093d19b01b9b22a5c0587df3cfa67f850cc66bbd8e5fec13163e47f042fdbaa9a27edc7a367eb37bbcac2b7a9bf153b70ec7e432804d0703c4f63d14f404a3ecc22be3a109205b4f5a4559e86e6f547de8943b13ca6bf41a9c87ad45fd733627868c81c27a68a7b06b327c32496d8f27c2d2618d034e42949de826d6188da208dbc3590aa273c5649e4c20250f190f849bfcb61f3f2116e4baba61e038f6c494986600eacdd13099fbae9beab29bf607e5c07ee3d791a54ded548f17979626324069938720db6defe96b135379ffa9c462df12beee051e2be59b5a9dc2ddc13afb2d48cc7ac2efd664859e34d6279c5c2b6462d2216576bdc7ec526c14089bba59d35b7c41681765dfafc6ca15c522fe170399e3ac39f7ad616771906f6ccc6b38eb050e1fa46cc22400f00c9368625585ab89f828d17e538e5cfec3e4d8cb89171b1a64f4eb296c30b0de92c2b259f97ffcd31dd8a4f7abd60d4c3d9fac3cd063e68b8ac6462efe02ec45133f4eadb14846586b443c7c00448e5b3703153bcc97ac561f3c183c9a29cc51b0977f1153dd810f6cc6f58df2ea429c6ed8b64cb47e2662944bc44bdc8c2c15ff4ae4b05cd14ff53f94b065ebcad03de3a234073981b34bc8b95bb980b0e360ccf73b213d7ef3877ceaef94d78bda5d99bd70d9ff94a9441bce80e515013cb19035d1ed0ea2c18a66972bed9ad1c203786fe6344ca6fe40dab596b217b8a324c97cf8384e307298ff388d5d4291cec28f241f1b26023f3a99538d292697ed2ece92feec9c640f76aa1296955098035bb9b29d28cb5129954fddb589263c849b667bb6291fd40144b97af6e2694c61fc5aca3b34f8de5db447e465cdd0e54391afd530572b54f65b6c194835356e61dbcf06b4dc54ec424da11fce55de86933030de1d64ce0c4dacd3ec3cefec6cf6c8c0e17ebdd0742e873013a02cb31196c6a06faca8e54af554f6f0856e23425877edc7070d04602738429acb3fcb3c23506fc8fe3ff0973f8adb1deed304503cc84ade3dded6ddb58020c744fdd6093106d1440a551f73507652965da11e5bb333b4440e642474a7409dd0eee9f474da510fa22a70e838e82414be78d199f00945c39892de8e5339d33f989192e0e3a9fc98fbaf549ff86e7849136964981cbbf91f91ef0cb78093f1e6dda866aaf84f6c5949b0956cc80ac14e84b48abfae132246b66cbb1cbf555a3844ca50bf66bede172a13fe6ae4287fefb58fc931667fa38c9b6aca0503811c6751016b4953f96c9bd59406fd3ef2ea614f304716163b096a565a44db8d8280b8e4f8fd56897a7a4d26d2e3457366d66ae00e06937a02ae5c1887979cbaef8d81d4f9370ad524c190963817bef4c9fc88f42bd7c9d0c52f20677b5ade31a60b2e7a1baef44f4f36f6dce3b4f020fb2d44b1ddb4994bfbab116570a6bc5f1b606db6fb679246fc403a3b6f05f588762febd26823919cab30fc65437dcfeb7bac49f2e6e0c6b8340ef011475687602ed16d8394ebbfecb25ed5818cc81e6df2635be9b09305928acb0a1a16c01626d6fd48fd296c5d08a154a60088553a63a28c084c036ba0b6f11c33afefaf13d22b877e92d7e5d1ba7da51949bede6ae759553b30618ae4a7246273dce99e6ab992fc62f606b82bc8b56b55e8e2d6d1ff56b3df3db2f29738ad607e56cba30f95412ed4200b09a18ab750b67e796e140b399ccedc3c5b3f0efcb8f7899fca1b8ca3b37cfc5eba0f9017580c076b90afc99f81f7897305b81465830892c52334a4cb3e44c338a4d421f8f31f5c2b8ae7da551210a5bedb6e36c1ea05fd8a24d387579f7c2cbc056de64ad9f9cfb7e180371db3e37befd83df57dd2fbb9e8081eab5142b8df27f44d9e5474ce042c17cddaace8c51b8fae65fdb7ce23152dbf401445cd662f7d03366db207418718437efece37e6fac9a554fc6cb3ec81df41e0294221580016dc631fa8c38519fb7d406b660b8ba39352ef3c1c8a114d65597e4e1058ebff2c8a538a4237c597d10bec7e238dcc5ba0537994329dca5173a63acdc8fc533eb6a325a5f92b82d0caa178ac620b7e943b47ba45831b0e87210ebd66dd683335c87a3e0748e3de715c8f6d84536d7b6545e364ba53953ec4364c1a547cd7ddec2aa28f061d6320bcee46806925c803ad25780ace43669b222247b13342ec223abd84a466881c46d31ea7b3f9ea6df95afe2d3a664ea9e4a94566356bf7567455aa5201ca51a229c8ab0fe603e25a7b4e7b1ec2f3a4244e844919ff3fc018bb8e79fd5199a5dd2ad1e9d5d7e41424d39dbba32beeabf6e06a815eb8cb2051327d5c308d6df3208750c322fc80c878fe7f6598bebec3f04fb7b7e2f5ed14bf6d74195fb8770764ca3b05fcd39e6533810ce4869dc371bf7c3d350b23eb47b799deabbb620a84634b2007800e046b34738688e7ef4a79a57cd8981888e11a21d3e2bbd1d45941d436dadc4745639c48df2e4a511d6d1a8eb09877460d9c6f5eb2d70e5ed05d67960cbd85e57ef2afb7e717cb115d2a327922b2f3dd3a84b2c28bbf9125606285ce6c6faa2ee363d1168577c09d5d658f3e44663b1ddfce5f22bcb0c540af650cfc98eb5c9c601f8acfd04fa7d0668a9ab5c6302fc048274d47d0f813809a913410bcb92d453facbf21401dc38e4243dbe0905e3726f358fbe31c2608f25c2b792242112eef1ec47feca1b1598a14c2c2f7b629ae0690974639669461014e1b5eaec6577739961c7c80e50424283e3c69ac81e1e688d26d814149e4c5137e35719b972d0130d1813fc701594887ee98e9b83515bab3c4e4b961058cac1dbc4a5a93d0e0850129f45b7fbdb9c0f1e86881ac4755137de58f35b88ebbd5ad4bd28ea7a5e513bae7415b274a2e9f203ae42540c778f6a70a25122ea61311fbae04cab801f79e389bd72e5f3a95de37c7387416d586eb8b0648eb5d07337ffc3d95c3a9847bf8e3e469d0bc332b89fd3609cbef1239e0e0fd98684da6eac8d0cb2fa8d86cbe854f073a9dc85f05e12c0f8ae8e4b5120982727ccd9a2e6a5303291a9d3bb4a3a93c8250170ffed9776758def4005d926f950334249a35b075d4f7e4848b7f83fbc7dfc6e6eb5f43fd255151d159899169d1fd10b2f057c1134eaec27408074759430a863be835c3b8c380772b45656cd97e74efed8a94d33a81adcd40b2da250a2f832950468aaec728d4c2360d843b304f8738b9ae602dc69b2dc9ed96972b8dfcde2123caae87e2d3f90d6682308dcc7c15b48dbb4cb277d29e124238de5858c9690dc7e52320ec0075f8a5e2a97a69e726adab1e870266133d32e959e693b3fe4f374db9379e2f5cb1610cfc97508f0eff30547e3e9f4cdec3bc0f73bca52a456d7d5060e745f2c8b84e0ef4cd96c8cdf8493c7a8bb5e6056268eecd06c0561a9d670548103e39cb925f124cea75a9eb94413a5354b8ab56c296998a4e188dbeaf2a3bfde0a420bad9c137a161b3a05bcf163e5c39711c4962fa3bd0ab33c25e1a5f5f21e866cf2a3ae38179d8e5732cf80e1571fa2d2ac7728b8f431125a9f1bf28a704143585143e82400a79117612036780b53be9c208874252f029bda991ad151a195329eb623fb018741c0849266ea323c5aba2960b501e4462e65ea452e21c2cc973848fb94adfa22ecb0f5f13d82344414d1d9be83c6adf5ecd58681903bcf8406a97eecb44fe070dd56a0259a0d204d43a8175e6e03dc21eb5d0fcd5989574e7ddf628a0abd05d60e16bd2f9346aa31041b98df5ec1be3ca8fd3b73d87a2510bee7bcb6a0810df6171bcf194f6faedd520539ea8267e6785f8fd054049ad3393898c5a4cb2094801fdc3644801cd7eb9b966845a1915e7898ec771f994cd162c3ee234294201fe17e43c546dd0b6d4211382eeeca6009728d89db32e60a1641dac59cf30f24a06f735ff0737d296aa8488dc69bee3e00f8b340649680dba7fc3eaee99312a93a5a657221f833047642efbda0c3c6d9a85d516eb2b1819d53a4b981c704974af9fa6ae2edeabaa2a77affabd37474de39276c0e80ec14c218fc0130917d622b421078f9edaf760b78bba4a626706138839d73fb57dba41524d7cb031911044aac1d15be4ea9a5a54cec76d6b83f55069fa00b919e8724024f98ccaed911db603b4520c82a4c65f2c7f5d3c54854e94faa059796041eb80e9f30e6ec32286297f0a191037991695d8507a29fc5d04316b2c44266948a489671ea6caaadb84c77c2b85298374ea729228d66f49dd909e3031e7b707c51f0dfb3ad9a6e395472dafbbfbc368ae06ef1265f5adf505d218f70cd716b051d576622dfb8e54491176fe811c642f091b9f67314ba013afad2b9265fcfd0bae19b17a3f8ded8ca410f0430b387be5261e352fe141519dfdb2fb9b52760c0c3640a9329a1f74ec833fcb761104404f4370c683bb088757b407af6fcd6b54ec80a7067d1aec67eea72cb281abfc1748251582ce97f9b4d3067fa41bd19c535263bbac8a7a15e13398267845f5b9a3414e690d4f1b017e947a258ebc52bd2238f94059d5b3fff200344440892a9ad118f333462d696d2c090afa423e81de206fdc34322fa78f0b6d348eaec13f1304e74d3eb48cb1e3363e02b7361d84c4d3a5c2f47da3887a60bd30a144e070026e8da7243b12011c876df894183ee18b8a435bfaf13ed2614fa50baba644800f691ad3e81bb34bd072c54ed4f87df9aaffb498cc21f208682e781d7a6ee822bc2fec607360f85a22755fc9e6c5298d87982e342ea8d0774137cc2c6c5bf13052bcc48a06b87c97d0317c4274a3f0e47b2b5af64ba4774ef001af13877356b3346987175ccab5025e0d8817e1569abbfe8b6dcdf0cb4467e7c261522323b648f204973c1f46e596a1ff9427586123f5289bf97f0e59a753979329123c41aa2d4bfbb1fd57ba641700d0cad68bb34d69a20340218dd382f72106c00e1ce21a822fe7c4b6c409d78f8c6989db127fdccf005f44715e2b2eaee93f5d3170ed5d335e53f3b301c1cc8413d343957bc82dde88dce798e97a8eda0eb57ab64bb5cdd96c531d4f5cb90af2eb5f3338677e865ceb6fef5ed85a4506d1b2f7b204590ec2e6d4a340a04ef23de3e834b024b6fa206291b1998d2492a52330c5029da4b591b172d6ee0f1a2751e8452cb6baef6edb45bd676b1ea08ccb9346afc2c042d653c78ea39cc8f9d91faa47037b954fb47e3dfb332c4eff2adf372331a57460a827fe4784e999ff90b8941212d8fe646ae5e6aab439c16f0b0caf70aed6dd1c831d81bedca9dbfcac04c8b7dc94518a1278e943a3249f396bba4d030e0230bdb3cbd91dc69f2d704f9cc605db2c547c2aac4c5ba97231c92850517e7e5f5e4a6193e7efc100351b9a0eafb73da5108d45e48ec835475008b1ee3cc569a9ab9c46a6f2fb4fbaa6500a5cee9a7a3a7cc6c00415e9dfadd664da810f9ab4ce89d887e4ee0056d277f97af0296d6922875921f23dc9f93f0a1d19721a18639af6e69cacf20648b2acb8b34e0c2c5fd86de3e9f5c7875439c48ab4f02e531a0c0e6198b5220fc218508d11592cc08a998596b178c4676ce4eb616e2f198a21aa29ddd8a4f934e1e9178cf42038d58eedd78116d0920d08e1bfc7a231fa50c4adbf9c49a2c</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>推免</tag>
-        <tag>加密</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>个人简历</title>
     <url>/2020/07/22/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
@@ -5428,9 +5405,32 @@ c1<span class="token operator">=</span><span class="token function">input</span>
         <category>简历</category>
       </categories>
       <tags>
-        <tag>加密</tag>
         <tag>万鲲鹏</tag>
         <tag>个人简历2019</tag>
+        <tag>加密</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>保研经历</title>
+    <url>/2019/09/28/%E4%BF%9D%E7%A0%94%E7%BB%8F%E5%8E%86/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="2feee347f81a4ae77037db5b7a086e0ff9cf6c318d3469f8756eed623233ac81">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f0410fccf8773ba3e911613ea7724d97e23308b31ae231fddf04245e170677088a8da3c2511e2c0f7111906998326dec24790e160e95739d65f68fcc90e9844f9a423b6a8c3c00c83d0029b0a42d3620bebde8da160142d25d318b3ac7e123f4e71434ee099b89e81bb1957f51cfd20e77e70d7af1b457c5efff0c023aa7df303880b044a115cdfebd84a80799f7ce97af6dc04d3513b7b2d65532c68010f2347e31630ecfb1edc0d73d45a0e4454e06c53b0dc9a892dc5145e9ca505704429fbaa6d831f199a20c79c40797ee58e5658bec9f040b883bae2d53bf38b154e45383143aa78b7bb3c1f7c38705c15c891e9235d336fb48d54d2cfbc43001bd33416a560778987e2927cf07a6a4ca84746a06d4650681382ff239c7f61c645ff31e7a73be2f0057400dc8b011f1db191d39104f49bea86096982ae17debb41b9fa819816204e88c7a86fe9721ff75a8cb1e3093281a51868c755f19f6c550acc1d6cc0a2fd922e12661586870cba0b175705a1d03fc3a15c605ef84ff5cea9636459a1124d75e11d10c3b4d3a382a6c9c3e73933dd10541b87b7bf0ce3aa5696dd19148f79c6cb3dbd952fffdadbc1a8abe04ea4be8bf93550d43228a9461a08fc83054eac9ef58fe4ecb7f05868b2c4c6ba33defd8a72034493580b3b1a915e5ef9e80ba13402661fba8fed423f038a61fc31bd75a915cf82d14fcdc7474ef759bef03d53a841fcf1787c5660e073efb02b22e0994731410310b8c13796972ad7f32f35b04234252c1151024d46e922e85c2da1e8e7a86032b5a74cccc8ef287e76f435a9941d3fb2f34206648f6bdf9aa50eee0b087c1a9dd9ea385e2c7b643d3d39335f64804a4ed982264b23e23720fef9900e0d97132d56a9dc0a3ea67dcd3cac7cc752130200ccbfffd802bae7145ed6c25fed06f6eb99ea5e6f61fc9b4d21733db4101f2d2cdf890cf7e38948640867a5c9052a0965e99141cd1e0b37c5380131d53e436dfa25b1b7b52c18e2c81e34fc9b2f1db365f225d6ec405ff87959921b267516849bf8f439ee4adba8973a6e698eceecaa81aaa3419c5112830f7d4d4dc66324bc052bbf16bfe413e2a887e25a3d76627f976d182b0aee02a9a67436c7ee108a7d6f16257adebe5a14476b5d9dd6c6e58c086f69ed4b9a0557a4ad5aa7aaa9c1222f0b884515bed48a075755fa43c25934fcfb3fbf3b9d8abb981541768f251ff44b2d2ec9739556ee18f66a1f01c1eda641a9a2b1fe3551e4fd2478e50069ba223b3f61ff42ac5a0e16e8b89c3d52a5db24c62be01317eacdc0d7a00bfcda4a28ba8f301d1a101f6abbb860115cd5d9e7f9007269432abd04b91dee52e1ae95c85d98d06b693d324e8f3c4d1e43ae98fd749c9bab03a530e1a8ea7323c4c2fe16d8de72857e8e02435c6bf21a7823e1978ff31d76691a298bcbe05746c8736db87487dbb044ac1fbcafb7a1c5a3f914991f724a2971133dce4880c470fb660a9b516728ad19dd1b0f6bb403ad3851a89abe14aa55c7a4b01f7353a152b800b74f9ca76b780cf4b81ac87a2f149d771de815b1b02d8080fa3ec2cf1fd609691dc10c982016232d11d8c5f3acaaa14a68b729c5da615438f14591c7db2ab2c05e019ba057852e8c97febb31cffe3ccc587cf95978e698b471091dd71cbe3bd6d7bd4c23d7bce31c7a199f9057bbaf5ac9dd9a3354d7fdf9e85bf133b2f7a61d6d831d3af82b0c1620892eee0556e9823d6b48dd46bd39909e01f1f2b1b6e65d05ac65b4b5fdccc7dea95129be41662e10ac14d1b6d078a6f26af3fcd052f1667a53f482b68d6ede203d573ef2b5506c071692168f086eaab2c6a1e61e717886dc97a50b5bba36fe8081dc2bee356fe8f04f1676ffdf34d4762ac9ad76199a5ad0a819cba6a8cb5cc350aadf06cb2c56122e240dc71593a0fd65f434ef6d1d0d1ca6bdc4dfb9ecc9b49b0c0cc4ddbfc7f75760fdef9c9cb3b00fb8bd79770edfbef87374bcb8ced4291f17d7d15a20f8d3286f97e21232762a892ccd2782a4d8c21d74eded8b99e88523d24773111547f5caceece273a2a8cc52dbecc4aab7b15e25e249f83d71c37305ccf51031cfce0727eeaa5b83939f33691419a634d43c18c055fb7fc534cb30e511e0c4097da5cec7db830cd83075d8ca3d812821012bd2c55ca47aa8076aa067ba4860635aa9678e85a0aadac328f2ab6d4cad2ab7fbf522fc84895d6fc83f50a74e643a61b1de4f20b5ad466960d7b9597f841ee6329589b02f1e342a86d9a939ddd1685c3366e41aeabe1cde5f0c17d1b754e5052f9ec0ce70538fa1c05ee74a48ad3ee82e779a64571040c977f397745eb7296fe7547d33c98cba9d5f6af2f4005c49720b1acba6ab46e4b32e943c13eeb36d44a66645c36bf79375fcfca62dbdeb1157111017f66c2481e1eb83f4d59c6ec888dd01e8d885a890ae51f7318259099a6d2cb420d589d43d1ca603a805bdee83dd9740973717e4bca893e0a382ce73dca5301becd34d3d8bd433b98de0fec28c319bdfc8f3aedfe83984a2766bbb6577b22180c86d8aaf85f9fdd5857cd9e5e47f65f6fe382c7b6b398a07417cfd22535d6f815fc7e02cdb5db4ca170a2e57c616988be55f6e286ef04c1b2ba41c448df69135ed030fbc3463afb9592a7a9a54e11ad3f8d650bc2b2718678ca1e3f4fd0cf9b20efd4f1d31e3161a28349e2492020ad331927b56a9b3b4a3ef058ec89f354afbf8f3eddeaa00ae7e7d0049ce4fa4770b1d68db8ee5d54e26f10c57a9853fc3ec898836f15a570550b4fd88589d57dbb708c6446547f46f5dd4e35c5a20834ce9dc1261b781d43c78d8f7a4da7329089550ba39afb63f75b5758456c9edcffb803905da69bae608d8184776904356f61c942f8d8ffdc4d5f423fd4d644aa48cd42bd97ee993b44231d33af54132f64603cc50127384ff9291746b8c0b97c004bd9844793f19757930d6150e1447d79f558f22dd5b94e4970d2cb0d6a3fc27978e4f05208e6de1e2ab3cb700556905a60a318158f7d9a99ad59ac4e769402d1e4b5b4f3218d9b15750f2baf5d336f6265efbf670e59dc9ed7ba0ce61bdf91f53936dcff8dfac6ba7867d976f5c0fbb437cd6e658e6f08e3b9e41fb924c5801e998ceb450876cf9f96b6d26e5d98b9c9ff683dcefb0bf40536506d305c8a1e9e3750a962b69fe07acd2ccdfba2bd693c7c1c965d1307e4c2890b5d7205c269649cb3f55a54e1a66a158087ae18cec5022cef66b144807c023b5185fc8508df1f4ab2a9a89faa9c22921ba8f3ddcb82b729f3818000cd2ffb87fe292b3ad5a04c45f4161addf33636cde5f548d6a4267bf9b7042f21bd76a7497cae5ac642a6a7a406e96ecac57802034e8c827af766ad4395c7167ad19d1abfd61e09886837e2674ec7e8e9aa6d2b84f9f09cf54339f2eed565291caaf5e43539c3d3044ab36abd6c8948b5bf7c5729ca1e715b524db7624a56e837ca7cf75cbcd27a50ac8188bc3b26ed5cb0ad2bf7aae25307c3f4e276562eb9e3e9d56a4d11c7710f8ee8d5de11dbb38e980dced8326161e6a5826d63d954443edfaacff26862c7a4edd581d8f1f8c3ae60c2c43cbc9cdc9340b8c83934a3272fa31308a229264eeaa96fa52b369602acd676cdecfe53b15fce06c011190e5093d19b01b9b22a5c0587df3cfa67f850cc66bbd8e5fec13163e47f042fdbaa9a27edc7a367eb37bbcac2b7a9bf153b70ec7e432804d0703c4f63d14f404a3ecc22be3a109205b4f5a4559e86e6f547de8943b13ca6bf41a9c87ad45fd733627868c81c27a68a7b06b327c32496d8f27c2d2618d034e42949de826d6188da208dbc3590aa273c5649e4c20250f190f849bfcb61f3f2116e4baba61e038f6c494986600eacdd13099fbae9beab29bf607e5c07ee3d791a54ded548f17979626324069938720db6defe96b135379ffa9c462df12beee051e2be59b5a9dc2ddc13afb2d48cc7ac2efd664859e34d6279c5c2b6462d2216576bdc7ec526c14089bba59d35b7c41681765dfafc6ca15c522fe170399e3ac39f7ad616771906f6ccc6b38eb050e1fa46cc22400f00c9368625585ab89f828d17e538e5cfec3e4d8cb89171b1a64f4eb296c30b0de92c2b259f97ffcd31dd8a4f7abd60d4c3d9fac3cd063e68b8ac6462efe02ec45133f4eadb14846586b443c7c00448e5b3703153bcc97ac561f3c183c9a29cc51b0977f1153dd810f6cc6f58df2ea429c6ed8b64cb47e2662944bc44bdc8c2c15ff4ae4b05cd14ff53f94b065ebcad03de3a234073981b34bc8b95bb980b0e360ccf73b213d7ef3877ceaef94d78bda5d99bd70d9ff94a9441bce80e515013cb19035d1ed0ea2c18a66972bed9ad1c203786fe6344ca6fe40dab596b217b8a324c97cf8384e307298ff388d5d4291cec28f241f1b26023f3a99538d292697ed2ece92feec9c640f76aa1296955098035bb9b29d28cb5129954fddb589263c849b667bb6291fd40144b97af6e2694c61fc5aca3b34f8de5db447e465cdd0e54391afd530572b54f65b6c194835356e61dbcf06b4dc54ec424da11fce55de86933030de1d64ce0c4dacd3ec3cefec6cf6c8c0e17ebdd0742e873013a02cb31196c6a06faca8e54af554f6f0856e23425877edc7070d04602738429acb3fcb3c23506fc8fe3ff0973f8adb1deed304503cc84ade3dded6ddb58020c744fdd6093106d1440a551f73507652965da11e5bb333b4440e642474a7409dd0eee9f474da510fa22a70e838e82414be78d199f00945c39892de8e5339d33f989192e0e3a9fc98fbaf549ff86e7849136964981cbbf91f91ef0cb78093f1e6dda866aaf84f6c5949b0956cc80ac14e84b48abfae132246b66cbb1cbf555a3844ca50bf66bede172a13fe6ae4287fefb58fc931667fa38c9b6aca0503811c6751016b4953f96c9bd59406fd3ef2ea614f304716163b096a565a44db8d8280b8e4f8fd56897a7a4d26d2e3457366d66ae00e06937a02ae5c1887979cbaef8d81d4f9370ad524c190963817bef4c9fc88f42bd7c9d0c52f20677b5ade31a60b2e7a1baef44f4f36f6dce3b4f020fb2d44b1ddb4994bfbab116570a6bc5f1b606db6fb679246fc403a3b6f05f588762febd26823919cab30fc65437dcfeb7bac49f2e6e0c6b8340ef011475687602ed16d8394ebbfecb25ed5818cc81e6df2635be9b09305928acb0a1a16c01626d6fd48fd296c5d08a154a60088553a63a28c084c036ba0b6f11c33afefaf13d22b877e92d7e5d1ba7da51949bede6ae759553b30618ae4a7246273dce99e6ab992fc62f606b82bc8b56b55e8e2d6d1ff56b3df3db2f29738ad607e56cba30f95412ed4200b09a18ab750b67e796e140b399ccedc3c5b3f0efcb8f7899fca1b8ca3b37cfc5eba0f9017580c076b90afc99f81f7897305b81465830892c52334a4cb3e44c338a4d421f8f31f5c2b8ae7da551210a5bedb6e36c1ea05fd8a24d387579f7c2cbc056de64ad9f9cfb7e180371db3e37befd83df57dd2fbb9e8081eab5142b8df27f44d9e5474ce042c17cddaace8c51b8fae65fdb7ce23152dbf401445cd662f7d03366db207418718437efece37e6fac9a554fc6cb3ec81df41e0294221580016dc631fa8c38519fb7d406b660b8ba39352ef3c1c8a114d65597e4e1058ebff2c8a538a4237c597d10bec7e238dcc5ba0537994329dca5173a63acdc8fc533eb6a325a5f92b82d0caa178ac620b7e943b47ba45831b0e87210ebd66dd683335c87a3e0748e3de715c8f6d84536d7b6545e364ba53953ec4364c1a547cd7ddec2aa28f061d6320bcee46806925c803ad25780ace43669b222247b13342ec223abd84a466881c46d31ea7b3f9ea6df95afe2d3a664ea9e4a94566356bf7567455aa5201ca51a229c8ab0fe603e25a7b4e7b1ec2f3a4244e844919ff3fc018bb8e79fd5199a5dd2ad1e9d5d7e41424d39dbba32beeabf6e06a815eb8cb2051327d5c308d6df3208750c322fc80c878fe7f6598bebec3f04fb7b7e2f5ed14bf6d74195fb8770764ca3b05fcd39e6533810ce4869dc371bf7c3d350b23eb47b799deabbb620a84634b2007800e046b34738688e7ef4a79a57cd8981888e11a21d3e2bbd1d45941d436dadc4745639c48df2e4a511d6d1a8eb09877460d9c6f5eb2d70e5ed05d67960cbd85e57ef2afb7e717cb115d2a327922b2f3dd3a84b2c28bbf9125606285ce6c6faa2ee363d1168577c09d5d658f3e44663b1ddfce5f22bcb0c540af650cfc98eb5c9c601f8acfd04fa7d0668a9ab5c6302fc048274d47d0f813809a913410bcb92d453facbf21401dc38e4243dbe0905e3726f358fbe31c2608f25c2b792242112eef1ec47feca1b1598a14c2c2f7b629ae0690974639669461014e1b5eaec6577739961c7c80e50424283e3c69ac81e1e688d26d814149e4c5137e35719b972d0130d1813fc701594887ee98e9b83515bab3c4e4b961058cac1dbc4a5a93d0e0850129f45b7fbdb9c0f1e86881ac4755137de58f35b88ebbd5ad4bd28ea7a5e513bae7415b274a2e9f203ae42540c778f6a70a25122ea61311fbae04cab801f79e389bd72e5f3a95de37c7387416d586eb8b0648eb5d07337ffc3d95c3a9847bf8e3e469d0bc332b89fd3609cbef1239e0e0fd98684da6eac8d0cb2fa8d86cbe854f073a9dc85f05e12c0f8ae8e4b5120982727ccd9a2e6a5303291a9d3bb4a3a93c8250170ffed9776758def4005d926f950334249a35b075d4f7e4848b7f83fbc7dfc6e6eb5f43fd255151d159899169d1fd10b2f057c1134eaec27408074759430a863be835c3b8c380772b45656cd97e74efed8a94d33a81adcd40b2da250a2f832950468aaec728d4c2360d843b304f8738b9ae602dc69b2dc9ed96972b8dfcde2123caae87e2d3f90d6682308dcc7c15b48dbb4cb277d29e124238de5858c9690dc7e52320ec0075f8a5e2a97a69e726adab1e870266133d32e959e693b3fe4f374db9379e2f5cb1610cfc97508f0eff30547e3e9f4cdec3bc0f73bca52a456d7d5060e745f2c8b84e0ef4cd96c8cdf8493c7a8bb5e6056268eecd06c0561a9d670548103e39cb925f124cea75a9eb94413a5354b8ab56c296998a4e188dbeaf2a3bfde0a420bad9c137a161b3a05bcf163e5c39711c4962fa3bd0ab33c25e1a5f5f21e866cf2a3ae38179d8e5732cf80e1571fa2d2ac7728b8f431125a9f1bf28a704143585143e82400a79117612036780b53be9c208874252f029bda991ad151a195329eb623fb018741c0849266ea323c5aba2960b501e4462e65ea452e21c2cc973848fb94adfa22ecb0f5f13d82344414d1d9be83c6adf5ecd58681903bcf8406a97eecb44fe070dd56a0259a0d204d43a8175e6e03dc21eb5d0fcd5989574e7ddf628a0abd05d60e16bd2f9346aa31041b98df5ec1be3ca8fd3b73d87a2510bee7bcb6a0810df6171bcf194f6faedd520539ea8267e6785f8fd054049ad3393898c5a4cb2094801fdc3644801cd7eb9b966845a1915e7898ec771f994cd162c3ee234294201fe17e43c546dd0b6d4211382eeeca6009728d89db32e60a1641dac59cf30f24a06f735ff0737d296aa8488dc69bee3e00f8b340649680dba7fc3eaee99312a93a5a657221f833047642efbda0c3c6d9a85d516eb2b1819d53a4b981c704974af9fa6ae2edeabaa2a77affabd37474de39276c0e80ec14c218fc0130917d622b421078f9edaf760b78bba4a626706138839d73fb57dba41524d7cb031911044aac1d15be4ea9a5a54cec76d6b83f55069fa00b919e8724024f98ccaed911db603b4520c82a4c65f2c7f5d3c54854e94faa059796041eb80e9f30e6ec32286297f0a191037991695d8507a29fc5d04316b2c44266948a489671ea6caaadb84c77c2b85298374ea729228d66f49dd909e3031e7b707c51f0dfb3ad9a6e395472dafbbfbc368ae06ef1265f5adf505d218f70cd716b051d576622dfb8e54491176fe811c642f091b9f67314ba013afad2b9265fcfd0bae19b17a3f8ded8ca410f0430b387be5261e352fe141519dfdb2fb9b52760c0c3640a9329a1f74ec833fcb761104404f4370c683bb088757b407af6fcd6b54ec80a7067d1aec67eea72cb281abfc1748251582ce97f9b4d3067fa41bd19c535263bbac8a7a15e13398267845f5b9a3414e690d4f1b017e947a258ebc52bd2238f94059d5b3fff200344440892a9ad118f333462d696d2c090afa423e81de206fdc34322fa78f0b6d348eaec13f1304e74d3eb48cb1e3363e02b7361d84c4d3a5c2f47da3887a60bd30a144e070026e8da7243b12011c876df894183ee18b8a435bfaf13ed2614fa50baba644800f691ad3e81bb34bd072c54ed4f87df9aaffb498cc21f208682e781d7a6ee822bc2fec607360f85a22755fc9e6c5298d87982e342ea8d0774137cc2c6c5bf13052bcc48a06b87c97d0317c4274a3f0e47b2b5af64ba4774ef001af13877356b3346987175ccab5025e0d8817e1569abbfe8b6dcdf0cb4467e7c261522323b648f204973c1f46e596a1ff9427586123f5289bf97f0e59a753979329123c41aa2d4bfbb1fd57ba641700d0cad68bb34d69a20340218dd382f72106c00e1ce21a822fe7c4b6c409d78f8c6989db127fdccf005f44715e2b2eaee93f5d3170ed5d335e53f3b301c1cc8413d343957bc82dde88dce798e97a8eda0eb57ab64bb5cdd96c531d4f5cb90af2eb5f3338677e865ceb6fef5ed85a4506d1b2f7b204590ec2e6d4a340a04ef23de3e834b024b6fa206291b1998d2492a52330c5029da4b591b172d6ee0f1a2751e8452cb6baef6edb45bd676b1ea08ccb9346afc2c042d653c78ea39cc8f9d91faa47037b954fb47e3dfb332c4eff2adf372331a57460a827fe4784e999ff90b8941212d8fe646ae5e6aab439c16f0b0caf70aed6dd1c831d81bedca9dbfcac04c8b7dc94518a1278e943a3249f396bba4d030e0230bdb3cbd91dc69f2d704f9cc605db2c547c2aac4c5ba97231c92850517e7e5f5e4a6193e7efc100351b9a0eafb73da5108d45e48ec835475008b1ee3cc569a9ab9c46a6f2fb4fbaa6500a5cee9a7a3a7cc6c00415e9dfadd664da810f9ab4ce89d887e4ee0056d277f97af0296d6922875921f23dc9f93f0a1d19721a18639af6e69cacf20648b2acb8b34e0c2c5fd86de3e9f5c7875439c48ab4f02e531a0c0e6198b5220fc218508d11592cc08a998596b178c4676ce4eb616e2f198a21aa29ddd8a4f934e1e9178cf42038d58eedd78116d0920d08e1bfc7a231fa50c4adbf9c49a2c</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>加密</tag>
+        <tag>推免</tag>
       </tags>
   </entry>
   <entry>
@@ -5566,6 +5566,55 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </tags>
   </entry>
   <entry>
+    <title>xmu健康打卡ios快捷指令</title>
+    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
+<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
+<li>浏览器</li>
+<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
+<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
+<li>接着，选择network<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center></li>
+<li><p>找到POST，不要寻找GET</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+</li>
+<li><p>如下：<br><center>
+<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
+</li>
+</ul>
+<p>即找到了我们需要的登录网址。</p>
+<p>接下来记录 username和userpassword，依次填入ios。</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+
+<ul>
+<li>将得到的数据填入一下列表<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ul>
+<blockquote>
+<p>仅只写到这里有兴趣的自己继续探索。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>厦门大学</category>
+      </categories>
+      <tags>
+        <tag>厦门大学</tag>
+        <tag>健康打卡</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于深度强化学习的超级马里奥和飞机大战自动控制</title>
     <url>/2021/03/15/%E5%9F%BA%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5%E5%92%8C%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="基于深度强化学习的超级马里奥和飞机大战自动控制"><a href="#基于深度强化学习的超级马里奥和飞机大战自动控制" class="headerlink" title="基于深度强化学习的超级马里奥和飞机大战自动控制"></a><center>基于深度强化学习的超级马里奥和飞机大战自动控制</center></h1><span id="more"></span>
@@ -5686,55 +5735,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       <tags>
         <tag>强化学习</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>xmu健康打卡ios快捷指令</title>
-    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
-<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
-<li>浏览器</li>
-<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
-<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
-<li>接着，选择network<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center></li>
-<li><p>找到POST，不要寻找GET</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-</li>
-<li><p>如下：<br><center>
-<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
-</li>
-</ul>
-<p>即找到了我们需要的登录网址。</p>
-<p>接下来记录 username和userpassword，依次填入ios。</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-
-<ul>
-<li>将得到的数据填入一下列表<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ul>
-<blockquote>
-<p>仅只写到这里有兴趣的自己继续探索。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>厦门大学</category>
-      </categories>
-      <tags>
-        <tag>厦门大学</tag>
-        <tag>健康打卡</tag>
       </tags>
   </entry>
   <entry>
@@ -6322,69 +6322,6 @@ r = \frac{|w^Tx+b|}{||w||}</script><ol>
       <tags>
         <tag>信息论</tag>
         <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>树莓派_命令行连接wifi</title>
-    <url>/2021/06/28/%E6%A0%91%E8%8E%93%E6%B4%BE-%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5wifi/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="4e715f80f897530b0cad42515d34d49d2c91af69b2c9ed3b3156aee371454e16">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041aa2df045649d51c4d893ac0794f8d93e4df6a0e15c93ccb5b1002c4397ca1b8e49411e18e08210dc2e308886a40f394b3e1678267bb9d7abf42b4adac2bf404b18c0c7b94f2386c04aa5554c2f7509b34529781bb153679385e738f25ea17898a1a4129576d82d7f06fc92c6e73a9c62110236d596aac804eb9ba266ea0c6860529e232fc0a938255ba7bdabd04f4210ea766812de7093cfd28f8dd57548bc0f54054c9ff9f8afd5323e8bda9bfe5b6d59a69c21714f36db856fd8cf7f650e3f5e401d215b999b913c3577ea40930bd686f8d9540d2014517df8e9dc61dfbafa48aab1d3fedf0448294bf6d067727cf1f7f0fbf8d1e9ab5f93f7dc9e1e8cd6d690e7211011c894e0fcef0554b5764a4272dd11c0c612f409da2c716bc1e0e117ee5d6a3b6fcaec4f8ba43a20d24ce7fd1c2f171fe1709ae8dfb24aa22615ce8c7b1de459911b37d035543990972fe06cf88241d94059d67ab111ade010e1b2b8adac83a1a383911ee175d02eaec05b8e6ff44ac4932adadb5078d864a7cfe2ab5ac89c262d0caa07e70627af2f118f403d51c25847c4992c1a2f0b00280e2d9a17ad3b4e9c5be8ae6c1488f853f04f10ef8ccd16f68fc480bd16978d1407cfe27f836439400297ab2cb2bc0b62e88190e869cd273d8c0e31f4427af039eed3a61e9992b1fff2cd4cac66762f98578341e955c7a082dfb2c0c5d35c815d16805140d2cd9a22a543d5a620aececd000cc60382f2c0242534d4dcd2c44058e4fae7e71de3c3f4a09250bce9989d4f14442fc4581e526abe54370405b9955f809409b56070e730047ea6572ad26b2c40e6536bc37739010cfb5ba54453b898e759aca888783b6cc53a47fbbe4a5444c5768b5286e7f798aae532842f2351722ea7a03a9286f4d248849993b862a08f28fc28b8372e45cc910ba0df285c451f9ec55346482b8d9c7dc0b5cd7bf9a9b873996a9a924eb3dd61a8727ae68d0794505bd154c2ee92f0be5d7ea918b3f7dca9907606030dc667269abf38760d9db102f1fea3b79b34a8c07a95a00ab0e3f1ecb4af38cb75bde07ca2bf3f7d36a7eb9ae360f7627b419612da852f773b040332db74261ff350bf912dd5a76a72244ffef6dd01721379d6ea91b35486ee9bb3def5efa93687cb5cf04594d843fc3fbfdccc546c1c57b48a8983b039f4769534cae41b9f8be2946335d7babe3917541eb764e2c87cabbcb5985339d36fce34640c3cec0a6f3baeaef01ae91bd4850505247585333c891ede559f617295ecbfa370dd9b1a35268b6309e093cf16b226b37cb61b600f015ba6480a214f2ef1d1ec659296da8bad035e81ca418b1a2926768f7db11447f8936c33d0a399205f98fc8c1e71f0a868794bcb38315715e5dd29fd98742d1cab951349ed430cb9162e3e677bb02e19d136da4f5c237e9745e80adaa3c3e93d932d10a2d723a16670f027e301abb3d160c38e1d92ca112d202f15e02395ab0b5ffe805bc54406c071fca64f90823dce2024af30c602b5e8870ef4de55bc125ed053eab80d78af6221341c9c7578249a0779881483763e2d576148dce64632e882bab28cd7d9fb7afad5e2704a0b91f6c4bb38de74124cf82c11aac59d1341c069866b45aa63007f203161db12ca6713d9b8dd4ee9f3758eaed617ca06b81b2f0aad9a9f8e29c0f8c730120881ce936ab2b5f64819cdef31c9a24272a81706cae0d10e8cf87d8c3022392e8bba01f2280ded8e0f7d62323f18ee1e316e54f7e899e4cd989baa40401d401c8d01c682474ba5bbea179c17ec49d591269024fe8352b1ea55ecdbd0abf4b98d35779aad697bf0f9f870dca75e5039ef71558eea815a125594c49437b091660578cdabc9fd135c9a1716e570af3700ec3993bc8e91d3d4203d0d6ed0009c7bba5491ab8cceb9ec252635dd06641fee583d19af8762f8ca676bc55fa1c4c7b2a01dc2197b74e27bdeaac82da8a8f84ddcb364f6fba52064b8d48f09a9cb592c9a4361c562be314c66ef172c2119c1837ff5442bfb202da7bc55868e6e1e66931d02251f40956e5ce1e5a4d54e15a089e23c27f2f45f7dc556dff0ddaf645ecce4ca88b79b41fa72c3e5c8e4596083c00ebacab49a42fafc1399d6f2d169c9c13e4ff22844c8ea3b93f3ceecf06e31ddac56c4b4112bb58d93205ede0fe365be3b80178554f93c721e1655825b3671c5b813e2085b4167728c8ef7144d537c8c86844270befa082b219f431cb226c65b9a5bc0a7cb2e8502a8f5ff72a623062f078a2c4b10af00e5bf093687d0c4ef90cd142b3af51699ad9a2ad6b00aba9c152ee8cca55642daa92befc4f45be7626751fdb098c4790d598a47dfed7c5ec89576a0c2796df99f837de21af48b42b6bf508e37c54cde2e9522beca0988a7b1a5fcd5fdcb5a510273cdf5b0de868ad3c35724352d03e0ee1149fdca7cba29a8c5ecaec2b9d8ed1e7727eedf601e7a0bdba81657ce60a867db2deb716904c15ad6a8ceeb32ea668bada11f6f6abdea72804289ecc2e661a77f8bd59a05cbb251a2f7c302331d834c622ab8410e5ac5320a40d3806cfc8f50dab8392aefe431bc380ae2a1766f489042ba71dac0695dcda101a7414a4a0ea06b074ea6c7e8478ca2fedcc29dbf9dafd81309359077f0501e6d946a1d55c67c7699310299b053e12faec7b9d8267b24d2eee051d681c431b9edd4f139eb37acd6b804ab5fe3512b078a9fcf19a26b09d61cbd6eabab21f4f88017f8469acaf8e4c9264d34736040ce5c408ded5c0b61c6695d36f04c89be51b84847bbaf21824c30aa2760e82674b8f69c6f501f69ad048ebb8d7872d9a8acb63918779ba7788dd30da5f43a03d4e4dae0a6c83c3cfd746281f5dac6721bee4ad1dd518c6a1bd26e5e228d7c434a95278ba4901c5d8be33af3f87af4407949d4f12194fa86d87e5b38d81092de202cd02dafc825f3259661f1473998fb9d9e422fb93055bbcf21e03f394ee3d4b81d295a74dd7fb3045ef26611558506ca73e4518505c4a769d49f75e596d62d93d6e068a4e82de16c407fee1f87b3c77ff77c01a7fda5677ad2b74a6e9c297969d38ba35f3a3fdc0ed067666c8fa7cbaff85c8c063d47bfd5d1489d67a77061c291d2d6b6e07928774cb9e6b0c8af8bc8ccfa66cce528de08060596d8a2157e85e4f40205547015de3e54ea96b53b0a51390dae93344f505af334a762359e6bda7cff00a663c6285d038a9d1cc4bace16319a0c52a73a91627d5670d3c4c690dd985da541f80b0403f2d1b7472c206b58650470ba8195185bc32689c123cba71639dac27039b68d14fd22d40e5a162d8d81c38dfe7a1b1ee1a295a877f54f69aabe8f0875321f332735e1f98fed3c88d0152173278eac864d49a5122652107769dbe3abfff53ae46a1aefc59828df742d92c96765fc32980bd8e4c8ae4378d9059a9b2a4fdcede77216bea8c9ef0fcb3d7af327eaa2688aa95fe254453a378d5ef1103a299fadc40e9f06ec00bac4ef5194c1c6c2dbf2c2f1e56f56ae8f1499e232c9e54c7bcb13091f0e30b37c0709f6100a0f630edff459c751391307eac15b823fd10702a3b3ec7fbd5002ab83def308721b863119fac89f0026679d950d192c3cfcc8c85dd74c2b4af2eb1f6e89d270437a130ececd7015d1f8f91b86bd679dcb05f7189026f88badc0fdd9d0b999cc09134adf98888f11a0ca5d1b18a63927b9851d4d5166470015e328f0bcc06bd57d51829ca89108856dd71fdc829c8b25263c76a55b2003551be6e3e7e42f802aa1a65dc7505da96e8da0bfd2ade640b79e1adf4ae1567d58aabf18c6346a7c770ad696d8ea3ea739ce701ed0db157bd48cbc88c7118066d24ea654a2cd29795d4497dc3361c2e9e8e54aa24c68876dc6bcc4e06da7072cbd66d54d9daff87183869b74ae55ed6266c27704a7de21ec8f9b9dcf7b84cc2ef7c3b38330a27c04e09ef28cbd28eb6093b9fed613f9875d648968368d4563021eea34fee52d7979940d4ca3f6187f9894fea22e57db5d078101871286e9b79f10ea336aaab9d8101cc5ba0d292ee3fdfca65d56fd5095722b436f14f4e7c41999c60e43860a57b48bad0bca3f8f34f9e95f7baef083831115f5b393cc7e06039c8b9ea784c6cc568f5b7dbf1106ec097fe3491fc8d9bed7c4829343a79d280cf492468307288af6b1306afa47eeecac1b5a86f2b1b455e24654539e2e51c577f34af0b0926d934fa1af83c1ba186294f9b80ff78e7e2c3e011d69e60cf811e1958ee7a5600f1e32699f702fafd7ac0cb5a7ca46154c033f77bd92f1ccb310ab54076f8de57b99be7cbbc7f3ff4001edcca59c228a29ed9a9018d3a0ffc062848cfccde4df2cd01a6f589f2e310f4ffe2fbd729f6b6a672f0403cd1dc36e2a0ff59584353dfe3e5869427234bd5f4d21ef0929f05c695aaf4bf10ccdf25bb20050ed615a97459975ab8ef51a26211a74b8f66c57db2e883868c438d25d35bc678e99a9104c85f70ce4efd3ef074b053df2fd43f7be7320679fbb90690d</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>树莓派</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>树莓派3BTL-WN726N驱动</title>
-    <url>/2021/04/20/%E6%A0%91%E8%8E%93%E6%B4%BE3BTL-WN726N%E9%A9%B1%E5%8A%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="树莓派3BTL-WN726N驱动"><a href="#树莓派3BTL-WN726N驱动" class="headerlink" title="树莓派3BTL-WN726N驱动"></a>树莓派3BTL-WN726N驱动</h1><h2 id="给树莓派3B装两个网卡"><a href="#给树莓派3B装两个网卡" class="headerlink" title="给树莓派3B装两个网卡"></a>给树莓派3B装两个网卡</h2><ul>
-<li>为了得到两条独立的非干扰信道，采用外接usb网卡的形式。</li>
-</ul>
-<p>但是遇到了一个问题，无线网卡插入树莓派无法识别。于是只好安装驱动，网络上有很多方法，但一点用都没得。</p>
-<p>最终只能在树莓派的官方文档中找解决方法<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=62371">教程</a></p>
-<p>根据帖子内容，找到自己内核版本对应的驱动</p>
-<p><code>3.18.11+ #780, #781 - 8188eu--3.18.3-739.tar.gz</code></p>
-<pre class="line-numbers language-none"><code class="language-none">mkdir TP-Link
-cd TP-Link
-sudo wget http:&#x2F;&#x2F;downloads.fars-robotics.net&#x2F;wifi-drivers&#x2F;8188eu-drivers&#x2F;8188eu-3.18.3-739.tar.gz
-
-tar -zxvf 8188eu-3.18.3-739.tar.gz
-
-mkdir -p &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;kernel&#x2F;drivers&#x2F;net&#x2F;wireless
-sudo vim &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;modules.order
-sudo .&#x2F;install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="对本地网络地址进行配置"><a href="#对本地网络地址进行配置" class="headerlink" title="对本地网络地址进行配置"></a>对本地网络地址进行配置</h2><p>由于在实验室，所用的路由器的端口号是10.xxx.xxx.xxx 然后直接ip连接到了该位置，这肯定有问题。</p>
-<pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;network&#x2F;interfaces<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>修改以下内容设置默认网关，具体数值可以根据自身情况增加</p>
-<pre class="line-numbers language-none"><code class="language-none">auto wlan1
-iface wlan1 inet dhcp
-pre-up wpa_supplicant -Dwext -i wlan0 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf$
-
-
-allow-hotplug wlan1
-iface wlan1 inet manual
-    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><pre class="line-numbers language-none"><code class="language-none">sudo depmod -a 
-sudo modprobe 8188eu<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -7110,6 +7047,120 @@ def saveCutoutLabel(name):
       </tags>
   </entry>
   <entry>
+    <title>树莓派3BTL-WN726N驱动</title>
+    <url>/2021/04/20/%E6%A0%91%E8%8E%93%E6%B4%BE3BTL-WN726N%E9%A9%B1%E5%8A%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="树莓派3BTL-WN726N驱动"><a href="#树莓派3BTL-WN726N驱动" class="headerlink" title="树莓派3BTL-WN726N驱动"></a>树莓派3BTL-WN726N驱动</h1><h2 id="给树莓派3B装两个网卡"><a href="#给树莓派3B装两个网卡" class="headerlink" title="给树莓派3B装两个网卡"></a>给树莓派3B装两个网卡</h2><ul>
+<li>为了得到两条独立的非干扰信道，采用外接usb网卡的形式。</li>
+</ul>
+<p>但是遇到了一个问题，无线网卡插入树莓派无法识别。于是只好安装驱动，网络上有很多方法，但一点用都没得。</p>
+<p>最终只能在树莓派的官方文档中找解决方法<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=62371">教程</a></p>
+<p>根据帖子内容，找到自己内核版本对应的驱动</p>
+<p><code>3.18.11+ #780, #781 - 8188eu--3.18.3-739.tar.gz</code></p>
+<pre class="line-numbers language-none"><code class="language-none">mkdir TP-Link
+cd TP-Link
+sudo wget http:&#x2F;&#x2F;downloads.fars-robotics.net&#x2F;wifi-drivers&#x2F;8188eu-drivers&#x2F;8188eu-3.18.3-739.tar.gz
+
+tar -zxvf 8188eu-3.18.3-739.tar.gz
+
+mkdir -p &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;kernel&#x2F;drivers&#x2F;net&#x2F;wireless
+sudo vim &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;modules.order
+sudo .&#x2F;install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="对本地网络地址进行配置"><a href="#对本地网络地址进行配置" class="headerlink" title="对本地网络地址进行配置"></a>对本地网络地址进行配置</h2><p>由于在实验室，所用的路由器的端口号是10.xxx.xxx.xxx 然后直接ip连接到了该位置，这肯定有问题。</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;network&#x2F;interfaces<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>修改以下内容设置默认网关，具体数值可以根据自身情况增加</p>
+<pre class="line-numbers language-none"><code class="language-none">auto wlan1
+iface wlan1 inet dhcp
+pre-up wpa_supplicant -Dwext -i wlan0 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf$
+
+
+allow-hotplug wlan1
+iface wlan1 inet manual
+    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><pre class="line-numbers language-none"><code class="language-none">sudo depmod -a 
+sudo modprobe 8188eu<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>矩阵分析引论</title>
+    <url>/2020/11/17/%E7%9F%A9%E9%98%B5%E8%AE%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="矩阵分析引论"><a href="#矩阵分析引论" class="headerlink" title="矩阵分析引论"></a><center>矩阵分析引论</center></h1><h2 id="Introduction-to-matrix-analysis"><a href="#Introduction-to-matrix-analysis" class="headerlink" title=" Introduction to matrix analysis "></a><center> Introduction to matrix analysis </center></h2><center>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=11355346&bvid=BV19x411878L&cid=18777309&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+</center>
+
+<span id="more"></span>
+<h2 id="1-线性空间与线性变换"><a href="#1-线性空间与线性变换" class="headerlink" title="1.线性空间与线性变换"></a>1.线性空间与线性变换</h2><ol>
+<li>对加减乘除封闭的集合被称之为数域。矩阵论中较常用的数域是QRC。其中Q:有理数域、R:实数数域、C复数数域。<br>$Q\subset R\subset C$<br>如果一个非空集合在某数域上，以下八条<center>
+<img src="https://www.codekp.cn/download/img/矩阵论/1.PNG" width = "1147" height = "950" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ol>
+<h3 id="线性空间例3-（函数空间-f-I-R"><a href="#线性空间例3-（函数空间-f-I-R" class="headerlink" title="线性空间例3.（函数空间$f(I,R)$)"></a>线性空间例3.（函数空间$f(I,R)$)</h3><ul>
+<li>$V:$<br>$F(I，R^n)$<br>$I=(0,1) ,[\frac{1}{2}，5]$函数的定义域<br>$R^n值域空间$<br>以函数为元素的抽象集合，数域取R</li>
+</ul>
+<ul>
+<li>： f+g<br>$ +  ： \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} + \begin{cases} g_1(x)\ g_2(x)\ g_n(x) \end{cases} = \begin{cases} f_1(x)+g_1(x)\f_2(x)+ g_2(x)\f_n(x)+g_n(x) \end{cases}  x \in I$</li>
+</ul>
+<ul>
+<li>：f<em>k<br>$</em> : \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} * k =\begin{cases} kf_1(x)\ kf_2(x)\ kf_n(x) \end{cases}$</li>
+</ul>
+<p>定义：（向量组及向量组拼成向量抽象矩阵）<br>设V是F上的线性空间V中的有限序列$\alpha_1、\alpha2、\alpha3 …\alpha_p $的一个向量组，向量组按顺序排列的行称为向量组拼成的抽象矩阵$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>序列：抽象或实际数构成的序列，抽象矩阵。用V中的抽象物拼接为一个矩阵。即：抽象的集合。</p>
+<blockquote>
+<p>数乘运算、线性空间满足八条运算规则:</p>
+</blockquote>
+<p>4条：<br>加法有交换律、结合律、有负元、有零元。<br>4条：<br>乘法有两个分配律，数乘法对抽象加法的分配律，数乘法对数值的分配律，先乘后乘以集合和两次分别乘以集合相等，f中的乘法单位元e做数乘法时空间不变。</p>
+<p>标准线性空间：<br>例子<br>二维空间<br>三维空间 ：所有有向线段构成的集合。<br>几何空间：<br>函数空间：函数作为运算对象，所构成的空间。信号的集合构成函数空间。</p>
+<p>将几何空间的解析几何方法抽象到一般的框架下，集合的量变成代数的量，坐标系。<br>考虑什么样的向量组可以模拟成几何的线性空间的问题。<br>向量组：$\alpha_1、\alpha2、\alpha3 …\alpha_p $<br>抽象矩阵：$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>1行p列的抽象矩阵，可以竖着拼。<br>行向量，横拼接。<br>列向量，竖拼接。<br>向量组的线性相关性：如果存在不全为零的P个数$k_i\in F, i=1,2,…,p$使得<br>$\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p=0$<br>则向量组\alpha_1、\alpha2、\alpha3 …\alpha_p称之为线性相关。<br>注： $\exists\begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0，\begin{cases} k_1\ k_2\ k_n \end{cases}\in F^p$</p>
+<p>使得(*)成立，对以上命题进行否定。<br>$\exists a\in P_a $<br>否定$\forall a\notin P_a $</p>
+<p> $\forall \begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0$<br> $\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p\neq 0$<br>线性无关</p>
+<p>线性无关即为线性相关的否定，存在系数不全为零的时，使得等号成立，即线性无关。</p>
+<p>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=0$<br>线性相关《——》有非零解<br>线性无关《——》没有非零解</p>
+<p>线性相关性：目的为了将抽象的序列搬移到几何空间中。</p>
+<h2 id="基"><a href="#基" class="headerlink" title="基"></a>基</h2><p>定义：（两个线性向量组之间的线性表示）<br>$\alpha_1、\alpha_2、\alpha_3 …\alpha_p;\beta_1、\beta_2、\beta_3、…、\beta_p$</p>
+<ol>
+<li>称为$\beta$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果存在$ k_1、k_2、k_3 …k_p \subset F$使得<br>$\beta=\alpha_1k_1+\alpha_2k_2+\alpha_3k_3 …+\alpha_pk_p$</li>
+<li>称$\beta_1、\beta_2、\beta_3、…、\beta_p$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果每个$\beta_i$据可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示</li>
+</ol>
+<h4 id="矩阵表达"><a href="#矩阵表达" class="headerlink" title="矩阵表达"></a>矩阵表达</h4><p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=\beta$ 其中$A=[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$</p>
+<ol>
+<li><p>因此$\beta$可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示《=====》非齐次线性方程组有解</p>
+</li>
+<li><p>重点：</p>
+</li>
+</ol>
+<p>$[\alpha<em>1、\alpha_2、\alpha_3 …\alpha_p] \begin{pmatrix}<br>        x</em>{11} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{1q} \<br>        x</em>{21} &amp; \cdots &amp;\cdots &amp; \cdots &amp; x<em>{2q} \<br>        \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>        x</em>{p1} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{pq}\<br>        \end{pmatrix}</em>{pq} =[\beta_1、\beta_2、\beta_3、…、\beta_p]$</p>
+<p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ]$记作A<br>$[\beta_1、\beta_2、\beta_3…\beta_p]$记作B：<br>$AX=B$抽象的矩阵方程</p>
+<p>$[\beta_i]$可有$[\alpha_i]$线性表示《=====》线性方程有解。</p>
+<ol>
+<li>线性表示具有传递性：<br>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]    、[{\alpha_i}]$<br>$[\beta_1、\beta_2、\beta_3…\beta_q]   、[{\beta_j}]$<br>$[\gamma_1、\gamma_2、\gamma_3…\gamma_t]      、[{\gamma_k}]$   </li>
+</ol>
+<p>$ [{\beta_j}]\leq lin [{\alpha_i}]<br>$且$ [{\gamma_k}]\leq lin [{\beta_j}]<br>$则$ [{\gamma_k}]\leq lin [{\alpha_i}]<br>$</p>
+<p>A$\leq lin$B 意思是A可以由B线性表示。</p>
+<ul>
+<li>证：<br>即 Ax=B、By=C 有解，证明Az=C？<br>C=By=(Ax)y</li>
+</ul>
+<p><img src="https://www.codekp.cn/download/img/矩阵论/目录.png" width = "400" height = "302" alt="图片名称" align=center /></p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>研究生课程</tag>
+        <tag>矩阵论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>程序语法</title>
     <url>/2020/11/20/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="编程语言语法"><a href="#编程语言语法" class="headerlink" title="编程语言语法"></a><center>编程语言语法</center></h1><span id="more"></span>
@@ -7259,79 +7310,6 @@ def saveCutoutLabel(name):
         <tag>matlab</tag>
         <tag>c</tag>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>矩阵分析引论</title>
-    <url>/2020/11/17/%E7%9F%A9%E9%98%B5%E8%AE%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="矩阵分析引论"><a href="#矩阵分析引论" class="headerlink" title="矩阵分析引论"></a><center>矩阵分析引论</center></h1><h2 id="Introduction-to-matrix-analysis"><a href="#Introduction-to-matrix-analysis" class="headerlink" title=" Introduction to matrix analysis "></a><center> Introduction to matrix analysis </center></h2><center>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=11355346&bvid=BV19x411878L&cid=18777309&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-</center>
-
-<span id="more"></span>
-<h2 id="1-线性空间与线性变换"><a href="#1-线性空间与线性变换" class="headerlink" title="1.线性空间与线性变换"></a>1.线性空间与线性变换</h2><ol>
-<li>对加减乘除封闭的集合被称之为数域。矩阵论中较常用的数域是QRC。其中Q:有理数域、R:实数数域、C复数数域。<br>$Q\subset R\subset C$<br>如果一个非空集合在某数域上，以下八条<center>
-<img src="https://www.codekp.cn/download/img/矩阵论/1.PNG" width = "1147" height = "950" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ol>
-<h3 id="线性空间例3-（函数空间-f-I-R"><a href="#线性空间例3-（函数空间-f-I-R" class="headerlink" title="线性空间例3.（函数空间$f(I,R)$)"></a>线性空间例3.（函数空间$f(I,R)$)</h3><ul>
-<li>$V:$<br>$F(I，R^n)$<br>$I=(0,1) ,[\frac{1}{2}，5]$函数的定义域<br>$R^n值域空间$<br>以函数为元素的抽象集合，数域取R</li>
-</ul>
-<ul>
-<li>： f+g<br>$ +  ： \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} + \begin{cases} g_1(x)\ g_2(x)\ g_n(x) \end{cases} = \begin{cases} f_1(x)+g_1(x)\f_2(x)+ g_2(x)\f_n(x)+g_n(x) \end{cases}  x \in I$</li>
-</ul>
-<ul>
-<li>：f<em>k<br>$</em> : \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} * k =\begin{cases} kf_1(x)\ kf_2(x)\ kf_n(x) \end{cases}$</li>
-</ul>
-<p>定义：（向量组及向量组拼成向量抽象矩阵）<br>设V是F上的线性空间V中的有限序列$\alpha_1、\alpha2、\alpha3 …\alpha_p $的一个向量组，向量组按顺序排列的行称为向量组拼成的抽象矩阵$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>序列：抽象或实际数构成的序列，抽象矩阵。用V中的抽象物拼接为一个矩阵。即：抽象的集合。</p>
-<blockquote>
-<p>数乘运算、线性空间满足八条运算规则:</p>
-</blockquote>
-<p>4条：<br>加法有交换律、结合律、有负元、有零元。<br>4条：<br>乘法有两个分配律，数乘法对抽象加法的分配律，数乘法对数值的分配律，先乘后乘以集合和两次分别乘以集合相等，f中的乘法单位元e做数乘法时空间不变。</p>
-<p>标准线性空间：<br>例子<br>二维空间<br>三维空间 ：所有有向线段构成的集合。<br>几何空间：<br>函数空间：函数作为运算对象，所构成的空间。信号的集合构成函数空间。</p>
-<p>将几何空间的解析几何方法抽象到一般的框架下，集合的量变成代数的量，坐标系。<br>考虑什么样的向量组可以模拟成几何的线性空间的问题。<br>向量组：$\alpha_1、\alpha2、\alpha3 …\alpha_p $<br>抽象矩阵：$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>1行p列的抽象矩阵，可以竖着拼。<br>行向量，横拼接。<br>列向量，竖拼接。<br>向量组的线性相关性：如果存在不全为零的P个数$k_i\in F, i=1,2,…,p$使得<br>$\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p=0$<br>则向量组\alpha_1、\alpha2、\alpha3 …\alpha_p称之为线性相关。<br>注： $\exists\begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0，\begin{cases} k_1\ k_2\ k_n \end{cases}\in F^p$</p>
-<p>使得(*)成立，对以上命题进行否定。<br>$\exists a\in P_a $<br>否定$\forall a\notin P_a $</p>
-<p> $\forall \begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0$<br> $\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p\neq 0$<br>线性无关</p>
-<p>线性无关即为线性相关的否定，存在系数不全为零的时，使得等号成立，即线性无关。</p>
-<p>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=0$<br>线性相关《——》有非零解<br>线性无关《——》没有非零解</p>
-<p>线性相关性：目的为了将抽象的序列搬移到几何空间中。</p>
-<h2 id="基"><a href="#基" class="headerlink" title="基"></a>基</h2><p>定义：（两个线性向量组之间的线性表示）<br>$\alpha_1、\alpha_2、\alpha_3 …\alpha_p;\beta_1、\beta_2、\beta_3、…、\beta_p$</p>
-<ol>
-<li>称为$\beta$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果存在$ k_1、k_2、k_3 …k_p \subset F$使得<br>$\beta=\alpha_1k_1+\alpha_2k_2+\alpha_3k_3 …+\alpha_pk_p$</li>
-<li>称$\beta_1、\beta_2、\beta_3、…、\beta_p$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果每个$\beta_i$据可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示</li>
-</ol>
-<h4 id="矩阵表达"><a href="#矩阵表达" class="headerlink" title="矩阵表达"></a>矩阵表达</h4><p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=\beta$ 其中$A=[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$</p>
-<ol>
-<li><p>因此$\beta$可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示《=====》非齐次线性方程组有解</p>
-</li>
-<li><p>重点：</p>
-</li>
-</ol>
-<p>$[\alpha<em>1、\alpha_2、\alpha_3 …\alpha_p] \begin{pmatrix}<br>        x</em>{11} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{1q} \<br>        x</em>{21} &amp; \cdots &amp;\cdots &amp; \cdots &amp; x<em>{2q} \<br>        \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>        x</em>{p1} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{pq}\<br>        \end{pmatrix}</em>{pq} =[\beta_1、\beta_2、\beta_3、…、\beta_p]$</p>
-<p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ]$记作A<br>$[\beta_1、\beta_2、\beta_3…\beta_p]$记作B：<br>$AX=B$抽象的矩阵方程</p>
-<p>$[\beta_i]$可有$[\alpha_i]$线性表示《=====》线性方程有解。</p>
-<ol>
-<li>线性表示具有传递性：<br>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]    、[{\alpha_i}]$<br>$[\beta_1、\beta_2、\beta_3…\beta_q]   、[{\beta_j}]$<br>$[\gamma_1、\gamma_2、\gamma_3…\gamma_t]      、[{\gamma_k}]$   </li>
-</ol>
-<p>$ [{\beta_j}]\leq lin [{\alpha_i}]<br>$且$ [{\gamma_k}]\leq lin [{\beta_j}]<br>$则$ [{\gamma_k}]\leq lin [{\alpha_i}]<br>$</p>
-<p>A$\leq lin$B 意思是A可以由B线性表示。</p>
-<ul>
-<li>证：<br>即 Ax=B、By=C 有解，证明Az=C？<br>C=By=(Ax)y</li>
-</ul>
-<p><img src="https://www.codekp.cn/download/img/矩阵论/目录.png" width = "400" height = "302" alt="图片名称" align=center /></p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>研究生课程</tag>
-        <tag>矩阵论</tag>
       </tags>
   </entry>
   <entry>
@@ -7545,6 +7523,234 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       <tags>
         <tag>表白网站</tag>
         <tag>罗盘时钟</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>树莓派_命令行连接wifi</title>
+    <url>/2021/06/28/%E6%A0%91%E8%8E%93%E6%B4%BE-%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5wifi/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="4e715f80f897530b0cad42515d34d49d2c91af69b2c9ed3b3156aee371454e16">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041aa2df045649d51c4d893ac0794f8d93e4df6a0e15c93ccb5b1002c4397ca1b8e49411e18e08210dc2e308886a40f394b3e1678267bb9d7abf42b4adac2bf404b18c0c7b94f2386c04aa5554c2f7509b34529781bb153679385e738f25ea17898a1a4129576d82d7f06fc92c6e73a9c62110236d596aac804eb9ba266ea0c6860529e232fc0a938255ba7bdabd04f4210ea766812de7093cfd28f8dd57548bc0f54054c9ff9f8afd5323e8bda9bfe5b6d59a69c21714f36db856fd8cf7f650e3f5e401d215b999b913c3577ea40930bd686f8d9540d2014517df8e9dc61dfbafa48aab1d3fedf0448294bf6d067727cf1f7f0fbf8d1e9ab5f93f7dc9e1e8cd6d690e7211011c894e0fcef0554b5764a4272dd11c0c612f409da2c716bc1e0e117ee5d6a3b6fcaec4f8ba43a20d24ce7fd1c2f171fe1709ae8dfb24aa22615ce8c7b1de459911b37d035543990972fe06cf88241d94059d67ab111ade010e1b2b8adac83a1a383911ee175d02eaec05b8e6ff44ac4932adadb5078d864a7cfe2ab5ac89c262d0caa07e70627af2f118f403d51c25847c4992c1a2f0b00280e2d9a17ad3b4e9c5be8ae6c1488f853f04f10ef8ccd16f68fc480bd16978d1407cfe27f836439400297ab2cb2bc0b62e88190e869cd273d8c0e31f4427af039eed3a61e9992b1fff2cd4cac66762f98578341e955c7a082dfb2c0c5d35c815d16805140d2cd9a22a543d5a620aececd000cc60382f2c0242534d4dcd2c44058e4fae7e71de3c3f4a09250bce9989d4f14442fc4581e526abe54370405b9955f809409b56070e730047ea6572ad26b2c40e6536bc37739010cfb5ba54453b898e759aca888783b6cc53a47fbbe4a5444c5768b5286e7f798aae532842f2351722ea7a03a9286f4d248849993b862a08f28fc28b8372e45cc910ba0df285c451f9ec55346482b8d9c7dc0b5cd7bf9a9b873996a9a924eb3dd61a8727ae68d0794505bd154c2ee92f0be5d7ea918b3f7dca9907606030dc667269abf38760d9db102f1fea3b79b34a8c07a95a00ab0e3f1ecb4af38cb75bde07ca2bf3f7d36a7eb9ae360f7627b419612da852f773b040332db74261ff350bf912dd5a76a72244ffef6dd01721379d6ea91b35486ee9bb3def5efa93687cb5cf04594d843fc3fbfdccc546c1c57b48a8983b039f4769534cae41b9f8be2946335d7babe3917541eb764e2c87cabbcb5985339d36fce34640c3cec0a6f3baeaef01ae91bd4850505247585333c891ede559f617295ecbfa370dd9b1a35268b6309e093cf16b226b37cb61b600f015ba6480a214f2ef1d1ec659296da8bad035e81ca418b1a2926768f7db11447f8936c33d0a399205f98fc8c1e71f0a868794bcb38315715e5dd29fd98742d1cab951349ed430cb9162e3e677bb02e19d136da4f5c237e9745e80adaa3c3e93d932d10a2d723a16670f027e301abb3d160c38e1d92ca112d202f15e02395ab0b5ffe805bc54406c071fca64f90823dce2024af30c602b5e8870ef4de55bc125ed053eab80d78af6221341c9c7578249a0779881483763e2d576148dce64632e882bab28cd7d9fb7afad5e2704a0b91f6c4bb38de74124cf82c11aac59d1341c069866b45aa63007f203161db12ca6713d9b8dd4ee9f3758eaed617ca06b81b2f0aad9a9f8e29c0f8c730120881ce936ab2b5f64819cdef31c9a24272a81706cae0d10e8cf87d8c3022392e8bba01f2280ded8e0f7d62323f18ee1e316e54f7e899e4cd989baa40401d401c8d01c682474ba5bbea179c17ec49d591269024fe8352b1ea55ecdbd0abf4b98d35779aad697bf0f9f870dca75e5039ef71558eea815a125594c49437b091660578cdabc9fd135c9a1716e570af3700ec3993bc8e91d3d4203d0d6ed0009c7bba5491ab8cceb9ec252635dd06641fee583d19af8762f8ca676bc55fa1c4c7b2a01dc2197b74e27bdeaac82da8a8f84ddcb364f6fba52064b8d48f09a9cb592c9a4361c562be314c66ef172c2119c1837ff5442bfb202da7bc55868e6e1e66931d02251f40956e5ce1e5a4d54e15a089e23c27f2f45f7dc556dff0ddaf645ecce4ca88b79b41fa72c3e5c8e4596083c00ebacab49a42fafc1399d6f2d169c9c13e4ff22844c8ea3b93f3ceecf06e31ddac56c4b4112bb58d93205ede0fe365be3b80178554f93c721e1655825b3671c5b813e2085b4167728c8ef7144d537c8c86844270befa082b219f431cb226c65b9a5bc0a7cb2e8502a8f5ff72a623062f078a2c4b10af00e5bf093687d0c4ef90cd142b3af51699ad9a2ad6b00aba9c152ee8cca55642daa92befc4f45be7626751fdb098c4790d598a47dfed7c5ec89576a0c2796df99f837de21af48b42b6bf508e37c54cde2e9522beca0988a7b1a5fcd5fdcb5a510273cdf5b0de868ad3c35724352d03e0ee1149fdca7cba29a8c5ecaec2b9d8ed1e7727eedf601e7a0bdba81657ce60a867db2deb716904c15ad6a8ceeb32ea668bada11f6f6abdea72804289ecc2e661a77f8bd59a05cbb251a2f7c302331d834c622ab8410e5ac5320a40d3806cfc8f50dab8392aefe431bc380ae2a1766f489042ba71dac0695dcda101a7414a4a0ea06b074ea6c7e8478ca2fedcc29dbf9dafd81309359077f0501e6d946a1d55c67c7699310299b053e12faec7b9d8267b24d2eee051d681c431b9edd4f139eb37acd6b804ab5fe3512b078a9fcf19a26b09d61cbd6eabab21f4f88017f8469acaf8e4c9264d34736040ce5c408ded5c0b61c6695d36f04c89be51b84847bbaf21824c30aa2760e82674b8f69c6f501f69ad048ebb8d7872d9a8acb63918779ba7788dd30da5f43a03d4e4dae0a6c83c3cfd746281f5dac6721bee4ad1dd518c6a1bd26e5e228d7c434a95278ba4901c5d8be33af3f87af4407949d4f12194fa86d87e5b38d81092de202cd02dafc825f3259661f1473998fb9d9e422fb93055bbcf21e03f394ee3d4b81d295a74dd7fb3045ef26611558506ca73e4518505c4a769d49f75e596d62d93d6e068a4e82de16c407fee1f87b3c77ff77c01a7fda5677ad2b74a6e9c297969d38ba35f3a3fdc0ed067666c8fa7cbaff85c8c063d47bfd5d1489d67a77061c291d2d6b6e07928774cb9e6b0c8af8bc8ccfa66cce528de08060596d8a2157e85e4f40205547015de3e54ea96b53b0a51390dae93344f505af334a762359e6bda7cff00a663c6285d038a9d1cc4bace16319a0c52a73a91627d5670d3c4c690dd985da541f80b0403f2d1b7472c206b58650470ba8195185bc32689c123cba71639dac27039b68d14fd22d40e5a162d8d81c38dfe7a1b1ee1a295a877f54f69aabe8f0875321f332735e1f98fed3c88d0152173278eac864d49a5122652107769dbe3abfff53ae46a1aefc59828df742d92c96765fc32980bd8e4c8ae4378d9059a9b2a4fdcede77216bea8c9ef0fcb3d7af327eaa2688aa95fe254453a378d5ef1103a299fadc40e9f06ec00bac4ef5194c1c6c2dbf2c2f1e56f56ae8f1499e232c9e54c7bcb13091f0e30b37c0709f6100a0f630edff459c751391307eac15b823fd10702a3b3ec7fbd5002ab83def308721b863119fac89f0026679d950d192c3cfcc8c85dd74c2b4af2eb1f6e89d270437a130ececd7015d1f8f91b86bd679dcb05f7189026f88badc0fdd9d0b999cc09134adf98888f11a0ca5d1b18a63927b9851d4d5166470015e328f0bcc06bd57d51829ca89108856dd71fdc829c8b25263c76a55b2003551be6e3e7e42f802aa1a65dc7505da96e8da0bfd2ade640b79e1adf4ae1567d58aabf18c6346a7c770ad696d8ea3ea739ce701ed0db157bd48cbc88c7118066d24ea654a2cd29795d4497dc3361c2e9e8e54aa24c68876dc6bcc4e06da7072cbd66d54d9daff87183869b74ae55ed6266c27704a7de21ec8f9b9dcf7b84cc2ef7c3b38330a27c04e09ef28cbd28eb6093b9fed613f9875d648968368d4563021eea34fee52d7979940d4ca3f6187f9894fea22e57db5d078101871286e9b79f10ea336aaab9d8101cc5ba0d292ee3fdfca65d56fd5095722b436f14f4e7c41999c60e43860a57b48bad0bca3f8f34f9e95f7baef083831115f5b393cc7e06039c8b9ea784c6cc568f5b7dbf1106ec097fe3491fc8d9bed7c4829343a79d280cf492468307288af6b1306afa47eeecac1b5a86f2b1b455e24654539e2e51c577f34af0b0926d934fa1af83c1ba186294f9b80ff78e7e2c3e011d69e60cf811e1958ee7a5600f1e32699f702fafd7ac0cb5a7ca46154c033f77bd92f1ccb310ab54076f8de57b99be7cbbc7f3ff4001edcca59c228a29ed9a9018d3a0ffc062848cfccde4df2cd01a6f589f2e310f4ffe2fbd729f6b6a672f0403cd1dc36e2a0ff59584353dfe3e5869427234bd5f4d21ef0929f05c695aaf4bf10ccdf25bb20050ed615a97459975ab8ef51a26211a74b8f66c57db2e883868c438d25d35bc678e99a9104c85f70ce4efd3ef074b053df2fd43f7be7320679fbb90690d</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>树莓派</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机通信网</title>
+    <url>/2021/03/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%80%9A%E4%BF%A1%E7%BD%91/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="计算机通信网"><a href="#计算机通信网" class="headerlink" title="计算机通信网"></a><center>计算机通信网</center></h1><h2 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h2><h3 id="子网划分"><a href="#子网划分" class="headerlink" title="子网划分"></a>子网划分</h3><p>a类地址：1~126</p>
+<p>b类地址：128~191</p>
+<p>c类地址：192~223</p>
+<p>d类：224~239拥有组播通信</p>
+<p>E类：240~255 保留给科学研究使用</p>
+<p>私有地址包括3组 ：</p>
+<p>A类：10.0.0.0~10.255.255.255</p>
+<p>B类：172.16.0.0~172.31.255.255</p>
+<p>C类：192.168.0.0~192.168.255.255</p>
+<h3 id="路由器-route"><a href="#路由器-route" class="headerlink" title="路由器 route"></a>路由器 route</h3><p>把东西从一个地方送到另外一个地方的过程中，根据什么理由找到最佳的路的过程。</p>
+<p>​跨越从源主机到目标主机的一个互联网络来转发数据包的过程。</p>
+<p>路由器：router<br>能够将数据包转发到正确的目的地，并在转发的过程中选择最佳路径的设备就是路由器。</p>
+<p>按顺序传输文件，按需送达文件。</p>
+<p>在路由器上，有两个重要的东西，一个是路由算法，用来确定通过网络的端到端路径；另一个是转发表，转发表确定了本路由器如何转发分组。需要注意的是对于转发表，目的地址是32位的IP地址，所有转发表是按照地址的范围转发的。<br><img src="https://img-blog.csdn.net/20170928165940545" alt=""></p>
+<h3 id="路由表"><a href="#路由表" class="headerlink" title="路由表"></a>路由表</h3><ul>
+<li>路由表是在内存中存放在内核中的。</li>
+<li>路由器根据路由表进行路径的选择</li>
+<li>路由表中有目标网段和端口<h4 id="路由的类型："><a href="#路由的类型：" class="headerlink" title="路由的类型："></a>路由的类型：</h4></li>
+</ul>
+<ol>
+<li>​直连路由 </li>
+</ol>
+<p>满足的条件（配置好ip地址，激活接口up状态）</p>
+<ol>
+<li>​静态路由</li>
+</ol>
+<p>需要人去手工的添加-》单向的<br>​</p>
+<ol>
+<li>默认路由</li>
+</ol>
+<p>当找不到匹配路由时走默认路由==》属于特殊的静态路由==》填写网关实质上就是配置一条默认路由</p>
+<ol>
+<li>动态路由</li>
+</ol>
+<p>路由器之间会互相告诉其他的路由器我能到哪里，相互进行学习–》动态路由协议：rip协议、ospf协议<br>shishenme</p>
+<ol>
+<li>路由的优先级：</li>
+</ol>
+<p>​直连路由–》静态路由–》动态路由–》默认路由</p>
+<ul>
+<li>路由转发数据包的封装过程：</li>
+</ul>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpicture-pool.oss-cn-beijing.aliyuncs.com%2F006tNc79gy1g2xpmjpx6lj30zu0gmq9y.jpg&amp;refer=http%3A%2F%2Fpicture-pool.oss-cn-beijing.aliyuncs.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1619161640&amp;t=56a7ccf16296086feabc7da65a75f7b7" alt=""></p>
+<h3 id="网络连接的建立"><a href="#网络连接的建立" class="headerlink" title="网络连接的建立"></a>网络连接的建立</h3><p>传输层</p>
+<h3 id="虚电路和数据报"><a href="#虚电路和数据报" class="headerlink" title="虚电路和数据报"></a>虚电路和数据报</h3><h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><p>虚电路：严格预留资源，不会造成资源浪费，类似飞机。</p>
+<p>数据报：不预留资源，统计复用，类似公交车。</p>
+<p>网络层可以在两台主机之间提供无连接服务或连接服务。由网络层向运输层提供</p>
+<p>虚电路网络：仅提供连接服务</p>
+<p>数据报网络：仅提供无连接服务</p>
+<blockquote>
+<p>保障数据报里，端到端的通信。</p>
+</blockquote>
+<ol>
+<li>建立连接</li>
+</ol>
+<p>在建立阶段，发送运输层与网络层联系，指定接收方地址，等待网络建立虚电路。网络层决定发送方和接收方之间的路径，即该虚电路的所有分组要通过的一系列链路和路由器。网络层也为沿着该路径的每条链路决定VC号。最后，网络层在沿着路径的每台路由器的转发表中增加一个表项。</p>
+<ol>
+<li>数据传送</li>
+</ol>
+<p><img src="https://img-blog.csdn.net/20180523215900208" alt=""></p>
+<ol>
+<li>虚电路删除。</li>
+</ol>
+<p>当发送方（或接收方）通知网络层它希望终止该虚电路时，就启动该阶段。网络层通常将通知网络另一侧的端系统结束呼叫，并更新路径上每台路由器中的转发表以表明该虚电路已不存在。</p>
+<h3 id="运输层连接建立和网络层连接建立区别："><a href="#运输层连接建立和网络层连接建立区别：" class="headerlink" title="运输层连接建立和网络层连接建立区别："></a>运输层连接建立和网络层连接建立区别：</h3><p>运输层的连接建立仅涉及两个端系统，两个端系统独自决定运输层连接的参数（初始序号和流量控制窗口长度），端系统知道该运输层连接，但网络中路由器对这些完全不知情。</p>
+<p>虚电路网络层，沿着两个端系统之间的路径上的路由器都要参与虚电路的建立，且每台路由器都完全知道经过它的所有虚电路。</p>
+<h3 id="IP最长匹配原则"><a href="#IP最长匹配原则" class="headerlink" title="IP最长匹配原则"></a>IP最长匹配原则</h3><p>不多做解释，可以自行看下图所示方法。<br><img src="https://img-blog.csdn.net/20170928165948842" alt=""></p>
+<h3 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><ol>
+<li>构建数学模型，通过模型对数据报和虚电路进行性能分析。</li>
+<li>最长前缀匹配的优势是什么。</li>
+</ol>
+<p>用什么角度评判网路的各种性能。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>数据指标</th>
+<th>虚电路</th>
+<th>数据报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可靠性</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>健壮性</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>差错控制</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Qos</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>时间空间（建立连接、多经）</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>安全性（病毒、监听、伪装）</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>时间开销</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>平衡节能</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>网路复杂度</td>
+<td>x</td>
+<td>v</td>
+</tr>
+<tr>
+<td>带宽</td>
+<td>v</td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li><p>虚电路服务适用与交互作用，不仅及时、传输较为可靠且网路开销小。</p>
+</li>
+<li><p>数据报服务适用于单个分组构成的、不具交互作用的信息及对传输要求不高的场合。</p>
+</li>
+</ul>
+<h3 id="IP数据报格式"><a href="#IP数据报格式" class="headerlink" title="IP数据报格式"></a>IP数据报格式</h3><p><img src="https://bkimg.cdn.bcebos.com/pic/c2fdfc039245d688274d540cacc27d1ed31b24cf?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto" alt=""></p>
+<p>Internet(datagram)、ATM(VC)</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>数据指标</th>
+<th>虚电路</th>
+<th>数据报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>速率</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>带宽</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>吞吐量</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>时延</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>时延带宽积</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>往返时间</td>
+<td>v</td>
+<td>x</td>
+</tr>
+<tr>
+<td>利用率</td>
+<td>v</td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="参考博客："><a href="#参考博客：" class="headerlink" title="参考博客："></a>参考博客：</h2><ul>
+<li><a href="https://blog.csdn.net/qq_43297621/article/details/108132285#t27">网络层详解</a></li>
+<li><a href="https://blog.csdn.net/qq_22238021/article/details/80426135">虚电路和数据报网络</a></li>
+</ul>
+<h2 id="路由算法"><a href="#路由算法" class="headerlink" title="路由算法"></a>路由算法</h2>]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>研究生课程</tag>
       </tags>
   </entry>
   <entry>
