@@ -29,8 +29,18 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -525,7 +535,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    377
+                    350
                 </div>
                 
 
@@ -564,9 +574,9 @@
 <li>安装Python</li>
 </ul>
 <p><code>python --version</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"># 安装venv</span><br><span class="line">$ sudo pip3 install virtualenv virtualenvwrapper</span><br><span class="line"></span><br><span class="line"># （可选）为了尽快下载，可以用国内镜像下载</span><br><span class="line">$ sudo pip3 install -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple virtualenv virtualenvwrapper </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 查看版本</span><br><span class="line">$ virtualenv --version</span><br><span class="line">16.7.7</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 新建测试目录</span><br><span class="line">$ mkdir venvtest &amp;&amp; cd venvtest</span><br><span class="line"></span><br><span class="line"># 安装python的隔离环境，python相关目录放在ENV文件夹</span><br><span class="line">$ virtualenv ENV</span><br><span class="line">Using base prefix &#39;&#x2F;usr&#39;</span><br><span class="line">New python executable in &#x2F;home&#x2F;pi&#x2F;venvtest&#x2F;ENV&#x2F;bin&#x2F;python3</span><br><span class="line">Also creating executable in &#x2F;home&#x2F;pi&#x2F;venvtest&#x2F;ENV&#x2F;bin&#x2F;python</span><br><span class="line">Installing setuptools, pip, wheel...</span><br><span class="line">done.</span><br></pre></td></tr></table></figure>
-<h2 id="安装TensorFlow-Lite"><a href="#安装TensorFlow-Lite" class="headerlink" title="安装TensorFlow Lite"></a>安装TensorFlow Lite</h2><p>从github下载pi4b_tensorflow_lite<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;whgreate&#x2F;pi4b_tensorflow_lite</span><br><span class="line"># 安装tensorflow lite</span><br><span class="line">$ pip install tflite_runtime-1.14.0-cp37-cp37m-linux_armv7l.whl </span><br><span class="line"></span><br><span class="line">Looking in indexes: https:&#x2F;&#x2F;pypi.org&#x2F;simple, https:&#x2F;&#x2F;www.piwheels.org&#x2F;simple</span><br><span class="line">Processing .&#x2F;tflite_runtime-1.14.0-cp37-cp37m-linux_armv7l.whl</span><br><span class="line">Installing collected packages: tflite-runtime</span><br><span class="line">Successfully installed tflite-runtime-1.14.0</span><br><span class="line"></span><br><span class="line"># numpy pillow库需要的一些依赖</span><br><span class="line">$ sudo apt-get install libatlas-base-dev</span><br><span class="line">$ sudo apt-get install libjpeg-dev</span><br><span class="line"></span><br><span class="line"># 安装 numpy pillow</span><br><span class="line">$ pip install -r requirements.txt</span><br></pre></td></tr></table></figure></p>
-<h2 id="进行测试"><a href="#进行测试" class="headerlink" title="进行测试"></a>进行测试</h2><p>运行图像分类模型<br>选取TensorFlow Example的图片，执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">python label_image.py -m mobilenet_v1_1.0_224_quant.tflite -l labels_mobilenet_quant_v1_224.txt -i grace_hopper.bmp</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">INFO: Initialized TensorFlow Lite runtime.</span><br><span class="line">0.658824: military uniform</span><br><span class="line">0.149020: Windsor tie</span><br><span class="line">0.039216: bow tie</span><br><span class="line">0.027451: mortarboard</span><br><span class="line">0.019608: bulletproof vest</span><br></pre></td></tr></table></figure><br>用摄像头拍摄一张照片进行测试：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">raspistill -o demo.jpg</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">python label_image.py -m mobilenet_v1_1.0_224_quant.tflite -l labels_mobilenet_quant_v1_224.txt -i demo.jpg</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">0.266667: barbershop</span><br><span class="line">0.098039: potter&#39;s wheel</span><br><span class="line">0.050980: laptop</span><br><span class="line">0.043137: barber chair</span><br><span class="line">0.043137: shoe shop</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"># 安装venv</span><br><span class="line">$ sudo pip3 install virtualenv virtualenvwrapper</span><br><span class="line"></span><br><span class="line"># （可选）为了尽快下载，可以用国内镜像下载</span><br><span class="line">$ sudo pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple virtualenv virtualenvwrapper </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 查看版本</span><br><span class="line">$ virtualenv --version</span><br><span class="line">16.7.7</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 新建测试目录</span><br><span class="line">$ mkdir venvtest &amp;&amp; cd venvtest</span><br><span class="line"></span><br><span class="line"># 安装python的隔离环境，python相关目录放在ENV文件夹</span><br><span class="line">$ virtualenv ENV</span><br><span class="line">Using base prefix &#x27;/usr&#x27;</span><br><span class="line">New python executable in /home/pi/venvtest/ENV/bin/python3</span><br><span class="line">Also creating executable in /home/pi/venvtest/ENV/bin/python</span><br><span class="line">Installing setuptools, pip, wheel...</span><br><span class="line">done.</span><br></pre></td></tr></table></figure>
+<h2 id="安装TensorFlow-Lite"><a href="#安装TensorFlow-Lite" class="headerlink" title="安装TensorFlow Lite"></a>安装TensorFlow Lite</h2><p>从github下载pi4b_tensorflow_lite<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/whgreate/pi4b_tensorflow_lite</span><br><span class="line"># 安装tensorflow lite</span><br><span class="line">$ pip install tflite_runtime-1.14.0-cp37-cp37m-linux_armv7l.whl </span><br><span class="line"></span><br><span class="line">Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple</span><br><span class="line">Processing ./tflite_runtime-1.14.0-cp37-cp37m-linux_armv7l.whl</span><br><span class="line">Installing collected packages: tflite-runtime</span><br><span class="line">Successfully installed tflite-runtime-1.14.0</span><br><span class="line"></span><br><span class="line"># numpy pillow库需要的一些依赖</span><br><span class="line">$ sudo apt-get install libatlas-base-dev</span><br><span class="line">$ sudo apt-get install libjpeg-dev</span><br><span class="line"></span><br><span class="line"># 安装 numpy pillow</span><br><span class="line">$ pip install -r requirements.txt</span><br></pre></td></tr></table></figure></p>
+<h2 id="进行测试"><a href="#进行测试" class="headerlink" title="进行测试"></a>进行测试</h2><p>运行图像分类模型<br>选取TensorFlow Example的图片，执行以下命令：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">python label_image.py -m mobilenet_v1_1.0_224_quant.tflite -l labels_mobilenet_quant_v1_224.txt -i grace_hopper.bmp</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">INFO: Initialized TensorFlow Lite runtime.</span><br><span class="line">0.658824: military uniform</span><br><span class="line">0.149020: Windsor tie</span><br><span class="line">0.039216: bow tie</span><br><span class="line">0.027451: mortarboard</span><br><span class="line">0.019608: bulletproof vest</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>用摄像头拍摄一张照片进行测试：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">raspistill -o demo.jpg</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">python label_image.py -m mobilenet_v1_1.0_224_quant.tflite -l labels_mobilenet_quant_v1_224.txt -i demo.jpg</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">0.266667: barbershop</span><br><span class="line">0.098039: potter&#x27;s wheel</span><br><span class="line">0.050980: laptop</span><br><span class="line">0.043137: barber chair</span><br><span class="line">0.043137: shoe shop</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
 
                 
             </div>
@@ -1176,7 +1186,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">83.4k</span>&nbsp;字
+                class="white-color">82.2k</span>&nbsp;字
             
             
             
@@ -1443,21 +1453,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>

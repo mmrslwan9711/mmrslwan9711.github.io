@@ -29,8 +29,18 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -517,14 +527,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    390
+                    350
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -545,18 +555,18 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="目标识别数据集扩充-旋转扩充"><a href="#目标识别数据集扩充-旋转扩充" class="headerlink" title="目标识别数据集扩充_旋转扩充"></a>目标识别数据集扩充_旋转扩充</h1><h2 id="扩充方法"><a href="#扩充方法" class="headerlink" title="扩充方法"></a>扩充方法</h2><h3 id="原图"><a href="#原图" class="headerlink" title="原图"></a>原图</h3><p><img src="https://www.codekp.cn/download/img/数据集扩充/Original.jpg" alt=""></p>
-<h2 id="标签格式转化"><a href="#标签格式转化" class="headerlink" title="标签格式转化"></a>标签格式转化</h2><h3 id="标签xml转txt格式"><a href="#标签xml转txt格式" class="headerlink" title="标签xml转txt格式"></a>标签xml转txt格式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def xml_to_txt(self,dw,dh,xmin,ymin ,xmax ,ymax):</span><br><span class="line">    x &#x3D; (xmin+ xmax) &#x2F; 2.0</span><br><span class="line">    y &#x3D; (ymax + ymin) &#x2F; 2.0</span><br><span class="line">    w &#x3D; xmax- xmin</span><br><span class="line">    h &#x3D; ymax - ymin</span><br><span class="line">    x &#x3D; x &#x2F;dw</span><br><span class="line">    w &#x3D; w &#x2F; dw</span><br><span class="line">    y &#x3D; y &#x2F; dh</span><br><span class="line">    h &#x3D; h &#x2F; dh</span><br><span class="line">    return (x, y, w, h)</span><br></pre></td></tr></table></figure>
-<h3 id="txt转xml格式"><a href="#txt转xml格式" class="headerlink" title="txt转xml格式"></a>txt转xml格式</h3><p>其实就是个数学计算而已<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def txt_to_xml(self,Pwidth,Pheight,x,y , wp, hp):</span><br><span class="line">    xmin &#x3D; int((x * Pwidth + 1) - wp * 0.5 * Pwidth)</span><br><span class="line">    ymin &#x3D; int((y * Pheight + 1) - hp * 0.5 * Pheight)</span><br><span class="line">    xmax &#x3D; int((x* Pwidth + 1) + wp * 0.5 * Pwidth)</span><br><span class="line">    ymax &#x3D; int((y * Pheight + 1) + hp * 0.5 * Pheight)</span><br></pre></td></tr></table></figure></p>
-<h2 id="txt文件"><a href="#txt文件" class="headerlink" title="txt文件"></a>txt文件</h2><h3 id="txt文件的读写"><a href="#txt文件的读写" class="headerlink" title="txt文件的读写"></a>txt文件的读写</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">def saveFlipLabel(txtpath,txt_save_path):</span><br><span class="line">    with open(txt_save_path, &quot;w&quot;) as outfile:</span><br><span class="line">        with open(txtpath, &quot;r&quot;) as infile:</span><br><span class="line">            for line in infile.readlines():</span><br><span class="line">                words &#x3D; line.split(&quot; &quot;)</span><br><span class="line">                horizontal_coord &#x3D; float(words[1])</span><br><span class="line">                outfile.write(</span><br><span class="line">                    words[0] + &quot; &quot; + str(format(1 - horizontal_coord, &quot;.6f&quot;)) + &quot; &quot; + words[2] + &quot; &quot; + words[3] + &quot; &quot; +</span><br><span class="line">                    words[4])</span><br></pre></td></tr></table></figure>
-<h3 id="txt文件的拷贝"><a href="#txt文件的拷贝" class="headerlink" title="txt文件的拷贝"></a>txt文件的拷贝</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def copyLabel(txtpath,txt_save_path):</span><br><span class="line">    shutil.copyfile(txtpath, txt_save_path)</span><br></pre></td></tr></table></figure>
-<h2 id="main"><a href="#main" class="headerlink" title="main"></a>main</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">if __name__ &#x3D;&#x3D; &#39;__main__&#39;:</span><br><span class="line">    img_aug &#x3D; ImgAugemention()</span><br><span class="line">    imgs_path &#x3D; &#39;.&#x2F;img&#x2F;&#39;</span><br><span class="line">    txt_path &#x3D; &#39;.&#x2F;label&#x2F;&#39;</span><br><span class="line">    img_save_path &#x3D; &#39;.&#x2F;images&#x2F;&#39;</span><br><span class="line">    txt_save_path &#x3D; &#39;.&#x2F;labels&#x2F;&#39;</span><br><span class="line">    angle_list &#x3D; [0,30,60, 90, 120, 150, 180, 270,330]</span><br><span class="line">    img_aug.process_img2(imgs_path, txt_path, img_save_path, txt_save_path)</span><br></pre></td></tr></table></figure>
+<h2 id="标签格式转化"><a href="#标签格式转化" class="headerlink" title="标签格式转化"></a>标签格式转化</h2><h3 id="标签xml转txt格式"><a href="#标签xml转txt格式" class="headerlink" title="标签xml转txt格式"></a>标签xml转txt格式</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def xml_to_txt(self,dw,dh,xmin,ymin ,xmax ,ymax):</span><br><span class="line">    x = (xmin+ xmax) / 2.0</span><br><span class="line">    y = (ymax + ymin) / 2.0</span><br><span class="line">    w = xmax- xmin</span><br><span class="line">    h = ymax - ymin</span><br><span class="line">    x = x /dw</span><br><span class="line">    w = w / dw</span><br><span class="line">    y = y / dh</span><br><span class="line">    h = h / dh</span><br><span class="line">    return (x, y, w, h)</span><br></pre></td></tr></table></figure>
+<h3 id="txt转xml格式"><a href="#txt转xml格式" class="headerlink" title="txt转xml格式"></a>txt转xml格式</h3><p>其实就是个数学计算而已<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def txt_to_xml(self,Pwidth,Pheight,x,y , wp, hp):</span><br><span class="line">    xmin = int((x * Pwidth + 1) - wp * 0.5 * Pwidth)</span><br><span class="line">    ymin = int((y * Pheight + 1) - hp * 0.5 * Pheight)</span><br><span class="line">    xmax = int((x* Pwidth + 1) + wp * 0.5 * Pwidth)</span><br><span class="line">    ymax = int((y * Pheight + 1) + hp * 0.5 * Pheight)</span><br></pre></td></tr></table></figure></p>
+<h2 id="txt文件"><a href="#txt文件" class="headerlink" title="txt文件"></a>txt文件</h2><h3 id="txt文件的读写"><a href="#txt文件的读写" class="headerlink" title="txt文件的读写"></a>txt文件的读写</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def saveFlipLabel(txtpath,txt_save_path):</span><br><span class="line">    with open(txt_save_path, &quot;w&quot;) as outfile:</span><br><span class="line">        with open(txtpath, &quot;r&quot;) as infile:</span><br><span class="line">            for line in infile.readlines():</span><br><span class="line">                words = line.split(&quot; &quot;)</span><br><span class="line">                horizontal_coord = float(words[1])</span><br><span class="line">                outfile.write(</span><br><span class="line">                    words[0] + &quot; &quot; + str(format(1 - horizontal_coord, &quot;.6f&quot;)) + &quot; &quot; + words[2] + &quot; &quot; + words[3] + &quot; &quot; +</span><br><span class="line">                    words[4])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="txt文件的拷贝"><a href="#txt文件的拷贝" class="headerlink" title="txt文件的拷贝"></a>txt文件的拷贝</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def copyLabel(txtpath,txt_save_path):</span><br><span class="line">    shutil.copyfile(txtpath, txt_save_path)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="main"><a href="#main" class="headerlink" title="main"></a>main</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">if __name__ == &#x27;__main__&#x27;:</span><br><span class="line">    img_aug = ImgAugemention()</span><br><span class="line">    imgs_path = &#x27;./img/&#x27;</span><br><span class="line">    txt_path = &#x27;./label/&#x27;</span><br><span class="line">    img_save_path = &#x27;./images/&#x27;</span><br><span class="line">    txt_save_path = &#x27;./labels/&#x27;</span><br><span class="line">    angle_list = [0,30,60, 90, 120, 150, 180, 270,330]</span><br><span class="line">    img_aug.process_img2(imgs_path, txt_path, img_save_path, txt_save_path)</span><br></pre></td></tr></table></figure>
 <p>主要作用是实现对数据的扩展，对整个文件夹内所有文件进行读取，一键扩展</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;env python</span><br><span class="line"></span><br><span class="line">import cv2</span><br><span class="line">import math</span><br><span class="line">import numpy as np</span><br><span class="line">import os</span><br><span class="line">import pdb</span><br><span class="line">import xml.etree.ElementTree as ET</span><br><span class="line">from Image_expansion import *</span><br><span class="line"></span><br><span class="line">class ImgAugemention():</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.angle &#x3D; 90</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/env python</span><br><span class="line"></span><br><span class="line">import cv2</span><br><span class="line">import math</span><br><span class="line">import numpy as np</span><br><span class="line">import os</span><br><span class="line">import pdb</span><br><span class="line">import xml.etree.ElementTree as ET</span><br><span class="line">from Image_expansion import *</span><br><span class="line"></span><br><span class="line">class ImgAugemention():</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.angle = 90</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>主要由ImgAugemention类和Image_expansion构成</p>
 <h2 id="数据扩展结果"><a href="#数据扩展结果" class="headerlink" title="数据扩展结果"></a>数据扩展结果</h2><p><img src="https://www.codekp.cn/download/img/旋转扩充数据集/0-270.png" alt=""></p>
 <h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p>如果需源码请联系本人，以上传至git私人仓库。</p>
 <ul>
-<li><a href="https://github.com/mmrslwan1110/Image-expansion2" target="_blank" rel="noopener">https://github.com/mmrslwan1110/Image-expansion2</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/mmrslwan1110/Image-expansion2">https://github.com/mmrslwan1110/Image-expansion2</a></li>
 </ul>
 
                 
@@ -1155,7 +1165,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">83.4k</span>&nbsp;字
+                class="white-color">82.2k</span>&nbsp;字
             
             
             
@@ -1422,21 +1432,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>

@@ -29,8 +29,18 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -521,7 +531,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    431
+                    443
                 </div>
                 
 
@@ -548,23 +558,23 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="网站视频下载及按帧转为jpg"><a href="#网站视频下载及按帧转为jpg" class="headerlink" title="网站视频下载及按帧转为jpg"></a>网站视频下载及按帧转为jpg</h1><h2 id="1、准备切割视频"><a href="#1、准备切割视频" class="headerlink" title="1、准备切割视频"></a>1、准备切割视频</h2><p>视频切割算法:<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">clc;</span><br><span class="line">clear;</span><br><span class="line"><span class="comment">%读取视频</span></span><br><span class="line">video_file=<span class="string">'D:\1.mp4'</span>;</span><br><span class="line">obj=VideoReader(video_file);</span><br><span class="line">frame_num=obj.NumberOfFrames;<span class="comment">%一共有多少帧</span></span><br><span class="line"><span class="comment">% 分离图片</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">15</span><span class="comment">%读取前15帧</span></span><br><span class="line">    img=strcat(<span class="string">'D:\picture\',num2str(i));</span></span><br><span class="line"><span class="string">    img=strcat(img,'</span>.jpg');</span><br><span class="line">    I=read(obj,<span class="built_in">i</span>);<span class="comment">%读出第15帧图片</span></span><br><span class="line">    imwrite(I,strcat(<span class="string">'D:\picture\',num2str(i),'</span>.jpg'),<span class="string">'jpg'</span>);<span class="comment">% 保存帧</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure></p>
+                <h1 id="网站视频下载及按帧转为jpg"><a href="#网站视频下载及按帧转为jpg" class="headerlink" title="网站视频下载及按帧转为jpg"></a>网站视频下载及按帧转为jpg</h1><h2 id="1、准备切割视频"><a href="#1、准备切割视频" class="headerlink" title="1、准备切割视频"></a>1、准备切割视频</h2><p>视频切割算法:<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">clc;</span><br><span class="line">clear;</span><br><span class="line"><span class="comment">%读取视频</span></span><br><span class="line">video_file=<span class="string">&#x27;D:\1.mp4&#x27;</span>;</span><br><span class="line">obj=VideoReader(video_file);</span><br><span class="line">frame_num=obj.NumberOfFrames;<span class="comment">%一共有多少帧</span></span><br><span class="line"><span class="comment">% 分离图片</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">15</span><span class="comment">%读取前15帧</span></span><br><span class="line">    img=strcat(<span class="string">&#x27;D:\picture\&#x27;,num2str(i));</span></span><br><span class="line"><span class="string">    img=strcat(img,&#x27;</span>.jpg&#x27;);</span><br><span class="line">    I=read(obj,<span class="built_in">i</span>);<span class="comment">%读出第15帧图片</span></span><br><span class="line">    imwrite(I,strcat(<span class="string">&#x27;D:\picture\&#x27;,num2str(i),&#x27;</span>.jpg&#x27;),<span class="string">&#x27;jpg&#x27;</span>);<span class="comment">% 保存帧</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="2、问题"><a href="#2、问题" class="headerlink" title="2、问题"></a>2、问题</h2><h4 id="考虑使用-you-get下载视频"><a href="#考虑使用-you-get下载视频" class="headerlink" title="考虑使用 you-get下载视频"></a>考虑使用 you-get下载视频</h4><ol>
 <li>首先安装<br><kbd>pip install you-get</kbd></li>
 <li>下载<br><kbd>you-get -i [URL]</kbd><br>-i:查看可以下载的详细信息<br><kbd>you-get —format=dash-flv  [URL]</kbd></li>
 </ol>
 <p>以此方法可以直接下载大部分网站上的视频。</p>
-<h4 id="例子：以小鲤鱼历险记为例bilibili"><a href="#例子：以小鲤鱼历险记为例bilibili" class="headerlink" title="例子：以小鲤鱼历险记为例bilibili"></a>例子：以小鲤鱼历险记为例<a href="https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837" target="_blank" rel="noopener">bilibili</a></h4><ol>
-<li>直接通过you-get进行下载<br>下载到的文件一般是flv需要解码，不能直接读取。<br><kbd>you-get <a href="https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837</a></kbd></li>
+<h4 id="例子：以小鲤鱼历险记为例bilibili"><a href="#例子：以小鲤鱼历险记为例bilibili" class="headerlink" title="例子：以小鲤鱼历险记为例bilibili"></a>例子：以小鲤鱼历险记为例<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837">bilibili</a></h4><ol>
+<li>直接通过you-get进行下载<br>下载到的文件一般是flv需要解码，不能直接读取。<br><kbd>you-get <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837">https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837</a></kbd></li>
 </ol>
 <p><img src="https://img-blog.csdnimg.cn/20201120164038867.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
 <ol>
-<li><p>通过you-get -i 获取视频信息<br>找到需求的部分，本例使用小鲤鱼历险记mp4、720p为例。<br><kbd>you-get -i <a href="https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837</a></kbd><br><img src="https://img-blog.csdnimg.cn/20201120164038873.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<li><p>通过you-get -i 获取视频信息<br>找到需求的部分，本例使用小鲤鱼历险记mp4、720p为例。<br><kbd>you-get -i <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837">https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837</a></kbd><br><img src="https://img-blog.csdnimg.cn/20201120164038873.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
 </li>
 <li><p>通过you-get —format=dash-flv  获取视频信息<br>找到需求的部分，本例使用小鲤鱼历险记mp4、720p为例。 </p>
 </li>
 </ol>
-<p><kbd>you-get —format=dash-720  <a href="https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837</a></kbd></p>
+<p><kbd>you-get —format=dash-720  <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837">https://www.bilibili.com/video/BV1Ns411r7cX?from=search&amp;seid=2589828094683508837</a></kbd></p>
 <p><img src="https://img-blog.csdnimg.cn/20201120164038865.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
 <ol>
 <li>下载下来的文件地址为终端所在地址：<br>本文中为<kbd>E:\Users\root\【720p】小鲤鱼历险记【2006】【完结】【无水印高清】 (P1. 小鲤鱼历险记 01)[00].mp4</kbd></li>
@@ -575,15 +585,15 @@
 <p>参考：</p>
 <ul>
 <li><ol>
-<li><a href="http://www.codecguide.com/download_k-lite_codec_pack_basic.htm" target="_blank" rel="noopener">http://www.codecguide.com/download_k-lite_codec_pack_basic.htm</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.codecguide.com/download_k-lite_codec_pack_basic.htm">http://www.codecguide.com/download_k-lite_codec_pack_basic.htm</a></li>
 </ol>
 </li>
 <li><ol>
-<li><a href="https://www.jianshu.com/p/dd7f04c27a79" target="_blank" rel="noopener">https://www.jianshu.com/p/dd7f04c27a79</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/dd7f04c27a79">https://www.jianshu.com/p/dd7f04c27a79</a></li>
 </ol>
 </li>
 <li><ol>
-<li><a href="https://mmrslwan1110.github.io" target="_blank" rel="noopener">https://mmrslwan1110.github.io</a></li>
+<li><a target="_blank" rel="noopener" href="https://mmrslwan1110.github.io">https://mmrslwan1110.github.io</a></li>
 </ol>
 </li>
 </ul>
@@ -1204,7 +1214,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">83.4k</span>&nbsp;字
+                class="white-color">82.2k</span>&nbsp;字
             
             
             
@@ -1471,21 +1481,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>

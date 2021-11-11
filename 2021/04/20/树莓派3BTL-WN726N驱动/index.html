@@ -29,8 +29,18 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -517,7 +527,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    329
+                    303
                 </div>
                 
 
@@ -548,15 +558,15 @@
 <li>为了得到两条独立的非干扰信道，采用外接usb网卡的形式。</li>
 </ul>
 <p>但是遇到了一个问题，无线网卡插入树莓派无法识别。于是只好安装驱动，网络上有很多方法，但一点用都没得。</p>
-<p>最终只能在树莓派的官方文档中找解决方法<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=62371" target="_blank" rel="noopener">教程</a></p>
+<p>最终只能在树莓派的官方文档中找解决方法<a target="_blank" rel="noopener" href="https://www.raspberrypi.org/forums/viewtopic.php?t=62371">教程</a></p>
 <p>根据帖子内容，找到自己内核版本对应的驱动</p>
 <p><code>3.18.11+ #780, #781 - 8188eu--3.18.3-739.tar.gz</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mkdir TP-Link</span><br><span class="line">cd TP-Link</span><br><span class="line">sudo wget http:&#x2F;&#x2F;downloads.fars-robotics.net&#x2F;wifi-drivers&#x2F;8188eu-drivers&#x2F;8188eu-3.18.3-739.tar.gz</span><br><span class="line"></span><br><span class="line">tar -zxvf 8188eu-3.18.3-739.tar.gz</span><br><span class="line"></span><br><span class="line">mkdir -p &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;kernel&#x2F;drivers&#x2F;net&#x2F;wireless</span><br><span class="line">sudo vim &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;modules.order</span><br><span class="line">sudo .&#x2F;install.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mkdir TP-Link</span><br><span class="line">cd TP-Link</span><br><span class="line">sudo wget http://downloads.fars-robotics.net/wifi-drivers/8188eu-drivers/8188eu-3.18.3-739.tar.gz</span><br><span class="line"></span><br><span class="line">tar -zxvf 8188eu-3.18.3-739.tar.gz</span><br><span class="line"></span><br><span class="line">mkdir -p /lib/modules/3.18.3+/kernel/drivers/net/wireless</span><br><span class="line">sudo vim /lib/modules/3.18.3+/modules.order</span><br><span class="line">sudo ./install.sh</span><br></pre></td></tr></table></figure>
 <h2 id="对本地网络地址进行配置"><a href="#对本地网络地址进行配置" class="headerlink" title="对本地网络地址进行配置"></a>对本地网络地址进行配置</h2><p>由于在实验室，所用的路由器的端口号是10.xxx.xxx.xxx 然后直接ip连接到了该位置，这肯定有问题。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano &#x2F;etc&#x2F;network&#x2F;interfaces</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/network/interfaces</span><br></pre></td></tr></table></figure>
 <p>修改以下内容设置默认网关，具体数值可以根据自身情况增加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">auto wlan1</span><br><span class="line">iface wlan1 inet dhcp</span><br><span class="line">pre-up wpa_supplicant -Dwext -i wlan0 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf$</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">allow-hotplug wlan1</span><br><span class="line">iface wlan1 inet manual</span><br><span class="line">    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf</span><br></pre></td></tr></table></figure>
-<h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo depmod -a </span><br><span class="line">sudo modprobe 8188eu</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">auto wlan1</span><br><span class="line">iface wlan1 inet dhcp</span><br><span class="line">pre-up wpa_supplicant -Dwext -i wlan0 -c/etc/wpa_supplicant/wpa_supplicant.conf$</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">allow-hotplug wlan1</span><br><span class="line">iface wlan1 inet manual</span><br><span class="line">    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo depmod -a </span><br><span class="line">sudo modprobe 8188eu</span><br></pre></td></tr></table></figure>
 
                 
             </div>
@@ -1142,7 +1152,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">83.4k</span>&nbsp;字
+                class="white-color">82.2k</span>&nbsp;字
             
             
             
@@ -1409,21 +1419,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>

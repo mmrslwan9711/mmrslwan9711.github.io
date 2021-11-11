@@ -29,8 +29,18 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -525,7 +535,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.2k
                 </div>
                 
 
@@ -559,7 +569,7 @@
 &nbsp;
 
  图一、水声通信仿真模型</center> 
-<a id="more"></a>
+<span id="more"></span>
 &nbsp;
 
 
@@ -669,7 +679,7 @@ b.8FSK不同信道下误码性能对比</center>
 图1冲激响应仿真</center>
 
 <ul>
-<li>程序：<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">fs = <span class="number">8e4</span>;        <span class="comment">%采样频率                           % Hz</span></span><br><span class="line">pathDelays = [<span class="number">0</span> <span class="number">15</span> <span class="number">30</span> <span class="number">60</span> <span class="number">120</span> <span class="number">150</span>]/<span class="number">1.5e3</span>;   <span class="comment">%设收发距离为100m,声速1500m/s</span></span><br><span class="line">avgPathGains = [<span class="number">0</span> <span class="number">-10</span> <span class="number">-13</span> <span class="number">-15</span> <span class="number">-18</span> <span class="number">-22</span>];<span class="comment">%信道增益</span></span><br><span class="line">fD = <span class="number">30</span>;     <span class="comment">%最大多普勒频移</span></span><br><span class="line">rchan = comm.RayleighChannel(<span class="string">'SampleRate'</span>,fs, ...</span><br><span class="line">    <span class="string">'PathDelays'</span>,pathDelays, ...</span><br><span class="line">    <span class="string">'AveragePathGains'</span>,avgPathGains, ...</span><br><span class="line">    <span class="string">'MaximumDopplerShift'</span>,fD, ...</span><br><span class="line">    <span class="string">'Visualization'</span>,<span class="string">'Impulse and frequency responses'</span>);</span><br><span class="line">x = randi([<span class="number">0</span> <span class="number">1</span>],<span class="number">1000</span>,<span class="number">1</span>);</span><br><span class="line">y = rchan(x);</span><br></pre></td></tr></table></figure>
+<li>程序：<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">fs = <span class="number">8e4</span>;        <span class="comment">%采样频率                           % Hz</span></span><br><span class="line">pathDelays = [<span class="number">0</span> <span class="number">15</span> <span class="number">30</span> <span class="number">60</span> <span class="number">120</span> <span class="number">150</span>]/<span class="number">1.5e3</span>;   <span class="comment">%设收发距离为100m,声速1500m/s</span></span><br><span class="line">avgPathGains = [<span class="number">0</span> <span class="number">-10</span> <span class="number">-13</span> <span class="number">-15</span> <span class="number">-18</span> <span class="number">-22</span>];<span class="comment">%信道增益</span></span><br><span class="line">fD = <span class="number">30</span>;     <span class="comment">%最大多普勒频移</span></span><br><span class="line">rchan = comm.RayleighChannel(<span class="string">&#x27;SampleRate&#x27;</span>,fs, ...</span><br><span class="line">    <span class="string">&#x27;PathDelays&#x27;</span>,pathDelays, ...</span><br><span class="line">    <span class="string">&#x27;AveragePathGains&#x27;</span>,avgPathGains, ...</span><br><span class="line">    <span class="string">&#x27;MaximumDopplerShift&#x27;</span>,fD, ...</span><br><span class="line">    <span class="string">&#x27;Visualization&#x27;</span>,<span class="string">&#x27;Impulse and frequency responses&#x27;</span>);</span><br><span class="line">x = randi([<span class="number">0</span> <span class="number">1</span>],<span class="number">1000</span>,<span class="number">1</span>);</span><br><span class="line">y = rchan(x);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="2-文献调研的实际冲激响应"><a href="#2-文献调研的实际冲激响应" class="headerlink" title="2.    文献调研的实际冲激响应"></a>2.    文献调研的实际冲激响应</h2></li>
 </ul>
 <center>
@@ -1310,7 +1320,7 @@ b.8FSK不同信道下误码性能对比</center>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">83.4k</span>&nbsp;字
+                class="white-color">82.2k</span>&nbsp;字
             
             
             
@@ -1577,21 +1587,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>

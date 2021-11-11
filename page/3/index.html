@@ -29,8 +29,18 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -607,12 +617,13 @@
                         <div class="summary block-with-text">
                             
                                 deepinssh远程控制安装ssh：1apt-get install ssh
-1sudo vi &#x2F;etc&#x2F;ssh&#x2F;sshd_config
+1sudo vi /etc/ssh/sshd_config
 找到下面内容
 
  将红色框中的内容修改为下面的内容：
 
-修改成功以后，
+修改成功以后，重启ssh服务：
+　　切换至s
                             
                         </div>
                         <div class="publish-info">
@@ -659,7 +670,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                树莓派服务器_内网穿透_v*n安装Nginx1sudo apt-get install nginx
+                                树莓派服务器_内网穿透_v*n安装Nginx12sudo apt-get install nginx
 安装失败，解决方法：
 
 修复网络连接，详情请见树莓派网络连接dns配置
@@ -667,8 +678,7 @@
 更新apt-get
 
 
-1sudo apt-get update
-
+12sudo apt-get updat
                             
                         </div>
                         <div class="publish-info">
@@ -719,7 +729,7 @@
 Quantum-Mini-Linux—网络配置
 wifi账号密码设置sudo vi /etc/wpa_supplicant/wpa_supplicant.conf
 修改如下的文件中的部分数据。
-123456789network&#x3D;
+123456789network=&#123
                             
                         </div>
                         <div class="publish-info">
@@ -767,7 +777,7 @@ wifi账号密码设置sudo vi /etc/wpa_supplicant/wpa_supplicant.conf
                         <div class="summary block-with-text">
                             
                                 通过数学模型，我们可以比较虚电路和数据报的传输数率好坏。
-虚电路和数据报对比模型python如下所示：1234567891011121314151617from scipy.special import combimport mathimp
+虚电路和数据报对比模型python如下所示：123456789101112131415161718from scipy.special import combimport mathi
                             
                         </div>
                         <div class="publish-info">
@@ -832,7 +842,7 @@ wifi账号密码设置sudo vi /etc/wpa_supplicant/wpa_supplicant.conf
 
 
 
-放大1img&#x3D;crop_image(cv2.resize(img, None, fx&#x3D;1, fy&#x3D;1, inte
+放大1img=crop_image(cv2.resize(img, None, fx=1, fy=1, interpolation=cv2.I
                             
                         </div>
                         <div class="publish-info">
@@ -1127,7 +1137,7 @@ A类：10.0.0.0~10.255.25
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">83.4k</span>&nbsp;字
+                class="white-color">82.2k</span>&nbsp;字
             
             
             
@@ -1394,21 +1404,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>

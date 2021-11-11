@@ -29,8 +29,18 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -517,7 +527,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    223
+                    231
                 </div>
                 
 
@@ -545,16 +555,16 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="linuxrssi信号强度获取"><a href="#linuxrssi信号强度获取" class="headerlink" title="linuxrssi信号强度获取"></a>linux<em>rssi</em>信号强度获取</h1><h2 id="测试环境中，无线网卡的接口id为wlan0"><a href="#测试环境中，无线网卡的接口id为wlan0" class="headerlink" title="测试环境中，无线网卡的接口id为wlan0"></a>测试环境中，无线网卡的接口id为wlan0</h2><h2 id="一秒周期查看无线网卡信息"><a href="#一秒周期查看无线网卡信息" class="headerlink" title="一秒周期查看无线网卡信息"></a>一秒周期查看无线网卡信息</h2><p><code>watch -n 1 cat /proc/net/wireless</code></p>
-<h2 id="获取信号强度："><a href="#获取信号强度：" class="headerlink" title="获取信号强度："></a>获取信号强度：</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;{print $3}&#39;</code><br>70.</p>
-<h2 id="获取信号质量：单位dBm"><a href="#获取信号质量：单位dBm" class="headerlink" title="获取信号质量：单位dBm"></a>获取信号质量：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;{print $4}&#39;</code><br>-38.</p>
-<h2 id="网口的背景噪声：单位dBm"><a href="#网口的背景噪声：单位dBm" class="headerlink" title="网口的背景噪声：单位dBm"></a>网口的背景噪声：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;{print $5}&#39;</code></p>
+<h2 id="获取信号强度："><a href="#获取信号强度：" class="headerlink" title="获取信号强度："></a>获取信号强度：</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $3&#125;&#39;</code><br>70.</p>
+<h2 id="获取信号质量：单位dBm"><a href="#获取信号质量：单位dBm" class="headerlink" title="获取信号质量：单位dBm"></a>获取信号质量：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $4&#125;&#39;</code><br>-38.</p>
+<h2 id="网口的背景噪声：单位dBm"><a href="#网口的背景噪声：单位dBm" class="headerlink" title="网口的背景噪声：单位dBm"></a>网口的背景噪声：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $5&#125;&#39;</code></p>
 <p>-256</p>
-<h2 id="网口的传输速率：Mb-s-1000000bps"><a href="#网口的传输速率：Mb-s-1000000bps" class="headerlink" title="网口的传输速率：Mb/s = 1000000bps"></a>网口的传输速率：Mb/s = 1000000bps</h2><p><code>iwconfig wlan0 | sed &#39;s/ /\n/g&#39; | grep -i Rate | sed &#39;s/=/ /g&#39;|awk &#39;{print $2}&#39;</code></p>
+<h2 id="网口的传输速率：Mb-s-1000000bps"><a href="#网口的传输速率：Mb-s-1000000bps" class="headerlink" title="网口的传输速率：Mb/s = 1000000bps"></a>网口的传输速率：Mb/s = 1000000bps</h2><p><code>iwconfig wlan0 | sed &#39;s/ /\n/g&#39; | grep -i Rate | sed &#39;s/=/ /g&#39;|awk &#39;&#123;print $2&#125;&#39;</code></p>
 <p>在程序中执行这些命令后需要获取返回结果，最简单的方法是，将命令行结果重定向到一个临时文件，然后读取这个临时文件，从而获得外部命令执行结果。</p>
 <p>参考：</p>
 <ul>
-<li><a href="https://www.jb51.net/LINUXjishu/421311.html" target="_blank" rel="noopener">Linux系统中iwconfig命令使用详解</a></li>
-<li><a href="https://blog.csdn.net/lbyyy/article/details/51392629" target="_blank" rel="noopener">无线信号强度解析及linux如何查看wifi信号强弱等</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jb51.net/LINUXjishu/421311.html">Linux系统中iwconfig命令使用详解</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/lbyyy/article/details/51392629">无线信号强度解析及linux如何查看wifi信号强弱等</a></li>
 </ul>
 
                 
@@ -1153,7 +1163,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">83.4k</span>&nbsp;字
+                class="white-color">82.2k</span>&nbsp;字
             
             
             
@@ -1420,21 +1430,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>

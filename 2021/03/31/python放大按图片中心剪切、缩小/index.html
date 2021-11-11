@@ -29,8 +29,18 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://www.codekp.cn/download/img/壁纸/女孩.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -517,7 +527,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    203
+                    175
                 </div>
                 
 
@@ -562,10 +572,10 @@
 </tbody>
 </table>
 </div>
-<h3 id="放大"><a href="#放大" class="headerlink" title="放大"></a>放大</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">img&#x3D;crop_image(cv2.resize(img, None, fx&#x3D;1, fy&#x3D;1, interpolation&#x3D;cv2.INTER_CUBIC),new_height,new_width)</span><br></pre></td></tr></table></figure>
-<h3 id="缩小"><a href="#缩小" class="headerlink" title="缩小"></a>缩小</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mini&#x3D; cv2.resize(cv2.copyMakeBorder(img, P_A, P_A, P_A, P_A, cv2.BORDER_REPLICATE), (150, 150))</span><br></pre></td></tr></table></figure>
+<h3 id="放大"><a href="#放大" class="headerlink" title="放大"></a>放大</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">img=crop_image(cv2.resize(img, None, fx=1, fy=1, interpolation=cv2.INTER_CUBIC),new_height,new_width)</span><br></pre></td></tr></table></figure>
+<h3 id="缩小"><a href="#缩小" class="headerlink" title="缩小"></a>缩小</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mini= cv2.resize(cv2.copyMakeBorder(img, P_A, P_A, P_A, P_A, cv2.BORDER_REPLICATE), (150, 150))</span><br></pre></td></tr></table></figure>
 <h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p>其中有将矩阵转Image、Image转矩阵两个过程。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">def crop_image(re_img,new_height,new_width):</span><br><span class="line">    re_img&#x3D;Image.fromarray(np.uint8(re_img))</span><br><span class="line">    width, height &#x3D; re_img.size</span><br><span class="line">    left &#x3D; (width - new_width)&#x2F;2</span><br><span class="line">    top &#x3D; (height - new_height)&#x2F;2</span><br><span class="line">    right &#x3D; (width + new_width)&#x2F;2</span><br><span class="line">    bottom &#x3D; (height + new_height)&#x2F;2</span><br><span class="line">    crop_im &#x3D; re_img.crop((left, top, right, bottom)) #Cropping Image</span><br><span class="line">    crop_im &#x3D; np.asarray(crop_im)</span><br><span class="line">    return crop_im</span><br><span class="line"></span><br><span class="line">new_width &#x3D; 150     #Enter the crop image width</span><br><span class="line">new_height &#x3D; 150    #Enter the crop image height</span><br><span class="line"></span><br><span class="line">img &#x3D; cv2.imread(&quot;learn&#x2F;cats&#x2F;cat.3.jpg&quot;)</span><br><span class="line">img&#x3D;cv2.resize(img,(150,150))</span><br><span class="line">P_A&#x3D;50</span><br><span class="line">img&#x3D;crop_image(cv2.resize(img, None, fx&#x3D;1, fy&#x3D;1, interpolation&#x3D;cv2.INTER_CUBIC),new_height,new_width)</span><br><span class="line"></span><br><span class="line">plt.imshow(img)</span><br><span class="line">plt.title(&#39;cat&#39;)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">def crop_image(re_img,new_height,new_width):</span><br><span class="line">    re_img=Image.fromarray(np.uint8(re_img))</span><br><span class="line">    width, height = re_img.size</span><br><span class="line">    left = (width - new_width)/2</span><br><span class="line">    top = (height - new_height)/2</span><br><span class="line">    right = (width + new_width)/2</span><br><span class="line">    bottom = (height + new_height)/2</span><br><span class="line">    crop_im = re_img.crop((left, top, right, bottom)) #Cropping Image</span><br><span class="line">    crop_im = np.asarray(crop_im)</span><br><span class="line">    return crop_im</span><br><span class="line"></span><br><span class="line">new_width = 150     #Enter the crop image width</span><br><span class="line">new_height = 150    #Enter the crop image height</span><br><span class="line"></span><br><span class="line">img = cv2.imread(&quot;learn/cats/cat.3.jpg&quot;)</span><br><span class="line">img=cv2.resize(img,(150,150))</span><br><span class="line">P_A=50</span><br><span class="line">img=crop_image(cv2.resize(img, None, fx=1, fy=1, interpolation=cv2.INTER_CUBIC),new_height,new_width)</span><br><span class="line"></span><br><span class="line">plt.imshow(img)</span><br><span class="line">plt.title(&#x27;cat&#x27;)</span><br><span class="line">plt.show()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
                 
             </div>
@@ -1163,7 +1173,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">83.4k</span>&nbsp;字
+                class="white-color">82.2k</span>&nbsp;字
             
             
             
@@ -1430,21 +1440,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
