@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="水声通信课程作业业_二, 漫漫人生路">
+    <meta name="keywords" content="hexo_matery, 漫漫人生路">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>水声通信课程作业业_二 | 漫漫人生路</title>
+    <title>hexo_matery | 漫漫人生路</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://www.codekp.cn/download/img/baidu/baidu3.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">水声通信课程作业业_二</h1>
+                    <h1 class="description center-align post-title">hexo_matery</h1>
                 </div>
             </div>
         </div>
@@ -429,16 +429,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/">
-                                <span class="chip bg-color">研究生课程</span>
-                            </a>
-                        
-                            <a href="/tags/matlab/">
-                                <span class="chip bg-color">matlab</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%B0%B4%E5%A3%B0%E9%80%9A%E4%BF%A1/">
-                                <span class="chip bg-color">水声通信</span>
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                     </div>
@@ -449,8 +441,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/" class="post-category">
-                                研究生课程
+                            <a href="/categories/hexo/" class="post-category">
+                                hexo
                             </a>
                         
                     </div>
@@ -462,28 +454,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-12-04
+                    2021-11-12
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-05-26
+                    2021-11-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    890
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    5 分
                 </div>
                 
 
@@ -506,69 +498,173 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="LMS和RLS算法的性能对比"><a href="#LMS和RLS算法的性能对比" class="headerlink" title="LMS和RLS算法的性能对比"></a><center>LMS和RLS算法的性能对比</center></h1><p><strong><center>Performance comparison of LMS and RLS algorithms</center></strong></p>
-<h2 id="1-仿真模型"><a href="#1-仿真模型" class="headerlink" title="1.  仿真模型"></a>1.  <strong>仿真模型</strong></h2><p><img src="https://www.codekp.cn/download/img/水声通信/model.JPG" width = "681" height = "302" alt="图片名称" align=center /></p>
-<p>图一、水声通信仿真模型</p>
-<h2 id="2-调制方式及信道设置"><a href="#2-调制方式及信道设置" class="headerlink" title="2.  调制方式及信道设置"></a>2.  <strong>调制方式及信道设置</strong></h2><p>要求：调制方式QPSK、序列长度2048、训练序列长度1024、信噪比范围5-20dB，比较LMS和RLS算法的性能，均衡后的均方误差。</p>
-<h3 id="2-1调制方式设置"><a href="#2-1调制方式设置" class="headerlink" title="2.1调制方式设置"></a><strong>2.1调制方式设置</strong></h3><p>采用QPSK调制方式，二进制序列长度为2048，二进制转QPSK信号对应如下：</p>
-<p><img src="https://www.codekp.cn/download/img/水声通信/公式.JPG" width = "681" height = "302" alt="图片名称" align=center /></p>
-<h3 id="2-2信道设置"><a href="#2-2信道设置" class="headerlink" title="2.2信道设置"></a>2.2信道设置</h3><p>根据要求信道设置如下:</p>
-<p>H=[1;0;0;0;0.4;0;0;0.2];</p>
-<p>可以通过卷积得到调制信号通过信道以后的信号具体如下：</p>
-<p>Y=filter(H,1,X);</p>
-<p>该信道的冲激响应和阶跃响应为。<br><img src="https://www.codekp.cn/download/img/水声通信/6da051e50a8e5c5add8802dbde95ef38.png" width = "681" height = "302" alt="图片名称" align=center /></p>
-<p><img src="https://www.codekp.cn/download/img/水声通信/7886dc3ad17fb9ef1217b82caabe83ff.png" width = "681" height = "302" alt="图片名称" align=center /></p>
-<p>图二、信道的冲击响应和阶跃响应</p>
-<h3 id="2-3-LMS和RMS滤波器"><a href="#2-3-LMS和RMS滤波器" class="headerlink" title="2.3.  LMS和RMS滤波器"></a>2.3.  <strong>LMS和RMS滤波器</strong></h3><p>自适应滤波，就是利用前一时刻以获得的滤波器参数的结果，自动的调节现时刻的滤波器参数，以适应信号和噪声未知的或随时间变化的统计特性，从而实现最优滤波。</p>
-<p><img src="https://www.codekp.cn/download/img/水声通信/6b2b57f7f72fa7fe7639d96f9fbae2ff.png" width = "681" height = "302" alt="图片名称" align=center /></p>
-<p>图三、M个抽头系数的横向滤波器最优权向量</p>
-<h4 id="2-3-1-最小均方（LMS）自适应滤波器"><a href="#2-3-1-最小均方（LMS）自适应滤波器" class="headerlink" title="2.3.1 最小均方（LMS）自适应滤波器"></a><strong>2.3.1 最小均方（LMS）自适应滤波器</strong></h4><p>LMS<br>自适应算法是一种特殊的梯度估计，不必重复使用数据，也不必对相关矩阵和互相关矩阵进行运算，只需要在每次迭代时利用输入向量和期望响应，结构简单，易于实现。但LMS<br>收敛速度较慢。</p>
-<p>LMS<br>算法的四个性能：一、收敛性；二、收敛速度；三、稳态误差；四、计算复杂度。只有在输入信号具有严格稳定的统计特性时，权向量的优解是不变的。否则，将会随着统计特性的变化而变化。</p>
-<p>通过不断调整滤波器的抽头系数，使得权重接近优解。因此自适应算法在平稳条件下的性能表现可以认为是非平稳条件下的一种特殊情况。</p>
-<h4 id="2-3-2递推最小二乘（RLS）滤波器"><a href="#2-3-2递推最小二乘（RLS）滤波器" class="headerlink" title="2.3.2递推最小二乘（RLS）滤波器"></a><strong>2.3.2递推最小二乘（RLS）滤波器</strong></h4><p>该算法根据有限个观测数据获取最优解，求出如下图所示的M个抽头系数的横向滤波器最优权向量。递归最小二乘(RLS)算法用迭代算法代替矩阵求逆达到降低运算量的目的。</p>
-<h2 id="3-仿真结果"><a href="#3-仿真结果" class="headerlink" title="3.  仿真结果"></a>3.  <strong>仿真结果</strong></h2><h3 id="3-1-QPSK复数调制和载波调制在RLS、LMS，不同信噪比下的均方误差："><a href="#3-1-QPSK复数调制和载波调制在RLS、LMS，不同信噪比下的均方误差：" class="headerlink" title="3.1.  QPSK复数调制和载波调制在RLS、LMS，不同信噪比下的均方误差："></a>3.1.  <strong>QPSK复数调制和载波调制在RLS、LMS，不同信噪比下的均方误差：</strong></h3><p><img src="https://www.codekp.cn/download/img/水声通信/03e265980d3ebcc5f87a37a2f2412168.png" alt=""></p>
-<p><img src="https://www.codekp.cn/download/img/水声通信/0191fa535267c3bb1f1ea68d234d09ac.png" alt=""></p>
-<ol>
-<li><p>复数调制通过RMS、LMS均方误差 b. 载波调制通过RMS、LMS均方误差</p>
-</li>
-<li><p><strong>复数调制、载波调制在 [5,20]噪声强度下的平均误码率对比</strong></p>
-</li>
-</ol>
-<div class="table-container">
+                <h1 id="hexo-matery"><a href="#hexo-matery" class="headerlink" title="hexo_matery"></a>hexo_matery</h1><h2 id="文章前缀"><a href="#文章前缀" class="headerlink" title="文章前缀"></a>文章前缀</h2><div class="table-container">
 <table>
 <thead>
 <tr>
-<th></th>
-<th>复数调制</th>
-<th>载波调制</th>
+<th>配置选项</th>
+<th>默认值</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>不经过均衡</td>
-<td>0.5544</td>
-<td>0.4124</td>
+<td>title</td>
+<td><code>Markdown</code> 的文件标题</td>
+<td>文章标题，强烈建议填写此选项</td>
 </tr>
 <tr>
-<td>LMS算法</td>
-<td>0.5205</td>
-<td>0.3872</td>
+<td>date</td>
+<td>文件创建时的日期时间</td>
+<td>发布时间，强烈建议填写此选项，且最好保证全局唯一</td>
 </tr>
 <tr>
-<td>RMS算法</td>
-<td>0.5148</td>
-<td>0.3820</td>
+<td>author</td>
+<td>根 <code>_config.yml</code> 中的 <code>author</code></td>
+<td>文章作者</td>
+</tr>
+<tr>
+<td>img</td>
+<td><code>featureImages</code> 中的某个值</td>
+<td>文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: <code>http://xxx.com/xxx.jpg</code></td>
+</tr>
+<tr>
+<td>top</td>
+<td><code>true</code></td>
+<td>推荐文章（文章是否置顶），如果 <code>top</code> 值为 <code>true</code>，则会作为首页推荐文章</td>
+</tr>
+<tr>
+<td>cover</td>
+<td><code>false</code></td>
+<td><code>v1.0.2</code>版本新增，表示该文章是否需要加入到首页轮播封面中</td>
+</tr>
+<tr>
+<td>coverImg</td>
+<td>无</td>
+<td><code>v1.0.2</code>版本新增，表示该文章在首页轮播封面需要显示的图片路径，如果没有，则默认使用文章的特色图片</td>
+</tr>
+<tr>
+<td>password</td>
+<td>无</td>
+<td>文章阅读密码，如果要对文章设置阅读验证密码的话，就可以设置 <code>password</code> 的值，该值必须是用 <code>SHA256</code> 加密后的密码，防止被他人识破。前提是在主题的 <code>config.yml</code> 中激活了 <code>verifyPassword</code> 选项</td>
+</tr>
+<tr>
+<td>toc</td>
+<td><code>true</code></td>
+<td>是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 <code>config.yml</code> 中激活了 <code>toc</code> 选项</td>
+</tr>
+<tr>
+<td>mathjax</td>
+<td><code>false</code></td>
+<td>是否开启数学公式支持 ，本文章是否开启 <code>mathjax</code>，且需要在主题的 <code>_config.yml</code> 文件中也需要开启才行</td>
+</tr>
+<tr>
+<td>summary</td>
+<td>无</td>
+<td>文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>无</td>
+<td>文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>无</td>
+<td>文章标签，一篇文章可以多个标签</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>文章标题</td>
+<td>文章关键字，SEO 时需要</td>
+</tr>
+<tr>
+<td>reprintPolicy</td>
+<td>cc_by</td>
+<td>文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个</td>
 </tr>
 </tbody>
 </table>
 </div>
-<h3 id="分析："><a href="#分析：" class="headerlink" title="分析："></a><strong>分析：</strong></h3><p>1、QPSK复数调制后通过RLS算法相比LMS算法、不经过均衡，均方误差分别降低1.10%、7.14%。</p>
-<p>2、QPSK载波调制后通过RLS算法相比LMS算法、不经过均衡，均方误差分别降低1.26%、7.37%。</p>
-<p>3、RMS算法的均方误差优于LMS算法的均方误差优于不经过均衡。</p>
-<p>通过仿真结果可以看出，均方误差随着信噪比的升高而降低，与理论计算值相符。</p>
-<h2 id="结论："><a href="#结论：" class="headerlink" title="结论："></a><strong>结论：</strong></h2><p><strong>在QPSK信号调制中RMS算法性能优于LMS算法性能，即RMS算法均衡后的均方误差小于LMS算法均衡后的均方误差。</strong></p>
-<p><a href="/download/LMS和RLS算法的性能对比.pdf">点击下载PDF文档</a></p>
-<p><a href="/download/LMS和RLS.zip">code_download</a></p>
+<h2 id="subtitle的更改"><a href="#subtitle的更改" class="headerlink" title="subtitle的更改"></a>subtitle的更改</h2><p>这个我找了很久，最后修改其实是在根目录的_config.yml文件修改subtitle的值就可以。</p>
+<h2 id="首页轮播"><a href="#首页轮播" class="headerlink" title="首页轮播"></a>首页轮播</h2><p>首先想要看到轮播效果必须先把文章加入轮播里，首页图片和文章图片组成了轮播，如果不把文章加入轮播里就算开启了轮播也没有办法看到轮播效果。</p>
+<ul>
+<li>cover设置为true即可</li>
+<li>然后img设置一下就是其背景</li>
+</ul>
+<h2 id="首页背景颜色"><a href="#首页背景颜色" class="headerlink" title="首页背景颜色"></a>首页背景颜色</h2><p>我感觉自带的那个背景很丑，直接删掉就好多了，其在matery.css的606-696行，直接删掉吧，感觉加什么颜色都很丑。</p>
+<h2 id="导航栏背景颜色"><a href="#导航栏背景颜色" class="headerlink" title="导航栏背景颜色"></a>导航栏背景颜色</h2><p>也是matery.css中找到.bg-cover修改，我用的是<br><pre class="line-numbers language-none"><code class="language-none">.bg-color &#123;
+ background-image: linear-gradient(to right, #7371BC 0%, #284D95 100%);
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>里面有很多颜色的设置，可以自己选一个，轮播的地方也有，选一个自己喜欢的颜色就好。</p>
+<h2 id="安装live2d动画模型"><a href="#安装live2d动画模型" class="headerlink" title="安装live2d动画模型"></a>安装live2d动画模型</h2><ol>
+<li>模型预览<a target="_blank" rel="noopener" href="https://huaji8.top/post/live2d-plugin-2.0/">live2d</a>,根据样式自己选择一个喜欢的就好。<br>本人选择的是koharu</li>
+<li>安装live2d<pre class="line-numbers language-none"><code class="language-none">npm install --save hexo-helper-live2d
+npm install live2d-widegt-model-koharu<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li>根目录的_config.yml添加<pre class="line-numbers language-none"><code class="language-none">
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw&#x2F;
+  pluginJsPath: lib&#x2F;
+  pluginModelPath: assets&#x2F;
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-koharu
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: false
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+注意：我安装了live2d之后再运行时报了个错，很多插件就报错了，一个个的下载就好。</li>
+</ol>
+<h2 id="底部总浏览量和访问人数总是隐藏"><a href="#底部总浏览量和访问人数总是隐藏" class="headerlink" title="底部总浏览量和访问人数总是隐藏"></a>底部总浏览量和访问人数总是隐藏</h2><p>有时候请求busuanzi数据比较慢，然后浏览量和访问人数就会隐藏，可能是默认的，在matery.css中增加以下代码可以让它一直显示</p>
+<h1 id="busuanzi-container-site-pv"><a href="#busuanzi-container-site-pv" class="headerlink" title="busuanzi_container_site_pv,"></a>busuanzi_container_site_pv,</h1><h1 id="busuanzi-value-site-pv"><a href="#busuanzi-value-site-pv" class="headerlink" title="busuanzi_value_site_pv,"></a>busuanzi_value_site_pv,</h1><h1 id="busuanzi-container-site-uv"><a href="#busuanzi-container-site-uv" class="headerlink" title="busuanzi_container_site_uv{"></a>busuanzi_container_site_uv{</h1><pre><code>  display: inline !important;
+</code></pre><p>}</p>
+<h2 id="豆瓣分享"><a href="#豆瓣分享" class="headerlink" title="豆瓣分享"></a>豆瓣分享</h2><p>安装插件</p>
+<p><code>npm install hexo-douban --save</code></p>
+<p>将下面的配置写入站点的配置文件 _config.yml 里(不是主题的配置文件).</p>
+<pre class="line-numbers language-none"><code class="language-none">douban:
+  user: mythsman
+  builtin: false
+  book:
+    title: &#39;This is my book title&#39;
+    quote: &#39;This is my book quote&#39;
+  movie:
+    title: &#39;This is my movie title&#39;
+    quote: &#39;This is my movie quote&#39;
+  game:
+    title: &#39;This is my game title&#39;
+    quote: &#39;This is my game quote&#39;
+  timeout: 10000<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>user: 你的豆瓣ID.打开豆瓣，登入账户，然后在右上角点击 “个人主页” ，这时候地址栏的URL大概是这样：”<a target="_blank" rel="noopener" href="https://www.douban.com/people/xxxxxx/">https://www.douban.com/people/xxxxxx/</a>“ ，其中的”xxxxxx”就是你的个人ID了。</p>
+<p>builtin: 是否将生成页面的功能嵌入hexo s和hexo g中，默认是false,另一可选项为true(1.x.x版本新增配置项)。</p>
+<p>title: 该页面的标题.</p>
+<p>quote: 写在页面开头的一段话,支持html语法.</p>
+<p>timeout: 爬取数据的超时时间，默认是 10000ms ,如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。</p>
+<p>如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。</p>
+<p>菜单参考，一定要有图标，不然不显示</p>
+<p>然后再主题配置文件_config.yml中添加关于此页面的菜单：(下面是我的配置)</p>
+<pre class="line-numbers language-none"><code class="language-none">menu:
+    媒体:
+       url: &#x2F;
+       icon: fas fa-list
+       children:
+         - name: 电影
+           url: &#x2F;movies
+           icon: fas fa-film
+         - name: 书单
+           url: &#x2F;books
+           icon: fas fa-book
+         - name: 游戏
+           url: &#x2F;games
+           icon: fas fa-gamepad
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>需要注意的是，通常大家都喜欢用 hexo d 来作为 hexo deploy 命令的简化，但是当安装了 hexo douban 之后，就不能用 hexo d 了，因为 hexo douban 跟 hexo deploy 的前缀都是 hexo d ，你以后执行的 hexo d 将不再是 Hexo 页面的生成，而是豆瓣页面的生成。</p>
+</blockquote>
 
                 
             </div>
@@ -595,7 +691,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://www.mmrsl.cn/2020/12/04/%E6%B0%B4%E5%A3%B0%E9%80%9A%E4%BF%A1%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A%E4%B8%9A-%E4%BA%8C/">http://www.mmrsl.cn/2020/12/04/%E6%B0%B4%E5%A3%B0%E9%80%9A%E4%BF%A1%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A%E4%B8%9A-%E4%BA%8C/</a>
+                    <a href="http://www.mmrsl.cn/2021/11/12/hexo-matery/">http://www.mmrsl.cn/2021/11/12/hexo-matery/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -633,16 +729,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/">
-                                    <span class="chip bg-color">研究生课程</span>
-                                </a>
-                            
-                                <a href="/tags/matlab/">
-                                    <span class="chip bg-color">matlab</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%B0%B4%E5%A3%B0%E9%80%9A%E4%BF%A1/">
-                                    <span class="chip bg-color">水声通信</span>
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
                         </div>
@@ -813,7 +901,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-12-04T16-09-13',
+        id: '2021-11-12T09-34-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -839,49 +927,47 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/">
+                <a href="/2021/11/12/hexo-matery/">
                     <div class="card-image">
                         
-                        <img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" class="responsive-img" alt="xmu健康打卡ios快捷指令">
+                        <img src="https://www.codekp.cn/download/img/baidu/baidu3.png" class="responsive-img" alt="hexo_matery">
                         
-                        <span class="card-title">xmu健康打卡ios快捷指令</span>
+                        <span class="card-title">hexo_matery</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            XMU健康打卡ios快捷指令 XMU Health Report Base On Iphone 
+                            
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6/" class="post-category">
-                                    厦门大学
+                            <a href="/categories/hexo/" class="post-category">
+                                    hexo
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6/">
-                        <span class="chip bg-color">厦门大学</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%81%A5%E5%BA%B7%E6%89%93%E5%8D%A1/">
-                        <span class="chip bg-color">健康打卡</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -895,34 +981,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/04/%E7%99%BE%E5%BA%A6%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%8B%97%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%B4%A2%E5%BC%95/">
+                <a href="/2021/11/08/linux%E6%89%B9%E9%87%8F%E5%88%86%E5%8F%91-%E8%BF%90%E8%A1%8C-killcode/">
                     <div class="card-image">
                         
-                        <img src="https://img-blog.csdnimg.cn/20201212234708921.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" class="responsive-img" alt="百度谷歌搜索引擎索引">
                         
-                        <span class="card-title">百度谷歌搜索引擎索引</span>
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="linux批量分发_运行_killcode">
+                        
+                        <span class="card-title">linux批量分发_运行_killcode</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            百度谷歌搜索引擎索引
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-08
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%B0%B7%E6%AD%8C/" class="post-category">
-                                    谷歌
-                                </a>
-                            
-                            <a href="/categories/%E8%B0%B7%E6%AD%8C/%E7%99%BE%E5%BA%A6/" class="post-category">
-                                    百度
+                            <a href="/categories/python/" class="post-category">
+                                    python
                                 </a>
                             
                             
@@ -932,12 +1015,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
-                    <a href="/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/">
-                        <span class="chip bg-color">搜索引擎</span>
+                    <a href="/tags/paramiko/">
+                        <span class="chip bg-color">paramiko</span>
                     </a>
                     
                 </div>
