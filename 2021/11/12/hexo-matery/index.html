@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="漫漫人生路" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
 
@@ -468,14 +469,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    6 分
                 </div>
                 
 
@@ -674,8 +675,15 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 <li>color：表示线条颜色，三个数字分别为(R,G,B)，默认：（0,0,0）</li>
 <li>opacity：表示线条透明度（0~1），默认：0.5</li>
 <li>count：表示线条的总数量，默认：150</li>
-<li>zIndex：表示背景的z-index属性，css属性用于控制所在层的位置，默认：-1</li>
+<li>zIndex：表示背景的z-index属性，css属性用于控制所在层的位置，默认：-1<h2 id="添加樱花飘落效果"><a href="#添加樱花飘落效果" class="headerlink" title="添加樱花飘落效果"></a>添加樱花飘落效果</h2>在themes/matery/source/js目录下新建sakura.js文件，打开这个网址<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.5/source/js/sakura.js">传送门</a>，将内容复制粘贴到sakura.js即可。</li>
 </ul>
+<p>然后再themes/matery/layout/layout.ejs文件内添加下面的内容：<br><pre class="line-numbers language-none"><code class="language-none">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;
+&#x2F;&#x2F;只在桌面版网页启用特效
+var windowWidth &#x3D; $(window).width();
+if (windowWidth &gt; 768) &#123;
+    document.write(&#39;&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;js&#x2F;sakura.js&quot;&gt;&lt;\&#x2F;script&gt;&#39;);
+&#125;
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
 
                 
             </div>
@@ -1278,7 +1286,7 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">85.3k</span>&nbsp;字
+                class="white-color">85.4k</span>&nbsp;字
             
             
             
@@ -1601,6 +1609,21 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 
 </html>
