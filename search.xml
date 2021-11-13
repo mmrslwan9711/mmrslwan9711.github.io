@@ -1871,21 +1871,6 @@ protoc --python_out&#x3D;. C:\tensorflow1\models\research\object_detection\proto
       </tags>
   </entry>
   <entry>
-    <title>b站视频分享</title>
-    <url>/2017/11/17/b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=414001980&bvid=BV1TV411z7aB&cid=218691406&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div><br><span id="more"></span></p>
-]]></content>
-      <categories>
-        <category>分享</category>
-      </categories>
-      <tags>
-        <tag>b站视频</tag>
-        <tag>分享</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>c++_常用语法</title>
     <url>/2020/07/31/c/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="C-常用语法"><a href="#C-常用语法" class="headerlink" title="C++常用语法"></a><center>C++常用语法</center></h1><h3 id="2020-08-01"><a href="#2020-08-01" class="headerlink" title="2020_08_01"></a><p align="right">2020_08_01</p></h3><blockquote>
@@ -1981,6 +1966,21 @@ const type variable &#x3D; value;<span aria-hidden="true" class="line-numbers-ro
       </tags>
   </entry>
   <entry>
+    <title>b站视频分享</title>
+    <url>/2017/11/17/b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=414001980&bvid=BV1TV411z7aB&cid=218691406&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div><br><span id="more"></span></p>
+]]></content>
+      <categories>
+        <category>分享</category>
+      </categories>
+      <tags>
+        <tag>b站视频</tag>
+        <tag>分享</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>deepin_ssh_远程控制</title>
     <url>/2021/04/13/deepin-ssh-%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="deepinssh远程控制"><a href="#deepinssh远程控制" class="headerlink" title="deepinssh远程控制"></a>deepin<em>ssh</em>远程控制</h1><h2 id="安装ssh："><a href="#安装ssh：" class="headerlink" title="安装ssh："></a>安装ssh：</h2><pre class="line-numbers language-none"><code class="language-none">apt-get install ssh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -2034,6 +2034,71 @@ const type variable &#x3D; value;<span aria-hidden="true" class="line-numbers-ro
 <p>换阿里源：</p>
 <p>sudo sed -i “s@<a href="http://pub.mirrors.aliyun.com/deepin@https://community-packages.deepin.com/deepin@g">http://pub.mirrors.aliyun.com/deepin@https://community-packages.deepin.com/deepin@g</a>“ /etc/apt/sources.list</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>hexo插入视频代码块及音频</title>
+    <url>/2020/11/24/hexo-b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo插件安装插入视频代码块及音频"><a href="#hexo插件安装插入视频代码块及音频" class="headerlink" title="hexo插件安装插入视频代码块及音频"></a><center>hexo插件安装插入视频代码块及音频</center></h1><h2 id="1-hexo插件安装"><a href="#1-hexo插件安装" class="headerlink" title="1.hexo插件安装"></a>1.hexo插件安装</h2><p>使用 Hexo 插件插入音乐/视频<br>两个好用的hexo插件：</p>
+<p>**hexo-tag-aplayer：<a href="https://github.com/grzhan/hexo-tag-aplayer">https://github.com/grzhan/hexo-tag-aplayer</a>)</p>
+<p>**hexo-tag-dplayer： <a href="https://github.com/NextMoe/hexo-tag-dplayer">https://github.com/NextMoe/hexo-tag-dplayer</a></p>
+<h3 id="1-1-播放音乐的aplayer"><a href="#1-1-播放音乐的aplayer" class="headerlink" title="1.1 播放音乐的aplayer"></a>1.1 播放音乐的aplayer</h3><p>  在cmd页面内，使用npm安装：</p>
+<blockquote>
+<p>npm install hexo-tag-aplayer</p>
+<h3 id="1-2-播放视频的dplayer"><a href="#1-2-播放视频的dplayer" class="headerlink" title="1.2 播放视频的dplayer"></a>1.2 播放视频的dplayer</h3><p>  在cmd页面内，使用npm安装：<br>npm install hexo-tag-dplayer</p>
+</blockquote>
+<h1 id="hexo插入网易云音乐"><a href="#hexo插入网易云音乐" class="headerlink" title="hexo插入网易云音乐"></a><center>hexo插入网易云音乐</center></h1><h2 id="1-提取音乐的代码块"><a href="#1-提取音乐的代码块" class="headerlink" title="1.提取音乐的代码块"></a>1.提取音乐的代码块</h2><ol>
+<li>进入<a href="https://music.163.com/">网易云音乐</a>搜索你想要的音乐。（以“下雨天”为例）。</li>
+<li>检索后进入<a href="https://music.163.com/#/outchain/2/368764/">下雨天</a>页面，点击分享。</li>
+<li>复制该处代码</li>
+</ol>
+<center>
+<img src="https://www.codekp.cn/download/img/bilibili/网易云音乐.JPG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+<pre class="line-numbers language-none"><code class="language-none">&lt;iframe frameborder&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; marginheight&#x3D;&quot;0&quot; width&#x3D;530 height&#x3D;86 src&#x3D;&quot;&#x2F;&#x2F;music.163.com&#x2F;outchain&#x2F;player?type&#x3D;2&amp;id&#x3D;368764&amp;auto&#x3D;1&amp;height&#x3D;66&quot;&gt;&lt;&#x2F;iframe&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>直接将其放在你的markdown文件中，即可显示音乐，如下所示：</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=86 src="//music.163.com/outchain/player?type=2&id=368764&auto=1&height=66"></iframe>
+
+
+
+
+<h1 id="hexo插入bilibili视频代码块"><a href="#hexo插入bilibili视频代码块" class="headerlink" title="hexo插入bilibili视频代码块"></a><center>hexo插入bilibili视频代码块</center></h1><h2 id="1-提取视频的代码块"><a href="#1-提取视频的代码块" class="headerlink" title="1.提取视频的代码块"></a>1.提取视频的代码块</h2><ol>
+<li>进入<a href="https://www.bilibili.com/">bilibili</a>搜索你想要的视频。（以“回形针PaperClip你的 App 为什么知道你想买什么？”为例）。</li>
+<li>检索后进入<a href="https://www.bilibili.com/video/BV17t411p7gx?from=search&amp;seid=11485789333728231707">回形针PaperClip你的 App 为什么知道你想买什么</a>页面，点击分享。</li>
+<li>复制代码块处代码</li>
+</ol>
+<center>
+<img src="https://www.codekp.cn/download/img/bilibili/分享.png" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+<pre class="line-numbers language-none"><code class="language-none">&lt;iframe src&#x3D;&quot;&#x2F;&#x2F;player.bilibili.com&#x2F;player.html?aid&#x3D;40891962&amp;bvid&#x3D;BV17t411p7gx&amp;cid&#x3D;71826908&amp;page&#x3D;1&quot; scrolling&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; frameborder&#x3D;&quot;no&quot; framespacing&#x3D;&quot;0&quot; allowfullscreen&#x3D;&quot;true&quot;&gt; &lt;&#x2F;iframe&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>直接将其放在你的markdown文件中，即可显示b站视频，但是会发现视频比较小，如下所示：</p>
+<iframe src="//player.bilibili.com/player.html?aid=40891962&bvid=BV17t411p7gx&cid=71826908&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h2 id="2-代码块前后修饰"><a href="#2-代码块前后修饰" class="headerlink" title="2.代码块前后修饰"></a>2.代码块前后修饰</h2><p>在改代码的前后基础上加上</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;div style&#x3D;&quot;position:relative; padding-bottom:75%; width:100%; height:0&quot;&gt;
+
+ style&#x3D;&quot;position:absolute; height: 100%; width: 100%;&quot;
+
+&lt;&#x2F;div&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+<iframe src="//player.bilibili.com/player.html?aid=40891962&bvid=BV17t411p7gx&cid=71826908&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+
+<p>即可将你的视频直接贴在你的文章上。</p>
+<h3 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h3><p><a href="https://blog.csdn.net/weixin_41216356/article/details/106911233">如何在Hugo/Hexo博客中插入响应式Bilibili视频代码块</a><br><a href="https://www.jianshu.com/p/26a7fc7cc185">Hexo博客中插入音乐/视频/</a></p>
+]]></content>
+      <categories>
+        <category>辅助技术</category>
+      </categories>
+      <tags>
+        <tag>B站</tag>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>hexo_matery</title>
@@ -2230,71 +2295,6 @@ if (windowWidth &gt; 768) &#123;
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo插入视频代码块及音频</title>
-    <url>/2020/11/24/hexo-b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo插件安装插入视频代码块及音频"><a href="#hexo插件安装插入视频代码块及音频" class="headerlink" title="hexo插件安装插入视频代码块及音频"></a><center>hexo插件安装插入视频代码块及音频</center></h1><h2 id="1-hexo插件安装"><a href="#1-hexo插件安装" class="headerlink" title="1.hexo插件安装"></a>1.hexo插件安装</h2><p>使用 Hexo 插件插入音乐/视频<br>两个好用的hexo插件：</p>
-<p>**hexo-tag-aplayer：<a href="https://github.com/grzhan/hexo-tag-aplayer">https://github.com/grzhan/hexo-tag-aplayer</a>)</p>
-<p>**hexo-tag-dplayer： <a href="https://github.com/NextMoe/hexo-tag-dplayer">https://github.com/NextMoe/hexo-tag-dplayer</a></p>
-<h3 id="1-1-播放音乐的aplayer"><a href="#1-1-播放音乐的aplayer" class="headerlink" title="1.1 播放音乐的aplayer"></a>1.1 播放音乐的aplayer</h3><p>  在cmd页面内，使用npm安装：</p>
-<blockquote>
-<p>npm install hexo-tag-aplayer</p>
-<h3 id="1-2-播放视频的dplayer"><a href="#1-2-播放视频的dplayer" class="headerlink" title="1.2 播放视频的dplayer"></a>1.2 播放视频的dplayer</h3><p>  在cmd页面内，使用npm安装：<br>npm install hexo-tag-dplayer</p>
-</blockquote>
-<h1 id="hexo插入网易云音乐"><a href="#hexo插入网易云音乐" class="headerlink" title="hexo插入网易云音乐"></a><center>hexo插入网易云音乐</center></h1><h2 id="1-提取音乐的代码块"><a href="#1-提取音乐的代码块" class="headerlink" title="1.提取音乐的代码块"></a>1.提取音乐的代码块</h2><ol>
-<li>进入<a href="https://music.163.com/">网易云音乐</a>搜索你想要的音乐。（以“下雨天”为例）。</li>
-<li>检索后进入<a href="https://music.163.com/#/outchain/2/368764/">下雨天</a>页面，点击分享。</li>
-<li>复制该处代码</li>
-</ol>
-<center>
-<img src="https://www.codekp.cn/download/img/bilibili/网易云音乐.JPG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-<pre class="line-numbers language-none"><code class="language-none">&lt;iframe frameborder&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; marginheight&#x3D;&quot;0&quot; width&#x3D;530 height&#x3D;86 src&#x3D;&quot;&#x2F;&#x2F;music.163.com&#x2F;outchain&#x2F;player?type&#x3D;2&amp;id&#x3D;368764&amp;auto&#x3D;1&amp;height&#x3D;66&quot;&gt;&lt;&#x2F;iframe&gt;
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>直接将其放在你的markdown文件中，即可显示音乐，如下所示：</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=86 src="//music.163.com/outchain/player?type=2&id=368764&auto=1&height=66"></iframe>
-
-
-
-
-<h1 id="hexo插入bilibili视频代码块"><a href="#hexo插入bilibili视频代码块" class="headerlink" title="hexo插入bilibili视频代码块"></a><center>hexo插入bilibili视频代码块</center></h1><h2 id="1-提取视频的代码块"><a href="#1-提取视频的代码块" class="headerlink" title="1.提取视频的代码块"></a>1.提取视频的代码块</h2><ol>
-<li>进入<a href="https://www.bilibili.com/">bilibili</a>搜索你想要的视频。（以“回形针PaperClip你的 App 为什么知道你想买什么？”为例）。</li>
-<li>检索后进入<a href="https://www.bilibili.com/video/BV17t411p7gx?from=search&amp;seid=11485789333728231707">回形针PaperClip你的 App 为什么知道你想买什么</a>页面，点击分享。</li>
-<li>复制代码块处代码</li>
-</ol>
-<center>
-<img src="https://www.codekp.cn/download/img/bilibili/分享.png" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-<pre class="line-numbers language-none"><code class="language-none">&lt;iframe src&#x3D;&quot;&#x2F;&#x2F;player.bilibili.com&#x2F;player.html?aid&#x3D;40891962&amp;bvid&#x3D;BV17t411p7gx&amp;cid&#x3D;71826908&amp;page&#x3D;1&quot; scrolling&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; frameborder&#x3D;&quot;no&quot; framespacing&#x3D;&quot;0&quot; allowfullscreen&#x3D;&quot;true&quot;&gt; &lt;&#x2F;iframe&gt;
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>直接将其放在你的markdown文件中，即可显示b站视频，但是会发现视频比较小，如下所示：</p>
-<iframe src="//player.bilibili.com/player.html?aid=40891962&bvid=BV17t411p7gx&cid=71826908&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<h2 id="2-代码块前后修饰"><a href="#2-代码块前后修饰" class="headerlink" title="2.代码块前后修饰"></a>2.代码块前后修饰</h2><p>在改代码的前后基础上加上</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;div style&#x3D;&quot;position:relative; padding-bottom:75%; width:100%; height:0&quot;&gt;
-
- style&#x3D;&quot;position:absolute; height: 100%; width: 100%;&quot;
-
-&lt;&#x2F;div&gt;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-<iframe src="//player.bilibili.com/player.html?aid=40891962&bvid=BV17t411p7gx&cid=71826908&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-
-<p>即可将你的视频直接贴在你的文章上。</p>
-<h3 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h3><p><a href="https://blog.csdn.net/weixin_41216356/article/details/106911233">如何在Hugo/Hexo博客中插入响应式Bilibili视频代码块</a><br><a href="https://www.jianshu.com/p/26a7fc7cc185">Hexo博客中插入音乐/视频/</a></p>
-]]></content>
-      <categories>
-        <category>辅助技术</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>B站</tag>
       </tags>
   </entry>
   <entry>
@@ -2580,6 +2580,238 @@ wlx0ccf89606c44  IEEE 802.11  ESSID:&quot;SSID&quot;
         <tag>linux</tag>
         <tag>嵌入式开发</tag>
         <tag>鸟哥的私房菜学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux批量分发_运行_killcode</title>
+    <url>/2021/11/08/linux%E6%89%B9%E9%87%8F%E5%88%86%E5%8F%91-%E8%BF%90%E8%A1%8C-killcode/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux批量分发-运行-killcode-python"><a href="#linux批量分发-运行-killcode-python" class="headerlink" title="linux批量分发_运行_killcode(python)"></a>linux批量分发_运行_killcode(python)</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>对每个可以进入linux系统设备，统一用户名和密码。<br>同时对设备进行标号如<br>xxx001-xxx010</p>
+<h2 id="paramiko"><a href="#paramiko" class="headerlink" title="paramiko"></a>paramiko</h2><p>ssh是一个协议，OpenSSH是其中一个开源实现，paramiko是Python的一个库，实现了SSHv2协议(底层使用cryptography)。</p>
+<p>有了Paramiko以后，我们就可以在Python代码中直接使用SSH协议对远程服务器执行操作，而不是通过ssh命令对远程服务器进行操作。</p>
+<p>由于paramiko属于第三方库，所以需要使用如下命令先行安装</p>
+<p><code>pip3 install paramiko</code></p>
+<p>paramiko包含两个核心组件：SSHClient和SFTPClient。</p>
+<p>SSHClient的作用类似于Linux的ssh命令，是对SSH会话的封装，该类封装了传输(Transport)，通道(Channel)及SFTPClient建立的方法(open_sftp)，通常用于执行远程命令。</p>
+<p>SFTPClient的作用类似与Linux的sftp命令，是对SFTP客户端的封装，用以实现远程文件操作，如文件上传、下载、修改文件权限等操作。</p>
+<h3 id="Paramiko中的几个基础名词："><a href="#Paramiko中的几个基础名词：" class="headerlink" title="Paramiko中的几个基础名词："></a>Paramiko中的几个基础名词：</h3><ol>
+<li><p>Channel：是一种类Socket，一种安全的SSH传输通道；</p>
+</li>
+<li><p>Transport：是一种加密的会话，使用时会同步创建了一个加密的Tunnels(通道)，这个Tunnels叫做Channel；</p>
+</li>
+<li><p>Session：是client与Server保持连接的对象，用connect()/start_client()/start_server()开始会话。</p>
+</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">def ssh2(ip,username,passwd,cmd):
+    item &#x3D; &#123;&#125;
+    item[&#39;ip&#39;] &#x3D; ip
+    try:
+        ssh &#x3D; paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect(ip,22,username,passwd,timeout&#x3D;5)
+        for m in cmd:
+            stdin, stdout, stderr &#x3D; ssh.exec_command(m)
+            stdin.write(&quot;Y&quot;)   #简单交互，输入 ‘Y’
+            out &#x3D; stdout.readlines()
+            #屏幕输出
+            for o in out:
+                print(o),
+                item[&#39;name&#39;] &#x3D; o
+        print(&#39;%s\tOK\n&#39;%(ip))
+        ipList.append(item)
+        ssh.close()
+    except :
+        # print(&#39;%s\tError\n&#39;%(ip))
+        x&#x3D;0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="sshpass"><a href="#sshpass" class="headerlink" title="sshpass"></a>sshpass</h2><ol>
+<li>安装sshpass</li>
+</ol>
+<p><code>sudo apt-get install sshpass</code></p>
+<ol>
+<li>使用sshpass</li>
+</ol>
+<p><code>sshpass -p xxxxx</code></p>
+<p> 使用该命令可以提前输入密码，不用后续输入密码。</p>
+<ol>
+<li>通过sshpass即可跳过输入密码环境直接scp</li>
+</ol>
+<p><code>sshpass -p xxxx scp 源地址 目的地址</code></p>
+<h2 id="n个linux同时执行程序"><a href="#n个linux同时执行程序" class="headerlink" title="n个linux同时执行程序"></a>n个linux同时执行程序</h2><p>介绍： 1.python 2.kill all 3.send file 4.add channel 5.move 6.move send</p>
+<ol>
+<li>自动识别局域网中所有可进入设备</li>
+<li>n个设备可以同时运行一个python程序</li>
+<li>关闭n个设备中运行的python代码</li>
+<li>分发代码</li>
+<li>增加信道</li>
+<li>移动 其中 <code>carnum and 1.Advance 2.Retreat 3.Left 4.Right and move length</code></li>
+</ol>
+<p>例：2 1 2 即二号设备向前运行2个单位的距离</p>
+<ol>
+<li>分发一个文件夹</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">#-*- coding: utf-8 -*-
+#!&#x2F;usr&#x2F;bin&#x2F;python
+import time
+import paramiko
+import threading
+import os
+ipList&#x3D;[]
+
+filename &#x3D; &#39;groupUdp.py&#39;
+
+
+def ssh2(ip,username,passwd,cmd):
+    item &#x3D; &#123;&#125;
+    item[&#39;ip&#39;] &#x3D; ip
+    try:
+        ssh &#x3D; paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect(ip,22,username,passwd,timeout&#x3D;5)
+        for m in cmd:
+            stdin, stdout, stderr &#x3D; ssh.exec_command(m)
+            stdin.write(&quot;Y&quot;)   #简单交互，输入 ‘Y’
+            out &#x3D; stdout.readlines()
+            #屏幕输出
+            for o in out:
+                print(o),
+                item[&#39;name&#39;] &#x3D; o
+        print(&#39;%s\tOK\n&#39;%(ip))
+        ipList.append(item)
+        ssh.close()
+    except :
+        # print(&#39;%s\tError\n&#39;%(ip))
+        x&#x3D;0
+
+
+def ssh1(ip,username,passwd,cmd):
+    try:
+        ssh &#x3D; paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect(ip,22,username,passwd,timeout&#x3D;5)
+        print(cmd)
+        for m in cmd:
+            stdin, stdout, stderr &#x3D; ssh.exec_command(m)
+            stdin.write(&quot;Y&quot;)   #简单交互，输入 ‘Y’
+            out &#x3D; stdout.readlines()
+            #屏幕输出
+            for o in out:
+                print(o),
+        print(&#39;%s\tOK\n&#39;%(ip))
+        ssh.close()
+    except :
+        # print(&#39;%s\tError\n&#39;%(ip))
+        print(cmd)
+        x&#x3D;0
+def command(cmd):
+    return os.popen(&#39;echo %s |sudo -S %s&#39; % (&#39;vadmin&#39;,cmd)).readlines()
+
+def scp_all(ip,username,passwd,filename):
+    cmd&#x3D;&quot;sshpass -p xxxx scp &quot;+filename+&quot; &quot;+username+&quot;@&quot;+ip+&quot;:&#x2F;home&#x2F;pi&#x2F;WIFI_Cmd&#x2F;&quot;+filename
+    print(cmd)
+    b &#x3D; os.popen(cmd).readlines()
+    time.sleep(0.5)
+    print(b)
+
+def scp_file_all(ip,username,passwd,file):
+    cmd&#x3D;&quot;sshpass -p xxxx scp -r &quot;+file+&quot; &quot;+username+&quot;@&quot;+ip+&quot;:&#x2F;home&#x2F;pi&#x2F;&quot;
+    print(cmd)
+    b &#x3D; os.popen(cmd).readlines()
+    time.sleep(0.5)
+    print(b)
+
+if __name__&#x3D;&#x3D;&#39;__main__&#39;:
+    cmd &#x3D; [&#39;cat &#x2F;etc&#x2F;hostname&#39;]#你要执行的命令列表,&#39;cd WIFI_Cmd&#x2F; &amp;&amp; pwd &amp;&amp;&#39;
+    username &#x3D; &quot;xxx&quot;  #用户名
+    passwd &#x3D; &quot;xxxx&quot;    #密码
+    threads &#x3D; []   #多线程
+    print( &quot;Begin......&quot;)
+    for i in range(1,254):
+        ip &#x3D; &#39;192.168.0.&#39;+str(i)
+        a&#x3D;threading.Thread(target&#x3D;ssh2,args&#x3D;(ip,username,passwd,cmd))
+        a.start()
+    time.sleep(5)
+    while True:
+        print(ipList)
+        idx_cmd&#x3D;int(input(&quot;1.python 2.kill all 3.send file 4.add channel 5.move 6.move send\n&quot;))
+        print(len(ipList))
+        if idx_cmd&#x3D;&#x3D;1:
+            for idx in range(len(ipList)):
+
+                ip&#x3D;ipList[idx][&#39;ip&#39;]
+                name&#x3D;ipList[idx][&#39;name&#39;]
+                num&#x3D;int(ipList[idx][&#39;name&#39;][3:6])-1
+                print(num)
+                cmd &#x3D; [&#39;cd WIFI_Cmd&#x2F; &amp;&amp;  pwd &amp;&amp; sudo nohup python &#39;+filename+&quot; &quot;+str(num) +&#39; &amp;&#39;,&#39;pwd&#39;]
+                a&#x3D;threading.Thread(target&#x3D;ssh1,args&#x3D;(ip,username,passwd,cmd))
+                a.start()
+
+        elif idx_cmd &#x3D;&#x3D; 2:
+
+            ######kill#####
+            for idx in range(len(ipList)):
+                ip&#x3D;ipList[idx][&#39;ip&#39;]
+                name&#x3D;ipList[idx][&#39;name&#39;]
+                cmd &#x3D; [&#39;sudo pkill python&#39;]
+                a&#x3D;threading.Thread(target&#x3D;ssh1,args&#x3D;(ip,username,passwd,cmd))
+                a.start()
+        elif idx_cmd &#x3D;&#x3D; 3:
+            ###############分发
+            for idx in range(len(ipList)):
+                # filename &#x3D; &#39;changeChannel.py&#39;
+                ip&#x3D;ipList[idx][&#39;ip&#39;]
+                name&#x3D;ipList[idx][&#39;name&#39;]
+                a&#x3D;threading.Thread(target&#x3D;scp_all,args&#x3D;(ip,username,passwd,filename))
+                a.start()
+            ##add channel ssd
+        elif idx_cmd &#x3D;&#x3D; 4:
+            for idx in range(len(ipList)):
+                SSIDNAME&#x3D;&#39;xxx&#39;
+                SSIDPASSWORD&#x3D;&#39;xxxx&#39;
+                ip&#x3D;ipList[idx][&#39;ip&#39;]
+                name&#x3D;ipList[idx][&#39;name&#39;]
+                cmd &#x3D; [&#39;cd WIFI_Cmd&#x2F;conf&#x2F; &amp;&amp;wpa_passphrase&#39; +&#39; &quot;&#39;+ SSIDNAME + &#39;&quot; &quot;&#39; + SSIDPASSWORD+&#39;&quot; &gt; &#39;+SSIDNAME+&#39;.conf &amp;&amp; cat &#39;+SSIDNAME+&#39;.conf&#39;]
+                a&#x3D;threading.Thread(target&#x3D;ssh1,args&#x3D;(ip,username,passwd,cmd))
+                a.start()
+            ###move
+        elif idx_cmd &#x3D;&#x3D; 5:
+            num_car, idx_cmd2,length &#x3D; input(&quot;carnum and 1.Advance 2.Retreat 3.Left 4.Right and move length\n&quot;).split()
+            num_car&#x3D;int(num_car)
+            idx_cmd2&#x3D;int(idx_cmd2)
+            if idx_cmd2 &#x3D;&#x3D; 1:
+                cmd &#x3D; [&#39;cd moveUGV&#x2F; &amp;&amp;  pwd &amp;&amp; sudo nohup python Advance.py &amp;&#39;]
+            elif idx_cmd2 &#x3D;&#x3D; 2:
+                cmd &#x3D; [&#39;cd moveUGV&#x2F; &amp;&amp;  pwd &amp;&amp; sudo nohup python Retreat.py &amp;&#39;]
+            elif idx_cmd2 &#x3D;&#x3D; 3:
+                cmd &#x3D; [&#39;cd moveUGV&#x2F; &amp;&amp;  pwd &amp;&amp; sudo nohup python Left.py &amp;&#39;]
+            elif idx_cmd2 &#x3D;&#x3D; 4:
+                cmd &#x3D; [&#39;cd moveUGV&#x2F; &amp;&amp;  pwd &amp;&amp; sudo nohup python right.py &amp;&#39;]
+            else:
+                cmd &#x3D; [&#39;pwd&#39;]
+            for idx in range(len(ipList)):
+                ip &#x3D; ipList[idx][&#39;ip&#39;]
+                name &#x3D; ipList[idx][&#39;name&#39;]
+                num1 &#x3D; int(ipList[idx][&#39;name&#39;][3:6])
+                if num_car&#x3D;&#x3D;num1:
+                    for i in range(int(length)):
+                        a &#x3D; threading.Thread(target&#x3D;ssh1, args&#x3D;(ip, username, passwd, cmd))
+                        a.start()
+                        time.sleep(3)
+            ###move send
+        elif idx_cmd &#x3D;&#x3D; 6:
+            for idx in range(len(ipList)):
+                # filename &#x3D; &#39;changeChannel.py&#39;
+                ip&#x3D;ipList[idx][&#39;ip&#39;]
+                name&#x3D;ipList[idx][&#39;name&#39;]
+                file&#x3D;&#39;moveUGV&#39;
+                a&#x3D;threading.Thread(target&#x3D;scp_file_all,args&#x3D;(ip,username,passwd,file))
+                a.start()
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>paramiko</tag>
       </tags>
   </entry>
   <entry>
@@ -3496,238 +3728,6 @@ iptables-restore &lt; &#x2F;etc&#x2F;iptables.ipv4.nat
       </tags>
   </entry>
   <entry>
-    <title>linux批量分发_运行_killcode</title>
-    <url>/2021/11/08/linux%E6%89%B9%E9%87%8F%E5%88%86%E5%8F%91-%E8%BF%90%E8%A1%8C-killcode/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux批量分发-运行-killcode-python"><a href="#linux批量分发-运行-killcode-python" class="headerlink" title="linux批量分发_运行_killcode(python)"></a>linux批量分发_运行_killcode(python)</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>对每个可以进入linux系统设备，统一用户名和密码。<br>同时对设备进行标号如<br>xxx001-xxx010</p>
-<h2 id="paramiko"><a href="#paramiko" class="headerlink" title="paramiko"></a>paramiko</h2><p>ssh是一个协议，OpenSSH是其中一个开源实现，paramiko是Python的一个库，实现了SSHv2协议(底层使用cryptography)。</p>
-<p>有了Paramiko以后，我们就可以在Python代码中直接使用SSH协议对远程服务器执行操作，而不是通过ssh命令对远程服务器进行操作。</p>
-<p>由于paramiko属于第三方库，所以需要使用如下命令先行安装</p>
-<p><code>pip3 install paramiko</code></p>
-<p>paramiko包含两个核心组件：SSHClient和SFTPClient。</p>
-<p>SSHClient的作用类似于Linux的ssh命令，是对SSH会话的封装，该类封装了传输(Transport)，通道(Channel)及SFTPClient建立的方法(open_sftp)，通常用于执行远程命令。</p>
-<p>SFTPClient的作用类似与Linux的sftp命令，是对SFTP客户端的封装，用以实现远程文件操作，如文件上传、下载、修改文件权限等操作。</p>
-<h3 id="Paramiko中的几个基础名词："><a href="#Paramiko中的几个基础名词：" class="headerlink" title="Paramiko中的几个基础名词："></a>Paramiko中的几个基础名词：</h3><ol>
-<li><p>Channel：是一种类Socket，一种安全的SSH传输通道；</p>
-</li>
-<li><p>Transport：是一种加密的会话，使用时会同步创建了一个加密的Tunnels(通道)，这个Tunnels叫做Channel；</p>
-</li>
-<li><p>Session：是client与Server保持连接的对象，用connect()/start_client()/start_server()开始会话。</p>
-</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">def ssh2(ip,username,passwd,cmd):
-    item &#x3D; &#123;&#125;
-    item[&#39;ip&#39;] &#x3D; ip
-    try:
-        ssh &#x3D; paramiko.SSHClient()
-        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(ip,22,username,passwd,timeout&#x3D;5)
-        for m in cmd:
-            stdin, stdout, stderr &#x3D; ssh.exec_command(m)
-            stdin.write(&quot;Y&quot;)   #简单交互，输入 ‘Y’
-            out &#x3D; stdout.readlines()
-            #屏幕输出
-            for o in out:
-                print(o),
-                item[&#39;name&#39;] &#x3D; o
-        print(&#39;%s\tOK\n&#39;%(ip))
-        ipList.append(item)
-        ssh.close()
-    except :
-        # print(&#39;%s\tError\n&#39;%(ip))
-        x&#x3D;0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="sshpass"><a href="#sshpass" class="headerlink" title="sshpass"></a>sshpass</h2><ol>
-<li>安装sshpass</li>
-</ol>
-<p><code>sudo apt-get install sshpass</code></p>
-<ol>
-<li>使用sshpass</li>
-</ol>
-<p><code>sshpass -p xxxxx</code></p>
-<p> 使用该命令可以提前输入密码，不用后续输入密码。</p>
-<ol>
-<li>通过sshpass即可跳过输入密码环境直接scp</li>
-</ol>
-<p><code>sshpass -p xxxx scp 源地址 目的地址</code></p>
-<h2 id="n个linux同时执行程序"><a href="#n个linux同时执行程序" class="headerlink" title="n个linux同时执行程序"></a>n个linux同时执行程序</h2><p>介绍： 1.python 2.kill all 3.send file 4.add channel 5.move 6.move send</p>
-<ol>
-<li>自动识别局域网中所有可进入设备</li>
-<li>n个设备可以同时运行一个python程序</li>
-<li>关闭n个设备中运行的python代码</li>
-<li>分发代码</li>
-<li>增加信道</li>
-<li>移动 其中 <code>carnum and 1.Advance 2.Retreat 3.Left 4.Right and move length</code></li>
-</ol>
-<p>例：2 1 2 即二号设备向前运行2个单位的距离</p>
-<ol>
-<li>分发一个文件夹</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">#-*- coding: utf-8 -*-
-#!&#x2F;usr&#x2F;bin&#x2F;python
-import time
-import paramiko
-import threading
-import os
-ipList&#x3D;[]
-
-filename &#x3D; &#39;groupUdp.py&#39;
-
-
-def ssh2(ip,username,passwd,cmd):
-    item &#x3D; &#123;&#125;
-    item[&#39;ip&#39;] &#x3D; ip
-    try:
-        ssh &#x3D; paramiko.SSHClient()
-        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(ip,22,username,passwd,timeout&#x3D;5)
-        for m in cmd:
-            stdin, stdout, stderr &#x3D; ssh.exec_command(m)
-            stdin.write(&quot;Y&quot;)   #简单交互，输入 ‘Y’
-            out &#x3D; stdout.readlines()
-            #屏幕输出
-            for o in out:
-                print(o),
-                item[&#39;name&#39;] &#x3D; o
-        print(&#39;%s\tOK\n&#39;%(ip))
-        ipList.append(item)
-        ssh.close()
-    except :
-        # print(&#39;%s\tError\n&#39;%(ip))
-        x&#x3D;0
-
-
-def ssh1(ip,username,passwd,cmd):
-    try:
-        ssh &#x3D; paramiko.SSHClient()
-        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(ip,22,username,passwd,timeout&#x3D;5)
-        print(cmd)
-        for m in cmd:
-            stdin, stdout, stderr &#x3D; ssh.exec_command(m)
-            stdin.write(&quot;Y&quot;)   #简单交互，输入 ‘Y’
-            out &#x3D; stdout.readlines()
-            #屏幕输出
-            for o in out:
-                print(o),
-        print(&#39;%s\tOK\n&#39;%(ip))
-        ssh.close()
-    except :
-        # print(&#39;%s\tError\n&#39;%(ip))
-        print(cmd)
-        x&#x3D;0
-def command(cmd):
-    return os.popen(&#39;echo %s |sudo -S %s&#39; % (&#39;vadmin&#39;,cmd)).readlines()
-
-def scp_all(ip,username,passwd,filename):
-    cmd&#x3D;&quot;sshpass -p xxxx scp &quot;+filename+&quot; &quot;+username+&quot;@&quot;+ip+&quot;:&#x2F;home&#x2F;pi&#x2F;WIFI_Cmd&#x2F;&quot;+filename
-    print(cmd)
-    b &#x3D; os.popen(cmd).readlines()
-    time.sleep(0.5)
-    print(b)
-
-def scp_file_all(ip,username,passwd,file):
-    cmd&#x3D;&quot;sshpass -p xxxx scp -r &quot;+file+&quot; &quot;+username+&quot;@&quot;+ip+&quot;:&#x2F;home&#x2F;pi&#x2F;&quot;
-    print(cmd)
-    b &#x3D; os.popen(cmd).readlines()
-    time.sleep(0.5)
-    print(b)
-
-if __name__&#x3D;&#x3D;&#39;__main__&#39;:
-    cmd &#x3D; [&#39;cat &#x2F;etc&#x2F;hostname&#39;]#你要执行的命令列表,&#39;cd WIFI_Cmd&#x2F; &amp;&amp; pwd &amp;&amp;&#39;
-    username &#x3D; &quot;xxx&quot;  #用户名
-    passwd &#x3D; &quot;xxxx&quot;    #密码
-    threads &#x3D; []   #多线程
-    print( &quot;Begin......&quot;)
-    for i in range(1,254):
-        ip &#x3D; &#39;192.168.0.&#39;+str(i)
-        a&#x3D;threading.Thread(target&#x3D;ssh2,args&#x3D;(ip,username,passwd,cmd))
-        a.start()
-    time.sleep(5)
-    while True:
-        print(ipList)
-        idx_cmd&#x3D;int(input(&quot;1.python 2.kill all 3.send file 4.add channel 5.move 6.move send\n&quot;))
-        print(len(ipList))
-        if idx_cmd&#x3D;&#x3D;1:
-            for idx in range(len(ipList)):
-
-                ip&#x3D;ipList[idx][&#39;ip&#39;]
-                name&#x3D;ipList[idx][&#39;name&#39;]
-                num&#x3D;int(ipList[idx][&#39;name&#39;][3:6])-1
-                print(num)
-                cmd &#x3D; [&#39;cd WIFI_Cmd&#x2F; &amp;&amp;  pwd &amp;&amp; sudo nohup python &#39;+filename+&quot; &quot;+str(num) +&#39; &amp;&#39;,&#39;pwd&#39;]
-                a&#x3D;threading.Thread(target&#x3D;ssh1,args&#x3D;(ip,username,passwd,cmd))
-                a.start()
-
-        elif idx_cmd &#x3D;&#x3D; 2:
-
-            ######kill#####
-            for idx in range(len(ipList)):
-                ip&#x3D;ipList[idx][&#39;ip&#39;]
-                name&#x3D;ipList[idx][&#39;name&#39;]
-                cmd &#x3D; [&#39;sudo pkill python&#39;]
-                a&#x3D;threading.Thread(target&#x3D;ssh1,args&#x3D;(ip,username,passwd,cmd))
-                a.start()
-        elif idx_cmd &#x3D;&#x3D; 3:
-            ###############分发
-            for idx in range(len(ipList)):
-                # filename &#x3D; &#39;changeChannel.py&#39;
-                ip&#x3D;ipList[idx][&#39;ip&#39;]
-                name&#x3D;ipList[idx][&#39;name&#39;]
-                a&#x3D;threading.Thread(target&#x3D;scp_all,args&#x3D;(ip,username,passwd,filename))
-                a.start()
-            ##add channel ssd
-        elif idx_cmd &#x3D;&#x3D; 4:
-            for idx in range(len(ipList)):
-                SSIDNAME&#x3D;&#39;xxx&#39;
-                SSIDPASSWORD&#x3D;&#39;xxxx&#39;
-                ip&#x3D;ipList[idx][&#39;ip&#39;]
-                name&#x3D;ipList[idx][&#39;name&#39;]
-                cmd &#x3D; [&#39;cd WIFI_Cmd&#x2F;conf&#x2F; &amp;&amp;wpa_passphrase&#39; +&#39; &quot;&#39;+ SSIDNAME + &#39;&quot; &quot;&#39; + SSIDPASSWORD+&#39;&quot; &gt; &#39;+SSIDNAME+&#39;.conf &amp;&amp; cat &#39;+SSIDNAME+&#39;.conf&#39;]
-                a&#x3D;threading.Thread(target&#x3D;ssh1,args&#x3D;(ip,username,passwd,cmd))
-                a.start()
-            ###move
-        elif idx_cmd &#x3D;&#x3D; 5:
-            num_car, idx_cmd2,length &#x3D; input(&quot;carnum and 1.Advance 2.Retreat 3.Left 4.Right and move length\n&quot;).split()
-            num_car&#x3D;int(num_car)
-            idx_cmd2&#x3D;int(idx_cmd2)
-            if idx_cmd2 &#x3D;&#x3D; 1:
-                cmd &#x3D; [&#39;cd moveUGV&#x2F; &amp;&amp;  pwd &amp;&amp; sudo nohup python Advance.py &amp;&#39;]
-            elif idx_cmd2 &#x3D;&#x3D; 2:
-                cmd &#x3D; [&#39;cd moveUGV&#x2F; &amp;&amp;  pwd &amp;&amp; sudo nohup python Retreat.py &amp;&#39;]
-            elif idx_cmd2 &#x3D;&#x3D; 3:
-                cmd &#x3D; [&#39;cd moveUGV&#x2F; &amp;&amp;  pwd &amp;&amp; sudo nohup python Left.py &amp;&#39;]
-            elif idx_cmd2 &#x3D;&#x3D; 4:
-                cmd &#x3D; [&#39;cd moveUGV&#x2F; &amp;&amp;  pwd &amp;&amp; sudo nohup python right.py &amp;&#39;]
-            else:
-                cmd &#x3D; [&#39;pwd&#39;]
-            for idx in range(len(ipList)):
-                ip &#x3D; ipList[idx][&#39;ip&#39;]
-                name &#x3D; ipList[idx][&#39;name&#39;]
-                num1 &#x3D; int(ipList[idx][&#39;name&#39;][3:6])
-                if num_car&#x3D;&#x3D;num1:
-                    for i in range(int(length)):
-                        a &#x3D; threading.Thread(target&#x3D;ssh1, args&#x3D;(ip, username, passwd, cmd))
-                        a.start()
-                        time.sleep(3)
-            ###move send
-        elif idx_cmd &#x3D;&#x3D; 6:
-            for idx in range(len(ipList)):
-                # filename &#x3D; &#39;changeChannel.py&#39;
-                ip&#x3D;ipList[idx][&#39;ip&#39;]
-                name&#x3D;ipList[idx][&#39;name&#39;]
-                file&#x3D;&#39;moveUGV&#39;
-                a&#x3D;threading.Thread(target&#x3D;scp_file_all,args&#x3D;(ip,username,passwd,file))
-                a.start()
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>paramiko</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux系统通信功率信道修改方法</title>
     <url>/2021/04/22/linux%E7%B3%BB%E7%BB%9F%E9%80%9A%E4%BF%A1%E5%8A%9F%E7%8E%87%E4%BF%A1%E9%81%93%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux系统通信功率信道修改方法"><a href="#linux系统通信功率信道修改方法" class="headerlink" title="linux系统通信功率信道修改方法"></a>linux系统通信功率信道修改方法</h1><h2 id="配置频段"><a href="#配置频段" class="headerlink" title="配置频段"></a>配置频段</h2><h3 id="可以先查看有哪些频段："><a href="#可以先查看有哪些频段：" class="headerlink" title="可以先查看有哪些频段："></a>可以先查看有哪些频段：</h3><p><code>iwlist channel</code> </p>
@@ -4243,6 +4243,28 @@ git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><spa
       </tags>
   </entry>
   <entry>
+    <title>network map</title>
+    <url>/2021/04/14/nmap/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>network map</category>
+      </categories>
+      <tags>
+        <tag>nmap</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>openwrt_树莓派_mesh自组织网络</title>
     <url>/2021/11/06/openwrt-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="openwrt-树莓派-mesh自组织网络"><a href="#openwrt-树莓派-mesh自组织网络" class="headerlink" title="openwrt_树莓派_mesh自组织网络"></a>openwrt_树莓派_mesh自组织网络</h1><h2 id="openwrt"><a href="#openwrt" class="headerlink" title="openwrt"></a>openwrt</h2><ul>
@@ -4531,28 +4553,6 @@ DEST ADDR         NEXT HOP          IFACE       SN      METRIC  QLEN    EXPTIMED
       <tags>
         <tag>python</tag>
         <tag>pyqt5</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>network map</title>
-    <url>/2021/04/14/nmap/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>network map</category>
-      </categories>
-      <tags>
-        <tag>nmap</tag>
       </tags>
   </entry>
   <entry>
@@ -5763,6 +5763,110 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </tags>
   </entry>
   <entry>
+    <title>xmu健康打卡ios快捷指令</title>
+    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
+<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
+<li>浏览器</li>
+<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
+<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
+<li>接着，选择network<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center></li>
+<li><p>找到POST，不要寻找GET</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+</li>
+<li><p>如下：<br><center>
+<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
+</li>
+</ul>
+<p>即找到了我们需要的登录网址。</p>
+<p>接下来记录 username和userpassword，依次填入ios。</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+
+<ul>
+<li>将得到的数据填入一下列表<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ul>
+<blockquote>
+<p>仅只写到这里有兴趣的自己继续探索。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>厦门大学</category>
+      </categories>
+      <tags>
+        <tag>厦门大学</tag>
+        <tag>健康打卡</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实时视频传输APP</title>
+    <url>/2021/01/15/%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93APP/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- wp:heading -->
+<p><h2><strong>视频通信APP</strong><strong>的设计</strong></h2><br><!-- /wp:heading --></p>
+<!-- wp:heading -->
+<p><h2><strong>1       </strong>功能选择界面</h2><br><!-- /wp:heading --></p>
+<!-- wp:paragraph -->
+<p><p>通过程序设计，首先构建用户功能选择界面，其中包括用户名和该用户的个人签名、个人头像，本处签名选用为个人网站，新的个人网站：<a href="https://www.codekp.cn/">https://www.codekp.cn/</a>。向下依次是Home主界面，主要是APP的地图功能。第二项Gallery为第二个界面，为APP的蓝牙信道检测功能，第三项Slideshow为第三界面，为APP的视频通话功能。点击三个界面选项框可以跳转到自己的界面。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":254,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/1.png" alt="" class="wp-image-254"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图1 APP功能选择界面图</p><br><!-- /wp:paragraph --></p>
+<!-- wp:heading -->
+<p><h2><strong>2       </strong> 定位界面</h2><br><!-- /wp:heading --></p>
+<!-- wp:paragraph -->
+<p><p><a>定位界面，主要由上方的底层用户数据显示界面，和下方的定位地图界面，地图界面采用浏览器形式，并对定位点用红色鲜明坐标在图中进行了标记。</a></p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>首先，通过调用安卓底层接口，读取手机的经度、纬度等信息，然后设计了一个浏览器界面，由于时间关系没有调用高德地图的api，直接调用的web静态页面。通过修改URL的页面地址，即可获得如图所示的地图信息显示图。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":255,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/2-514x1024.png" alt="" class="wp-image-255"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图2 APP定位界面</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>其次，由于本文中获取的为GPS原始数据，采用的是国际坐标系(WGS84)，而中国地图采用的为火星坐标系(GCJ02)，其中进行了经纬度的转换，将原始数据转到精准的经纬度数据，并实现精确定位。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:heading -->
+<p><h2><strong>3       </strong>视频通话界面</h2><br><!-- /wp:heading --></p>
+<!-- wp:paragraph -->
+<p><p>视频通话界面，界面左侧为通话对方的实时视频图像，右方为己方的实时视频图像，下方为对方的端口号输入栏，右侧为设置，点击后会连接进对方的视频数据中。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>首先，先编写程序，读取安卓手机的相机接口。其中的原理是，首先将调用安卓手机的相机功能，然后将拍摄到的视频保存在存储器中的某个地方，然后读取该位置的图片，在右侧视频端进行显示，调用相机接口如图3所示。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>然后采用socket通信，其中有两种选择，TCP通信和UDP通信两种方式，其各自在自己的使用场景下有各自的优点，但是考虑到UDP不用握手可以完成双向传递，于是选择UDP，同时还可以提高通信速率。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":258,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/3-1-626x1024.png" alt="" class="wp-image-258"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图3 APP视频通话相机功能</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>获取到本地的图像数据后，对图像进行编码，通过UDP通讯协议进行传输，传输到本地IP：192.168.201.217，端口：8888上。然后在另对方手机中输入己方IP地址，点击START按钮即可开始视频通话，视频通话完成图像如下图所示。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":259,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/4-1-524x1024.png" alt="" class="wp-image-259"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图4 APP视频通话界面图</p><br><!-- /wp:paragraph --></p>
+<!-- wp:heading -->
+<p><h2><strong>4      APP</strong>视频demo</h2><br><!-- /wp:heading --></p>
+<!-- wp:video -->
+<p><figure class="wp-block-video"><video controls src="blob:http://www.mmrsl.cn/386ea6cf-f2e7-47b7-9cf8-8346885f1ddd"></video></figure><br><!-- /wp:video --></p>
+]]></content>
+      <categories>
+        <category>安卓APP</category>
+      </categories>
+      <tags>
+        <tag>安卓APP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于深度强化学习的超级马里奥和飞机大战自动控制</title>
     <url>/2021/03/15/%E5%9F%BA%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5%E5%92%8C%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="基于深度强化学习的超级马里奥和飞机大战自动控制"><a href="#基于深度强化学习的超级马里奥和飞机大战自动控制" class="headerlink" title="基于深度强化学习的超级马里奥和飞机大战自动控制"></a><center>基于深度强化学习的超级马里奥和飞机大战自动控制</center></h1><span id="more"></span>
@@ -5883,110 +5987,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       <tags>
         <tag>强化学习</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>xmu健康打卡ios快捷指令</title>
-    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
-<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
-<li>浏览器</li>
-<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
-<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
-<li>接着，选择network<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center></li>
-<li><p>找到POST，不要寻找GET</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-</li>
-<li><p>如下：<br><center>
-<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
-</li>
-</ul>
-<p>即找到了我们需要的登录网址。</p>
-<p>接下来记录 username和userpassword，依次填入ios。</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-
-<ul>
-<li>将得到的数据填入一下列表<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ul>
-<blockquote>
-<p>仅只写到这里有兴趣的自己继续探索。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>厦门大学</category>
-      </categories>
-      <tags>
-        <tag>厦门大学</tag>
-        <tag>健康打卡</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>实时视频传输APP</title>
-    <url>/2021/01/15/%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93APP/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- wp:heading -->
-<p><h2><strong>视频通信APP</strong><strong>的设计</strong></h2><br><!-- /wp:heading --></p>
-<!-- wp:heading -->
-<p><h2><strong>1       </strong>功能选择界面</h2><br><!-- /wp:heading --></p>
-<!-- wp:paragraph -->
-<p><p>通过程序设计，首先构建用户功能选择界面，其中包括用户名和该用户的个人签名、个人头像，本处签名选用为个人网站，新的个人网站：<a href="https://www.codekp.cn/">https://www.codekp.cn/</a>。向下依次是Home主界面，主要是APP的地图功能。第二项Gallery为第二个界面，为APP的蓝牙信道检测功能，第三项Slideshow为第三界面，为APP的视频通话功能。点击三个界面选项框可以跳转到自己的界面。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":254,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/1.png" alt="" class="wp-image-254"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图1 APP功能选择界面图</p><br><!-- /wp:paragraph --></p>
-<!-- wp:heading -->
-<p><h2><strong>2       </strong> 定位界面</h2><br><!-- /wp:heading --></p>
-<!-- wp:paragraph -->
-<p><p><a>定位界面，主要由上方的底层用户数据显示界面，和下方的定位地图界面，地图界面采用浏览器形式，并对定位点用红色鲜明坐标在图中进行了标记。</a></p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>首先，通过调用安卓底层接口，读取手机的经度、纬度等信息，然后设计了一个浏览器界面，由于时间关系没有调用高德地图的api，直接调用的web静态页面。通过修改URL的页面地址，即可获得如图所示的地图信息显示图。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":255,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/2-514x1024.png" alt="" class="wp-image-255"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图2 APP定位界面</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>其次，由于本文中获取的为GPS原始数据，采用的是国际坐标系(WGS84)，而中国地图采用的为火星坐标系(GCJ02)，其中进行了经纬度的转换，将原始数据转到精准的经纬度数据，并实现精确定位。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:heading -->
-<p><h2><strong>3       </strong>视频通话界面</h2><br><!-- /wp:heading --></p>
-<!-- wp:paragraph -->
-<p><p>视频通话界面，界面左侧为通话对方的实时视频图像，右方为己方的实时视频图像，下方为对方的端口号输入栏，右侧为设置，点击后会连接进对方的视频数据中。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>首先，先编写程序，读取安卓手机的相机接口。其中的原理是，首先将调用安卓手机的相机功能，然后将拍摄到的视频保存在存储器中的某个地方，然后读取该位置的图片，在右侧视频端进行显示，调用相机接口如图3所示。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>然后采用socket通信，其中有两种选择，TCP通信和UDP通信两种方式，其各自在自己的使用场景下有各自的优点，但是考虑到UDP不用握手可以完成双向传递，于是选择UDP，同时还可以提高通信速率。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":258,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/3-1-626x1024.png" alt="" class="wp-image-258"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图3 APP视频通话相机功能</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>获取到本地的图像数据后，对图像进行编码，通过UDP通讯协议进行传输，传输到本地IP：192.168.201.217，端口：8888上。然后在另对方手机中输入己方IP地址，点击START按钮即可开始视频通话，视频通话完成图像如下图所示。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":259,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/4-1-524x1024.png" alt="" class="wp-image-259"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图4 APP视频通话界面图</p><br><!-- /wp:paragraph --></p>
-<!-- wp:heading -->
-<p><h2><strong>4      APP</strong>视频demo</h2><br><!-- /wp:heading --></p>
-<!-- wp:video -->
-<p><figure class="wp-block-video"><video controls src="blob:http://www.mmrsl.cn/386ea6cf-f2e7-47b7-9cf8-8346885f1ddd"></video></figure><br><!-- /wp:video --></p>
-]]></content>
-      <categories>
-        <category>安卓APP</category>
-      </categories>
-      <tags>
-        <tag>安卓APP</tag>
       </tags>
   </entry>
   <entry>
