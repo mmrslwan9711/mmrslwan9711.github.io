@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="深度学习CIFAR-10, 漫漫人生路">
+    <meta name="keywords" content="LeNet_AlexNet_VGG_ResNet34_on_CIFAR10, 漫漫人生路">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>深度学习CIFAR-10 | 漫漫人生路</title>
+    <title>LeNet_AlexNet_VGG_ResNet34_on_CIFAR10 | 漫漫人生路</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -377,12 +377,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://www.codekp.cn/download/img/cifar10/1.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">深度学习CIFAR-10</h1>
+                    <h1 class="description center-align post-title">LeNet_AlexNet_VGG_ResNet34_on_CIFAR10</h1>
                 </div>
             </div>
         </div>
@@ -498,12 +498,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
-                                <span class="chip bg-color">深度学习</span>
-                            </a>
-                        
-                            <a href="/tags/CIFAR-10/">
-                                <span class="chip bg-color">CIFAR-10</span>
+                            <a href="/tags/pytorch/">
+                                <span class="chip bg-color">pytorch</span>
                             </a>
                         
                     </div>
@@ -514,12 +510,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Python/" class="post-category">
-                                Python
-                            </a>
-                        
-                            <a href="/categories/Python/torch/" class="post-category">
-                                torch
+                            <a href="/categories/pytorch/" class="post-category">
+                                pytorch
                             </a>
                         
                     </div>
@@ -531,28 +523,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-15
+                    2021-11-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-03-15
+                    2021-11-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    394
+                    3.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    17 分
                 </div>
                 
 
@@ -575,15 +567,633 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="深度学习CIFAR-10"><a href="#深度学习CIFAR-10" class="headerlink" title=" 深度学习CIFAR-10 "></a><center> 深度学习CIFAR-10 </center></h1><p>忽然对CNN卷积神经网络比较感兴趣，于是选择了CIFAR-10数据集进行机器视觉的学习。<br><span id="more"></span></p>
-<h2 id="CIFAR-10"><a href="#CIFAR-10" class="headerlink" title="CIFAR-10"></a>CIFAR-10</h2><p><img src="https://img-blog.csdnimg.cn/20190730170546931.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly95dW55YW5pdS5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70" alt=""></p>
+                <h1 id="LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度"><a href="#LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度" class="headerlink" title="LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度"></a>LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度</h1><p>忽然对CNN卷积神经网络比较感兴趣，于是选择了CIFAR-10数据集进行机器视觉的学习。<br><span id="more"></span></p>
+<h2 id="CIFAR-10"><a href="#CIFAR-10" class="headerlink" title="CIFAR-10"></a>CIFAR-10</h2><p><img src="https://www.codekp.cn/download/img/cifar10/1.png" alt=""></p>
 <p>CIFAR-10是一个更接近普适物体的彩色图像数据集。CIFAR-10 是一个用于识别普适物体的小型数据集。一共包含10 个类别的RGB 彩色图片：飞机（ airplane ）、汽车（ automobile ）、鸟类（ bird ）、猫（ cat ）、鹿（ deer ）、狗（ dog ）、蛙类（ frog ）、马（ horse ）、船（ ship ）和卡车（ truck ）。</p>
 <p>每个图片的尺寸为32 × 32 ，每个类别有6000个图像，数据集中一共有50000 张训练图片和10000 张测试图片。</p>
 <h2 id="MNIST数据集"><a href="#MNIST数据集" class="headerlink" title="MNIST数据集"></a>MNIST数据集</h2><p>MNIST数据集是机器学习领域中非常经典的一个数据集，训练数据集包含 60,000 个样本, 测试数据集包含 10,000 样本. 在 MNIST 数据集中的每张图片由 28 x 28 个像素点构成, 每个像素点用一个灰度值表示. </p>
 <p><img src="https://upload-images.jianshu.io/upload_images/127313-6ee7f73fd968d278.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <h2 id="CIFAR-10和与MNIST之间的区别"><a href="#CIFAR-10和与MNIST之间的区别" class="headerlink" title="CIFAR-10和与MNIST之间的区别"></a>CIFAR-10和与MNIST之间的区别</h2><p>与MNIST数据集中目比， CIFAR-10 真高以下不同点</p>
 <p>(1)、CIFAR-10 是3 通道的彩色RGB 图像，而MNIST 是灰度图像。<br>(2)、CIFAR-10 的图片尺寸为32 × 32 ， 而MNIST 的图片尺寸为28 × 28 ，比MNIST 稍大。<br>(3)、相比于手写字符， CIFAR-10 含有的是现实世界中真实的物体，不仅噪声很大，而且物体的比例、特征都不尽相同，这为识别带来很大困难。直接的线性模型如Softmax 在CIFAR-10 上表现得很差。</p>
-<h2 id="CIFAR-10和与MNIST数据集的下载"><a href="#CIFAR-10和与MNIST数据集的下载" class="headerlink" title="CIFAR-10和与MNIST数据集的下载"></a>CIFAR-10和与MNIST数据集的下载</h2>
+<h2 id="LeNet代码"><a href="#LeNet代码" class="headerlink" title="LeNet代码"></a>LeNet代码</h2><pre class="line-numbers language-none"><code class="language-none">import torch
+import torch.nn as nn
+from torch import optim
+from torch.utils.data import DataLoader
+from torchvision import transforms
+from torchvision import datasets
+from tqdm import tqdm
+
+transform &#x3D; transforms.Compose([
+    transforms.RandomHorizontalFlip(),
+    transforms.ToTensor()
+    ])
+
+# 定义超参数
+BATCH_SIZE &#x3D; 128  # 批的大小
+# CIFAR-10
+train_dataset &#x3D; datasets.CIFAR10(&#39;.&#x2F;data1&#39;, train&#x3D;True, transform&#x3D;transform, download&#x3D;False)
+train_loader &#x3D; DataLoader(train_dataset, batch_size&#x3D;BATCH_SIZE, shuffle&#x3D;True, num_workers&#x3D;0, pin_memory&#x3D;True)
+test_dataset &#x3D; datasets.CIFAR10(&#39;.&#x2F;data1&#39;, train&#x3D;False, transform&#x3D;transform, download&#x3D;False)
+test_loader &#x3D; DataLoader(test_dataset, batch_size&#x3D;BATCH_SIZE, shuffle&#x3D;False, num_workers&#x3D;0, pin_memory&#x3D;True)
+classes &#x3D; (&#39;plane&#39;, &#39;car&#39;, &#39;bird&#39;, &#39;cat&#39;, &#39;deer&#39;, &#39;dog&#39;, &#39;frog&#39;, &#39;horse&#39;, &#39;ship&#39;, &#39;truck&#39;)
+
+# 定义网络模型
+class LeNet(nn.Module):
+    def __init__(self):
+        super(LeNet, self).__init__()
+
+        # 卷积层
+        self.cnn &#x3D; nn.Sequential(
+            # 卷积层1，3通道输入，6个卷积核，核大小5*5
+            # 经过该层图像大小变为32-5+1，28*28
+            # 经2*2最大池化，图像变为14*14
+            nn.Conv2d(3, 6, 5),
+            nn.ReLU(),
+            nn.MaxPool2d(2),
+
+            # 卷积层2，6输入通道，16个卷积核，核大小5*5
+            # 经过该层图像变为14-5+1，10*10
+            # 经2*2最大池化，图像变为5*5
+            nn.Conv2d(6, 16, 5),
+            nn.ReLU(),
+            nn.MaxPool2d(2)
+        )
+
+        # 全连接层
+        self.fc &#x3D; nn.Sequential(
+            # 16个feature，每个feature 5*5
+            nn.Linear(16 * 5 * 5, 120),
+            nn.ReLU(),
+            nn.Linear(120, 84),
+            nn.ReLU(),
+            nn.Linear(84, 10)
+        )
+
+    def forward(self, x):
+        x &#x3D; self.cnn(x)
+
+        # x.size()[0]: batch size
+        x &#x3D; x.view(x.size()[0], -1)
+        x &#x3D; self.fc(x)
+
+        return x
+# 创建模型
+net &#x3D; LeNet().to(&#39;cuda&#39;)
+# 定义优化器和损失函数
+criterion &#x3D; nn.CrossEntropyLoss()  # 交叉式损失函数
+optimizer &#x3D; optim.SGD(net.parameters(), lr&#x3D;0.001, momentum&#x3D;0.9)  # 优化器
+
+
+# 定义轮数
+EPOCHS &#x3D; 50
+
+for epoch in range(EPOCHS):
+    train_loss &#x3D; 0.0
+    for i, (datas, labels) in tqdm(enumerate(train_loader)):
+        datas, labels &#x3D; datas.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
+        # 梯度置零
+        optimizer.zero_grad()
+        # 训练
+        outputs &#x3D; net(datas)
+        # 计算损失
+        loss &#x3D; criterion(outputs, labels)
+        # 反向传播
+        loss.backward()
+        # 参数更新
+        optimizer.step()
+        # 累计损失
+        train_loss +&#x3D; loss.item()
+    print(&quot;Epoch : &#123;&#125; , Batch :&#123;&#125; , Loss : &#123;:.3f&#125;&quot;.format(epoch+1, i+1, train_loss&#x2F;len(train_loader.dataset)))
+
+
+# 保存模型
+PATH &#x3D; &#39;cifar_net.pth&#39;
+torch.save(net.state_dict(), PATH)
+
+# 加载模型
+model &#x3D; net.to(&#39;cuda&#39;)
+model.load_state_dict(torch.load(PATH))     # .load_state_dict() 加载模型
+
+# 测试
+correct &#x3D; 0
+total &#x3D; 0
+with torch.no_grad():
+    for i, (datas, labels) in enumerate(test_loader):
+        datas, labels &#x3D; datas.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
+        # 输出
+        outputs &#x3D; model(datas)  # outputs.data.shape --&gt; torch.Size([128, 10])
+        _, predicted &#x3D; torch.max(outputs.data, dim&#x3D;1)   # 第一个是值的张量，第二个是序号的张量
+        # 累计数据量
+        total +&#x3D; labels.size(0)     # labels.size() --&gt; torch.Size([128]), labels.size(0) --&gt; 128
+        # 比较有多少个预测正确
+        correct +&#x3D; (predicted &#x3D;&#x3D; labels).sum()  # 相同为1，不同为0，利用sum()求总和
+    print(&#39;在10000张测试集图片上的准确率：&#123;:.3f&#125;&#39;.format(correct &#x2F; total * 100))
+
+# 显示每一类预测的概率
+class_correct &#x3D; list(0. for i in range(10))
+total &#x3D; list(0. for i in range(10))
+with torch.no_grad():
+    for (images, labels) in test_loader:
+        # 输出
+        images, labels &#x3D; images.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
+        outputs &#x3D; model(images)
+        # 获取到每一行最大值的索引
+        _, predicted &#x3D; torch.max(outputs.data, dim&#x3D;1)
+        c &#x3D; (predicted &#x3D;&#x3D; labels).squeeze()     # squeeze() 去掉0维[默认]， unsqueeze() 增加一维
+        if labels.shape[0] &#x3D;&#x3D; 128:
+            for i in range(BATCH_SIZE):
+                label &#x3D; labels[i]   # 获取每一个label
+                class_correct[label] +&#x3D; c[i].item()     # 累计True的个数，注意 1+True&#x3D;2， 1+False&#x3D;1
+                total[label] +&#x3D; 1   # 该类总的个数
+
+# 输出正确率
+for i in range(10):
+    print(&#39;正确率 ： %5s : %2d %%&#39; % (classes[i], 100 * class_correct[i] &#x2F; total[i]))
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="AlexNet"><a href="#AlexNet" class="headerlink" title="AlexNet"></a>AlexNet</h2><pre class="line-numbers language-none"><code class="language-none">class AlexNet(nn.Module):
+    def __init__(self, num_classes):
+        super(AlexNet, self).__init__()
+        self.features &#x3D; nn.Sequential(
+            nn.Conv2d(3, 64, kernel_size&#x3D;3, stride&#x3D;2, padding&#x3D;1),  # 修改了这个地方，不知道为什么就对了
+            # raw kernel_size&#x3D;11, stride&#x3D;4, padding&#x3D;2. For use img size 224 * 224.
+            nn.ReLU(inplace&#x3D;True),
+            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2),
+
+            nn.Conv2d(64, 192, kernel_size&#x3D;5, padding&#x3D;2),
+            nn.ReLU(inplace&#x3D;True),
+            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2),
+
+            nn.Conv2d(192, 384, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.ReLU(inplace&#x3D;True),
+
+            nn.Conv2d(384, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.ReLU(inplace&#x3D;True),
+
+            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.ReLU(inplace&#x3D;True),
+            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2), )
+        self.classifier &#x3D; nn.Sequential(
+            nn.Dropout(),
+            nn.Linear(256 * 1 * 1, 4096),
+            nn.ReLU(inplace&#x3D;True),
+            nn.Dropout(),
+            nn.Linear(4096, 4096),
+            nn.ReLU(inplace&#x3D;True),
+            nn.Linear(4096, num_classes), )
+
+    def forward(self, x):
+        x &#x3D; self.features(x)
+        x &#x3D; x.view(x.size(0), 256 * 1 * 1)
+        x &#x3D; self.classifier(x)
+        # return F.log_softmax(inputs, dim&#x3D;3)
+        return x<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="VGG"><a href="#VGG" class="headerlink" title="VGG"></a>VGG</h2><h3 id="VGG16"><a href="#VGG16" class="headerlink" title="VGG16"></a>VGG16</h3><pre class="line-numbers language-none"><code class="language-none">
+# 定义网络模型
+class VGG16(nn.Module):
+    def __init__(self, num_classes&#x3D;1000):
+        super(VGG16, self).__init__()
+        self.features &#x3D; nn.Sequential(
+            # 1
+            nn.Conv2d(3, 64, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(True),
+            # 2
+            nn.Conv2d(64, 64, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+            # 3
+            nn.Conv2d(64, 128, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(128),
+            nn.ReLU(True),
+            # 4
+            nn.Conv2d(128, 128, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(128),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+            # 5
+            nn.Conv2d(128, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(256),
+            nn.ReLU(True),
+            # 6
+            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(256),
+            nn.ReLU(True),
+            # 7
+            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(256),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+            # 8
+            nn.Conv2d(256, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            # 9
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            # 10
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+            # 11
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            # 12
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            # 13
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            # nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+        )
+        self.classifier &#x3D; nn.Sequential(
+            # 14
+            nn.Linear(512, 4096),
+            nn.ReLU(True),
+            nn.Dropout(),
+            # 15
+            nn.Linear(4096, 4096),
+            nn.ReLU(True),
+            nn.Dropout(),
+            # 16
+            nn.Linear(4096, num_classes),
+        )
+        # self.classifier &#x3D; nn.Linear(512, 10)
+
+    def forward(self, x):
+        out &#x3D; self.features(x)
+        out &#x3D; out.view(out.size(0), -1)
+        out &#x3D; self.classifier(out)
+        return out
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="VGG19"><a href="#VGG19" class="headerlink" title="VGG19"></a>VGG19</h3><pre class="line-numbers language-none"><code class="language-none">
+&#39;&#39;&#39;
+创建VGG块
+参数分别为输入通道数，输出通道数，卷积层个数，是否做最大池化
+&#39;&#39;&#39;
+def make_vgg_block(in_channel, out_channel, convs, pool&#x3D;True):
+    net &#x3D; []
+
+    # 不改变图片尺寸卷积
+    net.append(nn.Conv2d(in_channel, out_channel, kernel_size&#x3D;3, padding&#x3D;1))
+    net.append(nn.BatchNorm2d(out_channel))
+    net.append(nn.ReLU(inplace&#x3D;True))
+
+    for i in range(convs - 1):
+        # 不改变图片尺寸卷积
+        net.append(nn.Conv2d(out_channel, out_channel, kernel_size&#x3D;3, padding&#x3D;1))
+        net.append(nn.BatchNorm2d(out_channel))
+        net.append(nn.ReLU(inplace&#x3D;True))
+
+    if pool:
+        # 2*2最大池化，图片变为w&#x2F;2 * h&#x2F;2
+        net.append(nn.MaxPool2d(2))
+
+    return nn.Sequential(*net)
+
+# 定义网络模型
+class VGG19Net(nn.Module):
+    def __init__(self):
+        super(VGG19Net, self).__init__()
+
+        net &#x3D; []
+
+        # 输入32*32，输出16*16
+        net.append(make_vgg_block(3, 64, 2))
+
+        # 输出8*8
+        net.append(make_vgg_block(64, 128, 2))
+
+        # 输出4*4
+        net.append(make_vgg_block(128, 256, 4))
+
+        # 输出2*2
+        net.append(make_vgg_block(256, 512, 4))
+
+        # 无池化层，输出保持2*2
+        net.append(make_vgg_block(512, 512, 4, False))
+
+        self.cnn &#x3D; nn.Sequential(*net)
+
+        self.fc &#x3D; nn.Sequential(
+            # 512个feature，每个feature 2*2
+            nn.Linear(512*2*2, 256),
+            nn.ReLU(),
+
+            nn.Linear(256, 256),
+            nn.ReLU(),
+
+            nn.Linear(256, 10)
+        )
+
+    def forward(self, x):
+        x &#x3D; self.cnn(x)
+        # x.size()[0]: batch size
+        x &#x3D; x.view(x.size()[0], -1)
+        x &#x3D; self.fc(x)
+
+        return x
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="ResNet34"><a href="#ResNet34" class="headerlink" title="ResNet34"></a>ResNet34</h2><h3 id="ResNet34-model1"><a href="#ResNet34-model1" class="headerlink" title="ResNet34 model1"></a>ResNet34 model1</h3><pre class="line-numbers language-none"><code class="language-none">class ResBlock(nn.Module):
+    def __init__(self, in_channels, out_channels, stride&#x3D;1):
+        super(ResBlock, self).__init__()
+
+        # 残差块的第一个卷积
+        # 通道数变换in-&gt;out，每一层（除第一层外）的第一个block
+        # 图片尺寸变换：stride&#x3D;2时，w-3+2 &#x2F; 2 + 1 &#x3D; w&#x2F;2，w&#x2F;2 * w&#x2F;2
+        # stride&#x3D;1时尺寸不变，w-3+2 &#x2F; 1 + 1 &#x3D; w
+        self.conv1 &#x3D; nn.Conv2d(in_channels, out_channels, kernel_size&#x3D;3, stride&#x3D;stride, padding&#x3D;1)
+        self.bn1 &#x3D; nn.BatchNorm2d(out_channels)
+        self.relu &#x3D; nn.ReLU(inplace&#x3D;True)
+
+        # 残差块的第二个卷积
+        # 通道数、图片尺寸均不变
+        self.conv2 &#x3D; nn.Conv2d(out_channels, out_channels, kernel_size&#x3D;3, stride&#x3D;1, padding&#x3D;1)
+        self.bn2 &#x3D; nn.BatchNorm2d(out_channels)
+
+        # 残差块的shortcut
+        # 如果残差块的输入输出通道数不同，则需要变换通道数及图片尺寸，以和residual部分相加
+        # 输出：通道数*2 图片尺寸&#x2F;2
+        if in_channels !&#x3D; out_channels:
+            self.downsample &#x3D; nn.Sequential(
+                nn.Conv2d(in_channels, out_channels, kernel_size&#x3D;1, stride&#x3D;2),
+                nn.BatchNorm2d(out_channels)
+            )
+        else:
+            # 通道数相同，无需做变换，在forward中identity &#x3D; x
+            self.downsample &#x3D; None
+
+    def forward(self, x):
+        identity &#x3D; x
+
+        out &#x3D; self.conv1(x)
+        out &#x3D; self.bn1(out)
+        out &#x3D; self.relu(out)
+
+        out &#x3D; self.conv2(out)
+        out &#x3D; self.bn2(out)
+
+        if self.downsample is not None:
+            identity &#x3D; self.downsample(x)
+
+        out +&#x3D; identity
+        out &#x3D; self.relu(out)
+
+        return out
+
+
+&#39;&#39;&#39;
+# 定义网络模型
+&#39;&#39;&#39;
+#定义网络结构
+
+class ResNet34(nn.Module):
+    def __init__(self, block):
+        super(ResNet34, self).__init__()
+
+        # 初始卷积层核池化层
+        self.first &#x3D; nn.Sequential(
+            # 卷基层1：7*7kernel，2stride，3padding，outmap：32-7+2*3 &#x2F; 2 + 1，16*16
+            nn.Conv2d(3, 64, 7, 2, 3),
+            nn.BatchNorm2d(64),
+            nn.ReLU(inplace&#x3D;True),
+
+            # 最大池化，3*3kernel，1stride（32的原始输入图片较小，不再缩小尺寸），1padding，
+            # outmap：16-3+2*1 &#x2F; 1 + 1，16*16
+            nn.MaxPool2d(3, 1, 1)
+        )
+
+        # 第一层，通道数不变
+        self.layer1 &#x3D; self.make_layer(block, 64, 64, 3, 1)
+
+        # 第2、3、4层，通道数*2，图片尺寸&#x2F;2
+        self.layer2 &#x3D; self.make_layer(block, 64, 128, 4, 2)  # 输出8*8
+        self.layer3 &#x3D; self.make_layer(block, 128, 256, 6, 2)  # 输出4*4
+        self.layer4 &#x3D; self.make_layer(block, 256, 512, 3, 2)  # 输出2*2
+
+        self.avg_pool &#x3D; nn.AvgPool2d(2)  # 输出512*1
+        self.fc &#x3D; nn.Linear(512, 10)
+
+    def make_layer(self, block, in_channels, out_channels, block_num, stride):
+        layers &#x3D; []
+
+        # 每一层的第一个block，通道数可能不同
+        layers.append(block(in_channels, out_channels, stride))
+
+        # 每一层的其他block，通道数不变，图片尺寸不变
+        for i in range(block_num - 1):
+            layers.append(block(out_channels, out_channels, 1))
+
+        return nn.Sequential(*layers)
+
+    def forward(self, x):
+        x &#x3D; self.first(x)
+        x &#x3D; self.layer1(x)
+        x &#x3D; self.layer2(x)
+        x &#x3D; self.layer3(x)
+        x &#x3D; self.layer4(x)
+        x &#x3D; self.avg_pool(x)
+
+        # x.size()[0]: batch size
+        x &#x3D; x.view(x.size()[0], -1)
+        x &#x3D; self.fc(x)
+
+        return x
+# 创建模型
+net &#x3D; ResNet34(ResBlock).to(&#39;cuda&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="ResNet34-model2"><a href="#ResNet34-model2" class="headerlink" title="ResNet34 model2"></a>ResNet34 model2</h3><pre class="line-numbers language-none"><code class="language-none">
+#定义网络结构
+class ResNet34(nn.Module):
+    def __init__(self, block):
+        super(ResNet34, self).__init__()
+
+        # 初始卷积层核池化层
+        self.first &#x3D; nn.Sequential(
+            # 卷基层1：3*3kernel，1stride，1padding，outmap：32-3+1*2 &#x2F; 1 + 1，32*32
+            nn.Conv2d(3, 64, 3, 1, 1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(inplace&#x3D;True),
+
+            # 最大池化，3*3kernel，1stride（保持尺寸），1padding，
+            # outmap：32-3+2*1 &#x2F; 1 + 1，32*32
+            nn.MaxPool2d(3, 1, 1)
+        )
+
+        # 第一层，通道数不变
+        self.layer1 &#x3D; self.make_layer(block, 64, 64, 3, 1)
+
+        # 第2、3、4层，通道数*2，图片尺寸&#x2F;2
+        self.layer2 &#x3D; self.make_layer(block, 64, 128, 4, 2)  # 输出16*16
+        self.layer3 &#x3D; self.make_layer(block, 128, 256, 6, 2)  # 输出8*8
+        self.layer4 &#x3D; self.make_layer(block, 256, 512, 3, 2)  # 输出4*4
+
+        self.avg_pool &#x3D; nn.AvgPool2d(4)  # 输出512*1
+        self.fc &#x3D; nn.Linear(512, 10)
+
+    def make_layer(self, block, in_channels, out_channels, block_num, stride):
+        layers &#x3D; []
+
+        # 每一层的第一个block，通道数可能不同
+        layers.append(block(in_channels, out_channels, stride))
+
+        # 每一层的其他block，通道数不变，图片尺寸不变
+        for i in range(block_num - 1):
+            layers.append(block(out_channels, out_channels, 1))
+
+        return nn.Sequential(*layers)
+
+    def forward(self, x):
+        x &#x3D; self.first(x)
+        x &#x3D; self.layer1(x)
+        x &#x3D; self.layer2(x)
+        x &#x3D; self.layer3(x)
+        x &#x3D; self.layer4(x)
+        x &#x3D; self.avg_pool(x)
+
+        # x.size()[0]: batch size
+        x &#x3D; x.view(x.size()[0], -1)
+        x &#x3D; self.fc(x)
+
+        return x
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>若第一次运行可以<code>train_dataset = datasets.CIFAR10(&#39;./data1&#39;, train=True, transform=transform, download=False)</code>将download改为true.</li>
+<li>其他网络在LeNet基础上替换网络即可运行。</li>
+<li>参考我之前的文章安装环境<a href="https://www.mmrsl.cn/2021/10/22/ubuntu-NVIDIA30xx%E6%98%BE%E5%8D%A1%E5%AE%89%E8%A3%85/">Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装</a></li>
+</ol>
+<h2 id="不同网络测试结果"><a href="#不同网络测试结果" class="headerlink" title="不同网络测试结果"></a>不同网络测试结果</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>网络类型</th>
+<th>LeNet</th>
+<th>AlexNet</th>
+<th>VGG16</th>
+<th>VGG19</th>
+<th>ResNet34 1</th>
+<th>ResNet34 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>准确度</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>61%</td>
+</tr>
+<tr>
+<td>loss</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>61%</td>
+</tr>
+<tr>
+<td>plane 准确度</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>61%</td>
+</tr>
+<tr>
+<td>car 准确度</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>61%</td>
+</tr>
+<tr>
+<td>bird 准确度</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>61%</td>
+</tr>
+<tr>
+<td>cat 准确度</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>61%</td>
+</tr>
+<tr>
+<td>deer 准确度</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>61%</td>
+</tr>
+<tr>
+<td>dog 准确度</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>61%</td>
+</tr>
+<tr>
+<td>frog 准确度</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>61%</td>
+</tr>
+<tr>
+<td>horse 准确度</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>61%</td>
+</tr>
+<tr>
+<td>ship 准确度</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>61%</td>
+</tr>
+<tr>
+<td>truck 准确度</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>59%</td>
+<td>61%</td>
+</tr>
+</tbody>
+</table>
+</div>
+
                 
             </div>
             <hr/>
@@ -609,7 +1219,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://www.mmrsl.cn/2021/03/15/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0CIFAR-10/">http://www.mmrsl.cn/2021/03/15/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0CIFAR-10/</a>
+                    <a href="http://www.mmrsl.cn/2021/11/15/LeNet-AlexNet-VGG-ResNet34-on-CIFAR10/">http://www.mmrsl.cn/2021/11/15/LeNet-AlexNet-VGG-ResNet34-on-CIFAR10/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -647,12 +1257,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
-                                    <span class="chip bg-color">深度学习</span>
-                                </a>
-                            
-                                <a href="/tags/CIFAR-10/">
-                                    <span class="chip bg-color">CIFAR-10</span>
+                                <a href="/tags/pytorch/">
+                                    <span class="chip bg-color">pytorch</span>
                                 </a>
                             
                         </div>
@@ -823,7 +1429,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2021-03-15T20-26-35',
+        id: '2021-11-15T16-50-42',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -849,54 +1455,47 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/03/15/%E5%9F%BA%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5%E5%92%8C%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6/">
+                <a href="/2021/11/15/LeNet-AlexNet-VGG-ResNet34-on-CIFAR10/">
                     <div class="card-image">
                         
+                        <img src="https://www.codekp.cn/download/img/cifar10/1.png" class="responsive-img" alt="LeNet_AlexNet_VGG_ResNet34_on_CIFAR10">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="基于深度强化学习的超级马里奥和飞机大战自动控制">
-                        
-                        <span class="card-title">基于深度强化学习的超级马里奥和飞机大战自动控制</span>
+                        <span class="card-title">LeNet_AlexNet_VGG_ResNet34_on_CIFAR10</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基于深度强化学习的超级马里奥和飞机大战自动控制
+                            LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度忽然对CNN卷积神经网络比较感兴趣，于是选择了CIFAR-10数据集进行机器视觉的学习。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    强化学习
-                                </a>
-                            
-                            <a href="/categories/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/Python/" class="post-category">
-                                    Python
+                            <a href="/categories/pytorch/" class="post-category">
+                                    pytorch
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">强化学习</span>
-                    </a>
-                    
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/pytorch/">
+                        <span class="chip bg-color">pytorch</span>
                     </a>
                     
                 </div>
@@ -910,30 +1509,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/01/31/%E5%90%88%E6%88%90%E5%8E%A6%E5%A4%A7/">
+                <a href="/2021/11/12/hexo-matery/">
                     <div class="card-image">
                         
-                        <img src="https://www.codekp.cn/download/img/%E6%95%B0%E6%8D%AE%E9%9B%86%E6%89%A9%E5%85%85/Original.jpg" class="responsive-img" alt="合成厦大">
+                        <img src="https://www.codekp.cn/download/img/baidu/baidu3.png" class="responsive-img" alt="hexo_matery">
                         
-                        <span class="card-title">合成厦大</span>
+                        <span class="card-title">hexo_matery</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            合成厦大最近合成大西瓜蛮火的，就想把里面的图片改了，然后做一个自己的合成厦大。
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-12
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/JavaScript/" class="post-category">
-                                    JavaScript
+                            <a href="/categories/hexo/" class="post-category">
+                                    hexo
                                 </a>
                             
                             
@@ -943,12 +1542,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%90%88%E6%88%90%E5%A4%A7%E8%A5%BF%E7%93%9C/">
-                        <span class="chip bg-color">合成大西瓜</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6/">
-                        <span class="chip bg-color">厦门大学</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -1195,7 +1790,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">85.4k</span>&nbsp;字
+                class="white-color">88.3k</span>&nbsp;字
             
             
             
