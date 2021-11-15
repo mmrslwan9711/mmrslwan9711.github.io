@@ -6,7 +6,7 @@
   <link href="http://www.mmrsl.cn/atom.xml" rel="self"/>
   
   <link href="http://www.mmrsl.cn/"/>
-  <updated>2021-11-15T09:25:17.180Z</updated>
+  <updated>2021-11-15T11:54:28.956Z</updated>
   <id>http://www.mmrsl.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.mmrsl.cn/2021/11/15/LeNet-AlexNet-VGG-ResNet34-on-CIFAR10/"/>
     <id>http://www.mmrsl.cn/2021/11/15/LeNet-AlexNet-VGG-ResNet34-on-CIFAR10/</id>
     <published>2021-11-15T08:50:42.000Z</published>
-    <updated>2021-11-15T09:25:17.180Z</updated>
+    <updated>2021-11-15T11:54:28.956Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度&quot;&gt;&lt;a href=&quot;#LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度&quot; class=&quot;headerlink&quot; title=&quot;LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度&quot;&gt;&lt;/a&gt;LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度&lt;/h1&gt;&lt;p&gt;忽然对CNN卷积神经网络比较感兴趣，于是选择了CIFAR-10数据集进行机器视觉的学习。&lt;/p&gt;</summary>
