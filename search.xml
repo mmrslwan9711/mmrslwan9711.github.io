@@ -2528,6 +2528,30 @@ protoc --python_out&#x3D;. C:\tensorflow1\models\research\object_detection\proto
       </tags>
   </entry>
   <entry>
+    <title>deepin_ssh_远程控制</title>
+    <url>/2021/04/13/deepin-ssh-%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="deepinssh远程控制"><a href="#deepinssh远程控制" class="headerlink" title="deepinssh远程控制"></a>deepin<em>ssh</em>远程控制</h1><h2 id="安装ssh："><a href="#安装ssh：" class="headerlink" title="安装ssh："></a>安装ssh：</h2><pre class="line-numbers language-none"><code class="language-none">apt-get install ssh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">sudo vi &#x2F;etc&#x2F;ssh&#x2F;sshd_config<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>找到下面内容</p>
+<p><img src="https://img2020.cnblogs.com/blog/1756476/202004/1756476-20200401231105458-1141980320.png" alt=""></p>
+<p> 将红色框中的内容修改为下面的内容：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1756476/202004/1756476-20200401231128868-2086048695.png" alt=""></p>
+<p>修改成功以后，重启ssh服务：</p>
+<p>　　切换至ssh目录下<br>　　　　service ssh restart<br>　　然后我们那就能愉快的使用xshell连远程连接并且用root用户登陆deepin系统了。</p>
+<h2 id="远程桌面连接"><a href="#远程桌面连接" class="headerlink" title="远程桌面连接"></a>远程桌面连接</h2><ol>
+<li>在软件商店安装remmina<br>详情请参考<a href="https://jingyan.baidu.com/article/3aed632e2923d8701080911d.html">远程桌面连接-百度经验</a></li>
+</ol>
+<p>2.安装<br><pre class="line-numbers language-none"><code class="language-none"># sudo apt-get install xrdp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>注意：安装完成后注销当前用户 或运行：</p>
+<p>详情请参考<a href="https://blog.csdn.net/yingftf/article/details/104581514">CSDN</a></p>
+]]></content>
+      <categories>
+        <category>deepin</category>
+      </categories>
+      <tags>
+        <tag>deepin</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>c++_常用语法</title>
     <url>/2020/07/31/c/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="C-常用语法"><a href="#C-常用语法" class="headerlink" title="C++常用语法"></a><center>C++常用语法</center></h1><h3 id="2020-08-01"><a href="#2020-08-01" class="headerlink" title="2020_08_01"></a><p align="right">2020_08_01</p></h3><blockquote>
@@ -2620,30 +2644,6 @@ const type variable &#x3D; value;<span aria-hidden="true" class="line-numbers-ro
       <tags>
         <tag>C++</tag>
         <tag>程序设计</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>deepin_ssh_远程控制</title>
-    <url>/2021/04/13/deepin-ssh-%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="deepinssh远程控制"><a href="#deepinssh远程控制" class="headerlink" title="deepinssh远程控制"></a>deepin<em>ssh</em>远程控制</h1><h2 id="安装ssh："><a href="#安装ssh：" class="headerlink" title="安装ssh："></a>安装ssh：</h2><pre class="line-numbers language-none"><code class="language-none">apt-get install ssh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<pre class="line-numbers language-none"><code class="language-none">sudo vi &#x2F;etc&#x2F;ssh&#x2F;sshd_config<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>找到下面内容</p>
-<p><img src="https://img2020.cnblogs.com/blog/1756476/202004/1756476-20200401231105458-1141980320.png" alt=""></p>
-<p> 将红色框中的内容修改为下面的内容：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1756476/202004/1756476-20200401231128868-2086048695.png" alt=""></p>
-<p>修改成功以后，重启ssh服务：</p>
-<p>　　切换至ssh目录下<br>　　　　service ssh restart<br>　　然后我们那就能愉快的使用xshell连远程连接并且用root用户登陆deepin系统了。</p>
-<h2 id="远程桌面连接"><a href="#远程桌面连接" class="headerlink" title="远程桌面连接"></a>远程桌面连接</h2><ol>
-<li>在软件商店安装remmina<br>详情请参考<a href="https://jingyan.baidu.com/article/3aed632e2923d8701080911d.html">远程桌面连接-百度经验</a></li>
-</ol>
-<p>2.安装<br><pre class="line-numbers language-none"><code class="language-none"># sudo apt-get install xrdp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>注意：安装完成后注销当前用户 或运行：</p>
-<p>详情请参考<a href="https://blog.csdn.net/yingftf/article/details/104581514">CSDN</a></p>
-]]></content>
-      <categories>
-        <category>deepin</category>
-      </categories>
-      <tags>
-        <tag>deepin</tag>
       </tags>
   </entry>
   <entry>
@@ -6894,6 +6894,55 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </tags>
   </entry>
   <entry>
+    <title>xmu健康打卡ios快捷指令</title>
+    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
+<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
+<li>浏览器</li>
+<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
+<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
+<li>接着，选择network<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center></li>
+<li><p>找到POST，不要寻找GET</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+</li>
+<li><p>如下：<br><center>
+<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
+</li>
+</ul>
+<p>即找到了我们需要的登录网址。</p>
+<p>接下来记录 username和userpassword，依次填入ios。</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+
+<ul>
+<li>将得到的数据填入一下列表<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ul>
+<blockquote>
+<p>仅只写到这里有兴趣的自己继续探索。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>厦门大学</category>
+      </categories>
+      <tags>
+        <tag>厦门大学</tag>
+        <tag>健康打卡</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>实时视频传输APP</title>
     <url>/2021/01/15/%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93APP/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- wp:heading -->
@@ -6946,55 +6995,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </categories>
       <tags>
         <tag>安卓APP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>xmu健康打卡ios快捷指令</title>
-    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
-<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
-<li>浏览器</li>
-<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
-<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
-<li>接着，选择network<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center></li>
-<li><p>找到POST，不要寻找GET</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-</li>
-<li><p>如下：<br><center>
-<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
-</li>
-</ul>
-<p>即找到了我们需要的登录网址。</p>
-<p>接下来记录 username和userpassword，依次填入ios。</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-
-<ul>
-<li>将得到的数据填入一下列表<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ul>
-<blockquote>
-<p>仅只写到这里有兴趣的自己继续探索。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>厦门大学</category>
-      </categories>
-      <tags>
-        <tag>厦门大学</tag>
-        <tag>健康打卡</tag>
       </tags>
   </entry>
   <entry>
@@ -7979,148 +7979,6 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
       </tags>
   </entry>
   <entry>
-    <title>目标识别数据集扩充_旋转扩充</title>
-    <url>/2021/07/28/%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E6%95%B0%E6%8D%AE%E9%9B%86%E6%89%A9%E5%85%852/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="目标识别数据集扩充-旋转扩充"><a href="#目标识别数据集扩充-旋转扩充" class="headerlink" title="目标识别数据集扩充_旋转扩充"></a>目标识别数据集扩充_旋转扩充</h1><h2 id="扩充方法"><a href="#扩充方法" class="headerlink" title="扩充方法"></a>扩充方法</h2><h3 id="原图"><a href="#原图" class="headerlink" title="原图"></a>原图</h3><p><img src="https://www.codekp.cn/download/img/数据集扩充/Original.jpg" alt=""></p>
-<h2 id="标签格式转化"><a href="#标签格式转化" class="headerlink" title="标签格式转化"></a>标签格式转化</h2><h3 id="标签xml转txt格式"><a href="#标签xml转txt格式" class="headerlink" title="标签xml转txt格式"></a>标签xml转txt格式</h3><pre class="line-numbers language-none"><code class="language-none">def xml_to_txt(self,dw,dh,xmin,ymin ,xmax ,ymax):
-    x &#x3D; (xmin+ xmax) &#x2F; 2.0
-    y &#x3D; (ymax + ymin) &#x2F; 2.0
-    w &#x3D; xmax- xmin
-    h &#x3D; ymax - ymin
-    x &#x3D; x &#x2F;dw
-    w &#x3D; w &#x2F; dw
-    y &#x3D; y &#x2F; dh
-    h &#x3D; h &#x2F; dh
-    return (x, y, w, h)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="txt转xml格式"><a href="#txt转xml格式" class="headerlink" title="txt转xml格式"></a>txt转xml格式</h3><p>其实就是个数学计算而已<br><pre class="line-numbers language-none"><code class="language-none">def txt_to_xml(self,Pwidth,Pheight,x,y , wp, hp):
-    xmin &#x3D; int((x * Pwidth + 1) - wp * 0.5 * Pwidth)
-    ymin &#x3D; int((y * Pheight + 1) - hp * 0.5 * Pheight)
-    xmax &#x3D; int((x* Pwidth + 1) + wp * 0.5 * Pwidth)
-    ymax &#x3D; int((y * Pheight + 1) + hp * 0.5 * Pheight)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<h2 id="txt文件"><a href="#txt文件" class="headerlink" title="txt文件"></a>txt文件</h2><h3 id="txt文件的读写"><a href="#txt文件的读写" class="headerlink" title="txt文件的读写"></a>txt文件的读写</h3><pre class="line-numbers language-none"><code class="language-none">def saveFlipLabel(txtpath,txt_save_path):
-    with open(txt_save_path, &quot;w&quot;) as outfile:
-        with open(txtpath, &quot;r&quot;) as infile:
-            for line in infile.readlines():
-                words &#x3D; line.split(&quot; &quot;)
-                horizontal_coord &#x3D; float(words[1])
-                outfile.write(
-                    words[0] + &quot; &quot; + str(format(1 - horizontal_coord, &quot;.6f&quot;)) + &quot; &quot; + words[2] + &quot; &quot; + words[3] + &quot; &quot; +
-                    words[4])
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="txt文件的拷贝"><a href="#txt文件的拷贝" class="headerlink" title="txt文件的拷贝"></a>txt文件的拷贝</h3><pre class="line-numbers language-none"><code class="language-none">def copyLabel(txtpath,txt_save_path):
-    shutil.copyfile(txtpath, txt_save_path)
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="main"><a href="#main" class="headerlink" title="main"></a>main</h2><pre class="line-numbers language-none"><code class="language-none">if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
-    img_aug &#x3D; ImgAugemention()
-    imgs_path &#x3D; &#39;.&#x2F;img&#x2F;&#39;
-    txt_path &#x3D; &#39;.&#x2F;label&#x2F;&#39;
-    img_save_path &#x3D; &#39;.&#x2F;images&#x2F;&#39;
-    txt_save_path &#x3D; &#39;.&#x2F;labels&#x2F;&#39;
-    angle_list &#x3D; [0,30,60, 90, 120, 150, 180, 270,330]
-    img_aug.process_img2(imgs_path, txt_path, img_save_path, txt_save_path)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>主要作用是实现对数据的扩展，对整个文件夹内所有文件进行读取，一键扩展</p>
-<pre class="line-numbers language-none"><code class="language-none">#!&#x2F;usr&#x2F;bin&#x2F;env python
-
-import cv2
-import math
-import numpy as np
-import os
-import pdb
-import xml.etree.ElementTree as ET
-from Image_expansion import *
-
-class ImgAugemention():
-    def __init__(self):
-        self.angle &#x3D; 90
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>主要由ImgAugemention类和Image_expansion构成</p>
-<h2 id="数据扩展结果"><a href="#数据扩展结果" class="headerlink" title="数据扩展结果"></a>数据扩展结果</h2><p><img src="https://www.codekp.cn/download/img/旋转扩充数据集/0-270.png" alt=""></p>
-<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p>如果需源码请联系本人，以上传至git私人仓库。</p>
-<ul>
-<li><a href="https://github.com/mmrslwan1110/Image-expansion2">https://github.com/mmrslwan1110/Image-expansion2</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>目标检测</category>
-      </categories>
-      <tags>
-        <tag>目标检测数据集扩充2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>矩阵分析引论</title>
-    <url>/2020/11/17/%E7%9F%A9%E9%98%B5%E8%AE%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="矩阵分析引论"><a href="#矩阵分析引论" class="headerlink" title="矩阵分析引论"></a><center>矩阵分析引论</center></h1><h2 id="Introduction-to-matrix-analysis"><a href="#Introduction-to-matrix-analysis" class="headerlink" title=" Introduction to matrix analysis "></a><center> Introduction to matrix analysis </center></h2><center>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=11355346&bvid=BV19x411878L&cid=18777309&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-</center>
-
-<span id="more"></span>
-<h2 id="1-线性空间与线性变换"><a href="#1-线性空间与线性变换" class="headerlink" title="1.线性空间与线性变换"></a>1.线性空间与线性变换</h2><ol>
-<li>对加减乘除封闭的集合被称之为数域。矩阵论中较常用的数域是QRC。其中Q:有理数域、R:实数数域、C复数数域。<br>$Q\subset R\subset C$<br>如果一个非空集合在某数域上，以下八条<center>
-<img src="https://www.codekp.cn/download/img/矩阵论/1.PNG" width = "1147" height = "950" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ol>
-<h3 id="线性空间例3-（函数空间-f-I-R"><a href="#线性空间例3-（函数空间-f-I-R" class="headerlink" title="线性空间例3.（函数空间$f(I,R)$)"></a>线性空间例3.（函数空间$f(I,R)$)</h3><ul>
-<li>$V:$<br>$F(I，R^n)$<br>$I=(0,1) ,[\frac{1}{2}，5]$函数的定义域<br>$R^n值域空间$<br>以函数为元素的抽象集合，数域取R</li>
-</ul>
-<ul>
-<li>： f+g<br>$ +  ： \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} + \begin{cases} g_1(x)\ g_2(x)\ g_n(x) \end{cases} = \begin{cases} f_1(x)+g_1(x)\f_2(x)+ g_2(x)\f_n(x)+g_n(x) \end{cases}  x \in I$</li>
-</ul>
-<ul>
-<li>：f<em>k<br>$</em> : \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} * k =\begin{cases} kf_1(x)\ kf_2(x)\ kf_n(x) \end{cases}$</li>
-</ul>
-<p>定义：（向量组及向量组拼成向量抽象矩阵）<br>设V是F上的线性空间V中的有限序列$\alpha_1、\alpha2、\alpha3 …\alpha_p $的一个向量组，向量组按顺序排列的行称为向量组拼成的抽象矩阵$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>序列：抽象或实际数构成的序列，抽象矩阵。用V中的抽象物拼接为一个矩阵。即：抽象的集合。</p>
-<blockquote>
-<p>数乘运算、线性空间满足八条运算规则:</p>
-</blockquote>
-<p>4条：<br>加法有交换律、结合律、有负元、有零元。<br>4条：<br>乘法有两个分配律，数乘法对抽象加法的分配律，数乘法对数值的分配律，先乘后乘以集合和两次分别乘以集合相等，f中的乘法单位元e做数乘法时空间不变。</p>
-<p>标准线性空间：<br>例子<br>二维空间<br>三维空间 ：所有有向线段构成的集合。<br>几何空间：<br>函数空间：函数作为运算对象，所构成的空间。信号的集合构成函数空间。</p>
-<p>将几何空间的解析几何方法抽象到一般的框架下，集合的量变成代数的量，坐标系。<br>考虑什么样的向量组可以模拟成几何的线性空间的问题。<br>向量组：$\alpha_1、\alpha2、\alpha3 …\alpha_p $<br>抽象矩阵：$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>1行p列的抽象矩阵，可以竖着拼。<br>行向量，横拼接。<br>列向量，竖拼接。<br>向量组的线性相关性：如果存在不全为零的P个数$k_i\in F, i=1,2,…,p$使得<br>$\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p=0$<br>则向量组\alpha_1、\alpha2、\alpha3 …\alpha_p称之为线性相关。<br>注： $\exists\begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0，\begin{cases} k_1\ k_2\ k_n \end{cases}\in F^p$</p>
-<p>使得(*)成立，对以上命题进行否定。<br>$\exists a\in P_a $<br>否定$\forall a\notin P_a $</p>
-<p> $\forall \begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0$<br> $\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p\neq 0$<br>线性无关</p>
-<p>线性无关即为线性相关的否定，存在系数不全为零的时，使得等号成立，即线性无关。</p>
-<p>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=0$<br>线性相关《——》有非零解<br>线性无关《——》没有非零解</p>
-<p>线性相关性：目的为了将抽象的序列搬移到几何空间中。</p>
-<h2 id="基"><a href="#基" class="headerlink" title="基"></a>基</h2><p>定义：（两个线性向量组之间的线性表示）<br>$\alpha_1、\alpha_2、\alpha_3 …\alpha_p;\beta_1、\beta_2、\beta_3、…、\beta_p$</p>
-<ol>
-<li>称为$\beta$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果存在$ k_1、k_2、k_3 …k_p \subset F$使得<br>$\beta=\alpha_1k_1+\alpha_2k_2+\alpha_3k_3 …+\alpha_pk_p$</li>
-<li>称$\beta_1、\beta_2、\beta_3、…、\beta_p$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果每个$\beta_i$据可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示</li>
-</ol>
-<h4 id="矩阵表达"><a href="#矩阵表达" class="headerlink" title="矩阵表达"></a>矩阵表达</h4><p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=\beta$ 其中$A=[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$</p>
-<ol>
-<li><p>因此$\beta$可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示《=====》非齐次线性方程组有解</p>
-</li>
-<li><p>重点：</p>
-</li>
-</ol>
-<p>$[\alpha<em>1、\alpha_2、\alpha_3 …\alpha_p] \begin{pmatrix}<br>        x</em>{11} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{1q} \<br>        x</em>{21} &amp; \cdots &amp;\cdots &amp; \cdots &amp; x<em>{2q} \<br>        \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>        x</em>{p1} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{pq}\<br>        \end{pmatrix}</em>{pq} =[\beta_1、\beta_2、\beta_3、…、\beta_p]$</p>
-<p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ]$记作A<br>$[\beta_1、\beta_2、\beta_3…\beta_p]$记作B：<br>$AX=B$抽象的矩阵方程</p>
-<p>$[\beta_i]$可有$[\alpha_i]$线性表示《=====》线性方程有解。</p>
-<ol>
-<li>线性表示具有传递性：<br>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]    、[{\alpha_i}]$<br>$[\beta_1、\beta_2、\beta_3…\beta_q]   、[{\beta_j}]$<br>$[\gamma_1、\gamma_2、\gamma_3…\gamma_t]      、[{\gamma_k}]$   </li>
-</ol>
-<p>$ [{\beta_j}]\leq lin [{\alpha_i}]<br>$且$ [{\gamma_k}]\leq lin [{\beta_j}]<br>$则$ [{\gamma_k}]\leq lin [{\alpha_i}]<br>$</p>
-<p>A$\leq lin$B 意思是A可以由B线性表示。</p>
-<ul>
-<li>证：<br>即 Ax=B、By=C 有解，证明Az=C？<br>C=By=(Ax)y</li>
-</ul>
-<p><img src="https://www.codekp.cn/download/img/矩阵论/目录.png" width = "400" height = "302" alt="图片名称" align=center /></p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>研究生课程</tag>
-        <tag>矩阵论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>目标识别数据集扩充</title>
     <url>/2021/07/26/%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E6%95%B0%E6%8D%AE%E9%9B%86%E6%89%A9%E5%85%85%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="目标检测数据集扩充"><a href="#目标检测数据集扩充" class="headerlink" title="目标检测数据集扩充"></a>目标检测数据集扩充</h1><p>数据扩充对于深度神经网络训练通常具有良好的作用，例如2003年Patrice Simard等人所著的一篇论文中他们把MNIST手写数字数据集通过旋转，转换和扭曲进行扩展。通过在这个扩展后的数据集上的训练，他们把MNIST手写数字识别的准确率提升到了98.9%。然后还在“弹性扭曲”的数据集上进行了实验，这是一种特殊的为了模仿手部肌肉的随机抖动的图像扭曲方法。通过使用弹性扭曲扩展的数据，他们最终达到了99.3%的分类准确率。</p>
@@ -8364,6 +8222,148 @@ def saveCutoutLabel(name):
       </categories>
       <tags>
         <tag>目标检测数据集扩充</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>目标识别数据集扩充_旋转扩充</title>
+    <url>/2021/07/28/%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E6%95%B0%E6%8D%AE%E9%9B%86%E6%89%A9%E5%85%852/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="目标识别数据集扩充-旋转扩充"><a href="#目标识别数据集扩充-旋转扩充" class="headerlink" title="目标识别数据集扩充_旋转扩充"></a>目标识别数据集扩充_旋转扩充</h1><h2 id="扩充方法"><a href="#扩充方法" class="headerlink" title="扩充方法"></a>扩充方法</h2><h3 id="原图"><a href="#原图" class="headerlink" title="原图"></a>原图</h3><p><img src="https://www.codekp.cn/download/img/数据集扩充/Original.jpg" alt=""></p>
+<h2 id="标签格式转化"><a href="#标签格式转化" class="headerlink" title="标签格式转化"></a>标签格式转化</h2><h3 id="标签xml转txt格式"><a href="#标签xml转txt格式" class="headerlink" title="标签xml转txt格式"></a>标签xml转txt格式</h3><pre class="line-numbers language-none"><code class="language-none">def xml_to_txt(self,dw,dh,xmin,ymin ,xmax ,ymax):
+    x &#x3D; (xmin+ xmax) &#x2F; 2.0
+    y &#x3D; (ymax + ymin) &#x2F; 2.0
+    w &#x3D; xmax- xmin
+    h &#x3D; ymax - ymin
+    x &#x3D; x &#x2F;dw
+    w &#x3D; w &#x2F; dw
+    y &#x3D; y &#x2F; dh
+    h &#x3D; h &#x2F; dh
+    return (x, y, w, h)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="txt转xml格式"><a href="#txt转xml格式" class="headerlink" title="txt转xml格式"></a>txt转xml格式</h3><p>其实就是个数学计算而已<br><pre class="line-numbers language-none"><code class="language-none">def txt_to_xml(self,Pwidth,Pheight,x,y , wp, hp):
+    xmin &#x3D; int((x * Pwidth + 1) - wp * 0.5 * Pwidth)
+    ymin &#x3D; int((y * Pheight + 1) - hp * 0.5 * Pheight)
+    xmax &#x3D; int((x* Pwidth + 1) + wp * 0.5 * Pwidth)
+    ymax &#x3D; int((y * Pheight + 1) + hp * 0.5 * Pheight)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h2 id="txt文件"><a href="#txt文件" class="headerlink" title="txt文件"></a>txt文件</h2><h3 id="txt文件的读写"><a href="#txt文件的读写" class="headerlink" title="txt文件的读写"></a>txt文件的读写</h3><pre class="line-numbers language-none"><code class="language-none">def saveFlipLabel(txtpath,txt_save_path):
+    with open(txt_save_path, &quot;w&quot;) as outfile:
+        with open(txtpath, &quot;r&quot;) as infile:
+            for line in infile.readlines():
+                words &#x3D; line.split(&quot; &quot;)
+                horizontal_coord &#x3D; float(words[1])
+                outfile.write(
+                    words[0] + &quot; &quot; + str(format(1 - horizontal_coord, &quot;.6f&quot;)) + &quot; &quot; + words[2] + &quot; &quot; + words[3] + &quot; &quot; +
+                    words[4])
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="txt文件的拷贝"><a href="#txt文件的拷贝" class="headerlink" title="txt文件的拷贝"></a>txt文件的拷贝</h3><pre class="line-numbers language-none"><code class="language-none">def copyLabel(txtpath,txt_save_path):
+    shutil.copyfile(txtpath, txt_save_path)
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="main"><a href="#main" class="headerlink" title="main"></a>main</h2><pre class="line-numbers language-none"><code class="language-none">if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    img_aug &#x3D; ImgAugemention()
+    imgs_path &#x3D; &#39;.&#x2F;img&#x2F;&#39;
+    txt_path &#x3D; &#39;.&#x2F;label&#x2F;&#39;
+    img_save_path &#x3D; &#39;.&#x2F;images&#x2F;&#39;
+    txt_save_path &#x3D; &#39;.&#x2F;labels&#x2F;&#39;
+    angle_list &#x3D; [0,30,60, 90, 120, 150, 180, 270,330]
+    img_aug.process_img2(imgs_path, txt_path, img_save_path, txt_save_path)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>主要作用是实现对数据的扩展，对整个文件夹内所有文件进行读取，一键扩展</p>
+<pre class="line-numbers language-none"><code class="language-none">#!&#x2F;usr&#x2F;bin&#x2F;env python
+
+import cv2
+import math
+import numpy as np
+import os
+import pdb
+import xml.etree.ElementTree as ET
+from Image_expansion import *
+
+class ImgAugemention():
+    def __init__(self):
+        self.angle &#x3D; 90
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>主要由ImgAugemention类和Image_expansion构成</p>
+<h2 id="数据扩展结果"><a href="#数据扩展结果" class="headerlink" title="数据扩展结果"></a>数据扩展结果</h2><p><img src="https://www.codekp.cn/download/img/旋转扩充数据集/0-270.png" alt=""></p>
+<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p>如果需源码请联系本人，以上传至git私人仓库。</p>
+<ul>
+<li><a href="https://github.com/mmrslwan1110/Image-expansion2">https://github.com/mmrslwan1110/Image-expansion2</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>目标检测</category>
+      </categories>
+      <tags>
+        <tag>目标检测数据集扩充2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>矩阵分析引论</title>
+    <url>/2020/11/17/%E7%9F%A9%E9%98%B5%E8%AE%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="矩阵分析引论"><a href="#矩阵分析引论" class="headerlink" title="矩阵分析引论"></a><center>矩阵分析引论</center></h1><h2 id="Introduction-to-matrix-analysis"><a href="#Introduction-to-matrix-analysis" class="headerlink" title=" Introduction to matrix analysis "></a><center> Introduction to matrix analysis </center></h2><center>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=11355346&bvid=BV19x411878L&cid=18777309&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+</center>
+
+<span id="more"></span>
+<h2 id="1-线性空间与线性变换"><a href="#1-线性空间与线性变换" class="headerlink" title="1.线性空间与线性变换"></a>1.线性空间与线性变换</h2><ol>
+<li>对加减乘除封闭的集合被称之为数域。矩阵论中较常用的数域是QRC。其中Q:有理数域、R:实数数域、C复数数域。<br>$Q\subset R\subset C$<br>如果一个非空集合在某数域上，以下八条<center>
+<img src="https://www.codekp.cn/download/img/矩阵论/1.PNG" width = "1147" height = "950" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ol>
+<h3 id="线性空间例3-（函数空间-f-I-R"><a href="#线性空间例3-（函数空间-f-I-R" class="headerlink" title="线性空间例3.（函数空间$f(I,R)$)"></a>线性空间例3.（函数空间$f(I,R)$)</h3><ul>
+<li>$V:$<br>$F(I，R^n)$<br>$I=(0,1) ,[\frac{1}{2}，5]$函数的定义域<br>$R^n值域空间$<br>以函数为元素的抽象集合，数域取R</li>
+</ul>
+<ul>
+<li>： f+g<br>$ +  ： \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} + \begin{cases} g_1(x)\ g_2(x)\ g_n(x) \end{cases} = \begin{cases} f_1(x)+g_1(x)\f_2(x)+ g_2(x)\f_n(x)+g_n(x) \end{cases}  x \in I$</li>
+</ul>
+<ul>
+<li>：f<em>k<br>$</em> : \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} * k =\begin{cases} kf_1(x)\ kf_2(x)\ kf_n(x) \end{cases}$</li>
+</ul>
+<p>定义：（向量组及向量组拼成向量抽象矩阵）<br>设V是F上的线性空间V中的有限序列$\alpha_1、\alpha2、\alpha3 …\alpha_p $的一个向量组，向量组按顺序排列的行称为向量组拼成的抽象矩阵$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>序列：抽象或实际数构成的序列，抽象矩阵。用V中的抽象物拼接为一个矩阵。即：抽象的集合。</p>
+<blockquote>
+<p>数乘运算、线性空间满足八条运算规则:</p>
+</blockquote>
+<p>4条：<br>加法有交换律、结合律、有负元、有零元。<br>4条：<br>乘法有两个分配律，数乘法对抽象加法的分配律，数乘法对数值的分配律，先乘后乘以集合和两次分别乘以集合相等，f中的乘法单位元e做数乘法时空间不变。</p>
+<p>标准线性空间：<br>例子<br>二维空间<br>三维空间 ：所有有向线段构成的集合。<br>几何空间：<br>函数空间：函数作为运算对象，所构成的空间。信号的集合构成函数空间。</p>
+<p>将几何空间的解析几何方法抽象到一般的框架下，集合的量变成代数的量，坐标系。<br>考虑什么样的向量组可以模拟成几何的线性空间的问题。<br>向量组：$\alpha_1、\alpha2、\alpha3 …\alpha_p $<br>抽象矩阵：$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>1行p列的抽象矩阵，可以竖着拼。<br>行向量，横拼接。<br>列向量，竖拼接。<br>向量组的线性相关性：如果存在不全为零的P个数$k_i\in F, i=1,2,…,p$使得<br>$\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p=0$<br>则向量组\alpha_1、\alpha2、\alpha3 …\alpha_p称之为线性相关。<br>注： $\exists\begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0，\begin{cases} k_1\ k_2\ k_n \end{cases}\in F^p$</p>
+<p>使得(*)成立，对以上命题进行否定。<br>$\exists a\in P_a $<br>否定$\forall a\notin P_a $</p>
+<p> $\forall \begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0$<br> $\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p\neq 0$<br>线性无关</p>
+<p>线性无关即为线性相关的否定，存在系数不全为零的时，使得等号成立，即线性无关。</p>
+<p>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=0$<br>线性相关《——》有非零解<br>线性无关《——》没有非零解</p>
+<p>线性相关性：目的为了将抽象的序列搬移到几何空间中。</p>
+<h2 id="基"><a href="#基" class="headerlink" title="基"></a>基</h2><p>定义：（两个线性向量组之间的线性表示）<br>$\alpha_1、\alpha_2、\alpha_3 …\alpha_p;\beta_1、\beta_2、\beta_3、…、\beta_p$</p>
+<ol>
+<li>称为$\beta$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果存在$ k_1、k_2、k_3 …k_p \subset F$使得<br>$\beta=\alpha_1k_1+\alpha_2k_2+\alpha_3k_3 …+\alpha_pk_p$</li>
+<li>称$\beta_1、\beta_2、\beta_3、…、\beta_p$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果每个$\beta_i$据可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示</li>
+</ol>
+<h4 id="矩阵表达"><a href="#矩阵表达" class="headerlink" title="矩阵表达"></a>矩阵表达</h4><p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=\beta$ 其中$A=[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$</p>
+<ol>
+<li><p>因此$\beta$可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示《=====》非齐次线性方程组有解</p>
+</li>
+<li><p>重点：</p>
+</li>
+</ol>
+<p>$[\alpha<em>1、\alpha_2、\alpha_3 …\alpha_p] \begin{pmatrix}<br>        x</em>{11} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{1q} \<br>        x</em>{21} &amp; \cdots &amp;\cdots &amp; \cdots &amp; x<em>{2q} \<br>        \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>        x</em>{p1} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{pq}\<br>        \end{pmatrix}</em>{pq} =[\beta_1、\beta_2、\beta_3、…、\beta_p]$</p>
+<p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ]$记作A<br>$[\beta_1、\beta_2、\beta_3…\beta_p]$记作B：<br>$AX=B$抽象的矩阵方程</p>
+<p>$[\beta_i]$可有$[\alpha_i]$线性表示《=====》线性方程有解。</p>
+<ol>
+<li>线性表示具有传递性：<br>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]    、[{\alpha_i}]$<br>$[\beta_1、\beta_2、\beta_3…\beta_q]   、[{\beta_j}]$<br>$[\gamma_1、\gamma_2、\gamma_3…\gamma_t]      、[{\gamma_k}]$   </li>
+</ol>
+<p>$ [{\beta_j}]\leq lin [{\alpha_i}]<br>$且$ [{\gamma_k}]\leq lin [{\beta_j}]<br>$则$ [{\gamma_k}]\leq lin [{\alpha_i}]<br>$</p>
+<p>A$\leq lin$B 意思是A可以由B线性表示。</p>
+<ul>
+<li>证：<br>即 Ax=B、By=C 有解，证明Az=C？<br>C=By=(Ax)y</li>
+</ul>
+<p><img src="https://www.codekp.cn/download/img/矩阵论/目录.png" width = "400" height = "302" alt="图片名称" align=center /></p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>研究生课程</tag>
+        <tag>矩阵论</tag>
       </tags>
   </entry>
   <entry>
