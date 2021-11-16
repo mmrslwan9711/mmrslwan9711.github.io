@@ -537,14 +537,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.9k
+                    4.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    15 分
+                    18 分
                 </div>
                 
 
@@ -885,19 +885,15 @@
 &lt;body&gt;
     &lt;video src&#x3D;&quot;media&#x2F;mi.mp4&quot; autoplay&#x3D;&quot;autoplay&quot; muted&#x3D;&quot;muted&quot;  loop&#x3D;&quot;loop&quot; poster&#x3D;&quot;media&#x2F;mi9.jpg&quot;&gt;&lt;&#x2F;video&gt;
 &lt;&#x2F;body&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<video src="文件地址"   controls="controls"></video>
+<video src="https://www.mmrsl.cn/download/img/html5/1.mp4"   controls="controls"></video><style>
+      video {
+          width: 30%;
+      }
+</style>
 
 </li>
 </ul>
 </blockquote>
-<p><style><br>        video {<br>            width: 100%;<br>        }
-    </style><br>&lt;/head&gt;</p>
-<body>
-    <video src="media/mi.mp4" autoplay="autoplay" muted="muted"  loop="loop" poster="media/mi9.jpg"></video>
-</body>
-
-
-
 <ol>
 <li>autoplay    autoplay    视频就绪自动播放(谷歌浏览器需要添加muted来解决自动播放问题)</li>
 <li>controls    controls    向用户显示播放控件</li>
@@ -920,8 +916,53 @@
 <li>autoplay    autoplay    如果出现该属性，则音频在就绪后马上播放</li>
 <li>controls    controls    如果出现该属性，则向用户显示控件，比如播放按钮</li>
 <li>loop    loop    如果出现该属性，则每当音频结束时重新开始播放</li>
-<li>src    url    要播放的音频的url</li>
+<li>src    url    要播放的音频的url<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3></li>
+<li>音频标签和视频标签使用方式基本一致</li>
+<li>浏览器支持情况不同</li>
+<li>谷歌浏览器把音频和视频自动播放禁止了</li>
+<li>我们可以给视频标签添加muted属性来静音播放视频，音频不可以(可以通过JavaScript解决)</li>
+<li>视频标签是重点，我们经常设置自动播放，不适用controls控件，循环和设置大小属性</li>
 </ol>
+<h3 id="新增input类型"><a href="#新增input类型" class="headerlink" title="新增input类型"></a>新增input类型</h3><table><thead><tr><th>属性值</th><th>说明</th></tr></thead><tbody><tr><td>type&#61;“email”</td><td>限制用户输入必须为Email类型</td></tr><tr><td>type&#61;“url”</td><td>限制用户输入必须为URL类型</td></tr><tr><td>type&#61;“data”</td><td>限制用户输入必须为日期类型</td></tr><tr><td>type&#61;“time”</td><td>限制用户输入必须为时间类型</td></tr><tr><td>type&#61;“month”</td><td>限制用户输入必须为月类型</td></tr><tr><td>type&#61;“week”</td><td>限制用户输入必须为周类型</td></tr><tr><td><strong>type&#61;&#34;number&#34;</strong></td><td><strong>限制用户输入必须为数字类型</strong></td></tr><tr><td><strong>type&#61;&#34;tel&#34;</strong></td><td><strong>手机号码</strong></td></tr><tr><td><strong>type&#61;&#34;search&#34;</strong></td><td><strong>搜索框</strong></td></tr><tr><td>type&#61;“color”</td><td>生成一个颜色选择表单</td></tr></tbody></table>
+
+<p>重点记住： number tel search 这三个</p>
+<body>
+    <!-- 我们验证的时候必须添加form表单域 -->
+    <form action="">
+        <ul>
+            <li>邮箱: <input type="email" /></li>
+            <li>网址: <input type="url" /></li>
+            <li>日期: <input type="date" /></li>
+            <li>时间: <input type="time" /></li>
+            <li>数量: <input type="number" /></li>
+            <li>手机号码: <input type="tel" /></li>
+            <li>搜索: <input type="search" /></li>
+            <li>颜色: <input type="color" /></li>
+            <!-- 当我们点击提交按钮就可以验证表单了 -->
+            <li> <input type="submit" value="提交"></li>
+        </ul>
+    </form>
+</body>
+
+<h3 id="新增表单属性"><a href="#新增表单属性" class="headerlink" title="新增表单属性"></a>新增表单属性</h3><table><thead><tr><th>属性</th><th>值</th><th>说明</th></tr></thead><tbody><tr><td>required</td><td>required</td><td>表单拥有该属性表示其内容不能为空&#xff0c;必填</td></tr><tr><td><strong>placeholder</strong></td><td><strong>提示文本</strong></td><td><strong>表单的提示信息&#xff0c;存在默认值将不显示</strong></td></tr><tr><td>autofocus</td><td>autofocus</td><td>自动聚焦属性&#xff0c;页面加载完成自动聚焦到指定表单</td></tr><tr><td>autocomplete</td><td>off/on</td><td>当用户在字段开始键入时&#xff0c;浏览器基于之前键入过的值&#xff0c;应该显示出在字段中填写的选项&#xff0c;默认已经打开。如autocomplete&#61;“on” ,关闭autocomplete&#61;“off”&#xff0c;需要放在表单内&#xff0c;同时加上name属性&#xff0c;同时成功提交</td></tr><tr><td><strong>multiple</strong></td><td><strong>multiple</strong></td><td><strong>可以多选文件提示</strong></td></tr></tbody></table>
+
+<pre class="line-numbers language-none"><code class="language-none">&lt;form action&#x3D;&quot;&quot;&gt;
+        &lt;input type&#x3D;&quot;search&quot; name&#x3D;&quot;sear&quot; id&#x3D;&quot;&quot; required&#x3D;&quot;required&quot; placeholder&#x3D;&quot;kp&quot; autofocus&#x3D;&quot;autofocus&quot; autocommplete&#x3D;&quot;off&quot;&gt;
+        &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;提交&quot;&gt;
+    &lt;&#x2F;form&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>可以通过以下设置方式修改placeholder里面的字体颜色<br><pre class="line-numbers language-none"><code class="language-none">input::placeholder &#123;
+	color: pink;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></p>
+<form action="">
+        <input type="search" name="sear" id="" required="required" placeholder="kp" autofocus="autofocus" autocommplete="off">
+        <input type="submit" value="提交">
+</form>
+
+<h2 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/Augenstern_QXL/article/details/115419453">HTML冲浪笔记(一)</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/Augenstern_QXL/article/details/115599059">HTML5冲浪笔记(二)</a></li>
+</ul>
 
                 
             </div>
@@ -1519,7 +1560,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">92.3k</span>&nbsp;字
+                class="white-color">92.8k</span>&nbsp;字
             
             
             

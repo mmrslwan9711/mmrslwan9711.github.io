@@ -64,83 +64,6 @@ sudo apt-get install refind<span aria-hidden="true" class="line-numbers-rows"><s
       </tags>
   </entry>
   <entry>
-    <title>Detection_树莓派</title>
-    <url>/2021/06/07/Detection-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Raspberry-Pi-上运行-TensorFlow-Lite-目标检测"><a href="#Raspberry-Pi-上运行-TensorFlow-Lite-目标检测" class="headerlink" title="Raspberry Pi 上运行 TensorFlow Lite 目标检测"></a>Raspberry Pi 上运行 TensorFlow Lite 目标检测</h1> <div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=845957427&bvid=BV1B54y137xE&cid=350441154&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>本指南提供了有关如何在 Raspberry Pi 上设置 TensorFlow Lite 并使用它运行对象检测模型的分步说明。它还展示了如何在 Pi 上设置 Coral USB 加速器并运行 Edge TPU 检测模型。它适用于运行 Rasbpian Buster 或 Rasbpian Stretch 的 Raspberry Pi 3 和 Raspberry Pi 4。</p>
-<p>本指南是我更大的 TensorFlow Lite 教程系列的第二部分：</p>
-<ol>
-<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">如何在 Windows 10 上训练、转换和运行自定义 TensorFlow Lite 对象检测模型</a></li>
-<li>如何在 Raspberry Pi 上运行 TensorFlow Lite 对象检测模型&lt;—- 你在这里！</li>
-</ol>
-<p>本指南的这一部分分为三个部分：</p>
-<ul>
-<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#part-1---how-to-set-up-and-run-tensorflow-lite-object-detection-models-on-the-raspberry-pi">第 1 节 在 Raspberry Pi 上运行 TensorFlow Lite 对象检测模型</a></li>
-<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#section-2---run-edge-tpu-object-detection-models-on-the-raspberry-pi-using-the-coral-usb-accelerator">第 2 节。使用 Coral USB 加速器在 Raspberry Pi 上运行 Edge TPU 对象检测模型</a></li>
-</ul>
-<p>此存储库还包括用于在图像、视频或网络摄像头/Picamera 源上运行 TFLite 和 Edge TPU 模型的脚本。</p>
-<h2 id="如何在-Raspberry-Pi-上设置和运行-TensorFlow-Lite-对象检测模型"><a href="#如何在-Raspberry-Pi-上设置和运行-TensorFlow-Lite-对象检测模型" class="headerlink" title="如何在 Raspberry Pi 上设置和运行 TensorFlow Lite 对象检测模型"></a>如何在 Raspberry Pi 上设置和运行 TensorFlow Lite 对象检测模型</h2><p>在 Raspberry Pi 上设置 TensorFlow Lite 比常规 TensorFlow 容易得多！这些是设置 TensorFlow Lite 所需的步骤：</p>
-<ul>
-<li>1a. 更新树莓派</li>
-<li>1b. 下载此存储库并创建虚拟环境</li>
-<li>1c。安装 TensorFlow 和 OpenCV</li>
-<li>1天。设置 TensorFlow Lite 检测模型</li>
-<li>1e。运行 TensorFlow Lite 模型！</li>
-<li>我还制作了一个介绍本指南的 YouTube 视频：</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=aimSGOAUI8Y"><img src="https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/master/doc/YouTube_video1.JPG" alt="Link to my YouTube video!"></a></p>
-<h3 id="更新树莓派"><a href="#更新树莓派" class="headerlink" title="更新树莓派"></a>更新树莓派</h3><pre class="line-numbers language-none"><code class="language-none">sudo apt-get update
-sudo apt-get dist-upgrade<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>根据您更新 Pi 的时间，更新可能需要一分钟到一小时之间的任何时间。</p>
-<p>在此过程中，让我们确保在 Raspberry Pi 配置菜单中启用了相机界面。单击屏幕左上角的 Pi 图标，选择 Preferences -&gt; Raspberry Pi Configuration，然后转到 Interfaces 选项卡并确认 Camera 设置为 Enabled。如果不是，请立即启用它，然后重新启动 Raspberry Pi。</p>
-<h3 id="下载虚拟环境"><a href="#下载虚拟环境" class="headerlink" title="下载虚拟环境"></a>下载虚拟环境</h3><p>接下来，通过发出以下命令克隆此 GitHub 存储库。该存储库包含我们将用于运行 TensorFlow Lite 的脚本，以及一个使安装一切变得更容易的 shell 脚本。问题：</p>
-<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;EdjeElectronics&#x2F;TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这会将所有内容下载到名为 TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi 的文件夹中。这有点长，所以将文件夹重命名为“tflite1”，然后 cd 进入它：</p>
-<pre class="line-numbers language-none"><code class="language-none">mv TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi tflite1
-cd tflite1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>我们将在此 /home/pi/tflite1 目录中处理本指南的其余部分。接下来是创建一个名为“tflite1-env”的虚拟环境。</p>
-<p>我在本指南中使用了虚拟环境，因为它可以防止可能已安装在您的 Pi 上的软件包库版本之间发生任何冲突。将 TensorFlow 安装在自己的环境中可以避免版本冲突。例如，如果您已经使用我的其他指南在 Pi 上安装了 TensorFlow v1.8，则可以保持该安装不变，而不必担心覆盖它。</p>
-<p>通过发出以下命令安装 virtualenv：</p>
-<pre class="line-numbers language-none"><code class="language-none">sudo pip3 install virtualenv<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>然后，通过发出以下命令创建“tflite1-env”虚拟环境：</p>
-<pre class="line-numbers language-none"><code class="language-none">python3 -m venv tflite1-env<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这将在 tflite1 目录中创建一个名为 tflite1-env 的文件夹。tflite1-env 文件夹将保存此环境的所有包库。接下来，通过发出以下命令激活环境：</p>
-<pre class="line-numbers language-none"><code class="language-none">source tflite1-env&#x2F;bin&#x2F;activate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><strong>source tflite1-env/bin/activate每次打开新的终端窗口时，您都需要从 /home/pi/tflite1 目录中发出命令以重新激活环境。您可以通过检查 (tflite1-env) 是否出现在命令提示符中的路径之前来判断环境何时处于活动状态，如下面的屏幕截图所示。</strong></p>
-<p>此时，如果您发出 .tflite1 目录，那么您的 tflite1 目录应该是这样的<code>ls</code>。</p>
-<h3 id="安装TensorFlow和opencv"><a href="#安装TensorFlow和opencv" class="headerlink" title="安装TensorFlow和opencv"></a>安装TensorFlow和opencv</h3><p>接下来，我们将安装 TensorFlow、OpenCV 以及这两个包所需的所有依赖项。运行 TensorFlow Lite 不需要 OpenCV，但此存储库中的对象检测脚本使用它来抓取图像并在其上绘制检测结果。</p>
-<p>为了让事情更简单，我编写了一个 shell 脚本，它会自动下载并安装所有的包和依赖项。通过发出以下命令运行它：</p>
-<pre class="line-numbers language-none"><code class="language-none">bash get_pi_requirements.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这将下载大约 400MB 的安装文件，因此需要一段时间。在它工作的时候去喝杯咖啡吧！如果您想查看已安装的所有内容，只需打开 get_pi_dependencies.sh 即可查看软件包列表。</p>
-<p><strong>注意：如果您在运行bash get_pi_requirements.sh命令时遇到错误，可能是因为您的 Internet 连接超时，或者因为下载的包数据已损坏。如果出现错误，请尝试重新运行该命令几次。</strong></p>
-<p><strong>另一个注意事项：shell 脚本会自动安装最新版本的 TensorFlow。如果您想安装特定版本，pip3 install tensorflow==X.XX请在运行脚本后发出（其中 X.XX 替换为您要安装的版本）。这将使用指定版本覆盖现有安装。</strong></p>
-<p>那很简单！进入下一步。</p>
-<h3 id="步骤-1d。设置-TensorFlow-Lite-检测模型"><a href="#步骤-1d。设置-TensorFlow-Lite-检测模型" class="headerlink" title="步骤 1d。设置 TensorFlow Lite 检测模型"></a>步骤 1d。设置 TensorFlow Lite 检测模型</h3><p>接下来，我们将设置将与 TensorFlow Lite 一起使用的检测模型。本指南展示了如何下载由 Google 提供的示例 TFLite 模型，或如何使用您按照我的 TensorFlow Lite 教程系列<a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">第 1 部分自行训练的模型</a>。</p>
-<p>检测模型有两个与之关联的文件：detect.tflite 文件（模型本身）和 labelmap.txt 文件（为模型提供标签图）。我组织模型文件的首选方法是创建一个文件夹（例如“BirdSquirrelRaccoon_TFLite_model”）并将detect.tflite 和labelmap.txt 都保存在该文件夹中。这也是 Google 的可下载示例 TFLite 模型的组织方式。</p>
-<h3 id="选项-1-使用-Google-的示例-TFLite-模型"><a href="#选项-1-使用-Google-的示例-TFLite-模型" class="headerlink" title="选项 1. 使用 Google 的示例 TFLite 模型"></a>选项 1. 使用 Google 的示例 TFLite 模型</h3><p>Google 提供了一个示例量化 SSDLite-MobileNet-v2 对象检测模型，该模型在 MSCOCO 数据集上训练并转换为在 TensorFlow Lite 上运行。它可以检测和识别 80 种不同的常见物体，例如人、汽车、杯子等。</p>
-<p>通过发出以下命令下载示例模型（<a href="https://www.tensorflow.org/lite/models/object_detection/overview">可以在TensorFlow 官方网站的对象检测页面上找到</a>）：<br><pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;storage.googleapis.com&#x2F;download.tensorflow.org&#x2F;models&#x2F;tflite&#x2F;coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>通过发出（此命令自动创建文件夹）将其解压缩到名为“Sample_TFLite_model”的文件夹中：<br><pre class="line-numbers language-none"><code class="language-none">unzip coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip -d Sample_TFLite_model<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>好的，示例模型已准备就绪！</p>
-<h3 id="选项-2：使用您自己的自定义训练模型"><a href="#选项-2：使用您自己的自定义训练模型" class="headerlink" title="选项 2：使用您自己的自定义训练模型"></a>选项 2：使用您自己的自定义训练模型</h3><p>您还可以通过将模型文件夹移动到 /home/pi/tflite 目录来使用自定义对象检测模型。如果您按照我的 <a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">TensorFlow Lite 指南的第 1 部分</a>在您的 PC 上训练和转换 TFLite 模型，您应该有一个名为“TFLite_model”的文件夹，其中包含一个 detect.tflite 和 labelmap.txt 文件。（它还会有一个 tflite_graph.pb 和 tflite_graph.pbtxt 文件，TensorFlow Lite 不需要这些文件，但可以留在文件夹中。）</p>
-<p>您可以简单地将该文件夹复制到 USB 驱动器，将 USB 驱动器插入您的 Raspberry Pi，然后将该文件夹移动到 /home/pi/tflite1 目录中。（或者，您可以通过电子邮件将其发送给自己，或将其放在 Google 云端硬盘上，或者使用您喜欢的任何文件传输方法。）这是我的 /home/pi/tflite1 目录中的“BirdSquirrelRaccoon_TFLite_model”文件夹的示例：</p>
-<p>现在您的自定义模型已准备就绪！</p>
-<h3 id="步骤-1e。运行-TensorFlow-Lite-模型！"><a href="#步骤-1e。运行-TensorFlow-Lite-模型！" class="headerlink" title="步骤 1e。运行 TensorFlow Lite 模型！"></a>步骤 1e。运行 TensorFlow Lite 模型！</h3><p>是时候看看 TFLite 对象检测模型的实际效果了！首先，通过关闭您不使用的任何应用程序来释放内存和处理能力。另外，请确保您已插入网络摄像头或 Picamera。</p>
-<p>通过从 /home/pi/tflite1 目录中发出以下命令来运行实时网络摄像头检测脚本。（在运行该命令之前，通过检查 (tflite1-env) 出现在命令提示符前面来确保 tflite1-env 环境处于活动状态。）<strong>TFLite_detection_webcam.py 脚本将与 Picamera 或 USB 网络摄像头一起使用。</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">python3 TFLite_detection_webcam.py --modeldir&#x3D;Sample_TFLite_model<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>如果您的模型文件夹的名称与“Sample_TFLite_model”不同，请改用该名称。例如，我会<code>--modeldir=BirdSquirrelRaccoon_TFLite_model</code>用来运行我的自定义鸟类、松鼠和浣熊检测模型。</p>
-<p>初始化片刻后，将出现一个窗口，显示网络摄像头源。检测到的对象将实时显示边界框和标签。</p>
-<p>我TensorFlow精简版培训指导的第3部分给出的<a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#video">指令</a>使用TFLite_detection_image.py和TFLite_detection_video.py脚本。确保在运行脚本时使用<code>python3</code>而不是<code>python</code>。</p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>树莓派</tag>
-        <tag>深度学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>EasyOCR光学字符识别</title>
     <url>/2021/10/25/EasyOCR%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="EasyOCR光学字符识别"><a href="#EasyOCR光学字符识别" class="headerlink" title="EasyOCR光学字符识别"></a>EasyOCR光学字符识别</h1><pre><code>OCR光学字符识别，将不同类型的文档，图像中的字符保存为可编辑和可搜索的数据。
@@ -266,6 +189,137 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       </tags>
   </entry>
   <entry>
+    <title>Detection_树莓派</title>
+    <url>/2021/06/07/Detection-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Raspberry-Pi-上运行-TensorFlow-Lite-目标检测"><a href="#Raspberry-Pi-上运行-TensorFlow-Lite-目标检测" class="headerlink" title="Raspberry Pi 上运行 TensorFlow Lite 目标检测"></a>Raspberry Pi 上运行 TensorFlow Lite 目标检测</h1> <div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=845957427&bvid=BV1B54y137xE&cid=350441154&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>本指南提供了有关如何在 Raspberry Pi 上设置 TensorFlow Lite 并使用它运行对象检测模型的分步说明。它还展示了如何在 Pi 上设置 Coral USB 加速器并运行 Edge TPU 检测模型。它适用于运行 Rasbpian Buster 或 Rasbpian Stretch 的 Raspberry Pi 3 和 Raspberry Pi 4。</p>
+<p>本指南是我更大的 TensorFlow Lite 教程系列的第二部分：</p>
+<ol>
+<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">如何在 Windows 10 上训练、转换和运行自定义 TensorFlow Lite 对象检测模型</a></li>
+<li>如何在 Raspberry Pi 上运行 TensorFlow Lite 对象检测模型&lt;—- 你在这里！</li>
+</ol>
+<p>本指南的这一部分分为三个部分：</p>
+<ul>
+<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#part-1---how-to-set-up-and-run-tensorflow-lite-object-detection-models-on-the-raspberry-pi">第 1 节 在 Raspberry Pi 上运行 TensorFlow Lite 对象检测模型</a></li>
+<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#section-2---run-edge-tpu-object-detection-models-on-the-raspberry-pi-using-the-coral-usb-accelerator">第 2 节。使用 Coral USB 加速器在 Raspberry Pi 上运行 Edge TPU 对象检测模型</a></li>
+</ul>
+<p>此存储库还包括用于在图像、视频或网络摄像头/Picamera 源上运行 TFLite 和 Edge TPU 模型的脚本。</p>
+<h2 id="如何在-Raspberry-Pi-上设置和运行-TensorFlow-Lite-对象检测模型"><a href="#如何在-Raspberry-Pi-上设置和运行-TensorFlow-Lite-对象检测模型" class="headerlink" title="如何在 Raspberry Pi 上设置和运行 TensorFlow Lite 对象检测模型"></a>如何在 Raspberry Pi 上设置和运行 TensorFlow Lite 对象检测模型</h2><p>在 Raspberry Pi 上设置 TensorFlow Lite 比常规 TensorFlow 容易得多！这些是设置 TensorFlow Lite 所需的步骤：</p>
+<ul>
+<li>1a. 更新树莓派</li>
+<li>1b. 下载此存储库并创建虚拟环境</li>
+<li>1c。安装 TensorFlow 和 OpenCV</li>
+<li>1天。设置 TensorFlow Lite 检测模型</li>
+<li>1e。运行 TensorFlow Lite 模型！</li>
+<li>我还制作了一个介绍本指南的 YouTube 视频：</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=aimSGOAUI8Y"><img src="https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/master/doc/YouTube_video1.JPG" alt="Link to my YouTube video!"></a></p>
+<h3 id="更新树莓派"><a href="#更新树莓派" class="headerlink" title="更新树莓派"></a>更新树莓派</h3><pre class="line-numbers language-none"><code class="language-none">sudo apt-get update
+sudo apt-get dist-upgrade<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>根据您更新 Pi 的时间，更新可能需要一分钟到一小时之间的任何时间。</p>
+<p>在此过程中，让我们确保在 Raspberry Pi 配置菜单中启用了相机界面。单击屏幕左上角的 Pi 图标，选择 Preferences -&gt; Raspberry Pi Configuration，然后转到 Interfaces 选项卡并确认 Camera 设置为 Enabled。如果不是，请立即启用它，然后重新启动 Raspberry Pi。</p>
+<h3 id="下载虚拟环境"><a href="#下载虚拟环境" class="headerlink" title="下载虚拟环境"></a>下载虚拟环境</h3><p>接下来，通过发出以下命令克隆此 GitHub 存储库。该存储库包含我们将用于运行 TensorFlow Lite 的脚本，以及一个使安装一切变得更容易的 shell 脚本。问题：</p>
+<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;EdjeElectronics&#x2F;TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这会将所有内容下载到名为 TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi 的文件夹中。这有点长，所以将文件夹重命名为“tflite1”，然后 cd 进入它：</p>
+<pre class="line-numbers language-none"><code class="language-none">mv TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi tflite1
+cd tflite1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>我们将在此 /home/pi/tflite1 目录中处理本指南的其余部分。接下来是创建一个名为“tflite1-env”的虚拟环境。</p>
+<p>我在本指南中使用了虚拟环境，因为它可以防止可能已安装在您的 Pi 上的软件包库版本之间发生任何冲突。将 TensorFlow 安装在自己的环境中可以避免版本冲突。例如，如果您已经使用我的其他指南在 Pi 上安装了 TensorFlow v1.8，则可以保持该安装不变，而不必担心覆盖它。</p>
+<p>通过发出以下命令安装 virtualenv：</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo pip3 install virtualenv<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后，通过发出以下命令创建“tflite1-env”虚拟环境：</p>
+<pre class="line-numbers language-none"><code class="language-none">python3 -m venv tflite1-env<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这将在 tflite1 目录中创建一个名为 tflite1-env 的文件夹。tflite1-env 文件夹将保存此环境的所有包库。接下来，通过发出以下命令激活环境：</p>
+<pre class="line-numbers language-none"><code class="language-none">source tflite1-env&#x2F;bin&#x2F;activate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>source tflite1-env/bin/activate每次打开新的终端窗口时，您都需要从 /home/pi/tflite1 目录中发出命令以重新激活环境。您可以通过检查 (tflite1-env) 是否出现在命令提示符中的路径之前来判断环境何时处于活动状态，如下面的屏幕截图所示。</strong></p>
+<p>此时，如果您发出 .tflite1 目录，那么您的 tflite1 目录应该是这样的<code>ls</code>。</p>
+<h3 id="安装TensorFlow和opencv"><a href="#安装TensorFlow和opencv" class="headerlink" title="安装TensorFlow和opencv"></a>安装TensorFlow和opencv</h3><p>接下来，我们将安装 TensorFlow、OpenCV 以及这两个包所需的所有依赖项。运行 TensorFlow Lite 不需要 OpenCV，但此存储库中的对象检测脚本使用它来抓取图像并在其上绘制检测结果。</p>
+<p>为了让事情更简单，我编写了一个 shell 脚本，它会自动下载并安装所有的包和依赖项。通过发出以下命令运行它：</p>
+<pre class="line-numbers language-none"><code class="language-none">bash get_pi_requirements.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这将下载大约 400MB 的安装文件，因此需要一段时间。在它工作的时候去喝杯咖啡吧！如果您想查看已安装的所有内容，只需打开 get_pi_dependencies.sh 即可查看软件包列表。</p>
+<p><strong>注意：如果您在运行bash get_pi_requirements.sh命令时遇到错误，可能是因为您的 Internet 连接超时，或者因为下载的包数据已损坏。如果出现错误，请尝试重新运行该命令几次。</strong></p>
+<p><strong>另一个注意事项：shell 脚本会自动安装最新版本的 TensorFlow。如果您想安装特定版本，pip3 install tensorflow==X.XX请在运行脚本后发出（其中 X.XX 替换为您要安装的版本）。这将使用指定版本覆盖现有安装。</strong></p>
+<p>那很简单！进入下一步。</p>
+<h3 id="步骤-1d。设置-TensorFlow-Lite-检测模型"><a href="#步骤-1d。设置-TensorFlow-Lite-检测模型" class="headerlink" title="步骤 1d。设置 TensorFlow Lite 检测模型"></a>步骤 1d。设置 TensorFlow Lite 检测模型</h3><p>接下来，我们将设置将与 TensorFlow Lite 一起使用的检测模型。本指南展示了如何下载由 Google 提供的示例 TFLite 模型，或如何使用您按照我的 TensorFlow Lite 教程系列<a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">第 1 部分自行训练的模型</a>。</p>
+<p>检测模型有两个与之关联的文件：detect.tflite 文件（模型本身）和 labelmap.txt 文件（为模型提供标签图）。我组织模型文件的首选方法是创建一个文件夹（例如“BirdSquirrelRaccoon_TFLite_model”）并将detect.tflite 和labelmap.txt 都保存在该文件夹中。这也是 Google 的可下载示例 TFLite 模型的组织方式。</p>
+<h3 id="选项-1-使用-Google-的示例-TFLite-模型"><a href="#选项-1-使用-Google-的示例-TFLite-模型" class="headerlink" title="选项 1. 使用 Google 的示例 TFLite 模型"></a>选项 1. 使用 Google 的示例 TFLite 模型</h3><p>Google 提供了一个示例量化 SSDLite-MobileNet-v2 对象检测模型，该模型在 MSCOCO 数据集上训练并转换为在 TensorFlow Lite 上运行。它可以检测和识别 80 种不同的常见物体，例如人、汽车、杯子等。</p>
+<p>通过发出以下命令下载示例模型（<a href="https://www.tensorflow.org/lite/models/object_detection/overview">可以在TensorFlow 官方网站的对象检测页面上找到</a>）：<br><pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;storage.googleapis.com&#x2F;download.tensorflow.org&#x2F;models&#x2F;tflite&#x2F;coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>通过发出（此命令自动创建文件夹）将其解压缩到名为“Sample_TFLite_model”的文件夹中：<br><pre class="line-numbers language-none"><code class="language-none">unzip coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip -d Sample_TFLite_model<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>好的，示例模型已准备就绪！</p>
+<h3 id="选项-2：使用您自己的自定义训练模型"><a href="#选项-2：使用您自己的自定义训练模型" class="headerlink" title="选项 2：使用您自己的自定义训练模型"></a>选项 2：使用您自己的自定义训练模型</h3><p>您还可以通过将模型文件夹移动到 /home/pi/tflite 目录来使用自定义对象检测模型。如果您按照我的 <a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">TensorFlow Lite 指南的第 1 部分</a>在您的 PC 上训练和转换 TFLite 模型，您应该有一个名为“TFLite_model”的文件夹，其中包含一个 detect.tflite 和 labelmap.txt 文件。（它还会有一个 tflite_graph.pb 和 tflite_graph.pbtxt 文件，TensorFlow Lite 不需要这些文件，但可以留在文件夹中。）</p>
+<p>您可以简单地将该文件夹复制到 USB 驱动器，将 USB 驱动器插入您的 Raspberry Pi，然后将该文件夹移动到 /home/pi/tflite1 目录中。（或者，您可以通过电子邮件将其发送给自己，或将其放在 Google 云端硬盘上，或者使用您喜欢的任何文件传输方法。）这是我的 /home/pi/tflite1 目录中的“BirdSquirrelRaccoon_TFLite_model”文件夹的示例：</p>
+<p>现在您的自定义模型已准备就绪！</p>
+<h3 id="步骤-1e。运行-TensorFlow-Lite-模型！"><a href="#步骤-1e。运行-TensorFlow-Lite-模型！" class="headerlink" title="步骤 1e。运行 TensorFlow Lite 模型！"></a>步骤 1e。运行 TensorFlow Lite 模型！</h3><p>是时候看看 TFLite 对象检测模型的实际效果了！首先，通过关闭您不使用的任何应用程序来释放内存和处理能力。另外，请确保您已插入网络摄像头或 Picamera。</p>
+<p>通过从 /home/pi/tflite1 目录中发出以下命令来运行实时网络摄像头检测脚本。（在运行该命令之前，通过检查 (tflite1-env) 出现在命令提示符前面来确保 tflite1-env 环境处于活动状态。）<strong>TFLite_detection_webcam.py 脚本将与 Picamera 或 USB 网络摄像头一起使用。</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">python3 TFLite_detection_webcam.py --modeldir&#x3D;Sample_TFLite_model<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>如果您的模型文件夹的名称与“Sample_TFLite_model”不同，请改用该名称。例如，我会<code>--modeldir=BirdSquirrelRaccoon_TFLite_model</code>用来运行我的自定义鸟类、松鼠和浣熊检测模型。</p>
+<p>初始化片刻后，将出现一个窗口，显示网络摄像头源。检测到的对象将实时显示边界框和标签。</p>
+<p>我TensorFlow精简版培训指导的第3部分给出的<a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#video">指令</a>使用TFLite_detection_image.py和TFLite_detection_video.py脚本。确保在运行脚本时使用<code>python3</code>而不是<code>python</code>。</p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
+        <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LabelImg_使用</title>
+    <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
+<p>它是用 Python 编写的，并使用 Qt 作为其图形界面。</p>
+<p>注释以 PASCAL VOC 格式保存为 XML 文件，ImageNet使用的格式。此外，它还支持 YOLO 和 CreateML 格式。</p>
+<p><img src="https://www.codekp.cn/download/img/labelImg/labelimg.jpg" alt=""></p>
+<p>参考地址 ： <a href="https://github.com/tzutalin/labelImg">https://github.com/tzutalin/labelImg</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-none"><code class="language-none">conda install pyqt&#x3D;5
+conda install -c anaconda lxml
+pyrcc5 -o libs&#x2F;resources.py resources.qrc
+python labelImg.py
+python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>有基础的同学可以直接<br><pre class="line-numbers language-none"><code class="language-none">pip install labelimg <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
+<li><code>JPEGImage 目录</code>：存储的是图片的名字</li>
+<li><code>Annotation 目录</code>：用于存放标注图片的标签文件</li>
+<li><code>class.txt 文件</code>：定义自己要标注的所有类别</li>
+</ul>
+<p>例如：我的<code>class.txt</code>中定义的类别如下：<br><pre class="line-numbers language-none"><code class="language-none">one
+two
+ct5
+other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></p>
+<ul>
+<li><code>Open Dir</code>：待标注图片数据的路径文件夹，即选择JPEGImage文件夹</li>
+<li><code>Change Save Dir</code>：保存类别标签的路径文件夹，即选择Annotation文件夹</li>
+<li><code>PascalVOC</code>：标注的标签保存成VOC格式，在鼠标点一下就变成YOLO，即此时就会把标注的标签变成YOLO格式</li>
+</ul>
+<h3 id="view-快捷指令"><a href="#view-快捷指令" class="headerlink" title="view 快捷指令"></a>view 快捷指令</h3><ul>
+<li><code>Auto Save mode</code>：当你切换到下一张图片时，就会自动把上一张标注的图片标签自动保存下来，这样就不用每标注一样图片都按Ctrl+S保存一下了</li>
+<li><code>Display Labels</code>：标注好图片之后，会把框和标签都显示出来</li>
+<li><code>Advanced Mode</code>：这样标注的十字架就会一直悬浮在窗口，不用每次标完一个目标，再按一次W快捷键，调出标注的十字架。</li>
+</ul>
+<h3 id="标注常用的快捷键"><a href="#标注常用的快捷键" class="headerlink" title="标注常用的快捷键"></a>标注常用的快捷键</h3><ul>
+<li><code>W</code>：调出标注的十字架，开始标注</li>
+<li><code>A</code>：切换到上一张图片</li>
+<li><code>D</code>：切换到下一张图片</li>
+<li><code>Ctrl+S</code>：保存标注好的标签</li>
+<li><code>del</code>：删除标注的矩形框</li>
+<li><code>Ctrl+鼠标滚轮</code>：按住Ctrl，然后滚动鼠标滚轮，可以调整标注图片的显示大小</li>
+<li><code>Ctrl+u</code>：选择要标注图片的文件夹</li>
+<li><code>Ctrl+r</code>：选择标注好的label标签存放的文件夹</li>
+<li><code>↑→↓←</code>：移动标注的矩形框的位置</li>
+</ul>
+<p>标注的时候，会把classe.txt预定义的标加载出来，然后我们只要选择对应的标签即可<br>右上角会显示已经标注目标的标签</p>
+<h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><p>以yolo格式进行保存使用。</p>
+]]></content>
+      <categories>
+        <category>目标检测</category>
+      </categories>
+      <tags>
+        <tag>目标检测</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>English_learning</title>
     <url>/2020/07/31/English-learning/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
@@ -376,60 +430,6 @@ If you are talking to a group of managers, you may refer to the disorganized met
         <tag>英语</tag>
         <tag>英语阅读</tag>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LabelImg_使用</title>
-    <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
-<p>它是用 Python 编写的，并使用 Qt 作为其图形界面。</p>
-<p>注释以 PASCAL VOC 格式保存为 XML 文件，ImageNet使用的格式。此外，它还支持 YOLO 和 CreateML 格式。</p>
-<p><img src="https://www.codekp.cn/download/img/labelImg/labelimg.jpg" alt=""></p>
-<p>参考地址 ： <a href="https://github.com/tzutalin/labelImg">https://github.com/tzutalin/labelImg</a></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-none"><code class="language-none">conda install pyqt&#x3D;5
-conda install -c anaconda lxml
-pyrcc5 -o libs&#x2F;resources.py resources.qrc
-python labelImg.py
-python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>有基础的同学可以直接<br><pre class="line-numbers language-none"><code class="language-none">pip install labelimg <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
-<li><code>JPEGImage 目录</code>：存储的是图片的名字</li>
-<li><code>Annotation 目录</code>：用于存放标注图片的标签文件</li>
-<li><code>class.txt 文件</code>：定义自己要标注的所有类别</li>
-</ul>
-<p>例如：我的<code>class.txt</code>中定义的类别如下：<br><pre class="line-numbers language-none"><code class="language-none">one
-two
-ct5
-other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></p>
-<ul>
-<li><code>Open Dir</code>：待标注图片数据的路径文件夹，即选择JPEGImage文件夹</li>
-<li><code>Change Save Dir</code>：保存类别标签的路径文件夹，即选择Annotation文件夹</li>
-<li><code>PascalVOC</code>：标注的标签保存成VOC格式，在鼠标点一下就变成YOLO，即此时就会把标注的标签变成YOLO格式</li>
-</ul>
-<h3 id="view-快捷指令"><a href="#view-快捷指令" class="headerlink" title="view 快捷指令"></a>view 快捷指令</h3><ul>
-<li><code>Auto Save mode</code>：当你切换到下一张图片时，就会自动把上一张标注的图片标签自动保存下来，这样就不用每标注一样图片都按Ctrl+S保存一下了</li>
-<li><code>Display Labels</code>：标注好图片之后，会把框和标签都显示出来</li>
-<li><code>Advanced Mode</code>：这样标注的十字架就会一直悬浮在窗口，不用每次标完一个目标，再按一次W快捷键，调出标注的十字架。</li>
-</ul>
-<h3 id="标注常用的快捷键"><a href="#标注常用的快捷键" class="headerlink" title="标注常用的快捷键"></a>标注常用的快捷键</h3><ul>
-<li><code>W</code>：调出标注的十字架，开始标注</li>
-<li><code>A</code>：切换到上一张图片</li>
-<li><code>D</code>：切换到下一张图片</li>
-<li><code>Ctrl+S</code>：保存标注好的标签</li>
-<li><code>del</code>：删除标注的矩形框</li>
-<li><code>Ctrl+鼠标滚轮</code>：按住Ctrl，然后滚动鼠标滚轮，可以调整标注图片的显示大小</li>
-<li><code>Ctrl+u</code>：选择要标注图片的文件夹</li>
-<li><code>Ctrl+r</code>：选择标注好的label标签存放的文件夹</li>
-<li><code>↑→↓←</code>：移动标注的矩形框的位置</li>
-</ul>
-<p>标注的时候，会把classe.txt预定义的标加载出来，然后我们只要选择对应的标签即可<br>右上角会显示已经标注目标的标签</p>
-<h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><p>以yolo格式进行保存使用。</p>
-]]></content>
-      <categories>
-        <category>目标检测</category>
-      </categories>
-      <tags>
-        <tag>目标检测</tag>
       </tags>
   </entry>
   <entry>
@@ -2528,30 +2528,6 @@ protoc --python_out&#x3D;. C:\tensorflow1\models\research\object_detection\proto
       </tags>
   </entry>
   <entry>
-    <title>deepin_ssh_远程控制</title>
-    <url>/2021/04/13/deepin-ssh-%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="deepinssh远程控制"><a href="#deepinssh远程控制" class="headerlink" title="deepinssh远程控制"></a>deepin<em>ssh</em>远程控制</h1><h2 id="安装ssh："><a href="#安装ssh：" class="headerlink" title="安装ssh："></a>安装ssh：</h2><pre class="line-numbers language-none"><code class="language-none">apt-get install ssh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<pre class="line-numbers language-none"><code class="language-none">sudo vi &#x2F;etc&#x2F;ssh&#x2F;sshd_config<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>找到下面内容</p>
-<p><img src="https://img2020.cnblogs.com/blog/1756476/202004/1756476-20200401231105458-1141980320.png" alt=""></p>
-<p> 将红色框中的内容修改为下面的内容：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1756476/202004/1756476-20200401231128868-2086048695.png" alt=""></p>
-<p>修改成功以后，重启ssh服务：</p>
-<p>　　切换至ssh目录下<br>　　　　service ssh restart<br>　　然后我们那就能愉快的使用xshell连远程连接并且用root用户登陆deepin系统了。</p>
-<h2 id="远程桌面连接"><a href="#远程桌面连接" class="headerlink" title="远程桌面连接"></a>远程桌面连接</h2><ol>
-<li>在软件商店安装remmina<br>详情请参考<a href="https://jingyan.baidu.com/article/3aed632e2923d8701080911d.html">远程桌面连接-百度经验</a></li>
-</ol>
-<p>2.安装<br><pre class="line-numbers language-none"><code class="language-none"># sudo apt-get install xrdp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>注意：安装完成后注销当前用户 或运行：</p>
-<p>详情请参考<a href="https://blog.csdn.net/yingftf/article/details/104581514">CSDN</a></p>
-]]></content>
-      <categories>
-        <category>deepin</category>
-      </categories>
-      <tags>
-        <tag>deepin</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>c++_常用语法</title>
     <url>/2020/07/31/c/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="C-常用语法"><a href="#C-常用语法" class="headerlink" title="C++常用语法"></a><center>C++常用语法</center></h1><h3 id="2020-08-01"><a href="#2020-08-01" class="headerlink" title="2020_08_01"></a><p align="right">2020_08_01</p></h3><blockquote>
@@ -2644,6 +2620,30 @@ const type variable &#x3D; value;<span aria-hidden="true" class="line-numbers-ro
       <tags>
         <tag>C++</tag>
         <tag>程序设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>deepin_ssh_远程控制</title>
+    <url>/2021/04/13/deepin-ssh-%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="deepinssh远程控制"><a href="#deepinssh远程控制" class="headerlink" title="deepinssh远程控制"></a>deepin<em>ssh</em>远程控制</h1><h2 id="安装ssh："><a href="#安装ssh：" class="headerlink" title="安装ssh："></a>安装ssh：</h2><pre class="line-numbers language-none"><code class="language-none">apt-get install ssh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">sudo vi &#x2F;etc&#x2F;ssh&#x2F;sshd_config<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>找到下面内容</p>
+<p><img src="https://img2020.cnblogs.com/blog/1756476/202004/1756476-20200401231105458-1141980320.png" alt=""></p>
+<p> 将红色框中的内容修改为下面的内容：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1756476/202004/1756476-20200401231128868-2086048695.png" alt=""></p>
+<p>修改成功以后，重启ssh服务：</p>
+<p>　　切换至ssh目录下<br>　　　　service ssh restart<br>　　然后我们那就能愉快的使用xshell连远程连接并且用root用户登陆deepin系统了。</p>
+<h2 id="远程桌面连接"><a href="#远程桌面连接" class="headerlink" title="远程桌面连接"></a>远程桌面连接</h2><ol>
+<li>在软件商店安装remmina<br>详情请参考<a href="https://jingyan.baidu.com/article/3aed632e2923d8701080911d.html">远程桌面连接-百度经验</a></li>
+</ol>
+<p>2.安装<br><pre class="line-numbers language-none"><code class="language-none"># sudo apt-get install xrdp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>注意：安装完成后注销当前用户 或运行：</p>
+<p>详情请参考<a href="https://blog.csdn.net/yingftf/article/details/104581514">CSDN</a></p>
+]]></content>
+      <categories>
+        <category>deepin</category>
+      </categories>
+      <tags>
+        <tag>deepin</tag>
       </tags>
   </entry>
   <entry>
@@ -3260,19 +3260,15 @@ if (windowWidth &gt; 768) &#123;
 &lt;body&gt;
     &lt;video src&#x3D;&quot;media&#x2F;mi.mp4&quot; autoplay&#x3D;&quot;autoplay&quot; muted&#x3D;&quot;muted&quot;  loop&#x3D;&quot;loop&quot; poster&#x3D;&quot;media&#x2F;mi9.jpg&quot;&gt;&lt;&#x2F;video&gt;
 &lt;&#x2F;body&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<video src="文件地址"   controls="controls"></video>
+<video src="https://www.mmrsl.cn/download/img/html5/1.mp4"   controls="controls"></video><style>
+      video {
+          width: 30%;
+      }
+</style>
 
 </li>
 </ul>
 </blockquote>
-<p><style><br>        video {<br>            width: 100%;<br>        }
-    </style><br>&lt;/head&gt;</p>
-<body>
-    <video src="media/mi.mp4" autoplay="autoplay" muted="muted"  loop="loop" poster="media/mi9.jpg"></video>
-</body>
-
-
-
 <ol>
 <li>autoplay    autoplay    视频就绪自动播放(谷歌浏览器需要添加muted来解决自动播放问题)</li>
 <li>controls    controls    向用户显示播放控件</li>
@@ -3295,8 +3291,53 @@ if (windowWidth &gt; 768) &#123;
 <li>autoplay    autoplay    如果出现该属性，则音频在就绪后马上播放</li>
 <li>controls    controls    如果出现该属性，则向用户显示控件，比如播放按钮</li>
 <li>loop    loop    如果出现该属性，则每当音频结束时重新开始播放</li>
-<li>src    url    要播放的音频的url</li>
+<li>src    url    要播放的音频的url<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3></li>
+<li>音频标签和视频标签使用方式基本一致</li>
+<li>浏览器支持情况不同</li>
+<li>谷歌浏览器把音频和视频自动播放禁止了</li>
+<li>我们可以给视频标签添加muted属性来静音播放视频，音频不可以(可以通过JavaScript解决)</li>
+<li>视频标签是重点，我们经常设置自动播放，不适用controls控件，循环和设置大小属性</li>
 </ol>
+<h3 id="新增input类型"><a href="#新增input类型" class="headerlink" title="新增input类型"></a>新增input类型</h3><table><thead><tr><th>属性值</th><th>说明</th></tr></thead><tbody><tr><td>type&#61;“email”</td><td>限制用户输入必须为Email类型</td></tr><tr><td>type&#61;“url”</td><td>限制用户输入必须为URL类型</td></tr><tr><td>type&#61;“data”</td><td>限制用户输入必须为日期类型</td></tr><tr><td>type&#61;“time”</td><td>限制用户输入必须为时间类型</td></tr><tr><td>type&#61;“month”</td><td>限制用户输入必须为月类型</td></tr><tr><td>type&#61;“week”</td><td>限制用户输入必须为周类型</td></tr><tr><td><strong>type&#61;&#34;number&#34;</strong></td><td><strong>限制用户输入必须为数字类型</strong></td></tr><tr><td><strong>type&#61;&#34;tel&#34;</strong></td><td><strong>手机号码</strong></td></tr><tr><td><strong>type&#61;&#34;search&#34;</strong></td><td><strong>搜索框</strong></td></tr><tr><td>type&#61;“color”</td><td>生成一个颜色选择表单</td></tr></tbody></table>
+
+<p>重点记住： number tel search 这三个</p>
+<body>
+    <!-- 我们验证的时候必须添加form表单域 -->
+    <form action="">
+        <ul>
+            <li>邮箱: <input type="email" /></li>
+            <li>网址: <input type="url" /></li>
+            <li>日期: <input type="date" /></li>
+            <li>时间: <input type="time" /></li>
+            <li>数量: <input type="number" /></li>
+            <li>手机号码: <input type="tel" /></li>
+            <li>搜索: <input type="search" /></li>
+            <li>颜色: <input type="color" /></li>
+            <!-- 当我们点击提交按钮就可以验证表单了 -->
+            <li> <input type="submit" value="提交"></li>
+        </ul>
+    </form>
+</body>
+
+<h3 id="新增表单属性"><a href="#新增表单属性" class="headerlink" title="新增表单属性"></a>新增表单属性</h3><table><thead><tr><th>属性</th><th>值</th><th>说明</th></tr></thead><tbody><tr><td>required</td><td>required</td><td>表单拥有该属性表示其内容不能为空&#xff0c;必填</td></tr><tr><td><strong>placeholder</strong></td><td><strong>提示文本</strong></td><td><strong>表单的提示信息&#xff0c;存在默认值将不显示</strong></td></tr><tr><td>autofocus</td><td>autofocus</td><td>自动聚焦属性&#xff0c;页面加载完成自动聚焦到指定表单</td></tr><tr><td>autocomplete</td><td>off/on</td><td>当用户在字段开始键入时&#xff0c;浏览器基于之前键入过的值&#xff0c;应该显示出在字段中填写的选项&#xff0c;默认已经打开。如autocomplete&#61;“on” ,关闭autocomplete&#61;“off”&#xff0c;需要放在表单内&#xff0c;同时加上name属性&#xff0c;同时成功提交</td></tr><tr><td><strong>multiple</strong></td><td><strong>multiple</strong></td><td><strong>可以多选文件提示</strong></td></tr></tbody></table>
+
+<pre class="line-numbers language-none"><code class="language-none">&lt;form action&#x3D;&quot;&quot;&gt;
+        &lt;input type&#x3D;&quot;search&quot; name&#x3D;&quot;sear&quot; id&#x3D;&quot;&quot; required&#x3D;&quot;required&quot; placeholder&#x3D;&quot;kp&quot; autofocus&#x3D;&quot;autofocus&quot; autocommplete&#x3D;&quot;off&quot;&gt;
+        &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;提交&quot;&gt;
+    &lt;&#x2F;form&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>可以通过以下设置方式修改placeholder里面的字体颜色<br><pre class="line-numbers language-none"><code class="language-none">input::placeholder &#123;
+	color: pink;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></p>
+<form action="">
+        <input type="search" name="sear" id="" required="required" placeholder="kp" autofocus="autofocus" autocommplete="off">
+        <input type="submit" value="提交">
+</form>
+
+<h2 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h2><ul>
+<li><a href="https://blog.csdn.net/Augenstern_QXL/article/details/115419453">HTML冲浪笔记(一)</a></li>
+<li><a href="https://blog.csdn.net/Augenstern_QXL/article/details/115599059">HTML5冲浪笔记(二)</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>html</category>
@@ -3561,36 +3602,6 @@ wlx0ccf89606c44  IEEE 802.11  ESSID:&quot;SSID&quot;
       </tags>
   </entry>
   <entry>
-    <title>linux嵌入式开发_1</title>
-    <url>/2020/07/30/linux%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91-1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux基础"><a href="#linux基础" class="headerlink" title="linux基础"></a><strong>linux基础</strong></h1><h2 id="linux是什么？"><a href="#linux是什么？" class="headerlink" title="linux是什么？"></a>linux是什么？</h2><span id="more"></span>
-<ul>
-<li>linux是一款开源操作系统，开放了整组的调用接口给程序猿进行开发和使用。linux操作系统包含内核和系统调用，并不包含应用程序。由于linux的架构继承了unix良好传统，因此越来越多的开发者选择使用linux并为之设计了许多应用级软件。</li>
-</ul>
-<h2 id="开发环境的搭建"><a href="#开发环境的搭建" class="headerlink" title="开发环境的搭建"></a>开发环境的搭建</h2><ul>
-<li>开发环境需要用到交叉开发模式，这一点书上有很详细的介绍，包括硬件环境和软件环境的构建都写的十分清楚，所以这篇文章主要是写一下我在中间遇到的一些问题以及解决方法。虚拟机的话我用的是Ubuntu18.04版本，安装虚拟机啥的网上资源很多，直接百度就行。</li>
-</ul>
-<h2 id="linux下的环境搭建"><a href="#linux下的环境搭建" class="headerlink" title="linux下的环境搭建"></a>linux下的环境搭建</h2><h3 id="1、修改Ubuntu的一些配置"><a href="#1、修改Ubuntu的一些配置" class="headerlink" title="1、修改Ubuntu的一些配置"></a>1、修改Ubuntu的一些配置</h3><ul>
-<li><p>切换国内镜像源</p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp; 在使用apt命令安装包时，因为系统自带下载源在国外服务器上，所以需要切换为国内镜像源才能提升下载速度。这里有一篇博客详细说明了如何直接根据终端命令修改其配置文件，从而达到修改下载源的目的.或者，，，，你也可以直接用Ubuntu的图形界面去修改，步骤如下： 显示应用程序-&gt;软件和更新-&gt;下载自主服务器改为其他，然后选择合适的镜像源就行了，这里我选择的是阿里的镜像源。</p>
-</li>
-<li><p>修改语言和设置汉语输入法</p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp; 懒得写，直接贴别人博客了</p>
-</li>
-</ul>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/langshi_2011/article/details/78993781">Linux Ubuntu系统设置成中文语言</a></p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/sparkstrike/article/details/81487271">Linux.Ubuntu.中文输入法设置</a></p>
-]]></content>
-      <categories>
-        <category>程序设计</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>嵌入式开发</tag>
-        <tag>鸟哥的私房菜学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux批量分发_运行_killcode</title>
     <url>/2021/11/08/linux%E6%89%B9%E9%87%8F%E5%88%86%E5%8F%91-%E8%BF%90%E8%A1%8C-killcode/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux批量分发-运行-killcode-python"><a href="#linux批量分发-运行-killcode-python" class="headerlink" title="linux批量分发_运行_killcode(python)"></a>linux批量分发_运行_killcode(python)</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>对每个可以进入linux系统设备，统一用户名和密码。<br>同时对设备进行标号如<br>xxx001-xxx010</p>
@@ -3820,6 +3831,36 @@ if __name__&#x3D;&#x3D;&#39;__main__&#39;:
       <tags>
         <tag>python</tag>
         <tag>paramiko</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux嵌入式开发_1</title>
+    <url>/2020/07/30/linux%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91-1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux基础"><a href="#linux基础" class="headerlink" title="linux基础"></a><strong>linux基础</strong></h1><h2 id="linux是什么？"><a href="#linux是什么？" class="headerlink" title="linux是什么？"></a>linux是什么？</h2><span id="more"></span>
+<ul>
+<li>linux是一款开源操作系统，开放了整组的调用接口给程序猿进行开发和使用。linux操作系统包含内核和系统调用，并不包含应用程序。由于linux的架构继承了unix良好传统，因此越来越多的开发者选择使用linux并为之设计了许多应用级软件。</li>
+</ul>
+<h2 id="开发环境的搭建"><a href="#开发环境的搭建" class="headerlink" title="开发环境的搭建"></a>开发环境的搭建</h2><ul>
+<li>开发环境需要用到交叉开发模式，这一点书上有很详细的介绍，包括硬件环境和软件环境的构建都写的十分清楚，所以这篇文章主要是写一下我在中间遇到的一些问题以及解决方法。虚拟机的话我用的是Ubuntu18.04版本，安装虚拟机啥的网上资源很多，直接百度就行。</li>
+</ul>
+<h2 id="linux下的环境搭建"><a href="#linux下的环境搭建" class="headerlink" title="linux下的环境搭建"></a>linux下的环境搭建</h2><h3 id="1、修改Ubuntu的一些配置"><a href="#1、修改Ubuntu的一些配置" class="headerlink" title="1、修改Ubuntu的一些配置"></a>1、修改Ubuntu的一些配置</h3><ul>
+<li><p>切换国内镜像源</p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp; 在使用apt命令安装包时，因为系统自带下载源在国外服务器上，所以需要切换为国内镜像源才能提升下载速度。这里有一篇博客详细说明了如何直接根据终端命令修改其配置文件，从而达到修改下载源的目的.或者，，，，你也可以直接用Ubuntu的图形界面去修改，步骤如下： 显示应用程序-&gt;软件和更新-&gt;下载自主服务器改为其他，然后选择合适的镜像源就行了，这里我选择的是阿里的镜像源。</p>
+</li>
+<li><p>修改语言和设置汉语输入法</p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp; 懒得写，直接贴别人博客了</p>
+</li>
+</ul>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/langshi_2011/article/details/78993781">Linux Ubuntu系统设置成中文语言</a></p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/sparkstrike/article/details/81487271">Linux.Ubuntu.中文输入法设置</a></p>
+]]></content>
+      <categories>
+        <category>程序设计</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>嵌入式开发</tag>
+        <tag>鸟哥的私房菜学习</tag>
       </tags>
   </entry>
   <entry>
@@ -7979,6 +8020,75 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
       </tags>
   </entry>
   <entry>
+    <title>目标识别数据集扩充_旋转扩充</title>
+    <url>/2021/07/28/%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E6%95%B0%E6%8D%AE%E9%9B%86%E6%89%A9%E5%85%852/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="目标识别数据集扩充-旋转扩充"><a href="#目标识别数据集扩充-旋转扩充" class="headerlink" title="目标识别数据集扩充_旋转扩充"></a>目标识别数据集扩充_旋转扩充</h1><h2 id="扩充方法"><a href="#扩充方法" class="headerlink" title="扩充方法"></a>扩充方法</h2><h3 id="原图"><a href="#原图" class="headerlink" title="原图"></a>原图</h3><p><img src="https://www.codekp.cn/download/img/数据集扩充/Original.jpg" alt=""></p>
+<h2 id="标签格式转化"><a href="#标签格式转化" class="headerlink" title="标签格式转化"></a>标签格式转化</h2><h3 id="标签xml转txt格式"><a href="#标签xml转txt格式" class="headerlink" title="标签xml转txt格式"></a>标签xml转txt格式</h3><pre class="line-numbers language-none"><code class="language-none">def xml_to_txt(self,dw,dh,xmin,ymin ,xmax ,ymax):
+    x &#x3D; (xmin+ xmax) &#x2F; 2.0
+    y &#x3D; (ymax + ymin) &#x2F; 2.0
+    w &#x3D; xmax- xmin
+    h &#x3D; ymax - ymin
+    x &#x3D; x &#x2F;dw
+    w &#x3D; w &#x2F; dw
+    y &#x3D; y &#x2F; dh
+    h &#x3D; h &#x2F; dh
+    return (x, y, w, h)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="txt转xml格式"><a href="#txt转xml格式" class="headerlink" title="txt转xml格式"></a>txt转xml格式</h3><p>其实就是个数学计算而已<br><pre class="line-numbers language-none"><code class="language-none">def txt_to_xml(self,Pwidth,Pheight,x,y , wp, hp):
+    xmin &#x3D; int((x * Pwidth + 1) - wp * 0.5 * Pwidth)
+    ymin &#x3D; int((y * Pheight + 1) - hp * 0.5 * Pheight)
+    xmax &#x3D; int((x* Pwidth + 1) + wp * 0.5 * Pwidth)
+    ymax &#x3D; int((y * Pheight + 1) + hp * 0.5 * Pheight)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h2 id="txt文件"><a href="#txt文件" class="headerlink" title="txt文件"></a>txt文件</h2><h3 id="txt文件的读写"><a href="#txt文件的读写" class="headerlink" title="txt文件的读写"></a>txt文件的读写</h3><pre class="line-numbers language-none"><code class="language-none">def saveFlipLabel(txtpath,txt_save_path):
+    with open(txt_save_path, &quot;w&quot;) as outfile:
+        with open(txtpath, &quot;r&quot;) as infile:
+            for line in infile.readlines():
+                words &#x3D; line.split(&quot; &quot;)
+                horizontal_coord &#x3D; float(words[1])
+                outfile.write(
+                    words[0] + &quot; &quot; + str(format(1 - horizontal_coord, &quot;.6f&quot;)) + &quot; &quot; + words[2] + &quot; &quot; + words[3] + &quot; &quot; +
+                    words[4])
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="txt文件的拷贝"><a href="#txt文件的拷贝" class="headerlink" title="txt文件的拷贝"></a>txt文件的拷贝</h3><pre class="line-numbers language-none"><code class="language-none">def copyLabel(txtpath,txt_save_path):
+    shutil.copyfile(txtpath, txt_save_path)
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="main"><a href="#main" class="headerlink" title="main"></a>main</h2><pre class="line-numbers language-none"><code class="language-none">if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    img_aug &#x3D; ImgAugemention()
+    imgs_path &#x3D; &#39;.&#x2F;img&#x2F;&#39;
+    txt_path &#x3D; &#39;.&#x2F;label&#x2F;&#39;
+    img_save_path &#x3D; &#39;.&#x2F;images&#x2F;&#39;
+    txt_save_path &#x3D; &#39;.&#x2F;labels&#x2F;&#39;
+    angle_list &#x3D; [0,30,60, 90, 120, 150, 180, 270,330]
+    img_aug.process_img2(imgs_path, txt_path, img_save_path, txt_save_path)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>主要作用是实现对数据的扩展，对整个文件夹内所有文件进行读取，一键扩展</p>
+<pre class="line-numbers language-none"><code class="language-none">#!&#x2F;usr&#x2F;bin&#x2F;env python
+
+import cv2
+import math
+import numpy as np
+import os
+import pdb
+import xml.etree.ElementTree as ET
+from Image_expansion import *
+
+class ImgAugemention():
+    def __init__(self):
+        self.angle &#x3D; 90
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>主要由ImgAugemention类和Image_expansion构成</p>
+<h2 id="数据扩展结果"><a href="#数据扩展结果" class="headerlink" title="数据扩展结果"></a>数据扩展结果</h2><p><img src="https://www.codekp.cn/download/img/旋转扩充数据集/0-270.png" alt=""></p>
+<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p>如果需源码请联系本人，以上传至git私人仓库。</p>
+<ul>
+<li><a href="https://github.com/mmrslwan1110/Image-expansion2">https://github.com/mmrslwan1110/Image-expansion2</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>目标检测</category>
+      </categories>
+      <tags>
+        <tag>目标检测数据集扩充2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>目标识别数据集扩充</title>
     <url>/2021/07/26/%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E6%95%B0%E6%8D%AE%E9%9B%86%E6%89%A9%E5%85%85%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="目标检测数据集扩充"><a href="#目标检测数据集扩充" class="headerlink" title="目标检测数据集扩充"></a>目标检测数据集扩充</h1><p>数据扩充对于深度神经网络训练通常具有良好的作用，例如2003年Patrice Simard等人所著的一篇论文中他们把MNIST手写数字数据集通过旋转，转换和扭曲进行扩展。通过在这个扩展后的数据集上的训练，他们把MNIST手写数字识别的准确率提升到了98.9%。然后还在“弹性扭曲”的数据集上进行了实验，这是一种特殊的为了模仿手部肌肉的随机抖动的图像扭曲方法。通过使用弹性扭曲扩展的数据，他们最终达到了99.3%的分类准确率。</p>
@@ -8222,75 +8332,6 @@ def saveCutoutLabel(name):
       </categories>
       <tags>
         <tag>目标检测数据集扩充</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>目标识别数据集扩充_旋转扩充</title>
-    <url>/2021/07/28/%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E6%95%B0%E6%8D%AE%E9%9B%86%E6%89%A9%E5%85%852/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="目标识别数据集扩充-旋转扩充"><a href="#目标识别数据集扩充-旋转扩充" class="headerlink" title="目标识别数据集扩充_旋转扩充"></a>目标识别数据集扩充_旋转扩充</h1><h2 id="扩充方法"><a href="#扩充方法" class="headerlink" title="扩充方法"></a>扩充方法</h2><h3 id="原图"><a href="#原图" class="headerlink" title="原图"></a>原图</h3><p><img src="https://www.codekp.cn/download/img/数据集扩充/Original.jpg" alt=""></p>
-<h2 id="标签格式转化"><a href="#标签格式转化" class="headerlink" title="标签格式转化"></a>标签格式转化</h2><h3 id="标签xml转txt格式"><a href="#标签xml转txt格式" class="headerlink" title="标签xml转txt格式"></a>标签xml转txt格式</h3><pre class="line-numbers language-none"><code class="language-none">def xml_to_txt(self,dw,dh,xmin,ymin ,xmax ,ymax):
-    x &#x3D; (xmin+ xmax) &#x2F; 2.0
-    y &#x3D; (ymax + ymin) &#x2F; 2.0
-    w &#x3D; xmax- xmin
-    h &#x3D; ymax - ymin
-    x &#x3D; x &#x2F;dw
-    w &#x3D; w &#x2F; dw
-    y &#x3D; y &#x2F; dh
-    h &#x3D; h &#x2F; dh
-    return (x, y, w, h)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="txt转xml格式"><a href="#txt转xml格式" class="headerlink" title="txt转xml格式"></a>txt转xml格式</h3><p>其实就是个数学计算而已<br><pre class="line-numbers language-none"><code class="language-none">def txt_to_xml(self,Pwidth,Pheight,x,y , wp, hp):
-    xmin &#x3D; int((x * Pwidth + 1) - wp * 0.5 * Pwidth)
-    ymin &#x3D; int((y * Pheight + 1) - hp * 0.5 * Pheight)
-    xmax &#x3D; int((x* Pwidth + 1) + wp * 0.5 * Pwidth)
-    ymax &#x3D; int((y * Pheight + 1) + hp * 0.5 * Pheight)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<h2 id="txt文件"><a href="#txt文件" class="headerlink" title="txt文件"></a>txt文件</h2><h3 id="txt文件的读写"><a href="#txt文件的读写" class="headerlink" title="txt文件的读写"></a>txt文件的读写</h3><pre class="line-numbers language-none"><code class="language-none">def saveFlipLabel(txtpath,txt_save_path):
-    with open(txt_save_path, &quot;w&quot;) as outfile:
-        with open(txtpath, &quot;r&quot;) as infile:
-            for line in infile.readlines():
-                words &#x3D; line.split(&quot; &quot;)
-                horizontal_coord &#x3D; float(words[1])
-                outfile.write(
-                    words[0] + &quot; &quot; + str(format(1 - horizontal_coord, &quot;.6f&quot;)) + &quot; &quot; + words[2] + &quot; &quot; + words[3] + &quot; &quot; +
-                    words[4])
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="txt文件的拷贝"><a href="#txt文件的拷贝" class="headerlink" title="txt文件的拷贝"></a>txt文件的拷贝</h3><pre class="line-numbers language-none"><code class="language-none">def copyLabel(txtpath,txt_save_path):
-    shutil.copyfile(txtpath, txt_save_path)
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="main"><a href="#main" class="headerlink" title="main"></a>main</h2><pre class="line-numbers language-none"><code class="language-none">if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
-    img_aug &#x3D; ImgAugemention()
-    imgs_path &#x3D; &#39;.&#x2F;img&#x2F;&#39;
-    txt_path &#x3D; &#39;.&#x2F;label&#x2F;&#39;
-    img_save_path &#x3D; &#39;.&#x2F;images&#x2F;&#39;
-    txt_save_path &#x3D; &#39;.&#x2F;labels&#x2F;&#39;
-    angle_list &#x3D; [0,30,60, 90, 120, 150, 180, 270,330]
-    img_aug.process_img2(imgs_path, txt_path, img_save_path, txt_save_path)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>主要作用是实现对数据的扩展，对整个文件夹内所有文件进行读取，一键扩展</p>
-<pre class="line-numbers language-none"><code class="language-none">#!&#x2F;usr&#x2F;bin&#x2F;env python
-
-import cv2
-import math
-import numpy as np
-import os
-import pdb
-import xml.etree.ElementTree as ET
-from Image_expansion import *
-
-class ImgAugemention():
-    def __init__(self):
-        self.angle &#x3D; 90
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>主要由ImgAugemention类和Image_expansion构成</p>
-<h2 id="数据扩展结果"><a href="#数据扩展结果" class="headerlink" title="数据扩展结果"></a>数据扩展结果</h2><p><img src="https://www.codekp.cn/download/img/旋转扩充数据集/0-270.png" alt=""></p>
-<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p>如果需源码请联系本人，以上传至git私人仓库。</p>
-<ul>
-<li><a href="https://github.com/mmrslwan1110/Image-expansion2">https://github.com/mmrslwan1110/Image-expansion2</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>目标检测</category>
-      </categories>
-      <tags>
-        <tag>目标检测数据集扩充2</tag>
       </tags>
   </entry>
   <entry>
