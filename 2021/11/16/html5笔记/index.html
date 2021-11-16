@@ -537,14 +537,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.8k
+                    2.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    8 分
                 </div>
                 
 
@@ -719,8 +719,33 @@
 
 </li>
 </ol>
-<h3 id="表格结构标签"><a href="#表格结构标签" class="headerlink" title="表格结构标签"></a>表格结构标签</h3><p>为了更好的表示表格的语义，可以将表格分割成 表格头部 和表格主体两大部分</p>
-<p>用 <thead></thead> 标签表示表格的头部区域，<thead>内部必须拥有<tr>标签，一般是位于第一行<br>用<tbody></tbody> 标签表示表格的主体区域，主要是用于放数据本体<br>以上标签都是放在<table></table>标签中</p>
+<h4 id="表格结构标签"><a href="#表格结构标签" class="headerlink" title="表格结构标签"></a>表格结构标签</h4><p>为了更好的表示表格的语义，可以将表格分割成 表格头部 和表格主体两大部分</p>
+<ul>
+<li>用 <code>&lt;thead&gt;&lt;/thead&gt;</code> 标签表示表格的头部区域，<code>&lt;thead&gt;</code>内部必须拥有<code>&lt;tr&gt;</code>标签，一般是位于第一行</li>
+<li>用<code>&lt;tbody&gt;&lt;/tbody&gt;</code> 标签表示表格的主体区域，主要是用于放数据本体</li>
+<li>以上标签都是放在<code>&lt;table&gt;&lt;/table&gt;</code>标签中</li>
+</ul>
+<h4 id="合并单元格"><a href="#合并单元格" class="headerlink" title="合并单元格"></a>合并单元格</h4><p>跨行合并：rowspan=“合并单元格的个数”<br>跨列合并：colspan=”合并单元格的个数”</p>
+<p><code>&lt;td colspan = &quot;2&quot;&gt;&lt;/td&gt;</code></p>
+<table align=center border="1" cellpadding="20" cellspacing="0" width="500">
+    <tr>  <th>table</th>     <th>用来定义表格的标签</th>        <th>用来定义表格的标签</th>    </tr>
+    <tr>  <td>tr</td>     <td>用来定义表格中的行，必须嵌套在table /table 标签中</td>       <td></td>       </tr>  
+    <tr>  <td >td </td>            <td colspan = "2">用来定义表格中的单元格，必须嵌套在tr/tr 标签中</td>      </tr>        
+    <tr>  <td>th</td>     <td>用来定义表格中的表头，表头单元格里面的内容加粗居中显示</td>        <th></th>     </tr>                        
+</table>
+
+<h3 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h3><ul>
+<li><code>&lt;ul&gt;&lt;/ul&gt;</code>    无序列表    里面只能包含li，没有顺序。li里面可以包含任何标签</li>
+<li><code>&lt;ol&gt;&lt;/ol&gt;</code>    有序列表    里面只能包含li，有顺序</li>
+<li><code>&lt;dl&gt;&lt;/dl&gt;</code>    自定义列表    里面只能包含dt和dd，dt和dd里面可以放任何标签<ol>
+   <li>关注我们</li>
+   <li>新浪微博</li>
+   <li>联系我们</li>
+</ol>
+
+</li>
+</ul>
+<h3 id="表单标签"><a href="#表单标签" class="headerlink" title="表单标签"></a>表单标签</h3><p>一个完整的表单通常由表单域，表单控件（表单元素）和提示信息3部分组成<br><img src="https://www.mmrsl.cn/download/img/html5/2.png" alt="表单标签" title="嘿嘿" /></p>
 
                 
             </div>
@@ -1318,7 +1343,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">90.2k</span>&nbsp;字
+                class="white-color">90.4k</span>&nbsp;字
             
             
             

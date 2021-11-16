@@ -266,60 +266,6 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       </tags>
   </entry>
   <entry>
-    <title>LabelImg_使用</title>
-    <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
-<p>它是用 Python 编写的，并使用 Qt 作为其图形界面。</p>
-<p>注释以 PASCAL VOC 格式保存为 XML 文件，ImageNet使用的格式。此外，它还支持 YOLO 和 CreateML 格式。</p>
-<p><img src="https://www.codekp.cn/download/img/labelImg/labelimg.jpg" alt=""></p>
-<p>参考地址 ： <a href="https://github.com/tzutalin/labelImg">https://github.com/tzutalin/labelImg</a></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-none"><code class="language-none">conda install pyqt&#x3D;5
-conda install -c anaconda lxml
-pyrcc5 -o libs&#x2F;resources.py resources.qrc
-python labelImg.py
-python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>有基础的同学可以直接<br><pre class="line-numbers language-none"><code class="language-none">pip install labelimg <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
-<li><code>JPEGImage 目录</code>：存储的是图片的名字</li>
-<li><code>Annotation 目录</code>：用于存放标注图片的标签文件</li>
-<li><code>class.txt 文件</code>：定义自己要标注的所有类别</li>
-</ul>
-<p>例如：我的<code>class.txt</code>中定义的类别如下：<br><pre class="line-numbers language-none"><code class="language-none">one
-two
-ct5
-other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></p>
-<ul>
-<li><code>Open Dir</code>：待标注图片数据的路径文件夹，即选择JPEGImage文件夹</li>
-<li><code>Change Save Dir</code>：保存类别标签的路径文件夹，即选择Annotation文件夹</li>
-<li><code>PascalVOC</code>：标注的标签保存成VOC格式，在鼠标点一下就变成YOLO，即此时就会把标注的标签变成YOLO格式</li>
-</ul>
-<h3 id="view-快捷指令"><a href="#view-快捷指令" class="headerlink" title="view 快捷指令"></a>view 快捷指令</h3><ul>
-<li><code>Auto Save mode</code>：当你切换到下一张图片时，就会自动把上一张标注的图片标签自动保存下来，这样就不用每标注一样图片都按Ctrl+S保存一下了</li>
-<li><code>Display Labels</code>：标注好图片之后，会把框和标签都显示出来</li>
-<li><code>Advanced Mode</code>：这样标注的十字架就会一直悬浮在窗口，不用每次标完一个目标，再按一次W快捷键，调出标注的十字架。</li>
-</ul>
-<h3 id="标注常用的快捷键"><a href="#标注常用的快捷键" class="headerlink" title="标注常用的快捷键"></a>标注常用的快捷键</h3><ul>
-<li><code>W</code>：调出标注的十字架，开始标注</li>
-<li><code>A</code>：切换到上一张图片</li>
-<li><code>D</code>：切换到下一张图片</li>
-<li><code>Ctrl+S</code>：保存标注好的标签</li>
-<li><code>del</code>：删除标注的矩形框</li>
-<li><code>Ctrl+鼠标滚轮</code>：按住Ctrl，然后滚动鼠标滚轮，可以调整标注图片的显示大小</li>
-<li><code>Ctrl+u</code>：选择要标注图片的文件夹</li>
-<li><code>Ctrl+r</code>：选择标注好的label标签存放的文件夹</li>
-<li><code>↑→↓←</code>：移动标注的矩形框的位置</li>
-</ul>
-<p>标注的时候，会把classe.txt预定义的标加载出来，然后我们只要选择对应的标签即可<br>右上角会显示已经标注目标的标签</p>
-<h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><p>以yolo格式进行保存使用。</p>
-]]></content>
-      <categories>
-        <category>目标检测</category>
-      </categories>
-      <tags>
-        <tag>目标检测</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>English_learning</title>
     <url>/2020/07/31/English-learning/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
@@ -430,6 +376,60 @@ If you are talking to a group of managers, you may refer to the disorganized met
         <tag>英语</tag>
         <tag>英语阅读</tag>
         <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LabelImg_使用</title>
+    <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
+<p>它是用 Python 编写的，并使用 Qt 作为其图形界面。</p>
+<p>注释以 PASCAL VOC 格式保存为 XML 文件，ImageNet使用的格式。此外，它还支持 YOLO 和 CreateML 格式。</p>
+<p><img src="https://www.codekp.cn/download/img/labelImg/labelimg.jpg" alt=""></p>
+<p>参考地址 ： <a href="https://github.com/tzutalin/labelImg">https://github.com/tzutalin/labelImg</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-none"><code class="language-none">conda install pyqt&#x3D;5
+conda install -c anaconda lxml
+pyrcc5 -o libs&#x2F;resources.py resources.qrc
+python labelImg.py
+python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>有基础的同学可以直接<br><pre class="line-numbers language-none"><code class="language-none">pip install labelimg <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
+<li><code>JPEGImage 目录</code>：存储的是图片的名字</li>
+<li><code>Annotation 目录</code>：用于存放标注图片的标签文件</li>
+<li><code>class.txt 文件</code>：定义自己要标注的所有类别</li>
+</ul>
+<p>例如：我的<code>class.txt</code>中定义的类别如下：<br><pre class="line-numbers language-none"><code class="language-none">one
+two
+ct5
+other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></p>
+<ul>
+<li><code>Open Dir</code>：待标注图片数据的路径文件夹，即选择JPEGImage文件夹</li>
+<li><code>Change Save Dir</code>：保存类别标签的路径文件夹，即选择Annotation文件夹</li>
+<li><code>PascalVOC</code>：标注的标签保存成VOC格式，在鼠标点一下就变成YOLO，即此时就会把标注的标签变成YOLO格式</li>
+</ul>
+<h3 id="view-快捷指令"><a href="#view-快捷指令" class="headerlink" title="view 快捷指令"></a>view 快捷指令</h3><ul>
+<li><code>Auto Save mode</code>：当你切换到下一张图片时，就会自动把上一张标注的图片标签自动保存下来，这样就不用每标注一样图片都按Ctrl+S保存一下了</li>
+<li><code>Display Labels</code>：标注好图片之后，会把框和标签都显示出来</li>
+<li><code>Advanced Mode</code>：这样标注的十字架就会一直悬浮在窗口，不用每次标完一个目标，再按一次W快捷键，调出标注的十字架。</li>
+</ul>
+<h3 id="标注常用的快捷键"><a href="#标注常用的快捷键" class="headerlink" title="标注常用的快捷键"></a>标注常用的快捷键</h3><ul>
+<li><code>W</code>：调出标注的十字架，开始标注</li>
+<li><code>A</code>：切换到上一张图片</li>
+<li><code>D</code>：切换到下一张图片</li>
+<li><code>Ctrl+S</code>：保存标注好的标签</li>
+<li><code>del</code>：删除标注的矩形框</li>
+<li><code>Ctrl+鼠标滚轮</code>：按住Ctrl，然后滚动鼠标滚轮，可以调整标注图片的显示大小</li>
+<li><code>Ctrl+u</code>：选择要标注图片的文件夹</li>
+<li><code>Ctrl+r</code>：选择标注好的label标签存放的文件夹</li>
+<li><code>↑→↓←</code>：移动标注的矩形框的位置</li>
+</ul>
+<p>标注的时候，会把classe.txt预定义的标加载出来，然后我们只要选择对应的标签即可<br>右上角会显示已经标注目标的标签</p>
+<h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><p>以yolo格式进行保存使用。</p>
+]]></content>
+      <categories>
+        <category>目标检测</category>
+      </categories>
+      <tags>
+        <tag>目标检测</tag>
       </tags>
   </entry>
   <entry>
@@ -2513,6 +2513,21 @@ protoc --python_out&#x3D;. C:\tensorflow1\models\research\object_detection\proto
       </tags>
   </entry>
   <entry>
+    <title>b站视频分享</title>
+    <url>/2017/11/17/b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=414001980&bvid=BV1TV411z7aB&cid=218691406&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div><br><span id="more"></span></p>
+]]></content>
+      <categories>
+        <category>分享</category>
+      </categories>
+      <tags>
+        <tag>b站视频</tag>
+        <tag>分享</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>c++_常用语法</title>
     <url>/2020/07/31/c/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="C-常用语法"><a href="#C-常用语法" class="headerlink" title="C++常用语法"></a><center>C++常用语法</center></h1><h3 id="2020-08-01"><a href="#2020-08-01" class="headerlink" title="2020_08_01"></a><p align="right">2020_08_01</p></h3><blockquote>
@@ -2605,21 +2620,6 @@ const type variable &#x3D; value;<span aria-hidden="true" class="line-numbers-ro
       <tags>
         <tag>C++</tag>
         <tag>程序设计</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>b站视频分享</title>
-    <url>/2017/11/17/b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=414001980&bvid=BV1TV411z7aB&cid=218691406&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div><br><span id="more"></span></p>
-]]></content>
-      <categories>
-        <category>分享</category>
-      </categories>
-      <tags>
-        <tag>b站视频</tag>
-        <tag>分享</tag>
       </tags>
   </entry>
   <entry>
@@ -2740,171 +2740,6 @@ const type variable &#x3D; value;<span aria-hidden="true" class="line-numbers-ro
       <tags>
         <tag>B站</tag>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>html5笔记</title>
-    <url>/2021/11/16/html5%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="html5笔记"><a href="#html5笔记" class="headerlink" title="html5笔记"></a>html5笔记</h1><h2 id="开发者工具VS-Code"><a href="#开发者工具VS-Code" class="headerlink" title="开发者工具VS Code"></a>开发者工具VS Code</h2><h3 id = "one">vscode插件推荐</h3>
-
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>插件</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Open in Browser</td>
-<td>右击选择浏览器打开html文件</td>
-</tr>
-<tr>
-<td>Auto Rename Tag</td>
-<td>自动重命名配对的HTML/XML标签</td>
-</tr>
-<tr>
-<td>CSS Peek</td>
-<td>追踪至样式</td>
-</tr>
-<tr>
-<td>Community Material Theme</td>
-<td>设置颜色主题</td>
-</tr>
-<tr>
-<td>Live Server</td>
-<td>自动监测代码修改并在浏览器响应</td>
-</tr>
-<tr>
-<td>vscode-icons</td>
-<td>设置文件图标作主题</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id=""><a href="#" class="headerlink" title=" "></a> </h3><p>新建1.html文件</p>
-<ol>
-<li>! <code>&lt;Tab&gt;</code></li>
-<li>! <code>enter</code><br>即可生成html文件<pre class="line-numbers language-none"><code class="language-none">&lt;!DOCTYPE html&gt;
-&lt;html lang&#x3D;&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv&#x3D;&quot;X-UA-Compatible&quot; content&#x3D;&quot;IE&#x3D;edge&quot;&gt;
-    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;
-    &lt;title&gt;Document&lt;&#x2F;title&gt;
-&lt;&#x2F;head&gt;
-&lt;body&gt;
-    
-&lt;&#x2F;body&gt;
-&lt;&#x2F;html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="基本结构标签"><a href="#基本结构标签" class="headerlink" title="基本结构标签"></a>基本结构标签</h2>| 标签名  | 定义 | 说明|<br>| ————— |————— | ————— |<br>| <code>&lt;html&gt;&lt;/html&gt;</code>    | HTML标签    | 页面中的最大的标签，我们称为根标签|<br>| <code>&lt;head&gt;&lt;head&gt;</code>    | 文档的头部    | 注意在head标签中我们必须要设置的标签是title|<br>| <code>&lt;title&gt;&lt;/title&gt;</code>|     文档的标题    | 让页面拥有一个属于自己的网页标题|<br>| <code>&lt;body&gt;&lt;/body&gt;</code>    | 文档的主体    | 元素包含文档的所有内容，页面内容基本都是放到body里面的|<br>HTML 标签是由尖括号包围的关键词，例如 <code>&lt;html&gt;</code><br>HTML 标签通常是成对出现的，例如 <code>&lt;html&gt;</code>和<code>&lt;/html&gt;</code> ，我们称为双标签。标签对中的第一个标签是开始标签，第二个标签是结束标签。<br>有些特殊的标签必须是单个标签（极少情况），例如<code>&lt;br /&gt;</code>，我们称为单标签。</li>
-</ol>
-<h3 id="文档类型声明标签"><a href="#文档类型声明标签" class="headerlink" title="文档类型声明标签"></a>文档类型声明标签</h3><ul>
-<li><code>&lt;!DOCTYPE&gt;</code>文档类型声明，作用就是告诉浏览器使用哪种HTML版本来显示网页。</li>
-</ul>
-<p><code>&lt;!DOCTYPE html&gt;</code></p>
-<ul>
-<li>这句代码的意思是: 当前页面采取的是 HTML5 版本来显示网页.</li>
-<li><p>注意：</p>
-<ul>
-<li><code>&lt;!DOCTYPE&gt;</code> 声明位于文档中的最前面的位置，处于 <code>&lt;html&gt;</code> 标签之前。</li>
-<li><code>&lt;!DOCTYPE&gt;</code> 不是一个 HTML 标签，它就是文档类型声明标签。<h3 id="lang语言种类"><a href="#lang语言种类" class="headerlink" title="lang语言种类"></a>lang语言种类</h3></li>
-</ul>
-</li>
-<li><p>en 定义语言为英语</p>
-</li>
-<li>zh-CN 定义语言为中文</li>
-</ul>
-<p><code>&lt;html lang=&quot;en&quot;&gt;</code></p>
-<blockquote>
-<p>字符集charset 属性来规定 HTML 文档应该使用哪种字符编码。</p>
-</blockquote>
-<p><code>&lt;meta charset = &quot;UTF-8&quot; /&gt;</code></p>
-<p>charset 常用的值有：：GB2312 、BIG5 、GBK 和 UTF-8，其中 UTF-8 也被称为万国码，基本包含了全世界所有国家需要用到的字符</p>
-<h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><h3 id="标题标签"><a href="#标题标签" class="headerlink" title="标题标签"></a>标题标签</h3><pre class="line-numbers language-none"><code class="language-none">&lt;body&gt;
-    &lt;h1&gt; 一级标题&lt;&#x2F;h1&gt;
-        &#96;
-        &#96;
-        &#96;
-    &lt;h6&gt; 六级标题&lt;&#x2F;h6&gt;
-&lt;&#x2F;body&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="段落标签"><a href="#段落标签" class="headerlink" title="段落标签"></a>段落标签</h3><p><code>&lt;p&gt;段落标签&lt;/p&gt;</code></p>
-<blockquote>
-<p>paragraph 的缩写文本 在一个段落这种会根据浏览器窗口的大小进行自动换行 段落和段落之间保有空隙</p>
-<h3 id="换行标签"><a href="#换行标签" class="headerlink" title="换行标签"></a>换行标签</h3><p><code>&lt;br /&gt;</code><br>这些在markdown里面也是通用的</p>
-<h3 id="文本格式化标签"><a href="#文本格式化标签" class="headerlink" title="文本格式化标签"></a>文本格式化标签</h3><ol>
-<li>加粗 <code>&lt;stong&gt;&lt;/stong&gt;</code></li>
-<li>倾斜 <code>&lt;em&gt;&lt;/em&gt;</code></li>
-<li>删除线 <code>&lt;del&gt;&lt;/del&gt;</code></li>
-<li>下划线 <code>&lt;ins&gt;&lt;/ins&gt;</code></li>
-</ol>
-</blockquote>
-<stong>在 markdown里面同样适用</stong>
-
-<h3 id="盒子标签"><a href="#盒子标签" class="headerlink" title="盒子标签"></a>盒子标签</h3><ol>
-<li><code>&lt;div&gt;&lt;/div&gt;</code> :可以看成是一个大盒子，独占一行</li>
-<li><code>&lt;span&gt;&lt;/span&gt;</code> : 小盒子，一行可以放多个<br><div>mycar</div><br><span>mycar</span></li>
-</ol>
-<p><img src="https://www.mmrsl.cn/download/img/html5/1.png" alt=""></p>
-<h3 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h3><p><code>&lt;img src=&quot;1.jpg&quot; alt=&quot;替换文本&quot;  title=&quot;提示文本&quot; /&gt;</code></p>
-<ul>
-<li>图片无法现实的时候显示替换文本</li>
-<li>提示文本是鼠标放在图片上显示的文本</li>
-</ul>
-<h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><h4 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h4><ol>
-<li>同一级路径        图形文件位于 HTML 文件同一级 如<code>&lt;img src=&quot;1.png&quot;&gt;</code></li>
-<li>下一级路径    /    图形文件位于 HTML 文件下一级 如 <code>&lt;img src=&quot;img/1.png&quot;&gt;</code></li>
-<li>上一级路径    …/    图形文件位于 HTML 文件上一级 如 <code>&lt;img src=&quot;../1.png&quot;&gt;</code></li>
-</ol>
-<p>和程序设计语言一样</p>
-<h4 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h4><p>从最初始的路径开始的路径。</p>
-<h3 id="超链接标签"><a href="#超链接标签" class="headerlink" title="超链接标签"></a>超链接标签</h3><p><code>&lt;a href=&quot;跳转目标&quot; target=&quot;目标窗口的弹出方式&quot;&gt;文本或图像&lt;/a&gt;</code></p>
-<ol>
-<li>href      用于指定链接目标的url地址。必须属性</li>
-<li>target    用于指定连接页面的打开方式。_self为默认值，_blank为在新窗口中打开</li>
-</ol>
-<p>如果 href 里面地址是一个文件或者压缩包，会下载这个文件 <code>&lt;a href=&quot;img.jpg&quot;&gt;&lt;/a&gt;</code></p>
-<h3 id="锚点链接"><a href="#锚点链接" class="headerlink" title="锚点链接"></a>锚点链接</h3><p>作用：点击链接，可以快速定位到页面中的某个位置</p>
-<p>在链接文本的href属性中，设置属性值为 #名字<br>找到目标位置标签，里面添加一个 id属性=刚才的名字<br><pre class="line-numbers language-none"><code class="language-none">&lt;a href &#x3D; &quot;#one&quot;&gt;vscode插件推荐&lt;&#x2F;a&gt;
-&lt;h3 id &#x3D; &quot;one&quot;&gt;vscode插件推荐&lt;&#x2F;h3&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>例如：<a href = "#one">vscode插件推荐</a></p>
-<h3 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h3><pre class="line-numbers language-none"><code class="language-none">&lt;table&gt;
-    &lt;tr&gt;  &lt;th&gt;table&lt;&#x2F;th&gt;     &lt;th&gt;用来定义表格的标签&lt;&#x2F;th&gt;            &lt;&#x2F;tr&gt;
-    &lt;tr&gt;  &lt;td&gt;tr&lt;&#x2F;td&gt;     &lt;td&gt;用来定义表格中的行，必须嵌套在table &#x2F;table 标签中&lt;&#x2F;td&gt;              &lt;&#x2F;tr&gt;  
-    &lt;tr&gt;  &lt;td&gt;td&lt;&#x2F;td&gt;     &lt;td&gt;用来定义表格中的单元格，必须嵌套在tr&#x2F;tr 标签中&lt;&#x2F;td&gt;              &lt;&#x2F;tr&gt;        
-    &lt;tr&gt;  &lt;td&gt;th&lt;&#x2F;td&gt;     &lt;td&gt;用来定义表格中的表头，表头单元格里面的内容加粗居中显示&lt;&#x2F;td&gt;             &lt;&#x2F;tr&gt;                        
-&lt;&#x2F;table&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>效果：</p>
-<table>
-    <tr>  <th>table</th>     <th>用来定义表格的标签</th>            </tr>
-    <tr>  <td>tr</td>     <td>用来定义表格中的行，必须嵌套在table /table 标签中</td>              </tr>  
-    <tr>  <td>td</td>     <td>用来定义表格中的单元格，必须嵌套在tr/tr 标签中</td>              </tr>        
-    <tr>  <td>th</td>     <td>用来定义表格中的表头，表头单元格里面的内容加粗居中显示</td>             </tr>                        
-</table>
-
-<h3 id="表格属性"><a href="#表格属性" class="headerlink" title="表格属性"></a>表格属性</h3><p>表格标签的属性实际开发并不常用，因为基本都是通过后面的CSS来设置的</p>
-<ol>
-<li>align    left,center,right    规定表格相对周围元素的对齐方式</li>
-<li>border    1或者’’ ‘’    规定表格单元是否拥有边框，默认为” “，表示没有边框</li>
-<li>cellpadding    像素值    规定单元边沿与其内容之间的空白，默认1像素</li>
-<li>cellspacing    像素值    规定单元格之间的空白，默认2像素</li>
-<li>width    像素值或百分比    规定表格的宽度<br><code>&lt;table align=center border=&quot;1&quot; cellpadding=&quot;20&quot; cellspacing=&quot;0&quot; width=&quot;500&quot;&gt;</code><br>例如：<table align=center border="1" cellpadding="20" cellspacing="0" width="500">
- <tr>  <th>table</th>     <th>用来定义表格的标签</th>            </tr>
- <tr>  <td>tr</td>     <td>用来定义表格中的行，必须嵌套在table /table 标签中</td>              </tr>  
- <tr>  <td>td</td>     <td>用来定义表格中的单元格，必须嵌套在tr/tr 标签中</td>              </tr>        
- <tr>  <td>th</td>     <td>用来定义表格中的表头，表头单元格里面的内容加粗居中显示</td>             </tr>                        
-</table>
-
-</li>
-</ol>
-<h3 id="表格结构标签"><a href="#表格结构标签" class="headerlink" title="表格结构标签"></a>表格结构标签</h3><p>为了更好的表示表格的语义，可以将表格分割成 表格头部 和表格主体两大部分</p>
-<p>用 <thead></thead> 标签表示表格的头部区域，<thead>内部必须拥有<tr>标签，一般是位于第一行<br>用<tbody></tbody> 标签表示表格的主体区域，主要是用于放数据本体<br>以上标签都是放在<table></table>标签中</p>
-]]></content>
-      <categories>
-        <category>html</category>
-      </categories>
-      <tags>
-        <tag>html</tag>
       </tags>
   </entry>
   <entry>
@@ -3102,6 +2937,196 @@ if (windowWidth &gt; 768) &#123;
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>html5笔记</title>
+    <url>/2021/11/16/html5%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="html5笔记"><a href="#html5笔记" class="headerlink" title="html5笔记"></a>html5笔记</h1><h2 id="开发者工具VS-Code"><a href="#开发者工具VS-Code" class="headerlink" title="开发者工具VS Code"></a>开发者工具VS Code</h2><h3 id = "one">vscode插件推荐</h3>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>插件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open in Browser</td>
+<td>右击选择浏览器打开html文件</td>
+</tr>
+<tr>
+<td>Auto Rename Tag</td>
+<td>自动重命名配对的HTML/XML标签</td>
+</tr>
+<tr>
+<td>CSS Peek</td>
+<td>追踪至样式</td>
+</tr>
+<tr>
+<td>Community Material Theme</td>
+<td>设置颜色主题</td>
+</tr>
+<tr>
+<td>Live Server</td>
+<td>自动监测代码修改并在浏览器响应</td>
+</tr>
+<tr>
+<td>vscode-icons</td>
+<td>设置文件图标作主题</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id=""><a href="#" class="headerlink" title=" "></a> </h3><p>新建1.html文件</p>
+<ol>
+<li>! <code>&lt;Tab&gt;</code></li>
+<li>! <code>enter</code><br>即可生成html文件<pre class="line-numbers language-none"><code class="language-none">&lt;!DOCTYPE html&gt;
+&lt;html lang&#x3D;&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv&#x3D;&quot;X-UA-Compatible&quot; content&#x3D;&quot;IE&#x3D;edge&quot;&gt;
+    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;
+    &lt;title&gt;Document&lt;&#x2F;title&gt;
+&lt;&#x2F;head&gt;
+&lt;body&gt;
+    
+&lt;&#x2F;body&gt;
+&lt;&#x2F;html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="基本结构标签"><a href="#基本结构标签" class="headerlink" title="基本结构标签"></a>基本结构标签</h2>| 标签名  | 定义 | 说明|<br>| ————— |————— | ————— |<br>| <code>&lt;html&gt;&lt;/html&gt;</code>    | HTML标签    | 页面中的最大的标签，我们称为根标签|<br>| <code>&lt;head&gt;&lt;head&gt;</code>    | 文档的头部    | 注意在head标签中我们必须要设置的标签是title|<br>| <code>&lt;title&gt;&lt;/title&gt;</code>|     文档的标题    | 让页面拥有一个属于自己的网页标题|<br>| <code>&lt;body&gt;&lt;/body&gt;</code>    | 文档的主体    | 元素包含文档的所有内容，页面内容基本都是放到body里面的|<br>HTML 标签是由尖括号包围的关键词，例如 <code>&lt;html&gt;</code><br>HTML 标签通常是成对出现的，例如 <code>&lt;html&gt;</code>和<code>&lt;/html&gt;</code> ，我们称为双标签。标签对中的第一个标签是开始标签，第二个标签是结束标签。<br>有些特殊的标签必须是单个标签（极少情况），例如<code>&lt;br /&gt;</code>，我们称为单标签。</li>
+</ol>
+<h3 id="文档类型声明标签"><a href="#文档类型声明标签" class="headerlink" title="文档类型声明标签"></a>文档类型声明标签</h3><ul>
+<li><code>&lt;!DOCTYPE&gt;</code>文档类型声明，作用就是告诉浏览器使用哪种HTML版本来显示网页。</li>
+</ul>
+<p><code>&lt;!DOCTYPE html&gt;</code></p>
+<ul>
+<li>这句代码的意思是: 当前页面采取的是 HTML5 版本来显示网页.</li>
+<li><p>注意：</p>
+<ul>
+<li><code>&lt;!DOCTYPE&gt;</code> 声明位于文档中的最前面的位置，处于 <code>&lt;html&gt;</code> 标签之前。</li>
+<li><code>&lt;!DOCTYPE&gt;</code> 不是一个 HTML 标签，它就是文档类型声明标签。<h3 id="lang语言种类"><a href="#lang语言种类" class="headerlink" title="lang语言种类"></a>lang语言种类</h3></li>
+</ul>
+</li>
+<li><p>en 定义语言为英语</p>
+</li>
+<li>zh-CN 定义语言为中文</li>
+</ul>
+<p><code>&lt;html lang=&quot;en&quot;&gt;</code></p>
+<blockquote>
+<p>字符集charset 属性来规定 HTML 文档应该使用哪种字符编码。</p>
+</blockquote>
+<p><code>&lt;meta charset = &quot;UTF-8&quot; /&gt;</code></p>
+<p>charset 常用的值有：：GB2312 、BIG5 、GBK 和 UTF-8，其中 UTF-8 也被称为万国码，基本包含了全世界所有国家需要用到的字符</p>
+<h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><h3 id="标题标签"><a href="#标题标签" class="headerlink" title="标题标签"></a>标题标签</h3><pre class="line-numbers language-none"><code class="language-none">&lt;body&gt;
+    &lt;h1&gt; 一级标题&lt;&#x2F;h1&gt;
+        &#96;
+        &#96;
+        &#96;
+    &lt;h6&gt; 六级标题&lt;&#x2F;h6&gt;
+&lt;&#x2F;body&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="段落标签"><a href="#段落标签" class="headerlink" title="段落标签"></a>段落标签</h3><p><code>&lt;p&gt;段落标签&lt;/p&gt;</code></p>
+<blockquote>
+<p>paragraph 的缩写文本 在一个段落这种会根据浏览器窗口的大小进行自动换行 段落和段落之间保有空隙</p>
+<h3 id="换行标签"><a href="#换行标签" class="headerlink" title="换行标签"></a>换行标签</h3><p><code>&lt;br /&gt;</code><br>这些在markdown里面也是通用的</p>
+<h3 id="文本格式化标签"><a href="#文本格式化标签" class="headerlink" title="文本格式化标签"></a>文本格式化标签</h3><ol>
+<li>加粗 <code>&lt;stong&gt;&lt;/stong&gt;</code></li>
+<li>倾斜 <code>&lt;em&gt;&lt;/em&gt;</code></li>
+<li>删除线 <code>&lt;del&gt;&lt;/del&gt;</code></li>
+<li>下划线 <code>&lt;ins&gt;&lt;/ins&gt;</code></li>
+</ol>
+</blockquote>
+<stong>在 markdown里面同样适用</stong>
+
+<h3 id="盒子标签"><a href="#盒子标签" class="headerlink" title="盒子标签"></a>盒子标签</h3><ol>
+<li><code>&lt;div&gt;&lt;/div&gt;</code> :可以看成是一个大盒子，独占一行</li>
+<li><code>&lt;span&gt;&lt;/span&gt;</code> : 小盒子，一行可以放多个<br><div>mycar</div><br><span>mycar</span></li>
+</ol>
+<p><img src="https://www.mmrsl.cn/download/img/html5/1.png" alt=""></p>
+<h3 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h3><p><code>&lt;img src=&quot;1.jpg&quot; alt=&quot;替换文本&quot;  title=&quot;提示文本&quot; /&gt;</code></p>
+<ul>
+<li>图片无法现实的时候显示替换文本</li>
+<li>提示文本是鼠标放在图片上显示的文本</li>
+</ul>
+<h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><h4 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h4><ol>
+<li>同一级路径        图形文件位于 HTML 文件同一级 如<code>&lt;img src=&quot;1.png&quot;&gt;</code></li>
+<li>下一级路径    /    图形文件位于 HTML 文件下一级 如 <code>&lt;img src=&quot;img/1.png&quot;&gt;</code></li>
+<li>上一级路径    …/    图形文件位于 HTML 文件上一级 如 <code>&lt;img src=&quot;../1.png&quot;&gt;</code></li>
+</ol>
+<p>和程序设计语言一样</p>
+<h4 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h4><p>从最初始的路径开始的路径。</p>
+<h3 id="超链接标签"><a href="#超链接标签" class="headerlink" title="超链接标签"></a>超链接标签</h3><p><code>&lt;a href=&quot;跳转目标&quot; target=&quot;目标窗口的弹出方式&quot;&gt;文本或图像&lt;/a&gt;</code></p>
+<ol>
+<li>href      用于指定链接目标的url地址。必须属性</li>
+<li>target    用于指定连接页面的打开方式。_self为默认值，_blank为在新窗口中打开</li>
+</ol>
+<p>如果 href 里面地址是一个文件或者压缩包，会下载这个文件 <code>&lt;a href=&quot;img.jpg&quot;&gt;&lt;/a&gt;</code></p>
+<h3 id="锚点链接"><a href="#锚点链接" class="headerlink" title="锚点链接"></a>锚点链接</h3><p>作用：点击链接，可以快速定位到页面中的某个位置</p>
+<p>在链接文本的href属性中，设置属性值为 #名字<br>找到目标位置标签，里面添加一个 id属性=刚才的名字<br><pre class="line-numbers language-none"><code class="language-none">&lt;a href &#x3D; &quot;#one&quot;&gt;vscode插件推荐&lt;&#x2F;a&gt;
+&lt;h3 id &#x3D; &quot;one&quot;&gt;vscode插件推荐&lt;&#x2F;h3&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>例如：<a href = "#one">vscode插件推荐</a></p>
+<h3 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h3><pre class="line-numbers language-none"><code class="language-none">&lt;table&gt;
+    &lt;tr&gt;  &lt;th&gt;table&lt;&#x2F;th&gt;     &lt;th&gt;用来定义表格的标签&lt;&#x2F;th&gt;            &lt;&#x2F;tr&gt;
+    &lt;tr&gt;  &lt;td&gt;tr&lt;&#x2F;td&gt;     &lt;td&gt;用来定义表格中的行，必须嵌套在table &#x2F;table 标签中&lt;&#x2F;td&gt;              &lt;&#x2F;tr&gt;  
+    &lt;tr&gt;  &lt;td&gt;td&lt;&#x2F;td&gt;     &lt;td&gt;用来定义表格中的单元格，必须嵌套在tr&#x2F;tr 标签中&lt;&#x2F;td&gt;              &lt;&#x2F;tr&gt;        
+    &lt;tr&gt;  &lt;td&gt;th&lt;&#x2F;td&gt;     &lt;td&gt;用来定义表格中的表头，表头单元格里面的内容加粗居中显示&lt;&#x2F;td&gt;             &lt;&#x2F;tr&gt;                        
+&lt;&#x2F;table&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>效果：</p>
+<table>
+    <tr>  <th>table</th>     <th>用来定义表格的标签</th>            </tr>
+    <tr>  <td>tr</td>     <td>用来定义表格中的行，必须嵌套在table /table 标签中</td>              </tr>  
+    <tr>  <td>td</td>     <td>用来定义表格中的单元格，必须嵌套在tr/tr 标签中</td>              </tr>        
+    <tr>  <td>th</td>     <td>用来定义表格中的表头，表头单元格里面的内容加粗居中显示</td>             </tr>                        
+</table>
+
+<h3 id="表格属性"><a href="#表格属性" class="headerlink" title="表格属性"></a>表格属性</h3><p>表格标签的属性实际开发并不常用，因为基本都是通过后面的CSS来设置的</p>
+<ol>
+<li>align    left,center,right    规定表格相对周围元素的对齐方式</li>
+<li>border    1或者’’ ‘’    规定表格单元是否拥有边框，默认为” “，表示没有边框</li>
+<li>cellpadding    像素值    规定单元边沿与其内容之间的空白，默认1像素</li>
+<li>cellspacing    像素值    规定单元格之间的空白，默认2像素</li>
+<li>width    像素值或百分比    规定表格的宽度<br><code>&lt;table align=center border=&quot;1&quot; cellpadding=&quot;20&quot; cellspacing=&quot;0&quot; width=&quot;500&quot;&gt;</code><br>例如：<table align=center border="1" cellpadding="20" cellspacing="0" width="500">
+ <tr>  <th>table</th>     <th>用来定义表格的标签</th>            </tr>
+ <tr>  <td>tr</td>     <td>用来定义表格中的行，必须嵌套在table /table 标签中</td>              </tr>  
+ <tr>  <td>td</td>     <td>用来定义表格中的单元格，必须嵌套在tr/tr 标签中</td>              </tr>        
+ <tr>  <td>th</td>     <td>用来定义表格中的表头，表头单元格里面的内容加粗居中显示</td>             </tr>                        
+</table>
+
+</li>
+</ol>
+<h4 id="表格结构标签"><a href="#表格结构标签" class="headerlink" title="表格结构标签"></a>表格结构标签</h4><p>为了更好的表示表格的语义，可以将表格分割成 表格头部 和表格主体两大部分</p>
+<ul>
+<li>用 <code>&lt;thead&gt;&lt;/thead&gt;</code> 标签表示表格的头部区域，<code>&lt;thead&gt;</code>内部必须拥有<code>&lt;tr&gt;</code>标签，一般是位于第一行</li>
+<li>用<code>&lt;tbody&gt;&lt;/tbody&gt;</code> 标签表示表格的主体区域，主要是用于放数据本体</li>
+<li>以上标签都是放在<code>&lt;table&gt;&lt;/table&gt;</code>标签中</li>
+</ul>
+<h4 id="合并单元格"><a href="#合并单元格" class="headerlink" title="合并单元格"></a>合并单元格</h4><p>跨行合并：rowspan=“合并单元格的个数”<br>跨列合并：colspan=”合并单元格的个数”</p>
+<p><code>&lt;td colspan = &quot;2&quot;&gt;&lt;/td&gt;</code></p>
+<table align=center border="1" cellpadding="20" cellspacing="0" width="500">
+    <tr>  <th>table</th>     <th>用来定义表格的标签</th>        <th>用来定义表格的标签</th>    </tr>
+    <tr>  <td>tr</td>     <td>用来定义表格中的行，必须嵌套在table /table 标签中</td>       <td></td>       </tr>  
+    <tr>  <td >td </td>            <td colspan = "2">用来定义表格中的单元格，必须嵌套在tr/tr 标签中</td>      </tr>        
+    <tr>  <td>th</td>     <td>用来定义表格中的表头，表头单元格里面的内容加粗居中显示</td>        <th></th>     </tr>                        
+</table>
+
+<h3 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h3><ul>
+<li><code>&lt;ul&gt;&lt;/ul&gt;</code>    无序列表    里面只能包含li，没有顺序。li里面可以包含任何标签</li>
+<li><code>&lt;ol&gt;&lt;/ol&gt;</code>    有序列表    里面只能包含li，有顺序</li>
+<li><code>&lt;dl&gt;&lt;/dl&gt;</code>    自定义列表    里面只能包含dt和dd，dt和dd里面可以放任何标签<ol>
+   <li>关注我们</li>
+   <li>新浪微博</li>
+   <li>联系我们</li>
+</ol>
+
+</li>
+</ul>
+<h3 id="表单标签"><a href="#表单标签" class="headerlink" title="表单标签"></a>表单标签</h3><p>一个完整的表单通常由表单域，表单控件（表单元素）和提示信息3部分组成<br><img src="https://www.mmrsl.cn/download/img/html5/2.png" alt="表单标签" title="嘿嘿" /></p>
+]]></content>
+      <categories>
+        <category>html</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
       </tags>
   </entry>
   <entry>
@@ -6742,61 +6767,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </tags>
   </entry>
   <entry>
-    <title>实时视频传输APP</title>
-    <url>/2021/01/15/%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93APP/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- wp:heading -->
-<p><h2><strong>视频通信APP</strong><strong>的设计</strong></h2><br><!-- /wp:heading --></p>
-<!-- wp:heading -->
-<p><h2><strong>1       </strong>功能选择界面</h2><br><!-- /wp:heading --></p>
-<!-- wp:paragraph -->
-<p><p>通过程序设计，首先构建用户功能选择界面，其中包括用户名和该用户的个人签名、个人头像，本处签名选用为个人网站，新的个人网站：<a href="https://www.codekp.cn/">https://www.codekp.cn/</a>。向下依次是Home主界面，主要是APP的地图功能。第二项Gallery为第二个界面，为APP的蓝牙信道检测功能，第三项Slideshow为第三界面，为APP的视频通话功能。点击三个界面选项框可以跳转到自己的界面。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":254,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/1.png" alt="" class="wp-image-254"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图1 APP功能选择界面图</p><br><!-- /wp:paragraph --></p>
-<!-- wp:heading -->
-<p><h2><strong>2       </strong> 定位界面</h2><br><!-- /wp:heading --></p>
-<!-- wp:paragraph -->
-<p><p><a>定位界面，主要由上方的底层用户数据显示界面，和下方的定位地图界面，地图界面采用浏览器形式，并对定位点用红色鲜明坐标在图中进行了标记。</a></p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>首先，通过调用安卓底层接口，读取手机的经度、纬度等信息，然后设计了一个浏览器界面，由于时间关系没有调用高德地图的api，直接调用的web静态页面。通过修改URL的页面地址，即可获得如图所示的地图信息显示图。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":255,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/2-514x1024.png" alt="" class="wp-image-255"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图2 APP定位界面</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>其次，由于本文中获取的为GPS原始数据，采用的是国际坐标系(WGS84)，而中国地图采用的为火星坐标系(GCJ02)，其中进行了经纬度的转换，将原始数据转到精准的经纬度数据，并实现精确定位。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:heading -->
-<p><h2><strong>3       </strong>视频通话界面</h2><br><!-- /wp:heading --></p>
-<!-- wp:paragraph -->
-<p><p>视频通话界面，界面左侧为通话对方的实时视频图像，右方为己方的实时视频图像，下方为对方的端口号输入栏，右侧为设置，点击后会连接进对方的视频数据中。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>首先，先编写程序，读取安卓手机的相机接口。其中的原理是，首先将调用安卓手机的相机功能，然后将拍摄到的视频保存在存储器中的某个地方，然后读取该位置的图片，在右侧视频端进行显示，调用相机接口如图3所示。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>然后采用socket通信，其中有两种选择，TCP通信和UDP通信两种方式，其各自在自己的使用场景下有各自的优点，但是考虑到UDP不用握手可以完成双向传递，于是选择UDP，同时还可以提高通信速率。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":258,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/3-1-626x1024.png" alt="" class="wp-image-258"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图3 APP视频通话相机功能</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>获取到本地的图像数据后，对图像进行编码，通过UDP通讯协议进行传输，传输到本地IP：192.168.201.217，端口：8888上。然后在另对方手机中输入己方IP地址，点击START按钮即可开始视频通话，视频通话完成图像如下图所示。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":259,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/4-1-524x1024.png" alt="" class="wp-image-259"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图4 APP视频通话界面图</p><br><!-- /wp:paragraph --></p>
-<!-- wp:heading -->
-<p><h2><strong>4      APP</strong>视频demo</h2><br><!-- /wp:heading --></p>
-<!-- wp:video -->
-<p><figure class="wp-block-video"><video controls src="blob:http://www.mmrsl.cn/386ea6cf-f2e7-47b7-9cf8-8346885f1ddd"></video></figure><br><!-- /wp:video --></p>
-]]></content>
-      <categories>
-        <category>安卓APP</category>
-      </categories>
-      <tags>
-        <tag>安卓APP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>强化学习</title>
     <url>/2020/11/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Q-learning入门例程及Python实现"><a href="#Q-learning入门例程及Python实现" class="headerlink" title="Q-learning入门例程及Python实现"></a><center>Q-learning入门例程及Python实现</center></h1><p><strong>摘要：Q-learning算法是一种以马尔科夫决策作为理论基础与模型无关的强化学习算法。本文中会描述一个入门级强化学习例程，即房间连通性问题：根据房间的连通性与否及房间出口构建回报矩阵R。并通过python语言利用强化学习算法获得该场景下的评估矩阵Q，最后利用Q矩阵寻找最优路径。</strong><br><span id="more"></span></p>
@@ -6968,6 +6938,61 @@ print(list2)
         <tag>python</tag>
         <tag>matlab</tag>
         <tag>强化学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实时视频传输APP</title>
+    <url>/2021/01/15/%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93APP/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- wp:heading -->
+<p><h2><strong>视频通信APP</strong><strong>的设计</strong></h2><br><!-- /wp:heading --></p>
+<!-- wp:heading -->
+<p><h2><strong>1       </strong>功能选择界面</h2><br><!-- /wp:heading --></p>
+<!-- wp:paragraph -->
+<p><p>通过程序设计，首先构建用户功能选择界面，其中包括用户名和该用户的个人签名、个人头像，本处签名选用为个人网站，新的个人网站：<a href="https://www.codekp.cn/">https://www.codekp.cn/</a>。向下依次是Home主界面，主要是APP的地图功能。第二项Gallery为第二个界面，为APP的蓝牙信道检测功能，第三项Slideshow为第三界面，为APP的视频通话功能。点击三个界面选项框可以跳转到自己的界面。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":254,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/1.png" alt="" class="wp-image-254"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图1 APP功能选择界面图</p><br><!-- /wp:paragraph --></p>
+<!-- wp:heading -->
+<p><h2><strong>2       </strong> 定位界面</h2><br><!-- /wp:heading --></p>
+<!-- wp:paragraph -->
+<p><p><a>定位界面，主要由上方的底层用户数据显示界面，和下方的定位地图界面，地图界面采用浏览器形式，并对定位点用红色鲜明坐标在图中进行了标记。</a></p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>首先，通过调用安卓底层接口，读取手机的经度、纬度等信息，然后设计了一个浏览器界面，由于时间关系没有调用高德地图的api，直接调用的web静态页面。通过修改URL的页面地址，即可获得如图所示的地图信息显示图。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":255,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/2-514x1024.png" alt="" class="wp-image-255"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图2 APP定位界面</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>其次，由于本文中获取的为GPS原始数据，采用的是国际坐标系(WGS84)，而中国地图采用的为火星坐标系(GCJ02)，其中进行了经纬度的转换，将原始数据转到精准的经纬度数据，并实现精确定位。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:heading -->
+<p><h2><strong>3       </strong>视频通话界面</h2><br><!-- /wp:heading --></p>
+<!-- wp:paragraph -->
+<p><p>视频通话界面，界面左侧为通话对方的实时视频图像，右方为己方的实时视频图像，下方为对方的端口号输入栏，右侧为设置，点击后会连接进对方的视频数据中。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>首先，先编写程序，读取安卓手机的相机接口。其中的原理是，首先将调用安卓手机的相机功能，然后将拍摄到的视频保存在存储器中的某个地方，然后读取该位置的图片，在右侧视频端进行显示，调用相机接口如图3所示。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>然后采用socket通信，其中有两种选择，TCP通信和UDP通信两种方式，其各自在自己的使用场景下有各自的优点，但是考虑到UDP不用握手可以完成双向传递，于是选择UDP，同时还可以提高通信速率。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":258,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/3-1-626x1024.png" alt="" class="wp-image-258"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图3 APP视频通话相机功能</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>获取到本地的图像数据后，对图像进行编码，通过UDP通讯协议进行传输，传输到本地IP：192.168.201.217，端口：8888上。然后在另对方手机中输入己方IP地址，点击START按钮即可开始视频通话，视频通话完成图像如下图所示。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":259,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/4-1-524x1024.png" alt="" class="wp-image-259"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图4 APP视频通话界面图</p><br><!-- /wp:paragraph --></p>
+<!-- wp:heading -->
+<p><h2><strong>4      APP</strong>视频demo</h2><br><!-- /wp:heading --></p>
+<!-- wp:video -->
+<p><figure class="wp-block-video"><video controls src="blob:http://www.mmrsl.cn/386ea6cf-f2e7-47b7-9cf8-8346885f1ddd"></video></figure><br><!-- /wp:video --></p>
+]]></content>
+      <categories>
+        <category>安卓APP</category>
+      </categories>
+      <tags>
+        <tag>安卓APP</tag>
       </tags>
   </entry>
   <entry>
@@ -8318,39 +8343,6 @@ def saveCutoutLabel(name):
       </tags>
   </entry>
   <entry>
-    <title>南京大屠杀国家公祭日_网站变成灰色以表悼念</title>
-    <url>/2020/12/13/%E7%BD%91%E7%AB%99%E5%8F%98%E7%81%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="南京大屠杀国家公祭日-网站变成灰色以表悼念"><a href="#南京大屠杀国家公祭日-网站变成灰色以表悼念" class="headerlink" title=" 南京大屠杀国家公祭日_网站变成灰色以表悼念 "></a><center> 南京大屠杀国家公祭日_网站变成灰色以表悼念 </center></h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=78993619&bvid=BV1cJ411C7Dg&cid=135180758&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-<span id="more"></span>
-<p>12月13日是第七个南京大屠杀死难者国家公祭日。公祭无辜死难之生命，告慰血与泪浸染之土地。这一天，举国上下以各种形式深切缅怀死难同胞，深切缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，表达牢记历史、珍爱和平、矢志复兴，身为站长的我们都会让自己的网站的全部网页变成灰色（黑白色），以表示我们对逝者的悼念。</p>
-<h3 id="第一种：修改CSS文件"><a href="#第一种：修改CSS文件" class="headerlink" title="第一种：修改CSS文件"></a>第一种：修改CSS文件</h3><p>我们可以在网页的CSS文件中添加以下的CSS代码，来实现网页黑白色，也就是网站变灰</p>
-<pre class="line-numbers language-none"><code class="language-none">html &#123;
-    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
-    -webkit-filter: grayscale(100%);
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="第二种：在网页的标签内加入以下代码"><a href="#第二种：在网页的标签内加入以下代码" class="headerlink" title="第二种：在网页的标签内加入以下代码"></a>第二种：在网页的<head>标签内加入以下代码</h3><p>如果你不想改动CSS文件，你可以通过在网页头部中的<head>标签内部加入内联CSS代码的形式实现网站网页变灰</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;
-html &#123;
-filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
--webkit-filter: grayscale(100%);&#125;
-&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="第三种：修改标签加入内联样式"><a href="#第三种：修改标签加入内联样式" class="headerlink" title="第三种：修改标签加入内联样式"></a>第三种：修改<html>标签加入内联样式</h3><p>如里上面的两种方式都不喜欢，可以通过修改<html>标签，以加入内联样式的方法，达到网页变灰的效果</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;html style&#x3D;&quot;filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
--webkit-filter: grayscale(100%);&quot;&gt;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>CSS</category>
-      </categories>
-      <tags>
-        <tag>南京大屠杀国家公祭日</tag>
-        <tag>hexo网站</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>网站视频下载及按帧将视频转为jpg</title>
     <url>/2020/10/15/%E7%BD%91%E7%AB%99%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD%E5%8F%8A%E6%8C%89%E5%B8%A7%E8%BD%AC%E4%B8%BAjpg/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="网站视频下载及按帧转为jpg"><a href="#网站视频下载及按帧转为jpg" class="headerlink" title="网站视频下载及按帧转为jpg"></a>网站视频下载及按帧转为jpg</h1><h2 id="1、准备切割视频"><a href="#1、准备切割视频" class="headerlink" title="1、准备切割视频"></a>1、准备切割视频</h2><p>视频切割算法:<br><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">clc;
@@ -8411,6 +8403,39 @@ end<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
       <tags>
         <tag>matlab</tag>
         <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>南京大屠杀国家公祭日_网站变成灰色以表悼念</title>
+    <url>/2020/12/13/%E7%BD%91%E7%AB%99%E5%8F%98%E7%81%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="南京大屠杀国家公祭日-网站变成灰色以表悼念"><a href="#南京大屠杀国家公祭日-网站变成灰色以表悼念" class="headerlink" title=" 南京大屠杀国家公祭日_网站变成灰色以表悼念 "></a><center> 南京大屠杀国家公祭日_网站变成灰色以表悼念 </center></h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=78993619&bvid=BV1cJ411C7Dg&cid=135180758&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+<span id="more"></span>
+<p>12月13日是第七个南京大屠杀死难者国家公祭日。公祭无辜死难之生命，告慰血与泪浸染之土地。这一天，举国上下以各种形式深切缅怀死难同胞，深切缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，表达牢记历史、珍爱和平、矢志复兴，身为站长的我们都会让自己的网站的全部网页变成灰色（黑白色），以表示我们对逝者的悼念。</p>
+<h3 id="第一种：修改CSS文件"><a href="#第一种：修改CSS文件" class="headerlink" title="第一种：修改CSS文件"></a>第一种：修改CSS文件</h3><p>我们可以在网页的CSS文件中添加以下的CSS代码，来实现网页黑白色，也就是网站变灰</p>
+<pre class="line-numbers language-none"><code class="language-none">html &#123;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
+    -webkit-filter: grayscale(100%);
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="第二种：在网页的标签内加入以下代码"><a href="#第二种：在网页的标签内加入以下代码" class="headerlink" title="第二种：在网页的标签内加入以下代码"></a>第二种：在网页的<head>标签内加入以下代码</h3><p>如果你不想改动CSS文件，你可以通过在网页头部中的<head>标签内部加入内联CSS代码的形式实现网站网页变灰</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;
+html &#123;
+filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
+-webkit-filter: grayscale(100%);&#125;
+&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="第三种：修改标签加入内联样式"><a href="#第三种：修改标签加入内联样式" class="headerlink" title="第三种：修改标签加入内联样式"></a>第三种：修改<html>标签加入内联样式</h3><p>如里上面的两种方式都不喜欢，可以通过修改<html>标签，以加入内联样式的方法，达到网页变灰的效果</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;html style&#x3D;&quot;filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
+-webkit-filter: grayscale(100%);&quot;&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>南京大屠杀国家公祭日</tag>
+        <tag>hexo网站</tag>
       </tags>
   </entry>
   <entry>
@@ -8528,85 +8553,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       <tags>
         <tag>表白网站</tag>
         <tag>罗盘时钟</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>读书笔记</title>
-    <url>/2021/01/27/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<p>今年有一个想法，每周阅读一本书，并且在博客中发表阅读心得，每周更新一次。</p>
-<h1 id="阅读笔记"><a href="#阅读笔记" class="headerlink" title="阅读笔记"></a>阅读笔记</h1><h2 id="阅读清单"><a href="#阅读清单" class="headerlink" title="阅读清单"></a>阅读清单</h2><ul>
-<li>[x] 时间简史</li>
-<li>[x] 小王子</li>
-<li>[x] 朱光潜给年轻人的十二封信</li>
-<li>[x] 健身笔记：如何成为一个身材有料的人</li>
-<li>[x] 从零开始学钢琴</li>
-<li>[x] 我与地坛</li>
-<li>[x] 当下的力量</li>
-<li>[x] 人间值得</li>
-<li>[x] 鳗鱼的旅行</li>
-<li>[ ] 啊哪啊那神去村</li>
-<li>[ ] 非暴力沟通</li>
-<li>[ ] 长大了就会变好吗</li>
-<li>[ ] 巨大的拥抱</li>
-<li>[ ] 女生呵护指南</li>
-<li>[ ] 当你学会独处</li>
-<li>[ ] 莫泊桑短片小说集</li>
-<li>[ ] 飞鸟集</li>
-<li>[ ] 挪威的森林</li>
-<li>[ ] 神曲</li>
-<li>[ ] 月亮与六便士</li>
-<li>[ ] 呐喊</li>
-<li>[ ] 老人与海</li>
-<li>[ ] 追风筝的人</li>
-<li>[ ] 瓦尔登湖</li>
-<li>[ ] 金刚经说什么</li>
-<li>[ ] 牡丹亭</li>
-<li>[ ] 我在未来等你</li>
-<li>[ ] 苏菲的世界</li>
-<li>[ ] 鲁迅杂文集</li>
-<li>[ ] 无人生还</li>
-<li>[ ] 万物起源</li>
-<li>[ ] 人类简史<h2 id="读书心得"><a href="#读书心得" class="headerlink" title="读书心得"></a>读书心得</h2><h3 id="时间简史"><a href="#时间简史" class="headerlink" title="时间简史"></a>时间简史</h3>这本书前三章主要讲的是亚里士多德的地心说到哥白尼的日星说，然后到伽利略和牛顿的经典物理学，再到法拉第、麦克斯韦的电磁场理论，基本主要内容还是讲的高中物理，基本上就是一个综述。</li>
-</ul>
-</blockquote>
-<p>然后讲到量子力学和相对论，如果没读这本书我一开始一直以为相对论和量子力学，两者都是正确的，但是看这本书的时候发现两者只有其中之一是正确的。但目前相对论让我们产生核能，原子弹。量子力学也在不断的发展给人类带来了直接利益，无论两者中的哪一个都无法直接判断是错误的。</p>
-<p>量子力学里面解释的并不是很详细，但是大学物理有讲，我看了这本书印象更深刻了一点，其实量子力学就是，微小的粒子，在进行测量的时候主要是采用的光的反射进行测量，因为该粒子在测量其速度的时，需要使用光进行测量所以其光的能量如果过高就会导致粒子振荡，速度变快。如果测量粒子的位置就需要采用高频率的光波依次获得更小的波长，即可获得粒子的位置。因此我们在某一时刻，只能准确的获得粒子的位置或者速度。不能同时测得粒子的两种物理属性。</p>
-<p>其中讲了一个比较有意思的实验，即红移和蓝移。由于多普勒效应天体正向我们移动的时候其恒星光谱会向红端移动，如果远离我们会向蓝段移动。但是过去了几十年，人类测量了无数光的光谱，均为红移，因此可以得出结论，所有的星体都在远离我们，因此宇宙正在逐渐的扩张。即测不准定理。</p>
-<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fgss0.baidu.com%2F-Po3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2Fd0c8a786c9177f3ec454da7376cf3bc79f3d566f.jpg&amp;refer=http%3A%2F%2Fgss0.baidu.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1613314542&amp;t=b6ae3fe03bf7f657e5ddbac5c9507e4d" alt="在这里插入图片描述"></p>
-<p>还有一个实验，其实我们生活在三维空间，但是我们可以推断的空间其实可以到四维空间，因此我们其实是可以脑袋里面构想出四维空间的，其实物理学中早有解释，你想太阳的光需要8分钟才能到地球，因此我们只能看到太阳8分钟前的样子，这样我们其实活在太阳的8分钟之前，即太阳8分钟以后的三维空间之中。</p>
-<p>星球之间主要的力是引力，霍金说主要的力分为强相互作用力、弱相互作用力，电磁力和引力。目前没有公式能将其整合成唯一的定理，因此我联想到了科学事实和客观事实，目前人类所思考的其实是科学事实，不一定是世界的正向，其存在人类的主观判断，因此不一定正确。霍金说宇宙如果有一个扩张，必然会存在一个收缩，而宇宙的收缩可能要在1亿亿年以后，暂时我们不需要担心，但是你可以想象到一件事情，无论是任何事情，即使人类可以长生不死也会有一个必然的终结，除非人类可以同时具备长生不死和穿越时空。</p>
-<p>其实引力只有在天梯之间才成立，但是人类无法通过万有引力定律计算四星运动。因为宇宙太大了，但是当质量密度达到一个点就可以通过引力产生黑洞，其实之前我一直不知道黑洞是个什么东西。但其实黑洞是人类推断出来的一个东西，其实一个小的黑洞可以小到分子级别，比你的指甲小几万倍，只要密度达到就可以产生黑洞和体积无关。因此只要人类发展到一定程度，必然可以人造黑洞，而且这个黑洞可以很小。而分子间主要是强弱相互作用和电磁力。只要讲做到三十钛福特在一个点上就可以造出一个黑洞，但目前实验室只能造出3000福特具体值不清楚但是达不到。<br>黑洞到底是怎么推论出来的呢？其实之前我也在思考黑洞到底是什么，其实很简单，我们知道其他恒星的光通过太阳的时候会因为太阳的引力光会弯曲，这样就只要质量足够的大，光就可以背弯曲成一个圆，或者变成一个抛物线，即光无法离开那个星球，光就像火箭坠机一样，被引力拉回来，即可推论出黑洞的样子大概是一个圆环，中间是黑色的因为中间的光出不来，外侧的光可以因为光的挤压在事件界面上挤压出来，即可为一个圆环状。目前人类已经发现了黑洞。<br>黑洞的重心就是奇点，当然人类是无法前往这个点的，如果有飞行员进入黑洞必死无疑，可能一瞬间就被压成了一个分子，被剥夺其存在性。<br><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2830392986,3183821195&amp;fm=26&amp;gp=0.jpg" alt="在这里插入图片描述"></p>
-<p>讲一讲相对论，相对论其实就是一个测量学，其实之前的物理世界是，不同的参考系其测量是一样的，但是爱因斯坦的相对论其实给了一个很有趣的解释，就是不同的参考系如果你接近了光速，测量是不一样的，因此可以有很多科幻片说的双生子谬论。目前人类能加速的最大速度是电子，在全球最大的电子发射机内，只能将电子加速到光速的0.999999但无法超过光速。很可惜。</p>
-<p>如果超过光速人类就可以时间穿梭，这是为什么，其实你不难想象，如果你开一艘飞船从地球出发，你超过了光速，你就可以在你出发前回到地球，你懂这是什么意思吗，就是你可以前往你出发之前的那个时刻。即时空穿梭。</p>
-<p>其实你们可以想象我们活在一个四维空间中，我们可以通过超光速相当于逆时间移动，就是传统意义的穿越。</p>
-<p>那么我们如何超光速，其实霍金给出了方法，就是利用负能量和正能量在时空中制造一个虫洞，目前可以通过量子力学制造负能量点，其能量守恒定律其实之前有讲过，能量一般都是大于等于零的但是量子力学说可以在空间中制造一个负能量点和正能量点，在这两个点之间可以造成时空扭曲。产生充电，目前离地球最近的一颗恒星是比邻星，距离我们大概4光年，就是光走思念才能到比邻星。我们其实通过虫洞来回比邻星就可以超光速，如果可能的话大概咱们可以回到八年前的地球。</p>
-<p>霍金还推测五维空间不存在，因为如果多维空间存在，那么如果万有引力成立，那么其引力就会按照维数进行下降，因为引力和距离成反比，距离越大引力越小，你想维度没多一维，咱们的引力就会变成  四维空间1/2、五维1/4。。。可以想象到咱们的空间会崩塌，由于人存在性定理，其实这种多维空间是不存在的，或者万有引力有问题。</p>
-<p>看完时间简史，我感觉人类其实是十分渺小的事物，我们对世界的理解其实还很浅薄。大家总觉得目前的科技能够达到很高的地步。其实我想说，人类目前连地球都不能进行完全的探索。而且核能也只是基础，其实任何物质按照质能方程都能进行转换，按照这样的推想，石油未来并不会像现在这样被重视，因为可能一吨海水可以供人类获几百年。</p>
-<p>当初相对论刚出来的时候，全世界可能就几个人能够理解相对论和量子力学，但是现在，研究生可能有几百万人能够同时理解这两门学问，因此未来可能能够存在一个定理即物理学统一定理将一切的公式统合在一起。</p>
-<h3 id="小王子"><a href="#小王子" class="headerlink" title="小王子"></a>小王子</h3><p>小王子讲的其实是飞行员，他在沙漠中遇难他和自己对话的故事，可能是在极端的条件下，他看到了他自己，其实我们也会从这本书中看到小时候的自己，世界上的人被小王子分为了四种，用小王子所路过的星球所指代。这本书很短，2小时就可以读完，其很有趣，让你从小孩子的眼中审视这个世界，到底人们在追寻一些什么。其实细细想来很奇怪，在光里面追光。人生活的是一个过程，不是结果。希望每个人都能懂。<br>小王子对玫瑰和狐狸的解释挺有趣的，可以细细品味。</p>
-<h3 id="朱光潜给年轻人的十二封信"><a href="#朱光潜给年轻人的十二封信" class="headerlink" title="朱光潜给年轻人的十二封信"></a>朱光潜给年轻人的十二封信</h3><p>这本书感觉是给中学生写的，其实我没怎么看进去，希望你们能看进去。</p>
-<h3 id="健身笔记：如何成为一个身材有料的人"><a href="#健身笔记：如何成为一个身材有料的人" class="headerlink" title="健身笔记：如何成为一个身材有料的人"></a>健身笔记：如何成为一个身材有料的人</h3><p>讲如何健身、减肥。健身的动作、流程，减肥的方法，其中对于减肥人士的基础代谢很有用，可以自己去计算一下自己的基础代谢量。</p>
-<h3 id="从零开始学钢琴"><a href="#从零开始学钢琴" class="headerlink" title="从零开始学钢琴"></a>从零开始学钢琴</h3><p>讲钢琴的一些基础知识、如何读五线谱、然后怎么弹、左右 ，右手高音、左手低音、然后从5个音到6个音、到左右手换位置的8个音，到升降调。钢琴其实就是训练只要你会练就能学的很好，加油！<br>今年计划，学会钢琴。</p>
-<h3 id="我与地坛"><a href="#我与地坛" class="headerlink" title="我与地坛"></a>我与地坛</h3><p>史铁生在20岁的年纪失去了自己的双腿、在北京的地坛公园读书思考看到很多的人和事情，主要都是他在地坛里想了些什么，这本书对于有抑郁、对生命失去信心的人很有帮助。<br>还是那句话，人活的是一个过程，绝不是结果，自付价值，自付使命。加油！</p>
-<h3 id="当下的力量"><a href="#当下的力量" class="headerlink" title="当下的力量"></a>当下的力量</h3><p>主要讲的就是，让我们去除时间观念，没有未来，没有过去，我们能够把握的只有当下，不要</p>
-<p>未来不会拯救你，未来不会因为你的期待而自动变得更好，你能把握的只有当下的每一秒。</p>
-<p>你要学会感受生活中的每一秒，在每一秒享受生活，做自己喜欢的事情，做自己想要做的事情。</p>
-<blockquote>
-<p>是的——春天需要你。经常会有一颗星<br>等着你抬头去看。波涛会从遥远的过去<br>向你涌来，或者当你从一扇<br>开着的窗下走过，小提琴的音乐<br>会渴望你倾听。所有这些都是使命。<br>可是你能完成吗？</p>
-</blockquote>
-<p>关注在当下真的很神奇的，你关注与当下，然后体会很多感觉，而不只是去思考，你能感觉到你很幸福。<br>但是文中有句话说我思故我在是错误的，这个有待辩证，但是也有很多的道理，可以减少思考，但是不要像文章中完全不思考，完全不思考我尝试过会降低智商，和物质基础。<br>当下的力量，推荐大家看看。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fcdnimg103.lizhi.fm%2Faudio_cover%2F2018%2F07%2F01%2F2678344019888704519_320x320.jpg&amp;refer=http%3A%2F%2Fcdnimg103.lizhi.fm&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1614341106&amp;t=7d39c87785083627fc5441116ca0cde2" alt="在这里插入图片描述"></p>
-<h3 id="人间值得"><a href="#人间值得" class="headerlink" title="人间值得"></a>人间值得</h3><p>这是一个护士给一位日本老奶奶写的自传，讲的是中村恒子从出生到90岁的故事，一直在工作，有讲很多方法论，如何让自己幸福，如何和生活和解，如何让自己过的幸福，探索人生的真谛。其中讲了许多和工作相关的故事，就比如不要抱怨一般尝试后都能行，学会把工作当成是人生的一部分不要去排斥你的工作，也不要因为很多事情烦恼，没有什么必要性。不以物喜，不以己悲。<br>人生是一场经历，热爱生活，享受这段过程。<br>泰山崩于前而色不变，黄河决于顶而面不惊。人生，一定要有一颗强大的内心，才不会轻易被打倒。人生，要学会坚强，在遇到挫折的时候才能从容地去面对，让自己处于泰山之崩而沉着镇定，处于黄河之边而不惊不慌，人生想要会当凌绝顶，一览众山小，就要从山脚下开始战胜重重困难，一步一步往上爬，才能有可能到达山顶。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201909%2F13%2F20190913213654_kmuwe.thumb.400_0.jpg&amp;refer=http%3A%2F%2Fc-ssl.duitang.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1614341233&amp;t=792b0fafbd08b514b5c2a9b68d1ecc69" alt="在这里插入图片描述"></p>
-<h3 id="鳗鱼的旅行"><a href="#鳗鱼的旅行" class="headerlink" title="鳗鱼的旅行"></a>鳗鱼的旅行</h3><p>这篇文章，很有趣，讲的是鳗鱼习性的研究历程，鳗鱼这个生物很有趣，在古希腊时期到18世纪，鳗鱼一直都不被认为是一种鱼，是一种独立的物种，即鳗鱼非鱼，其实我现在也觉得这玩意不是鱼。<br>很有趣啊，鳗鱼这个生物，亚里士多德在生物志中有详细的调查，这应该是当时最详细的一篇调查，鳗鱼这种生物当干旱的时候不存在，但是来年春天当水满了以后鳗鱼又会出现，就仿佛是从泥土里长出来的。<br>所有的人都不知道鳗鱼这种生物从哪来的，这个问题困扰了人类n久。你们难以想象1920年上世纪人类才知道鳗鱼的习性，所有你们可以知道人类目前的科技水平只能达到什么程度了吗？<br>当时为了找到一条带卵的鳗鱼，政府发出巨额赏金，于是当时大量的鱼民拿其他鱼的卵放在鳗鱼的体内，你可能难以想象。当然对科学研究有一定的影响，就直到1920年。<br>1920年有个研究员一直躲到一战结束才敢开船去找鳗鱼的发源地，方法也很简单，就是慢慢的去捕鱼，他从英国一直开到太平洋，鳗鱼的大小越来越小，最终才确定了鳗鱼的出生地，是在一片海里，而且很神奇的是就只有那一块是鳗鱼的出生地，不在别的地方繁衍，就在这一片海域。<br>最后研究表明，鳗鱼一开始是雌性，游几千海里前往其他水域进行生存，等玩腻了，每条鳗鱼选择的时间不一样，只要不繁衍这货可以活50年，这对于生物是极其长寿的，但是当他游会那片海域准备繁衍的时候，这时鳗鱼就会变成雄性，然后繁衍，随后就会死去。很浪漫，可能鳗鱼一生走的路比许多人要远得多。<br>是一个很不错的科技题材的小说，全球的鳗鱼都来自于同一片海域，而且每一条鳗鱼都是游了这么远来到的你的身边，无一例外，你吃的每一条鳗鱼都是一位旅行家。不知道你的旅行的目的是什么，但鳗鱼显然告诉了你它的答案。<br><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3999767242,4285497006&amp;fm=26&amp;gp=0.jpg" alt="在这里插入图片描述"></p>
-<h3 id="北飞的候鸟"><a href="#北飞的候鸟" class="headerlink" title="北飞的候鸟"></a>北飞的候鸟</h3><p>如果有来生，要做一棵树， 站成永恒。没有悲欢的姿势， 一半在尘土里安详， 一半在风里飞扬； 一半洒落荫凉， 一半沐浴阳光。 非常沉默、非常骄傲。 从不依靠、从不寻找。   </p>
-<p>如果有来生，要化成一阵风， 一瞬间也能成为永恒。 没有善感的情怀， 没有多情的眼睛。 一半在雨里洒脱， 一半在春光里旅行； 寂寞了，孤自去远行， 把淡淡的思念统带走， 从不思念、从不爱恋；   </p>
-<p>如果有来生，要做一只鸟， 飞越永恒，没有迷途的苦恼。东方有火红的希望，南方有温暖的巢床， 向西逐退残阳，向北唤醒芬芳。  如果有来生， 希望每次相遇， 都能化为永恒。<br><img src="https://iknow-pic.cdn.bcebos.com/63d9f2d3572c11df7624b6486e2762d0f603c2e0?x-bce-process=image/resize,m_lfit,w_600,h_800,limit_1" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>阅读</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -8813,6 +8759,85 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </categories>
       <tags>
         <tag>研究生课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>读书笔记</title>
+    <url>/2021/01/27/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>今年有一个想法，每周阅读一本书，并且在博客中发表阅读心得，每周更新一次。</p>
+<h1 id="阅读笔记"><a href="#阅读笔记" class="headerlink" title="阅读笔记"></a>阅读笔记</h1><h2 id="阅读清单"><a href="#阅读清单" class="headerlink" title="阅读清单"></a>阅读清单</h2><ul>
+<li>[x] 时间简史</li>
+<li>[x] 小王子</li>
+<li>[x] 朱光潜给年轻人的十二封信</li>
+<li>[x] 健身笔记：如何成为一个身材有料的人</li>
+<li>[x] 从零开始学钢琴</li>
+<li>[x] 我与地坛</li>
+<li>[x] 当下的力量</li>
+<li>[x] 人间值得</li>
+<li>[x] 鳗鱼的旅行</li>
+<li>[ ] 啊哪啊那神去村</li>
+<li>[ ] 非暴力沟通</li>
+<li>[ ] 长大了就会变好吗</li>
+<li>[ ] 巨大的拥抱</li>
+<li>[ ] 女生呵护指南</li>
+<li>[ ] 当你学会独处</li>
+<li>[ ] 莫泊桑短片小说集</li>
+<li>[ ] 飞鸟集</li>
+<li>[ ] 挪威的森林</li>
+<li>[ ] 神曲</li>
+<li>[ ] 月亮与六便士</li>
+<li>[ ] 呐喊</li>
+<li>[ ] 老人与海</li>
+<li>[ ] 追风筝的人</li>
+<li>[ ] 瓦尔登湖</li>
+<li>[ ] 金刚经说什么</li>
+<li>[ ] 牡丹亭</li>
+<li>[ ] 我在未来等你</li>
+<li>[ ] 苏菲的世界</li>
+<li>[ ] 鲁迅杂文集</li>
+<li>[ ] 无人生还</li>
+<li>[ ] 万物起源</li>
+<li>[ ] 人类简史<h2 id="读书心得"><a href="#读书心得" class="headerlink" title="读书心得"></a>读书心得</h2><h3 id="时间简史"><a href="#时间简史" class="headerlink" title="时间简史"></a>时间简史</h3>这本书前三章主要讲的是亚里士多德的地心说到哥白尼的日星说，然后到伽利略和牛顿的经典物理学，再到法拉第、麦克斯韦的电磁场理论，基本主要内容还是讲的高中物理，基本上就是一个综述。</li>
+</ul>
+</blockquote>
+<p>然后讲到量子力学和相对论，如果没读这本书我一开始一直以为相对论和量子力学，两者都是正确的，但是看这本书的时候发现两者只有其中之一是正确的。但目前相对论让我们产生核能，原子弹。量子力学也在不断的发展给人类带来了直接利益，无论两者中的哪一个都无法直接判断是错误的。</p>
+<p>量子力学里面解释的并不是很详细，但是大学物理有讲，我看了这本书印象更深刻了一点，其实量子力学就是，微小的粒子，在进行测量的时候主要是采用的光的反射进行测量，因为该粒子在测量其速度的时，需要使用光进行测量所以其光的能量如果过高就会导致粒子振荡，速度变快。如果测量粒子的位置就需要采用高频率的光波依次获得更小的波长，即可获得粒子的位置。因此我们在某一时刻，只能准确的获得粒子的位置或者速度。不能同时测得粒子的两种物理属性。</p>
+<p>其中讲了一个比较有意思的实验，即红移和蓝移。由于多普勒效应天体正向我们移动的时候其恒星光谱会向红端移动，如果远离我们会向蓝段移动。但是过去了几十年，人类测量了无数光的光谱，均为红移，因此可以得出结论，所有的星体都在远离我们，因此宇宙正在逐渐的扩张。即测不准定理。</p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fgss0.baidu.com%2F-Po3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2Fd0c8a786c9177f3ec454da7376cf3bc79f3d566f.jpg&amp;refer=http%3A%2F%2Fgss0.baidu.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1613314542&amp;t=b6ae3fe03bf7f657e5ddbac5c9507e4d" alt="在这里插入图片描述"></p>
+<p>还有一个实验，其实我们生活在三维空间，但是我们可以推断的空间其实可以到四维空间，因此我们其实是可以脑袋里面构想出四维空间的，其实物理学中早有解释，你想太阳的光需要8分钟才能到地球，因此我们只能看到太阳8分钟前的样子，这样我们其实活在太阳的8分钟之前，即太阳8分钟以后的三维空间之中。</p>
+<p>星球之间主要的力是引力，霍金说主要的力分为强相互作用力、弱相互作用力，电磁力和引力。目前没有公式能将其整合成唯一的定理，因此我联想到了科学事实和客观事实，目前人类所思考的其实是科学事实，不一定是世界的正向，其存在人类的主观判断，因此不一定正确。霍金说宇宙如果有一个扩张，必然会存在一个收缩，而宇宙的收缩可能要在1亿亿年以后，暂时我们不需要担心，但是你可以想象到一件事情，无论是任何事情，即使人类可以长生不死也会有一个必然的终结，除非人类可以同时具备长生不死和穿越时空。</p>
+<p>其实引力只有在天梯之间才成立，但是人类无法通过万有引力定律计算四星运动。因为宇宙太大了，但是当质量密度达到一个点就可以通过引力产生黑洞，其实之前我一直不知道黑洞是个什么东西。但其实黑洞是人类推断出来的一个东西，其实一个小的黑洞可以小到分子级别，比你的指甲小几万倍，只要密度达到就可以产生黑洞和体积无关。因此只要人类发展到一定程度，必然可以人造黑洞，而且这个黑洞可以很小。而分子间主要是强弱相互作用和电磁力。只要讲做到三十钛福特在一个点上就可以造出一个黑洞，但目前实验室只能造出3000福特具体值不清楚但是达不到。<br>黑洞到底是怎么推论出来的呢？其实之前我也在思考黑洞到底是什么，其实很简单，我们知道其他恒星的光通过太阳的时候会因为太阳的引力光会弯曲，这样就只要质量足够的大，光就可以背弯曲成一个圆，或者变成一个抛物线，即光无法离开那个星球，光就像火箭坠机一样，被引力拉回来，即可推论出黑洞的样子大概是一个圆环，中间是黑色的因为中间的光出不来，外侧的光可以因为光的挤压在事件界面上挤压出来，即可为一个圆环状。目前人类已经发现了黑洞。<br>黑洞的重心就是奇点，当然人类是无法前往这个点的，如果有飞行员进入黑洞必死无疑，可能一瞬间就被压成了一个分子，被剥夺其存在性。<br><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2830392986,3183821195&amp;fm=26&amp;gp=0.jpg" alt="在这里插入图片描述"></p>
+<p>讲一讲相对论，相对论其实就是一个测量学，其实之前的物理世界是，不同的参考系其测量是一样的，但是爱因斯坦的相对论其实给了一个很有趣的解释，就是不同的参考系如果你接近了光速，测量是不一样的，因此可以有很多科幻片说的双生子谬论。目前人类能加速的最大速度是电子，在全球最大的电子发射机内，只能将电子加速到光速的0.999999但无法超过光速。很可惜。</p>
+<p>如果超过光速人类就可以时间穿梭，这是为什么，其实你不难想象，如果你开一艘飞船从地球出发，你超过了光速，你就可以在你出发前回到地球，你懂这是什么意思吗，就是你可以前往你出发之前的那个时刻。即时空穿梭。</p>
+<p>其实你们可以想象我们活在一个四维空间中，我们可以通过超光速相当于逆时间移动，就是传统意义的穿越。</p>
+<p>那么我们如何超光速，其实霍金给出了方法，就是利用负能量和正能量在时空中制造一个虫洞，目前可以通过量子力学制造负能量点，其能量守恒定律其实之前有讲过，能量一般都是大于等于零的但是量子力学说可以在空间中制造一个负能量点和正能量点，在这两个点之间可以造成时空扭曲。产生充电，目前离地球最近的一颗恒星是比邻星，距离我们大概4光年，就是光走思念才能到比邻星。我们其实通过虫洞来回比邻星就可以超光速，如果可能的话大概咱们可以回到八年前的地球。</p>
+<p>霍金还推测五维空间不存在，因为如果多维空间存在，那么如果万有引力成立，那么其引力就会按照维数进行下降，因为引力和距离成反比，距离越大引力越小，你想维度没多一维，咱们的引力就会变成  四维空间1/2、五维1/4。。。可以想象到咱们的空间会崩塌，由于人存在性定理，其实这种多维空间是不存在的，或者万有引力有问题。</p>
+<p>看完时间简史，我感觉人类其实是十分渺小的事物，我们对世界的理解其实还很浅薄。大家总觉得目前的科技能够达到很高的地步。其实我想说，人类目前连地球都不能进行完全的探索。而且核能也只是基础，其实任何物质按照质能方程都能进行转换，按照这样的推想，石油未来并不会像现在这样被重视，因为可能一吨海水可以供人类获几百年。</p>
+<p>当初相对论刚出来的时候，全世界可能就几个人能够理解相对论和量子力学，但是现在，研究生可能有几百万人能够同时理解这两门学问，因此未来可能能够存在一个定理即物理学统一定理将一切的公式统合在一起。</p>
+<h3 id="小王子"><a href="#小王子" class="headerlink" title="小王子"></a>小王子</h3><p>小王子讲的其实是飞行员，他在沙漠中遇难他和自己对话的故事，可能是在极端的条件下，他看到了他自己，其实我们也会从这本书中看到小时候的自己，世界上的人被小王子分为了四种，用小王子所路过的星球所指代。这本书很短，2小时就可以读完，其很有趣，让你从小孩子的眼中审视这个世界，到底人们在追寻一些什么。其实细细想来很奇怪，在光里面追光。人生活的是一个过程，不是结果。希望每个人都能懂。<br>小王子对玫瑰和狐狸的解释挺有趣的，可以细细品味。</p>
+<h3 id="朱光潜给年轻人的十二封信"><a href="#朱光潜给年轻人的十二封信" class="headerlink" title="朱光潜给年轻人的十二封信"></a>朱光潜给年轻人的十二封信</h3><p>这本书感觉是给中学生写的，其实我没怎么看进去，希望你们能看进去。</p>
+<h3 id="健身笔记：如何成为一个身材有料的人"><a href="#健身笔记：如何成为一个身材有料的人" class="headerlink" title="健身笔记：如何成为一个身材有料的人"></a>健身笔记：如何成为一个身材有料的人</h3><p>讲如何健身、减肥。健身的动作、流程，减肥的方法，其中对于减肥人士的基础代谢很有用，可以自己去计算一下自己的基础代谢量。</p>
+<h3 id="从零开始学钢琴"><a href="#从零开始学钢琴" class="headerlink" title="从零开始学钢琴"></a>从零开始学钢琴</h3><p>讲钢琴的一些基础知识、如何读五线谱、然后怎么弹、左右 ，右手高音、左手低音、然后从5个音到6个音、到左右手换位置的8个音，到升降调。钢琴其实就是训练只要你会练就能学的很好，加油！<br>今年计划，学会钢琴。</p>
+<h3 id="我与地坛"><a href="#我与地坛" class="headerlink" title="我与地坛"></a>我与地坛</h3><p>史铁生在20岁的年纪失去了自己的双腿、在北京的地坛公园读书思考看到很多的人和事情，主要都是他在地坛里想了些什么，这本书对于有抑郁、对生命失去信心的人很有帮助。<br>还是那句话，人活的是一个过程，绝不是结果，自付价值，自付使命。加油！</p>
+<h3 id="当下的力量"><a href="#当下的力量" class="headerlink" title="当下的力量"></a>当下的力量</h3><p>主要讲的就是，让我们去除时间观念，没有未来，没有过去，我们能够把握的只有当下，不要</p>
+<p>未来不会拯救你，未来不会因为你的期待而自动变得更好，你能把握的只有当下的每一秒。</p>
+<p>你要学会感受生活中的每一秒，在每一秒享受生活，做自己喜欢的事情，做自己想要做的事情。</p>
+<blockquote>
+<p>是的——春天需要你。经常会有一颗星<br>等着你抬头去看。波涛会从遥远的过去<br>向你涌来，或者当你从一扇<br>开着的窗下走过，小提琴的音乐<br>会渴望你倾听。所有这些都是使命。<br>可是你能完成吗？</p>
+</blockquote>
+<p>关注在当下真的很神奇的，你关注与当下，然后体会很多感觉，而不只是去思考，你能感觉到你很幸福。<br>但是文中有句话说我思故我在是错误的，这个有待辩证，但是也有很多的道理，可以减少思考，但是不要像文章中完全不思考，完全不思考我尝试过会降低智商，和物质基础。<br>当下的力量，推荐大家看看。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fcdnimg103.lizhi.fm%2Faudio_cover%2F2018%2F07%2F01%2F2678344019888704519_320x320.jpg&amp;refer=http%3A%2F%2Fcdnimg103.lizhi.fm&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1614341106&amp;t=7d39c87785083627fc5441116ca0cde2" alt="在这里插入图片描述"></p>
+<h3 id="人间值得"><a href="#人间值得" class="headerlink" title="人间值得"></a>人间值得</h3><p>这是一个护士给一位日本老奶奶写的自传，讲的是中村恒子从出生到90岁的故事，一直在工作，有讲很多方法论，如何让自己幸福，如何和生活和解，如何让自己过的幸福，探索人生的真谛。其中讲了许多和工作相关的故事，就比如不要抱怨一般尝试后都能行，学会把工作当成是人生的一部分不要去排斥你的工作，也不要因为很多事情烦恼，没有什么必要性。不以物喜，不以己悲。<br>人生是一场经历，热爱生活，享受这段过程。<br>泰山崩于前而色不变，黄河决于顶而面不惊。人生，一定要有一颗强大的内心，才不会轻易被打倒。人生，要学会坚强，在遇到挫折的时候才能从容地去面对，让自己处于泰山之崩而沉着镇定，处于黄河之边而不惊不慌，人生想要会当凌绝顶，一览众山小，就要从山脚下开始战胜重重困难，一步一步往上爬，才能有可能到达山顶。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201909%2F13%2F20190913213654_kmuwe.thumb.400_0.jpg&amp;refer=http%3A%2F%2Fc-ssl.duitang.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1614341233&amp;t=792b0fafbd08b514b5c2a9b68d1ecc69" alt="在这里插入图片描述"></p>
+<h3 id="鳗鱼的旅行"><a href="#鳗鱼的旅行" class="headerlink" title="鳗鱼的旅行"></a>鳗鱼的旅行</h3><p>这篇文章，很有趣，讲的是鳗鱼习性的研究历程，鳗鱼这个生物很有趣，在古希腊时期到18世纪，鳗鱼一直都不被认为是一种鱼，是一种独立的物种，即鳗鱼非鱼，其实我现在也觉得这玩意不是鱼。<br>很有趣啊，鳗鱼这个生物，亚里士多德在生物志中有详细的调查，这应该是当时最详细的一篇调查，鳗鱼这种生物当干旱的时候不存在，但是来年春天当水满了以后鳗鱼又会出现，就仿佛是从泥土里长出来的。<br>所有的人都不知道鳗鱼这种生物从哪来的，这个问题困扰了人类n久。你们难以想象1920年上世纪人类才知道鳗鱼的习性，所有你们可以知道人类目前的科技水平只能达到什么程度了吗？<br>当时为了找到一条带卵的鳗鱼，政府发出巨额赏金，于是当时大量的鱼民拿其他鱼的卵放在鳗鱼的体内，你可能难以想象。当然对科学研究有一定的影响，就直到1920年。<br>1920年有个研究员一直躲到一战结束才敢开船去找鳗鱼的发源地，方法也很简单，就是慢慢的去捕鱼，他从英国一直开到太平洋，鳗鱼的大小越来越小，最终才确定了鳗鱼的出生地，是在一片海里，而且很神奇的是就只有那一块是鳗鱼的出生地，不在别的地方繁衍，就在这一片海域。<br>最后研究表明，鳗鱼一开始是雌性，游几千海里前往其他水域进行生存，等玩腻了，每条鳗鱼选择的时间不一样，只要不繁衍这货可以活50年，这对于生物是极其长寿的，但是当他游会那片海域准备繁衍的时候，这时鳗鱼就会变成雄性，然后繁衍，随后就会死去。很浪漫，可能鳗鱼一生走的路比许多人要远得多。<br>是一个很不错的科技题材的小说，全球的鳗鱼都来自于同一片海域，而且每一条鳗鱼都是游了这么远来到的你的身边，无一例外，你吃的每一条鳗鱼都是一位旅行家。不知道你的旅行的目的是什么，但鳗鱼显然告诉了你它的答案。<br><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3999767242,4285497006&amp;fm=26&amp;gp=0.jpg" alt="在这里插入图片描述"></p>
+<h3 id="北飞的候鸟"><a href="#北飞的候鸟" class="headerlink" title="北飞的候鸟"></a>北飞的候鸟</h3><p>如果有来生，要做一棵树， 站成永恒。没有悲欢的姿势， 一半在尘土里安详， 一半在风里飞扬； 一半洒落荫凉， 一半沐浴阳光。 非常沉默、非常骄傲。 从不依靠、从不寻找。   </p>
+<p>如果有来生，要化成一阵风， 一瞬间也能成为永恒。 没有善感的情怀， 没有多情的眼睛。 一半在雨里洒脱， 一半在春光里旅行； 寂寞了，孤自去远行， 把淡淡的思念统带走， 从不思念、从不爱恋；   </p>
+<p>如果有来生，要做一只鸟， 飞越永恒，没有迷途的苦恼。东方有火红的希望，南方有温暖的巢床， 向西逐退残阳，向北唤醒芬芳。  如果有来生， 希望每次相遇， 都能化为永恒。<br><img src="https://iknow-pic.cdn.bcebos.com/63d9f2d3572c11df7624b6486e2762d0f603c2e0?x-bce-process=image/resize,m_lfit,w_600,h_800,limit_1" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>阅读</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
       </tags>
   </entry>
 </search>
