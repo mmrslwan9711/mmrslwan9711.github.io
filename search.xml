@@ -1,6 +1,434 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CSS_层叠样式表笔记</title>
+    <url>/2021/11/17/CSS_html/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="CSS-层叠样式表笔记"><a href="#CSS-层叠样式表笔记" class="headerlink" title="CSS_层叠样式表笔记"></a>CSS_层叠样式表笔记</h1><blockquote>
+<p>层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。<br>CSS 能够对网页中元素位置的排版进行像素级精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力。</p>
+<h2 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h2><ul>
+<li>标签选择器的作用是为页面中某一类标签指定统一的CSS样式</li>
+<li>优点是能快速为页面中同类型的标签统一设置样式</li>
+<li>缺点是不能设计差异化样式，只能选择全部的当前标签<pre class="line-numbers language-none"><code class="language-none">标签名 &#123;
+    属性1: 属性值1;
+&#125;
+
+ul &#123;
+    
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>规范：<ul>
+<li>属性值前面，冒号后面，保留一个空格</li>
+<li>标签名和大括号中间保留空格<h3 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h3>如果想要差异化选择不同的标签，单独选一个或者几个标签，可以使用类选择器<pre class="line-numbers language-none"><code class="language-none">.类名 &#123;
+    属性1: 属性值1;
+    .....
+&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+</li>
+<li>结构需要用class属性来调用<pre class="line-numbers language-none"><code class="language-none">.red &#123;
+    color: red;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<code>&lt;div class=&#39;red&#39;&gt;  变红色 &lt;/div&gt;</code></li>
+</ul>
+</blockquote>
+<p>注意：</p>
+<ol>
+<li>类选择器在 HTML 中以 class 属性表示，在CSS中，类选择器以一个点 . 号表示</li>
+<li>记忆口诀：样式点定义，结构类调用</li>
+</ol>
+<h3 id="类选择器多类名"><a href="#类选择器多类名" class="headerlink" title="类选择器多类名"></a>类选择器多类名</h3><ul>
+<li>我们可以给一个标签指定多个类名，简单理解就是一个标签有多个名字</li>
+</ul>
+<p><code>&lt;div class=&quot;red font20&quot;&gt;名字&lt;/div&gt;</code><br>  <style><br>        .red {<br>            color: red;<br>        }
+    </style></p>
+<p><body>
+    <div class="red">名字</div>
+</body></p>
+<ul>
+<li>在标签 class 属性中写多个类名</li>
+<li>多个类名中间必须用空格分开</li>
+<li>这个标签就可以分别具有这些类名的样式<h4 id="多类名开发中使用场景："><a href="#多类名开发中使用场景：" class="headerlink" title="多类名开发中使用场景："></a>多类名开发中使用场景：</h4></li>
+</ul>
+<ol>
+<li>可以把一些标签元素相同的样式(公共的部分)放到一个类里面</li>
+<li>这些标签都可以调用这个公共的类，然后再调用自己独有的类</li>
+<li>从而节省CSS代码，统一修改也方便</li>
+</ol>
+<h3 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h3><ul>
+<li>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式</li>
+<li>HTML 元素以 id属性 来设置 id 选择器，CSS中 id 选择器 以 “#” 来定义<pre class="line-numbers language-none"><code class="language-none">  &lt;style&gt;
+        #pink &#123;
+            color:pink;
+        &#125;
+    &lt;&#x2F;style&gt;
+
+&lt;body&gt;
+    &lt;div id&#x3D;&quot;pink&quot;&gt;秦大林子&lt;&#x2F;div&gt;
+&lt;&#x2F;body&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<style>
+      #pink {
+          color:pink;
+      }
+  </style>
+
+</li>
+</ul>
+<p><body>
+    <div id="pink">秦大林子</div>
+</body><br>注意：</p>
+<ul>
+<li>id 属性只能在每个 HTML 文档中出现一次。</li>
+<li>记忆口诀：样式 # 定义，结构 id 调用。只能调用一次，别人切勿使用<h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3></li>
+</ul>
+<p>id选择器和类选择器的区别？</p>
+<ul>
+<li>类选择器（class）好比人的名字，一个人可以有多个名字，同时一个名字也可以被多个人使用</li>
+<li>id 选择器好比人的身份证号码，全中国是唯一的，不得重复。</li>
+<li>id 选择器和类选择器最大的不同在于使用次数上</li>
+<li>类选择器在修改样式中用的最多，id 选择器一般用于页面唯一性的元素上，经常和 JavaScript 搭配使用。</li>
+</ul>
+<p>记忆口诀：</p>
+<ul>
+<li>样式点定义，结构类调用</li>
+<li>样式 # 定义，结构 id 调用</li>
+</ul>
+<h3 id="通配符选择器"><a href="#通配符选择器" class="headerlink" title="通配符选择器"></a>通配符选择器</h3><ul>
+<li>CSS 中， 通配符使用 * 定义，它表示选取页面中所有元素(标签)。<pre class="line-numbers language-none"><code class="language-none">* &#123;
+    属性1：属性值1;
+    ....
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>通配符选择器不需要调用，自动就给所有的元素使用样式</li>
+<li>一般是用于清楚元素标签的内外边距<pre class="line-numbers language-none"><code class="language-none">* &#123;
+    margin: 0;
+    padding: 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="基础选择器总结"><a href="#基础选择器总结" class="headerlink" title="基础选择器总结"></a>基础选择器总结</h3><table><thead><tr><th>基础选择器</th><th>作用</th><th>特点</th><th>使用情况</th><th>语法</th></tr></thead><tbody><tr><td>标签选择器</td><td>可以选出所有相同的标签</td><td>不能差异化选择</td><td>较多</td><td>p {color: red}</td></tr><tr><td>类选择器</td><td>可以选出1个或者多个标签</td><td>可以根据需求选择</td><td>非常多</td><td>.nav {color: red}</td></tr><tr><td>id 选择器</td><td>一次只能选择1个标签</td><td>ID 属性只能在每个 HTML 文档中出现一次</td><td>一般和 js 搭配</td><td>#nav {color: red}</td></tr><tr><td>通配符选择器</td><td>选择所有的标签</td><td>选择的太多&#xff0c;有部分不需要</td><td>特殊情况使用</td><td>* {color: red}</td></tr></tbody></table>
+
+</li>
+</ul>
+<h2 id="CSS字体属性"><a href="#CSS字体属性" class="headerlink" title="CSS字体属性"></a>CSS字体属性</h2><p> CSS 字体属性用于定义字体系列、大小、粗细和文字样式(如斜体)</p>
+<h3 id="font-family"><a href="#font-family" class="headerlink" title="font-family"></a>font-family</h3><ul>
+<li><p>CSS 使用 font-family 属性设置文本的字体系列<br><code>div &#123; font-family:Arial,&quot;Microsoft Yahe&quot;,&quot;微软雅黑&quot;; &#125;</code></p>
+</li>
+<li><p>各种字体之间必须使用英文状态下的逗号隔开</p>
+</li>
+<li>一般情况下，如果有空格隔开的多个单词组成的字体，加引号</li>
+<li>最常见的几个字体：<pre class="line-numbers language-none"><code class="language-none">body &#123;
+    font-family: &quot;Microsoft Yahe&quot;,tahoma,arial,&quot;Hiragino Sans GB&quot;;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="font-size"><a href="#font-size" class="headerlink" title="font-size"></a>font-size</h3></li>
+<li><p>CSS 使用 font-size 属性设置字体大小</p>
+<pre class="line-numbers language-none"><code class="language-none">p&#123;
+    font-size: 20px;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>px (像素)大小是我们网页的最常用的单位</p>
+</li>
+<li>谷歌浏览器默认的文字大小为 16px</li>
+</ul>
+<h3 id="font-weight"><a href="#font-weight" class="headerlink" title="font-weight"></a>font-weight</h3><ul>
+<li>CSS 使用 font-weight 属性设置字体的粗细<br><code>font-weight:  normal | bold |  bolder  | lighter |number</code></li>
+</ul>
+<table><thead><tr><th>属性值</th><th>描述</th></tr></thead><tbody><tr><td>normal</td><td>默认值(不加粗的)&#xff0c;相当于<strong>number&#61;400</strong></td></tr><tr><td>bold</td><td>定义粗体(加粗的)&#xff0c;相当于<strong>number&#61;700</strong></td></tr><tr><td>bolder</td><td>定义特粗体</td></tr><tr><td>100-900</td><td>400等同于 normal&#xff0c;700等同于 bold&#xff0c;注意这个数字后面不跟单位</td></tr></tbody></table>
+
+<h3 id="font-style"><a href="#font-style" class="headerlink" title="font-style"></a>font-style</h3><ul>
+<li>CSS 使用 font-style 属性设置文字样式<pre class="line-numbers language-none"><code class="language-none">p&#123;
+  font-style: normal;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<ol>
+<li>normal    默认值，浏览器会显示标准的字体样式</li>
+<li>italic    浏览器会显示斜体的字体样式<br>注意：平时我们很少给文字加斜体，反而要给斜体标签( em , i )改为不倾斜字体</li>
+</ol>
+<h3 id="字体属性复合写法"><a href="#字体属性复合写法" class="headerlink" title="字体属性复合写法"></a>字体属性复合写法</h3><p>字体复合属性可以把以上文字样式综合来写，这样写更节约代码，例如：<br><pre class="line-numbers language-none"><code class="language-none">&lt;style&gt;
+        &#x2F;* 想要div 文字变倾斜 加粗 字号设置为16像素 并且是微软雅黑 *&#x2F;
+        
+        div &#123;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: &#39;Microsoft yahe&#39;;
+            &#x2F;* 复合属性：简写的方式  节约代码*&#x2F;
+            &#x2F;* 顺序：font-style font-weight  font-size&#x2F;line-height  font-family *&#x2F;
+            font: italic 700 16px &#39;Microsoft yahe&#39;;
+        &#125;
+&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<ul>
+<li>顺序：文字样式 文字粗细 文字大小 文字字体</li>
+<li>使用font属性时，必须按照上面语法格式中的顺序书写，不能更换顺序，并且各个属性间以空格隔开</li>
+<li>不需要设置的属性可以省略(取默认值)，但必须保留font-size 和font-family属性，否则 font 属性将不起作用<h3 id="字体属性总结"><a href="#字体属性总结" class="headerlink" title="字体属性总结"></a>字体属性总结</h3></li>
+</ul>
+<table><thead><tr><th>属性</th><th>表示</th><th>注意点</th></tr></thead><tbody><tr><td>font-style</td><td>字体样式</td><td>记住倾斜是 italic&#xff0c;不倾斜是 normal&#xff0c;实际开发最常用 normal</td></tr><tr><td>font-weight</td><td>字体粗细</td><td>加粗是 700 或者 bold &#xff0c;不加粗是 normal 或者 400&#xff0c;记住数字不加单位</td></tr><tr><td>font-size</td><td>字号</td><td>我们通常用的单位是 px &#xff0c;一定要跟上单位</td></tr><tr><td>font-family</td><td>字体</td><td>实际工作中按照团队约定来写字体</td></tr><tr><td>font</td><td>字体连写</td><td>①字体连写是有顺序的&#xff0c;不能随意换位置 ② <strong>字体和字号必须同时出现</strong></td></tr></tbody></table>
+
+<h2 id="CSS文本属性"><a href="#CSS文本属性" class="headerlink" title="CSS文本属性"></a>CSS文本属性</h2><p>CSS 文本属性可以设置文本的 外观，比如文本颜色、对齐文本、装饰文本、文本缩进、行间距的等</p>
+<h3 id="color"><a href="#color" class="headerlink" title="color"></a>color</h3><ul>
+<li>color 属性用于定义文本的颜色<pre class="line-numbers language-none"><code class="language-none">div &#123;
+    color: red;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<ol>
+<li>预定义的颜色值    red，green，blue，pink等</li>
+<li>十六进制    #FF0000, #FF6600，#29D794</li>
+<li>RGB代码    rgb（255，0，0） 或rgb(100%，0%，0%)<h3 id="text-again"><a href="#text-again" class="headerlink" title="text-again"></a>text-again</h3>text-align 属性用于设置文本内容的水平对齐方式<pre class="line-numbers language-none"><code class="language-none">div &#123;
+    text-align:center;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="text-decoration"><a href="#text-decoration" class="headerlink" title="text-decoration"></a>text-decoration</h3></li>
+</ol>
+<ul>
+<li>text-decoration 属性用于装饰文本，可以给文本添加下划线，删除线，上划线等<pre class="line-numbers language-none"><code class="language-none">div &#123;
+    text-decoration: underline;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<ol>
+<li>none    默认。没有装饰线(最常用)</li>
+<li>underline    下划线，链接自带下划线（常用）</li>
+<li>overline    上划线(几乎不用)</li>
+<li>line-through    删除线 (不常用)</li>
+</ol>
+<h3 id="text-indent"><a href="#text-indent" class="headerlink" title="text-indent"></a>text-indent</h3><ul>
+<li>text-indent 属性用于指定文本的第一行缩进，通常是将段落的首行缩进<pre class="line-numbers language-none"><code class="language-none">div &#123;
+    text-indent: 10px;
+&#125;
+
+p&#123;
+   text-indent: 2em;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>通过设置该水属性，所有元素的第一行都可以缩进一个给定的长度，甚至该长度可以是负值</li>
+<li>em是一个相对单位，就是当前元素(font-size)1个文字的大小</li>
+<li>如果当前元素没有设置大小，则会按照父元素的一个文字大小</li>
+</ul>
+<h3 id="line-height"><a href="#line-height" class="headerlink" title="line-height"></a>line-height</h3><ul>
+<li>line-height 属性用于设置行间的距离(行高)，可以控制文字行与行之间的距离<pre class="line-numbers language-none"><code class="language-none">p &#123;
+   line-height: 26px;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+行间距包括上间距、文本高度、下间距</li>
+</ul>
+<h3 id="文本属性总结"><a href="#文本属性总结" class="headerlink" title="文本属性总结"></a>文本属性总结</h3><ol>
+<li>color    文本颜色    通常用十六进制，而且是简写形式 #fff</li>
+<li>text-align    文本对齐    可以设定文字水平的对齐方式</li>
+<li>text-indent    文本缩进    段落首行缩进</li>
+<li>text-decoration    文本修饰    记住添加下划线 underline 取消下划线 none</li>
+<li>line-height    行高    控制行与行之间的距离</li>
+</ol>
+<h2 id="CSS复合选择器"><a href="#CSS复合选择器" class="headerlink" title="CSS复合选择器"></a>CSS复合选择器</h2><p>复合选择器：是由两个或多个基础选择器，通过不同的方式组合而成的</p>
+<p>常用的复合选择器包括：后代选择器、子选择器、并集选择器、伪类选择器</p>
+<h3 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h3><ul>
+<li>后代选择器又称为包含选择器，可以选择父元素里面的子元素</li>
+<li>其写法就是把外层标签写在前面，内层标签写在后面，中间用空格分隔，当标签发生嵌套时，内层标签就称为外层标签的后代<pre class="line-numbers language-none"><code class="language-none">元素1 元素2 &#123;
+    样式声明
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+上述语法表示选择元素1里面的所有元素2(后代元素)，例如<pre class="line-numbers language-none"><code class="language-none">&#x2F;*选择ul 里面的所有 li 标签元素*&#x2F;
+ul li &#123;
+    
+    样式声明
+    
+&#125;     <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>元素1 和 元素2 中间用空格隔开</li>
+<li>元素1 是父级，元素2 是子级，最终选择的是元素2<h3 id="子选择器"><a href="#子选择器" class="headerlink" title="子选择器"></a>子选择器</h3></li>
+<li>子元素选择器只能选择作为某元素的最近一级子元素，简单理解就是选亲儿子元素。<pre class="line-numbers language-none"><code class="language-none">元素1 &gt; 元素2&#123;
+    样式声明
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<p>上述语法表示选择元素1 里面的所有直接后代(子元素)元素2，例如<br><pre class="line-numbers language-none"><code class="language-none">&#x2F;*选择div里面所有最近一级 P 标签元素*&#x2F; 
+div &gt; p&#123;
+    样式声明
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></p>
+<ul>
+<li>元素1 和 元素2 中间用大于号隔开</li>
+<li>元素1 是父级，元素2 是子级，最终选择的是元素2</li>
+<li>元素2必须是亲儿子，其孙子、重孙之类都不归他管<h3 id="并集选择器"><a href="#并集选择器" class="headerlink" title="并集选择器"></a>并集选择器</h3><strong>并集选择器可以选择多组标签，同时为它们定义相同的样式。</strong></li>
+</ul>
+<p>并集选择器是各选择器通过英文逗号连接而成<br>任何形式的选择器都可以作为并集选择器的一部分<br><pre class="line-numbers language-none"><code class="language-none">元素1,元素2 &#123;
+    样式声明
+&#125;   <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>上述语法表示选择元素1和元素2，例如<br><pre class="line-numbers language-none"><code class="language-none">&#x2F;*选择  ul  和  div 标签元素 *&#x2F;
+ul,div &#123;
+    样式声明
+&#125; <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></p>
+<ul>
+<li>元素1 和 元素2 中间用逗号隔开</li>
+<li>逗号可以理解为和的意思</li>
+<li>并集选择器通常用于集体声明<h3 id="伪类选择器🔥"><a href="#伪类选择器🔥" class="headerlink" title="伪类选择器🔥"></a>伪类选择器🔥</h3></li>
+<li>伪类选择器用于向某些选择器添加特殊的效果，比如给链接添加特殊效果，或选择第1个，第n个元素</li>
+<li>伪类选择器书写最大的特点是<strong>用冒号(😃</strong>表示，比如 :hover、:first-child</li>
+<li>伪类选择器很多，比如有链接伪类、结构伪类，这里先记录常用的链接伪类选择器<h3 id="链接伪类选择器🔥"><a href="#链接伪类选择器🔥" class="headerlink" title="链接伪类选择器🔥"></a>链接伪类选择器🔥</h3><pre class="line-numbers language-none"><code class="language-none">&#x2F;* a是标签选择器 *&#x2F;
+a &#123;
+    color:gray;
+&#125;
+
+&#x2F;* :hover 是链接伪类选择器，鼠标经过 *&#x2F;
+a :hover &#123;
+    &#x2F;*鼠标经过的时候，由原来的灰色  变成了红色*&#x2F;
+   color:red; 
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<h3 id="focus伪类选择器🔥"><a href="#focus伪类选择器🔥" class="headerlink" title="focus伪类选择器🔥"></a>focus伪类选择器🔥</h3><ul>
+<li>:focus伪类选择器用于选取获得焦点的表单元素</li>
+<li>焦点就是光标，一般情况<code>&lt;input&gt;</code>类表单元素才能获取，因此这个选择器也主要针对表单元素来说<pre class="line-numbers language-none"><code class="language-none">input : focus &#123;
+    background-color:yellow;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+效果：</li>
+</ul>
+<p>input : focus {<br>    background-color:yellow;<br>}</p>
+<input>
+
+<h3 id="复合选择器总结🔥"><a href="#复合选择器总结🔥" class="headerlink" title="复合选择器总结🔥"></a>复合选择器总结🔥</h3><ol>
+<li>后代选择器    用来选择后代元素    可以是子孙后代    较多    符号是空格 .nav a</li>
+<li>子代选择器    选择最近一级元素    只选亲儿子    较少    符号是大于 .nav&gt;p</li>
+<li>并集选择器    选择某些相同样式的元素    可以用于集团声明    较多    符号是逗号 .nav,.header</li>
+<li>链接伪类选择器    选择不同状态的链接    跟链接相关    较多    重点记住a{}和a:hover ，5实际开发的写法</li>
+<li>:focus选择器    选择获得光标的表单    跟表单相关    较少    input:focus 记住这个写法</li>
+</ol>
+<h2 id="CSS元素显示模式"><a href="#CSS元素显示模式" class="headerlink" title="CSS元素显示模式"></a>CSS元素显示模式</h2><p>常见的块元素有<code>&lt;h1&gt;~&lt;h6&gt;、&lt;p&gt;、&lt;div&gt;、&lt;ul&gt;、&lt;ol&gt;、&lt;li&gt;</code>等，其中<code>&lt;div&gt;</code> 标签是最典型的块元素。</p>
+<h3 id="块级元素的特点："><a href="#块级元素的特点：" class="headerlink" title="块级元素的特点："></a>块级元素的特点：</h3><ol>
+<li><p>比较霸道，自己独占一行</p>
+</li>
+<li><p>高度，宽度，外边距以及内边距都可以控制</p>
+</li>
+<li><p>宽度默认是容器（父级宽度）的100%</p>
+</li>
+<li><p>是一个容器及盒子，里面可以放行内或块级元素</p>
+</li>
+</ol>
+<p>注意：</p>
+<ol>
+<li><p>文字类的元素内不能使用块级元素</p>
+</li>
+<li><p><code>&lt;p&gt;</code>标签主要用于存放文字，因此<code>&lt;p&gt;</code>里面不能放块级元素，特别是不能放<code>&lt;div&gt;</code></p>
+</li>
+<li><p>同理，<code>&lt;h1&gt;~&lt;h6&gt;</code>等都是文字类块级标签，里面也不能存放其他块级元素。</p>
+</li>
+</ol>
+<h3 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h3><ol>
+<li><p>常见的行内元素有<code>&lt;a&gt;、&lt;strong&gt;、&lt;b&gt;、&lt;em&gt;、&lt;i&gt;、&lt;del&gt;、&lt;s&gt;、&lt;ins&gt;、&lt;u&gt;、&lt;span&gt;</code>等</p>
+</li>
+<li><p>其中<span>标签是最典型的行内元素。有的地方也将行内元素称为内联元素。</p>
+</li>
+<li><p>行内元素的特点：</p>
+<ul>
+<li><p>相邻行内元素在一行上，一行可以显示多个</p>
+</li>
+<li><p>高，宽直接设置是无效的</p>
+</li>
+<li><p>默认宽度就是它本身内容的宽度</p>
+</li>
+<li><p>行内元素只能容纳文本或其他行内元素</p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>注意：</strong></p>
+<ul>
+<li>链接里面不能再放链接</li>
+<li>特殊情况链接<code>&lt;a&gt;</code>里面可以放块级元素，但是给<code>&lt;a&gt;</code>转换一下块级模式最安全</li>
+</ul>
+<h3 id="行内块元素"><a href="#行内块元素" class="headerlink" title="行内块元素"></a>行内块元素</h3><ol>
+<li>在行内元素中有几个特殊的标签 ——<code>&lt;img /&gt;、&lt;input /&gt;、&lt;td&gt;，</code>它们同时具有块元素和行内元素的特点</li>
+<li>有些资料称它们为行内块元素</li>
+<li>特点：<ul>
+<li>和相邻行内元素在一行上，但是他们之间会有空白缝隙。一行可以显示多个(行内元素特点)</li>
+<li>默认宽度就是它本身内容的宽度(行内元素特点)</li>
+<li>高度，行高，外边距以及内边距都可以控制(块级元素特点)<h3 id="元素显示模式总结"><a href="#元素显示模式总结" class="headerlink" title="元素显示模式总结"></a>元素显示模式总结</h3></li>
+</ul>
+</li>
+<li>块级元素    一行只能放一个块级元素    可以设置宽度高度    容器的100%    容器级可以包含任何标签</li>
+<li>行内元素    一行可以放多个行内元素    不可以直接设置宽度高度    它本身内容的宽度    容纳文本或其他行内元素</li>
+<li>行内块元素    一行放多个行内块元素    可以设置宽度高度    它本身内容的宽度    <h3 id="元素显示模式转换"><a href="#元素显示模式转换" class="headerlink" title="元素显示模式转换"></a>元素显示模式转换</h3></li>
+</ol>
+<ul>
+<li>转换为块元素： <code>display:block</code></li>
+<li>转换为行内元素：<code>display:inline</code></li>
+<li>转换为行内块元素: <code>display:inline-block</code></li>
+</ul>
+<h2 id="CSS背景"><a href="#CSS背景" class="headerlink" title="CSS背景"></a>CSS背景</h2><p>通过 CSS 背景属性，可以给页面元素添加背景样式。<br>背景属性可以设置背景颜色、背景图片、背景平铺、背景图片位置、背景图像固定等。</p>
+<h3 id="background-color"><a href="#background-color" class="headerlink" title="background-color"></a>background-color</h3><ul>
+<li>background-color 属性定义了元素的背景颜色<br><code>background-color: transparent;</code></li>
+<li>一般情况下默认颜色是transparent（透明），我们也可以手动指定背景颜色为透明色<h3 id="background-image"><a href="#background-image" class="headerlink" title="background-image"></a>background-image</h3></li>
+<li>background-image 属性描述了元素的背景图像。<br><code>background-image : none | url(url)</code></li>
+</ul>
+<ol>
+<li>none    无背景图（默认）</li>
+<li>url    使用绝对或相地址指定的背景图像<blockquote>
+<p>注意：背景图片后面的地址，千万不要忘记加URL，同时里面的路径不要加引号。</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="background-repeat"><a href="#background-repeat" class="headerlink" title="background-repeat"></a>background-repeat</h3><ul>
+<li>background-repeat 属性定义背景图像的平铺<br><code>background-repeat: repeat| no-repeat| repeat-x| repeat-y</code></li>
+</ul>
+<ol>
+<li>repeat    背景图像在纵向和横向上平铺(默认的)</li>
+<li>no-repeat    背景图像不平铺</li>
+<li>repeat-x    背景图像在横向上平铺</li>
+<li>repeat-y    背景图像在纵向平铺<h3 id="background-position"><a href="#background-position" class="headerlink" title="background-position"></a>background-position</h3></li>
+</ol>
+<ul>
+<li>background-position 属性可以改变图片在背景中的位置<br><code>background-position: x y;</code></li>
+<li>参数：X坐标 Y坐标</li>
+<li>可以使用 方位名词 或者 精确单位</li>
+</ul>
+<ol>
+<li>length    百分数|由浮点数字和单位标识符组成的长度值</li>
+<li><p>position    top| center | bottom |left |center |right 方位名词</p>
+</li>
+<li><p>参数是方位名词</p>
+<ul>
+<li>如果指定的两个值都是方位名词，则两个值前后顺序无关，比如left top和top left</li>
+<li>如果只指定了一个方位名词，另一个值省略，则第二个值默认居中对齐</li>
+</ul>
+</li>
+<li>参数是精准单位<ul>
+<li>如果参数值是精确坐标，那么第一个肯定是x坐标，第二个一定是y坐标</li>
+<li>如果只指定一个数值，那该数值一定是x坐标，另一个默认垂直居中</li>
+</ul>
+</li>
+<li>参数是混合单位<ul>
+<li>如果指定的两个值是精确单位和方位名词混合使用，则第一个值是x坐标，第二个值是y坐标</li>
+</ul>
+</li>
+</ol>
+<h3 id="background-attachment"><a href="#background-attachment" class="headerlink" title="background-attachment"></a>background-attachment</h3><ul>
+<li>background-attachment 属性设置背景图像是否固定或者随着页面的其余部分滚动<br><code>background-attachment : scroll | fixed</code></li>
+</ul>
+<ol>
+<li>scroll    背景图像是随对象内容滚动</li>
+<li>fixed    背景图像固定<h3 id="背景复合写法🔥"><a href="#背景复合写法🔥" class="headerlink" title="背景复合写法🔥"></a>背景复合写法🔥</h3></li>
+</ol>
+<ul>
+<li>background ： 背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置<br><code>background : transparent url(image.jpg) repeat-y fixed top;</code></li>
+</ul>
+<h3 id="背景色半透明🔥"><a href="#背景色半透明🔥" class="headerlink" title="背景色半透明🔥"></a>背景色半透明🔥</h3><p>CSS3为我们提供了背景颜色半透明的效果</p>
+<p><code>background : rgba(0,0,0,0.3);</code></p>
+<ol>
+<li>最后一个参数是alpha 透明度 ，取值范围在0~1之间</li>
+<li>我们习惯把0.3的 0省略掉，写为background(0,0,0,.3);</li>
+<li>注意：背景半透明是指盒子背景半透明，盒子里面的内容不受影响</li>
+</ol>
+<h3 id="背景总结🔥"><a href="#背景总结🔥" class="headerlink" title="背景总结🔥"></a>背景总结🔥</h3><ol>
+<li>background-color    背景颜色    预定义的颜色值/十六进制/RGB代码</li>
+<li>background-image    背景图片    url(图片路径)</li>
+<li>background-repeat    是否平铺    repeat/ no-repeat /repeat-x/repeat-y</li>
+<li>background-position    背景位置    length/position 分别是x 和y坐标</li>
+<li>background-attachment    背景附着    scroll(背景滚动) /fixed(背景固定)</li>
+<li>背景简写    书写更简单    背景颜色 背景图片地址 背景平铺 背景滚动 背景位置</li>
+<li>背景色半透明    背景颜色半透明    background : rgba(0,0,0,0.3);后面必须是四个值<br>背景图片:实际开发常见于 logo 或者一些装饰性的小图片或者是超大的背景图片, 优点是非常便于控制位置.</li>
+</ol>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://blog.csdn.net/Augenstern_QXL/article/details/115560532">CSS基础班笔记(一)</a></li>
+<li><a href="https://blog.csdn.net/Augenstern_QXL/article/details/115560502">CSS基础班笔记(二)</a></li>
+<li><a href="https://blog.csdn.net/Augenstern_QXL/article/details/115726577">CSS基础班笔记(三)</a></li>
+<li><a href="https://blog.csdn.net/Augenstern_QXL/article/details/119172527">CSS进阶班笔记(四)</a></li>
+<li><a href="https://blog.csdn.net/Augenstern_QXL/article/details/120374974">CSS进阶班笔记(五)</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>html</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>surface完美安装linux操作系统、hexo博客</title>
     <url>/2021/03/19/Deepin%E7%B3%BB%E7%BB%9F%E4%B8%8Esurface%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="surface完美安装linux操作系统、hexo博客"><a href="#surface完美安装linux操作系统、hexo博客" class="headerlink" title="surface完美安装linux操作系统、hexo博客"></a><center>surface完美安装linux操作系统、hexo博客</center></h1><p>最近由于linux课程需要使用linux系统，于是在ubuntu、kali、Elementary OS、Chrome OS和deepin操作系统中选择一个比较靠谱的。<br><span id="more"></span></p>
@@ -1081,7 +1509,7 @@ transform_test &#x3D; transforms.Compose([
 </table>
 </div>
 <blockquote>
-<p>扩充准确度</p>
+<p>扩充准确度 EPOCHS=50</p>
 </blockquote>
 <div class="table-container">
 <table>
@@ -1156,6 +1584,20 @@ transform_test &#x3D; transforms.Compose([
 </tbody>
 </table>
 </div>
+<blockquote>
+<p>扩充准确度 EPOCHS=100</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">VGG19 在10000张测试集图片上的准确率：88.840
+正确率 ： plane : 91 %
+正确率 ：   car : 96 %
+正确率 ：  bird : 85 %
+正确率 ：   cat : 78 %
+正确率 ：  deer : 88 %
+正确率 ：   dog : 79 %
+正确率 ：  frog : 90 %
+正确率 ： horse : 93 %
+正确率 ：  ship : 94 %
+正确率 ： truck : 90 %<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>以上结果可以看出<code>ResNet34 2&gt;VGG19&gt;VGG16&gt;ResNet34 1&gt;AlexNet&gt;LeNet</code></p>
 ]]></content>
       <categories>
