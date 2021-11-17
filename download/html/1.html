@@ -548,14 +548,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    566
+                    883
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -591,7 +591,148 @@
     video {
         width: 20%;
     }
-</style>
+    div.img {
+        border: 1px solid #ccc;
+    }
+    
+    div.img:hover {
+        border: 1px solid #777;
+    }
+    
+    div.img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+    }
+    
+    @media only screen and (max-width: 700px){
+        .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+    }
+    
+    @media only screen and (max-width: 500px){
+        .responsive {
+            width: 100%;
+        }
+    }
+    
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    #navlist{position:relative;}
+    #navlist li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+    #navlist li, #navlist a{height:44px;display:block;}
+
+    #home{left:0px;width:46px;}
+    #home{background:url('img_navsprites_hover.gif') 0 0;}
+    #home a:hover{background: url('img_navsprites_hover.gif') 0 -45px;}
+
+    #prev{left:63px;width:43px;}
+    #prev{background:url('img_navsprites_hover.gif') -47px 0;}
+    #prev a:hover{background: url('img_navsprites_hover.gif') -47px -45px;}
+
+    #next{left:129px;width:43px;}
+    #next{background:url('img_navsprites_hover.gif') -91px 0;}
+    #next a:hover{background: url('img_navsprites_hover.gif') -91px -45px;}
+    * {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* 清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 响应式布局 layout - 在屏幕宽度小于 600px 时， 设置为上下堆叠元素 */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+    /* body {
+      counter-reset: section;
+    }
+    
+    h1 {
+      counter-reset: subsection;
+    }
+    
+    h1::before {
+      counter-increment: section;
+      content: "Section " counter(section) ". ";
+    }
+    
+    h2::before {
+      counter-increment: subsection;
+      content: counter(section) "." counter(subsection) " ";
+    } */
+    </style>
 <body>
     <h1>鲲鹏</h1>
     ddasdsadsad
@@ -608,293 +749,272 @@
    <label for="sex"> 男 </lable>
     <input type="radio" name="sex" id="sex" />
 </body>
+
+
+    <body>
+    
+    <h2 style="text-align:center">响应式图片相册</h2>
+    
+    <div class="responsive">
+      <div class="img">
+        <a target="_blank" href="img_fjords.jpg">
+          <img src="//www.runoob.com/wp-content/uploads/2016/04/img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    
+    <div class="responsive">
+      <div class="img">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="//www.runoob.com/wp-content/uploads/2016/04/img_forest.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="img">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="//www.runoob.com/wp-content/uploads/2016/04/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="img">
+        <a target="_blank" href="img_mountains.jpg">
+          <img src="//www.runoob.com/wp-content/uploads/2016/04/img_mountains.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="clearfix"></div>
+    
+    <div style="padding:6px;">
+      
+      <h4>重置浏览器大小查看效果</h4>
+    </div>
+
+    <ul id="navlist">
+        <li id="home"><a href="default.asp"></a></li>
+        <li id="prev"><a href="css_intro.asp"></a></li>
+        <li id="next"><a href="css_syntax.asp"></a></li>
+      </ul>
+      <h2>响应式表单</h2>
+<p>响应式表带可以根据浏览器窗口的大小重新布局各个元素，我们可以通过重置浏览器窗口大小来查看效果：</p>
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="china">china</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+    </body>
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+         
+        body {
+          font-family: Arial;
+          padding: 10px;
+          background: #f1f1f1;
+        }
+         
+        /* 头部标题 */
+        .header {
+          padding: 30px;
+          text-align: center;
+          background: white;
+        }
+         
+        .header h1 {
+          font-size: 50px;
+        }
+         
+        /* 导航条 */
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+         
+        /* 导航条链接 */
+        .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+         
+        /* 链接颜色修改 */
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+         
+        /* 创建两列 */
+        /* Left column */
+        .leftcolumn {   
+          float: left;
+          width: 75%;
+        }
+         
+        /* 右侧栏 */
+        .rightcolumn {
+          float: left;
+          width: 25%;
+          background-color: #f1f1f1;
+          padding-left: 20px;
+        }
+         
+        /* 图像部分 */
+        .fakeimg {
+          background-color: #aaa;
+          width: 100%;
+          padding: 20px;
+        }
+         
+        /* 文章卡片效果 */
+        .card {
+          background-color: white;
+          padding: 20px;
+          margin-top: 20px;
+        }
+         
+        /* 列后面清除浮动 */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+         
+        /* 底部 */
+        .footer {
+          padding: 20px;
+          text-align: center;
+          background: #ddd;
+          margin-top: 20px;
+        }
+         
+        /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+        @media screen and (max-width: 800px) {
+          .leftcolumn, .rightcolumn {   
+            width: 100%;
+            padding: 0;
+          }
+        }
+         
+        /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+        @media screen and (max-width: 400px) {
+          .topnav a {
+            float: none;
+            width: 100%;
+          }
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="header">
+          <h1>我的网页</h1>
+          <p>重置浏览器大小查看效果。</p>
+        </div>
+        
+        <div class="topnav">
+          <a href="#">链接</a>
+          <a href="#">链接</a>
+          <a href="#">链接</a>
+          <a href="#" style="float:right">链接</a>
+        </div>
+        
+        <div class="row">
+          <div class="leftcolumn">
+            <div class="card">
+              <h2>文章标题</h2>
+              <h5>2019 年 4 月 17日</h5>
+              <div class="fakeimg" style="height:200px;">图片</div>
+              <p>一些文本...</p>
+              <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+            </div>
+            <div class="card">
+              <h2>文章标题</h2>
+              <h5>2019 年 4 月 17日</h5>
+              <div class="fakeimg" style="height:200px;">图片</div>
+              <p>一些文本...</p>
+              <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+            </div>
+          </div>
+          <div class="rightcolumn">
+            <div class="card">
+              <h2>关于我</h2>
+              <div class="fakeimg" style="height:100px;">图片</div>
+              <p>关于我的一些信息..</p>
+            </div>
+            <div class="card">
+              <h3>热门文章</h3>
+              <div class="fakeimg"><p>图片</p></div>
+              <div class="fakeimg"><p>图片</p></div>
+              <div class="fakeimg"><p>图片</p></div>
+            </div>
+            <div class="card">
+              <h3>关注我</h3>
+              <p>一些文本...</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer">
+          <h2>底部区域</h2>
+        </div>
+        
+        </body>
 </html>
 
-<style>
-img {
-    border-style: none;}
 
-li {
-    list-style: none;
-    float: left
-}
-
-a {
-    text-decoration: none
-}
-
-.card {
-    background-color: rgba(25, 240, 229, 0);
-    width: 96%;
-    margin-left: 2%
-}
-
-.baidu {
-    float: left;
-    margin-left: 100px;
-}
-
-.baidu form {
-    position: relative
-}
-
-#Select {
-    float: left;
-    border: 1px solid #ccc
-}
-
-.Select-box {
-    text-align: center;
-    float: left;
-    position: relative;
-}
-
-.Select-box ul {
-    height: 40px;
-    position: absolute;
-    left: -1px;
-    top: 0px;
-    z-index: 9999;
-    background: #FFF;
-    border: 1px solid #ccc;
-    border-top: none;
-    overflow: hidden
-}
-
-.Select-box li {
-    width: 60px;
-    line-height: 40px;
-    font-size: 14px;
-    color: #484848;
-    border: 0;
-    cursor: pointer;
-}
-
-.Select-box li:hover {
-    background: #3385ff;
-    color: #FFF;
-}
-
-.Select-box .this_s {
-    color: #317ef3;
-}
-
-.Select-box .this_s:hover {
-    background: #FFF;
-    color: #317ef3;
-}
-
-.qingkong {
-    position: absolute;
-    right: 120px;
-    top: 12px;
-    width: 18px;
-    height: 18px;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 18px;
-    line-height: 16px;
-    color: #666666;
-    cursor: pointer;
-    text-align: center;
-    font-size: 14px;
-    display: none;
-}
-
-.qingkong:hover {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.qingkong:active {
-    background: rgba(0, 0, 0, 0.3);
-}
-
-
-.baidu-2 {
-    width: 100%;
-    height: 110px;
-    margin: 0 auto;
-    background: none;
-    padding-top: 50px;
-}
-
-.baidu-2 form {
-    width: 520px;
-    margin: 0 auto;
-}
-
-.baidu-2 input {
-    padding: 13px 8px;
-    opacity: 0.9;
-    font-size: 15px;
-}
-
-#Select-2 {
-    float: left;
-}
-
-.Select-box-2 {
-    text-align: center;
-    float: left;
-    position: relative;
-}
-
-.Select-box-2 ul {
-    height: 46px;
-    position: absolute;
-    left: 0px;
-    top: 1px;
-    z-index: 9999;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #ccc;
-    border-top: none;
-    overflow: hidden
-}
-
-.Select-box-2 li {
-    width: 60px;
-    line-height: 46px;
-    font-size: 15px;
-    color: #484848;
-    border: 0;
-    cursor: pointer;
-}
-
-.Select-box-2 li:hover {
-    background: #3385ff;
-    color: #FFF;
-}
-
-.Select-box-2 .this_s {
-    color: #317ef3;
-}
-
-.Select-box-2 .this_s:hover {
-    background: none;
-    color: #317ef3;
-}
-
-#kw-2 {
-    width: 335px;
-    outline: 0;
-    border: 1px solid #ccc;
-    background: rgba(255, 255, 255, 0.2);
-    color: #000000;
-    padding-left: 70px;
-    font-weight: bold;
-}
-
-#su-2 {
-    width: 90px;
-    background: blue;
-    border: none;
-    border-top: #3385ff 1px solid;
-    border-bottom: 1px solid #2d78f4;
-    color: #FFF;
-    cursor: pointer;
-    /*去轮廓阴影*/
-    outline: none;
-
-}
-
-#su-2:hover {
-    background: blue;
-    border-bottom: 1px solid blue;
-}
-
-#su-2:active {
-    background: blue;
-    box-shadow: inset 1px 1px 3px blue;
-    -webkit-box-shadow: inset 1px 1px 3px blue;
-}
-
-
-.jj-list {
-    width: 350px;
-    margin-right: 25px;
-    float: left;
-    margin-bottom: 20px;
-}
-
-.jj-list-tit {
-    font-size: 16px;
-    line-height: 25px;
-    color: #ffffff;
-    width: 100%;
-    padding-left: 38.5%;
-}
-
-.jj-list-con {
-    overflow: hidden;
-    margin: 0 auto
-}
-
-.jj-list-con li {
-    width: 31.333%;
-    margin: 1%;
-}
-
-.link-3 {
-    display: block;
-    background: rgba(0, 0, 0, .35);
-    color: #FFF;
-    font-size: 13px;
-    text-align: center;
-    line-height: 35px;
-    padding: 4px 0;
-    border-radius: 2px;
-    transition: all 0.2s
-}
-
-.link-3:hover {
-    background: rgba(0, 0, 0, .45);
-    font-size: 15px;
-    font-weight: bold
-}
-
-/*1栏 小于584*/
-@media only screen and (max-width: 584px) {
-    .navi-height {
-        height: 1300px;
-    }
-
-    .link-box {
-        margin-top: 5%;
-    }
-
-    .large-screen {
-        display: none;
-    }
-
-}
-
-/* 2栏 大于584  小于993px */
-@media only screen and (min-width: 584px) and (max-width: 993px){
-    .navi-height {
-        height: 800px;
-    }
-
-    .link-box {
-        margin-top: 5%;
-    }
-
-    .large-screen {
-        display: none;
-    }
-
-}
-
-
-/*3栏 大于993px*/
-@media only screen and (min-width: 993px) {
-
-    .navi-height {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-
-    }
-}
-</style>
                 
             </div>
             <hr/>
@@ -1126,7 +1246,7 @@ a {
         repo: '',
         owner: '',
         admin: null,
-        id: '2021-11-17T15-30-40',
+        id: '2021-11-17T16-53-07',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
