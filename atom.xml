@@ -165,33 +165,6 @@
   </entry>
   
   <entry>
-    <title>pyqt5_to_exe</title>
-    <link href="http://www.mmrsl.cn/2021/11/03/pyqt5-to-exe/"/>
-    <id>http://www.mmrsl.cn/2021/11/03/pyqt5-to-exe/</id>
-    <published>2021-11-03T10:16:41.000Z</published>
-    <updated>2021-11-03T10:56:28.590Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="python" scheme="http://www.mmrsl.cn/categories/python/"/>
-    
-    
-    <category term="python" scheme="http://www.mmrsl.cn/tags/python/"/>
-    
-    <category term="pyqt5" scheme="http://www.mmrsl.cn/tags/pyqt5/"/>
-    
-  </entry>
-  
-  <entry>
     <title>OCR_实时翻译</title>
     <link href="http://www.mmrsl.cn/2021/10/27/OCR-%E5%AE%9E%E6%97%B6%E7%BF%BB%E8%AF%91/"/>
     <id>http://www.mmrsl.cn/2021/10/27/OCR-%E5%AE%9E%E6%97%B6%E7%BF%BB%E8%AF%91/</id>
@@ -522,6 +495,25 @@
     
     
     <category term="linux" scheme="http://www.mmrsl.cn/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="http://www.mmrsl.cn/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>树莓派_命令行连接wifi</title>
+    <link href="http://www.mmrsl.cn/2021/06/28/%E6%A0%91%E8%8E%93%E6%B4%BE-%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5wifi/"/>
+    <id>http://www.mmrsl.cn/2021/06/28/%E6%A0%91%E8%8E%93%E6%B4%BE-%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5wifi/</id>
+    <published>2021-06-28T12:22:09.000Z</published>
+    <updated>2021-06-29T03:45:11.657Z</updated>
+    
+    
+    <summary type="html">树莓派_命令行连接wifi</summary>
+    
+    
+    
+    <category term="树莓派" scheme="http://www.mmrsl.cn/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
     
     <category term="linux" scheme="http://www.mmrsl.cn/tags/linux/"/>
