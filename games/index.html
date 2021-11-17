@@ -397,7 +397,47 @@
 
 </header>
 
-    
+    <style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  counter(section) ". ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(section) "." counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content: counter(section) "." counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content: counter(section) "." counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+
 
 
 
@@ -1054,7 +1094,7 @@ for (var i = 0; i < firstpages.length; i++) {
         repo: '',
         owner: '',
         admin: null,
-        id: '2021-11-17T17-05-27',
+        id: '2021-11-17T17-08-40',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 

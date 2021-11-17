@@ -397,7 +397,47 @@
 
 </header>
 
-    
+    <style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  counter(section) ". ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(section) "." counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content: counter(section) "." counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content: counter(section) "." counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+
 
 
 
@@ -901,12 +941,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%8E%A8%E5%85%8D/">
-                        <span class="chip bg-color">推免</span>
-                    </a>
-                    
                     <a href="/tags/%E5%8A%A0%E5%AF%86/">
                         <span class="chip bg-color">加密</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%8E%A8%E5%85%8D/">
+                        <span class="chip bg-color">推免</span>
                     </a>
                     
                 </div>
