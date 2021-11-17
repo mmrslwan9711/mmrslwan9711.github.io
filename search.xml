@@ -5398,6 +5398,49 @@ iptables-restore &lt; &#x2F;etc&#x2F;iptables.ipv4.nat
       </tags>
   </entry>
   <entry>
+    <title>Merry Christmas</title>
+    <url>/2020/12/24/merry_christmas/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+</center>
+
+<span id="more"></span>
+<ol>
+<li>git push 方法</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">git init
+git add .
+git commit -m &quot;first commit&quot;
+git remote add origin URL
+git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
+<ol>
+<li>圣诞网站模板分享</li>
+</ol>
+<ul>
+<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
+<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
+</ul>
+<ol>
+<li>电影分享 </li>
+</ol>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
+</ul>
+<center>
+
+
+<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
+      <categories>
+        <category>电影推荐</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux系统通信功率信道修改方法</title>
     <url>/2021/04/22/linux%E7%B3%BB%E7%BB%9F%E9%80%9A%E4%BF%A1%E5%8A%9F%E7%8E%87%E4%BF%A1%E9%81%93%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux系统通信功率信道修改方法"><a href="#linux系统通信功率信道修改方法" class="headerlink" title="linux系统通信功率信道修改方法"></a>linux系统通信功率信道修改方法</h1><h2 id="配置频段"><a href="#配置频段" class="headerlink" title="配置频段"></a>配置频段</h2><h3 id="可以先查看有哪些频段："><a href="#可以先查看有哪些频段：" class="headerlink" title="可以先查看有哪些频段："></a>可以先查看有哪些频段：</h3><p><code>iwlist channel</code> </p>
@@ -5867,49 +5910,6 @@ sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="
       </categories>
       <tags>
         <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Merry Christmas</title>
-    <url>/2020/12/24/merry_christmas/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-</center>
-
-<span id="more"></span>
-<ol>
-<li>git push 方法</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">git init
-git add .
-git commit -m &quot;first commit&quot;
-git remote add origin URL
-git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
-<ol>
-<li>圣诞网站模板分享</li>
-</ol>
-<ul>
-<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
-<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
-</ul>
-<ol>
-<li>电影分享 </li>
-</ol>
-<ul>
-<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
-</ul>
-<center>
-
-
-<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
-      <categories>
-        <category>电影推荐</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -7482,6 +7482,61 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </tags>
   </entry>
   <entry>
+    <title>实时视频传输APP</title>
+    <url>/2021/01/15/%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93APP/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- wp:heading -->
+<p><h2><strong>视频通信APP</strong><strong>的设计</strong></h2><br><!-- /wp:heading --></p>
+<!-- wp:heading -->
+<p><h2><strong>1       </strong>功能选择界面</h2><br><!-- /wp:heading --></p>
+<!-- wp:paragraph -->
+<p><p>通过程序设计，首先构建用户功能选择界面，其中包括用户名和该用户的个人签名、个人头像，本处签名选用为个人网站，新的个人网站：<a href="https://www.codekp.cn/">https://www.codekp.cn/</a>。向下依次是Home主界面，主要是APP的地图功能。第二项Gallery为第二个界面，为APP的蓝牙信道检测功能，第三项Slideshow为第三界面，为APP的视频通话功能。点击三个界面选项框可以跳转到自己的界面。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":254,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/1.png" alt="" class="wp-image-254"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图1 APP功能选择界面图</p><br><!-- /wp:paragraph --></p>
+<!-- wp:heading -->
+<p><h2><strong>2       </strong> 定位界面</h2><br><!-- /wp:heading --></p>
+<!-- wp:paragraph -->
+<p><p><a>定位界面，主要由上方的底层用户数据显示界面，和下方的定位地图界面，地图界面采用浏览器形式，并对定位点用红色鲜明坐标在图中进行了标记。</a></p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>首先，通过调用安卓底层接口，读取手机的经度、纬度等信息，然后设计了一个浏览器界面，由于时间关系没有调用高德地图的api，直接调用的web静态页面。通过修改URL的页面地址，即可获得如图所示的地图信息显示图。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":255,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/2-514x1024.png" alt="" class="wp-image-255"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图2 APP定位界面</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>其次，由于本文中获取的为GPS原始数据，采用的是国际坐标系(WGS84)，而中国地图采用的为火星坐标系(GCJ02)，其中进行了经纬度的转换，将原始数据转到精准的经纬度数据，并实现精确定位。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:heading -->
+<p><h2><strong>3       </strong>视频通话界面</h2><br><!-- /wp:heading --></p>
+<!-- wp:paragraph -->
+<p><p>视频通话界面，界面左侧为通话对方的实时视频图像，右方为己方的实时视频图像，下方为对方的端口号输入栏，右侧为设置，点击后会连接进对方的视频数据中。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>首先，先编写程序，读取安卓手机的相机接口。其中的原理是，首先将调用安卓手机的相机功能，然后将拍摄到的视频保存在存储器中的某个地方，然后读取该位置的图片，在右侧视频端进行显示，调用相机接口如图3所示。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>然后采用socket通信，其中有两种选择，TCP通信和UDP通信两种方式，其各自在自己的使用场景下有各自的优点，但是考虑到UDP不用握手可以完成双向传递，于是选择UDP，同时还可以提高通信速率。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":258,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/3-1-626x1024.png" alt="" class="wp-image-258"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图3 APP视频通话相机功能</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>获取到本地的图像数据后，对图像进行编码，通过UDP通讯协议进行传输，传输到本地IP：192.168.201.217，端口：8888上。然后在另对方手机中输入己方IP地址，点击START按钮即可开始视频通话，视频通话完成图像如下图所示。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":259,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/4-1-524x1024.png" alt="" class="wp-image-259"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图4 APP视频通话界面图</p><br><!-- /wp:paragraph --></p>
+<!-- wp:heading -->
+<p><h2><strong>4      APP</strong>视频demo</h2><br><!-- /wp:heading --></p>
+<!-- wp:video -->
+<p><figure class="wp-block-video"><video controls src="blob:http://www.mmrsl.cn/386ea6cf-f2e7-47b7-9cf8-8346885f1ddd"></video></figure><br><!-- /wp:video --></p>
+]]></content>
+      <categories>
+        <category>安卓APP</category>
+      </categories>
+      <tags>
+        <tag>安卓APP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于深度强化学习的超级马里奥和飞机大战自动控制</title>
     <url>/2021/03/15/%E5%9F%BA%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5%E5%92%8C%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="基于深度强化学习的超级马里奥和飞机大战自动控制"><a href="#基于深度强化学习的超级马里奥和飞机大战自动控制" class="headerlink" title="基于深度强化学习的超级马里奥和飞机大战自动控制"></a><center>基于深度强化学习的超级马里奥和飞机大战自动控制</center></h1><span id="more"></span>
@@ -7679,18 +7734,20 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#107;&#x70;&#64;&#x6d;&#x6d;&#114;&#x73;&#x6c;&#x2e;&#99;&#110;">&#107;&#x70;&#64;&#x6d;&#x6d;&#114;&#x73;&#x6c;&#x2e;&#99;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#x3a;&#107;&#112;&#x40;&#x6d;&#109;&#114;&#x73;&#108;&#46;&#x63;&#110;">&#107;&#112;&#x40;&#x6d;&#109;&#114;&#x73;&#108;&#46;&#x63;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
 <h2 id="6-结论"><a href="#6-结论" class="headerlink" title="6 结论"></a><strong>6 结论</strong></h2><p>深度强化学习已经成功地应用于许多问题，由于在围棋和其他电子游戏上的出色表现而受到广泛关注。我们主要关注在游戏产业中如何利用深度强化学习技术，提升效率，改变生产方式。深度强化学习技术，是通过让智能体在游戏世界内探索的方式来训练模型提升水平，在合适的设计的基础上，往往能得到比较高水平的模型。本文通过强化学习设计了两个智能体来完成《超级马里奥兄弟》和《飞机大战》这两款游戏。通过将博弈环境抽象为状态向量，并使用DQN算法来处理复杂的游戏环境，实现了以上两款游戏的自动控制。在本文中我们只是列举了深度强化学习在游戏中的一些比较典型的例子，其中有的已经为产业带来价值，且其应用前景广阔。</p>
 <h2 id="视频结果："><a href="#视频结果：" class="headerlink" title="视频结果："></a>视频结果：</h2><p><div>
-<span><video src="https://www.codekp.cn/Learning_Classwork/%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5.mp4"   controls="controls"></video></span>
 <span><video src="https://www.codekp.cn/Learning_Classwork/%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98.mp4"   controls="controls"></video></span>
+<strong ><center> 飞机大战 </center></strong>
+<span><video src="https://www.codekp.cn/Learning_Classwork/%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5.mp4"   controls="controls"></video></span>
+<strong ><center> 超级玛丽 </center></strong>
 </div></p>
 <style>
         video {
-            width: 45%;
+            width: 100%;
         }
 </style>
 
@@ -7718,61 +7775,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       <tags>
         <tag>强化学习</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>实时视频传输APP</title>
-    <url>/2021/01/15/%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93APP/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- wp:heading -->
-<p><h2><strong>视频通信APP</strong><strong>的设计</strong></h2><br><!-- /wp:heading --></p>
-<!-- wp:heading -->
-<p><h2><strong>1       </strong>功能选择界面</h2><br><!-- /wp:heading --></p>
-<!-- wp:paragraph -->
-<p><p>通过程序设计，首先构建用户功能选择界面，其中包括用户名和该用户的个人签名、个人头像，本处签名选用为个人网站，新的个人网站：<a href="https://www.codekp.cn/">https://www.codekp.cn/</a>。向下依次是Home主界面，主要是APP的地图功能。第二项Gallery为第二个界面，为APP的蓝牙信道检测功能，第三项Slideshow为第三界面，为APP的视频通话功能。点击三个界面选项框可以跳转到自己的界面。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":254,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/1.png" alt="" class="wp-image-254"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图1 APP功能选择界面图</p><br><!-- /wp:paragraph --></p>
-<!-- wp:heading -->
-<p><h2><strong>2       </strong> 定位界面</h2><br><!-- /wp:heading --></p>
-<!-- wp:paragraph -->
-<p><p><a>定位界面，主要由上方的底层用户数据显示界面，和下方的定位地图界面，地图界面采用浏览器形式，并对定位点用红色鲜明坐标在图中进行了标记。</a></p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>首先，通过调用安卓底层接口，读取手机的经度、纬度等信息，然后设计了一个浏览器界面，由于时间关系没有调用高德地图的api，直接调用的web静态页面。通过修改URL的页面地址，即可获得如图所示的地图信息显示图。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":255,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/2-514x1024.png" alt="" class="wp-image-255"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图2 APP定位界面</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>其次，由于本文中获取的为GPS原始数据，采用的是国际坐标系(WGS84)，而中国地图采用的为火星坐标系(GCJ02)，其中进行了经纬度的转换，将原始数据转到精准的经纬度数据，并实现精确定位。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:heading -->
-<p><h2><strong>3       </strong>视频通话界面</h2><br><!-- /wp:heading --></p>
-<!-- wp:paragraph -->
-<p><p>视频通话界面，界面左侧为通话对方的实时视频图像，右方为己方的实时视频图像，下方为对方的端口号输入栏，右侧为设置，点击后会连接进对方的视频数据中。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>首先，先编写程序，读取安卓手机的相机接口。其中的原理是，首先将调用安卓手机的相机功能，然后将拍摄到的视频保存在存储器中的某个地方，然后读取该位置的图片，在右侧视频端进行显示，调用相机接口如图3所示。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>然后采用socket通信，其中有两种选择，TCP通信和UDP通信两种方式，其各自在自己的使用场景下有各自的优点，但是考虑到UDP不用握手可以完成双向传递，于是选择UDP，同时还可以提高通信速率。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":258,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/3-1-626x1024.png" alt="" class="wp-image-258"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图3 APP视频通话相机功能</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>获取到本地的图像数据后，对图像进行编码，通过UDP通讯协议进行传输，传输到本地IP：192.168.201.217，端口：8888上。然后在另对方手机中输入己方IP地址，点击START按钮即可开始视频通话，视频通话完成图像如下图所示。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":259,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/4-1-524x1024.png" alt="" class="wp-image-259"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图4 APP视频通话界面图</p><br><!-- /wp:paragraph --></p>
-<!-- wp:heading -->
-<p><h2><strong>4      APP</strong>视频demo</h2><br><!-- /wp:heading --></p>
-<!-- wp:video -->
-<p><figure class="wp-block-video"><video controls src="blob:http://www.mmrsl.cn/386ea6cf-f2e7-47b7-9cf8-8346885f1ddd"></video></figure><br><!-- /wp:video --></p>
-]]></content>
-      <categories>
-        <category>安卓APP</category>
-      </categories>
-      <tags>
-        <tag>安卓APP</tag>
       </tags>
   </entry>
   <entry>
