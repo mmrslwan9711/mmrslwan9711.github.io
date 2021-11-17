@@ -530,21 +530,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-16
+                    2021-11-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.3k
+                    3.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    17 分
+                    18 分
                 </div>
                 
 
@@ -1069,6 +1069,21 @@ class ResNet34(nn.Module):
 <li>其他网络在LeNet基础上替换网络即可运行。</li>
 <li>参考我之前的文章安装环境<a href="https://www.mmrsl.cn/2021/10/22/ubuntu-NVIDIA30xx%E6%98%BE%E5%8D%A1%E5%AE%89%E8%A3%85/">Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装</a></li>
 </ol>
+<h3 id="数据扩充"><a href="#数据扩充" class="headerlink" title="数据扩充"></a>数据扩充</h3><pre class="line-numbers language-none"><code class="language-none">transform &#x3D; transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
+
+transform_train &#x3D; transforms.Compose([
+    # 对原始32*32图像四周各填充4个0像素（40*40），然后随机裁剪成32*32
+    transforms.RandomCrop(32, padding&#x3D;4),
+    # 按0.5的概率水平翻转图片
+    transforms.RandomHorizontalFlip(),
+    transforms.ToTensor(),
+    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
+
+transform_test &#x3D; transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="不同网络测试结果"><a href="#不同网络测试结果" class="headerlink" title="不同网络测试结果"></a>不同网络测试结果</h2><blockquote>
 <p>EPOCHS=50</p>
 </blockquote>
@@ -1193,6 +1208,82 @@ class ResNet34(nn.Module):
 <td>90%</td>
 <td>86%</td>
 <td>90%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>扩充准确度</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>网络类型</th>
+<th>VGG19</th>
+<th>ResNet34 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>准确度</td>
+<td>87.220%</td>
+<td>87.09%</td>
+</tr>
+<tr>
+<td>loss</td>
+<td>0.001</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>plane 准确度</td>
+<td>85%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>car 准确度</td>
+<td>93%</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>bird 准确度</td>
+<td>80%</td>
+<td>82%</td>
+</tr>
+<tr>
+<td>cat 准确度</td>
+<td>76%</td>
+<td>74%</td>
+</tr>
+<tr>
+<td>deer 准确度</td>
+<td>86%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>dog 准确度</td>
+<td>82%</td>
+<td>83%</td>
+</tr>
+<tr>
+<td>frog 准确度</td>
+<td>90%</td>
+<td>91%</td>
+</tr>
+<tr>
+<td>horse 准确度</td>
+<td>88%</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>ship 准确度</td>
+<td>93%</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>truck 准确度</td>
+<td>94%</td>
+<td>91%</td>
 </tr>
 </tbody>
 </table>
@@ -1793,7 +1884,7 @@ class ResNet34(nn.Module):
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">92.8k</span>&nbsp;字
+                class="white-color">93k</span>&nbsp;字
             
             
             
