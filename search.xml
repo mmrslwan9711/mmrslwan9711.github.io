@@ -2864,130 +2864,6 @@ systemctl status rc-local.service<span aria-hidden="true" class="line-numbers-ro
       </tags>
   </entry>
   <entry>
-    <title>b站up主推荐</title>
-    <url>/2021/04/14/b%E7%AB%99up%E4%B8%BB%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=96244032&bvid=BV1jE41137eu&cid=164144278&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-
-
-<span id="more"></span>
-<h1 id="b站up主推荐"><a href="#b站up主推荐" class="headerlink" title="b站up主推荐"></a>b站up主推荐</h1><p>稚晖君，最近堕落了两三年就啥也没认真学吃老本，最近看到了这个up主，就感觉我荒废了一段时间，他会的其实我理应都会，就是最近开始有点颓废了。</p>
-<p>就感觉他给了我一些启发，让我觉得不能在这样下去了，人家都华为天才少年了，我还在咸鱼的路上越走越远，要努力！要奋斗！</p>
-<p>引用稚晖君最后的一句话，</p>
-<blockquote>
-<p>越热爱越幸运，<br>资源会跟着你的决心走的。</p>
-</blockquote>
-<ul>
-<li>[x] <a href="http://www.pengzhihui.com/">稚晖君的个人博客</a></li>
-</ul>
-<h2 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=91299923&bvid=BV1F7411u71s&cid=155884314&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-
-<h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><ul>
-<li>[x] XMind ZEN : 思维导图</li>
-<li>[x] Typora : markdown</li>
-<li>[x] 有道云笔记：同步，私有云图床</li>
-<li><p>[x] 电路</p>
-</li>
-<li><p>[x] AD：主要设计工具</p>
-</li>
-<li>[ ] Eagle：转换一些开源的eagle格式PCB文档</li>
-<li>[x] fritzing：EDA软件，也可以用作矢量风格说明软件</li>
-</ul>
-<h3 id="机械"><a href="#机械" class="headerlink" title="机械"></a>机械</h3><ul>
-<li>[ ] Rhinocores：参数化建模，不适合不规则曲面</li>
-<li>[ ] Fusion360：全能</li>
-<li>[ ] Cinema4D</li>
-<li>[ ] KeyShot：仿真</li>
-<li>[ ] inkScape：矢量图轨迹</li>
-<li>[ ] ArtCAM：生成雕刻机的刀路文件</li>
-</ul>
-<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ul>
-<li>[x] Visual Studio</li>
-<li>[x] Android Studio：手机APP开发</li>
-<li>[ ] Jetbrain全家桶</li>
-<li>[x] pycharm：python</li>
-<li>[x] Rider：C#开发</li>
-<li>[x] Clion：C &amp; C++</li>
-<li>[ ] Unity：3D仿真</li>
-<li>[x] Keil</li>
-<li>[ ] CubeMX</li>
-<li>[x] Arduino</li>
-<li>[ ] KendryteIDE：K210</li>
-<li>[ ] Processing：数字多媒体艺术</li>
-<li>[x] matlab：建模仿真</li>
-</ul>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
-<li>[x] XShell &amp; Xftp</li>
-<li>[x] 串口调试助手 &amp; 网络调试助手</li>
-<li>[ ] Cmake</li>
-<li>[x] GitGUI</li>
-<li>[ ] CoolFormat：代码格式</li>
-<li>[ ] IDA：反编译</li>
-<li>[ ] wireshark：网络抓包</li>
-<li>[ ] SerialChart：串口绘图</li>
-<li>[ ] Netron：图形化查看神经网络模型</li>
-<li>[ ] beyond Compare：代码比对</li>
-</ul>
-<h2 id="硬件环境"><a href="#硬件环境" class="headerlink" title="硬件环境"></a>硬件环境</h2><p>总结来自稚晖君的硬件篇视频</p>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=73533882&bvid=BV19E411a7Sf&cid=125772471&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-
-<p>电脑桌：转角桌（右边电脑区+左边电工区）</p>
-<h3 id="电脑区"><a href="#电脑区" class="headerlink" title="电脑区"></a>电脑区</h3><ul>
-<li>[] iQniX红轴机械键盘</li>
-<li>[] Xbox one</li>
-<li>[x] 个人服务器</li>
-</ul>
-<h3 id="电工区"><a href="#电工区" class="headerlink" title="电工区"></a>电工区</h3><ul>
-<li>[] 防割板</li>
-<li>[] 热风枪</li>
-<li>[] 控温电烙铁</li>
-<li>[] 焊接辅助：飞线，锡球，焊锡膏，铁丝球，助焊剂，洗板水……</li>
-<li>[] 数控电源</li>
-<li>[] 元器件盒： 装主控</li>
-<li>[] 电阻电容样品本</li>
-<li>[] 示波器：袖珍 20Mhz</li>
-</ul>
-<h3 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h3><ul>
-<li>[x] Android Studio</li>
-<li>[x] Linux设备驱动开发详解</li>
-<li>[x] 程序员的数学</li>
-<li>[ ] 雷军传</li>
-<li>[ ] 三体</li>
-<li>[x] 算法导论</li>
-<li>[ ] Android 设计模式</li>
-<li>[ ] 大话计算机</li>
-</ul>
-<h3 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h3><ul>
-<li>[x] 路由器</li>
-<li>[ ] 移动硬盘柜 （10T x 2）：深度学习数据集</li>
-<li>[ ] 合莱SP-20</li>
-<li><p>[ ] 机械</p>
-</li>
-<li><p>[ ] LCD的光固化3D打印机：体积比较小精度高的模型</p>
-</li>
-<li>[ ] FDM的3D打印机：居家创客必备</li>
-<li>[ ] 小型雕刻机</li>
-</ul>
-<ul>
-<li>[x] 打钩是已经会的和拥有的，未来工作了希望可以也买这么多东西哈哈。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>b站</category>
-      </categories>
-      <tags>
-        <tag>b站</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>TensorFlow-lite模型训练</title>
     <url>/2021/06/11/TensorFlow-lite%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="TensorFlow-lite模型训练"><a href="#TensorFlow-lite模型训练" class="headerlink" title="TensorFlow-lite模型训练"></a>TensorFlow-lite模型训练</h1><h2 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h2><h3 id="安装pytorch、conda"><a href="#安装pytorch、conda" class="headerlink" title="安装pytorch、conda"></a>安装pytorch、conda</h3><p>  该教程详情请见：<a href="https://segmentfault.com/a/1190000020889696">PyTorch环境配置及安装</a></p>
@@ -3131,6 +3007,130 @@ protoc --python_out&#x3D;. C:\tensorflow1\models\research\object_detection\proto
       </categories>
       <tags>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>b站up主推荐</title>
+    <url>/2021/04/14/b%E7%AB%99up%E4%B8%BB%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=96244032&bvid=BV1jE41137eu&cid=164144278&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+
+
+<span id="more"></span>
+<h1 id="b站up主推荐"><a href="#b站up主推荐" class="headerlink" title="b站up主推荐"></a>b站up主推荐</h1><p>稚晖君，最近堕落了两三年就啥也没认真学吃老本，最近看到了这个up主，就感觉我荒废了一段时间，他会的其实我理应都会，就是最近开始有点颓废了。</p>
+<p>就感觉他给了我一些启发，让我觉得不能在这样下去了，人家都华为天才少年了，我还在咸鱼的路上越走越远，要努力！要奋斗！</p>
+<p>引用稚晖君最后的一句话，</p>
+<blockquote>
+<p>越热爱越幸运，<br>资源会跟着你的决心走的。</p>
+</blockquote>
+<ul>
+<li>[x] <a href="http://www.pengzhihui.com/">稚晖君的个人博客</a></li>
+</ul>
+<h2 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=91299923&bvid=BV1F7411u71s&cid=155884314&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+
+<h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><ul>
+<li>[x] XMind ZEN : 思维导图</li>
+<li>[x] Typora : markdown</li>
+<li>[x] 有道云笔记：同步，私有云图床</li>
+<li><p>[x] 电路</p>
+</li>
+<li><p>[x] AD：主要设计工具</p>
+</li>
+<li>[ ] Eagle：转换一些开源的eagle格式PCB文档</li>
+<li>[x] fritzing：EDA软件，也可以用作矢量风格说明软件</li>
+</ul>
+<h3 id="机械"><a href="#机械" class="headerlink" title="机械"></a>机械</h3><ul>
+<li>[ ] Rhinocores：参数化建模，不适合不规则曲面</li>
+<li>[ ] Fusion360：全能</li>
+<li>[ ] Cinema4D</li>
+<li>[ ] KeyShot：仿真</li>
+<li>[ ] inkScape：矢量图轨迹</li>
+<li>[ ] ArtCAM：生成雕刻机的刀路文件</li>
+</ul>
+<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ul>
+<li>[x] Visual Studio</li>
+<li>[x] Android Studio：手机APP开发</li>
+<li>[ ] Jetbrain全家桶</li>
+<li>[x] pycharm：python</li>
+<li>[x] Rider：C#开发</li>
+<li>[x] Clion：C &amp; C++</li>
+<li>[ ] Unity：3D仿真</li>
+<li>[x] Keil</li>
+<li>[ ] CubeMX</li>
+<li>[x] Arduino</li>
+<li>[ ] KendryteIDE：K210</li>
+<li>[ ] Processing：数字多媒体艺术</li>
+<li>[x] matlab：建模仿真</li>
+</ul>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
+<li>[x] XShell &amp; Xftp</li>
+<li>[x] 串口调试助手 &amp; 网络调试助手</li>
+<li>[ ] Cmake</li>
+<li>[x] GitGUI</li>
+<li>[ ] CoolFormat：代码格式</li>
+<li>[ ] IDA：反编译</li>
+<li>[ ] wireshark：网络抓包</li>
+<li>[ ] SerialChart：串口绘图</li>
+<li>[ ] Netron：图形化查看神经网络模型</li>
+<li>[ ] beyond Compare：代码比对</li>
+</ul>
+<h2 id="硬件环境"><a href="#硬件环境" class="headerlink" title="硬件环境"></a>硬件环境</h2><p>总结来自稚晖君的硬件篇视频</p>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=73533882&bvid=BV19E411a7Sf&cid=125772471&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+
+<p>电脑桌：转角桌（右边电脑区+左边电工区）</p>
+<h3 id="电脑区"><a href="#电脑区" class="headerlink" title="电脑区"></a>电脑区</h3><ul>
+<li>[] iQniX红轴机械键盘</li>
+<li>[] Xbox one</li>
+<li>[x] 个人服务器</li>
+</ul>
+<h3 id="电工区"><a href="#电工区" class="headerlink" title="电工区"></a>电工区</h3><ul>
+<li>[] 防割板</li>
+<li>[] 热风枪</li>
+<li>[] 控温电烙铁</li>
+<li>[] 焊接辅助：飞线，锡球，焊锡膏，铁丝球，助焊剂，洗板水……</li>
+<li>[] 数控电源</li>
+<li>[] 元器件盒： 装主控</li>
+<li>[] 电阻电容样品本</li>
+<li>[] 示波器：袖珍 20Mhz</li>
+</ul>
+<h3 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h3><ul>
+<li>[x] Android Studio</li>
+<li>[x] Linux设备驱动开发详解</li>
+<li>[x] 程序员的数学</li>
+<li>[ ] 雷军传</li>
+<li>[ ] 三体</li>
+<li>[x] 算法导论</li>
+<li>[ ] Android 设计模式</li>
+<li>[ ] 大话计算机</li>
+</ul>
+<h3 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h3><ul>
+<li>[x] 路由器</li>
+<li>[ ] 移动硬盘柜 （10T x 2）：深度学习数据集</li>
+<li>[ ] 合莱SP-20</li>
+<li><p>[ ] 机械</p>
+</li>
+<li><p>[ ] LCD的光固化3D打印机：体积比较小精度高的模型</p>
+</li>
+<li>[ ] FDM的3D打印机：居家创客必备</li>
+<li>[ ] 小型雕刻机</li>
+</ul>
+<ul>
+<li>[x] 打钩是已经会的和拥有的，未来工作了希望可以也买这么多东西哈哈。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>b站</category>
+      </categories>
+      <tags>
+        <tag>b站</tag>
       </tags>
   </entry>
   <entry>
@@ -4003,8 +4003,11 @@ https://www.html5tricks.com/ -->
 </blockquote>
 <p><img src="https://www.mmrsl.cn/download/img/html5/7.png" alt=""></p>
 <blockquote>
-<p>可以访问地址，以上述方法获取我修改后的源码：<br><a href="https://www.mmrsl.cn/3droom/">3droom</a></p>
+<p>可以访问地址，以上述方法获取我修改后的源码：</p>
 </blockquote>
+<p><a href="https://www.mmrsl.cn/3droom/">3droom</a></p>
+<h2 id="进行一些优化，即可做出不一样的地图"><a href="#进行一些优化，即可做出不一样的地图" class="headerlink" title="进行一些优化，即可做出不一样的地图"></a>进行一些优化，即可做出不一样的地图</h2><p>如下图所示：<br><img src="https://www.mmrsl.cn/download/img/html5/8.png" alt=""></p>
+<p><a href="https://www.mmrsl.cn/3droom2/">3droom2</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -7319,6 +7322,64 @@ c1<span class="token operator">=</span><span class="token function">input</span>
       </tags>
   </entry>
   <entry>
+    <title>合成厦大</title>
+    <url>/2021/01/31/%E5%90%88%E6%88%90%E5%8E%A6%E5%A4%A7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="合成厦大"><a href="#合成厦大" class="headerlink" title="合成厦大"></a><center>合成厦大</center></h1><p>最近合成大西瓜蛮火的，就想把里面的图片改了，然后做一个自己的合成厦大。<br><span id="more"></span></p>
+<h2 id="找合成大西瓜的源码"><a href="#找合成大西瓜的源码" class="headerlink" title="找合成大西瓜的源码"></a>找合成大西瓜的源码</h2><p>首先只是想做个python的发现没有python的源码，但是最后找到了一个网址，找到了源码<br><a href="https://github.com/liyupi/daxigua/releases/tag/1.0.0" title="合成大西瓜">合成大西瓜</a>大家也可以自行下载。</p>
+<h2 id="然后看懂源码里面的东西"><a href="#然后看懂源码里面的东西" class="headerlink" title="然后看懂源码里面的东西"></a>然后看懂源码里面的东西</h2><p>其实仔细看看就是把里面的资源文件给改掉就可以达到目的，接下来编写excel记录需要修改的文件，然后依次修改修改里面的文件。<br>可以通过F12开发者模式找到每种水果对应什么图片。<br>这里我用excel将所有水果修改后的图片、像素和图片内容一一对应，有需要的可以自行修改内容：<br><a href="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_d946f9006675e38d1a687a8510a70136.jpg"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_d946f9006675e38d1a687a8510a70136.jpg" alt=""></a><br>可以参考上诉的图片进行修改。</p>
+<h2 id="去广告"><a href="#去广告" class="headerlink" title="去广告"></a>去广告</h2><p>去广告其实如果会的话可以F12找到那个广告的网址，然后将广告网址替换成自己的网址。（不多赘述，可以自行尝试）</p>
+<h2 id="上线发布"><a href="#上线发布" class="headerlink" title="上线发布"></a>上线发布</h2><p>本人采用的是github，如何上传可以参考我之前的文章—<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/" title="如何优雅的制作表白网站">如何优雅的制作表白网站</a>。</p>
+<h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><p>GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。</p>
+<p>GitHub 于 2008 年 4 月 10 日正式上线，除了 Git 代码仓库托管及基本的 Web 管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过 350 万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等。</p>
+<p>本文需要先下载git <a href="https://git-scm.com/downloads">下载地址</a></p>
+<p>git教程请参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰Git</a></p>
+<h3 id="首先我们来学习一下，一些git的push方法"><a href="#首先我们来学习一下，一些git的push方法" class="headerlink" title="首先我们来学习一下，一些git的push方法"></a>首先我们来学习一下，一些git的push方法</h3><pre class="line-numbers language-none"><code class="language-none">git init
+git add .
+git commit -m &quot;first commit&quot;
+git branch -M main
+git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;HCXMU.git
+git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>本过程可以参考我为大家寻找的教程<a href="https://www.cnblogs.com/lijiayi/p/githubpages.html">github创建账号、上传文件</a></p>
+<h5 id="合成大西瓜源码下载"><a href="#合成大西瓜源码下载" class="headerlink" title="合成大西瓜源码下载"></a>合成大西瓜源码下载</h5><p>建议采用命令行形式下载会更快，当然可以直接downloadzip文件。</p>
+<h5 id="上传源码到自己的web"><a href="#上传源码到自己的web" class="headerlink" title="上传源码到自己的web"></a>上传源码到自己的web</h5><ol>
+<li>创建自己的仓库 参考1中教程</li>
+<li>输入git init<pre class="line-numbers language-none"><code class="language-none">git init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<img src="https://img-blog.csdnimg.cn/20201212232314167.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">可以看到git创建了一个.git文件</li>
+<li><p>git add .</p>
+<pre class="line-numbers language-none"><code class="language-none">git add .<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20201212232615556.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+</li>
+<li><p>git commit -m “first commit”</p>
+<pre class="line-numbers language-none"><code class="language-none">git commit -m &quot;first commit&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ol>
+<p><img src="https://img-blog.csdnimg.cn/20201212232746366.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<ol>
+<li>git remote add origin <a href="https://github.com/mmrslwan1110/Clock.git">https://github.com/mmrslwan1110/Clock.git</a><pre class="line-numbers language-none"><code class="language-none">
+git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<img src="https://img-blog.csdnimg.cn/20201212233029800.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></li>
+</ol>
+<p>记得换成自己的链接哦</p>
+<ol>
+<li>git push -u origin master<pre class="line-numbers language-none"><code class="language-none">git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<img src="https://img-blog.csdnimg.cn/20201212233354499.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">已经发布到自己的网站了可以访问看看自己的网站测一下效果哦。</li>
+</ol>
+<h2 id="发现由于我替换的资源是白底的导致游戏很奇怪"><a href="#发现由于我替换的资源是白底的导致游戏很奇怪" class="headerlink" title="发现由于我替换的资源是白底的导致游戏很奇怪"></a>发现由于我替换的资源是白底的导致游戏很奇怪</h2><p> 该问题有两种解决方法</p>
+<ul>
+<li>1.修改图片，想办法将图片的底层白底删除成为空白</li>
+<li>2.修改背景，将背景变为白色。<h3 id="为了偷懒先采用方法2改背景"><a href="#为了偷懒先采用方法2改背景" class="headerlink" title="为了偷懒先采用方法2改背景"></a>为了偷懒先采用方法2改背景</h3>先用F12开发者模式找到背景所在的位置<br><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/CS4LXVGR7B5BT322.png" alt=""><br>将图片修改为白色，接下来就很简单了，测试<br><a href="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_7c98485a44cce7e35a943f7808afeebe.jpg"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_7c98485a44cce7e35a943f7808afeebe.jpg" alt=""></a><br>测试发现还是会有突兀的白色边框出现，接下来咱们只能修改每张素材的背景颜色了。<h3 id="采用方法1修改图片背景"><a href="#采用方法1修改图片背景" class="headerlink" title="采用方法1修改图片背景"></a>采用方法1修改图片背景</h3>通过PS对每张图片进行修改，将所有图片的背景白色底全部去掉，然后就恢复到了这样。<br><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/E45185267C0E492E2A061A6C3E7E9DF7.jpg" alt=""><br>接下来将之前的底复原，即可得到结果，最终版本如下<br><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/BD7F4999E4F669692729B18BB026DC2B.jpg" alt=""></li>
+</ul>
+<h2 id="合成大西瓜游戏运行"><a href="#合成大西瓜游戏运行" class="headerlink" title="合成大西瓜游戏运行"></a>合成大西瓜游戏运行</h2><p>体验网址为：<a href="https://www.codekp.cn/HCXMU/index.html" title="合成厦大">合成厦大</a></p>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>合成大西瓜</tag>
+        <tag>厦门大学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo、markdown图片并行显示</title>
     <url>/2020/11/28/%E5%9B%BE%E7%89%87%E5%B9%B6%E8%A1%8C%E6%98%BE%E7%A4%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo、markdown图片并行显示"><a href="#hexo、markdown图片并行显示" class="headerlink" title="hexo、markdown图片并行显示"></a><center>hexo、markdown图片并行显示</center></h1><h2 id="1-markdown图片显示方法"><a href="#1-markdown图片显示方法" class="headerlink" title="1.markdown图片显示方法"></a>1.markdown图片显示方法</h2><h3 id="1-1-Alt-text"><a href="#1-1-Alt-text" class="headerlink" title="1.1 Alt text"></a>1.1 <a href="">Alt text</a></h3><pre class="line-numbers language-none"><code class="language-none">![Alt text](https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20190811133756709.png &quot;optional title&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -7390,64 +7451,6 @@ c1<span class="token operator">=</span><span class="token function">input</span>
       <tags>
         <tag>markdown</tag>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>合成厦大</title>
-    <url>/2021/01/31/%E5%90%88%E6%88%90%E5%8E%A6%E5%A4%A7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="合成厦大"><a href="#合成厦大" class="headerlink" title="合成厦大"></a><center>合成厦大</center></h1><p>最近合成大西瓜蛮火的，就想把里面的图片改了，然后做一个自己的合成厦大。<br><span id="more"></span></p>
-<h2 id="找合成大西瓜的源码"><a href="#找合成大西瓜的源码" class="headerlink" title="找合成大西瓜的源码"></a>找合成大西瓜的源码</h2><p>首先只是想做个python的发现没有python的源码，但是最后找到了一个网址，找到了源码<br><a href="https://github.com/liyupi/daxigua/releases/tag/1.0.0" title="合成大西瓜">合成大西瓜</a>大家也可以自行下载。</p>
-<h2 id="然后看懂源码里面的东西"><a href="#然后看懂源码里面的东西" class="headerlink" title="然后看懂源码里面的东西"></a>然后看懂源码里面的东西</h2><p>其实仔细看看就是把里面的资源文件给改掉就可以达到目的，接下来编写excel记录需要修改的文件，然后依次修改修改里面的文件。<br>可以通过F12开发者模式找到每种水果对应什么图片。<br>这里我用excel将所有水果修改后的图片、像素和图片内容一一对应，有需要的可以自行修改内容：<br><a href="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_d946f9006675e38d1a687a8510a70136.jpg"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_d946f9006675e38d1a687a8510a70136.jpg" alt=""></a><br>可以参考上诉的图片进行修改。</p>
-<h2 id="去广告"><a href="#去广告" class="headerlink" title="去广告"></a>去广告</h2><p>去广告其实如果会的话可以F12找到那个广告的网址，然后将广告网址替换成自己的网址。（不多赘述，可以自行尝试）</p>
-<h2 id="上线发布"><a href="#上线发布" class="headerlink" title="上线发布"></a>上线发布</h2><p>本人采用的是github，如何上传可以参考我之前的文章—<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/" title="如何优雅的制作表白网站">如何优雅的制作表白网站</a>。</p>
-<h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><p>GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。</p>
-<p>GitHub 于 2008 年 4 月 10 日正式上线，除了 Git 代码仓库托管及基本的 Web 管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过 350 万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等。</p>
-<p>本文需要先下载git <a href="https://git-scm.com/downloads">下载地址</a></p>
-<p>git教程请参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰Git</a></p>
-<h3 id="首先我们来学习一下，一些git的push方法"><a href="#首先我们来学习一下，一些git的push方法" class="headerlink" title="首先我们来学习一下，一些git的push方法"></a>首先我们来学习一下，一些git的push方法</h3><pre class="line-numbers language-none"><code class="language-none">git init
-git add .
-git commit -m &quot;first commit&quot;
-git branch -M main
-git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;HCXMU.git
-git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>本过程可以参考我为大家寻找的教程<a href="https://www.cnblogs.com/lijiayi/p/githubpages.html">github创建账号、上传文件</a></p>
-<h5 id="合成大西瓜源码下载"><a href="#合成大西瓜源码下载" class="headerlink" title="合成大西瓜源码下载"></a>合成大西瓜源码下载</h5><p>建议采用命令行形式下载会更快，当然可以直接downloadzip文件。</p>
-<h5 id="上传源码到自己的web"><a href="#上传源码到自己的web" class="headerlink" title="上传源码到自己的web"></a>上传源码到自己的web</h5><ol>
-<li>创建自己的仓库 参考1中教程</li>
-<li>输入git init<pre class="line-numbers language-none"><code class="language-none">git init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="https://img-blog.csdnimg.cn/20201212232314167.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">可以看到git创建了一个.git文件</li>
-<li><p>git add .</p>
-<pre class="line-numbers language-none"><code class="language-none">git add .<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20201212232615556.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-</li>
-<li><p>git commit -m “first commit”</p>
-<pre class="line-numbers language-none"><code class="language-none">git commit -m &quot;first commit&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-</ol>
-<p><img src="https://img-blog.csdnimg.cn/20201212232746366.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<ol>
-<li>git remote add origin <a href="https://github.com/mmrslwan1110/Clock.git">https://github.com/mmrslwan1110/Clock.git</a><pre class="line-numbers language-none"><code class="language-none">
-git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<img src="https://img-blog.csdnimg.cn/20201212233029800.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></li>
-</ol>
-<p>记得换成自己的链接哦</p>
-<ol>
-<li>git push -u origin master<pre class="line-numbers language-none"><code class="language-none">git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="https://img-blog.csdnimg.cn/20201212233354499.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">已经发布到自己的网站了可以访问看看自己的网站测一下效果哦。</li>
-</ol>
-<h2 id="发现由于我替换的资源是白底的导致游戏很奇怪"><a href="#发现由于我替换的资源是白底的导致游戏很奇怪" class="headerlink" title="发现由于我替换的资源是白底的导致游戏很奇怪"></a>发现由于我替换的资源是白底的导致游戏很奇怪</h2><p> 该问题有两种解决方法</p>
-<ul>
-<li>1.修改图片，想办法将图片的底层白底删除成为空白</li>
-<li>2.修改背景，将背景变为白色。<h3 id="为了偷懒先采用方法2改背景"><a href="#为了偷懒先采用方法2改背景" class="headerlink" title="为了偷懒先采用方法2改背景"></a>为了偷懒先采用方法2改背景</h3>先用F12开发者模式找到背景所在的位置<br><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/CS4LXVGR7B5BT322.png" alt=""><br>将图片修改为白色，接下来就很简单了，测试<br><a href="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_7c98485a44cce7e35a943f7808afeebe.jpg"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_7c98485a44cce7e35a943f7808afeebe.jpg" alt=""></a><br>测试发现还是会有突兀的白色边框出现，接下来咱们只能修改每张素材的背景颜色了。<h3 id="采用方法1修改图片背景"><a href="#采用方法1修改图片背景" class="headerlink" title="采用方法1修改图片背景"></a>采用方法1修改图片背景</h3>通过PS对每张图片进行修改，将所有图片的背景白色底全部去掉，然后就恢复到了这样。<br><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/E45185267C0E492E2A061A6C3E7E9DF7.jpg" alt=""><br>接下来将之前的底复原，即可得到结果，最终版本如下<br><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/BD7F4999E4F669692729B18BB026DC2B.jpg" alt=""></li>
-</ul>
-<h2 id="合成大西瓜游戏运行"><a href="#合成大西瓜游戏运行" class="headerlink" title="合成大西瓜游戏运行"></a>合成大西瓜游戏运行</h2><p>体验网址为：<a href="https://www.codekp.cn/HCXMU/index.html" title="合成厦大">合成厦大</a></p>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>合成大西瓜</tag>
-        <tag>厦门大学</tag>
       </tags>
   </entry>
   <entry>
@@ -7655,7 +7658,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#107;&#x70;&#x40;&#109;&#109;&#114;&#115;&#x6c;&#x2e;&#99;&#x6e;">&#107;&#x70;&#x40;&#109;&#109;&#114;&#115;&#x6c;&#x2e;&#99;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x6b;&#x70;&#x40;&#x6d;&#x6d;&#x72;&#115;&#x6c;&#46;&#99;&#110;">&#x6b;&#x70;&#x40;&#x6d;&#x6d;&#x72;&#115;&#x6c;&#46;&#99;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -8645,6 +8648,69 @@ y &#x3D; rchan(x);
       </tags>
   </entry>
   <entry>
+    <title>深度学习_花书</title>
+    <url>/2020/07/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E8%8A%B1%E4%B9%A6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><span id="more"></span>
+<p>&nbsp;&nbsp; 深度学习(DL, Deep Learning)是机器学习(ML, Machine Learning)领域中一个新的研究方向，它被引入机器学习使其更接近于最初的目标——人工智能(AI, Artificial Intelligence)。<br>&nbsp;&nbsp; 深度学习是学习样本数据的内在规律和表示层次，这些学习过程中获得的信息对诸如文字，图像和声音等数据的解释有很大的帮助。它的最终目标是让机器能够像人一样具有分析学习能力，能够识别文字、图像和声音等数据。 深度学习是一个复杂的机器学习算法，在语音和图像识别方面取得的效果，远远超过先前相关技术。<br>&nbsp;&nbsp; 深度学习在搜索技术，数据挖掘，机器学习，机器翻译，自然语言处理，多媒体学习，语音，推荐和个性化技术，以及其他相关领域都取得了很多成果。深度学习使机器模仿视听和思考等人类的活动，解决了很多复杂的模式识别难题，使得人工智能相关技术取得了很大进步。  </p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+        <tag>分类器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>百度谷歌搜索引擎索引</title>
+    <url>/2020/12/04/%E7%99%BE%E5%BA%A6%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%8B%97%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%B4%A2%E5%BC%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="百度谷歌搜索引擎索引"><a href="#百度谷歌搜索引擎索引" class="headerlink" title="百度谷歌搜索引擎索引"></a><center>百度谷歌搜索引擎索引</center></h2><span id="more"></span>
+<h3 id="简单检索"><a href="#简单检索" class="headerlink" title="简单检索"></a>简单检索</h3><p>参考<a href="https://jingyan.baidu.com/article/6b97984dee19b81ca3b0bf4c.html">如何让自己的网站快速被百度收录</a></p>
+<ol>
+<li>提交链接。</li>
+</ol>
+<ul>
+<li>Google: <a href="http://www.google.com/addurl/?hl=zh-CN">Google 网站站长工具</a></li>
+<li>Baidu: <a href="https://ziyuan.baidu.com/linksubmit/url">url提交_站长工具</a></li>
+</ul>
+<ol>
+<li>最有用的方法</li>
+</ol>
+<ul>
+<li>知乎</li>
+<li>CSDN</li>
+<li>豆瓣</li>
+<li>贴吧等平台<br>发帖，贴出自己的网址，搜索引擎就会进行索引。</li>
+</ul>
+<ol>
+<li>2020/12/4<br>目前本网站未被任何引擎索引。<center>
+<img src="https://www.codekp.cn/download/img/csdn/百度为索引.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ol>
+<h2 id="比较麻烦的检索方式"><a href="#比较麻烦的检索方式" class="headerlink" title="比较麻烦的检索方式"></a>比较麻烦的检索方式</h2><p>  将检索文件放在网站根目录下。<br>  <a href="https://www.codekp.cn/baidu_verify_code-De28227qRL.html">测试连接</a></p>
+<p><center>
+<img src="https://www.codekp.cn/download/img/csdn/检索.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center><br><pre class="line-numbers language-none"><code class="language-none">hexo clean
+hexo g
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>将备案号填入即可很快被检索。</p>
+<h2 id="提高搜索引擎权重"><a href="#提高搜索引擎权重" class="headerlink" title="提高搜索引擎权重"></a>提高搜索引擎权重</h2><ul>
+<li>最简单的方法就是在各种平台多放点网址进去。</li>
+</ul>
+<h2 id="结尾-2020-12-12"><a href="#结尾-2020-12-12" class="headerlink" title="结尾 2020/12/12"></a>结尾 2020/12/12</h2><p>目前网站被百度收录。<br><img src="https://img-blog.csdnimg.cn/20201212234708921.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>谷歌</category>
+        <category>百度</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>搜索引擎</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>水声通信课程作业业_二</title>
     <url>/2020/12/04/%E6%B0%B4%E5%A3%B0%E9%80%9A%E4%BF%A1%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A%E4%B8%9A-%E4%BA%8C/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LMS和RLS算法的性能对比"><a href="#LMS和RLS算法的性能对比" class="headerlink" title="LMS和RLS算法的性能对比"></a><center>LMS和RLS算法的性能对比</center></h1><p><strong><center>Performance comparison of LMS and RLS algorithms</center></strong></p>
@@ -8718,69 +8784,6 @@ y &#x3D; rchan(x);
         <tag>研究生课程</tag>
         <tag>matlab</tag>
         <tag>水声通信</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度学习_花书</title>
-    <url>/2020/07/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E8%8A%B1%E4%B9%A6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><span id="more"></span>
-<p>&nbsp;&nbsp; 深度学习(DL, Deep Learning)是机器学习(ML, Machine Learning)领域中一个新的研究方向，它被引入机器学习使其更接近于最初的目标——人工智能(AI, Artificial Intelligence)。<br>&nbsp;&nbsp; 深度学习是学习样本数据的内在规律和表示层次，这些学习过程中获得的信息对诸如文字，图像和声音等数据的解释有很大的帮助。它的最终目标是让机器能够像人一样具有分析学习能力，能够识别文字、图像和声音等数据。 深度学习是一个复杂的机器学习算法，在语音和图像识别方面取得的效果，远远超过先前相关技术。<br>&nbsp;&nbsp; 深度学习在搜索技术，数据挖掘，机器学习，机器翻译，自然语言处理，多媒体学习，语音，推荐和个性化技术，以及其他相关领域都取得了很多成果。深度学习使机器模仿视听和思考等人类的活动，解决了很多复杂的模式识别难题，使得人工智能相关技术取得了很大进步。  </p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-        <tag>分类器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>百度谷歌搜索引擎索引</title>
-    <url>/2020/12/04/%E7%99%BE%E5%BA%A6%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%8B%97%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%B4%A2%E5%BC%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="百度谷歌搜索引擎索引"><a href="#百度谷歌搜索引擎索引" class="headerlink" title="百度谷歌搜索引擎索引"></a><center>百度谷歌搜索引擎索引</center></h2><span id="more"></span>
-<h3 id="简单检索"><a href="#简单检索" class="headerlink" title="简单检索"></a>简单检索</h3><p>参考<a href="https://jingyan.baidu.com/article/6b97984dee19b81ca3b0bf4c.html">如何让自己的网站快速被百度收录</a></p>
-<ol>
-<li>提交链接。</li>
-</ol>
-<ul>
-<li>Google: <a href="http://www.google.com/addurl/?hl=zh-CN">Google 网站站长工具</a></li>
-<li>Baidu: <a href="https://ziyuan.baidu.com/linksubmit/url">url提交_站长工具</a></li>
-</ul>
-<ol>
-<li>最有用的方法</li>
-</ol>
-<ul>
-<li>知乎</li>
-<li>CSDN</li>
-<li>豆瓣</li>
-<li>贴吧等平台<br>发帖，贴出自己的网址，搜索引擎就会进行索引。</li>
-</ul>
-<ol>
-<li>2020/12/4<br>目前本网站未被任何引擎索引。<center>
-<img src="https://www.codekp.cn/download/img/csdn/百度为索引.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ol>
-<h2 id="比较麻烦的检索方式"><a href="#比较麻烦的检索方式" class="headerlink" title="比较麻烦的检索方式"></a>比较麻烦的检索方式</h2><p>  将检索文件放在网站根目录下。<br>  <a href="https://www.codekp.cn/baidu_verify_code-De28227qRL.html">测试连接</a></p>
-<p><center>
-<img src="https://www.codekp.cn/download/img/csdn/检索.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center><br><pre class="line-numbers language-none"><code class="language-none">hexo clean
-hexo g
-hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>将备案号填入即可很快被检索。</p>
-<h2 id="提高搜索引擎权重"><a href="#提高搜索引擎权重" class="headerlink" title="提高搜索引擎权重"></a>提高搜索引擎权重</h2><ul>
-<li>最简单的方法就是在各种平台多放点网址进去。</li>
-</ul>
-<h2 id="结尾-2020-12-12"><a href="#结尾-2020-12-12" class="headerlink" title="结尾 2020/12/12"></a>结尾 2020/12/12</h2><p>目前网站被百度收录。<br><img src="https://img-blog.csdnimg.cn/20201212234708921.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>谷歌</category>
-        <category>百度</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>搜索引擎</tag>
       </tags>
   </entry>
   <entry>
