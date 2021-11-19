@@ -7658,7 +7658,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x6b;&#x70;&#x40;&#x6d;&#x6d;&#x72;&#115;&#x6c;&#46;&#99;&#110;">&#x6b;&#x70;&#x40;&#x6d;&#x6d;&#x72;&#115;&#x6c;&#46;&#99;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#x6b;&#x70;&#64;&#x6d;&#x6d;&#x72;&#x73;&#x6c;&#x2e;&#99;&#x6e;">&#x6b;&#x70;&#64;&#x6d;&#x6d;&#x72;&#x73;&#x6c;&#x2e;&#99;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -8648,69 +8648,6 @@ y &#x3D; rchan(x);
       </tags>
   </entry>
   <entry>
-    <title>深度学习_花书</title>
-    <url>/2020/07/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E8%8A%B1%E4%B9%A6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><span id="more"></span>
-<p>&nbsp;&nbsp; 深度学习(DL, Deep Learning)是机器学习(ML, Machine Learning)领域中一个新的研究方向，它被引入机器学习使其更接近于最初的目标——人工智能(AI, Artificial Intelligence)。<br>&nbsp;&nbsp; 深度学习是学习样本数据的内在规律和表示层次，这些学习过程中获得的信息对诸如文字，图像和声音等数据的解释有很大的帮助。它的最终目标是让机器能够像人一样具有分析学习能力，能够识别文字、图像和声音等数据。 深度学习是一个复杂的机器学习算法，在语音和图像识别方面取得的效果，远远超过先前相关技术。<br>&nbsp;&nbsp; 深度学习在搜索技术，数据挖掘，机器学习，机器翻译，自然语言处理，多媒体学习，语音，推荐和个性化技术，以及其他相关领域都取得了很多成果。深度学习使机器模仿视听和思考等人类的活动，解决了很多复杂的模式识别难题，使得人工智能相关技术取得了很大进步。  </p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-        <tag>分类器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>百度谷歌搜索引擎索引</title>
-    <url>/2020/12/04/%E7%99%BE%E5%BA%A6%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%8B%97%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%B4%A2%E5%BC%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="百度谷歌搜索引擎索引"><a href="#百度谷歌搜索引擎索引" class="headerlink" title="百度谷歌搜索引擎索引"></a><center>百度谷歌搜索引擎索引</center></h2><span id="more"></span>
-<h3 id="简单检索"><a href="#简单检索" class="headerlink" title="简单检索"></a>简单检索</h3><p>参考<a href="https://jingyan.baidu.com/article/6b97984dee19b81ca3b0bf4c.html">如何让自己的网站快速被百度收录</a></p>
-<ol>
-<li>提交链接。</li>
-</ol>
-<ul>
-<li>Google: <a href="http://www.google.com/addurl/?hl=zh-CN">Google 网站站长工具</a></li>
-<li>Baidu: <a href="https://ziyuan.baidu.com/linksubmit/url">url提交_站长工具</a></li>
-</ul>
-<ol>
-<li>最有用的方法</li>
-</ol>
-<ul>
-<li>知乎</li>
-<li>CSDN</li>
-<li>豆瓣</li>
-<li>贴吧等平台<br>发帖，贴出自己的网址，搜索引擎就会进行索引。</li>
-</ul>
-<ol>
-<li>2020/12/4<br>目前本网站未被任何引擎索引。<center>
-<img src="https://www.codekp.cn/download/img/csdn/百度为索引.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ol>
-<h2 id="比较麻烦的检索方式"><a href="#比较麻烦的检索方式" class="headerlink" title="比较麻烦的检索方式"></a>比较麻烦的检索方式</h2><p>  将检索文件放在网站根目录下。<br>  <a href="https://www.codekp.cn/baidu_verify_code-De28227qRL.html">测试连接</a></p>
-<p><center>
-<img src="https://www.codekp.cn/download/img/csdn/检索.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center><br><pre class="line-numbers language-none"><code class="language-none">hexo clean
-hexo g
-hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>将备案号填入即可很快被检索。</p>
-<h2 id="提高搜索引擎权重"><a href="#提高搜索引擎权重" class="headerlink" title="提高搜索引擎权重"></a>提高搜索引擎权重</h2><ul>
-<li>最简单的方法就是在各种平台多放点网址进去。</li>
-</ul>
-<h2 id="结尾-2020-12-12"><a href="#结尾-2020-12-12" class="headerlink" title="结尾 2020/12/12"></a>结尾 2020/12/12</h2><p>目前网站被百度收录。<br><img src="https://img-blog.csdnimg.cn/20201212234708921.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>谷歌</category>
-        <category>百度</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>搜索引擎</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>水声通信课程作业业_二</title>
     <url>/2020/12/04/%E6%B0%B4%E5%A3%B0%E9%80%9A%E4%BF%A1%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A%E4%B8%9A-%E4%BA%8C/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LMS和RLS算法的性能对比"><a href="#LMS和RLS算法的性能对比" class="headerlink" title="LMS和RLS算法的性能对比"></a><center>LMS和RLS算法的性能对比</center></h1><p><strong><center>Performance comparison of LMS and RLS algorithms</center></strong></p>
@@ -8787,6 +8724,69 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
       </tags>
   </entry>
   <entry>
+    <title>深度学习_花书</title>
+    <url>/2020/07/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E8%8A%B1%E4%B9%A6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><span id="more"></span>
+<p>&nbsp;&nbsp; 深度学习(DL, Deep Learning)是机器学习(ML, Machine Learning)领域中一个新的研究方向，它被引入机器学习使其更接近于最初的目标——人工智能(AI, Artificial Intelligence)。<br>&nbsp;&nbsp; 深度学习是学习样本数据的内在规律和表示层次，这些学习过程中获得的信息对诸如文字，图像和声音等数据的解释有很大的帮助。它的最终目标是让机器能够像人一样具有分析学习能力，能够识别文字、图像和声音等数据。 深度学习是一个复杂的机器学习算法，在语音和图像识别方面取得的效果，远远超过先前相关技术。<br>&nbsp;&nbsp; 深度学习在搜索技术，数据挖掘，机器学习，机器翻译，自然语言处理，多媒体学习，语音，推荐和个性化技术，以及其他相关领域都取得了很多成果。深度学习使机器模仿视听和思考等人类的活动，解决了很多复杂的模式识别难题，使得人工智能相关技术取得了很大进步。  </p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+        <tag>分类器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>百度谷歌搜索引擎索引</title>
+    <url>/2020/12/04/%E7%99%BE%E5%BA%A6%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%8B%97%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%B4%A2%E5%BC%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="百度谷歌搜索引擎索引"><a href="#百度谷歌搜索引擎索引" class="headerlink" title="百度谷歌搜索引擎索引"></a><center>百度谷歌搜索引擎索引</center></h2><span id="more"></span>
+<h3 id="简单检索"><a href="#简单检索" class="headerlink" title="简单检索"></a>简单检索</h3><p>参考<a href="https://jingyan.baidu.com/article/6b97984dee19b81ca3b0bf4c.html">如何让自己的网站快速被百度收录</a></p>
+<ol>
+<li>提交链接。</li>
+</ol>
+<ul>
+<li>Google: <a href="http://www.google.com/addurl/?hl=zh-CN">Google 网站站长工具</a></li>
+<li>Baidu: <a href="https://ziyuan.baidu.com/linksubmit/url">url提交_站长工具</a></li>
+</ul>
+<ol>
+<li>最有用的方法</li>
+</ol>
+<ul>
+<li>知乎</li>
+<li>CSDN</li>
+<li>豆瓣</li>
+<li>贴吧等平台<br>发帖，贴出自己的网址，搜索引擎就会进行索引。</li>
+</ul>
+<ol>
+<li>2020/12/4<br>目前本网站未被任何引擎索引。<center>
+<img src="https://www.codekp.cn/download/img/csdn/百度为索引.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ol>
+<h2 id="比较麻烦的检索方式"><a href="#比较麻烦的检索方式" class="headerlink" title="比较麻烦的检索方式"></a>比较麻烦的检索方式</h2><p>  将检索文件放在网站根目录下。<br>  <a href="https://www.codekp.cn/baidu_verify_code-De28227qRL.html">测试连接</a></p>
+<p><center>
+<img src="https://www.codekp.cn/download/img/csdn/检索.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center><br><pre class="line-numbers language-none"><code class="language-none">hexo clean
+hexo g
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>将备案号填入即可很快被检索。</p>
+<h2 id="提高搜索引擎权重"><a href="#提高搜索引擎权重" class="headerlink" title="提高搜索引擎权重"></a>提高搜索引擎权重</h2><ul>
+<li>最简单的方法就是在各种平台多放点网址进去。</li>
+</ul>
+<h2 id="结尾-2020-12-12"><a href="#结尾-2020-12-12" class="headerlink" title="结尾 2020/12/12"></a>结尾 2020/12/12</h2><p>目前网站被百度收录。<br><img src="https://img-blog.csdnimg.cn/20201212234708921.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>谷歌</category>
+        <category>百度</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>搜索引擎</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>目标识别数据集扩充_旋转扩充</title>
     <url>/2021/07/28/%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E6%95%B0%E6%8D%AE%E9%9B%86%E6%89%A9%E5%85%852/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="目标识别数据集扩充-旋转扩充"><a href="#目标识别数据集扩充-旋转扩充" class="headerlink" title="目标识别数据集扩充_旋转扩充"></a>目标识别数据集扩充_旋转扩充</h1><h2 id="扩充方法"><a href="#扩充方法" class="headerlink" title="扩充方法"></a>扩充方法</h2><h3 id="原图"><a href="#原图" class="headerlink" title="原图"></a>原图</h3><p><img src="https://www.codekp.cn/download/img/数据集扩充/Original.jpg" alt=""></p>
@@ -8853,6 +8853,231 @@ class ImgAugemention():
       </categories>
       <tags>
         <tag>目标检测数据集扩充2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>矩阵分析引论</title>
+    <url>/2020/11/17/%E7%9F%A9%E9%98%B5%E8%AE%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="矩阵分析引论"><a href="#矩阵分析引论" class="headerlink" title="矩阵分析引论"></a><center>矩阵分析引论</center></h1><h2 id="Introduction-to-matrix-analysis"><a href="#Introduction-to-matrix-analysis" class="headerlink" title=" Introduction to matrix analysis "></a><center> Introduction to matrix analysis </center></h2><center>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=11355346&bvid=BV19x411878L&cid=18777309&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+</center>
+
+<span id="more"></span>
+<h2 id="1-线性空间与线性变换"><a href="#1-线性空间与线性变换" class="headerlink" title="1.线性空间与线性变换"></a>1.线性空间与线性变换</h2><ol>
+<li>对加减乘除封闭的集合被称之为数域。矩阵论中较常用的数域是QRC。其中Q:有理数域、R:实数数域、C复数数域。<br>$Q\subset R\subset C$<br>如果一个非空集合在某数域上，以下八条<center>
+<img src="https://www.codekp.cn/download/img/矩阵论/1.PNG" width = "1147" height = "950" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ol>
+<h3 id="线性空间例3-（函数空间-f-I-R"><a href="#线性空间例3-（函数空间-f-I-R" class="headerlink" title="线性空间例3.（函数空间$f(I,R)$)"></a>线性空间例3.（函数空间$f(I,R)$)</h3><ul>
+<li>$V:$<br>$F(I，R^n)$<br>$I=(0,1) ,[\frac{1}{2}，5]$函数的定义域<br>$R^n值域空间$<br>以函数为元素的抽象集合，数域取R</li>
+</ul>
+<ul>
+<li>： f+g<br>$ +  ： \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} + \begin{cases} g_1(x)\ g_2(x)\ g_n(x) \end{cases} = \begin{cases} f_1(x)+g_1(x)\f_2(x)+ g_2(x)\f_n(x)+g_n(x) \end{cases}  x \in I$</li>
+</ul>
+<ul>
+<li>：f<em>k<br>$</em> : \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} * k =\begin{cases} kf_1(x)\ kf_2(x)\ kf_n(x) \end{cases}$</li>
+</ul>
+<p>定义：（向量组及向量组拼成向量抽象矩阵）<br>设V是F上的线性空间V中的有限序列$\alpha_1、\alpha2、\alpha3 …\alpha_p $的一个向量组，向量组按顺序排列的行称为向量组拼成的抽象矩阵$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>序列：抽象或实际数构成的序列，抽象矩阵。用V中的抽象物拼接为一个矩阵。即：抽象的集合。</p>
+<blockquote>
+<p>数乘运算、线性空间满足八条运算规则:</p>
+</blockquote>
+<p>4条：<br>加法有交换律、结合律、有负元、有零元。<br>4条：<br>乘法有两个分配律，数乘法对抽象加法的分配律，数乘法对数值的分配律，先乘后乘以集合和两次分别乘以集合相等，f中的乘法单位元e做数乘法时空间不变。</p>
+<p>标准线性空间：<br>例子<br>二维空间<br>三维空间 ：所有有向线段构成的集合。<br>几何空间：<br>函数空间：函数作为运算对象，所构成的空间。信号的集合构成函数空间。</p>
+<p>将几何空间的解析几何方法抽象到一般的框架下，集合的量变成代数的量，坐标系。<br>考虑什么样的向量组可以模拟成几何的线性空间的问题。<br>向量组：$\alpha_1、\alpha2、\alpha3 …\alpha_p $<br>抽象矩阵：$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>1行p列的抽象矩阵，可以竖着拼。<br>行向量，横拼接。<br>列向量，竖拼接。<br>向量组的线性相关性：如果存在不全为零的P个数$k_i\in F, i=1,2,…,p$使得<br>$\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p=0$<br>则向量组\alpha_1、\alpha2、\alpha3 …\alpha_p称之为线性相关。<br>注： $\exists\begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0，\begin{cases} k_1\ k_2\ k_n \end{cases}\in F^p$</p>
+<p>使得(*)成立，对以上命题进行否定。<br>$\exists a\in P_a $<br>否定$\forall a\notin P_a $</p>
+<p> $\forall \begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0$<br> $\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p\neq 0$<br>线性无关</p>
+<p>线性无关即为线性相关的否定，存在系数不全为零的时，使得等号成立，即线性无关。</p>
+<p>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=0$<br>线性相关《——》有非零解<br>线性无关《——》没有非零解</p>
+<p>线性相关性：目的为了将抽象的序列搬移到几何空间中。</p>
+<h2 id="基"><a href="#基" class="headerlink" title="基"></a>基</h2><p>定义：（两个线性向量组之间的线性表示）<br>$\alpha_1、\alpha_2、\alpha_3 …\alpha_p;\beta_1、\beta_2、\beta_3、…、\beta_p$</p>
+<ol>
+<li>称为$\beta$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果存在$ k_1、k_2、k_3 …k_p \subset F$使得<br>$\beta=\alpha_1k_1+\alpha_2k_2+\alpha_3k_3 …+\alpha_pk_p$</li>
+<li>称$\beta_1、\beta_2、\beta_3、…、\beta_p$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果每个$\beta_i$据可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示</li>
+</ol>
+<h4 id="矩阵表达"><a href="#矩阵表达" class="headerlink" title="矩阵表达"></a>矩阵表达</h4><p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=\beta$ 其中$A=[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$</p>
+<ol>
+<li><p>因此$\beta$可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示《=====》非齐次线性方程组有解</p>
+</li>
+<li><p>重点：</p>
+</li>
+</ol>
+<p>$[\alpha<em>1、\alpha_2、\alpha_3 …\alpha_p] \begin{pmatrix}<br>        x</em>{11} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{1q} \<br>        x</em>{21} &amp; \cdots &amp;\cdots &amp; \cdots &amp; x<em>{2q} \<br>        \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>        x</em>{p1} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{pq}\<br>        \end{pmatrix}</em>{pq} =[\beta_1、\beta_2、\beta_3、…、\beta_p]$</p>
+<p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ]$记作A<br>$[\beta_1、\beta_2、\beta_3…\beta_p]$记作B：<br>$AX=B$抽象的矩阵方程</p>
+<p>$[\beta_i]$可有$[\alpha_i]$线性表示《=====》线性方程有解。</p>
+<ol>
+<li>线性表示具有传递性：<br>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]    、[{\alpha_i}]$<br>$[\beta_1、\beta_2、\beta_3…\beta_q]   、[{\beta_j}]$<br>$[\gamma_1、\gamma_2、\gamma_3…\gamma_t]      、[{\gamma_k}]$   </li>
+</ol>
+<p>$ [{\beta_j}]\leq lin [{\alpha_i}]<br>$且$ [{\gamma_k}]\leq lin [{\beta_j}]<br>$则$ [{\gamma_k}]\leq lin [{\alpha_i}]<br>$</p>
+<p>A$\leq lin$B 意思是A可以由B线性表示。</p>
+<ul>
+<li>证：<br>即 Ax=B、By=C 有解，证明Az=C？<br>C=By=(Ax)y</li>
+</ul>
+<p><img src="https://www.codekp.cn/download/img/矩阵论/目录.png" width = "400" height = "302" alt="图片名称" align=center /></p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>研究生课程</tag>
+        <tag>矩阵论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序语法</title>
+    <url>/2020/11/20/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="编程语言语法"><a href="#编程语言语法" class="headerlink" title="编程语言语法"></a><center>编程语言语法</center></h1><span id="more"></span>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>程序  类型  语法</th>
+<th>python</th>
+<th>C++/C</th>
+<th>java</th>
+<th>matlab</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>或</td>
+<td>or</td>
+<td>\</td>
+<td>\</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>与</td>
+<td>and</td>
+<td>&amp;&amp;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>非</td>
+<td>not</td>
+<td>!</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>条件语句</td>
+<td>if 条件 :  制表符 elseif 或elif:  制表符 else :  制表符</td>
+<td>if (条件){   } else if() {  } else {  }</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>循环语句</td>
+<td>1.for for x in [1,2,3,…] :  制表符 2.while while 循环条件:  制表符</td>
+<td>1.for for(int i=0;i\&lt;10;i++){} 2.while while(条件){}  do{ }while(条件)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>语句之间</td>
+<td>制表符</td>
+<td>{}</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dict表</td>
+<td>d = {‘Michael’: 95, ‘Bob’: 75, ‘Tracy’: 85}</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>set</td>
+<td>s1 = set([1, 2, 3]) s2 = set([2, 3, 4]) print(s1 &amp; s2) print(s1 \</td>
+<td>s2) s1.add(4) s1.remove(1)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>平方</td>
+<td>import math math.sqrt(2)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>函数定义</td>
+<td>def wan_find(list, col, list2):  col_max = 0  col_y = 0  col=col  # a = np.linspace(0, 5, 5);   for i in [0, 1, 2, 3, 4, 5]:  if col_max \&lt; list[i, col] and (i not in list2):  col_y = i  col_max = list[i, col]   return col_y, col_max</td>
+<td>int wan_find(float list[][], int col,int list2){         }</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>默认参数</td>
+<td>def product(x, y=1, z=1, k=1):  return x * y * z * k</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>递归函数</td>
+<td>def fact(n):  return fact_iter(n, 1)  def fact_iter(num, product):  if num == 1:  return product  return fact_iter(num - 1, num * product)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>map</td>
+<td>r =map(f, [1, 2, 3, 4, 5, 6, 7, 8, 9]) list(r)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>reduce</td>
+<td>reduce(f, [x1, x2, x3, x4]) =  f(f(f(x1, x2), x3), x4)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>filter</td>
+<td>def is_odd(n):  return n % 2 == 1 r=filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15]) print(list(r))</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>快速排序</td>
+<td>sorted([36, 5, -12, 9, -21], key=abs) key=abs按照绝对值排序</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>面向对象</td>
+<td>class Student(object):   def _<em>init_</em>(self, name, score):  self.name = name  self.score = score   def print_score(self):  print(‘%s: %s’ % (self.name, self.score))   def get_grade(self):  if self.score >= 90:  return ‘A’  elif self.score >= 60:  return ‘B’  else:  return ‘C’</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+]]></content>
+      <categories>
+        <category>程序设计</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>程序设计</tag>
+        <tag>matlab</tag>
+        <tag>c</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -9099,231 +9324,6 @@ def saveCutoutLabel(name):
       </categories>
       <tags>
         <tag>目标检测数据集扩充</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>矩阵分析引论</title>
-    <url>/2020/11/17/%E7%9F%A9%E9%98%B5%E8%AE%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="矩阵分析引论"><a href="#矩阵分析引论" class="headerlink" title="矩阵分析引论"></a><center>矩阵分析引论</center></h1><h2 id="Introduction-to-matrix-analysis"><a href="#Introduction-to-matrix-analysis" class="headerlink" title=" Introduction to matrix analysis "></a><center> Introduction to matrix analysis </center></h2><center>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=11355346&bvid=BV19x411878L&cid=18777309&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-</center>
-
-<span id="more"></span>
-<h2 id="1-线性空间与线性变换"><a href="#1-线性空间与线性变换" class="headerlink" title="1.线性空间与线性变换"></a>1.线性空间与线性变换</h2><ol>
-<li>对加减乘除封闭的集合被称之为数域。矩阵论中较常用的数域是QRC。其中Q:有理数域、R:实数数域、C复数数域。<br>$Q\subset R\subset C$<br>如果一个非空集合在某数域上，以下八条<center>
-<img src="https://www.codekp.cn/download/img/矩阵论/1.PNG" width = "1147" height = "950" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ol>
-<h3 id="线性空间例3-（函数空间-f-I-R"><a href="#线性空间例3-（函数空间-f-I-R" class="headerlink" title="线性空间例3.（函数空间$f(I,R)$)"></a>线性空间例3.（函数空间$f(I,R)$)</h3><ul>
-<li>$V:$<br>$F(I，R^n)$<br>$I=(0,1) ,[\frac{1}{2}，5]$函数的定义域<br>$R^n值域空间$<br>以函数为元素的抽象集合，数域取R</li>
-</ul>
-<ul>
-<li>： f+g<br>$ +  ： \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} + \begin{cases} g_1(x)\ g_2(x)\ g_n(x) \end{cases} = \begin{cases} f_1(x)+g_1(x)\f_2(x)+ g_2(x)\f_n(x)+g_n(x) \end{cases}  x \in I$</li>
-</ul>
-<ul>
-<li>：f<em>k<br>$</em> : \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} * k =\begin{cases} kf_1(x)\ kf_2(x)\ kf_n(x) \end{cases}$</li>
-</ul>
-<p>定义：（向量组及向量组拼成向量抽象矩阵）<br>设V是F上的线性空间V中的有限序列$\alpha_1、\alpha2、\alpha3 …\alpha_p $的一个向量组，向量组按顺序排列的行称为向量组拼成的抽象矩阵$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>序列：抽象或实际数构成的序列，抽象矩阵。用V中的抽象物拼接为一个矩阵。即：抽象的集合。</p>
-<blockquote>
-<p>数乘运算、线性空间满足八条运算规则:</p>
-</blockquote>
-<p>4条：<br>加法有交换律、结合律、有负元、有零元。<br>4条：<br>乘法有两个分配律，数乘法对抽象加法的分配律，数乘法对数值的分配律，先乘后乘以集合和两次分别乘以集合相等，f中的乘法单位元e做数乘法时空间不变。</p>
-<p>标准线性空间：<br>例子<br>二维空间<br>三维空间 ：所有有向线段构成的集合。<br>几何空间：<br>函数空间：函数作为运算对象，所构成的空间。信号的集合构成函数空间。</p>
-<p>将几何空间的解析几何方法抽象到一般的框架下，集合的量变成代数的量，坐标系。<br>考虑什么样的向量组可以模拟成几何的线性空间的问题。<br>向量组：$\alpha_1、\alpha2、\alpha3 …\alpha_p $<br>抽象矩阵：$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>1行p列的抽象矩阵，可以竖着拼。<br>行向量，横拼接。<br>列向量，竖拼接。<br>向量组的线性相关性：如果存在不全为零的P个数$k_i\in F, i=1,2,…,p$使得<br>$\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p=0$<br>则向量组\alpha_1、\alpha2、\alpha3 …\alpha_p称之为线性相关。<br>注： $\exists\begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0，\begin{cases} k_1\ k_2\ k_n \end{cases}\in F^p$</p>
-<p>使得(*)成立，对以上命题进行否定。<br>$\exists a\in P_a $<br>否定$\forall a\notin P_a $</p>
-<p> $\forall \begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0$<br> $\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p\neq 0$<br>线性无关</p>
-<p>线性无关即为线性相关的否定，存在系数不全为零的时，使得等号成立，即线性无关。</p>
-<p>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=0$<br>线性相关《——》有非零解<br>线性无关《——》没有非零解</p>
-<p>线性相关性：目的为了将抽象的序列搬移到几何空间中。</p>
-<h2 id="基"><a href="#基" class="headerlink" title="基"></a>基</h2><p>定义：（两个线性向量组之间的线性表示）<br>$\alpha_1、\alpha_2、\alpha_3 …\alpha_p;\beta_1、\beta_2、\beta_3、…、\beta_p$</p>
-<ol>
-<li>称为$\beta$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果存在$ k_1、k_2、k_3 …k_p \subset F$使得<br>$\beta=\alpha_1k_1+\alpha_2k_2+\alpha_3k_3 …+\alpha_pk_p$</li>
-<li>称$\beta_1、\beta_2、\beta_3、…、\beta_p$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果每个$\beta_i$据可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示</li>
-</ol>
-<h4 id="矩阵表达"><a href="#矩阵表达" class="headerlink" title="矩阵表达"></a>矩阵表达</h4><p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=\beta$ 其中$A=[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$</p>
-<ol>
-<li><p>因此$\beta$可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示《=====》非齐次线性方程组有解</p>
-</li>
-<li><p>重点：</p>
-</li>
-</ol>
-<p>$[\alpha<em>1、\alpha_2、\alpha_3 …\alpha_p] \begin{pmatrix}<br>        x</em>{11} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{1q} \<br>        x</em>{21} &amp; \cdots &amp;\cdots &amp; \cdots &amp; x<em>{2q} \<br>        \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>        x</em>{p1} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{pq}\<br>        \end{pmatrix}</em>{pq} =[\beta_1、\beta_2、\beta_3、…、\beta_p]$</p>
-<p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ]$记作A<br>$[\beta_1、\beta_2、\beta_3…\beta_p]$记作B：<br>$AX=B$抽象的矩阵方程</p>
-<p>$[\beta_i]$可有$[\alpha_i]$线性表示《=====》线性方程有解。</p>
-<ol>
-<li>线性表示具有传递性：<br>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]    、[{\alpha_i}]$<br>$[\beta_1、\beta_2、\beta_3…\beta_q]   、[{\beta_j}]$<br>$[\gamma_1、\gamma_2、\gamma_3…\gamma_t]      、[{\gamma_k}]$   </li>
-</ol>
-<p>$ [{\beta_j}]\leq lin [{\alpha_i}]<br>$且$ [{\gamma_k}]\leq lin [{\beta_j}]<br>$则$ [{\gamma_k}]\leq lin [{\alpha_i}]<br>$</p>
-<p>A$\leq lin$B 意思是A可以由B线性表示。</p>
-<ul>
-<li>证：<br>即 Ax=B、By=C 有解，证明Az=C？<br>C=By=(Ax)y</li>
-</ul>
-<p><img src="https://www.codekp.cn/download/img/矩阵论/目录.png" width = "400" height = "302" alt="图片名称" align=center /></p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>研究生课程</tag>
-        <tag>矩阵论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>程序语法</title>
-    <url>/2020/11/20/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="编程语言语法"><a href="#编程语言语法" class="headerlink" title="编程语言语法"></a><center>编程语言语法</center></h1><span id="more"></span>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>程序  类型  语法</th>
-<th>python</th>
-<th>C++/C</th>
-<th>java</th>
-<th>matlab</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>或</td>
-<td>or</td>
-<td>\</td>
-<td>\</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>与</td>
-<td>and</td>
-<td>&amp;&amp;</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>非</td>
-<td>not</td>
-<td>!</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>条件语句</td>
-<td>if 条件 :  制表符 elseif 或elif:  制表符 else :  制表符</td>
-<td>if (条件){   } else if() {  } else {  }</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>循环语句</td>
-<td>1.for for x in [1,2,3,…] :  制表符 2.while while 循环条件:  制表符</td>
-<td>1.for for(int i=0;i\&lt;10;i++){} 2.while while(条件){}  do{ }while(条件)</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>语句之间</td>
-<td>制表符</td>
-<td>{}</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>dict表</td>
-<td>d = {‘Michael’: 95, ‘Bob’: 75, ‘Tracy’: 85}</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>set</td>
-<td>s1 = set([1, 2, 3]) s2 = set([2, 3, 4]) print(s1 &amp; s2) print(s1 \</td>
-<td>s2) s1.add(4) s1.remove(1)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>平方</td>
-<td>import math math.sqrt(2)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>函数定义</td>
-<td>def wan_find(list, col, list2):  col_max = 0  col_y = 0  col=col  # a = np.linspace(0, 5, 5);   for i in [0, 1, 2, 3, 4, 5]:  if col_max \&lt; list[i, col] and (i not in list2):  col_y = i  col_max = list[i, col]   return col_y, col_max</td>
-<td>int wan_find(float list[][], int col,int list2){         }</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>默认参数</td>
-<td>def product(x, y=1, z=1, k=1):  return x * y * z * k</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>递归函数</td>
-<td>def fact(n):  return fact_iter(n, 1)  def fact_iter(num, product):  if num == 1:  return product  return fact_iter(num - 1, num * product)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>map</td>
-<td>r =map(f, [1, 2, 3, 4, 5, 6, 7, 8, 9]) list(r)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>reduce</td>
-<td>reduce(f, [x1, x2, x3, x4]) =  f(f(f(x1, x2), x3), x4)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>filter</td>
-<td>def is_odd(n):  return n % 2 == 1 r=filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15]) print(list(r))</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>快速排序</td>
-<td>sorted([36, 5, -12, 9, -21], key=abs) key=abs按照绝对值排序</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>面向对象</td>
-<td>class Student(object):   def _<em>init_</em>(self, name, score):  self.name = name  self.score = score   def print_score(self):  print(‘%s: %s’ % (self.name, self.score))   def get_grade(self):  if self.score >= 90:  return ‘A’  elif self.score >= 60:  return ‘B’  else:  return ‘C’</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-]]></content>
-      <categories>
-        <category>程序设计</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>程序设计</tag>
-        <tag>matlab</tag>
-        <tag>c</tag>
-        <tag>java</tag>
       </tags>
   </entry>
   <entry>
