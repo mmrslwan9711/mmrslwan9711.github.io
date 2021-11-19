@@ -401,8 +401,6 @@
 
 
 
-
-
 <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
@@ -516,45 +514,6 @@
 <div class="row">
     <div id="main-content" class="col s12 m12 l9">
         <!-- 文章内容详情 -->
-<style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  counter(section) ". ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(section) "." counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(section) "." counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content: counter(section) "." counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content: counter(section) "." counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -582,21 +541,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-18
+                    2021-11-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    331
+                    458
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -619,7 +578,42 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="html3d"><a href="#html3d" class="headerlink" title="html3d"></a>html3d</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><pre><code>首先参考一下别人怎么做的3d模型，站在巨人的肩膀上看看要怎么操作。
+                <p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
+<pre><code>h1 &#123;
+counter-reset: subsection;
+&#125;
+h2 &#123;
+counter-reset: subsection2;
+&#125;
+h3 &#123;
+counter-reset: subsection3;
+&#125;
+h4 &#123;
+counter-reset: subsection4;
+&#125;
+h1::before &#123;
+counter-increment: section;
+content:  &quot; &quot;;
+&#125;
+
+h2::before &#123;
+counter-increment: subsection;
+content: counter(subsection) &quot; &quot;;
+&#125;
+h3::before &#123;
+counter-increment: subsection2;
+content: counter(subsection) &quot;.&quot; counter(subsection2) ;
+&#125;
+h4::before &#123;
+counter-increment: subsection3;
+content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
+&#125;
+h5::before &#123;
+counter-increment: subsection4;
+content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
+&#125;
+</code></pre><p>&lt;/style&gt;</p>
+<h1 id="html3d"><a href="#html3d" class="headerlink" title="html3d"></a>html3d</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><pre><code>首先参考一下别人怎么做的3d模型，站在巨人的肩膀上看看要怎么操作。
 </code></pre><h3 id="chrome浏览器下的网站"><a href="#chrome浏览器下的网站" class="headerlink" title="chrome浏览器下的网站"></a>chrome浏览器下的网站</h3><p><a target="_blank" rel="noopener" href="https://www.hightopo.com/demo/CementFactory/">https://www.hightopo.com/demo/CementFactory/</a><br><a target="_blank" rel="noopener" href="https://www.hightopo.com/demo/3DRoom/index.html">https://www.hightopo.com/demo/3DRoom/index.html</a><br>原文链接在：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xhload3d/p/8577889.html">hightopo</a></p>
 <h3 id="查看源码F12"><a href="#查看源码F12" class="headerlink" title="查看源码F12"></a>查看源码F12</h3><p>可以看到单个的js文件，除此以外看不到其他，因此<br><img src="https://www.mmrsl.cn/download/img/html5/3.png" alt=""><br>可以一行一行的下载但这样很麻烦，因此可以考虑用谷歌插件一键下载。</p>
 <h3 id="Save-All-Resources"><a href="#Save-All-Resources" class="headerlink" title="Save All Resources"></a>Save All Resources</h3><p><img src="https://www.mmrsl.cn/download/img/html5/4.png" alt=""><br><strong>使用方法：</strong><br><img src="https://www.mmrsl.cn/download/img/html5/5.png" alt=""><br>下载以后如图所示<br><img src="https://www.mmrsl.cn/download/img/html5/6.png" alt=""></p>
@@ -657,6 +651,11 @@ https://www.html5tricks.com/ -->
 <p><a href="https://www.mmrsl.cn/3droom/">3droom</a></p>
 <h2 id="进行一些优化，即可做出不一样的地图"><a href="#进行一些优化，即可做出不一样的地图" class="headerlink" title="进行一些优化，即可做出不一样的地图"></a>进行一些优化，即可做出不一样的地图</h2><p>如下图所示：<br><img src="https://www.mmrsl.cn/download/img/html5/8.png" alt=""></p>
 <p><a href="https://www.mmrsl.cn/3droom2/">3droom2</a></p>
+<h2 id="ht-3d学习资料"><a href="#ht-3d学习资料" class="headerlink" title="ht 3d学习资料"></a>ht 3d学习资料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.hightopo.com/guide/doc/ht.widget.TreeView.html">ht 说明手册</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.hightopo.com/guide/guide/core/3d/ht-3d-guide.html">HT for Web 3D 手册</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.hightopo.com/guide/guide/core/theme/ht-theme-guide.html">HT for Web 风格手册</a></li>
+</ul>
 
                 
             </div>
@@ -915,18 +914,17 @@ https://www.html5tricks.com/ -->
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/11/18/htmldownload/">
+                <a href="/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="html3d">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Fusion360学习笔记">
                         
-                        <span class="card-title">html3d</span>
+                        <span class="card-title">Fusion360学习笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -936,9 +934,9 @@ https://www.html5tricks.com/ -->
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-19
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -947,7 +945,6 @@ https://www.html5tricks.com/ -->
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -1232,7 +1229,7 @@ https://www.html5tricks.com/ -->
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">98.4k</span>&nbsp;字
+                class="white-color">98.7k</span>&nbsp;字
             
             
             
@@ -1558,6 +1555,21 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 
 </html>

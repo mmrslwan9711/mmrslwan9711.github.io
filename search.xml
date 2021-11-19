@@ -708,58 +708,50 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       </tags>
   </entry>
   <entry>
-    <title>LabelImg_使用</title>
-    <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
-<p>它是用 Python 编写的，并使用 Qt 作为其图形界面。</p>
-<p>注释以 PASCAL VOC 格式保存为 XML 文件，ImageNet使用的格式。此外，它还支持 YOLO 和 CreateML 格式。</p>
-<p><img src="https://www.codekp.cn/download/img/labelImg/labelimg.jpg" alt=""></p>
-<p>参考地址 ： <a href="https://github.com/tzutalin/labelImg">https://github.com/tzutalin/labelImg</a></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-none"><code class="language-none">conda install pyqt&#x3D;5
-conda install -c anaconda lxml
-pyrcc5 -o libs&#x2F;resources.py resources.qrc
-python labelImg.py
-python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>有基础的同学可以直接<br><pre class="line-numbers language-none"><code class="language-none">pip install labelimg <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
-<li><code>JPEGImage 目录</code>：存储的是图片的名字</li>
-<li><code>Annotation 目录</code>：用于存放标注图片的标签文件</li>
-<li><code>class.txt 文件</code>：定义自己要标注的所有类别</li>
-</ul>
-<p>例如：我的<code>class.txt</code>中定义的类别如下：<br><pre class="line-numbers language-none"><code class="language-none">one
-two
-ct5
-other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></p>
-<ul>
-<li><code>Open Dir</code>：待标注图片数据的路径文件夹，即选择JPEGImage文件夹</li>
-<li><code>Change Save Dir</code>：保存类别标签的路径文件夹，即选择Annotation文件夹</li>
-<li><code>PascalVOC</code>：标注的标签保存成VOC格式，在鼠标点一下就变成YOLO，即此时就会把标注的标签变成YOLO格式</li>
-</ul>
-<h3 id="view-快捷指令"><a href="#view-快捷指令" class="headerlink" title="view 快捷指令"></a>view 快捷指令</h3><ul>
-<li><code>Auto Save mode</code>：当你切换到下一张图片时，就会自动把上一张标注的图片标签自动保存下来，这样就不用每标注一样图片都按Ctrl+S保存一下了</li>
-<li><code>Display Labels</code>：标注好图片之后，会把框和标签都显示出来</li>
-<li><code>Advanced Mode</code>：这样标注的十字架就会一直悬浮在窗口，不用每次标完一个目标，再按一次W快捷键，调出标注的十字架。</li>
-</ul>
-<h3 id="标注常用的快捷键"><a href="#标注常用的快捷键" class="headerlink" title="标注常用的快捷键"></a>标注常用的快捷键</h3><ul>
-<li><code>W</code>：调出标注的十字架，开始标注</li>
-<li><code>A</code>：切换到上一张图片</li>
-<li><code>D</code>：切换到下一张图片</li>
-<li><code>Ctrl+S</code>：保存标注好的标签</li>
-<li><code>del</code>：删除标注的矩形框</li>
-<li><code>Ctrl+鼠标滚轮</code>：按住Ctrl，然后滚动鼠标滚轮，可以调整标注图片的显示大小</li>
-<li><code>Ctrl+u</code>：选择要标注图片的文件夹</li>
-<li><code>Ctrl+r</code>：选择标注好的label标签存放的文件夹</li>
-<li><code>↑→↓←</code>：移动标注的矩形框的位置</li>
-</ul>
-<p>标注的时候，会把classe.txt预定义的标加载出来，然后我们只要选择对应的标签即可<br>右上角会显示已经标注目标的标签</p>
-<h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><p>以yolo格式进行保存使用。</p>
+    <title>Fusion360学习笔记</title>
+    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
 ]]></content>
-      <categories>
-        <category>目标检测</category>
-      </categories>
-      <tags>
-        <tag>目标检测</tag>
-      </tags>
   </entry>
   <entry>
     <title>English_learning</title>
@@ -872,6 +864,60 @@ If you are talking to a group of managers, you may refer to the disorganized met
         <tag>英语</tag>
         <tag>英语阅读</tag>
         <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LabelImg_使用</title>
+    <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
+<p>它是用 Python 编写的，并使用 Qt 作为其图形界面。</p>
+<p>注释以 PASCAL VOC 格式保存为 XML 文件，ImageNet使用的格式。此外，它还支持 YOLO 和 CreateML 格式。</p>
+<p><img src="https://www.codekp.cn/download/img/labelImg/labelimg.jpg" alt=""></p>
+<p>参考地址 ： <a href="https://github.com/tzutalin/labelImg">https://github.com/tzutalin/labelImg</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre class="line-numbers language-none"><code class="language-none">conda install pyqt&#x3D;5
+conda install -c anaconda lxml
+pyrcc5 -o libs&#x2F;resources.py resources.qrc
+python labelImg.py
+python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>有基础的同学可以直接<br><pre class="line-numbers language-none"><code class="language-none">pip install labelimg <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ul>
+<li><code>JPEGImage 目录</code>：存储的是图片的名字</li>
+<li><code>Annotation 目录</code>：用于存放标注图片的标签文件</li>
+<li><code>class.txt 文件</code>：定义自己要标注的所有类别</li>
+</ul>
+<p>例如：我的<code>class.txt</code>中定义的类别如下：<br><pre class="line-numbers language-none"><code class="language-none">one
+two
+ct5
+other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></p>
+<ul>
+<li><code>Open Dir</code>：待标注图片数据的路径文件夹，即选择JPEGImage文件夹</li>
+<li><code>Change Save Dir</code>：保存类别标签的路径文件夹，即选择Annotation文件夹</li>
+<li><code>PascalVOC</code>：标注的标签保存成VOC格式，在鼠标点一下就变成YOLO，即此时就会把标注的标签变成YOLO格式</li>
+</ul>
+<h3 id="view-快捷指令"><a href="#view-快捷指令" class="headerlink" title="view 快捷指令"></a>view 快捷指令</h3><ul>
+<li><code>Auto Save mode</code>：当你切换到下一张图片时，就会自动把上一张标注的图片标签自动保存下来，这样就不用每标注一样图片都按Ctrl+S保存一下了</li>
+<li><code>Display Labels</code>：标注好图片之后，会把框和标签都显示出来</li>
+<li><code>Advanced Mode</code>：这样标注的十字架就会一直悬浮在窗口，不用每次标完一个目标，再按一次W快捷键，调出标注的十字架。</li>
+</ul>
+<h3 id="标注常用的快捷键"><a href="#标注常用的快捷键" class="headerlink" title="标注常用的快捷键"></a>标注常用的快捷键</h3><ul>
+<li><code>W</code>：调出标注的十字架，开始标注</li>
+<li><code>A</code>：切换到上一张图片</li>
+<li><code>D</code>：切换到下一张图片</li>
+<li><code>Ctrl+S</code>：保存标注好的标签</li>
+<li><code>del</code>：删除标注的矩形框</li>
+<li><code>Ctrl+鼠标滚轮</code>：按住Ctrl，然后滚动鼠标滚轮，可以调整标注图片的显示大小</li>
+<li><code>Ctrl+u</code>：选择要标注图片的文件夹</li>
+<li><code>Ctrl+r</code>：选择标注好的label标签存放的文件夹</li>
+<li><code>↑→↓←</code>：移动标注的矩形框的位置</li>
+</ul>
+<p>标注的时候，会把classe.txt预定义的标加载出来，然后我们只要选择对应的标签即可<br>右上角会显示已经标注目标的标签</p>
+<h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><p>以yolo格式进行保存使用。</p>
+]]></content>
+      <categories>
+        <category>目标检测</category>
+      </categories>
+      <tags>
+        <tag>目标检测</tag>
       </tags>
   </entry>
   <entry>
@@ -3970,7 +4016,42 @@ if (windowWidth &gt; 768) &#123;
   <entry>
     <title>html3d</title>
     <url>/2021/11/18/htmldownload/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="html3d"><a href="#html3d" class="headerlink" title="html3d"></a>html3d</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><pre><code>首先参考一下别人怎么做的3d模型，站在巨人的肩膀上看看要怎么操作。
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
+<pre><code>h1 &#123;
+counter-reset: subsection;
+&#125;
+h2 &#123;
+counter-reset: subsection2;
+&#125;
+h3 &#123;
+counter-reset: subsection3;
+&#125;
+h4 &#123;
+counter-reset: subsection4;
+&#125;
+h1::before &#123;
+counter-increment: section;
+content:  &quot; &quot;;
+&#125;
+
+h2::before &#123;
+counter-increment: subsection;
+content: counter(subsection) &quot; &quot;;
+&#125;
+h3::before &#123;
+counter-increment: subsection2;
+content: counter(subsection) &quot;.&quot; counter(subsection2) ;
+&#125;
+h4::before &#123;
+counter-increment: subsection3;
+content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
+&#125;
+h5::before &#123;
+counter-increment: subsection4;
+content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
+&#125;
+</code></pre><p>&lt;/style&gt;</p>
+<h1 id="html3d"><a href="#html3d" class="headerlink" title="html3d"></a>html3d</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><pre><code>首先参考一下别人怎么做的3d模型，站在巨人的肩膀上看看要怎么操作。
 </code></pre><h3 id="chrome浏览器下的网站"><a href="#chrome浏览器下的网站" class="headerlink" title="chrome浏览器下的网站"></a>chrome浏览器下的网站</h3><p><a href="https://www.hightopo.com/demo/CementFactory/">https://www.hightopo.com/demo/CementFactory/</a><br><a href="https://www.hightopo.com/demo/3DRoom/index.html">https://www.hightopo.com/demo/3DRoom/index.html</a><br>原文链接在：<a href="https://www.cnblogs.com/xhload3d/p/8577889.html">hightopo</a></p>
 <h3 id="查看源码F12"><a href="#查看源码F12" class="headerlink" title="查看源码F12"></a>查看源码F12</h3><p>可以看到单个的js文件，除此以外看不到其他，因此<br><img src="https://www.mmrsl.cn/download/img/html5/3.png" alt=""><br>可以一行一行的下载但这样很麻烦，因此可以考虑用谷歌插件一键下载。</p>
 <h3 id="Save-All-Resources"><a href="#Save-All-Resources" class="headerlink" title="Save All Resources"></a>Save All Resources</h3><p><img src="https://www.mmrsl.cn/download/img/html5/4.png" alt=""><br><strong>使用方法：</strong><br><img src="https://www.mmrsl.cn/download/img/html5/5.png" alt=""><br>下载以后如图所示<br><img src="https://www.mmrsl.cn/download/img/html5/6.png" alt=""></p>
@@ -4008,6 +4089,11 @@ https://www.html5tricks.com/ -->
 <p><a href="https://www.mmrsl.cn/3droom/">3droom</a></p>
 <h2 id="进行一些优化，即可做出不一样的地图"><a href="#进行一些优化，即可做出不一样的地图" class="headerlink" title="进行一些优化，即可做出不一样的地图"></a>进行一些优化，即可做出不一样的地图</h2><p>如下图所示：<br><img src="https://www.mmrsl.cn/download/img/html5/8.png" alt=""></p>
 <p><a href="https://www.mmrsl.cn/3droom2/">3droom2</a></p>
+<h2 id="ht-3d学习资料"><a href="#ht-3d学习资料" class="headerlink" title="ht 3d学习资料"></a>ht 3d学习资料</h2><ul>
+<li><a href="https://www.hightopo.com/guide/doc/ht.widget.TreeView.html">ht 说明手册</a></li>
+<li><a href="https://www.hightopo.com/guide/guide/core/3d/ht-3d-guide.html">HT for Web 3D 手册</a></li>
+<li><a href="https://www.hightopo.com/guide/guide/core/theme/ht-theme-guide.html">HT for Web 风格手册</a></li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -4525,521 +4611,6 @@ if __name__&#x3D;&#x3D;&#39;__main__&#39;:
       <tags>
         <tag>python</tag>
         <tag>paramiko</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Merry Christmas</title>
-    <url>/2020/12/24/merry_christmas/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-</center>
-
-<span id="more"></span>
-<ol>
-<li>git push 方法</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">git init
-git add .
-git commit -m &quot;first commit&quot;
-git remote add origin URL
-git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
-<ol>
-<li>圣诞网站模板分享</li>
-</ol>
-<ul>
-<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
-<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
-</ul>
-<ol>
-<li>电影分享 </li>
-</ol>
-<ul>
-<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
-</ul>
-<center>
-
-
-<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
-      <categories>
-        <category>电影推荐</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux系统通信功率信道修改方法</title>
-    <url>/2021/04/22/linux%E7%B3%BB%E7%BB%9F%E9%80%9A%E4%BF%A1%E5%8A%9F%E7%8E%87%E4%BF%A1%E9%81%93%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux系统通信功率信道修改方法"><a href="#linux系统通信功率信道修改方法" class="headerlink" title="linux系统通信功率信道修改方法"></a>linux系统通信功率信道修改方法</h1><h2 id="配置频段"><a href="#配置频段" class="headerlink" title="配置频段"></a>配置频段</h2><h3 id="可以先查看有哪些频段："><a href="#可以先查看有哪些频段：" class="headerlink" title="可以先查看有哪些频段："></a>可以先查看有哪些频段：</h3><p><code>iwlist channel</code> </p>
-<p>可用信道<br><pre class="line-numbers language-none"><code class="language-none">wlan0     13 channels in total; available frequencies :
-          Channel 01 : 2.412 GHz
-          Channel 02 : 2.417 GHz
-          Channel 03 : 2.422 GHz
-          Channel 04 : 2.427 GHz
-          Channel 05 : 2.432 GHz
-          Channel 06 : 2.437 GHz
-          Channel 07 : 2.442 GHz
-          Channel 08 : 2.447 GHz
-          Channel 09 : 2.452 GHz
-          Channel 10 : 2.457 GHz
-          Channel 11 : 2.462 GHz
-          Channel 12 : 2.467 GHz
-          Channel 13 : 2.472 GHz
-          Current Frequency:2.422 GHz (Channel 3)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<h3 id="改变信道"><a href="#改变信道" class="headerlink" title="改变信道"></a>改变信道</h3><p><code>sudo iwconfig wlan1 channel 1</code></p>
-<p>iwlist channel显示：</p>
-<pre class="line-numbers language-none"><code class="language-none">13 channels in total; available frequencies :
-        Current Frequency:2.412 GHz (Channel 1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="修改发射功率"><a href="#修改发射功率" class="headerlink" title="修改发射功率"></a>修改发射功率</h3><p><code>sudo iwconfig wlan1 txpower X</code></p>
-<p>Tx 是发射（Transmits）的简称。无线电波的发射功率是指在给定频段范围内的能量，通常有两种衡量或测量标准：</p>
-<ol>
-<li>功率（W）：相对1 瓦（Watts）的线性水准。例如,WiFi 无线网卡的发射功率通常为0.036W ，或者说36mW。</li>
-<li>增益（dBm）：相对1 毫瓦（milliwatt）的比例水准。例如,WiFi 无线网卡的发射增益为15.56dBm。</li>
-</ol>
-<ul>
-<li>功率单位mW 和dBm 的换算：</li>
-</ul>
-<ol>
-<li>dBm = 10 * lg[ 功率mW]               //即，以10为底数取[功率mW]对数，然再乘以10</li>
-<li>mW = 10^[增益dBm / 10dBm]     //即，以10为底数，[增益dBm/10dBm]为指数，计算取值</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">    10    W        的无线发射功率为  40 dBm
-    6.4   W        的无线发射功率为  38 dBm
-    3.2   W        的无线发射功率为  35 dBm
-    1.6   W        的无线发射功率为  32 dBm    
-    1000  mW       的无线发射功率为  30 dBm
-    800   mW       的无线发射功率为  29 dBm
-    400   mW       的无线发射功率为  26 dBm
-    200   mW       的无线发射功率为  23 dBm
-    100   mW       的无线发射功率为  20 dBm
-    50    mW       的无线发射功率为  17 dBm
-    25    mW       的无线发射功率为  14 dBm
-    12.5  mW       的无线发射功率为  11 dBm
-    10.34 mW       的无线发射功率为  10 dBm
-    8.26  mW       的无线发射功率为  9  dBm
-    6.25  mW       的无线发射功率为  8  dBm
-    3.125 mW       的无线发射功率为  5  dBm
-    1     mW       的无线发射功率为  0  dBm
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>经测试树莓派的发射功率最大可以达到31dBm、linux电脑可以达到20dBm。<br>树莓派可以通过命令行切换信道，linux电脑无法切换信道。<br>和学长讨论后不知道是不是伪切换信道需要进行测试。</p>
-<h2 id="测试是否为伪切换"><a href="#测试是否为伪切换" class="headerlink" title="测试是否为伪切换"></a>测试是否为伪切换</h2><p>让树莓派连接到一个固定信道的路由器进行测试。</p>
-<ol>
-<li><p>若无法切换信道则可以推断，树莓派确实能够切换上行信道</p>
-</li>
-<li><p>若可以切换信道，且可以上传则证明树莓派伪切换信道</p>
-</li>
-</ol>
-<h2 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h2><pre><code>准备一个路由器，将信道调整为固定信道1，树莓派尝试进行连接(修改配置文件)。
-</code></pre><h3 id="测试是否连接到固定信道路由器"><a href="#测试是否连接到固定信道路由器" class="headerlink" title="测试是否连接到固定信道路由器"></a>测试是否连接到固定信道路由器</h3><pre class="line-numbers language-none"><code class="language-none">iwconfig
-wlan0     IEEE 802.11bgn  ESSID:&quot;CH1&quot;
-          Mode:Managed  Frequency:2.412 GHz  Access Point: C8:3A:35:58:A4:D8
-          Bit Rate&#x3D;72.2 Mb&#x2F;s   Tx-Power&#x3D;31 dBm
-          Retry short limit:7   RTS thr:off   Fragment thr:off
-          Power Management:on
-          Link Quality&#x3D;70&#x2F;70  Signal level&#x3D;-38 dBm
-          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
-          Tx excessive retries:5  Invalid misc:0   Missed beacon:0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-none"><code class="language-none">ping 192.168.2.100
-PING 192.168.2.100 (192.168.2.100) 56(84) bytes of data.
-64 bytes from 192.168.2.100: icmp_seq&#x3D;1 ttl&#x3D;64 time&#x3D;641 ms
-64 bytes from 192.168.2.100: icmp_seq&#x3D;2 ttl&#x3D;64 time&#x3D;143 ms
-64 bytes from 192.168.2.100: icmp_seq&#x3D;3 ttl&#x3D;64 time&#x3D;64.2 ms
-64 bytes from 192.168.2.100: icmp_seq&#x3D;4 ttl&#x3D;64 time&#x3D;84.8 ms
-64 bytes from 192.168.2.100: icmp_seq&#x3D;5 ttl&#x3D;64 time&#x3D;214 ms
-64 bytes from 192.168.2.100: icmp_seq&#x3D;6 ttl&#x3D;64 time&#x3D;141 ms<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>结论:以上测试证明树莓派有正确连接到路由器</p>
-<h3 id="测试树莓派是否能切换信道"><a href="#测试树莓派是否能切换信道" class="headerlink" title="测试树莓派是否能切换信道"></a>测试树莓派是否能切换信道</h3><ol>
-<li><code>iwlist channel</code>显示：<pre class="line-numbers language-none"><code class="language-none">wlan0     11 channels in total; available frequencies :
-          Channel 01 : 2.412 GHz
-          Channel 02 : 2.417 GHz
-          Channel 03 : 2.422 GHz
-          Channel 04 : 2.427 GHz
-          Channel 05 : 2.432 GHz
-          Channel 06 : 2.437 GHz
-          Channel 07 : 2.442 GHz
-          Channel 08 : 2.447 GHz
-          Channel 09 : 2.452 GHz
-          Channel 10 : 2.457 GHz
-          Channel 11 : 2.462 GHz
-          Current Frequency:2.412 GHz (Channel 1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ol>
-<p>2.切换信道</p>
-<p> <code>sudo iwconfig wlan0 channel 3</code></p>
-<pre class="line-numbers language-none"><code class="language-none">iwconfig
-wlan0     IEEE 802.11bgn  ESSID:&quot;CH1&quot;
-          Mode:Managed  Frequency:2.422 GHz  Access Point: Not-Associated
-          Tx-Power&#x3D;31 dBm
-          Retry short limit:7   RTS thr:off   Fragment thr:off
-          Power Management:on<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>信道被修改了</p>
-<p>尝试进行ping<br><pre class="line-numbers language-none"><code class="language-none">ping 192.168.2.109
-PING 192.168.2.109 (192.168.2.109) 56(84) bytes of data.
-64 bytes from 192.168.2.109: icmp_seq&#x3D;1 ttl&#x3D;128 time&#x3D;9.72 ms
-64 bytes from 192.168.2.109: icmp_seq&#x3D;2 ttl&#x3D;128 time&#x3D;6.33 ms
-64 bytes from 192.168.2.109: icmp_seq&#x3D;3 ttl&#x3D;128 time&#x3D;22.0 ms
-64 bytes from 192.168.2.109: icmp_seq&#x3D;4 ttl&#x3D;128 time&#x3D;44.1 ms
-64 bytes from 192.168.2.109: icmp_seq&#x3D;5 ttl&#x3D;128 time&#x3D;8.24 ms
-64 bytes from 192.168.2.109: icmp_seq&#x3D;6 ttl&#x3D;128 time&#x3D;7.62 ms<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<p>传输正常…</p>
-<p>结论:树莓派很有可能是伪切换上行信道，但是我没有办法排除固定信道路由器无法接受非该信道信号的这个可能性。</p>
-<h2 id="进一步实验"><a href="#进一步实验" class="headerlink" title="进一步实验"></a>进一步实验</h2><p>如果修改信道可能xmu201_1的信道会改变。</p>
-<pre class="line-numbers language-none"><code class="language-none">iwlist scan
-Cell 05 - Address: D4:EE:07:49:19:FC
-                    Channel:3
-                    Frequency:2.422 GHz (Channel 3)
-                    Quality&#x3D;70&#x2F;70  Signal level&#x3D;-39 dBm
-                    Encryption key:on
-                    ESSID:&quot;xmu201_1&quot;
-                    Bit Rates:1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s
-                              18 Mb&#x2F;s; 36 Mb&#x2F;s; 54 Mb&#x2F;s
-                    Bit Rates:6 Mb&#x2F;s; 12 Mb&#x2F;s; 24 Mb&#x2F;s; 48 Mb&#x2F;s
-                    Mode:Master
-                    Extra:tsf&#x3D;0000000000000000
-                    Extra: Last beacon: 27270ms ago
-                    IE: Unknown: 0008786D753230315F31
-                    IE: Unknown: 010882848B961224486C
-                    IE: Unknown: 030103
-                    IE: Unknown: 32040C183060
-                    IE: Unknown: 0706434E20010D14
-                    IE: Unknown: 33082001020304050607
-                    IE: Unknown: 33082105060708090A0B
-                    IE: Unknown: 050400010000
-                    IE: WPA Version 1
-                        Group Cipher : CCMP
-                        Pairwise Ciphers (1) : CCMP
-                        Authentication Suites (1) : PSK
-                    IE: IEEE 802.11i&#x2F;WPA2 Version 1
-                        Group Cipher : CCMP
-                        Pairwise Ciphers (1) : CCMP
-                        Authentication Suites (1) : PSK
-                    IE: Unknown: 2A0106
-                    IE: Unknown: 2D1AAC0117FFFF000000000000000000000000000000000000000000
-                    IE: Unknown: 3D1603000400000000000000000000000000000000000000
-                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00
-                    IE: Unknown: 0B0502000B127A
-                    IE: Unknown: DD07000C4300000000
-                    IE: Unknown: DD06D4EE07010100
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>进行测试</p>
-<p> <code>sudo iwconfig wlan0 channel 3</code></p>
-<pre class="line-numbers language-none"><code class="language-none">iwconfig
-wlan0     IEEE 802.11bgn  ESSID:&quot;CH1&quot;
-          Mode:Managed  Frequency:2.422 GHz  Access Point: Not-Associated
-          Tx-Power&#x3D;31 dBm
-          Retry short limit:7   RTS thr:off   Fragment thr:off
-          Power Management:on<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>重新进行信道扫描</p>
-<pre class="line-numbers language-none"><code class="language-none">iwlist scan
-Cell 05 - Address: D4:EE:07:49:19:FC
-                    Channel:3
-                    Frequency:2.422 GHz (Channel 3)
-                    Quality&#x3D;70&#x2F;70  Signal level&#x3D;-39 dBm
-                    Encryption key:on
-                    ESSID:&quot;xmu201_1&quot;
-                    Bit Rates:1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s
-                              18 Mb&#x2F;s; 36 Mb&#x2F;s; 54 Mb&#x2F;s
-                    Bit Rates:6 Mb&#x2F;s; 12 Mb&#x2F;s; 24 Mb&#x2F;s; 48 Mb&#x2F;s
-                    Mode:Master
-                    Extra:tsf&#x3D;0000000000000000
-                    Extra: Last beacon: 27270ms ago
-                    IE: Unknown: 0008786D753230315F31
-                    IE: Unknown: 010882848B961224486C
-                    IE: Unknown: 030103
-                    IE: Unknown: 32040C183060
-                    IE: Unknown: 0706434E20010D14
-                    IE: Unknown: 33082001020304050607
-                    IE: Unknown: 33082105060708090A0B
-                    IE: Unknown: 050400010000
-                    IE: WPA Version 1
-                        Group Cipher : CCMP
-                        Pairwise Ciphers (1) : CCMP
-                        Authentication Suites (1) : PSK
-                    IE: IEEE 802.11i&#x2F;WPA2 Version 1
-                        Group Cipher : CCMP
-                        Pairwise Ciphers (1) : CCMP
-                        Authentication Suites (1) : PSK
-                    IE: Unknown: 2A0106
-                    IE: Unknown: 2D1AAC0117FFFF000000000000000000000000000000000000000000
-                    IE: Unknown: 3D1603000400000000000000000000000000000000000000
-                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00
-                    IE: Unknown: 0B0502000B127A
-                    IE: Unknown: DD07000C4300000000
-                    IE: Unknown: DD06D4EE07010100
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>信道没有发生变化。</p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>树莓派的 <code>sudo iwconfig wlan0 channel 3</code>极有可能是伪修改：即树莓派修改了某个寄存器的数值，但是并没有实际修改信道，这个可以通过进一步的研究进行验证。</p>
-<h2 id="树莓派开启热点功能"><a href="#树莓派开启热点功能" class="headerlink" title="树莓派开启热点功能"></a>树莓派开启热点功能</h2><p>研究了一下树莓派的开启热点方法，都有点不科学，最后找到一个比较稳定且合适的方法，需要使用HDMI线和鼠标键盘(因为断掉wifi后树莓派会和电脑断连接、若有插网线则可以无视)具体操作如下：</p>
-<p>创建WiFi热点使用的GitHub上一个开源项目：<br><a href="https://github.com/oblique/create_ap">https://github.com/oblique/create_ap</a></p>
-<h3 id="下载开源项目包"><a href="#下载开源项目包" class="headerlink" title="下载开源项目包"></a>下载开源项目包</h3><pre class="line-numbers language-none"><code class="language-none">sudo git clone https:&#x2F;&#x2F;github.com&#x2F;oblique&#x2F;create_ap
-cd create_ap
-sudo make install<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>可能会存在说树莓派连接不上github的可能性(ps:我就遇到了)</p>
-<ul>
-<li>参考以下步骤：</li>
-</ul>
-<ol>
-<li>用电脑从github下载zip格式文件</li>
-<li>通过xftp将zip文件转存入树莓派</li>
-<li>unzip xxx.zip文件<pre class="line-numbers language-none"><code class="language-none">cd create_ap
-sudo make install <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</li>
-</ol>
-<h3 id="运用该开源项目"><a href="#运用该开源项目" class="headerlink" title="运用该开源项目"></a>运用该开源项目</h3><ul>
-<li><a href="https://github.com/oblique/create_ap">参考</a></li>
-</ul>
-<h3 id="No-passphrase-open-network"><a href="#No-passphrase-open-network" class="headerlink" title="No passphrase (open network):"></a>No passphrase (open network):</h3><pre><code>create_ap wlan0 eth0 MyAccessPoint
-</code></pre><h3 id="WPA-WPA2-passphrase"><a href="#WPA-WPA2-passphrase" class="headerlink" title="WPA + WPA2 passphrase:"></a>WPA + WPA2 passphrase:</h3><pre><code>create_ap wlan0 eth0 MyAccessPoint MyPassPhrase
-</code></pre><h3 id="AP-without-Internet-sharing"><a href="#AP-without-Internet-sharing" class="headerlink" title="AP without Internet sharing:"></a>AP without Internet sharing:</h3><pre><code>create_ap -n wlan0 MyAccessPoint MyPassPhrase
-</code></pre><h3 id="Bridged-Internet-sharing"><a href="#Bridged-Internet-sharing" class="headerlink" title="Bridged Internet sharing:"></a>Bridged Internet sharing:</h3><pre><code>create_ap -m bridge wlan0 eth0 MyAccessPoint MyPassPhrase
-</code></pre><h3 id="Bridged-Internet-sharing-pre-configured-bridge-interface"><a href="#Bridged-Internet-sharing-pre-configured-bridge-interface" class="headerlink" title="Bridged Internet sharing (pre-configured bridge interface):"></a>Bridged Internet sharing (pre-configured bridge interface):</h3><pre><code>create_ap -m bridge wlan0 br0 MyAccessPoint MyPassPhrase
-</code></pre><h3 id="Internet-sharing-from-the-same-WiFi-interface"><a href="#Internet-sharing-from-the-same-WiFi-interface" class="headerlink" title="Internet sharing from the same WiFi interface:"></a>Internet sharing from the same WiFi interface:</h3><pre><code>create_ap wlan0 wlan0 MyAccessPoint MyPassPhrase
-</code></pre><h3 id="Choose-a-different-WiFi-adapter-driver"><a href="#Choose-a-different-WiFi-adapter-driver" class="headerlink" title="Choose a different WiFi adapter driver"></a>Choose a different WiFi adapter driver</h3><pre><code>create_ap --driver rtl871xdrv wlan0 eth0 MyAccessPoint MyPassPhrase
-</code></pre><h3 id="No-passphrase-open-network-using-pipe"><a href="#No-passphrase-open-network-using-pipe" class="headerlink" title="No passphrase (open network) using pipe:"></a>No passphrase (open network) using pipe:</h3><pre><code>echo -e &quot;MyAccessPoint&quot; | create_ap wlan0 eth0
-</code></pre><h3 id="WPA-WPA2-passphrase-using-pipe"><a href="#WPA-WPA2-passphrase-using-pipe" class="headerlink" title="WPA + WPA2 passphrase using pipe:"></a>WPA + WPA2 passphrase using pipe:</h3><pre><code>echo -e &quot;MyAccessPoint\nMyPassPhrase&quot; | create_ap wlan0 eth0
-</code></pre><h3 id="Enable-IEEE-802-11n"><a href="#Enable-IEEE-802-11n" class="headerlink" title="Enable IEEE 802.11n"></a>Enable IEEE 802.11n</h3><pre><code>create_ap --ieee80211n --ht_capab &#39;[HT40+]&#39; wlan0 eth0 MyAccessPoint MyPassPhrase
-</code></pre><h3 id="Client-Isolation"><a href="#Client-Isolation" class="headerlink" title="Client Isolation:"></a>Client Isolation:</h3><pre><code>create_ap --isolate-clients wlan0 eth0 MyAccessPoint MyPassPhrase
-</code></pre><h2 id="Systemd-service"><a href="#Systemd-service" class="headerlink" title="Systemd service"></a>Systemd service</h2><p>Using the persistent <a href="https://wiki.archlinux.org/index.php/systemd#Basic_systemctl_usage">systemd</a> service</p>
-<h3 id="Start-service-immediately"><a href="#Start-service-immediately" class="headerlink" title="Start service immediately:"></a>Start service immediately:</h3><pre><code>systemctl start create_ap
-</code></pre><h3 id="Start-on-boot"><a href="#Start-on-boot" class="headerlink" title="Start on boot:"></a>Start on boot:</h3><pre><code>systemctl enable create_ap
-</code></pre><h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>FreeBSD</p>
-<h2 id="个人热点尝试的操作"><a href="#个人热点尝试的操作" class="headerlink" title="个人热点尝试的操作"></a>个人热点尝试的操作</h2><h3 id="根据原开源项目内容设置自己需要的wifi"><a href="#根据原开源项目内容设置自己需要的wifi" class="headerlink" title="根据原开源项目内容设置自己需要的wifi"></a>根据原开源项目内容设置自己需要的wifi</h3><ol>
-<li>创建一个没有输入网络的热点</li>
-</ol>
-<p><code>sudo create_ap -n wlan0 pi_wifi MyPassWord</code></p>
-<ol>
-<li>遇到错误</li>
-</ol>
-<p><code>ERROR: Your adapter can not be a station (i.e. be connected) and an AP at the same time</code></p>
-<p>分析：应该是目前网络正在连接wifi，需要断开，turn off wifi ，重新进行尝试。</p>
-<ol>
-<li>重新<code>sudo create_ap -n wlan0 pi_wifi MyPassWord</code></li>
-</ol>
-<p>报错：RTNETLINK answers: Operation not possible due to RF-kill</p>
-<p>分析:应该是因为wifi被我之间断开，不能之间关闭只需要断开连接就行了</p>
-<ol>
-<li>test：</li>
-</ol>
-<p>这时用<code>rfkill list</code>查看所有无线设备</p>
-<pre class="line-numbers language-none"><code class="language-none">0: phy0: Wireless LAN
-   Soft blocked: yes
-   Hard blocked: no<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>发现wlan0软件关闭了。</p>
-<p>运行命令<code>rfkill unblock wlan</code>再查看无线设备</p>
-<pre class="line-numbers language-none"><code class="language-none">0: phy0: Wireless LAN
-    Soft blocked: no
-    Hard blocked: no<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>wlan0软件开启。</p>
-<ol>
-<li>再运行上面的<code>sudo create_ap -n wlan0 pi_wifi MyPassWord</code>出现：</li>
-</ol>
-<p><code>wlan0: AP-ENABLED</code></p>
-<p>成功开启热点</p>
-<h1 id="设置wifi的信道"><a href="#设置wifi的信道" class="headerlink" title="设置wifi的信道"></a>设置wifi的信道</h1><h2 id="但是不要忘记了我们的目的，查了很久都没有人修改过热点的信道！！！可能大家不需要该热点的信道，但是作为搞无线网络通信的，我们不能只追求这个，我们要改信道！"><a href="#但是不要忘记了我们的目的，查了很久都没有人修改过热点的信道！！！可能大家不需要该热点的信道，但是作为搞无线网络通信的，我们不能只追求这个，我们要改信道！" class="headerlink" title="但是不要忘记了我们的目的，查了很久都没有人修改过热点的信道！！！可能大家不需要该热点的信道，但是作为搞无线网络通信的，我们不能只追求这个，我们要改信道！"></a>但是不要忘记了我们的目的，查了很久都没有人修改过热点的信道！！！可能大家不需要该热点的信道，但是作为搞无线网络通信的，我们不能只追求这个，我们要改信道！</h2><h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><ol>
-<li><p>方法1：使用命令行修改通信信道 <code>sudo iwconfig wlan0 channel 3</code></p>
-</li>
-<li><p>方法2：查看该开源项目的内部文件，找到设置信道的方法</p>
-</li>
-<li><p>方法3：更换其他方式设置热点的信道</p>
-</li>
-</ol>
-<h2 id="实验-1"><a href="#实验-1" class="headerlink" title="实验"></a>实验</h2><h3 id="命令行修改信道"><a href="#命令行修改信道" class="headerlink" title="命令行修改信道"></a>命令行修改信道</h3><ol>
-<li><code>sudo iwconfig wlan0 channel 3</code></li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">Error for wireless request &quot;Set Frequency&quot; (8B04) :
-    SET failed on device wlan0 ; Operation not supported.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>直接报错，无法修改信道。</p>
-<ol>
-<li><code>iwconfig</code></li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">wlan0     IEEE 802.11bgn  Mode:Master  Tx-Power&#x3D;20 dBm
-          Retry short limit:7   RTS thr:off   Fragment thr:off
-          Power Management:off
-
-lo        no wireless extensions.
-
-eth0      no wireless extensions.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>这说明什么，命令行在ap状态下是无效的，没办法直接这样修改，该方案不可行。</p>
-<h3 id="查看该开源项目的内部文件"><a href="#查看该开源项目的内部文件" class="headerlink" title="查看该开源项目的内部文件"></a>查看该开源项目的内部文件</h3><p>这个热点开源项目一共有以下文件<br><pre class="line-numbers language-none"><code class="language-none">bash_completion  create_ap.conf    create_ap.service  LICENSE   README.md
-create_ap        create_ap.openrc  howto              Makefile<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>于是一个一个的找（只花了几分钟而已哈哈）</p>
-<h3 id="项目源代码"><a href="#项目源代码" class="headerlink" title="项目源代码"></a>项目源代码</h3><pre class="line-numbers language-none"><code class="language-none">usage() &#123;
-    echo &quot;Usage: &quot;$PROGNAME&quot; [options] &lt;wifi-interface&gt; [&lt;interface-with-internet&gt;] [&lt;access-point-name&gt; [&lt;passphrase&gt;]]&quot;
-    echo
-    echo &quot;Options:&quot;
-    echo &quot;  -h, --help              Show this help&quot;
-    echo &quot;  --version               Print version number&quot;
-    echo &quot;  -c &lt;channel&gt;            Channel number (default: 1)&quot;
-    echo &quot;  -w &lt;WPA version&gt;        Use 1 for WPA, use 2 for WPA2, use 1+2 for both (default: 1+2)&quot;
-    echo &quot;  -n                      Disable Internet sharing (if you use this, don&#39;t pass&quot;
-    echo &quot;                          the &lt;interface-with-internet&gt; argument)&quot;
-    echo &quot;  -m &lt;method&gt;             Method for Internet sharing.&quot;
-    echo &quot;                          Use: &#39;nat&#39; for NAT (default)&quot;
-    echo &quot;                               &#39;bridge&#39; for bridging&quot;
-    echo &quot;                               &#39;none&#39; for no Internet sharing (equivalent to -n)&quot;
-    echo &quot;  --psk                   Use 64 hex digits pre-shared-key instead of passphrase&quot;
-    echo &quot;  --hidden                Make the Access Point hidden (do not broadcast the SSID)&quot;
-    echo &quot;  --mac-filter            Enable MAC address filtering&quot;
-    echo &quot;  --mac-filter-accept     Location of MAC address filter list (defaults to &#x2F;etc&#x2F;hostapd&#x2F;hostapd.accept)&quot;
-    echo &quot;  --redirect-to-localhost If -n is set, redirect every web request to localhost (useful for public information networks)&quot;
-    echo &quot;  --hostapd-debug &lt;level&gt; With level between 1 and 2, passes arguments -d or -dd to hostapd for debugging.&quot;
-    echo &quot;  --isolate-clients       Disable communication between clients&quot;
-    echo &quot;  --ieee80211n            Enable IEEE 802.11n (HT)&quot;
-    echo &quot;  --ieee80211ac           Enable IEEE 802.11ac (VHT)&quot;
-    echo &quot;  --ht_capab &lt;HT&gt;         HT capabilities (default: [HT40+])&quot;
-    echo &quot;  --vht_capab &lt;VHT&gt;       VHT capabilities&quot;
-    echo &quot;  --country &lt;code&gt;        Set two-letter country code for regularity (example: US)&quot;
-    echo &quot;  --freq-band &lt;GHz&gt;       Set frequency band. Valid inputs: 2.4, 5 (default: 2.4)&quot;
-    echo &quot;  --driver                Choose your WiFi adapter driver (default: nl80211)&quot;
-    echo &quot;  --no-virt               Do not create virtual interface&quot;
-    echo &quot;  --no-haveged            Do not run &#39;haveged&#39; automatically when needed&quot;
-    echo &quot;  --fix-unmanaged         If NetworkManager shows your interface as unmanaged after you&quot;
-    echo &quot;                          close create_ap, then use this option to switch your interface&quot;
-    echo &quot;                          back to managed&quot;
-    echo &quot;  --mac &lt;MAC&gt;             Set MAC address&quot;
-    echo &quot;  --dhcp-dns &lt;IP1[,IP2]&gt;  Set DNS returned by DHCP&quot;
-    echo &quot;  --daemon                Run create_ap in the background&quot;
-    echo &quot;  --pidfile &lt;pidfile&gt;     Save daemon PID to file&quot;
-    echo &quot;  --logfile &lt;logfile&gt;     Save daemon messages to file&quot;
-    echo &quot;  --stop &lt;id&gt;             Send stop command to an already running create_ap. For an &lt;id&gt;&quot;
-    echo &quot;                          you can put the PID of create_ap or the WiFi interface. You can&quot;
-    echo &quot;                          get them with --list-running&quot;
-    echo &quot;  --list-running          Show the create_ap processes that are already running&quot;
-    echo &quot;  --list-clients &lt;id&gt;     List the clients connected to create_ap instance associated with &lt;id&gt;.&quot;
-    echo &quot;                          For an &lt;id&gt; you can put the PID of create_ap or the WiFi interface.&quot;
-    echo &quot;                          If virtual WiFi interface was created, then use that one.&quot;
-    echo &quot;                          You can get them with --list-running&quot;
-    echo &quot;  --mkconfig &lt;conf_file&gt;  Store configs in conf_file&quot;
-    echo &quot;  --config &lt;conf_file&gt;    Load configs from conf_file&quot;
-    echo
-    echo &quot;Non-Bridging Options:&quot;
-    echo &quot;  --no-dns                Disable dnsmasq DNS server&quot;
-    echo &quot;  --no-dnsmasq            Disable dnsmasq server completely&quot;
-    echo &quot;  -g &lt;gateway&gt;            IPv4 Gateway for the Access Point (default: 192.168.12.1)&quot;
-    echo &quot;  -d                      DNS server will take into account &#x2F;etc&#x2F;hosts&quot;
-    echo &quot;  -e &lt;hosts_file&gt;         DNS server will take into account additional hosts file&quot;
-    echo
-    echo &quot;Useful informations:&quot;
-    echo &quot;  * If you&#39;re not using the --no-virt option, then you can create an AP with the same&quot;
-    echo &quot;    interface you are getting your Internet connection.&quot;
-    echo &quot;  * You can pass your SSID and password through pipe or through arguments (see examples).&quot;
-    echo &quot;  * On bridge method if the &lt;interface-with-internet&gt; is not a bridge interface, then&quot;
-    echo &quot;    a bridge interface is created automatically.&quot;
-    echo
-    echo &quot;Examples:&quot;
-    echo &quot;  &quot;$PROGNAME&quot; wlan0 eth0 MyAccessPoint MyPassPhrase&quot;
-    echo &quot;  echo -e &#39;MyAccessPoint\nMyPassPhrase&#39; | &quot;$PROGNAME&quot; wlan0 eth0&quot;
-    echo &quot;  &quot;$PROGNAME&quot; wlan0 eth0 MyAccessPoint&quot;
-    echo &quot;  echo &#39;MyAccessPoint&#39; | &quot;$PROGNAME&quot; wlan0 eth0&quot;
-    echo &quot;  &quot;$PROGNAME&quot; wlan0 wlan0 MyAccessPoint MyPassPhrase&quot;
-    echo &quot;  &quot;$PROGNAME&quot; -n wlan0 MyAccessPoint MyPassPhrase&quot;
-    echo &quot;  &quot;$PROGNAME&quot; -m bridge wlan0 eth0 MyAccessPoint MyPassPhrase&quot;
-    echo &quot;  &quot;$PROGNAME&quot; -m bridge wlan0 br0 MyAccessPoint MyPassPhrase&quot;
-    echo &quot;  &quot;$PROGNAME&quot; --driver rtl871xdrv wlan0 eth0 MyAccessPoint MyPassPhrase&quot;
-    echo &quot;  &quot;$PROGNAME&quot; --daemon wlan0 eth0 MyAccessPoint MyPassPhrase&quot;
-    echo &quot;  &quot;$PROGNAME&quot; --stop wlan0&quot;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>这一行明显及其关键，一看就是可以利用的代码。</p>
-<p>其中：</p>
-<p><code>echo &quot;  -c &lt;channel&gt;            Channel number (default: 1)&quot;</code></p>
-<p>应该可以通过<code>sudo create_ap -n wlan0 pi_wifi MyPassWord -c 2</code>修改信道数值。</p>
-<pre class="line-numbers language-none"><code class="language-none">WARN: brmfmac driver doesn&#39;t work properly with virtual interfaces and
-      it can cause kernel panic. For this reason we disallow virtual
-      interfaces for your adapter.
-      For more info: https:&#x2F;&#x2F;github.com&#x2F;oblique&#x2F;create_ap&#x2F;issues&#x2F;203
-WARN: Your adapter does not fully support AP virtual interface, enabling --no-virt
-Config dir: &#x2F;tmp&#x2F;create_ap.wlan0.conf.d6khWCUL
-PID: 4794<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>wlan0应该是被占用了</p>
-<h2 id="修改信道"><a href="#修改信道" class="headerlink" title="修改信道"></a>修改信道</h2><p><code>sudo create_ap --s wlan0</code></p>
-<p>通过<code>sudo create_ap -n wlan0 pi_wifi MyPassWord -c 1</code>修改信道数值。</p>
-<p>通过其他设备进行测试’iwlist scan’</p>
-<p>扫描信道结果：<br><pre class="line-numbers language-none"><code class="language-none">wlan0     Scan completed :
-          Cell 01 - Address: 18:64:72:92:EC:81
-                    Channel:1
-                    Frequency:2.412 GHz (Channel 1)
-                    Quality&#x3D;46&#x2F;70  Signal level&#x3D;-64 dBm
-                    Encryption key:on
-                    ESSID:&quot;pi_wifi&quot;
-                    Bit Rates:1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 6 Mb&#x2F;s; 9 Mb&#x2F;s
-                              11 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s
-                    Bit Rates:24 Mb&#x2F;s; 36 Mb&#x2F;s; 48 Mb&#x2F;s; 54 Mb&#x2F;s
-                    Mode:Master
-                    Extra:tsf&#x3D;0000000000000000
-                    Extra: Last beacon: 200ms ago
-                    IE: Unknown: 0007656475726F616D
-                    IE: Unknown: 010882840B0C12161824
-                    IE: Unknown: 030101
-                    IE: Unknown: 2A0102
-                    IE: Unknown: 32043048606C
-                    IE: IEEE 802.11i&#x2F;WPA2 Version 1
-                        Group Cipher : CCMP
-                        Pairwise Ciphers (1) : CCMP
-                        Authentication Suites (1) : 802.1x
-                    IE: Unknown: 2D1AED111BFFFFFF0000000000000000000000000000000                                        000000000
-                    IE: Unknown: 3D1601000A0000000000000000000000000000000000000                                        0
-                    IE: Unknown: 7F080000080000000000
-                    IE: Unknown: DD180050F2020101800003A4000027A4000042435E00623                                        22F00<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>通过<code>sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11</code>修改信道数值。<br>通过其他设备进行测试’iwlist scan’</p>
-<p>扫描信道结果：<br><pre class="line-numbers language-none"><code class="language-none">Cell 12 - Address: 18:64:72:92:EC:81
-                    Channel:11
-                    Frequency:2.462 GHz (Channel 11)
-                    Quality&#x3D;66&#x2F;70  Signal level&#x3D;-44 dBm
-                    Encryption key:off
-                    ESSID:&quot;pi_wifi&quot;
-                    Bit Rates:1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 6 Mb&#x2F;s
-                              9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s
-                    Bit Rates:24 Mb&#x2F;s; 36 Mb&#x2F;s; 48 Mb&#x2F;s; 54 Mb&#x2F;s
-                    Mode:Master
-                    Extra:tsf&#x3D;0000000000000000
-                    Extra: Last beacon: 17620ms ago
-                    IE: Unknown: 0003434832
-                    IE: Unknown: 010882848B960C121824
-                    IE: Unknown: 03010B
-                    IE: Unknown: 2A0100
-                    IE: Unknown: 32043048606C
-                    IE: Unknown: 2D1A2C0003FF00000000000000000000000000000000000000000000
-                    IE: Unknown: 3D160B001100000000000000000000000000000000000000
-                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00
-                    IE: Unknown: DD05000AEB0100
-                    IE: Unknown: DD8E0050F204104A0001101044000102103B0001031047001000000000000010000000FCD7330F3A461021000754502D4C494E4B10230009544C2D57523734324E10240003372E3010420007312E312E312E331054000800060050F204000110110018576972656C657373204E20526F757465722057523734324E100800022288103C0001011049000600372A000120
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<p>成功修改信道！</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>综上所示：</p>
-<ol>
-<li>可以通过命令行修改功率</li>
-</ol>
-<p><code>sudo iwconfig wlan1 txpower X</code></p>
-<ol>
-<li>通过开源项目切换信道<pre class="line-numbers language-none"><code class="language-none">sudo create_ap --s wlan0
-
-sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">生成ssh
-
-ssh-keygen -t rsa -C &quot;kp@mmrsl.cn&quot;
-
-ssh-agent -s
-
-ssh-add ~&#x2F;.ssh&#x2F;id_rsa<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="扩展：功率修改测试及方案"><a href="#扩展：功率修改测试及方案" class="headerlink" title="扩展：功率修改测试及方案"></a>扩展：功率修改测试及方案</h2><ol>
-<li>开启热点 <pre class="line-numbers language-none"><code class="language-none">sudo create_ap --s wlan0
-
-sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
-<li>修改功率</li>
-</ol>
-<p><code>sudo iwconfig wlan1 txpower 30</code></p>
-<ol>
-<li>检测功率</li>
-</ol>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -5953,6 +5524,521 @@ iptables-restore &lt; &#x2F;etc&#x2F;iptables.ipv4.nat
       </categories>
       <tags>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux系统通信功率信道修改方法</title>
+    <url>/2021/04/22/linux%E7%B3%BB%E7%BB%9F%E9%80%9A%E4%BF%A1%E5%8A%9F%E7%8E%87%E4%BF%A1%E9%81%93%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux系统通信功率信道修改方法"><a href="#linux系统通信功率信道修改方法" class="headerlink" title="linux系统通信功率信道修改方法"></a>linux系统通信功率信道修改方法</h1><h2 id="配置频段"><a href="#配置频段" class="headerlink" title="配置频段"></a>配置频段</h2><h3 id="可以先查看有哪些频段："><a href="#可以先查看有哪些频段：" class="headerlink" title="可以先查看有哪些频段："></a>可以先查看有哪些频段：</h3><p><code>iwlist channel</code> </p>
+<p>可用信道<br><pre class="line-numbers language-none"><code class="language-none">wlan0     13 channels in total; available frequencies :
+          Channel 01 : 2.412 GHz
+          Channel 02 : 2.417 GHz
+          Channel 03 : 2.422 GHz
+          Channel 04 : 2.427 GHz
+          Channel 05 : 2.432 GHz
+          Channel 06 : 2.437 GHz
+          Channel 07 : 2.442 GHz
+          Channel 08 : 2.447 GHz
+          Channel 09 : 2.452 GHz
+          Channel 10 : 2.457 GHz
+          Channel 11 : 2.462 GHz
+          Channel 12 : 2.467 GHz
+          Channel 13 : 2.472 GHz
+          Current Frequency:2.422 GHz (Channel 3)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h3 id="改变信道"><a href="#改变信道" class="headerlink" title="改变信道"></a>改变信道</h3><p><code>sudo iwconfig wlan1 channel 1</code></p>
+<p>iwlist channel显示：</p>
+<pre class="line-numbers language-none"><code class="language-none">13 channels in total; available frequencies :
+        Current Frequency:2.412 GHz (Channel 1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="修改发射功率"><a href="#修改发射功率" class="headerlink" title="修改发射功率"></a>修改发射功率</h3><p><code>sudo iwconfig wlan1 txpower X</code></p>
+<p>Tx 是发射（Transmits）的简称。无线电波的发射功率是指在给定频段范围内的能量，通常有两种衡量或测量标准：</p>
+<ol>
+<li>功率（W）：相对1 瓦（Watts）的线性水准。例如,WiFi 无线网卡的发射功率通常为0.036W ，或者说36mW。</li>
+<li>增益（dBm）：相对1 毫瓦（milliwatt）的比例水准。例如,WiFi 无线网卡的发射增益为15.56dBm。</li>
+</ol>
+<ul>
+<li>功率单位mW 和dBm 的换算：</li>
+</ul>
+<ol>
+<li>dBm = 10 * lg[ 功率mW]               //即，以10为底数取[功率mW]对数，然再乘以10</li>
+<li>mW = 10^[增益dBm / 10dBm]     //即，以10为底数，[增益dBm/10dBm]为指数，计算取值</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">    10    W        的无线发射功率为  40 dBm
+    6.4   W        的无线发射功率为  38 dBm
+    3.2   W        的无线发射功率为  35 dBm
+    1.6   W        的无线发射功率为  32 dBm    
+    1000  mW       的无线发射功率为  30 dBm
+    800   mW       的无线发射功率为  29 dBm
+    400   mW       的无线发射功率为  26 dBm
+    200   mW       的无线发射功率为  23 dBm
+    100   mW       的无线发射功率为  20 dBm
+    50    mW       的无线发射功率为  17 dBm
+    25    mW       的无线发射功率为  14 dBm
+    12.5  mW       的无线发射功率为  11 dBm
+    10.34 mW       的无线发射功率为  10 dBm
+    8.26  mW       的无线发射功率为  9  dBm
+    6.25  mW       的无线发射功率为  8  dBm
+    3.125 mW       的无线发射功率为  5  dBm
+    1     mW       的无线发射功率为  0  dBm
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>经测试树莓派的发射功率最大可以达到31dBm、linux电脑可以达到20dBm。<br>树莓派可以通过命令行切换信道，linux电脑无法切换信道。<br>和学长讨论后不知道是不是伪切换信道需要进行测试。</p>
+<h2 id="测试是否为伪切换"><a href="#测试是否为伪切换" class="headerlink" title="测试是否为伪切换"></a>测试是否为伪切换</h2><p>让树莓派连接到一个固定信道的路由器进行测试。</p>
+<ol>
+<li><p>若无法切换信道则可以推断，树莓派确实能够切换上行信道</p>
+</li>
+<li><p>若可以切换信道，且可以上传则证明树莓派伪切换信道</p>
+</li>
+</ol>
+<h2 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h2><pre><code>准备一个路由器，将信道调整为固定信道1，树莓派尝试进行连接(修改配置文件)。
+</code></pre><h3 id="测试是否连接到固定信道路由器"><a href="#测试是否连接到固定信道路由器" class="headerlink" title="测试是否连接到固定信道路由器"></a>测试是否连接到固定信道路由器</h3><pre class="line-numbers language-none"><code class="language-none">iwconfig
+wlan0     IEEE 802.11bgn  ESSID:&quot;CH1&quot;
+          Mode:Managed  Frequency:2.412 GHz  Access Point: C8:3A:35:58:A4:D8
+          Bit Rate&#x3D;72.2 Mb&#x2F;s   Tx-Power&#x3D;31 dBm
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on
+          Link Quality&#x3D;70&#x2F;70  Signal level&#x3D;-38 dBm
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:5  Invalid misc:0   Missed beacon:0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">ping 192.168.2.100
+PING 192.168.2.100 (192.168.2.100) 56(84) bytes of data.
+64 bytes from 192.168.2.100: icmp_seq&#x3D;1 ttl&#x3D;64 time&#x3D;641 ms
+64 bytes from 192.168.2.100: icmp_seq&#x3D;2 ttl&#x3D;64 time&#x3D;143 ms
+64 bytes from 192.168.2.100: icmp_seq&#x3D;3 ttl&#x3D;64 time&#x3D;64.2 ms
+64 bytes from 192.168.2.100: icmp_seq&#x3D;4 ttl&#x3D;64 time&#x3D;84.8 ms
+64 bytes from 192.168.2.100: icmp_seq&#x3D;5 ttl&#x3D;64 time&#x3D;214 ms
+64 bytes from 192.168.2.100: icmp_seq&#x3D;6 ttl&#x3D;64 time&#x3D;141 ms<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>结论:以上测试证明树莓派有正确连接到路由器</p>
+<h3 id="测试树莓派是否能切换信道"><a href="#测试树莓派是否能切换信道" class="headerlink" title="测试树莓派是否能切换信道"></a>测试树莓派是否能切换信道</h3><ol>
+<li><code>iwlist channel</code>显示：<pre class="line-numbers language-none"><code class="language-none">wlan0     11 channels in total; available frequencies :
+          Channel 01 : 2.412 GHz
+          Channel 02 : 2.417 GHz
+          Channel 03 : 2.422 GHz
+          Channel 04 : 2.427 GHz
+          Channel 05 : 2.432 GHz
+          Channel 06 : 2.437 GHz
+          Channel 07 : 2.442 GHz
+          Channel 08 : 2.447 GHz
+          Channel 09 : 2.452 GHz
+          Channel 10 : 2.457 GHz
+          Channel 11 : 2.462 GHz
+          Current Frequency:2.412 GHz (Channel 1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
+<p>2.切换信道</p>
+<p> <code>sudo iwconfig wlan0 channel 3</code></p>
+<pre class="line-numbers language-none"><code class="language-none">iwconfig
+wlan0     IEEE 802.11bgn  ESSID:&quot;CH1&quot;
+          Mode:Managed  Frequency:2.422 GHz  Access Point: Not-Associated
+          Tx-Power&#x3D;31 dBm
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>信道被修改了</p>
+<p>尝试进行ping<br><pre class="line-numbers language-none"><code class="language-none">ping 192.168.2.109
+PING 192.168.2.109 (192.168.2.109) 56(84) bytes of data.
+64 bytes from 192.168.2.109: icmp_seq&#x3D;1 ttl&#x3D;128 time&#x3D;9.72 ms
+64 bytes from 192.168.2.109: icmp_seq&#x3D;2 ttl&#x3D;128 time&#x3D;6.33 ms
+64 bytes from 192.168.2.109: icmp_seq&#x3D;3 ttl&#x3D;128 time&#x3D;22.0 ms
+64 bytes from 192.168.2.109: icmp_seq&#x3D;4 ttl&#x3D;128 time&#x3D;44.1 ms
+64 bytes from 192.168.2.109: icmp_seq&#x3D;5 ttl&#x3D;128 time&#x3D;8.24 ms
+64 bytes from 192.168.2.109: icmp_seq&#x3D;6 ttl&#x3D;128 time&#x3D;7.62 ms<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<p>传输正常…</p>
+<p>结论:树莓派很有可能是伪切换上行信道，但是我没有办法排除固定信道路由器无法接受非该信道信号的这个可能性。</p>
+<h2 id="进一步实验"><a href="#进一步实验" class="headerlink" title="进一步实验"></a>进一步实验</h2><p>如果修改信道可能xmu201_1的信道会改变。</p>
+<pre class="line-numbers language-none"><code class="language-none">iwlist scan
+Cell 05 - Address: D4:EE:07:49:19:FC
+                    Channel:3
+                    Frequency:2.422 GHz (Channel 3)
+                    Quality&#x3D;70&#x2F;70  Signal level&#x3D;-39 dBm
+                    Encryption key:on
+                    ESSID:&quot;xmu201_1&quot;
+                    Bit Rates:1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s
+                              18 Mb&#x2F;s; 36 Mb&#x2F;s; 54 Mb&#x2F;s
+                    Bit Rates:6 Mb&#x2F;s; 12 Mb&#x2F;s; 24 Mb&#x2F;s; 48 Mb&#x2F;s
+                    Mode:Master
+                    Extra:tsf&#x3D;0000000000000000
+                    Extra: Last beacon: 27270ms ago
+                    IE: Unknown: 0008786D753230315F31
+                    IE: Unknown: 010882848B961224486C
+                    IE: Unknown: 030103
+                    IE: Unknown: 32040C183060
+                    IE: Unknown: 0706434E20010D14
+                    IE: Unknown: 33082001020304050607
+                    IE: Unknown: 33082105060708090A0B
+                    IE: Unknown: 050400010000
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: IEEE 802.11i&#x2F;WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: 2A0106
+                    IE: Unknown: 2D1AAC0117FFFF000000000000000000000000000000000000000000
+                    IE: Unknown: 3D1603000400000000000000000000000000000000000000
+                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00
+                    IE: Unknown: 0B0502000B127A
+                    IE: Unknown: DD07000C4300000000
+                    IE: Unknown: DD06D4EE07010100
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>进行测试</p>
+<p> <code>sudo iwconfig wlan0 channel 3</code></p>
+<pre class="line-numbers language-none"><code class="language-none">iwconfig
+wlan0     IEEE 802.11bgn  ESSID:&quot;CH1&quot;
+          Mode:Managed  Frequency:2.422 GHz  Access Point: Not-Associated
+          Tx-Power&#x3D;31 dBm
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>重新进行信道扫描</p>
+<pre class="line-numbers language-none"><code class="language-none">iwlist scan
+Cell 05 - Address: D4:EE:07:49:19:FC
+                    Channel:3
+                    Frequency:2.422 GHz (Channel 3)
+                    Quality&#x3D;70&#x2F;70  Signal level&#x3D;-39 dBm
+                    Encryption key:on
+                    ESSID:&quot;xmu201_1&quot;
+                    Bit Rates:1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s
+                              18 Mb&#x2F;s; 36 Mb&#x2F;s; 54 Mb&#x2F;s
+                    Bit Rates:6 Mb&#x2F;s; 12 Mb&#x2F;s; 24 Mb&#x2F;s; 48 Mb&#x2F;s
+                    Mode:Master
+                    Extra:tsf&#x3D;0000000000000000
+                    Extra: Last beacon: 27270ms ago
+                    IE: Unknown: 0008786D753230315F31
+                    IE: Unknown: 010882848B961224486C
+                    IE: Unknown: 030103
+                    IE: Unknown: 32040C183060
+                    IE: Unknown: 0706434E20010D14
+                    IE: Unknown: 33082001020304050607
+                    IE: Unknown: 33082105060708090A0B
+                    IE: Unknown: 050400010000
+                    IE: WPA Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: IEEE 802.11i&#x2F;WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: 2A0106
+                    IE: Unknown: 2D1AAC0117FFFF000000000000000000000000000000000000000000
+                    IE: Unknown: 3D1603000400000000000000000000000000000000000000
+                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00
+                    IE: Unknown: 0B0502000B127A
+                    IE: Unknown: DD07000C4300000000
+                    IE: Unknown: DD06D4EE07010100
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>信道没有发生变化。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>树莓派的 <code>sudo iwconfig wlan0 channel 3</code>极有可能是伪修改：即树莓派修改了某个寄存器的数值，但是并没有实际修改信道，这个可以通过进一步的研究进行验证。</p>
+<h2 id="树莓派开启热点功能"><a href="#树莓派开启热点功能" class="headerlink" title="树莓派开启热点功能"></a>树莓派开启热点功能</h2><p>研究了一下树莓派的开启热点方法，都有点不科学，最后找到一个比较稳定且合适的方法，需要使用HDMI线和鼠标键盘(因为断掉wifi后树莓派会和电脑断连接、若有插网线则可以无视)具体操作如下：</p>
+<p>创建WiFi热点使用的GitHub上一个开源项目：<br><a href="https://github.com/oblique/create_ap">https://github.com/oblique/create_ap</a></p>
+<h3 id="下载开源项目包"><a href="#下载开源项目包" class="headerlink" title="下载开源项目包"></a>下载开源项目包</h3><pre class="line-numbers language-none"><code class="language-none">sudo git clone https:&#x2F;&#x2F;github.com&#x2F;oblique&#x2F;create_ap
+cd create_ap
+sudo make install<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>可能会存在说树莓派连接不上github的可能性(ps:我就遇到了)</p>
+<ul>
+<li>参考以下步骤：</li>
+</ul>
+<ol>
+<li>用电脑从github下载zip格式文件</li>
+<li>通过xftp将zip文件转存入树莓派</li>
+<li>unzip xxx.zip文件<pre class="line-numbers language-none"><code class="language-none">cd create_ap
+sudo make install <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+</ol>
+<h3 id="运用该开源项目"><a href="#运用该开源项目" class="headerlink" title="运用该开源项目"></a>运用该开源项目</h3><ul>
+<li><a href="https://github.com/oblique/create_ap">参考</a></li>
+</ul>
+<h3 id="No-passphrase-open-network"><a href="#No-passphrase-open-network" class="headerlink" title="No passphrase (open network):"></a>No passphrase (open network):</h3><pre><code>create_ap wlan0 eth0 MyAccessPoint
+</code></pre><h3 id="WPA-WPA2-passphrase"><a href="#WPA-WPA2-passphrase" class="headerlink" title="WPA + WPA2 passphrase:"></a>WPA + WPA2 passphrase:</h3><pre><code>create_ap wlan0 eth0 MyAccessPoint MyPassPhrase
+</code></pre><h3 id="AP-without-Internet-sharing"><a href="#AP-without-Internet-sharing" class="headerlink" title="AP without Internet sharing:"></a>AP without Internet sharing:</h3><pre><code>create_ap -n wlan0 MyAccessPoint MyPassPhrase
+</code></pre><h3 id="Bridged-Internet-sharing"><a href="#Bridged-Internet-sharing" class="headerlink" title="Bridged Internet sharing:"></a>Bridged Internet sharing:</h3><pre><code>create_ap -m bridge wlan0 eth0 MyAccessPoint MyPassPhrase
+</code></pre><h3 id="Bridged-Internet-sharing-pre-configured-bridge-interface"><a href="#Bridged-Internet-sharing-pre-configured-bridge-interface" class="headerlink" title="Bridged Internet sharing (pre-configured bridge interface):"></a>Bridged Internet sharing (pre-configured bridge interface):</h3><pre><code>create_ap -m bridge wlan0 br0 MyAccessPoint MyPassPhrase
+</code></pre><h3 id="Internet-sharing-from-the-same-WiFi-interface"><a href="#Internet-sharing-from-the-same-WiFi-interface" class="headerlink" title="Internet sharing from the same WiFi interface:"></a>Internet sharing from the same WiFi interface:</h3><pre><code>create_ap wlan0 wlan0 MyAccessPoint MyPassPhrase
+</code></pre><h3 id="Choose-a-different-WiFi-adapter-driver"><a href="#Choose-a-different-WiFi-adapter-driver" class="headerlink" title="Choose a different WiFi adapter driver"></a>Choose a different WiFi adapter driver</h3><pre><code>create_ap --driver rtl871xdrv wlan0 eth0 MyAccessPoint MyPassPhrase
+</code></pre><h3 id="No-passphrase-open-network-using-pipe"><a href="#No-passphrase-open-network-using-pipe" class="headerlink" title="No passphrase (open network) using pipe:"></a>No passphrase (open network) using pipe:</h3><pre><code>echo -e &quot;MyAccessPoint&quot; | create_ap wlan0 eth0
+</code></pre><h3 id="WPA-WPA2-passphrase-using-pipe"><a href="#WPA-WPA2-passphrase-using-pipe" class="headerlink" title="WPA + WPA2 passphrase using pipe:"></a>WPA + WPA2 passphrase using pipe:</h3><pre><code>echo -e &quot;MyAccessPoint\nMyPassPhrase&quot; | create_ap wlan0 eth0
+</code></pre><h3 id="Enable-IEEE-802-11n"><a href="#Enable-IEEE-802-11n" class="headerlink" title="Enable IEEE 802.11n"></a>Enable IEEE 802.11n</h3><pre><code>create_ap --ieee80211n --ht_capab &#39;[HT40+]&#39; wlan0 eth0 MyAccessPoint MyPassPhrase
+</code></pre><h3 id="Client-Isolation"><a href="#Client-Isolation" class="headerlink" title="Client Isolation:"></a>Client Isolation:</h3><pre><code>create_ap --isolate-clients wlan0 eth0 MyAccessPoint MyPassPhrase
+</code></pre><h2 id="Systemd-service"><a href="#Systemd-service" class="headerlink" title="Systemd service"></a>Systemd service</h2><p>Using the persistent <a href="https://wiki.archlinux.org/index.php/systemd#Basic_systemctl_usage">systemd</a> service</p>
+<h3 id="Start-service-immediately"><a href="#Start-service-immediately" class="headerlink" title="Start service immediately:"></a>Start service immediately:</h3><pre><code>systemctl start create_ap
+</code></pre><h3 id="Start-on-boot"><a href="#Start-on-boot" class="headerlink" title="Start on boot:"></a>Start on boot:</h3><pre><code>systemctl enable create_ap
+</code></pre><h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>FreeBSD</p>
+<h2 id="个人热点尝试的操作"><a href="#个人热点尝试的操作" class="headerlink" title="个人热点尝试的操作"></a>个人热点尝试的操作</h2><h3 id="根据原开源项目内容设置自己需要的wifi"><a href="#根据原开源项目内容设置自己需要的wifi" class="headerlink" title="根据原开源项目内容设置自己需要的wifi"></a>根据原开源项目内容设置自己需要的wifi</h3><ol>
+<li>创建一个没有输入网络的热点</li>
+</ol>
+<p><code>sudo create_ap -n wlan0 pi_wifi MyPassWord</code></p>
+<ol>
+<li>遇到错误</li>
+</ol>
+<p><code>ERROR: Your adapter can not be a station (i.e. be connected) and an AP at the same time</code></p>
+<p>分析：应该是目前网络正在连接wifi，需要断开，turn off wifi ，重新进行尝试。</p>
+<ol>
+<li>重新<code>sudo create_ap -n wlan0 pi_wifi MyPassWord</code></li>
+</ol>
+<p>报错：RTNETLINK answers: Operation not possible due to RF-kill</p>
+<p>分析:应该是因为wifi被我之间断开，不能之间关闭只需要断开连接就行了</p>
+<ol>
+<li>test：</li>
+</ol>
+<p>这时用<code>rfkill list</code>查看所有无线设备</p>
+<pre class="line-numbers language-none"><code class="language-none">0: phy0: Wireless LAN
+   Soft blocked: yes
+   Hard blocked: no<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>发现wlan0软件关闭了。</p>
+<p>运行命令<code>rfkill unblock wlan</code>再查看无线设备</p>
+<pre class="line-numbers language-none"><code class="language-none">0: phy0: Wireless LAN
+    Soft blocked: no
+    Hard blocked: no<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>wlan0软件开启。</p>
+<ol>
+<li>再运行上面的<code>sudo create_ap -n wlan0 pi_wifi MyPassWord</code>出现：</li>
+</ol>
+<p><code>wlan0: AP-ENABLED</code></p>
+<p>成功开启热点</p>
+<h1 id="设置wifi的信道"><a href="#设置wifi的信道" class="headerlink" title="设置wifi的信道"></a>设置wifi的信道</h1><h2 id="但是不要忘记了我们的目的，查了很久都没有人修改过热点的信道！！！可能大家不需要该热点的信道，但是作为搞无线网络通信的，我们不能只追求这个，我们要改信道！"><a href="#但是不要忘记了我们的目的，查了很久都没有人修改过热点的信道！！！可能大家不需要该热点的信道，但是作为搞无线网络通信的，我们不能只追求这个，我们要改信道！" class="headerlink" title="但是不要忘记了我们的目的，查了很久都没有人修改过热点的信道！！！可能大家不需要该热点的信道，但是作为搞无线网络通信的，我们不能只追求这个，我们要改信道！"></a>但是不要忘记了我们的目的，查了很久都没有人修改过热点的信道！！！可能大家不需要该热点的信道，但是作为搞无线网络通信的，我们不能只追求这个，我们要改信道！</h2><h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><ol>
+<li><p>方法1：使用命令行修改通信信道 <code>sudo iwconfig wlan0 channel 3</code></p>
+</li>
+<li><p>方法2：查看该开源项目的内部文件，找到设置信道的方法</p>
+</li>
+<li><p>方法3：更换其他方式设置热点的信道</p>
+</li>
+</ol>
+<h2 id="实验-1"><a href="#实验-1" class="headerlink" title="实验"></a>实验</h2><h3 id="命令行修改信道"><a href="#命令行修改信道" class="headerlink" title="命令行修改信道"></a>命令行修改信道</h3><ol>
+<li><code>sudo iwconfig wlan0 channel 3</code></li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">Error for wireless request &quot;Set Frequency&quot; (8B04) :
+    SET failed on device wlan0 ; Operation not supported.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>直接报错，无法修改信道。</p>
+<ol>
+<li><code>iwconfig</code></li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">wlan0     IEEE 802.11bgn  Mode:Master  Tx-Power&#x3D;20 dBm
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:off
+
+lo        no wireless extensions.
+
+eth0      no wireless extensions.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这说明什么，命令行在ap状态下是无效的，没办法直接这样修改，该方案不可行。</p>
+<h3 id="查看该开源项目的内部文件"><a href="#查看该开源项目的内部文件" class="headerlink" title="查看该开源项目的内部文件"></a>查看该开源项目的内部文件</h3><p>这个热点开源项目一共有以下文件<br><pre class="line-numbers language-none"><code class="language-none">bash_completion  create_ap.conf    create_ap.service  LICENSE   README.md
+create_ap        create_ap.openrc  howto              Makefile<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>于是一个一个的找（只花了几分钟而已哈哈）</p>
+<h3 id="项目源代码"><a href="#项目源代码" class="headerlink" title="项目源代码"></a>项目源代码</h3><pre class="line-numbers language-none"><code class="language-none">usage() &#123;
+    echo &quot;Usage: &quot;$PROGNAME&quot; [options] &lt;wifi-interface&gt; [&lt;interface-with-internet&gt;] [&lt;access-point-name&gt; [&lt;passphrase&gt;]]&quot;
+    echo
+    echo &quot;Options:&quot;
+    echo &quot;  -h, --help              Show this help&quot;
+    echo &quot;  --version               Print version number&quot;
+    echo &quot;  -c &lt;channel&gt;            Channel number (default: 1)&quot;
+    echo &quot;  -w &lt;WPA version&gt;        Use 1 for WPA, use 2 for WPA2, use 1+2 for both (default: 1+2)&quot;
+    echo &quot;  -n                      Disable Internet sharing (if you use this, don&#39;t pass&quot;
+    echo &quot;                          the &lt;interface-with-internet&gt; argument)&quot;
+    echo &quot;  -m &lt;method&gt;             Method for Internet sharing.&quot;
+    echo &quot;                          Use: &#39;nat&#39; for NAT (default)&quot;
+    echo &quot;                               &#39;bridge&#39; for bridging&quot;
+    echo &quot;                               &#39;none&#39; for no Internet sharing (equivalent to -n)&quot;
+    echo &quot;  --psk                   Use 64 hex digits pre-shared-key instead of passphrase&quot;
+    echo &quot;  --hidden                Make the Access Point hidden (do not broadcast the SSID)&quot;
+    echo &quot;  --mac-filter            Enable MAC address filtering&quot;
+    echo &quot;  --mac-filter-accept     Location of MAC address filter list (defaults to &#x2F;etc&#x2F;hostapd&#x2F;hostapd.accept)&quot;
+    echo &quot;  --redirect-to-localhost If -n is set, redirect every web request to localhost (useful for public information networks)&quot;
+    echo &quot;  --hostapd-debug &lt;level&gt; With level between 1 and 2, passes arguments -d or -dd to hostapd for debugging.&quot;
+    echo &quot;  --isolate-clients       Disable communication between clients&quot;
+    echo &quot;  --ieee80211n            Enable IEEE 802.11n (HT)&quot;
+    echo &quot;  --ieee80211ac           Enable IEEE 802.11ac (VHT)&quot;
+    echo &quot;  --ht_capab &lt;HT&gt;         HT capabilities (default: [HT40+])&quot;
+    echo &quot;  --vht_capab &lt;VHT&gt;       VHT capabilities&quot;
+    echo &quot;  --country &lt;code&gt;        Set two-letter country code for regularity (example: US)&quot;
+    echo &quot;  --freq-band &lt;GHz&gt;       Set frequency band. Valid inputs: 2.4, 5 (default: 2.4)&quot;
+    echo &quot;  --driver                Choose your WiFi adapter driver (default: nl80211)&quot;
+    echo &quot;  --no-virt               Do not create virtual interface&quot;
+    echo &quot;  --no-haveged            Do not run &#39;haveged&#39; automatically when needed&quot;
+    echo &quot;  --fix-unmanaged         If NetworkManager shows your interface as unmanaged after you&quot;
+    echo &quot;                          close create_ap, then use this option to switch your interface&quot;
+    echo &quot;                          back to managed&quot;
+    echo &quot;  --mac &lt;MAC&gt;             Set MAC address&quot;
+    echo &quot;  --dhcp-dns &lt;IP1[,IP2]&gt;  Set DNS returned by DHCP&quot;
+    echo &quot;  --daemon                Run create_ap in the background&quot;
+    echo &quot;  --pidfile &lt;pidfile&gt;     Save daemon PID to file&quot;
+    echo &quot;  --logfile &lt;logfile&gt;     Save daemon messages to file&quot;
+    echo &quot;  --stop &lt;id&gt;             Send stop command to an already running create_ap. For an &lt;id&gt;&quot;
+    echo &quot;                          you can put the PID of create_ap or the WiFi interface. You can&quot;
+    echo &quot;                          get them with --list-running&quot;
+    echo &quot;  --list-running          Show the create_ap processes that are already running&quot;
+    echo &quot;  --list-clients &lt;id&gt;     List the clients connected to create_ap instance associated with &lt;id&gt;.&quot;
+    echo &quot;                          For an &lt;id&gt; you can put the PID of create_ap or the WiFi interface.&quot;
+    echo &quot;                          If virtual WiFi interface was created, then use that one.&quot;
+    echo &quot;                          You can get them with --list-running&quot;
+    echo &quot;  --mkconfig &lt;conf_file&gt;  Store configs in conf_file&quot;
+    echo &quot;  --config &lt;conf_file&gt;    Load configs from conf_file&quot;
+    echo
+    echo &quot;Non-Bridging Options:&quot;
+    echo &quot;  --no-dns                Disable dnsmasq DNS server&quot;
+    echo &quot;  --no-dnsmasq            Disable dnsmasq server completely&quot;
+    echo &quot;  -g &lt;gateway&gt;            IPv4 Gateway for the Access Point (default: 192.168.12.1)&quot;
+    echo &quot;  -d                      DNS server will take into account &#x2F;etc&#x2F;hosts&quot;
+    echo &quot;  -e &lt;hosts_file&gt;         DNS server will take into account additional hosts file&quot;
+    echo
+    echo &quot;Useful informations:&quot;
+    echo &quot;  * If you&#39;re not using the --no-virt option, then you can create an AP with the same&quot;
+    echo &quot;    interface you are getting your Internet connection.&quot;
+    echo &quot;  * You can pass your SSID and password through pipe or through arguments (see examples).&quot;
+    echo &quot;  * On bridge method if the &lt;interface-with-internet&gt; is not a bridge interface, then&quot;
+    echo &quot;    a bridge interface is created automatically.&quot;
+    echo
+    echo &quot;Examples:&quot;
+    echo &quot;  &quot;$PROGNAME&quot; wlan0 eth0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  echo -e &#39;MyAccessPoint\nMyPassPhrase&#39; | &quot;$PROGNAME&quot; wlan0 eth0&quot;
+    echo &quot;  &quot;$PROGNAME&quot; wlan0 eth0 MyAccessPoint&quot;
+    echo &quot;  echo &#39;MyAccessPoint&#39; | &quot;$PROGNAME&quot; wlan0 eth0&quot;
+    echo &quot;  &quot;$PROGNAME&quot; wlan0 wlan0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  &quot;$PROGNAME&quot; -n wlan0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  &quot;$PROGNAME&quot; -m bridge wlan0 eth0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  &quot;$PROGNAME&quot; -m bridge wlan0 br0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  &quot;$PROGNAME&quot; --driver rtl871xdrv wlan0 eth0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  &quot;$PROGNAME&quot; --daemon wlan0 eth0 MyAccessPoint MyPassPhrase&quot;
+    echo &quot;  &quot;$PROGNAME&quot; --stop wlan0&quot;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这一行明显及其关键，一看就是可以利用的代码。</p>
+<p>其中：</p>
+<p><code>echo &quot;  -c &lt;channel&gt;            Channel number (default: 1)&quot;</code></p>
+<p>应该可以通过<code>sudo create_ap -n wlan0 pi_wifi MyPassWord -c 2</code>修改信道数值。</p>
+<pre class="line-numbers language-none"><code class="language-none">WARN: brmfmac driver doesn&#39;t work properly with virtual interfaces and
+      it can cause kernel panic. For this reason we disallow virtual
+      interfaces for your adapter.
+      For more info: https:&#x2F;&#x2F;github.com&#x2F;oblique&#x2F;create_ap&#x2F;issues&#x2F;203
+WARN: Your adapter does not fully support AP virtual interface, enabling --no-virt
+Config dir: &#x2F;tmp&#x2F;create_ap.wlan0.conf.d6khWCUL
+PID: 4794<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>wlan0应该是被占用了</p>
+<h2 id="修改信道"><a href="#修改信道" class="headerlink" title="修改信道"></a>修改信道</h2><p><code>sudo create_ap --s wlan0</code></p>
+<p>通过<code>sudo create_ap -n wlan0 pi_wifi MyPassWord -c 1</code>修改信道数值。</p>
+<p>通过其他设备进行测试’iwlist scan’</p>
+<p>扫描信道结果：<br><pre class="line-numbers language-none"><code class="language-none">wlan0     Scan completed :
+          Cell 01 - Address: 18:64:72:92:EC:81
+                    Channel:1
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality&#x3D;46&#x2F;70  Signal level&#x3D;-64 dBm
+                    Encryption key:on
+                    ESSID:&quot;pi_wifi&quot;
+                    Bit Rates:1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 6 Mb&#x2F;s; 9 Mb&#x2F;s
+                              11 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s
+                    Bit Rates:24 Mb&#x2F;s; 36 Mb&#x2F;s; 48 Mb&#x2F;s; 54 Mb&#x2F;s
+                    Mode:Master
+                    Extra:tsf&#x3D;0000000000000000
+                    Extra: Last beacon: 200ms ago
+                    IE: Unknown: 0007656475726F616D
+                    IE: Unknown: 010882840B0C12161824
+                    IE: Unknown: 030101
+                    IE: Unknown: 2A0102
+                    IE: Unknown: 32043048606C
+                    IE: IEEE 802.11i&#x2F;WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : 802.1x
+                    IE: Unknown: 2D1AED111BFFFFFF0000000000000000000000000000000                                        000000000
+                    IE: Unknown: 3D1601000A0000000000000000000000000000000000000                                        0
+                    IE: Unknown: 7F080000080000000000
+                    IE: Unknown: DD180050F2020101800003A4000027A4000042435E00623                                        22F00<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>通过<code>sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11</code>修改信道数值。<br>通过其他设备进行测试’iwlist scan’</p>
+<p>扫描信道结果：<br><pre class="line-numbers language-none"><code class="language-none">Cell 12 - Address: 18:64:72:92:EC:81
+                    Channel:11
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality&#x3D;66&#x2F;70  Signal level&#x3D;-44 dBm
+                    Encryption key:off
+                    ESSID:&quot;pi_wifi&quot;
+                    Bit Rates:1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 6 Mb&#x2F;s
+                              9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s
+                    Bit Rates:24 Mb&#x2F;s; 36 Mb&#x2F;s; 48 Mb&#x2F;s; 54 Mb&#x2F;s
+                    Mode:Master
+                    Extra:tsf&#x3D;0000000000000000
+                    Extra: Last beacon: 17620ms ago
+                    IE: Unknown: 0003434832
+                    IE: Unknown: 010882848B960C121824
+                    IE: Unknown: 03010B
+                    IE: Unknown: 2A0100
+                    IE: Unknown: 32043048606C
+                    IE: Unknown: 2D1A2C0003FF00000000000000000000000000000000000000000000
+                    IE: Unknown: 3D160B001100000000000000000000000000000000000000
+                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00
+                    IE: Unknown: DD05000AEB0100
+                    IE: Unknown: DD8E0050F204104A0001101044000102103B0001031047001000000000000010000000FCD7330F3A461021000754502D4C494E4B10230009544C2D57523734324E10240003372E3010420007312E312E312E331054000800060050F204000110110018576972656C657373204E20526F757465722057523734324E100800022288103C0001011049000600372A000120
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<p>成功修改信道！</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>综上所示：</p>
+<ol>
+<li>可以通过命令行修改功率</li>
+</ol>
+<p><code>sudo iwconfig wlan1 txpower X</code></p>
+<ol>
+<li>通过开源项目切换信道<pre class="line-numbers language-none"><code class="language-none">sudo create_ap --s wlan0
+
+sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">生成ssh
+
+ssh-keygen -t rsa -C &quot;kp@mmrsl.cn&quot;
+
+ssh-agent -s
+
+ssh-add ~&#x2F;.ssh&#x2F;id_rsa<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="扩展：功率修改测试及方案"><a href="#扩展：功率修改测试及方案" class="headerlink" title="扩展：功率修改测试及方案"></a>扩展：功率修改测试及方案</h2><ol>
+<li>开启热点 <pre class="line-numbers language-none"><code class="language-none">sudo create_ap --s wlan0
+
+sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+<li>修改功率</li>
+</ol>
+<p><code>sudo iwconfig wlan1 txpower 30</code></p>
+<ol>
+<li>检测功率</li>
+</ol>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Merry Christmas</title>
+    <url>/2020/12/24/merry_christmas/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+</center>
+
+<span id="more"></span>
+<ol>
+<li>git push 方法</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">git init
+git add .
+git commit -m &quot;first commit&quot;
+git remote add origin URL
+git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
+<ol>
+<li>圣诞网站模板分享</li>
+</ol>
+<ul>
+<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
+<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
+</ul>
+<ol>
+<li>电影分享 </li>
+</ol>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
+</ul>
+<center>
+
+
+<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
+      <categories>
+        <category>电影推荐</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -7658,7 +7744,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#107;&#x70;&#x40;&#x6d;&#x6d;&#114;&#x73;&#x6c;&#46;&#99;&#110;">&#107;&#x70;&#x40;&#x6d;&#x6d;&#114;&#x73;&#x6c;&#46;&#99;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x6b;&#x70;&#x40;&#x6d;&#x6d;&#x72;&#115;&#108;&#x2e;&#99;&#110;">&#x6b;&#x70;&#x40;&#x6d;&#x6d;&#x72;&#115;&#108;&#x2e;&#99;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -8338,28 +8424,6 @@ r = \frac{|w^Tx+b|}{||w||}</script><ol>
       </tags>
   </entry>
   <entry>
-    <title>树莓派_命令行连接wifi</title>
-    <url>/2021/06/28/%E6%A0%91%E8%8E%93%E6%B4%BE-%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5wifi/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="4e715f80f897530b0cad42515d34d49d2c91af69b2c9ed3b3156aee371454e16">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041aa2df045649d51c4d893ac0794f8d93e4df6a0e15c93ccb5b1002c4397ca1b8e49411e18e08210dc2e308886a40f394b3e1678267bb9d7abf42b4adac2bf404b18c0c7b94f2386c04aa5554c2f7509b34529781bb153679385e738f25ea17898a1a4129576d82d7f06fc92c6e73a9c62110236d596aac804eb9ba266ea0c6860529e232fc0a938255ba7bdabd04f4210ea766812de7093cfd28f8dd57548bc0f54054c9ff9f8afd5323e8bda9bfe5b6d59a69c21714f36db856fd8cf7f650e3f5e401d215b999b913c3577ea40930bd686f8d9540d2014517df8e9dc61dfbafa48aab1d3fedf0448294bf6d067727cf1f7f0fbf8d1e9ab5f93f7dc9e1e8cd6d690e7211011c894e0fcef0554b5764a4272dd11c0c612f409da2c716bc1e0e117ee5d6a3b6fcaec4f8ba43a20d24ce7fd1c2f171fe1709ae8dfb24aa22615ce8c7b1de459911b37d035543990972fe06cf88241d94059d67ab111ade010e1b2b8adac83a1a383911ee175d02eaec05b8e6ff44ac4932adadb5078d864a7cfe2ab5ac89c262d0caa07e70627af2f118f403d51c25847c4992c1a2f0b00280e2d9a17ad3b4e9c5be8ae6c1488f853f04f10ef8ccd16f68fc480bd16978d1407cfe27f836439400297ab2cb2bc0b62e88190e869cd273d8c0e31f4427af039eed3a61e9992b1fff2cd4cac66762f98578341e955c7a082dfb2c0c5d35c815d16805140d2cd9a22a543d5a620aececd000cc60382f2c0242534d4dcd2c44058e4fae7e71de3c3f4a09250bce9989d4f14442fc4581e526abe54370405b9955f809409b56070e730047ea6572ad26b2c40e6536bc37739010cfb5ba54453b898e759aca888783b6cc53a47fbbe4a5444c5768b5286e7f798aae532842f2351722ea7a03a9286f4d248849993b862a08f28fc28b8372e45cc910ba0df285c451f9ec55346482b8d9c7dc0b5cd7bf9a9b873996a9a924eb3dd61a8727ae68d0794505bd154c2ee92f0be5d7ea918b3f7dca9907606030dc667269abf38760d9db102f1fea3b79b34a8c07a95a00ab0e3f1ecb4af38cb75bde07ca2bf3f7d36a7eb9ae360f7627b419612da852f773b040332db74261ff350bf912dd5a76a72244ffef6dd01721379d6ea91b35486ee9bb3def5efa93687cb5cf04594d843fc3fbfdccc546c1c57b48a8983b039f4769534cae41b9f8be2946335d7babe3917541eb764e2c87cabbcb5985339d36fce34640c3cec0a6f3baeaef01ae91bd4850505247585333c891ede559f617295ecbfa370dd9b1a35268b6309e093cf16b226b37cb61b600f015ba6480a214f2ef1d1ec659296da8bad035e81ca418b1a2926768f7db11447f8936c33d0a399205f98fc8c1e71f0a868794bcb38315715e5dd29fd98742d1cab951349ed430cb9162e3e677bb02e19d136da4f5c237e9745e80adaa3c3e93d932d10a2d723a16670f027e301abb3d160c38e1d92ca112d202f15e02395ab0b5ffe805bc54406c071fca64f90823dce2024af30c602b5e8870ef4de55bc125ed053eab80d78af6221341c9c7578249a0779881483763e2d576148dce64632e882bab28cd7d9fb7afad5e2704a0b91f6c4bb38de74124cf82c11aac59d1341c069866b45aa63007f203161db12ca6713d9b8dd4ee9f3758eaed617ca06b81b2f0aad9a9f8e29c0f8c730120881ce936ab2b5f64819cdef31c9a24272a81706cae0d10e8cf87d8c3022392e8bba01f2280ded8e0f7d62323f18ee1e316e54f7e899e4cd989baa40401d401c8d01c682474ba5bbea179c17ec49d591269024fe8352b1ea55ecdbd0abf4b98d35779aad697bf0f9f870dca75e5039ef71558eea815a125594c49437b091660578cdabc9fd135c9a1716e570af3700ec3993bc8e91d3d4203d0d6ed0009c7bba5491ab8cceb9ec252635dd06641fee583d19af8762f8ca676bc55fa1c4c7b2a01dc2197b74e27bdeaac82da8a8f84ddcb364f6fba52064b8d48f09a9cb592c9a4361c562be314c66ef172c2119c1837ff5442bfb202da7bc55868e6e1e66931d02251f40956e5ce1e5a4d54e15a089e23c27f2f45f7dc556dff0ddaf645ecce4ca88b79b41fa72c3e5c8e4596083c00ebacab49a42fafc1399d6f2d169c9c13e4ff22844c8ea3b93f3ceecf06e31ddac56c4b4112bb58d93205ede0fe365be3b80178554f93c721e1655825b3671c5b813e2085b4167728c8ef7144d537c8c86844270befa082b219f431cb226c65b9a5bc0a7cb2e8502a8f5ff72a623062f078a2c4b10af00e5bf093687d0c4ef90cd142b3af51699ad9a2ad6b00aba9c152ee8cca55642daa92befc4f45be7626751fdb098c4790d598a47dfed7c5ec89576a0c2796df99f837de21af48b42b6bf508e37c54cde2e9522beca0988a7b1a5fcd5fdcb5a510273cdf5b0de868ad3c35724352d03e0ee1149fdca7cba29a8c5ecaec2b9d8ed1e7727eedf601e7a0bdba81657ce60a867db2deb716904c15ad6a8ceeb32ea668bada11f6f6abdea72804289ecc2e661a77f8bd59a05cbb251a2f7c302331d834c622ab8410e5ac5320a40d3806cfc8f50dab8392aefe431bc380ae2a1766f489042ba71dac0695dcda101a7414a4a0ea06b074ea6c7e8478ca2fedcc29dbf9dafd81309359077f0501e6d946a1d55c67c7699310299b053e12faec7b9d8267b24d2eee051d681c431b9edd4f139eb37acd6b804ab5fe3512b078a9fcf19a26b09d61cbd6eabab21f4f88017f8469acaf8e4c9264d34736040ce5c408ded5c0b61c6695d36f04c89be51b84847bbaf21824c30aa2760e82674b8f69c6f501f69ad048ebb8d7872d9a8acb63918779ba7788dd30da5f43a03d4e4dae0a6c83c3cfd746281f5dac6721bee4ad1dd518c6a1bd26e5e228d7c434a95278ba4901c5d8be33af3f87af4407949d4f12194fa86d87e5b38d81092de202cd02dafc825f3259661f1473998fb9d9e422fb93055bbcf21e03f394ee3d4b81d295a74dd7fb3045ef26611558506ca73e4518505c4a769d49f75e596d62d93d6e068a4e82de16c407fee1f87b3c77ff77c01a7fda5677ad2b74a6e9c297969d38ba35f3a3fdc0ed067666c8fa7cbaff85c8c063d47bfd5d1489d67a77061c291d2d6b6e07928774cb9e6b0c8af8bc8ccfa66cce528de08060596d8a2157e85e4f40205547015de3e54ea96b53b0a51390dae93344f505af334a762359e6bda7cff00a663c6285d038a9d1cc4bace16319a0c52a73a91627d5670d3c4c690dd985da541f80b0403f2d1b7472c206b58650470ba8195185bc32689c123cba71639dac27039b68d14fd22d40e5a162d8d81c38dfe7a1b1ee1a295a877f54f69aabe8f0875321f332735e1f98fed3c88d0152173278eac864d49a5122652107769dbe3abfff53ae46a1aefc59828df742d92c96765fc32980bd8e4c8ae4378d9059a9b2a4fdcede77216bea8c9ef0fcb3d7af327eaa2688aa95fe254453a378d5ef1103a299fadc40e9f06ec00bac4ef5194c1c6c2dbf2c2f1e56f56ae8f1499e232c9e54c7bcb13091f0e30b37c0709f6100a0f630edff459c751391307eac15b823fd10702a3b3ec7fbd5002ab83def308721b863119fac89f0026679d950d192c3cfcc8c85dd74c2b4af2eb1f6e89d270437a130ececd7015d1f8f91b86bd679dcb05f7189026f88badc0fdd9d0b999cc09134adf98888f11a0ca5d1b18a63927b9851d4d5166470015e328f0bcc06bd57d51829ca89108856dd71fdc829c8b25263c76a55b2003551be6e3e7e42f802aa1a65dc7505da96e8da0bfd2ade640b79e1adf4ae1567d58aabf18c6346a7c770ad696d8ea3ea739ce701ed0db157bd48cbc88c7118066d24ea654a2cd29795d4497dc3361c2e9e8e54aa24c68876dc6bcc4e06da7072cbd66d54d9daff87183869b74ae55ed6266c27704a7de21ec8f9b9dcf7b84cc2ef7c3b38330a27c04e09ef28cbd28eb6093b9fed613f9875d648968368d4563021eea34fee52d7979940d4ca3f6187f9894fea22e57db5d078101871286e9b79f10ea336aaab9d8101cc5ba0d292ee3fdfca65d56fd5095722b436f14f4e7c41999c60e43860a57b48bad0bca3f8f34f9e95f7baef083831115f5b393cc7e06039c8b9ea784c6cc568f5b7dbf1106ec097fe3491fc8d9bed7c4829343a79d280cf492468307288af6b1306afa47eeecac1b5a86f2b1b455e24654539e2e51c577f34af0b0926d934fa1af83c1ba186294f9b80ff78e7e2c3e011d69e60cf811e1958ee7a5600f1e32699f702fafd7ac0cb5a7ca46154c033f77bd92f1ccb310ab54076f8de57b99be7cbbc7f3ff4001edcca59c228a29ed9a9018d3a0ffc062848cfccde4df2cd01a6f589f2e310f4ffe2fbd729f6b6a672f0403cd1dc36e2a0ff59584353dfe3e5869427234bd5f4d21ef0929f05c695aaf4bf10ccdf25bb20050ed615a97459975ab8ef51a26211a74b8f66c57db2e883868c438d25d35bc678e99a9104c85f70ce4efd3ef074b053df2fd43f7be7320679fbb90690d</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>树莓派</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>树莓派3BTL-WN726N驱动</title>
     <url>/2021/04/20/%E6%A0%91%E8%8E%93%E6%B4%BE3BTL-WN726N%E9%A9%B1%E5%8A%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="树莓派3BTL-WN726N驱动"><a href="#树莓派3BTL-WN726N驱动" class="headerlink" title="树莓派3BTL-WN726N驱动"></a>树莓派3BTL-WN726N驱动</h1><h2 id="给树莓派3B装两个网卡"><a href="#给树莓派3B装两个网卡" class="headerlink" title="给树莓派3B装两个网卡"></a>给树莓派3B装两个网卡</h2><ul>
@@ -8395,6 +8459,28 @@ sudo modprobe 8188eu<span aria-hidden="true" class="line-numbers-rows"><span></s
 ]]></content>
       <categories>
         <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>树莓派_命令行连接wifi</title>
+    <url>/2021/06/28/%E6%A0%91%E8%8E%93%E6%B4%BE-%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5wifi/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="4e715f80f897530b0cad42515d34d49d2c91af69b2c9ed3b3156aee371454e16">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041aa2df045649d51c4d893ac0794f8d93e4df6a0e15c93ccb5b1002c4397ca1b8e49411e18e08210dc2e308886a40f394b3e1678267bb9d7abf42b4adac2bf404b18c0c7b94f2386c04aa5554c2f7509b34529781bb153679385e738f25ea17898a1a4129576d82d7f06fc92c6e73a9c62110236d596aac804eb9ba266ea0c6860529e232fc0a938255ba7bdabd04f4210ea766812de7093cfd28f8dd57548bc0f54054c9ff9f8afd5323e8bda9bfe5b6d59a69c21714f36db856fd8cf7f650e3f5e401d215b999b913c3577ea40930bd686f8d9540d2014517df8e9dc61dfbafa48aab1d3fedf0448294bf6d067727cf1f7f0fbf8d1e9ab5f93f7dc9e1e8cd6d690e7211011c894e0fcef0554b5764a4272dd11c0c612f409da2c716bc1e0e117ee5d6a3b6fcaec4f8ba43a20d24ce7fd1c2f171fe1709ae8dfb24aa22615ce8c7b1de459911b37d035543990972fe06cf88241d94059d67ab111ade010e1b2b8adac83a1a383911ee175d02eaec05b8e6ff44ac4932adadb5078d864a7cfe2ab5ac89c262d0caa07e70627af2f118f403d51c25847c4992c1a2f0b00280e2d9a17ad3b4e9c5be8ae6c1488f853f04f10ef8ccd16f68fc480bd16978d1407cfe27f836439400297ab2cb2bc0b62e88190e869cd273d8c0e31f4427af039eed3a61e9992b1fff2cd4cac66762f98578341e955c7a082dfb2c0c5d35c815d16805140d2cd9a22a543d5a620aececd000cc60382f2c0242534d4dcd2c44058e4fae7e71de3c3f4a09250bce9989d4f14442fc4581e526abe54370405b9955f809409b56070e730047ea6572ad26b2c40e6536bc37739010cfb5ba54453b898e759aca888783b6cc53a47fbbe4a5444c5768b5286e7f798aae532842f2351722ea7a03a9286f4d248849993b862a08f28fc28b8372e45cc910ba0df285c451f9ec55346482b8d9c7dc0b5cd7bf9a9b873996a9a924eb3dd61a8727ae68d0794505bd154c2ee92f0be5d7ea918b3f7dca9907606030dc667269abf38760d9db102f1fea3b79b34a8c07a95a00ab0e3f1ecb4af38cb75bde07ca2bf3f7d36a7eb9ae360f7627b419612da852f773b040332db74261ff350bf912dd5a76a72244ffef6dd01721379d6ea91b35486ee9bb3def5efa93687cb5cf04594d843fc3fbfdccc546c1c57b48a8983b039f4769534cae41b9f8be2946335d7babe3917541eb764e2c87cabbcb5985339d36fce34640c3cec0a6f3baeaef01ae91bd4850505247585333c891ede559f617295ecbfa370dd9b1a35268b6309e093cf16b226b37cb61b600f015ba6480a214f2ef1d1ec659296da8bad035e81ca418b1a2926768f7db11447f8936c33d0a399205f98fc8c1e71f0a868794bcb38315715e5dd29fd98742d1cab951349ed430cb9162e3e677bb02e19d136da4f5c237e9745e80adaa3c3e93d932d10a2d723a16670f027e301abb3d160c38e1d92ca112d202f15e02395ab0b5ffe805bc54406c071fca64f90823dce2024af30c602b5e8870ef4de55bc125ed053eab80d78af6221341c9c7578249a0779881483763e2d576148dce64632e882bab28cd7d9fb7afad5e2704a0b91f6c4bb38de74124cf82c11aac59d1341c069866b45aa63007f203161db12ca6713d9b8dd4ee9f3758eaed617ca06b81b2f0aad9a9f8e29c0f8c730120881ce936ab2b5f64819cdef31c9a24272a81706cae0d10e8cf87d8c3022392e8bba01f2280ded8e0f7d62323f18ee1e316e54f7e899e4cd989baa40401d401c8d01c682474ba5bbea179c17ec49d591269024fe8352b1ea55ecdbd0abf4b98d35779aad697bf0f9f870dca75e5039ef71558eea815a125594c49437b091660578cdabc9fd135c9a1716e570af3700ec3993bc8e91d3d4203d0d6ed0009c7bba5491ab8cceb9ec252635dd06641fee583d19af8762f8ca676bc55fa1c4c7b2a01dc2197b74e27bdeaac82da8a8f84ddcb364f6fba52064b8d48f09a9cb592c9a4361c562be314c66ef172c2119c1837ff5442bfb202da7bc55868e6e1e66931d02251f40956e5ce1e5a4d54e15a089e23c27f2f45f7dc556dff0ddaf645ecce4ca88b79b41fa72c3e5c8e4596083c00ebacab49a42fafc1399d6f2d169c9c13e4ff22844c8ea3b93f3ceecf06e31ddac56c4b4112bb58d93205ede0fe365be3b80178554f93c721e1655825b3671c5b813e2085b4167728c8ef7144d537c8c86844270befa082b219f431cb226c65b9a5bc0a7cb2e8502a8f5ff72a623062f078a2c4b10af00e5bf093687d0c4ef90cd142b3af51699ad9a2ad6b00aba9c152ee8cca55642daa92befc4f45be7626751fdb098c4790d598a47dfed7c5ec89576a0c2796df99f837de21af48b42b6bf508e37c54cde2e9522beca0988a7b1a5fcd5fdcb5a510273cdf5b0de868ad3c35724352d03e0ee1149fdca7cba29a8c5ecaec2b9d8ed1e7727eedf601e7a0bdba81657ce60a867db2deb716904c15ad6a8ceeb32ea668bada11f6f6abdea72804289ecc2e661a77f8bd59a05cbb251a2f7c302331d834c622ab8410e5ac5320a40d3806cfc8f50dab8392aefe431bc380ae2a1766f489042ba71dac0695dcda101a7414a4a0ea06b074ea6c7e8478ca2fedcc29dbf9dafd81309359077f0501e6d946a1d55c67c7699310299b053e12faec7b9d8267b24d2eee051d681c431b9edd4f139eb37acd6b804ab5fe3512b078a9fcf19a26b09d61cbd6eabab21f4f88017f8469acaf8e4c9264d34736040ce5c408ded5c0b61c6695d36f04c89be51b84847bbaf21824c30aa2760e82674b8f69c6f501f69ad048ebb8d7872d9a8acb63918779ba7788dd30da5f43a03d4e4dae0a6c83c3cfd746281f5dac6721bee4ad1dd518c6a1bd26e5e228d7c434a95278ba4901c5d8be33af3f87af4407949d4f12194fa86d87e5b38d81092de202cd02dafc825f3259661f1473998fb9d9e422fb93055bbcf21e03f394ee3d4b81d295a74dd7fb3045ef26611558506ca73e4518505c4a769d49f75e596d62d93d6e068a4e82de16c407fee1f87b3c77ff77c01a7fda5677ad2b74a6e9c297969d38ba35f3a3fdc0ed067666c8fa7cbaff85c8c063d47bfd5d1489d67a77061c291d2d6b6e07928774cb9e6b0c8af8bc8ccfa66cce528de08060596d8a2157e85e4f40205547015de3e54ea96b53b0a51390dae93344f505af334a762359e6bda7cff00a663c6285d038a9d1cc4bace16319a0c52a73a91627d5670d3c4c690dd985da541f80b0403f2d1b7472c206b58650470ba8195185bc32689c123cba71639dac27039b68d14fd22d40e5a162d8d81c38dfe7a1b1ee1a295a877f54f69aabe8f0875321f332735e1f98fed3c88d0152173278eac864d49a5122652107769dbe3abfff53ae46a1aefc59828df742d92c96765fc32980bd8e4c8ae4378d9059a9b2a4fdcede77216bea8c9ef0fcb3d7af327eaa2688aa95fe254453a378d5ef1103a299fadc40e9f06ec00bac4ef5194c1c6c2dbf2c2f1e56f56ae8f1499e232c9e54c7bcb13091f0e30b37c0709f6100a0f630edff459c751391307eac15b823fd10702a3b3ec7fbd5002ab83def308721b863119fac89f0026679d950d192c3cfcc8c85dd74c2b4af2eb1f6e89d270437a130ececd7015d1f8f91b86bd679dcb05f7189026f88badc0fdd9d0b999cc09134adf98888f11a0ca5d1b18a63927b9851d4d5166470015e328f0bcc06bd57d51829ca89108856dd71fdc829c8b25263c76a55b2003551be6e3e7e42f802aa1a65dc7505da96e8da0bfd2ade640b79e1adf4ae1567d58aabf18c6346a7c770ad696d8ea3ea739ce701ed0db157bd48cbc88c7118066d24ea654a2cd29795d4497dc3361c2e9e8e54aa24c68876dc6bcc4e06da7072cbd66d54d9daff87183869b74ae55ed6266c27704a7de21ec8f9b9dcf7b84cc2ef7c3b38330a27c04e09ef28cbd28eb6093b9fed613f9875d648968368d4563021eea34fee52d7979940d4ca3f6187f9894fea22e57db5d078101871286e9b79f10ea336aaab9d8101cc5ba0d292ee3fdfca65d56fd5095722b436f14f4e7c41999c60e43860a57b48bad0bca3f8f34f9e95f7baef083831115f5b393cc7e06039c8b9ea784c6cc568f5b7dbf1106ec097fe3491fc8d9bed7c4829343a79d280cf492468307288af6b1306afa47eeecac1b5a86f2b1b455e24654539e2e51c577f34af0b0926d934fa1af83c1ba186294f9b80ff78e7e2c3e011d69e60cf811e1958ee7a5600f1e32699f702fafd7ac0cb5a7ca46154c033f77bd92f1ccb310ab54076f8de57b99be7cbbc7f3ff4001edcca59c228a29ed9a9018d3a0ffc062848cfccde4df2cd01a6f589f2e310f4ffe2fbd729f6b6a672f0403cd1dc36e2a0ff59584353dfe3e5869427234bd5f4d21ef0929f05c695aaf4bf10ccdf25bb20050ed615a97459975ab8ef51a26211a74b8f66c57db2e883868c438d25d35bc678e99a9104c85f70ce4efd3ef074b053df2fd43f7be7320679fbb90690d</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>树莓派</category>
       </categories>
       <tags>
         <tag>linux</tag>
@@ -8724,6 +8810,20 @@ y &#x3D; rchan(x);
       </tags>
   </entry>
   <entry>
+    <title>深度学习_花书</title>
+    <url>/2020/07/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E8%8A%B1%E4%B9%A6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><span id="more"></span>
+<p>&nbsp;&nbsp; 深度学习(DL, Deep Learning)是机器学习(ML, Machine Learning)领域中一个新的研究方向，它被引入机器学习使其更接近于最初的目标——人工智能(AI, Artificial Intelligence)。<br>&nbsp;&nbsp; 深度学习是学习样本数据的内在规律和表示层次，这些学习过程中获得的信息对诸如文字，图像和声音等数据的解释有很大的帮助。它的最终目标是让机器能够像人一样具有分析学习能力，能够识别文字、图像和声音等数据。 深度学习是一个复杂的机器学习算法，在语音和图像识别方面取得的效果，远远超过先前相关技术。<br>&nbsp;&nbsp; 深度学习在搜索技术，数据挖掘，机器学习，机器翻译，自然语言处理，多媒体学习，语音，推荐和个性化技术，以及其他相关领域都取得了很多成果。深度学习使机器模仿视听和思考等人类的活动，解决了很多复杂的模式识别难题，使得人工智能相关技术取得了很大进步。  </p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+        <tag>分类器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>百度谷歌搜索引擎索引</title>
     <url>/2020/12/04/%E7%99%BE%E5%BA%A6%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%8B%97%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%B4%A2%E5%BC%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="百度谷歌搜索引擎索引"><a href="#百度谷歌搜索引擎索引" class="headerlink" title="百度谷歌搜索引擎索引"></a><center>百度谷歌搜索引擎索引</center></h2><span id="more"></span>
@@ -8770,20 +8870,6 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
       <tags>
         <tag>hexo</tag>
         <tag>搜索引擎</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度学习_花书</title>
-    <url>/2020/07/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E8%8A%B1%E4%B9%A6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><span id="more"></span>
-<p>&nbsp;&nbsp; 深度学习(DL, Deep Learning)是机器学习(ML, Machine Learning)领域中一个新的研究方向，它被引入机器学习使其更接近于最初的目标——人工智能(AI, Artificial Intelligence)。<br>&nbsp;&nbsp; 深度学习是学习样本数据的内在规律和表示层次，这些学习过程中获得的信息对诸如文字，图像和声音等数据的解释有很大的帮助。它的最终目标是让机器能够像人一样具有分析学习能力，能够识别文字、图像和声音等数据。 深度学习是一个复杂的机器学习算法，在语音和图像识别方面取得的效果，远远超过先前相关技术。<br>&nbsp;&nbsp; 深度学习在搜索技术，数据挖掘，机器学习，机器翻译，自然语言处理，多媒体学习，语音，推荐和个性化技术，以及其他相关领域都取得了很多成果。深度学习使机器模仿视听和思考等人类的活动，解决了很多复杂的模式识别难题，使得人工智能相关技术取得了很大进步。  </p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-        <tag>分类器</tag>
       </tags>
   </entry>
   <entry>
@@ -9102,6 +9188,79 @@ def saveCutoutLabel(name):
       </tags>
   </entry>
   <entry>
+    <title>矩阵分析引论</title>
+    <url>/2020/11/17/%E7%9F%A9%E9%98%B5%E8%AE%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="矩阵分析引论"><a href="#矩阵分析引论" class="headerlink" title="矩阵分析引论"></a><center>矩阵分析引论</center></h1><h2 id="Introduction-to-matrix-analysis"><a href="#Introduction-to-matrix-analysis" class="headerlink" title=" Introduction to matrix analysis "></a><center> Introduction to matrix analysis </center></h2><center>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=11355346&bvid=BV19x411878L&cid=18777309&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+</center>
+
+<span id="more"></span>
+<h2 id="1-线性空间与线性变换"><a href="#1-线性空间与线性变换" class="headerlink" title="1.线性空间与线性变换"></a>1.线性空间与线性变换</h2><ol>
+<li>对加减乘除封闭的集合被称之为数域。矩阵论中较常用的数域是QRC。其中Q:有理数域、R:实数数域、C复数数域。<br>$Q\subset R\subset C$<br>如果一个非空集合在某数域上，以下八条<center>
+<img src="https://www.codekp.cn/download/img/矩阵论/1.PNG" width = "1147" height = "950" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ol>
+<h3 id="线性空间例3-（函数空间-f-I-R"><a href="#线性空间例3-（函数空间-f-I-R" class="headerlink" title="线性空间例3.（函数空间$f(I,R)$)"></a>线性空间例3.（函数空间$f(I,R)$)</h3><ul>
+<li>$V:$<br>$F(I，R^n)$<br>$I=(0,1) ,[\frac{1}{2}，5]$函数的定义域<br>$R^n值域空间$<br>以函数为元素的抽象集合，数域取R</li>
+</ul>
+<ul>
+<li>： f+g<br>$ +  ： \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} + \begin{cases} g_1(x)\ g_2(x)\ g_n(x) \end{cases} = \begin{cases} f_1(x)+g_1(x)\f_2(x)+ g_2(x)\f_n(x)+g_n(x) \end{cases}  x \in I$</li>
+</ul>
+<ul>
+<li>：f<em>k<br>$</em> : \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} * k =\begin{cases} kf_1(x)\ kf_2(x)\ kf_n(x) \end{cases}$</li>
+</ul>
+<p>定义：（向量组及向量组拼成向量抽象矩阵）<br>设V是F上的线性空间V中的有限序列$\alpha_1、\alpha2、\alpha3 …\alpha_p $的一个向量组，向量组按顺序排列的行称为向量组拼成的抽象矩阵$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>序列：抽象或实际数构成的序列，抽象矩阵。用V中的抽象物拼接为一个矩阵。即：抽象的集合。</p>
+<blockquote>
+<p>数乘运算、线性空间满足八条运算规则:</p>
+</blockquote>
+<p>4条：<br>加法有交换律、结合律、有负元、有零元。<br>4条：<br>乘法有两个分配律，数乘法对抽象加法的分配律，数乘法对数值的分配律，先乘后乘以集合和两次分别乘以集合相等，f中的乘法单位元e做数乘法时空间不变。</p>
+<p>标准线性空间：<br>例子<br>二维空间<br>三维空间 ：所有有向线段构成的集合。<br>几何空间：<br>函数空间：函数作为运算对象，所构成的空间。信号的集合构成函数空间。</p>
+<p>将几何空间的解析几何方法抽象到一般的框架下，集合的量变成代数的量，坐标系。<br>考虑什么样的向量组可以模拟成几何的线性空间的问题。<br>向量组：$\alpha_1、\alpha2、\alpha3 …\alpha_p $<br>抽象矩阵：$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>1行p列的抽象矩阵，可以竖着拼。<br>行向量，横拼接。<br>列向量，竖拼接。<br>向量组的线性相关性：如果存在不全为零的P个数$k_i\in F, i=1,2,…,p$使得<br>$\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p=0$<br>则向量组\alpha_1、\alpha2、\alpha3 …\alpha_p称之为线性相关。<br>注： $\exists\begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0，\begin{cases} k_1\ k_2\ k_n \end{cases}\in F^p$</p>
+<p>使得(*)成立，对以上命题进行否定。<br>$\exists a\in P_a $<br>否定$\forall a\notin P_a $</p>
+<p> $\forall \begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0$<br> $\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p\neq 0$<br>线性无关</p>
+<p>线性无关即为线性相关的否定，存在系数不全为零的时，使得等号成立，即线性无关。</p>
+<p>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=0$<br>线性相关《——》有非零解<br>线性无关《——》没有非零解</p>
+<p>线性相关性：目的为了将抽象的序列搬移到几何空间中。</p>
+<h2 id="基"><a href="#基" class="headerlink" title="基"></a>基</h2><p>定义：（两个线性向量组之间的线性表示）<br>$\alpha_1、\alpha_2、\alpha_3 …\alpha_p;\beta_1、\beta_2、\beta_3、…、\beta_p$</p>
+<ol>
+<li>称为$\beta$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果存在$ k_1、k_2、k_3 …k_p \subset F$使得<br>$\beta=\alpha_1k_1+\alpha_2k_2+\alpha_3k_3 …+\alpha_pk_p$</li>
+<li>称$\beta_1、\beta_2、\beta_3、…、\beta_p$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果每个$\beta_i$据可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示</li>
+</ol>
+<h4 id="矩阵表达"><a href="#矩阵表达" class="headerlink" title="矩阵表达"></a>矩阵表达</h4><p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=\beta$ 其中$A=[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$</p>
+<ol>
+<li><p>因此$\beta$可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示《=====》非齐次线性方程组有解</p>
+</li>
+<li><p>重点：</p>
+</li>
+</ol>
+<p>$[\alpha<em>1、\alpha_2、\alpha_3 …\alpha_p] \begin{pmatrix}<br>        x</em>{11} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{1q} \<br>        x</em>{21} &amp; \cdots &amp;\cdots &amp; \cdots &amp; x<em>{2q} \<br>        \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>        x</em>{p1} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{pq}\<br>        \end{pmatrix}</em>{pq} =[\beta_1、\beta_2、\beta_3、…、\beta_p]$</p>
+<p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ]$记作A<br>$[\beta_1、\beta_2、\beta_3…\beta_p]$记作B：<br>$AX=B$抽象的矩阵方程</p>
+<p>$[\beta_i]$可有$[\alpha_i]$线性表示《=====》线性方程有解。</p>
+<ol>
+<li>线性表示具有传递性：<br>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]    、[{\alpha_i}]$<br>$[\beta_1、\beta_2、\beta_3…\beta_q]   、[{\beta_j}]$<br>$[\gamma_1、\gamma_2、\gamma_3…\gamma_t]      、[{\gamma_k}]$   </li>
+</ol>
+<p>$ [{\beta_j}]\leq lin [{\alpha_i}]<br>$且$ [{\gamma_k}]\leq lin [{\beta_j}]<br>$则$ [{\gamma_k}]\leq lin [{\alpha_i}]<br>$</p>
+<p>A$\leq lin$B 意思是A可以由B线性表示。</p>
+<ul>
+<li>证：<br>即 Ax=B、By=C 有解，证明Az=C？<br>C=By=(Ax)y</li>
+</ul>
+<p><img src="https://www.codekp.cn/download/img/矩阵论/目录.png" width = "400" height = "302" alt="图片名称" align=center /></p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>研究生课程</tag>
+        <tag>矩阵论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>程序语法</title>
     <url>/2020/11/20/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="编程语言语法"><a href="#编程语言语法" class="headerlink" title="编程语言语法"></a><center>编程语言语法</center></h1><span id="more"></span>
@@ -9254,79 +9413,6 @@ def saveCutoutLabel(name):
       </tags>
   </entry>
   <entry>
-    <title>矩阵分析引论</title>
-    <url>/2020/11/17/%E7%9F%A9%E9%98%B5%E8%AE%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="矩阵分析引论"><a href="#矩阵分析引论" class="headerlink" title="矩阵分析引论"></a><center>矩阵分析引论</center></h1><h2 id="Introduction-to-matrix-analysis"><a href="#Introduction-to-matrix-analysis" class="headerlink" title=" Introduction to matrix analysis "></a><center> Introduction to matrix analysis </center></h2><center>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=11355346&bvid=BV19x411878L&cid=18777309&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-</center>
-
-<span id="more"></span>
-<h2 id="1-线性空间与线性变换"><a href="#1-线性空间与线性变换" class="headerlink" title="1.线性空间与线性变换"></a>1.线性空间与线性变换</h2><ol>
-<li>对加减乘除封闭的集合被称之为数域。矩阵论中较常用的数域是QRC。其中Q:有理数域、R:实数数域、C复数数域。<br>$Q\subset R\subset C$<br>如果一个非空集合在某数域上，以下八条<center>
-<img src="https://www.codekp.cn/download/img/矩阵论/1.PNG" width = "1147" height = "950" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ol>
-<h3 id="线性空间例3-（函数空间-f-I-R"><a href="#线性空间例3-（函数空间-f-I-R" class="headerlink" title="线性空间例3.（函数空间$f(I,R)$)"></a>线性空间例3.（函数空间$f(I,R)$)</h3><ul>
-<li>$V:$<br>$F(I，R^n)$<br>$I=(0,1) ,[\frac{1}{2}，5]$函数的定义域<br>$R^n值域空间$<br>以函数为元素的抽象集合，数域取R</li>
-</ul>
-<ul>
-<li>： f+g<br>$ +  ： \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} + \begin{cases} g_1(x)\ g_2(x)\ g_n(x) \end{cases} = \begin{cases} f_1(x)+g_1(x)\f_2(x)+ g_2(x)\f_n(x)+g_n(x) \end{cases}  x \in I$</li>
-</ul>
-<ul>
-<li>：f<em>k<br>$</em> : \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} * k =\begin{cases} kf_1(x)\ kf_2(x)\ kf_n(x) \end{cases}$</li>
-</ul>
-<p>定义：（向量组及向量组拼成向量抽象矩阵）<br>设V是F上的线性空间V中的有限序列$\alpha_1、\alpha2、\alpha3 …\alpha_p $的一个向量组，向量组按顺序排列的行称为向量组拼成的抽象矩阵$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>序列：抽象或实际数构成的序列，抽象矩阵。用V中的抽象物拼接为一个矩阵。即：抽象的集合。</p>
-<blockquote>
-<p>数乘运算、线性空间满足八条运算规则:</p>
-</blockquote>
-<p>4条：<br>加法有交换律、结合律、有负元、有零元。<br>4条：<br>乘法有两个分配律，数乘法对抽象加法的分配律，数乘法对数值的分配律，先乘后乘以集合和两次分别乘以集合相等，f中的乘法单位元e做数乘法时空间不变。</p>
-<p>标准线性空间：<br>例子<br>二维空间<br>三维空间 ：所有有向线段构成的集合。<br>几何空间：<br>函数空间：函数作为运算对象，所构成的空间。信号的集合构成函数空间。</p>
-<p>将几何空间的解析几何方法抽象到一般的框架下，集合的量变成代数的量，坐标系。<br>考虑什么样的向量组可以模拟成几何的线性空间的问题。<br>向量组：$\alpha_1、\alpha2、\alpha3 …\alpha_p $<br>抽象矩阵：$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>1行p列的抽象矩阵，可以竖着拼。<br>行向量，横拼接。<br>列向量，竖拼接。<br>向量组的线性相关性：如果存在不全为零的P个数$k_i\in F, i=1,2,…,p$使得<br>$\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p=0$<br>则向量组\alpha_1、\alpha2、\alpha3 …\alpha_p称之为线性相关。<br>注： $\exists\begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0，\begin{cases} k_1\ k_2\ k_n \end{cases}\in F^p$</p>
-<p>使得(*)成立，对以上命题进行否定。<br>$\exists a\in P_a $<br>否定$\forall a\notin P_a $</p>
-<p> $\forall \begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0$<br> $\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p\neq 0$<br>线性无关</p>
-<p>线性无关即为线性相关的否定，存在系数不全为零的时，使得等号成立，即线性无关。</p>
-<p>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=0$<br>线性相关《——》有非零解<br>线性无关《——》没有非零解</p>
-<p>线性相关性：目的为了将抽象的序列搬移到几何空间中。</p>
-<h2 id="基"><a href="#基" class="headerlink" title="基"></a>基</h2><p>定义：（两个线性向量组之间的线性表示）<br>$\alpha_1、\alpha_2、\alpha_3 …\alpha_p;\beta_1、\beta_2、\beta_3、…、\beta_p$</p>
-<ol>
-<li>称为$\beta$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果存在$ k_1、k_2、k_3 …k_p \subset F$使得<br>$\beta=\alpha_1k_1+\alpha_2k_2+\alpha_3k_3 …+\alpha_pk_p$</li>
-<li>称$\beta_1、\beta_2、\beta_3、…、\beta_p$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果每个$\beta_i$据可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示</li>
-</ol>
-<h4 id="矩阵表达"><a href="#矩阵表达" class="headerlink" title="矩阵表达"></a>矩阵表达</h4><p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=\beta$ 其中$A=[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$</p>
-<ol>
-<li><p>因此$\beta$可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示《=====》非齐次线性方程组有解</p>
-</li>
-<li><p>重点：</p>
-</li>
-</ol>
-<p>$[\alpha<em>1、\alpha_2、\alpha_3 …\alpha_p] \begin{pmatrix}<br>        x</em>{11} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{1q} \<br>        x</em>{21} &amp; \cdots &amp;\cdots &amp; \cdots &amp; x<em>{2q} \<br>        \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>        x</em>{p1} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{pq}\<br>        \end{pmatrix}</em>{pq} =[\beta_1、\beta_2、\beta_3、…、\beta_p]$</p>
-<p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ]$记作A<br>$[\beta_1、\beta_2、\beta_3…\beta_p]$记作B：<br>$AX=B$抽象的矩阵方程</p>
-<p>$[\beta_i]$可有$[\alpha_i]$线性表示《=====》线性方程有解。</p>
-<ol>
-<li>线性表示具有传递性：<br>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]    、[{\alpha_i}]$<br>$[\beta_1、\beta_2、\beta_3…\beta_q]   、[{\beta_j}]$<br>$[\gamma_1、\gamma_2、\gamma_3…\gamma_t]      、[{\gamma_k}]$   </li>
-</ol>
-<p>$ [{\beta_j}]\leq lin [{\alpha_i}]<br>$且$ [{\gamma_k}]\leq lin [{\beta_j}]<br>$则$ [{\gamma_k}]\leq lin [{\alpha_i}]<br>$</p>
-<p>A$\leq lin$B 意思是A可以由B线性表示。</p>
-<ul>
-<li>证：<br>即 Ax=B、By=C 有解，证明Az=C？<br>C=By=(Ax)y</li>
-</ul>
-<p><img src="https://www.codekp.cn/download/img/矩阵论/目录.png" width = "400" height = "302" alt="图片名称" align=center /></p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>研究生课程</tag>
-        <tag>矩阵论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>南京大屠杀国家公祭日_网站变成灰色以表悼念</title>
     <url>/2020/12/13/%E7%BD%91%E7%AB%99%E5%8F%98%E7%81%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="南京大屠杀国家公祭日-网站变成灰色以表悼念"><a href="#南京大屠杀国家公祭日-网站变成灰色以表悼念" class="headerlink" title=" 南京大屠杀国家公祭日_网站变成灰色以表悼念 "></a><center> 南京大屠杀国家公祭日_网站变成灰色以表悼念 </center></h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
@@ -9357,38 +9443,6 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
       <tags>
         <tag>南京大屠杀国家公祭日</tag>
         <tag>hexo网站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>自制树莓派镜像的最简单方法</title>
-    <url>/2021/07/14/%E8%87%AA%E5%88%B6%E6%A0%91%E8%8E%93%E6%B4%BE%E9%95%9C%E5%83%8F%E7%9A%84%E6%9C%80%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="自制树莓派镜像的最简单方法"><a href="#自制树莓派镜像的最简单方法" class="headerlink" title="自制树莓派镜像的最简单方法"></a>自制树莓派镜像的最简单方法</h1><h2 id="用sd卡制作img镜像"><a href="#用sd卡制作img镜像" class="headerlink" title="用sd卡制作img镜像"></a>用sd卡制作img镜像</h2><p>参考了很多博客和文档，有很多都是通过挂载的方式去烧录镜像，这种方法费时且低效。<br>并没有兴趣直接复制和挂载拷贝。<br>于是采用了第三个方法。</p>
-<ul>
-<li><p>将现有的系统制作成镜像img</p>
-</li>
-<li><p>将现有的系统制作成镜像img</p>
-</li>
-<li><p>将带有系统的sd卡用Win32DiskImager.exe工具Read成镜像文件xmu201.img</p>
-</li>
-</ul>
-<p><img src="https://www.codekp.cn/download/img/树莓派/win.png" width = "681" height = "302" alt="图片名称" align=center /></p>
-<blockquote>
-<p>（选择盘符里面的“boot”盘，在本机的任何一个盘符里面写于.img文件名称，手写输入，然后点击Read，等待读取）</p>
-</blockquote>
-<ul>
-<li>然后插入新卡到PC，将xmu201.img写入新卡</li>
-<li>现在就制作出了完全一模一样的多种带系统的sd卡，现在的卡是不能直接使用的，因为还需要对设备进行网络设置，才能连接ssh。</li>
-</ul>
-<p>（这种方法所制作的镜像会和所录制的sd卡一样大，因此如果使用这种方法需要原系统sd卡尽量的小，本人采用16G的sd卡所以问题不大）</p>
-<h2 id="通过balenaEtcher录入镜像"><a href="#通过balenaEtcher录入镜像" class="headerlink" title="通过balenaEtcher录入镜像"></a>通过balenaEtcher录入镜像</h2><ul>
-<li><a href="https://blog.csdn.net/weixin_41216356/article/details/107071740">balenaEtcher过程可参考CSDN</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>树莓派</category>
-      </categories>
-      <tags>
-        <tag>树莓派</tag>
       </tags>
   </entry>
   <entry>
@@ -9452,6 +9506,38 @@ end<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
       <tags>
         <tag>matlab</tag>
         <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自制树莓派镜像的最简单方法</title>
+    <url>/2021/07/14/%E8%87%AA%E5%88%B6%E6%A0%91%E8%8E%93%E6%B4%BE%E9%95%9C%E5%83%8F%E7%9A%84%E6%9C%80%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="自制树莓派镜像的最简单方法"><a href="#自制树莓派镜像的最简单方法" class="headerlink" title="自制树莓派镜像的最简单方法"></a>自制树莓派镜像的最简单方法</h1><h2 id="用sd卡制作img镜像"><a href="#用sd卡制作img镜像" class="headerlink" title="用sd卡制作img镜像"></a>用sd卡制作img镜像</h2><p>参考了很多博客和文档，有很多都是通过挂载的方式去烧录镜像，这种方法费时且低效。<br>并没有兴趣直接复制和挂载拷贝。<br>于是采用了第三个方法。</p>
+<ul>
+<li><p>将现有的系统制作成镜像img</p>
+</li>
+<li><p>将现有的系统制作成镜像img</p>
+</li>
+<li><p>将带有系统的sd卡用Win32DiskImager.exe工具Read成镜像文件xmu201.img</p>
+</li>
+</ul>
+<p><img src="https://www.codekp.cn/download/img/树莓派/win.png" width = "681" height = "302" alt="图片名称" align=center /></p>
+<blockquote>
+<p>（选择盘符里面的“boot”盘，在本机的任何一个盘符里面写于.img文件名称，手写输入，然后点击Read，等待读取）</p>
+</blockquote>
+<ul>
+<li>然后插入新卡到PC，将xmu201.img写入新卡</li>
+<li>现在就制作出了完全一模一样的多种带系统的sd卡，现在的卡是不能直接使用的，因为还需要对设备进行网络设置，才能连接ssh。</li>
+</ul>
+<p>（这种方法所制作的镜像会和所录制的sd卡一样大，因此如果使用这种方法需要原系统sd卡尽量的小，本人采用16G的sd卡所以问题不大）</p>
+<h2 id="通过balenaEtcher录入镜像"><a href="#通过balenaEtcher录入镜像" class="headerlink" title="通过balenaEtcher录入镜像"></a>通过balenaEtcher录入镜像</h2><ul>
+<li><a href="https://blog.csdn.net/weixin_41216356/article/details/107071740">balenaEtcher过程可参考CSDN</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>树莓派</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
       </tags>
   </entry>
   <entry>

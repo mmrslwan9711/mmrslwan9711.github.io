@@ -401,8 +401,6 @@
 
 
 
-
-
 <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
@@ -516,45 +514,6 @@
 <div class="row">
     <div id="main-content" class="col s12 m12 l9">
         <!-- 文章内容详情 -->
-<style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  counter(section) ". ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(section) "." counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(section) "." counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content: counter(section) "." counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content: counter(section) "." counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -1548,7 +1507,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">98.4k</span>&nbsp;字
+                class="white-color">98.7k</span>&nbsp;字
             
             
             
@@ -1874,6 +1833,21 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 
 </html>
