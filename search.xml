@@ -443,69 +443,6 @@ a :hover &#123;
       </tags>
   </entry>
   <entry>
-    <title>surface完美安装linux操作系统、hexo博客</title>
-    <url>/2021/03/19/Deepin%E7%B3%BB%E7%BB%9F%E4%B8%8Esurface%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="surface完美安装linux操作系统、hexo博客"><a href="#surface完美安装linux操作系统、hexo博客" class="headerlink" title="surface完美安装linux操作系统、hexo博客"></a><center>surface完美安装linux操作系统、hexo博客</center></h1><p>最近由于linux课程需要使用linux系统，于是在ubuntu、kali、Elementary OS、Chrome OS和deepin操作系统中选择一个比较靠谱的。<br><span id="more"></span></p>
-<h2 id="linux操作系统介绍"><a href="#linux操作系统介绍" class="headerlink" title="linux操作系统介绍"></a>linux操作系统介绍</h2><h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><p>作为全球最流行且最有影响力的Linux开源系统之一，Ubuntu自发布以来在应用体验方面：有较大幅度的提升，即使对比Windows、MacOS等操作系统，最新版本的Ubuntu也不逊色。<br><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3931899733,1893021162&amp;fm=26&amp;gp=0.jpg" alt="">  </p>
-<h3 id="kali"><a href="#kali" class="headerlink" title="kali"></a>kali</h3><p>Kali Linux是基于Debian的Linux发行版， 设计用于数字取证操作系统。每一季度更新一次。由Offensive Security Ltd维护和资助。最先由Offensive Security的Mati Aharoni和Devon Kearns通过重写BackTrack来完成，BackTrack是他们之前写的用于取证的Linux发行版 。</p>
-<p>主要是用来渗透网络—所以俗话说kali从入门到入狱。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/3b87e950352ac65c1038fd5662baa5119313b07e1cf7?x-bce-process=image/watermark,image_d2里奴性F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5/format,f_auto" alt=""></p>
-<h3 id="Elementary-OS"><a href="#Elementary-OS" class="headerlink" title="Elementary OS"></a>Elementary OS</h3><p>Elementary OS是基于 Ubuntu 精心打磨美化的桌面 Linux 发行版的一款软件，号称 “最美的 Linux”， 最早是 Ubuntu 的一个美化主题项目，现在成了独立的发行版<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww2.sinaimg.cn%2Fmw1024%2F6595c7c6tw1e7nlcg38qoj211s0lcag0.jpg&amp;refer=http%3A%2F%2Fwww.sina.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754413&amp;t=c4cc435286c020b6845bd352d5a1dd8c" alt=""></p>
-<h3 id="Chrome-OS"><a href="#Chrome-OS" class="headerlink" title="Chrome OS"></a>Chrome OS</h3><p>Chrome OS是一款Google开发的基于PC的操作系统。 Google Chrome OS是一款基于Linux的开源操作系统。Google在自己的官方博客表示，初期，这一操作系统将定位于上网本、紧凑型以及低成本电脑。这款开源软件将被命名为Chrome OS，谷歌公司于2010年12里奴性月7日（北京时间12月8日2点30分）在美国举行Chrome相关产品发布会，发布会上正式发布Chrome Web store和Chrome OS。</p>
-<p><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/baike/pic/item/8694a4c27d1ed21bae953dafa06eddc451da3f1f.jpg" alt=""></p>
-<h3 id="deepin"><a href="#deepin" class="headerlink" title="deepin"></a>deepin</h3><p>Deepin（原名：Linux Deepin；中文通称：深度操作系统）是由武汉深之度科技有限公司在Debian基础上开发的Linux操作系统，其前身是Hiweed Linux操作系统，于2004年2月28日开始对外发行，可以安装在个人计算机和服务器中。</p>
-<p>Deepin 12.12 正式版本将搭载一个全新的桌面环境。该桌面环境由Deepin 团队开发，以轻型、美观、稳定等作为设计目标。新桌面环境使用 Compiz 作为默认的窗口管理器。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fzkres1.myzaker.com%2F201910%2F5dae5906b15ec02e1c28f7b1_1024.jpg&amp;refer=http%3A%2F%2Fzkres1.myzaker.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754739&amp;t=be9f54a43670d51053a30eec7d91ac18" alt=""></p>
-<h3 id="总结以上五种系统各有各的优点"><a href="#总结以上五种系统各有各的优点" class="headerlink" title="总结以上五种系统各有各的优点"></a>总结以上五种系统各有各的优点</h3><p>运行上deepin会更慢一些，因为deepin的界面做的最好看，其次deepin是国产linux系统，而且是武汉的公司，安装极其简单，所以我就装了deepin操作系统。</p>
-<h2 id="deepin启动盘制作"><a href="#deepin启动盘制作" class="headerlink" title="deepin启动盘制作"></a>deepin启动盘制作</h2><p>deepin v20下载地址<a href="https://www.deepin.org/zh/download/">deep in</a><br>首先下载镜像，其次下载启动盘制作工具，制作启动盘。</p>
-<h2 id="windows分区"><a href="#windows分区" class="headerlink" title="windows分区"></a>windows分区</h2><p>删除一些windows上面不需要的软件和文件，腾出50G的空间，然后通过<a href="https://www.soft-down.net/detail/44/431115.shtml?type=jingzhun">分区助手</a><br>对磁盘进行分区。</p>
-<h2 id="系统安装具体操作步骤"><a href="#系统安装具体操作步骤" class="headerlink" title="系统安装具体操作步骤"></a>系统安装具体操作步骤</h2><p>1.制作启动u盘deepin系统安装盘。就是把deepin.iso烧录到u盘上。<br>这里请一定要先记得在淘宝上买一个扩展坞，因为surface是一款pc平板而合一电脑，为了节约面积，采用了单usb端口。同时安装系统时蓝牙会失效，需要准备有线鼠标、有线键盘。</p>
-<p>2.关闭secureboot.关机后 音量下键+电源三秒，松开电源，见到surface图标后松开音量键进入bios界面。第二项 secureboot 回车 disable它。滑倒最后exit save setting。</p>
-<p>特别注意一点！就是分清楚surface的音量和电源在那不要按错。</p>
-<p>3.进入windows系统，点击setting，在setting 中搜索boot，看到第二项，create and format hard disk partitions. 进入后看到C盘，鼠标右键shrink volumn(分出给deepin 的空间）</p>
-<p>建议采用之前说的分区助手，这种方法分区很容易崩。</p>
-<p>4.从U盘启动。有两种方式：<br>第一种关机后，音量下键+电源3秒，松开电源。见到surface画面后松开音量键。<br>第二种从windows 向左滑，进入setting. 最底下change pc settings.进去后点击最底下的updates and recovery(更新和恢复）选择里面最底下选项。advanced startup. （高级启动）。进入U盘启动。</p>
-<p>5.从U盘启动后。选择第二项，安装deepin. 选择语言，然后选择something else(其他选项）。目的是不要覆盖windows系统。安装系统到我们分出的free space里。<br>点击 free space ，再点击左下角的“+”号。选择逻辑分区，ext4, 给/root.尽量大点。</p>
-<p>再点击 free space ，点击左下角的“+”号。逻辑或主分区随便（我给的逻辑分区），swap area(交换空间）.随便给个几G。英文教程中不给，我是分了，省得它提示我必须给。反正也不少这几个G。</p>
-<p>选择启动盘为windows 所在的那个，一般叫sda 4.</p>
-<p>然后开始安装。重启。</p>
-<h2 id="安装触摸屏驱动"><a href="#安装触摸屏驱动" class="headerlink" title="安装触摸屏驱动"></a>安装触摸屏驱动</h2><h3 id="deepin-1"><a href="#deepin-1" class="headerlink" title="deepin"></a>deepin</h3><p>这里很神奇如果你也装的是deepin操作系统，触摸屏是可以直接使用的，可能因为华为封锁，目前华为用的均为deepin操作系统，华为也有触控笔记本电脑。</p>
-<h3 id="其他linux系统"><a href="#其他linux系统" class="headerlink" title="其他linux系统"></a>其他linux系统</h3><p>请详见<a href="https://github.com/jakeday/linux-surface">github大神</a>的surface驱动安装教程。</p>
-<p>进入系统以后使用Terminal安装了Peter Hunter整理的内核<br><pre class="line-numbers language-none"><code class="language-none">sudo add-apt-repository ppa:tigerite&#x2F;kernel
-
-sudo apt-get update
-
-sudo apt-get install linux-surface<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>然后使用编辑器nano或者gedit编辑/<br><pre class="line-numbers language-none"><code class="language-none">lib&#x2F;udev&#x2F;rules.d&#x2F;50-bluetooth-hci-auto-poweron.rules<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>用#注释掉里面唯一的那一行，再打开/etc/bluetooth/main.conf<br>把#[Policy]<br>改成[Policy]<br>并把最后一排的<br><pre class="line-numbers language-none"><code class="language-none">#AutoEnable&#x3D;false改成AutoEnable&#x3D;true
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;安装rEFIndsudo
-
-apt-add-repository ppa:rodsmith&#x2F;refind
-
-sudo apt-get update
-
-sudo apt-get install refind<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>用Shim给rEFind增加Secure Boot的启动方式<br><pre class="line-numbers language-none"><code class="language-none">refind-install --shim &#x2F;boot&#x2F;efi&#x2F;EFI&#x2F;ubuntu&#x2F;shimx64.efi --localkeys<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>然后把rEFind设为第一启动项refind-mkdefault开启Secure Boot</p>
-<h2 id="蓝牙驱动安装"><a href="#蓝牙驱动安装" class="headerlink" title="蓝牙驱动安装"></a>蓝牙驱动安装</h2><p>蓝牙（Bluetooth），是一种无线个人局域网（Wireless PAN），最初由爱立信创制，后来由蓝牙技术联盟订定技术标准。这个词的来源是10世纪丹麦和挪威国王蓝牙哈拉尔（丹麦语：Harald Blåtand Gormsen），借国王的绰号“Blåtand”当名称，直接翻译成中文为“蓝牙”（blå＝蓝，tand＝牙）。蓝牙是一种通用的射频频率是2.45GHZ的无线电接口，它使带有电子端口的设备能够在小范围内进行无线通信。</p>
-<h3 id="安装应用"><a href="#安装应用" class="headerlink" title="安装应用"></a>安装应用</h3><p>Blueman旨在提供最为常见的蓝牙管理功能。</p>
-<p>命令安装，终端执行：<br><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install blueman
-&#96;&#96;&#96;&#96;
-命令卸载，终端执行：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get remove blueman<br><pre class="line-numbers language-none"><code class="language-none">
-## Hexo安装
-### 安装nodejs:生成静态页面<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get install nodejs<br><pre class="line-numbers language-none"><code class="language-none">### 安装npm：一会用来安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo apt-get insall npm<br><pre class="line-numbers language-none"><code class="language-none">### 正式安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo npm install -g hexo<br><pre class="line-numbers language-none"><code class="language-none">### hexo部署<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>hexo clean<br>hexo g-d<br><pre class="line-numbers language-none"><code class="language-none">## git SSH Linux
-
-打开终端依次输入一下命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>Git Bash Here</p>
-<p>mkdir ~/.ssh</p>
-<p>cd .ssh/</p>
-<p>git config —global  user.name “mmrsl”</p>
-<p>git config —global  user.email “xxx@codekp.cn”<br>```<br>打开id_rsa.pub，在github的账号中进行修改，增加SHH。</p>
-<h1 id="完成后上传，如本文所示，surface双系统完美linux。"><a href="#完成后上传，如本文所示，surface双系统完美linux。" class="headerlink" title="完成后上传，如本文所示，surface双系统完美linux。"></a>完成后上传，如本文所示，surface双系统完美linux。</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>Deep in</tag>
-        <tag>surface</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Detection_树莓派</title>
     <url>/2021/06/07/Detection-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Raspberry-Pi-上运行-TensorFlow-Lite-目标检测"><a href="#Raspberry-Pi-上运行-TensorFlow-Lite-目标检测" class="headerlink" title="Raspberry Pi 上运行 TensorFlow Lite 目标检测"></a>Raspberry Pi 上运行 TensorFlow Lite 目标检测</h1> <div style="position:relative; padding-bottom:75%; width:100%; height:0">
@@ -580,6 +517,69 @@ cd tflite1<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       <tags>
         <tag>树莓派</tag>
         <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>surface完美安装linux操作系统、hexo博客</title>
+    <url>/2021/03/19/Deepin%E7%B3%BB%E7%BB%9F%E4%B8%8Esurface%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="surface完美安装linux操作系统、hexo博客"><a href="#surface完美安装linux操作系统、hexo博客" class="headerlink" title="surface完美安装linux操作系统、hexo博客"></a><center>surface完美安装linux操作系统、hexo博客</center></h1><p>最近由于linux课程需要使用linux系统，于是在ubuntu、kali、Elementary OS、Chrome OS和deepin操作系统中选择一个比较靠谱的。<br><span id="more"></span></p>
+<h2 id="linux操作系统介绍"><a href="#linux操作系统介绍" class="headerlink" title="linux操作系统介绍"></a>linux操作系统介绍</h2><h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><p>作为全球最流行且最有影响力的Linux开源系统之一，Ubuntu自发布以来在应用体验方面：有较大幅度的提升，即使对比Windows、MacOS等操作系统，最新版本的Ubuntu也不逊色。<br><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3931899733,1893021162&amp;fm=26&amp;gp=0.jpg" alt="">  </p>
+<h3 id="kali"><a href="#kali" class="headerlink" title="kali"></a>kali</h3><p>Kali Linux是基于Debian的Linux发行版， 设计用于数字取证操作系统。每一季度更新一次。由Offensive Security Ltd维护和资助。最先由Offensive Security的Mati Aharoni和Devon Kearns通过重写BackTrack来完成，BackTrack是他们之前写的用于取证的Linux发行版 。</p>
+<p>主要是用来渗透网络—所以俗话说kali从入门到入狱。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/3b87e950352ac65c1038fd5662baa5119313b07e1cf7?x-bce-process=image/watermark,image_d2里奴性F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5/format,f_auto" alt=""></p>
+<h3 id="Elementary-OS"><a href="#Elementary-OS" class="headerlink" title="Elementary OS"></a>Elementary OS</h3><p>Elementary OS是基于 Ubuntu 精心打磨美化的桌面 Linux 发行版的一款软件，号称 “最美的 Linux”， 最早是 Ubuntu 的一个美化主题项目，现在成了独立的发行版<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww2.sinaimg.cn%2Fmw1024%2F6595c7c6tw1e7nlcg38qoj211s0lcag0.jpg&amp;refer=http%3A%2F%2Fwww.sina.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754413&amp;t=c4cc435286c020b6845bd352d5a1dd8c" alt=""></p>
+<h3 id="Chrome-OS"><a href="#Chrome-OS" class="headerlink" title="Chrome OS"></a>Chrome OS</h3><p>Chrome OS是一款Google开发的基于PC的操作系统。 Google Chrome OS是一款基于Linux的开源操作系统。Google在自己的官方博客表示，初期，这一操作系统将定位于上网本、紧凑型以及低成本电脑。这款开源软件将被命名为Chrome OS，谷歌公司于2010年12里奴性月7日（北京时间12月8日2点30分）在美国举行Chrome相关产品发布会，发布会上正式发布Chrome Web store和Chrome OS。</p>
+<p><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/baike/pic/item/8694a4c27d1ed21bae953dafa06eddc451da3f1f.jpg" alt=""></p>
+<h3 id="deepin"><a href="#deepin" class="headerlink" title="deepin"></a>deepin</h3><p>Deepin（原名：Linux Deepin；中文通称：深度操作系统）是由武汉深之度科技有限公司在Debian基础上开发的Linux操作系统，其前身是Hiweed Linux操作系统，于2004年2月28日开始对外发行，可以安装在个人计算机和服务器中。</p>
+<p>Deepin 12.12 正式版本将搭载一个全新的桌面环境。该桌面环境由Deepin 团队开发，以轻型、美观、稳定等作为设计目标。新桌面环境使用 Compiz 作为默认的窗口管理器。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fzkres1.myzaker.com%2F201910%2F5dae5906b15ec02e1c28f7b1_1024.jpg&amp;refer=http%3A%2F%2Fzkres1.myzaker.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754739&amp;t=be9f54a43670d51053a30eec7d91ac18" alt=""></p>
+<h3 id="总结以上五种系统各有各的优点"><a href="#总结以上五种系统各有各的优点" class="headerlink" title="总结以上五种系统各有各的优点"></a>总结以上五种系统各有各的优点</h3><p>运行上deepin会更慢一些，因为deepin的界面做的最好看，其次deepin是国产linux系统，而且是武汉的公司，安装极其简单，所以我就装了deepin操作系统。</p>
+<h2 id="deepin启动盘制作"><a href="#deepin启动盘制作" class="headerlink" title="deepin启动盘制作"></a>deepin启动盘制作</h2><p>deepin v20下载地址<a href="https://www.deepin.org/zh/download/">deep in</a><br>首先下载镜像，其次下载启动盘制作工具，制作启动盘。</p>
+<h2 id="windows分区"><a href="#windows分区" class="headerlink" title="windows分区"></a>windows分区</h2><p>删除一些windows上面不需要的软件和文件，腾出50G的空间，然后通过<a href="https://www.soft-down.net/detail/44/431115.shtml?type=jingzhun">分区助手</a><br>对磁盘进行分区。</p>
+<h2 id="系统安装具体操作步骤"><a href="#系统安装具体操作步骤" class="headerlink" title="系统安装具体操作步骤"></a>系统安装具体操作步骤</h2><p>1.制作启动u盘deepin系统安装盘。就是把deepin.iso烧录到u盘上。<br>这里请一定要先记得在淘宝上买一个扩展坞，因为surface是一款pc平板而合一电脑，为了节约面积，采用了单usb端口。同时安装系统时蓝牙会失效，需要准备有线鼠标、有线键盘。</p>
+<p>2.关闭secureboot.关机后 音量下键+电源三秒，松开电源，见到surface图标后松开音量键进入bios界面。第二项 secureboot 回车 disable它。滑倒最后exit save setting。</p>
+<p>特别注意一点！就是分清楚surface的音量和电源在那不要按错。</p>
+<p>3.进入windows系统，点击setting，在setting 中搜索boot，看到第二项，create and format hard disk partitions. 进入后看到C盘，鼠标右键shrink volumn(分出给deepin 的空间）</p>
+<p>建议采用之前说的分区助手，这种方法分区很容易崩。</p>
+<p>4.从U盘启动。有两种方式：<br>第一种关机后，音量下键+电源3秒，松开电源。见到surface画面后松开音量键。<br>第二种从windows 向左滑，进入setting. 最底下change pc settings.进去后点击最底下的updates and recovery(更新和恢复）选择里面最底下选项。advanced startup. （高级启动）。进入U盘启动。</p>
+<p>5.从U盘启动后。选择第二项，安装deepin. 选择语言，然后选择something else(其他选项）。目的是不要覆盖windows系统。安装系统到我们分出的free space里。<br>点击 free space ，再点击左下角的“+”号。选择逻辑分区，ext4, 给/root.尽量大点。</p>
+<p>再点击 free space ，点击左下角的“+”号。逻辑或主分区随便（我给的逻辑分区），swap area(交换空间）.随便给个几G。英文教程中不给，我是分了，省得它提示我必须给。反正也不少这几个G。</p>
+<p>选择启动盘为windows 所在的那个，一般叫sda 4.</p>
+<p>然后开始安装。重启。</p>
+<h2 id="安装触摸屏驱动"><a href="#安装触摸屏驱动" class="headerlink" title="安装触摸屏驱动"></a>安装触摸屏驱动</h2><h3 id="deepin-1"><a href="#deepin-1" class="headerlink" title="deepin"></a>deepin</h3><p>这里很神奇如果你也装的是deepin操作系统，触摸屏是可以直接使用的，可能因为华为封锁，目前华为用的均为deepin操作系统，华为也有触控笔记本电脑。</p>
+<h3 id="其他linux系统"><a href="#其他linux系统" class="headerlink" title="其他linux系统"></a>其他linux系统</h3><p>请详见<a href="https://github.com/jakeday/linux-surface">github大神</a>的surface驱动安装教程。</p>
+<p>进入系统以后使用Terminal安装了Peter Hunter整理的内核<br><pre class="line-numbers language-none"><code class="language-none">sudo add-apt-repository ppa:tigerite&#x2F;kernel
+
+sudo apt-get update
+
+sudo apt-get install linux-surface<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>然后使用编辑器nano或者gedit编辑/<br><pre class="line-numbers language-none"><code class="language-none">lib&#x2F;udev&#x2F;rules.d&#x2F;50-bluetooth-hci-auto-poweron.rules<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>用#注释掉里面唯一的那一行，再打开/etc/bluetooth/main.conf<br>把#[Policy]<br>改成[Policy]<br>并把最后一排的<br><pre class="line-numbers language-none"><code class="language-none">#AutoEnable&#x3D;false改成AutoEnable&#x3D;true
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;安装rEFIndsudo
+
+apt-add-repository ppa:rodsmith&#x2F;refind
+
+sudo apt-get update
+
+sudo apt-get install refind<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>用Shim给rEFind增加Secure Boot的启动方式<br><pre class="line-numbers language-none"><code class="language-none">refind-install --shim &#x2F;boot&#x2F;efi&#x2F;EFI&#x2F;ubuntu&#x2F;shimx64.efi --localkeys<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>然后把rEFind设为第一启动项refind-mkdefault开启Secure Boot</p>
+<h2 id="蓝牙驱动安装"><a href="#蓝牙驱动安装" class="headerlink" title="蓝牙驱动安装"></a>蓝牙驱动安装</h2><p>蓝牙（Bluetooth），是一种无线个人局域网（Wireless PAN），最初由爱立信创制，后来由蓝牙技术联盟订定技术标准。这个词的来源是10世纪丹麦和挪威国王蓝牙哈拉尔（丹麦语：Harald Blåtand Gormsen），借国王的绰号“Blåtand”当名称，直接翻译成中文为“蓝牙”（blå＝蓝，tand＝牙）。蓝牙是一种通用的射频频率是2.45GHZ的无线电接口，它使带有电子端口的设备能够在小范围内进行无线通信。</p>
+<h3 id="安装应用"><a href="#安装应用" class="headerlink" title="安装应用"></a>安装应用</h3><p>Blueman旨在提供最为常见的蓝牙管理功能。</p>
+<p>命令安装，终端执行：<br><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install blueman
+&#96;&#96;&#96;&#96;
+命令卸载，终端执行：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get remove blueman<br><pre class="line-numbers language-none"><code class="language-none">
+## Hexo安装
+### 安装nodejs:生成静态页面<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get install nodejs<br><pre class="line-numbers language-none"><code class="language-none">### 安装npm：一会用来安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo apt-get insall npm<br><pre class="line-numbers language-none"><code class="language-none">### 正式安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo npm install -g hexo<br><pre class="line-numbers language-none"><code class="language-none">### hexo部署<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>hexo clean<br>hexo g-d<br><pre class="line-numbers language-none"><code class="language-none">## git SSH Linux
+
+打开终端依次输入一下命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>Git Bash Here</p>
+<p>mkdir ~/.ssh</p>
+<p>cd .ssh/</p>
+<p>git config —global  user.name “mmrsl”</p>
+<p>git config —global  user.email “xxx@codekp.cn”<br>```<br>打开id_rsa.pub，在github的账号中进行修改，增加SHH。</p>
+<h1 id="完成后上传，如本文所示，surface双系统完美linux。"><a href="#完成后上传，如本文所示，surface双系统完美linux。" class="headerlink" title="完成后上传，如本文所示，surface双系统完美linux。"></a>完成后上传，如本文所示，surface双系统完美linux。</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>Deep in</tag>
+        <tag>surface</tag>
       </tags>
   </entry>
   <entry>
@@ -864,6 +864,10 @@ If you are talking to a group of managers, you may refer to the disorganized met
 </style>
 
 <h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
+<ul>
+<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
+</ul>
+<p>下载个人用途版本即可。</p>
 ]]></content>
   </entry>
   <entry>
@@ -2910,6 +2914,130 @@ systemctl status rc-local.service<span aria-hidden="true" class="line-numbers-ro
       </tags>
   </entry>
   <entry>
+    <title>b站up主推荐</title>
+    <url>/2021/04/14/b%E7%AB%99up%E4%B8%BB%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=96244032&bvid=BV1jE41137eu&cid=164144278&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+
+
+<span id="more"></span>
+<h1 id="b站up主推荐"><a href="#b站up主推荐" class="headerlink" title="b站up主推荐"></a>b站up主推荐</h1><p>稚晖君，最近堕落了两三年就啥也没认真学吃老本，最近看到了这个up主，就感觉我荒废了一段时间，他会的其实我理应都会，就是最近开始有点颓废了。</p>
+<p>就感觉他给了我一些启发，让我觉得不能在这样下去了，人家都华为天才少年了，我还在咸鱼的路上越走越远，要努力！要奋斗！</p>
+<p>引用稚晖君最后的一句话，</p>
+<blockquote>
+<p>越热爱越幸运，<br>资源会跟着你的决心走的。</p>
+</blockquote>
+<ul>
+<li>[x] <a href="http://www.pengzhihui.com/">稚晖君的个人博客</a></li>
+</ul>
+<h2 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=91299923&bvid=BV1F7411u71s&cid=155884314&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+
+<h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><ul>
+<li>[x] XMind ZEN : 思维导图</li>
+<li>[x] Typora : markdown</li>
+<li>[x] 有道云笔记：同步，私有云图床</li>
+<li><p>[x] 电路</p>
+</li>
+<li><p>[x] AD：主要设计工具</p>
+</li>
+<li>[ ] Eagle：转换一些开源的eagle格式PCB文档</li>
+<li>[x] fritzing：EDA软件，也可以用作矢量风格说明软件</li>
+</ul>
+<h3 id="机械"><a href="#机械" class="headerlink" title="机械"></a>机械</h3><ul>
+<li>[ ] Rhinocores：参数化建模，不适合不规则曲面</li>
+<li>[ ] Fusion360：全能</li>
+<li>[ ] Cinema4D</li>
+<li>[ ] KeyShot：仿真</li>
+<li>[ ] inkScape：矢量图轨迹</li>
+<li>[ ] ArtCAM：生成雕刻机的刀路文件</li>
+</ul>
+<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ul>
+<li>[x] Visual Studio</li>
+<li>[x] Android Studio：手机APP开发</li>
+<li>[ ] Jetbrain全家桶</li>
+<li>[x] pycharm：python</li>
+<li>[x] Rider：C#开发</li>
+<li>[x] Clion：C &amp; C++</li>
+<li>[ ] Unity：3D仿真</li>
+<li>[x] Keil</li>
+<li>[ ] CubeMX</li>
+<li>[x] Arduino</li>
+<li>[ ] KendryteIDE：K210</li>
+<li>[ ] Processing：数字多媒体艺术</li>
+<li>[x] matlab：建模仿真</li>
+</ul>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
+<li>[x] XShell &amp; Xftp</li>
+<li>[x] 串口调试助手 &amp; 网络调试助手</li>
+<li>[ ] Cmake</li>
+<li>[x] GitGUI</li>
+<li>[ ] CoolFormat：代码格式</li>
+<li>[ ] IDA：反编译</li>
+<li>[ ] wireshark：网络抓包</li>
+<li>[ ] SerialChart：串口绘图</li>
+<li>[ ] Netron：图形化查看神经网络模型</li>
+<li>[ ] beyond Compare：代码比对</li>
+</ul>
+<h2 id="硬件环境"><a href="#硬件环境" class="headerlink" title="硬件环境"></a>硬件环境</h2><p>总结来自稚晖君的硬件篇视频</p>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=73533882&bvid=BV19E411a7Sf&cid=125772471&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+
+<p>电脑桌：转角桌（右边电脑区+左边电工区）</p>
+<h3 id="电脑区"><a href="#电脑区" class="headerlink" title="电脑区"></a>电脑区</h3><ul>
+<li>[] iQniX红轴机械键盘</li>
+<li>[] Xbox one</li>
+<li>[x] 个人服务器</li>
+</ul>
+<h3 id="电工区"><a href="#电工区" class="headerlink" title="电工区"></a>电工区</h3><ul>
+<li>[] 防割板</li>
+<li>[] 热风枪</li>
+<li>[] 控温电烙铁</li>
+<li>[] 焊接辅助：飞线，锡球，焊锡膏，铁丝球，助焊剂，洗板水……</li>
+<li>[] 数控电源</li>
+<li>[] 元器件盒： 装主控</li>
+<li>[] 电阻电容样品本</li>
+<li>[] 示波器：袖珍 20Mhz</li>
+</ul>
+<h3 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h3><ul>
+<li>[x] Android Studio</li>
+<li>[x] Linux设备驱动开发详解</li>
+<li>[x] 程序员的数学</li>
+<li>[ ] 雷军传</li>
+<li>[ ] 三体</li>
+<li>[x] 算法导论</li>
+<li>[ ] Android 设计模式</li>
+<li>[ ] 大话计算机</li>
+</ul>
+<h3 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h3><ul>
+<li>[x] 路由器</li>
+<li>[ ] 移动硬盘柜 （10T x 2）：深度学习数据集</li>
+<li>[ ] 合莱SP-20</li>
+<li><p>[ ] 机械</p>
+</li>
+<li><p>[ ] LCD的光固化3D打印机：体积比较小精度高的模型</p>
+</li>
+<li>[ ] FDM的3D打印机：居家创客必备</li>
+<li>[ ] 小型雕刻机</li>
+</ul>
+<ul>
+<li>[x] 打钩是已经会的和拥有的，未来工作了希望可以也买这么多东西哈哈。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>b站</category>
+      </categories>
+      <tags>
+        <tag>b站</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>TensorFlow-lite模型训练</title>
     <url>/2021/06/11/TensorFlow-lite%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="TensorFlow-lite模型训练"><a href="#TensorFlow-lite模型训练" class="headerlink" title="TensorFlow-lite模型训练"></a>TensorFlow-lite模型训练</h1><h2 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h2><h3 id="安装pytorch、conda"><a href="#安装pytorch、conda" class="headerlink" title="安装pytorch、conda"></a>安装pytorch、conda</h3><p>  该教程详情请见：<a href="https://segmentfault.com/a/1190000020889696">PyTorch环境配置及安装</a></p>
@@ -3053,130 +3181,6 @@ protoc --python_out&#x3D;. C:\tensorflow1\models\research\object_detection\proto
       </categories>
       <tags>
         <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>b站up主推荐</title>
-    <url>/2021/04/14/b%E7%AB%99up%E4%B8%BB%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=96244032&bvid=BV1jE41137eu&cid=164144278&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-
-
-<span id="more"></span>
-<h1 id="b站up主推荐"><a href="#b站up主推荐" class="headerlink" title="b站up主推荐"></a>b站up主推荐</h1><p>稚晖君，最近堕落了两三年就啥也没认真学吃老本，最近看到了这个up主，就感觉我荒废了一段时间，他会的其实我理应都会，就是最近开始有点颓废了。</p>
-<p>就感觉他给了我一些启发，让我觉得不能在这样下去了，人家都华为天才少年了，我还在咸鱼的路上越走越远，要努力！要奋斗！</p>
-<p>引用稚晖君最后的一句话，</p>
-<blockquote>
-<p>越热爱越幸运，<br>资源会跟着你的决心走的。</p>
-</blockquote>
-<ul>
-<li>[x] <a href="http://www.pengzhihui.com/">稚晖君的个人博客</a></li>
-</ul>
-<h2 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=91299923&bvid=BV1F7411u71s&cid=155884314&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-
-<h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><ul>
-<li>[x] XMind ZEN : 思维导图</li>
-<li>[x] Typora : markdown</li>
-<li>[x] 有道云笔记：同步，私有云图床</li>
-<li><p>[x] 电路</p>
-</li>
-<li><p>[x] AD：主要设计工具</p>
-</li>
-<li>[ ] Eagle：转换一些开源的eagle格式PCB文档</li>
-<li>[x] fritzing：EDA软件，也可以用作矢量风格说明软件</li>
-</ul>
-<h3 id="机械"><a href="#机械" class="headerlink" title="机械"></a>机械</h3><ul>
-<li>[ ] Rhinocores：参数化建模，不适合不规则曲面</li>
-<li>[ ] Fusion360：全能</li>
-<li>[ ] Cinema4D</li>
-<li>[ ] KeyShot：仿真</li>
-<li>[ ] inkScape：矢量图轨迹</li>
-<li>[ ] ArtCAM：生成雕刻机的刀路文件</li>
-</ul>
-<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ul>
-<li>[x] Visual Studio</li>
-<li>[x] Android Studio：手机APP开发</li>
-<li>[ ] Jetbrain全家桶</li>
-<li>[x] pycharm：python</li>
-<li>[x] Rider：C#开发</li>
-<li>[x] Clion：C &amp; C++</li>
-<li>[ ] Unity：3D仿真</li>
-<li>[x] Keil</li>
-<li>[ ] CubeMX</li>
-<li>[x] Arduino</li>
-<li>[ ] KendryteIDE：K210</li>
-<li>[ ] Processing：数字多媒体艺术</li>
-<li>[x] matlab：建模仿真</li>
-</ul>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
-<li>[x] XShell &amp; Xftp</li>
-<li>[x] 串口调试助手 &amp; 网络调试助手</li>
-<li>[ ] Cmake</li>
-<li>[x] GitGUI</li>
-<li>[ ] CoolFormat：代码格式</li>
-<li>[ ] IDA：反编译</li>
-<li>[ ] wireshark：网络抓包</li>
-<li>[ ] SerialChart：串口绘图</li>
-<li>[ ] Netron：图形化查看神经网络模型</li>
-<li>[ ] beyond Compare：代码比对</li>
-</ul>
-<h2 id="硬件环境"><a href="#硬件环境" class="headerlink" title="硬件环境"></a>硬件环境</h2><p>总结来自稚晖君的硬件篇视频</p>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=73533882&bvid=BV19E411a7Sf&cid=125772471&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-
-<p>电脑桌：转角桌（右边电脑区+左边电工区）</p>
-<h3 id="电脑区"><a href="#电脑区" class="headerlink" title="电脑区"></a>电脑区</h3><ul>
-<li>[] iQniX红轴机械键盘</li>
-<li>[] Xbox one</li>
-<li>[x] 个人服务器</li>
-</ul>
-<h3 id="电工区"><a href="#电工区" class="headerlink" title="电工区"></a>电工区</h3><ul>
-<li>[] 防割板</li>
-<li>[] 热风枪</li>
-<li>[] 控温电烙铁</li>
-<li>[] 焊接辅助：飞线，锡球，焊锡膏，铁丝球，助焊剂，洗板水……</li>
-<li>[] 数控电源</li>
-<li>[] 元器件盒： 装主控</li>
-<li>[] 电阻电容样品本</li>
-<li>[] 示波器：袖珍 20Mhz</li>
-</ul>
-<h3 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h3><ul>
-<li>[x] Android Studio</li>
-<li>[x] Linux设备驱动开发详解</li>
-<li>[x] 程序员的数学</li>
-<li>[ ] 雷军传</li>
-<li>[ ] 三体</li>
-<li>[x] 算法导论</li>
-<li>[ ] Android 设计模式</li>
-<li>[ ] 大话计算机</li>
-</ul>
-<h3 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h3><ul>
-<li>[x] 路由器</li>
-<li>[ ] 移动硬盘柜 （10T x 2）：深度学习数据集</li>
-<li>[ ] 合莱SP-20</li>
-<li><p>[ ] 机械</p>
-</li>
-<li><p>[ ] LCD的光固化3D打印机：体积比较小精度高的模型</p>
-</li>
-<li>[ ] FDM的3D打印机：居家创客必备</li>
-<li>[ ] 小型雕刻机</li>
-</ul>
-<ul>
-<li>[x] 打钩是已经会的和拥有的，未来工作了希望可以也买这么多东西哈哈。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>b站</category>
-      </categories>
-      <tags>
-        <tag>b站</tag>
       </tags>
   </entry>
   <entry>
@@ -4093,6 +4097,8 @@ https://www.html5tricks.com/ -->
 <li><a href="https://www.hightopo.com/guide/doc/ht.widget.TreeView.html">ht 说明手册</a></li>
 <li><a href="https://www.hightopo.com/guide/guide/core/3d/ht-3d-guide.html">HT for Web 3D 手册</a></li>
 <li><a href="https://www.hightopo.com/guide/guide/core/theme/ht-theme-guide.html">HT for Web 风格手册</a></li>
+<li><a href="https://blog.csdn.net/xhload3d/article/details/52323746">https://blog.csdn.net/xhload3d/article/details/52323746</a></li>
+<li><a href="https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html">https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html</a></li>
 </ul>
 ]]></content>
   </entry>
@@ -7793,7 +7799,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#x6b;&#112;&#64;&#x6d;&#109;&#x72;&#x73;&#x6c;&#x2e;&#99;&#x6e;">&#x6b;&#112;&#64;&#x6d;&#109;&#x72;&#x73;&#x6c;&#x2e;&#99;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#107;&#112;&#x40;&#x6d;&#109;&#114;&#x73;&#x6c;&#46;&#99;&#110;">&#107;&#112;&#x40;&#x6d;&#109;&#114;&#x73;&#x6c;&#46;&#99;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -9509,6 +9515,37 @@ end<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
       </tags>
   </entry>
   <entry>
+    <title>虚电路和数据报对比模型</title>
+    <url>/2021/03/31/%E8%99%9A%E7%94%B5%E8%B7%AF%E5%92%8C%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%AF%B9%E6%AF%94%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>通过数学模型，我们可以比较虚电路和数据报的传输数率好坏。</p>
+<h1 id="虚电路和数据报对比模型"><a href="#虚电路和数据报对比模型" class="headerlink" title="虚电路和数据报对比模型"></a>虚电路和数据报对比模型</h1><p>python如下所示：<br><pre class="line-numbers language-none"><code class="language-none">from scipy.special import comb
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+
+def print_hi(name):
+    print(f&#39;Sum,&#123;name&#125;&#39;)
+if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    N&#x3D;100
+    p&#x3D;0.1
+    sum &#x3D; np.zeros(N)
+    for n in range(N):
+        for k in range(10):
+            sum[n]&#x3D;comb(n,k)*math.pow(1-p, n-k )*math.pow(p, k ) +sum[n]
+    print_hi(sum)
+    plt.plot(sum)
+    plt.show()
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h2 id="输出结果图："><a href="#输出结果图：" class="headerlink" title="输出结果图："></a>输出结果图：</h2><p><img src="https://img-blog.csdnimg.cn/20210331172103905.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>网路比较</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>自制树莓派镜像的最简单方法</title>
     <url>/2021/07/14/%E8%87%AA%E5%88%B6%E6%A0%91%E8%8E%93%E6%B4%BE%E9%95%9C%E5%83%8F%E7%9A%84%E6%9C%80%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="自制树莓派镜像的最简单方法"><a href="#自制树莓派镜像的最简单方法" class="headerlink" title="自制树莓派镜像的最简单方法"></a>自制树莓派镜像的最简单方法</h1><h2 id="用sd卡制作img镜像"><a href="#用sd卡制作img镜像" class="headerlink" title="用sd卡制作img镜像"></a>用sd卡制作img镜像</h2><p>参考了很多博客和文档，有很多都是通过挂载的方式去烧录镜像，这种方法费时且低效。<br>并没有兴趣直接复制和挂载拷贝。<br>于是采用了第三个方法。</p>
@@ -9538,37 +9575,6 @@ end<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
       </categories>
       <tags>
         <tag>树莓派</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虚电路和数据报对比模型</title>
-    <url>/2021/03/31/%E8%99%9A%E7%94%B5%E8%B7%AF%E5%92%8C%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%AF%B9%E6%AF%94%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>通过数学模型，我们可以比较虚电路和数据报的传输数率好坏。</p>
-<h1 id="虚电路和数据报对比模型"><a href="#虚电路和数据报对比模型" class="headerlink" title="虚电路和数据报对比模型"></a>虚电路和数据报对比模型</h1><p>python如下所示：<br><pre class="line-numbers language-none"><code class="language-none">from scipy.special import comb
-import math
-import numpy as np
-import matplotlib.pyplot as plt
-
-def print_hi(name):
-    print(f&#39;Sum,&#123;name&#125;&#39;)
-if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
-    N&#x3D;100
-    p&#x3D;0.1
-    sum &#x3D; np.zeros(N)
-    for n in range(N):
-        for k in range(10):
-            sum[n]&#x3D;comb(n,k)*math.pow(1-p, n-k )*math.pow(p, k ) +sum[n]
-    print_hi(sum)
-    plt.plot(sum)
-    plt.show()
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<h2 id="输出结果图："><a href="#输出结果图：" class="headerlink" title="输出结果图："></a>输出结果图：</h2><p><img src="https://img-blog.csdnimg.cn/20210331172103905.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>网路比较</tag>
       </tags>
   </entry>
   <entry>
