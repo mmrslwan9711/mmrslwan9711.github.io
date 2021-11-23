@@ -401,7 +401,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://www.mmrsl.cn/download/img/html5/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -676,9 +676,8 @@ sudo make install<span aria-hidden="true" class="line-numbers-rows"><span></span
 <li>在线查看视频：<code>http://192.168.1.1:8080?action=stream</code></li>
 </ul>
 <h3 id="mjpg-streamer分析"><a href="#mjpg-streamer分析" class="headerlink" title="mjpg-streamer分析"></a>mjpg-streamer分析</h3><p>感觉这个开源项目，更像是一种jpg的web查看器，可以通过web查看到图片，压缩为jpg格式大概为34kb。</p>
-<h2 id="web查看mjpg-streamer图片"><a href="#web查看mjpg-streamer图片" class="headerlink" title="web查看mjpg-streamer图片"></a>web查看mjpg-streamer图片</h2><h3 id="自带的html查看"><a href="#自带的html查看" class="headerlink" title="自带的html查看"></a>自带的html查看</h3><ul>
-<li><a href="https://www.mmrsl.cn/download/img/html5/14.jpg"></a><h3 id="自己制作网页查看"><a href="#自己制作网页查看" class="headerlink" title="自己制作网页查看"></a>自己制作网页查看</h3><code>&lt;img src = &quot;http://192.168.1.125:8080/?action=stream&quot; alt = &quot;xxx001&quot; &gt;</code></li>
-</ul>
+<h2 id="web查看mjpg-streamer图片"><a href="#web查看mjpg-streamer图片" class="headerlink" title="web查看mjpg-streamer图片"></a>web查看mjpg-streamer图片</h2><h3 id="自带的html查看"><a href="#自带的html查看" class="headerlink" title="自带的html查看"></a>自带的html查看</h3><p><img src="https://www.mmrsl.cn/download/img/html5/14.jpg" alt=""></p>
+<h3 id="自己制作网页查看"><a href="#自己制作网页查看" class="headerlink" title="自己制作网页查看"></a>自己制作网页查看</h3><p><code>&lt;img src = &quot;http://192.168.1.125:8080/?action=stream&quot; alt = &quot;xxx001&quot; &gt;</code></p>
 <p>可以通过html同时拉取多个mjpg-streamer</p>
 <p>代码如下：<br><pre class="line-numbers language-none"><code class="language-none">  &lt;body&gt;
     &lt;div id&#x3D;&quot;main&quot;&gt;
@@ -753,11 +752,7 @@ sudo make install<span aria-hidden="true" class="line-numbers-rows"><span></span
     &lt;&#x2F;script&gt;
   &lt;&#x2F;body&gt;
 &lt;&#x2F;html&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;strong&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>显示效果：</p>
-<ul>
-<li><a href="https://www.mmrsl.cn/download/img/html5/9.jpg"></a></li>
-<li><a href="https://www.mmrsl.cn/download/img/html5/10.jpg"></a></li>
-</ul>
+&lt;&#x2F;span&gt;&lt;&#x2F;strong&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>显示效果：<br><img src="https://www.mmrsl.cn/download/img/html5/9.jpg" alt=""><br><img src="https://www.mmrsl.cn/download/img/html5/10.jpg" alt=""></p>
 <p>对于单张图片可以进行放大显示。</p>
 <h2 id="python爬取mjpg-streamer图片"><a href="#python爬取mjpg-streamer图片" class="headerlink" title="python爬取mjpg-streamer图片"></a>python爬取mjpg-streamer图片</h2><p>可以通过urllib爬取图片，获取传输时延。</p>
 <h3 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h3><pre class="line-numbers language-none"><code class="language-none"># -*- coding:utf-8 -*-
@@ -792,8 +787,8 @@ def downloadImg(url):
         img_cv &#x3D; cv2.imdecode(img1, cv2.IMREAD_ANYCOLOR)
     print(url, &quot;time:&quot;, time.time() - time1)
     return img_cv<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="结果显示"><a href="#结果显示" class="headerlink" title="结果显示"></a>结果显示</h3><ul>
-<li><a href="https://www.mmrsl.cn/download/img/html5/11.jpg"></a><h2 id="python多台拉取显示"><a href="#python多台拉取显示" class="headerlink" title="python多台拉取显示"></a>python多台拉取显示</h2><blockquote>
+<h3 id="结果显示"><a href="#结果显示" class="headerlink" title="结果显示"></a>结果显示</h3><p><img src="https://www.mmrsl.cn/download/img/html5/11.jpg" alt=""></p>
+<h2 id="python多台拉取显示"><a href="#python多台拉取显示" class="headerlink" title="python多台拉取显示"></a>python多台拉取显示</h2><blockquote>
 <p>为了获取结果采用线程进行显示</p>
 <h3 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h3><pre class="line-numbers language-none"><code class="language-none">while True:
     # 创建包含2个线程的线程池
@@ -876,16 +871,14 @@ if __name__ &#x3D;&#x3D; &quot;__main__&quot;:
     print(more_th3.get_result())
     print(more_th4.get_result())
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="结论："><a href="#结论：" class="headerlink" title="结论："></a>结论：</h3><p>自制线程效果优于自制线程。<br>结果：</p>
-</blockquote>
-</li>
-<li><a href="https://www.mmrsl.cn/download/img/html5/12.jpg"></a></li>
-<li><a href="https://www.mmrsl.cn/download/img/html5/13.jpg"></a><h2 id="更多内容："><a href="#更多内容：" class="headerlink" title="更多内容："></a>更多内容：</h2><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3></li>
+<h3 id="结论："><a href="#结论：" class="headerlink" title="结论："></a>结论：</h3><p>自制线程效果优于自制线程。<br>结果：<br><img src="https://www.mmrsl.cn/download/img/html5/12.jpg" alt=""><br><img src="https://www.mmrsl.cn/download/img/html5/13.jpg" alt=""></p>
+<h2 id="更多内容："><a href="#更多内容：" class="headerlink" title="更多内容："></a>更多内容：</h2><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/kaoyangs06/article/details/51895891">宠物远程监控DIYopenwrt+rt5350+mjpg摄像头</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/lqx4_3/article/details/21596463">RT5350无线视频监控</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/u014795817/article/details/75332489">家庭监控，网络摄像头（OpenWRT平台下Mjpg-Streamer+Ngrok实现方案）</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/u013162035/article/details/78823425">配置OpenWrt支持网络摄像头</a></li>
 </ul>
+</blockquote>
 <h3 id="源码解析"><a href="#源码解析" class="headerlink" title="源码解析"></a>源码解析</h3><p><a target="_blank" rel="noopener" href="https://wiki.openwrt.org/doc/howto/webcam">https://wiki.openwrt.org/doc/howto/webcam</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/zhengqijun_/article/details/72473177">https://blog.csdn.net/zhengqijun_/article/details/72473177</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/wanghuaijun/p/8098460.html">https://www.cnblogs.com/wanghuaijun/p/8098460.html</a></p>
@@ -1155,8 +1148,7 @@ if __name__ &#x3D;&#x3D; &quot;__main__&quot;:
                 <a href="/2021/11/23/mjpg-streamer/">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mjpg-streamer">
+                        <img src="https://www.mmrsl.cn/download/img/html5/9.jpg" class="responsive-img" alt="mjpg-streamer">
                         
                         <span class="card-title">mjpg-streamer</span>
                     </div>
