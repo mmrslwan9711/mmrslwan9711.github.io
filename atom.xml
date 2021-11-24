@@ -6,7 +6,7 @@
   <link href="http://www.mmrsl.cn/atom.xml" rel="self"/>
   
   <link href="http://www.mmrsl.cn/"/>
-  <updated>2021-11-23T08:51:10.435Z</updated>
+  <updated>2021-11-24T01:28:18.167Z</updated>
   <id>http://www.mmrsl.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WebGL_3D_长江大桥_黄鹤楼_任意组合房</title>
+    <link href="http://www.mmrsl.cn/2021/11/24/WebGL-%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A5-%E9%BB%84%E9%B9%A4%E6%A5%BC-%E4%BB%BB%E6%84%8F%E7%BB%84%E5%90%88%E6%88%BF/"/>
+    <id>http://www.mmrsl.cn/2021/11/24/WebGL-%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A5-%E9%BB%84%E9%B9%A4%E6%A5%BC-%E4%BB%BB%E6%84%8F%E7%BB%84%E5%90%88%E6%88%BF/</id>
+    <published>2021-11-24T01:14:45.000Z</published>
+    <updated>2021-11-24T01:28:18.167Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>mjpg-streamer</title>
@@ -470,31 +491,6 @@
     <id>http://www.mmrsl.cn/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</id>
     <published>2021-07-21T03:03:54.000Z</published>
     <updated>2021-07-27T01:30:32.854Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="目标检测" scheme="http://www.mmrsl.cn/categories/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/"/>
-    
-    
-    <category term="目标检测" scheme="http://www.mmrsl.cn/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Yolo5使用</title>
-    <link href="http://www.mmrsl.cn/2021/07/19/yolo5%E4%BD%BF%E7%94%A8/"/>
-    <id>http://www.mmrsl.cn/2021/07/19/yolo5%E4%BD%BF%E7%94%A8/</id>
-    <published>2021-07-19T02:10:57.000Z</published>
-    <updated>2021-11-10T07:23:51.952Z</updated>
     
     
       
