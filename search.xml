@@ -708,6 +708,58 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       </tags>
   </entry>
   <entry>
+    <title>Fusion360学习笔记</title>
+    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
+<pre><code>h1 &#123;
+counter-reset: subsection;
+&#125;
+h2 &#123;
+counter-reset: subsection2;
+&#125;
+h3 &#123;
+counter-reset: subsection3;
+&#125;
+h4 &#123;
+counter-reset: subsection4;
+&#125;
+h1::before &#123;
+counter-increment: section;
+content:  &quot; &quot;;
+&#125;
+
+h2::before &#123;
+counter-increment: subsection;
+content: counter(subsection) &quot; &quot;;
+&#125;
+h3::before &#123;
+counter-increment: subsection2;
+content: counter(subsection) &quot;.&quot; counter(subsection2) ;
+&#125;
+h4::before &#123;
+counter-increment: subsection3;
+content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
+&#125;
+h5::before &#123;
+counter-increment: subsection4;
+content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
+&#125;
+</code></pre><p>&lt;/style&gt;</p>
+<p><style><br>        video {<br>            width: 20%;<br>        }
+</style></p>
+<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
+<ul>
+<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
+</ul>
+<p>下载个人用途版本即可。</p>
+<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/img/html5/2.mp4"   controls="controls"></video>
+
+<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/img/html5/3.mp4"   controls="controls"></video>
+
+
+]]></content>
+  </entry>
+  <entry>
     <title>English_learning</title>
     <url>/2020/07/31/English-learning/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
@@ -819,58 +871,6 @@ If you are talking to a group of managers, you may refer to the disorganized met
         <tag>英语阅读</tag>
         <tag>markdown</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Fusion360学习笔记</title>
-    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
-<pre><code>h1 &#123;
-counter-reset: subsection;
-&#125;
-h2 &#123;
-counter-reset: subsection2;
-&#125;
-h3 &#123;
-counter-reset: subsection3;
-&#125;
-h4 &#123;
-counter-reset: subsection4;
-&#125;
-h1::before &#123;
-counter-increment: section;
-content:  &quot; &quot;;
-&#125;
-
-h2::before &#123;
-counter-increment: subsection;
-content: counter(subsection) &quot; &quot;;
-&#125;
-h3::before &#123;
-counter-increment: subsection2;
-content: counter(subsection) &quot;.&quot; counter(subsection2) ;
-&#125;
-h4::before &#123;
-counter-increment: subsection3;
-content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
-&#125;
-h5::before &#123;
-counter-increment: subsection4;
-content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
-&#125;
-</code></pre><p>&lt;/style&gt;</p>
-<p><style><br>        video {<br>            width: 20%;<br>        }
-</style></p>
-<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
-<ul>
-<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
-</ul>
-<p>下载个人用途版本即可。</p>
-<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/img/html5/2.mp4"   controls="controls"></video>
-
-<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/img/html5/3.mp4"   controls="controls"></video>
-
-
-]]></content>
   </entry>
   <entry>
     <title>LabelImg_使用</title>
@@ -3238,7 +3238,8 @@ roomfloor(HIGHT*i,Width*z,Length*j,400,400,300)&#125;
     node2.s(&#39;shape3d&#39;, model);
     dm.add(node2);
 &#125;                 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<h2 id="最终实现结果"><a href="#最终实现结果" class="headerlink" title="最终实现结果"></a>最终实现结果</h2><video src="https://www.mmrsl.cn/download/img/html5/web模型.mp4"   controls="controls"></video>
+<h2 id="最终实现结果"><a href="#最终实现结果" class="headerlink" title="最终实现结果"></a>最终实现结果</h2><p><img src="https://www.mmrsl.cn/download/img/html5/1.jpg" alt=""></p>
+<video src="https://www.mmrsl.cn/download/img/html5/web模型.mp4"   controls="controls"></video>
 
 
 
@@ -3384,30 +3385,6 @@ roomfloor(HIGHT*i,Width*z,Length*j,400,400,300)&#125;
       </tags>
   </entry>
   <entry>
-    <title>deepin_ssh_远程控制</title>
-    <url>/2021/04/13/deepin-ssh-%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="deepinssh远程控制"><a href="#deepinssh远程控制" class="headerlink" title="deepinssh远程控制"></a>deepin<em>ssh</em>远程控制</h1><h2 id="安装ssh："><a href="#安装ssh：" class="headerlink" title="安装ssh："></a>安装ssh：</h2><pre class="line-numbers language-none"><code class="language-none">apt-get install ssh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<pre class="line-numbers language-none"><code class="language-none">sudo vi &#x2F;etc&#x2F;ssh&#x2F;sshd_config<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>找到下面内容</p>
-<p><img src="https://img2020.cnblogs.com/blog/1756476/202004/1756476-20200401231105458-1141980320.png" alt=""></p>
-<p> 将红色框中的内容修改为下面的内容：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1756476/202004/1756476-20200401231128868-2086048695.png" alt=""></p>
-<p>修改成功以后，重启ssh服务：</p>
-<p>　　切换至ssh目录下<br>　　　　service ssh restart<br>　　然后我们那就能愉快的使用xshell连远程连接并且用root用户登陆deepin系统了。</p>
-<h2 id="远程桌面连接"><a href="#远程桌面连接" class="headerlink" title="远程桌面连接"></a>远程桌面连接</h2><ol>
-<li>在软件商店安装remmina<br>详情请参考<a href="https://jingyan.baidu.com/article/3aed632e2923d8701080911d.html">远程桌面连接-百度经验</a></li>
-</ol>
-<p>2.安装<br><pre class="line-numbers language-none"><code class="language-none"># sudo apt-get install xrdp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>注意：安装完成后注销当前用户 或运行：</p>
-<p>详情请参考<a href="https://blog.csdn.net/yingftf/article/details/104581514">CSDN</a></p>
-]]></content>
-      <categories>
-        <category>deepin</category>
-      </categories>
-      <tags>
-        <tag>deepin</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>c++_常用语法</title>
     <url>/2020/07/31/c/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="C-常用语法"><a href="#C-常用语法" class="headerlink" title="C++常用语法"></a><center>C++常用语法</center></h1><h3 id="2020-08-01"><a href="#2020-08-01" class="headerlink" title="2020_08_01"></a><p align="right">2020_08_01</p></h3><blockquote>
@@ -3500,6 +3477,30 @@ const type variable &#x3D; value;<span aria-hidden="true" class="line-numbers-ro
       <tags>
         <tag>C++</tag>
         <tag>程序设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>deepin_ssh_远程控制</title>
+    <url>/2021/04/13/deepin-ssh-%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="deepinssh远程控制"><a href="#deepinssh远程控制" class="headerlink" title="deepinssh远程控制"></a>deepin<em>ssh</em>远程控制</h1><h2 id="安装ssh："><a href="#安装ssh：" class="headerlink" title="安装ssh："></a>安装ssh：</h2><pre class="line-numbers language-none"><code class="language-none">apt-get install ssh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">sudo vi &#x2F;etc&#x2F;ssh&#x2F;sshd_config<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>找到下面内容</p>
+<p><img src="https://img2020.cnblogs.com/blog/1756476/202004/1756476-20200401231105458-1141980320.png" alt=""></p>
+<p> 将红色框中的内容修改为下面的内容：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1756476/202004/1756476-20200401231128868-2086048695.png" alt=""></p>
+<p>修改成功以后，重启ssh服务：</p>
+<p>　　切换至ssh目录下<br>　　　　service ssh restart<br>　　然后我们那就能愉快的使用xshell连远程连接并且用root用户登陆deepin系统了。</p>
+<h2 id="远程桌面连接"><a href="#远程桌面连接" class="headerlink" title="远程桌面连接"></a>远程桌面连接</h2><ol>
+<li>在软件商店安装remmina<br>详情请参考<a href="https://jingyan.baidu.com/article/3aed632e2923d8701080911d.html">远程桌面连接-百度经验</a></li>
+</ol>
+<p>2.安装<br><pre class="line-numbers language-none"><code class="language-none"># sudo apt-get install xrdp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>注意：安装完成后注销当前用户 或运行：</p>
+<p>详情请参考<a href="https://blog.csdn.net/yingftf/article/details/104581514">CSDN</a></p>
+]]></content>
+      <categories>
+        <category>deepin</category>
+      </categories>
+      <tags>
+        <tag>deepin</tag>
       </tags>
   </entry>
   <entry>
@@ -4205,47 +4206,50 @@ if (windowWidth &gt; 768) &#123;
   <entry>
     <title>js_web_3D_模型设计</title>
     <url>/2021/11/18/js_web_3D_%E6%A8%A1%E5%9E%8B%E8%AE%BE%E8%AE%A1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
-<pre><code>h1 &#123;
-counter-reset: subsection;
-&#125;
-h2 &#123;
-counter-reset: subsection2;
-&#125;
-h3 &#123;
-counter-reset: subsection3;
-&#125;
-h4 &#123;
-counter-reset: subsection4;
-&#125;
-h1::before &#123;
-counter-increment: section;
-content:  &quot; &quot;;
-&#125;
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
 
-h2::before &#123;
-counter-increment: subsection;
-content: counter(subsection) &quot; &quot;;
-&#125;
-h3::before &#123;
-counter-increment: subsection2;
-content: counter(subsection) &quot;.&quot; counter(subsection2) ;
-&#125;
-h4::before &#123;
-counter-increment: subsection3;
-content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
-&#125;
-h5::before &#123;
-counter-increment: subsection4;
-content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
-&#125;
-</code></pre><p>&lt;/style&gt;</p>
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
 <h1 id="jsweb-3D模型设计"><a href="#jsweb-3D模型设计" class="headerlink" title="jsweb_3D模型设计"></a>js<em>web_3D</em>模型设计</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><pre><code>首先参考一下别人怎么做的3d模型，站在巨人的肩膀上看看要怎么操作。
 </code></pre><h3 id="chrome浏览器下的网站"><a href="#chrome浏览器下的网站" class="headerlink" title="chrome浏览器下的网站"></a>chrome浏览器下的网站</h3><p><a href="https://www.hightopo.com/demo/CementFactory/">https://www.hightopo.com/demo/CementFactory/</a><br><a href="https://www.hightopo.com/demo/3DRoom/index.html">https://www.hightopo.com/demo/3DRoom/index.html</a><br>原文链接在：<a href="https://www.cnblogs.com/xhload3d/p/8577889.html">hightopo</a></p>
 <h3 id="查看源码F12"><a href="#查看源码F12" class="headerlink" title="查看源码F12"></a>查看源码F12</h3><p>可以看到单个的js文件，除此以外看不到其他，因此<br><img src="https://www.mmrsl.cn/download/img/html5/3.png" alt=""><br>可以一行一行的下载但这样很麻烦，因此可以考虑用谷歌插件一键下载。</p>
 <h3 id="Save-All-Resources"><a href="#Save-All-Resources" class="headerlink" title="Save All Resources"></a>Save All Resources</h3><p><img src="https://www.mmrsl.cn/download/img/html5/4.png" alt=""><br><strong>使用方法：</strong><br><img src="https://www.mmrsl.cn/download/img/html5/5.png" alt=""><br>下载以后如图所示<br><img src="https://www.mmrsl.cn/download/img/html5/6.png" alt=""></p>
-<!-- ## 一个html源码分析网站
-https://www.html5tricks.com/ -->
 <h2 id="详细阅读代码后"><a href="#详细阅读代码后" class="headerlink" title="详细阅读代码后"></a>详细阅读代码后</h2><p>可以发现以门为例：<br><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;二楼
     HIGHT&#x3D;200
     &#x2F;&#x2F; 创建墙体
@@ -8045,110 +8049,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </tags>
   </entry>
   <entry>
-    <title>xmu健康打卡ios快捷指令</title>
-    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
-<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
-<li>浏览器</li>
-<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
-<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
-<li>接着，选择network<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center></li>
-<li><p>找到POST，不要寻找GET</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-</li>
-<li><p>如下：<br><center>
-<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
-</li>
-</ul>
-<p>即找到了我们需要的登录网址。</p>
-<p>接下来记录 username和userpassword，依次填入ios。</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-
-<ul>
-<li>将得到的数据填入一下列表<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ul>
-<blockquote>
-<p>仅只写到这里有兴趣的自己继续探索。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>厦门大学</category>
-      </categories>
-      <tags>
-        <tag>厦门大学</tag>
-        <tag>健康打卡</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>实时视频传输APP</title>
-    <url>/2021/01/15/%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93APP/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- wp:heading -->
-<p><h2><strong>视频通信APP</strong><strong>的设计</strong></h2><br><!-- /wp:heading --></p>
-<!-- wp:heading -->
-<p><h2><strong>1       </strong>功能选择界面</h2><br><!-- /wp:heading --></p>
-<!-- wp:paragraph -->
-<p><p>通过程序设计，首先构建用户功能选择界面，其中包括用户名和该用户的个人签名、个人头像，本处签名选用为个人网站，新的个人网站：<a href="https://www.codekp.cn/">https://www.codekp.cn/</a>。向下依次是Home主界面，主要是APP的地图功能。第二项Gallery为第二个界面，为APP的蓝牙信道检测功能，第三项Slideshow为第三界面，为APP的视频通话功能。点击三个界面选项框可以跳转到自己的界面。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":254,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/1.png" alt="" class="wp-image-254"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图1 APP功能选择界面图</p><br><!-- /wp:paragraph --></p>
-<!-- wp:heading -->
-<p><h2><strong>2       </strong> 定位界面</h2><br><!-- /wp:heading --></p>
-<!-- wp:paragraph -->
-<p><p><a>定位界面，主要由上方的底层用户数据显示界面，和下方的定位地图界面，地图界面采用浏览器形式，并对定位点用红色鲜明坐标在图中进行了标记。</a></p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>首先，通过调用安卓底层接口，读取手机的经度、纬度等信息，然后设计了一个浏览器界面，由于时间关系没有调用高德地图的api，直接调用的web静态页面。通过修改URL的页面地址，即可获得如图所示的地图信息显示图。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":255,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/2-514x1024.png" alt="" class="wp-image-255"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图2 APP定位界面</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>其次，由于本文中获取的为GPS原始数据，采用的是国际坐标系(WGS84)，而中国地图采用的为火星坐标系(GCJ02)，其中进行了经纬度的转换，将原始数据转到精准的经纬度数据，并实现精确定位。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:heading -->
-<p><h2><strong>3       </strong>视频通话界面</h2><br><!-- /wp:heading --></p>
-<!-- wp:paragraph -->
-<p><p>视频通话界面，界面左侧为通话对方的实时视频图像，右方为己方的实时视频图像，下方为对方的端口号输入栏，右侧为设置，点击后会连接进对方的视频数据中。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>首先，先编写程序，读取安卓手机的相机接口。其中的原理是，首先将调用安卓手机的相机功能，然后将拍摄到的视频保存在存储器中的某个地方，然后读取该位置的图片，在右侧视频端进行显示，调用相机接口如图3所示。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>然后采用socket通信，其中有两种选择，TCP通信和UDP通信两种方式，其各自在自己的使用场景下有各自的优点，但是考虑到UDP不用握手可以完成双向传递，于是选择UDP，同时还可以提高通信速率。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":258,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/3-1-626x1024.png" alt="" class="wp-image-258"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图3 APP视频通话相机功能</p><br><!-- /wp:paragraph --></p>
-<!-- wp:paragraph -->
-<p><p>获取到本地的图像数据后，对图像进行编码，通过UDP通讯协议进行传输，传输到本地IP：192.168.201.217，端口：8888上。然后在另对方手机中输入己方IP地址，点击START按钮即可开始视频通话，视频通话完成图像如下图所示。</p><br><!-- /wp:paragraph --></p>
-<!-- wp:image {"id":259,"sizeSlug":"large","linkDestination":"none"} -->
-<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/4-1-524x1024.png" alt="" class="wp-image-259"/></figure><br><!-- /wp:image --></p>
-<!-- wp:paragraph {"align":"center"} -->
-<p><p class="has-text-align-center">图4 APP视频通话界面图</p><br><!-- /wp:paragraph --></p>
-<!-- wp:heading -->
-<p><h2><strong>4      APP</strong>视频demo</h2><br><!-- /wp:heading --></p>
-<!-- wp:video -->
-<p><figure class="wp-block-video"><video controls src="blob:http://www.mmrsl.cn/386ea6cf-f2e7-47b7-9cf8-8346885f1ddd"></video></figure><br><!-- /wp:video --></p>
-]]></content>
-      <categories>
-        <category>安卓APP</category>
-      </categories>
-      <tags>
-        <tag>安卓APP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于深度强化学习的超级马里奥和飞机大战自动控制</title>
     <url>/2021/03/15/%E5%9F%BA%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5%E5%92%8C%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
@@ -8353,7 +8253,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x6b;&#x70;&#64;&#109;&#109;&#x72;&#115;&#x6c;&#46;&#x63;&#x6e;">&#x6b;&#x70;&#64;&#109;&#109;&#x72;&#115;&#x6c;&#46;&#x63;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#107;&#x70;&#64;&#x6d;&#x6d;&#114;&#x73;&#108;&#46;&#x63;&#x6e;">&#107;&#x70;&#64;&#x6d;&#x6d;&#114;&#x73;&#108;&#46;&#x63;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -8394,6 +8294,110 @@ img {
       <tags>
         <tag>强化学习</tag>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>xmu健康打卡ios快捷指令</title>
+    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
+<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
+<li>浏览器</li>
+<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
+<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
+<li>接着，选择network<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center></li>
+<li><p>找到POST，不要寻找GET</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+</li>
+<li><p>如下：<br><center>
+<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
+</li>
+</ul>
+<p>即找到了我们需要的登录网址。</p>
+<p>接下来记录 username和userpassword，依次填入ios。</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+
+<ul>
+<li>将得到的数据填入一下列表<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ul>
+<blockquote>
+<p>仅只写到这里有兴趣的自己继续探索。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>厦门大学</category>
+      </categories>
+      <tags>
+        <tag>厦门大学</tag>
+        <tag>健康打卡</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实时视频传输APP</title>
+    <url>/2021/01/15/%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93APP/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- wp:heading -->
+<p><h2><strong>视频通信APP</strong><strong>的设计</strong></h2><br><!-- /wp:heading --></p>
+<!-- wp:heading -->
+<p><h2><strong>1       </strong>功能选择界面</h2><br><!-- /wp:heading --></p>
+<!-- wp:paragraph -->
+<p><p>通过程序设计，首先构建用户功能选择界面，其中包括用户名和该用户的个人签名、个人头像，本处签名选用为个人网站，新的个人网站：<a href="https://www.codekp.cn/">https://www.codekp.cn/</a>。向下依次是Home主界面，主要是APP的地图功能。第二项Gallery为第二个界面，为APP的蓝牙信道检测功能，第三项Slideshow为第三界面，为APP的视频通话功能。点击三个界面选项框可以跳转到自己的界面。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":254,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/1.png" alt="" class="wp-image-254"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图1 APP功能选择界面图</p><br><!-- /wp:paragraph --></p>
+<!-- wp:heading -->
+<p><h2><strong>2       </strong> 定位界面</h2><br><!-- /wp:heading --></p>
+<!-- wp:paragraph -->
+<p><p><a>定位界面，主要由上方的底层用户数据显示界面，和下方的定位地图界面，地图界面采用浏览器形式，并对定位点用红色鲜明坐标在图中进行了标记。</a></p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>首先，通过调用安卓底层接口，读取手机的经度、纬度等信息，然后设计了一个浏览器界面，由于时间关系没有调用高德地图的api，直接调用的web静态页面。通过修改URL的页面地址，即可获得如图所示的地图信息显示图。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":255,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/2-514x1024.png" alt="" class="wp-image-255"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图2 APP定位界面</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>其次，由于本文中获取的为GPS原始数据，采用的是国际坐标系(WGS84)，而中国地图采用的为火星坐标系(GCJ02)，其中进行了经纬度的转换，将原始数据转到精准的经纬度数据，并实现精确定位。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:heading -->
+<p><h2><strong>3       </strong>视频通话界面</h2><br><!-- /wp:heading --></p>
+<!-- wp:paragraph -->
+<p><p>视频通话界面，界面左侧为通话对方的实时视频图像，右方为己方的实时视频图像，下方为对方的端口号输入栏，右侧为设置，点击后会连接进对方的视频数据中。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>首先，先编写程序，读取安卓手机的相机接口。其中的原理是，首先将调用安卓手机的相机功能，然后将拍摄到的视频保存在存储器中的某个地方，然后读取该位置的图片，在右侧视频端进行显示，调用相机接口如图3所示。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>然后采用socket通信，其中有两种选择，TCP通信和UDP通信两种方式，其各自在自己的使用场景下有各自的优点，但是考虑到UDP不用握手可以完成双向传递，于是选择UDP，同时还可以提高通信速率。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":258,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/3-1-626x1024.png" alt="" class="wp-image-258"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图3 APP视频通话相机功能</p><br><!-- /wp:paragraph --></p>
+<!-- wp:paragraph -->
+<p><p>获取到本地的图像数据后，对图像进行编码，通过UDP通讯协议进行传输，传输到本地IP：192.168.201.217，端口：8888上。然后在另对方手机中输入己方IP地址，点击START按钮即可开始视频通话，视频通话完成图像如下图所示。</p><br><!-- /wp:paragraph --></p>
+<!-- wp:image {"id":259,"sizeSlug":"large","linkDestination":"none"} -->
+<p><figure class="wp-block-image size-large"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/4-1-524x1024.png" alt="" class="wp-image-259"/></figure><br><!-- /wp:image --></p>
+<!-- wp:paragraph {"align":"center"} -->
+<p><p class="has-text-align-center">图4 APP视频通话界面图</p><br><!-- /wp:paragraph --></p>
+<!-- wp:heading -->
+<p><h2><strong>4      APP</strong>视频demo</h2><br><!-- /wp:heading --></p>
+<!-- wp:video -->
+<p><figure class="wp-block-video"><video controls src="blob:http://www.mmrsl.cn/386ea6cf-f2e7-47b7-9cf8-8346885f1ddd"></video></figure><br><!-- /wp:video --></p>
+]]></content>
+      <categories>
+        <category>安卓APP</category>
+      </categories>
+      <tags>
+        <tag>安卓APP</tag>
       </tags>
   </entry>
   <entry>
@@ -9447,6 +9451,231 @@ class ImgAugemention():
       </tags>
   </entry>
   <entry>
+    <title>矩阵分析引论</title>
+    <url>/2020/11/17/%E7%9F%A9%E9%98%B5%E8%AE%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="矩阵分析引论"><a href="#矩阵分析引论" class="headerlink" title="矩阵分析引论"></a><center>矩阵分析引论</center></h1><h2 id="Introduction-to-matrix-analysis"><a href="#Introduction-to-matrix-analysis" class="headerlink" title=" Introduction to matrix analysis "></a><center> Introduction to matrix analysis </center></h2><center>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=11355346&bvid=BV19x411878L&cid=18777309&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+</center>
+
+<span id="more"></span>
+<h2 id="1-线性空间与线性变换"><a href="#1-线性空间与线性变换" class="headerlink" title="1.线性空间与线性变换"></a>1.线性空间与线性变换</h2><ol>
+<li>对加减乘除封闭的集合被称之为数域。矩阵论中较常用的数域是QRC。其中Q:有理数域、R:实数数域、C复数数域。<br>$Q\subset R\subset C$<br>如果一个非空集合在某数域上，以下八条<center>
+<img src="https://www.codekp.cn/download/img/矩阵论/1.PNG" width = "1147" height = "950" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ol>
+<h3 id="线性空间例3-（函数空间-f-I-R"><a href="#线性空间例3-（函数空间-f-I-R" class="headerlink" title="线性空间例3.（函数空间$f(I,R)$)"></a>线性空间例3.（函数空间$f(I,R)$)</h3><ul>
+<li>$V:$<br>$F(I，R^n)$<br>$I=(0,1) ,[\frac{1}{2}，5]$函数的定义域<br>$R^n值域空间$<br>以函数为元素的抽象集合，数域取R</li>
+</ul>
+<ul>
+<li>： f+g<br>$ +  ： \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} + \begin{cases} g_1(x)\ g_2(x)\ g_n(x) \end{cases} = \begin{cases} f_1(x)+g_1(x)\f_2(x)+ g_2(x)\f_n(x)+g_n(x) \end{cases}  x \in I$</li>
+</ul>
+<ul>
+<li>：f<em>k<br>$</em> : \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} * k =\begin{cases} kf_1(x)\ kf_2(x)\ kf_n(x) \end{cases}$</li>
+</ul>
+<p>定义：（向量组及向量组拼成向量抽象矩阵）<br>设V是F上的线性空间V中的有限序列$\alpha_1、\alpha2、\alpha3 …\alpha_p $的一个向量组，向量组按顺序排列的行称为向量组拼成的抽象矩阵$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>序列：抽象或实际数构成的序列，抽象矩阵。用V中的抽象物拼接为一个矩阵。即：抽象的集合。</p>
+<blockquote>
+<p>数乘运算、线性空间满足八条运算规则:</p>
+</blockquote>
+<p>4条：<br>加法有交换律、结合律、有负元、有零元。<br>4条：<br>乘法有两个分配律，数乘法对抽象加法的分配律，数乘法对数值的分配律，先乘后乘以集合和两次分别乘以集合相等，f中的乘法单位元e做数乘法时空间不变。</p>
+<p>标准线性空间：<br>例子<br>二维空间<br>三维空间 ：所有有向线段构成的集合。<br>几何空间：<br>函数空间：函数作为运算对象，所构成的空间。信号的集合构成函数空间。</p>
+<p>将几何空间的解析几何方法抽象到一般的框架下，集合的量变成代数的量，坐标系。<br>考虑什么样的向量组可以模拟成几何的线性空间的问题。<br>向量组：$\alpha_1、\alpha2、\alpha3 …\alpha_p $<br>抽象矩阵：$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>1行p列的抽象矩阵，可以竖着拼。<br>行向量，横拼接。<br>列向量，竖拼接。<br>向量组的线性相关性：如果存在不全为零的P个数$k_i\in F, i=1,2,…,p$使得<br>$\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p=0$<br>则向量组\alpha_1、\alpha2、\alpha3 …\alpha_p称之为线性相关。<br>注： $\exists\begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0，\begin{cases} k_1\ k_2\ k_n \end{cases}\in F^p$</p>
+<p>使得(*)成立，对以上命题进行否定。<br>$\exists a\in P_a $<br>否定$\forall a\notin P_a $</p>
+<p> $\forall \begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0$<br> $\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p\neq 0$<br>线性无关</p>
+<p>线性无关即为线性相关的否定，存在系数不全为零的时，使得等号成立，即线性无关。</p>
+<p>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=0$<br>线性相关《——》有非零解<br>线性无关《——》没有非零解</p>
+<p>线性相关性：目的为了将抽象的序列搬移到几何空间中。</p>
+<h2 id="基"><a href="#基" class="headerlink" title="基"></a>基</h2><p>定义：（两个线性向量组之间的线性表示）<br>$\alpha_1、\alpha_2、\alpha_3 …\alpha_p;\beta_1、\beta_2、\beta_3、…、\beta_p$</p>
+<ol>
+<li>称为$\beta$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果存在$ k_1、k_2、k_3 …k_p \subset F$使得<br>$\beta=\alpha_1k_1+\alpha_2k_2+\alpha_3k_3 …+\alpha_pk_p$</li>
+<li>称$\beta_1、\beta_2、\beta_3、…、\beta_p$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果每个$\beta_i$据可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示</li>
+</ol>
+<h4 id="矩阵表达"><a href="#矩阵表达" class="headerlink" title="矩阵表达"></a>矩阵表达</h4><p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=\beta$ 其中$A=[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$</p>
+<ol>
+<li><p>因此$\beta$可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示《=====》非齐次线性方程组有解</p>
+</li>
+<li><p>重点：</p>
+</li>
+</ol>
+<p>$[\alpha<em>1、\alpha_2、\alpha_3 …\alpha_p] \begin{pmatrix}<br>        x</em>{11} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{1q} \<br>        x</em>{21} &amp; \cdots &amp;\cdots &amp; \cdots &amp; x<em>{2q} \<br>        \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>        x</em>{p1} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{pq}\<br>        \end{pmatrix}</em>{pq} =[\beta_1、\beta_2、\beta_3、…、\beta_p]$</p>
+<p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ]$记作A<br>$[\beta_1、\beta_2、\beta_3…\beta_p]$记作B：<br>$AX=B$抽象的矩阵方程</p>
+<p>$[\beta_i]$可有$[\alpha_i]$线性表示《=====》线性方程有解。</p>
+<ol>
+<li>线性表示具有传递性：<br>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]    、[{\alpha_i}]$<br>$[\beta_1、\beta_2、\beta_3…\beta_q]   、[{\beta_j}]$<br>$[\gamma_1、\gamma_2、\gamma_3…\gamma_t]      、[{\gamma_k}]$   </li>
+</ol>
+<p>$ [{\beta_j}]\leq lin [{\alpha_i}]<br>$且$ [{\gamma_k}]\leq lin [{\beta_j}]<br>$则$ [{\gamma_k}]\leq lin [{\alpha_i}]<br>$</p>
+<p>A$\leq lin$B 意思是A可以由B线性表示。</p>
+<ul>
+<li>证：<br>即 Ax=B、By=C 有解，证明Az=C？<br>C=By=(Ax)y</li>
+</ul>
+<p><img src="https://www.codekp.cn/download/img/矩阵论/目录.png" width = "400" height = "302" alt="图片名称" align=center /></p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>研究生课程</tag>
+        <tag>矩阵论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序语法</title>
+    <url>/2020/11/20/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="编程语言语法"><a href="#编程语言语法" class="headerlink" title="编程语言语法"></a><center>编程语言语法</center></h1><span id="more"></span>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>程序  类型  语法</th>
+<th>python</th>
+<th>C++/C</th>
+<th>java</th>
+<th>matlab</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>或</td>
+<td>or</td>
+<td>\</td>
+<td>\</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>与</td>
+<td>and</td>
+<td>&amp;&amp;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>非</td>
+<td>not</td>
+<td>!</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>条件语句</td>
+<td>if 条件 :  制表符 elseif 或elif:  制表符 else :  制表符</td>
+<td>if (条件){   } else if() {  } else {  }</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>循环语句</td>
+<td>1.for for x in [1,2,3,…] :  制表符 2.while while 循环条件:  制表符</td>
+<td>1.for for(int i=0;i\&lt;10;i++){} 2.while while(条件){}  do{ }while(条件)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>语句之间</td>
+<td>制表符</td>
+<td>{}</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dict表</td>
+<td>d = {‘Michael’: 95, ‘Bob’: 75, ‘Tracy’: 85}</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>set</td>
+<td>s1 = set([1, 2, 3]) s2 = set([2, 3, 4]) print(s1 &amp; s2) print(s1 \</td>
+<td>s2) s1.add(4) s1.remove(1)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>平方</td>
+<td>import math math.sqrt(2)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>函数定义</td>
+<td>def wan_find(list, col, list2):  col_max = 0  col_y = 0  col=col  # a = np.linspace(0, 5, 5);   for i in [0, 1, 2, 3, 4, 5]:  if col_max \&lt; list[i, col] and (i not in list2):  col_y = i  col_max = list[i, col]   return col_y, col_max</td>
+<td>int wan_find(float list[][], int col,int list2){         }</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>默认参数</td>
+<td>def product(x, y=1, z=1, k=1):  return x * y * z * k</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>递归函数</td>
+<td>def fact(n):  return fact_iter(n, 1)  def fact_iter(num, product):  if num == 1:  return product  return fact_iter(num - 1, num * product)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>map</td>
+<td>r =map(f, [1, 2, 3, 4, 5, 6, 7, 8, 9]) list(r)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>reduce</td>
+<td>reduce(f, [x1, x2, x3, x4]) =  f(f(f(x1, x2), x3), x4)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>filter</td>
+<td>def is_odd(n):  return n % 2 == 1 r=filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15]) print(list(r))</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>快速排序</td>
+<td>sorted([36, 5, -12, 9, -21], key=abs) key=abs按照绝对值排序</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>面向对象</td>
+<td>class Student(object):   def _<em>init_</em>(self, name, score):  self.name = name  self.score = score   def print_score(self):  print(‘%s: %s’ % (self.name, self.score))   def get_grade(self):  if self.score >= 90:  return ‘A’  elif self.score >= 60:  return ‘B’  else:  return ‘C’</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+]]></content>
+      <categories>
+        <category>程序设计</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>程序设计</tag>
+        <tag>matlab</tag>
+        <tag>c</tag>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>目标识别数据集扩充</title>
     <url>/2021/07/26/%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E6%95%B0%E6%8D%AE%E9%9B%86%E6%89%A9%E5%85%85%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="目标检测数据集扩充"><a href="#目标检测数据集扩充" class="headerlink" title="目标检测数据集扩充"></a>目标检测数据集扩充</h1><p>数据扩充对于深度神经网络训练通常具有良好的作用，例如2003年Patrice Simard等人所著的一篇论文中他们把MNIST手写数字数据集通过旋转，转换和扭曲进行扩展。通过在这个扩展后的数据集上的训练，他们把MNIST手写数字识别的准确率提升到了98.9%。然后还在“弹性扭曲”的数据集上进行了实验，这是一种特殊的为了模仿手部肌肉的随机抖动的图像扭曲方法。通过使用弹性扭曲扩展的数据，他们最终达到了99.3%的分类准确率。</p>
@@ -9690,231 +9919,6 @@ def saveCutoutLabel(name):
       </categories>
       <tags>
         <tag>目标检测数据集扩充</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>矩阵分析引论</title>
-    <url>/2020/11/17/%E7%9F%A9%E9%98%B5%E8%AE%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="矩阵分析引论"><a href="#矩阵分析引论" class="headerlink" title="矩阵分析引论"></a><center>矩阵分析引论</center></h1><h2 id="Introduction-to-matrix-analysis"><a href="#Introduction-to-matrix-analysis" class="headerlink" title=" Introduction to matrix analysis "></a><center> Introduction to matrix analysis </center></h2><center>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=11355346&bvid=BV19x411878L&cid=18777309&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-</center>
-
-<span id="more"></span>
-<h2 id="1-线性空间与线性变换"><a href="#1-线性空间与线性变换" class="headerlink" title="1.线性空间与线性变换"></a>1.线性空间与线性变换</h2><ol>
-<li>对加减乘除封闭的集合被称之为数域。矩阵论中较常用的数域是QRC。其中Q:有理数域、R:实数数域、C复数数域。<br>$Q\subset R\subset C$<br>如果一个非空集合在某数域上，以下八条<center>
-<img src="https://www.codekp.cn/download/img/矩阵论/1.PNG" width = "1147" height = "950" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ol>
-<h3 id="线性空间例3-（函数空间-f-I-R"><a href="#线性空间例3-（函数空间-f-I-R" class="headerlink" title="线性空间例3.（函数空间$f(I,R)$)"></a>线性空间例3.（函数空间$f(I,R)$)</h3><ul>
-<li>$V:$<br>$F(I，R^n)$<br>$I=(0,1) ,[\frac{1}{2}，5]$函数的定义域<br>$R^n值域空间$<br>以函数为元素的抽象集合，数域取R</li>
-</ul>
-<ul>
-<li>： f+g<br>$ +  ： \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} + \begin{cases} g_1(x)\ g_2(x)\ g_n(x) \end{cases} = \begin{cases} f_1(x)+g_1(x)\f_2(x)+ g_2(x)\f_n(x)+g_n(x) \end{cases}  x \in I$</li>
-</ul>
-<ul>
-<li>：f<em>k<br>$</em> : \begin{cases} f_1(x)\ f_2(x)\ f_n(x) \end{cases} * k =\begin{cases} kf_1(x)\ kf_2(x)\ kf_n(x) \end{cases}$</li>
-</ul>
-<p>定义：（向量组及向量组拼成向量抽象矩阵）<br>设V是F上的线性空间V中的有限序列$\alpha_1、\alpha2、\alpha3 …\alpha_p $的一个向量组，向量组按顺序排列的行称为向量组拼成的抽象矩阵$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>序列：抽象或实际数构成的序列，抽象矩阵。用V中的抽象物拼接为一个矩阵。即：抽象的集合。</p>
-<blockquote>
-<p>数乘运算、线性空间满足八条运算规则:</p>
-</blockquote>
-<p>4条：<br>加法有交换律、结合律、有负元、有零元。<br>4条：<br>乘法有两个分配律，数乘法对抽象加法的分配律，数乘法对数值的分配律，先乘后乘以集合和两次分别乘以集合相等，f中的乘法单位元e做数乘法时空间不变。</p>
-<p>标准线性空间：<br>例子<br>二维空间<br>三维空间 ：所有有向线段构成的集合。<br>几何空间：<br>函数空间：函数作为运算对象，所构成的空间。信号的集合构成函数空间。</p>
-<p>将几何空间的解析几何方法抽象到一般的框架下，集合的量变成代数的量，坐标系。<br>考虑什么样的向量组可以模拟成几何的线性空间的问题。<br>向量组：$\alpha_1、\alpha2、\alpha3 …\alpha_p $<br>抽象矩阵：$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$<br>1行p列的抽象矩阵，可以竖着拼。<br>行向量，横拼接。<br>列向量，竖拼接。<br>向量组的线性相关性：如果存在不全为零的P个数$k_i\in F, i=1,2,…,p$使得<br>$\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p=0$<br>则向量组\alpha_1、\alpha2、\alpha3 …\alpha_p称之为线性相关。<br>注： $\exists\begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0，\begin{cases} k_1\ k_2\ k_n \end{cases}\in F^p$</p>
-<p>使得(*)成立，对以上命题进行否定。<br>$\exists a\in P_a $<br>否定$\forall a\notin P_a $</p>
-<p> $\forall \begin{cases} k_1\ k_2\ k_n \end{cases} \neq 0$<br> $\alpha_1k_1+\alpha2k_2+\alpha3k_3 …\alpha_pk_p\neq 0$<br>线性无关</p>
-<p>线性无关即为线性相关的否定，存在系数不全为零的时，使得等号成立，即线性无关。</p>
-<p>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=0$<br>线性相关《——》有非零解<br>线性无关《——》没有非零解</p>
-<p>线性相关性：目的为了将抽象的序列搬移到几何空间中。</p>
-<h2 id="基"><a href="#基" class="headerlink" title="基"></a>基</h2><p>定义：（两个线性向量组之间的线性表示）<br>$\alpha_1、\alpha_2、\alpha_3 …\alpha_p;\beta_1、\beta_2、\beta_3、…、\beta_p$</p>
-<ol>
-<li>称为$\beta$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果存在$ k_1、k_2、k_3 …k_p \subset F$使得<br>$\beta=\alpha_1k_1+\alpha_2k_2+\alpha_3k_3 …+\alpha_pk_p$</li>
-<li>称$\beta_1、\beta_2、\beta_3、…、\beta_p$可以由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示，如果每个$\beta_i$据可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示</li>
-</ol>
-<h4 id="矩阵表达"><a href="#矩阵表达" class="headerlink" title="矩阵表达"></a>矩阵表达</h4><p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ][x_1,x_2,x_3,…,x_p]^T=\beta$ 其中$A=[\alpha_1、\alpha2、\alpha3 …\alpha_p ]$</p>
-<ol>
-<li><p>因此$\beta$可由$\alpha_1、\alpha_2、\alpha_3 …\alpha_p$线性表示《=====》非齐次线性方程组有解</p>
-</li>
-<li><p>重点：</p>
-</li>
-</ol>
-<p>$[\alpha<em>1、\alpha_2、\alpha_3 …\alpha_p] \begin{pmatrix}<br>        x</em>{11} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{1q} \<br>        x</em>{21} &amp; \cdots &amp;\cdots &amp; \cdots &amp; x<em>{2q} \<br>        \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>        x</em>{p1} &amp; \cdots &amp; \cdots &amp; \cdots &amp; x<em>{pq}\<br>        \end{pmatrix}</em>{pq} =[\beta_1、\beta_2、\beta_3、…、\beta_p]$</p>
-<p>$[\alpha_1、\alpha_2、\alpha_3 …\alpha_p ]$记作A<br>$[\beta_1、\beta_2、\beta_3…\beta_p]$记作B：<br>$AX=B$抽象的矩阵方程</p>
-<p>$[\beta_i]$可有$[\alpha_i]$线性表示《=====》线性方程有解。</p>
-<ol>
-<li>线性表示具有传递性：<br>$[\alpha_1、\alpha2、\alpha3 …\alpha_p ]    、[{\alpha_i}]$<br>$[\beta_1、\beta_2、\beta_3…\beta_q]   、[{\beta_j}]$<br>$[\gamma_1、\gamma_2、\gamma_3…\gamma_t]      、[{\gamma_k}]$   </li>
-</ol>
-<p>$ [{\beta_j}]\leq lin [{\alpha_i}]<br>$且$ [{\gamma_k}]\leq lin [{\beta_j}]<br>$则$ [{\gamma_k}]\leq lin [{\alpha_i}]<br>$</p>
-<p>A$\leq lin$B 意思是A可以由B线性表示。</p>
-<ul>
-<li>证：<br>即 Ax=B、By=C 有解，证明Az=C？<br>C=By=(Ax)y</li>
-</ul>
-<p><img src="https://www.codekp.cn/download/img/矩阵论/目录.png" width = "400" height = "302" alt="图片名称" align=center /></p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>研究生课程</tag>
-        <tag>矩阵论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>程序语法</title>
-    <url>/2020/11/20/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="编程语言语法"><a href="#编程语言语法" class="headerlink" title="编程语言语法"></a><center>编程语言语法</center></h1><span id="more"></span>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>程序  类型  语法</th>
-<th>python</th>
-<th>C++/C</th>
-<th>java</th>
-<th>matlab</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>或</td>
-<td>or</td>
-<td>\</td>
-<td>\</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>与</td>
-<td>and</td>
-<td>&amp;&amp;</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>非</td>
-<td>not</td>
-<td>!</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>条件语句</td>
-<td>if 条件 :  制表符 elseif 或elif:  制表符 else :  制表符</td>
-<td>if (条件){   } else if() {  } else {  }</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>循环语句</td>
-<td>1.for for x in [1,2,3,…] :  制表符 2.while while 循环条件:  制表符</td>
-<td>1.for for(int i=0;i\&lt;10;i++){} 2.while while(条件){}  do{ }while(条件)</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>语句之间</td>
-<td>制表符</td>
-<td>{}</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>dict表</td>
-<td>d = {‘Michael’: 95, ‘Bob’: 75, ‘Tracy’: 85}</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>set</td>
-<td>s1 = set([1, 2, 3]) s2 = set([2, 3, 4]) print(s1 &amp; s2) print(s1 \</td>
-<td>s2) s1.add(4) s1.remove(1)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>平方</td>
-<td>import math math.sqrt(2)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>函数定义</td>
-<td>def wan_find(list, col, list2):  col_max = 0  col_y = 0  col=col  # a = np.linspace(0, 5, 5);   for i in [0, 1, 2, 3, 4, 5]:  if col_max \&lt; list[i, col] and (i not in list2):  col_y = i  col_max = list[i, col]   return col_y, col_max</td>
-<td>int wan_find(float list[][], int col,int list2){         }</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>默认参数</td>
-<td>def product(x, y=1, z=1, k=1):  return x * y * z * k</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>递归函数</td>
-<td>def fact(n):  return fact_iter(n, 1)  def fact_iter(num, product):  if num == 1:  return product  return fact_iter(num - 1, num * product)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>map</td>
-<td>r =map(f, [1, 2, 3, 4, 5, 6, 7, 8, 9]) list(r)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>reduce</td>
-<td>reduce(f, [x1, x2, x3, x4]) =  f(f(f(x1, x2), x3), x4)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>filter</td>
-<td>def is_odd(n):  return n % 2 == 1 r=filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15]) print(list(r))</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>快速排序</td>
-<td>sorted([36, 5, -12, 9, -21], key=abs) key=abs按照绝对值排序</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>面向对象</td>
-<td>class Student(object):   def _<em>init_</em>(self, name, score):  self.name = name  self.score = score   def print_score(self):  print(‘%s: %s’ % (self.name, self.score))   def get_grade(self):  if self.score >= 90:  return ‘A’  elif self.score >= 60:  return ‘B’  else:  return ‘C’</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-]]></content>
-      <categories>
-        <category>程序设计</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>程序设计</tag>
-        <tag>matlab</tag>
-        <tag>c</tag>
-        <tag>java</tag>
       </tags>
   </entry>
   <entry>

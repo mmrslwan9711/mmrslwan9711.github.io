@@ -541,14 +541,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-19
+                    2021-11-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    618
+                    583
                 </div>
                 
 
@@ -578,47 +578,50 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
-<pre><code>h1 &#123;
-counter-reset: subsection;
-&#125;
-h2 &#123;
-counter-reset: subsection2;
-&#125;
-h3 &#123;
-counter-reset: subsection3;
-&#125;
-h4 &#123;
-counter-reset: subsection4;
-&#125;
-h1::before &#123;
-counter-increment: section;
-content:  &quot; &quot;;
-&#125;
+                <style>
+    body {
+    counter-reset: section;
+    }
 
-h2::before &#123;
-counter-increment: subsection;
-content: counter(subsection) &quot; &quot;;
-&#125;
-h3::before &#123;
-counter-increment: subsection2;
-content: counter(subsection) &quot;.&quot; counter(subsection2) ;
-&#125;
-h4::before &#123;
-counter-increment: subsection3;
-content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
-&#125;
-h5::before &#123;
-counter-increment: subsection4;
-content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
-&#125;
-</code></pre><p>&lt;/style&gt;</p>
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
 <h1 id="jsweb-3D模型设计"><a href="#jsweb-3D模型设计" class="headerlink" title="jsweb_3D模型设计"></a>js<em>web_3D</em>模型设计</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><pre><code>首先参考一下别人怎么做的3d模型，站在巨人的肩膀上看看要怎么操作。
 </code></pre><h3 id="chrome浏览器下的网站"><a href="#chrome浏览器下的网站" class="headerlink" title="chrome浏览器下的网站"></a>chrome浏览器下的网站</h3><p><a target="_blank" rel="noopener" href="https://www.hightopo.com/demo/CementFactory/">https://www.hightopo.com/demo/CementFactory/</a><br><a target="_blank" rel="noopener" href="https://www.hightopo.com/demo/3DRoom/index.html">https://www.hightopo.com/demo/3DRoom/index.html</a><br>原文链接在：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xhload3d/p/8577889.html">hightopo</a></p>
 <h3 id="查看源码F12"><a href="#查看源码F12" class="headerlink" title="查看源码F12"></a>查看源码F12</h3><p>可以看到单个的js文件，除此以外看不到其他，因此<br><img src="https://www.mmrsl.cn/download/img/html5/3.png" alt=""><br>可以一行一行的下载但这样很麻烦，因此可以考虑用谷歌插件一键下载。</p>
 <h3 id="Save-All-Resources"><a href="#Save-All-Resources" class="headerlink" title="Save All Resources"></a>Save All Resources</h3><p><img src="https://www.mmrsl.cn/download/img/html5/4.png" alt=""><br><strong>使用方法：</strong><br><img src="https://www.mmrsl.cn/download/img/html5/5.png" alt=""><br>下载以后如图所示<br><img src="https://www.mmrsl.cn/download/img/html5/6.png" alt=""></p>
-<!-- ## 一个html源码分析网站
-https://www.html5tricks.com/ -->
 <h2 id="详细阅读代码后"><a href="#详细阅读代码后" class="headerlink" title="详细阅读代码后"></a>详细阅读代码后</h2><p>可以发现以门为例：<br><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;二楼
     HIGHT&#x3D;200
     &#x2F;&#x2F; 创建墙体
@@ -947,7 +950,7 @@ https://www.html5tricks.com/ -->
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            万鲲鹏
+                            鲲鹏
                             
                         </span>
                     </div>
@@ -1236,7 +1239,7 @@ https://www.html5tricks.com/ -->
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">101.9k</span>&nbsp;字
+                class="white-color">101.8k</span>&nbsp;字
             
             
             
