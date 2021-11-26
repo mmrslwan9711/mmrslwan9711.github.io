@@ -6,7 +6,7 @@
   <link href="http://www.mmrsl.cn/atom.xml" rel="self"/>
   
   <link href="http://www.mmrsl.cn/"/>
-  <updated>2021-11-24T01:36:25.376Z</updated>
+  <updated>2021-11-26T02:42:07.433Z</updated>
   <id>http://www.mmrsl.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python_tcp_udp</title>
+    <link href="http://www.mmrsl.cn/2021/11/24/python-tcp-udp/"/>
+    <id>http://www.mmrsl.cn/2021/11/24/python-tcp-udp/</id>
+    <published>2021-11-24T02:54:00.000Z</published>
+    <updated>2021-11-26T02:42:07.433Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>WebGL_3D_长江大桥_黄鹤楼_任意组合房</title>
@@ -482,31 +503,6 @@
     
     
     <category term="目标检测数据集扩充" scheme="http://www.mmrsl.cn/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%95%B0%E6%8D%AE%E9%9B%86%E6%89%A9%E5%85%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LabelImg_使用</title>
-    <link href="http://www.mmrsl.cn/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/"/>
-    <id>http://www.mmrsl.cn/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</id>
-    <published>2021-07-21T03:03:54.000Z</published>
-    <updated>2021-07-27T01:30:32.854Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="目标检测" scheme="http://www.mmrsl.cn/categories/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/"/>
-    
-    
-    <category term="目标检测" scheme="http://www.mmrsl.cn/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/"/>
     
   </entry>
   
