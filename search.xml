@@ -443,146 +443,6 @@ a :hover &#123;
       </tags>
   </entry>
   <entry>
-    <title>surface完美安装linux操作系统、hexo博客</title>
-    <url>/2021/03/19/Deepin%E7%B3%BB%E7%BB%9F%E4%B8%8Esurface%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="surface完美安装linux操作系统、hexo博客"><a href="#surface完美安装linux操作系统、hexo博客" class="headerlink" title="surface完美安装linux操作系统、hexo博客"></a><center>surface完美安装linux操作系统、hexo博客</center></h1><p>最近由于linux课程需要使用linux系统，于是在ubuntu、kali、Elementary OS、Chrome OS和deepin操作系统中选择一个比较靠谱的。<br><span id="more"></span></p>
-<h2 id="linux操作系统介绍"><a href="#linux操作系统介绍" class="headerlink" title="linux操作系统介绍"></a>linux操作系统介绍</h2><h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><p>作为全球最流行且最有影响力的Linux开源系统之一，Ubuntu自发布以来在应用体验方面：有较大幅度的提升，即使对比Windows、MacOS等操作系统，最新版本的Ubuntu也不逊色。<br><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3931899733,1893021162&amp;fm=26&amp;gp=0.jpg" alt="">  </p>
-<h3 id="kali"><a href="#kali" class="headerlink" title="kali"></a>kali</h3><p>Kali Linux是基于Debian的Linux发行版， 设计用于数字取证操作系统。每一季度更新一次。由Offensive Security Ltd维护和资助。最先由Offensive Security的Mati Aharoni和Devon Kearns通过重写BackTrack来完成，BackTrack是他们之前写的用于取证的Linux发行版 。</p>
-<p>主要是用来渗透网络—所以俗话说kali从入门到入狱。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/3b87e950352ac65c1038fd5662baa5119313b07e1cf7?x-bce-process=image/watermark,image_d2里奴性F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5/format,f_auto" alt=""></p>
-<h3 id="Elementary-OS"><a href="#Elementary-OS" class="headerlink" title="Elementary OS"></a>Elementary OS</h3><p>Elementary OS是基于 Ubuntu 精心打磨美化的桌面 Linux 发行版的一款软件，号称 “最美的 Linux”， 最早是 Ubuntu 的一个美化主题项目，现在成了独立的发行版<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww2.sinaimg.cn%2Fmw1024%2F6595c7c6tw1e7nlcg38qoj211s0lcag0.jpg&amp;refer=http%3A%2F%2Fwww.sina.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754413&amp;t=c4cc435286c020b6845bd352d5a1dd8c" alt=""></p>
-<h3 id="Chrome-OS"><a href="#Chrome-OS" class="headerlink" title="Chrome OS"></a>Chrome OS</h3><p>Chrome OS是一款Google开发的基于PC的操作系统。 Google Chrome OS是一款基于Linux的开源操作系统。Google在自己的官方博客表示，初期，这一操作系统将定位于上网本、紧凑型以及低成本电脑。这款开源软件将被命名为Chrome OS，谷歌公司于2010年12里奴性月7日（北京时间12月8日2点30分）在美国举行Chrome相关产品发布会，发布会上正式发布Chrome Web store和Chrome OS。</p>
-<p><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/baike/pic/item/8694a4c27d1ed21bae953dafa06eddc451da3f1f.jpg" alt=""></p>
-<h3 id="deepin"><a href="#deepin" class="headerlink" title="deepin"></a>deepin</h3><p>Deepin（原名：Linux Deepin；中文通称：深度操作系统）是由武汉深之度科技有限公司在Debian基础上开发的Linux操作系统，其前身是Hiweed Linux操作系统，于2004年2月28日开始对外发行，可以安装在个人计算机和服务器中。</p>
-<p>Deepin 12.12 正式版本将搭载一个全新的桌面环境。该桌面环境由Deepin 团队开发，以轻型、美观、稳定等作为设计目标。新桌面环境使用 Compiz 作为默认的窗口管理器。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fzkres1.myzaker.com%2F201910%2F5dae5906b15ec02e1c28f7b1_1024.jpg&amp;refer=http%3A%2F%2Fzkres1.myzaker.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754739&amp;t=be9f54a43670d51053a30eec7d91ac18" alt=""></p>
-<h3 id="总结以上五种系统各有各的优点"><a href="#总结以上五种系统各有各的优点" class="headerlink" title="总结以上五种系统各有各的优点"></a>总结以上五种系统各有各的优点</h3><p>运行上deepin会更慢一些，因为deepin的界面做的最好看，其次deepin是国产linux系统，而且是武汉的公司，安装极其简单，所以我就装了deepin操作系统。</p>
-<h2 id="deepin启动盘制作"><a href="#deepin启动盘制作" class="headerlink" title="deepin启动盘制作"></a>deepin启动盘制作</h2><p>deepin v20下载地址<a href="https://www.deepin.org/zh/download/">deep in</a><br>首先下载镜像，其次下载启动盘制作工具，制作启动盘。</p>
-<h2 id="windows分区"><a href="#windows分区" class="headerlink" title="windows分区"></a>windows分区</h2><p>删除一些windows上面不需要的软件和文件，腾出50G的空间，然后通过<a href="https://www.soft-down.net/detail/44/431115.shtml?type=jingzhun">分区助手</a><br>对磁盘进行分区。</p>
-<h2 id="系统安装具体操作步骤"><a href="#系统安装具体操作步骤" class="headerlink" title="系统安装具体操作步骤"></a>系统安装具体操作步骤</h2><p>1.制作启动u盘deepin系统安装盘。就是把deepin.iso烧录到u盘上。<br>这里请一定要先记得在淘宝上买一个扩展坞，因为surface是一款pc平板而合一电脑，为了节约面积，采用了单usb端口。同时安装系统时蓝牙会失效，需要准备有线鼠标、有线键盘。</p>
-<p>2.关闭secureboot.关机后 音量下键+电源三秒，松开电源，见到surface图标后松开音量键进入bios界面。第二项 secureboot 回车 disable它。滑倒最后exit save setting。</p>
-<p>特别注意一点！就是分清楚surface的音量和电源在那不要按错。</p>
-<p>3.进入windows系统，点击setting，在setting 中搜索boot，看到第二项，create and format hard disk partitions. 进入后看到C盘，鼠标右键shrink volumn(分出给deepin 的空间）</p>
-<p>建议采用之前说的分区助手，这种方法分区很容易崩。</p>
-<p>4.从U盘启动。有两种方式：<br>第一种关机后，音量下键+电源3秒，松开电源。见到surface画面后松开音量键。<br>第二种从windows 向左滑，进入setting. 最底下change pc settings.进去后点击最底下的updates and recovery(更新和恢复）选择里面最底下选项。advanced startup. （高级启动）。进入U盘启动。</p>
-<p>5.从U盘启动后。选择第二项，安装deepin. 选择语言，然后选择something else(其他选项）。目的是不要覆盖windows系统。安装系统到我们分出的free space里。<br>点击 free space ，再点击左下角的“+”号。选择逻辑分区，ext4, 给/root.尽量大点。</p>
-<p>再点击 free space ，点击左下角的“+”号。逻辑或主分区随便（我给的逻辑分区），swap area(交换空间）.随便给个几G。英文教程中不给，我是分了，省得它提示我必须给。反正也不少这几个G。</p>
-<p>选择启动盘为windows 所在的那个，一般叫sda 4.</p>
-<p>然后开始安装。重启。</p>
-<h2 id="安装触摸屏驱动"><a href="#安装触摸屏驱动" class="headerlink" title="安装触摸屏驱动"></a>安装触摸屏驱动</h2><h3 id="deepin-1"><a href="#deepin-1" class="headerlink" title="deepin"></a>deepin</h3><p>这里很神奇如果你也装的是deepin操作系统，触摸屏是可以直接使用的，可能因为华为封锁，目前华为用的均为deepin操作系统，华为也有触控笔记本电脑。</p>
-<h3 id="其他linux系统"><a href="#其他linux系统" class="headerlink" title="其他linux系统"></a>其他linux系统</h3><p>请详见<a href="https://github.com/jakeday/linux-surface">github大神</a>的surface驱动安装教程。</p>
-<p>进入系统以后使用Terminal安装了Peter Hunter整理的内核<br><pre class="line-numbers language-none"><code class="language-none">sudo add-apt-repository ppa:tigerite&#x2F;kernel
-
-sudo apt-get update
-
-sudo apt-get install linux-surface<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>然后使用编辑器nano或者gedit编辑/<br><pre class="line-numbers language-none"><code class="language-none">lib&#x2F;udev&#x2F;rules.d&#x2F;50-bluetooth-hci-auto-poweron.rules<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>用#注释掉里面唯一的那一行，再打开/etc/bluetooth/main.conf<br>把#[Policy]<br>改成[Policy]<br>并把最后一排的<br><pre class="line-numbers language-none"><code class="language-none">#AutoEnable&#x3D;false改成AutoEnable&#x3D;true
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;安装rEFIndsudo
-
-apt-add-repository ppa:rodsmith&#x2F;refind
-
-sudo apt-get update
-
-sudo apt-get install refind<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>用Shim给rEFind增加Secure Boot的启动方式<br><pre class="line-numbers language-none"><code class="language-none">refind-install --shim &#x2F;boot&#x2F;efi&#x2F;EFI&#x2F;ubuntu&#x2F;shimx64.efi --localkeys<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>然后把rEFind设为第一启动项refind-mkdefault开启Secure Boot</p>
-<h2 id="蓝牙驱动安装"><a href="#蓝牙驱动安装" class="headerlink" title="蓝牙驱动安装"></a>蓝牙驱动安装</h2><p>蓝牙（Bluetooth），是一种无线个人局域网（Wireless PAN），最初由爱立信创制，后来由蓝牙技术联盟订定技术标准。这个词的来源是10世纪丹麦和挪威国王蓝牙哈拉尔（丹麦语：Harald Blåtand Gormsen），借国王的绰号“Blåtand”当名称，直接翻译成中文为“蓝牙”（blå＝蓝，tand＝牙）。蓝牙是一种通用的射频频率是2.45GHZ的无线电接口，它使带有电子端口的设备能够在小范围内进行无线通信。</p>
-<h3 id="安装应用"><a href="#安装应用" class="headerlink" title="安装应用"></a>安装应用</h3><p>Blueman旨在提供最为常见的蓝牙管理功能。</p>
-<p>命令安装，终端执行：<br><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install blueman
-&#96;&#96;&#96;&#96;
-命令卸载，终端执行：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get remove blueman<br><pre class="line-numbers language-none"><code class="language-none">
-## Hexo安装
-### 安装nodejs:生成静态页面<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get install nodejs<br><pre class="line-numbers language-none"><code class="language-none">### 安装npm：一会用来安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo apt-get insall npm<br><pre class="line-numbers language-none"><code class="language-none">### 正式安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo npm install -g hexo<br><pre class="line-numbers language-none"><code class="language-none">### hexo部署<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>hexo clean<br>hexo g-d<br><pre class="line-numbers language-none"><code class="language-none">## git SSH Linux
-
-打开终端依次输入一下命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>Git Bash Here</p>
-<p>mkdir ~/.ssh</p>
-<p>cd .ssh/</p>
-<p>git config —global  user.name “mmrsl”</p>
-<p>git config —global  user.email “xxx@codekp.cn”<br>```<br>打开id_rsa.pub，在github的账号中进行修改，增加SHH。</p>
-<h1 id="完成后上传，如本文所示，surface双系统完美linux。"><a href="#完成后上传，如本文所示，surface双系统完美linux。" class="headerlink" title="完成后上传，如本文所示，surface双系统完美linux。"></a>完成后上传，如本文所示，surface双系统完美linux。</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>Deep in</tag>
-        <tag>surface</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Detection_树莓派</title>
-    <url>/2021/06/07/Detection-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Raspberry-Pi-上运行-TensorFlow-Lite-目标检测"><a href="#Raspberry-Pi-上运行-TensorFlow-Lite-目标检测" class="headerlink" title="Raspberry Pi 上运行 TensorFlow Lite 目标检测"></a>Raspberry Pi 上运行 TensorFlow Lite 目标检测</h1> <div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=845957427&bvid=BV1B54y137xE&cid=350441154&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>本指南提供了有关如何在 Raspberry Pi 上设置 TensorFlow Lite 并使用它运行对象检测模型的分步说明。它还展示了如何在 Pi 上设置 Coral USB 加速器并运行 Edge TPU 检测模型。它适用于运行 Rasbpian Buster 或 Rasbpian Stretch 的 Raspberry Pi 3 和 Raspberry Pi 4。</p>
-<p>本指南是我更大的 TensorFlow Lite 教程系列的第二部分：</p>
-<ol>
-<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">如何在 Windows 10 上训练、转换和运行自定义 TensorFlow Lite 对象检测模型</a></li>
-<li>如何在 Raspberry Pi 上运行 TensorFlow Lite 对象检测模型&lt;—- 你在这里！</li>
-</ol>
-<p>本指南的这一部分分为三个部分：</p>
-<ul>
-<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#part-1---how-to-set-up-and-run-tensorflow-lite-object-detection-models-on-the-raspberry-pi">第 1 节 在 Raspberry Pi 上运行 TensorFlow Lite 对象检测模型</a></li>
-<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#section-2---run-edge-tpu-object-detection-models-on-the-raspberry-pi-using-the-coral-usb-accelerator">第 2 节。使用 Coral USB 加速器在 Raspberry Pi 上运行 Edge TPU 对象检测模型</a></li>
-</ul>
-<p>此存储库还包括用于在图像、视频或网络摄像头/Picamera 源上运行 TFLite 和 Edge TPU 模型的脚本。</p>
-<h2 id="如何在-Raspberry-Pi-上设置和运行-TensorFlow-Lite-对象检测模型"><a href="#如何在-Raspberry-Pi-上设置和运行-TensorFlow-Lite-对象检测模型" class="headerlink" title="如何在 Raspberry Pi 上设置和运行 TensorFlow Lite 对象检测模型"></a>如何在 Raspberry Pi 上设置和运行 TensorFlow Lite 对象检测模型</h2><p>在 Raspberry Pi 上设置 TensorFlow Lite 比常规 TensorFlow 容易得多！这些是设置 TensorFlow Lite 所需的步骤：</p>
-<ul>
-<li>1a. 更新树莓派</li>
-<li>1b. 下载此存储库并创建虚拟环境</li>
-<li>1c。安装 TensorFlow 和 OpenCV</li>
-<li>1天。设置 TensorFlow Lite 检测模型</li>
-<li>1e。运行 TensorFlow Lite 模型！</li>
-<li>我还制作了一个介绍本指南的 YouTube 视频：</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=aimSGOAUI8Y"><img src="https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/master/doc/YouTube_video1.JPG" alt="Link to my YouTube video!"></a></p>
-<h3 id="更新树莓派"><a href="#更新树莓派" class="headerlink" title="更新树莓派"></a>更新树莓派</h3><pre class="line-numbers language-none"><code class="language-none">sudo apt-get update
-sudo apt-get dist-upgrade<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>根据您更新 Pi 的时间，更新可能需要一分钟到一小时之间的任何时间。</p>
-<p>在此过程中，让我们确保在 Raspberry Pi 配置菜单中启用了相机界面。单击屏幕左上角的 Pi 图标，选择 Preferences -&gt; Raspberry Pi Configuration，然后转到 Interfaces 选项卡并确认 Camera 设置为 Enabled。如果不是，请立即启用它，然后重新启动 Raspberry Pi。</p>
-<h3 id="下载虚拟环境"><a href="#下载虚拟环境" class="headerlink" title="下载虚拟环境"></a>下载虚拟环境</h3><p>接下来，通过发出以下命令克隆此 GitHub 存储库。该存储库包含我们将用于运行 TensorFlow Lite 的脚本，以及一个使安装一切变得更容易的 shell 脚本。问题：</p>
-<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;EdjeElectronics&#x2F;TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这会将所有内容下载到名为 TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi 的文件夹中。这有点长，所以将文件夹重命名为“tflite1”，然后 cd 进入它：</p>
-<pre class="line-numbers language-none"><code class="language-none">mv TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi tflite1
-cd tflite1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>我们将在此 /home/pi/tflite1 目录中处理本指南的其余部分。接下来是创建一个名为“tflite1-env”的虚拟环境。</p>
-<p>我在本指南中使用了虚拟环境，因为它可以防止可能已安装在您的 Pi 上的软件包库版本之间发生任何冲突。将 TensorFlow 安装在自己的环境中可以避免版本冲突。例如，如果您已经使用我的其他指南在 Pi 上安装了 TensorFlow v1.8，则可以保持该安装不变，而不必担心覆盖它。</p>
-<p>通过发出以下命令安装 virtualenv：</p>
-<pre class="line-numbers language-none"><code class="language-none">sudo pip3 install virtualenv<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>然后，通过发出以下命令创建“tflite1-env”虚拟环境：</p>
-<pre class="line-numbers language-none"><code class="language-none">python3 -m venv tflite1-env<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这将在 tflite1 目录中创建一个名为 tflite1-env 的文件夹。tflite1-env 文件夹将保存此环境的所有包库。接下来，通过发出以下命令激活环境：</p>
-<pre class="line-numbers language-none"><code class="language-none">source tflite1-env&#x2F;bin&#x2F;activate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><strong>source tflite1-env/bin/activate每次打开新的终端窗口时，您都需要从 /home/pi/tflite1 目录中发出命令以重新激活环境。您可以通过检查 (tflite1-env) 是否出现在命令提示符中的路径之前来判断环境何时处于活动状态，如下面的屏幕截图所示。</strong></p>
-<p>此时，如果您发出 .tflite1 目录，那么您的 tflite1 目录应该是这样的<code>ls</code>。</p>
-<h3 id="安装TensorFlow和opencv"><a href="#安装TensorFlow和opencv" class="headerlink" title="安装TensorFlow和opencv"></a>安装TensorFlow和opencv</h3><p>接下来，我们将安装 TensorFlow、OpenCV 以及这两个包所需的所有依赖项。运行 TensorFlow Lite 不需要 OpenCV，但此存储库中的对象检测脚本使用它来抓取图像并在其上绘制检测结果。</p>
-<p>为了让事情更简单，我编写了一个 shell 脚本，它会自动下载并安装所有的包和依赖项。通过发出以下命令运行它：</p>
-<pre class="line-numbers language-none"><code class="language-none">bash get_pi_requirements.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这将下载大约 400MB 的安装文件，因此需要一段时间。在它工作的时候去喝杯咖啡吧！如果您想查看已安装的所有内容，只需打开 get_pi_dependencies.sh 即可查看软件包列表。</p>
-<p><strong>注意：如果您在运行bash get_pi_requirements.sh命令时遇到错误，可能是因为您的 Internet 连接超时，或者因为下载的包数据已损坏。如果出现错误，请尝试重新运行该命令几次。</strong></p>
-<p><strong>另一个注意事项：shell 脚本会自动安装最新版本的 TensorFlow。如果您想安装特定版本，pip3 install tensorflow==X.XX请在运行脚本后发出（其中 X.XX 替换为您要安装的版本）。这将使用指定版本覆盖现有安装。</strong></p>
-<p>那很简单！进入下一步。</p>
-<h3 id="步骤-1d。设置-TensorFlow-Lite-检测模型"><a href="#步骤-1d。设置-TensorFlow-Lite-检测模型" class="headerlink" title="步骤 1d。设置 TensorFlow Lite 检测模型"></a>步骤 1d。设置 TensorFlow Lite 检测模型</h3><p>接下来，我们将设置将与 TensorFlow Lite 一起使用的检测模型。本指南展示了如何下载由 Google 提供的示例 TFLite 模型，或如何使用您按照我的 TensorFlow Lite 教程系列<a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">第 1 部分自行训练的模型</a>。</p>
-<p>检测模型有两个与之关联的文件：detect.tflite 文件（模型本身）和 labelmap.txt 文件（为模型提供标签图）。我组织模型文件的首选方法是创建一个文件夹（例如“BirdSquirrelRaccoon_TFLite_model”）并将detect.tflite 和labelmap.txt 都保存在该文件夹中。这也是 Google 的可下载示例 TFLite 模型的组织方式。</p>
-<h3 id="选项-1-使用-Google-的示例-TFLite-模型"><a href="#选项-1-使用-Google-的示例-TFLite-模型" class="headerlink" title="选项 1. 使用 Google 的示例 TFLite 模型"></a>选项 1. 使用 Google 的示例 TFLite 模型</h3><p>Google 提供了一个示例量化 SSDLite-MobileNet-v2 对象检测模型，该模型在 MSCOCO 数据集上训练并转换为在 TensorFlow Lite 上运行。它可以检测和识别 80 种不同的常见物体，例如人、汽车、杯子等。</p>
-<p>通过发出以下命令下载示例模型（<a href="https://www.tensorflow.org/lite/models/object_detection/overview">可以在TensorFlow 官方网站的对象检测页面上找到</a>）：<br><pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;storage.googleapis.com&#x2F;download.tensorflow.org&#x2F;models&#x2F;tflite&#x2F;coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>通过发出（此命令自动创建文件夹）将其解压缩到名为“Sample_TFLite_model”的文件夹中：<br><pre class="line-numbers language-none"><code class="language-none">unzip coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip -d Sample_TFLite_model<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>好的，示例模型已准备就绪！</p>
-<h3 id="选项-2：使用您自己的自定义训练模型"><a href="#选项-2：使用您自己的自定义训练模型" class="headerlink" title="选项 2：使用您自己的自定义训练模型"></a>选项 2：使用您自己的自定义训练模型</h3><p>您还可以通过将模型文件夹移动到 /home/pi/tflite 目录来使用自定义对象检测模型。如果您按照我的 <a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">TensorFlow Lite 指南的第 1 部分</a>在您的 PC 上训练和转换 TFLite 模型，您应该有一个名为“TFLite_model”的文件夹，其中包含一个 detect.tflite 和 labelmap.txt 文件。（它还会有一个 tflite_graph.pb 和 tflite_graph.pbtxt 文件，TensorFlow Lite 不需要这些文件，但可以留在文件夹中。）</p>
-<p>您可以简单地将该文件夹复制到 USB 驱动器，将 USB 驱动器插入您的 Raspberry Pi，然后将该文件夹移动到 /home/pi/tflite1 目录中。（或者，您可以通过电子邮件将其发送给自己，或将其放在 Google 云端硬盘上，或者使用您喜欢的任何文件传输方法。）这是我的 /home/pi/tflite1 目录中的“BirdSquirrelRaccoon_TFLite_model”文件夹的示例：</p>
-<p>现在您的自定义模型已准备就绪！</p>
-<h3 id="步骤-1e。运行-TensorFlow-Lite-模型！"><a href="#步骤-1e。运行-TensorFlow-Lite-模型！" class="headerlink" title="步骤 1e。运行 TensorFlow Lite 模型！"></a>步骤 1e。运行 TensorFlow Lite 模型！</h3><p>是时候看看 TFLite 对象检测模型的实际效果了！首先，通过关闭您不使用的任何应用程序来释放内存和处理能力。另外，请确保您已插入网络摄像头或 Picamera。</p>
-<p>通过从 /home/pi/tflite1 目录中发出以下命令来运行实时网络摄像头检测脚本。（在运行该命令之前，通过检查 (tflite1-env) 出现在命令提示符前面来确保 tflite1-env 环境处于活动状态。）<strong>TFLite_detection_webcam.py 脚本将与 Picamera 或 USB 网络摄像头一起使用。</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">python3 TFLite_detection_webcam.py --modeldir&#x3D;Sample_TFLite_model<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>如果您的模型文件夹的名称与“Sample_TFLite_model”不同，请改用该名称。例如，我会<code>--modeldir=BirdSquirrelRaccoon_TFLite_model</code>用来运行我的自定义鸟类、松鼠和浣熊检测模型。</p>
-<p>初始化片刻后，将出现一个窗口，显示网络摄像头源。检测到的对象将实时显示边界框和标签。</p>
-<p>我TensorFlow精简版培训指导的第3部分给出的<a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#video">指令</a>使用TFLite_detection_image.py和TFLite_detection_video.py脚本。确保在运行脚本时使用<code>python3</code>而不是<code>python</code>。</p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>树莓派</tag>
-        <tag>深度学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>EasyOCR光学字符识别</title>
     <url>/2021/10/25/EasyOCR%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="EasyOCR光学字符识别"><a href="#EasyOCR光学字符识别" class="headerlink" title="EasyOCR光学字符识别"></a>EasyOCR光学字符识别</h1><pre><code>OCR光学字符识别，将不同类型的文档，图像中的字符保存为可编辑和可搜索的数据。
@@ -708,56 +568,67 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       </tags>
   </entry>
   <entry>
-    <title>Fusion360学习笔记</title>
-    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
-<pre><code>h1 &#123;
-counter-reset: subsection;
-&#125;
-h2 &#123;
-counter-reset: subsection2;
-&#125;
-h3 &#123;
-counter-reset: subsection3;
-&#125;
-h4 &#123;
-counter-reset: subsection4;
-&#125;
-h1::before &#123;
-counter-increment: section;
-content:  &quot; &quot;;
-&#125;
+    <title>surface完美安装linux操作系统、hexo博客</title>
+    <url>/2021/03/19/Deepin%E7%B3%BB%E7%BB%9F%E4%B8%8Esurface%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="surface完美安装linux操作系统、hexo博客"><a href="#surface完美安装linux操作系统、hexo博客" class="headerlink" title="surface完美安装linux操作系统、hexo博客"></a><center>surface完美安装linux操作系统、hexo博客</center></h1><p>最近由于linux课程需要使用linux系统，于是在ubuntu、kali、Elementary OS、Chrome OS和deepin操作系统中选择一个比较靠谱的。<br><span id="more"></span></p>
+<h2 id="linux操作系统介绍"><a href="#linux操作系统介绍" class="headerlink" title="linux操作系统介绍"></a>linux操作系统介绍</h2><h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><p>作为全球最流行且最有影响力的Linux开源系统之一，Ubuntu自发布以来在应用体验方面：有较大幅度的提升，即使对比Windows、MacOS等操作系统，最新版本的Ubuntu也不逊色。<br><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3931899733,1893021162&amp;fm=26&amp;gp=0.jpg" alt="">  </p>
+<h3 id="kali"><a href="#kali" class="headerlink" title="kali"></a>kali</h3><p>Kali Linux是基于Debian的Linux发行版， 设计用于数字取证操作系统。每一季度更新一次。由Offensive Security Ltd维护和资助。最先由Offensive Security的Mati Aharoni和Devon Kearns通过重写BackTrack来完成，BackTrack是他们之前写的用于取证的Linux发行版 。</p>
+<p>主要是用来渗透网络—所以俗话说kali从入门到入狱。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/3b87e950352ac65c1038fd5662baa5119313b07e1cf7?x-bce-process=image/watermark,image_d2里奴性F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5/format,f_auto" alt=""></p>
+<h3 id="Elementary-OS"><a href="#Elementary-OS" class="headerlink" title="Elementary OS"></a>Elementary OS</h3><p>Elementary OS是基于 Ubuntu 精心打磨美化的桌面 Linux 发行版的一款软件，号称 “最美的 Linux”， 最早是 Ubuntu 的一个美化主题项目，现在成了独立的发行版<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww2.sinaimg.cn%2Fmw1024%2F6595c7c6tw1e7nlcg38qoj211s0lcag0.jpg&amp;refer=http%3A%2F%2Fwww.sina.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754413&amp;t=c4cc435286c020b6845bd352d5a1dd8c" alt=""></p>
+<h3 id="Chrome-OS"><a href="#Chrome-OS" class="headerlink" title="Chrome OS"></a>Chrome OS</h3><p>Chrome OS是一款Google开发的基于PC的操作系统。 Google Chrome OS是一款基于Linux的开源操作系统。Google在自己的官方博客表示，初期，这一操作系统将定位于上网本、紧凑型以及低成本电脑。这款开源软件将被命名为Chrome OS，谷歌公司于2010年12里奴性月7日（北京时间12月8日2点30分）在美国举行Chrome相关产品发布会，发布会上正式发布Chrome Web store和Chrome OS。</p>
+<p><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/baike/pic/item/8694a4c27d1ed21bae953dafa06eddc451da3f1f.jpg" alt=""></p>
+<h3 id="deepin"><a href="#deepin" class="headerlink" title="deepin"></a>deepin</h3><p>Deepin（原名：Linux Deepin；中文通称：深度操作系统）是由武汉深之度科技有限公司在Debian基础上开发的Linux操作系统，其前身是Hiweed Linux操作系统，于2004年2月28日开始对外发行，可以安装在个人计算机和服务器中。</p>
+<p>Deepin 12.12 正式版本将搭载一个全新的桌面环境。该桌面环境由Deepin 团队开发，以轻型、美观、稳定等作为设计目标。新桌面环境使用 Compiz 作为默认的窗口管理器。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fzkres1.myzaker.com%2F201910%2F5dae5906b15ec02e1c28f7b1_1024.jpg&amp;refer=http%3A%2F%2Fzkres1.myzaker.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754739&amp;t=be9f54a43670d51053a30eec7d91ac18" alt=""></p>
+<h3 id="总结以上五种系统各有各的优点"><a href="#总结以上五种系统各有各的优点" class="headerlink" title="总结以上五种系统各有各的优点"></a>总结以上五种系统各有各的优点</h3><p>运行上deepin会更慢一些，因为deepin的界面做的最好看，其次deepin是国产linux系统，而且是武汉的公司，安装极其简单，所以我就装了deepin操作系统。</p>
+<h2 id="deepin启动盘制作"><a href="#deepin启动盘制作" class="headerlink" title="deepin启动盘制作"></a>deepin启动盘制作</h2><p>deepin v20下载地址<a href="https://www.deepin.org/zh/download/">deep in</a><br>首先下载镜像，其次下载启动盘制作工具，制作启动盘。</p>
+<h2 id="windows分区"><a href="#windows分区" class="headerlink" title="windows分区"></a>windows分区</h2><p>删除一些windows上面不需要的软件和文件，腾出50G的空间，然后通过<a href="https://www.soft-down.net/detail/44/431115.shtml?type=jingzhun">分区助手</a><br>对磁盘进行分区。</p>
+<h2 id="系统安装具体操作步骤"><a href="#系统安装具体操作步骤" class="headerlink" title="系统安装具体操作步骤"></a>系统安装具体操作步骤</h2><p>1.制作启动u盘deepin系统安装盘。就是把deepin.iso烧录到u盘上。<br>这里请一定要先记得在淘宝上买一个扩展坞，因为surface是一款pc平板而合一电脑，为了节约面积，采用了单usb端口。同时安装系统时蓝牙会失效，需要准备有线鼠标、有线键盘。</p>
+<p>2.关闭secureboot.关机后 音量下键+电源三秒，松开电源，见到surface图标后松开音量键进入bios界面。第二项 secureboot 回车 disable它。滑倒最后exit save setting。</p>
+<p>特别注意一点！就是分清楚surface的音量和电源在那不要按错。</p>
+<p>3.进入windows系统，点击setting，在setting 中搜索boot，看到第二项，create and format hard disk partitions. 进入后看到C盘，鼠标右键shrink volumn(分出给deepin 的空间）</p>
+<p>建议采用之前说的分区助手，这种方法分区很容易崩。</p>
+<p>4.从U盘启动。有两种方式：<br>第一种关机后，音量下键+电源3秒，松开电源。见到surface画面后松开音量键。<br>第二种从windows 向左滑，进入setting. 最底下change pc settings.进去后点击最底下的updates and recovery(更新和恢复）选择里面最底下选项。advanced startup. （高级启动）。进入U盘启动。</p>
+<p>5.从U盘启动后。选择第二项，安装deepin. 选择语言，然后选择something else(其他选项）。目的是不要覆盖windows系统。安装系统到我们分出的free space里。<br>点击 free space ，再点击左下角的“+”号。选择逻辑分区，ext4, 给/root.尽量大点。</p>
+<p>再点击 free space ，点击左下角的“+”号。逻辑或主分区随便（我给的逻辑分区），swap area(交换空间）.随便给个几G。英文教程中不给，我是分了，省得它提示我必须给。反正也不少这几个G。</p>
+<p>选择启动盘为windows 所在的那个，一般叫sda 4.</p>
+<p>然后开始安装。重启。</p>
+<h2 id="安装触摸屏驱动"><a href="#安装触摸屏驱动" class="headerlink" title="安装触摸屏驱动"></a>安装触摸屏驱动</h2><h3 id="deepin-1"><a href="#deepin-1" class="headerlink" title="deepin"></a>deepin</h3><p>这里很神奇如果你也装的是deepin操作系统，触摸屏是可以直接使用的，可能因为华为封锁，目前华为用的均为deepin操作系统，华为也有触控笔记本电脑。</p>
+<h3 id="其他linux系统"><a href="#其他linux系统" class="headerlink" title="其他linux系统"></a>其他linux系统</h3><p>请详见<a href="https://github.com/jakeday/linux-surface">github大神</a>的surface驱动安装教程。</p>
+<p>进入系统以后使用Terminal安装了Peter Hunter整理的内核<br><pre class="line-numbers language-none"><code class="language-none">sudo add-apt-repository ppa:tigerite&#x2F;kernel
 
-h2::before &#123;
-counter-increment: subsection;
-content: counter(subsection) &quot; &quot;;
-&#125;
-h3::before &#123;
-counter-increment: subsection2;
-content: counter(subsection) &quot;.&quot; counter(subsection2) ;
-&#125;
-h4::before &#123;
-counter-increment: subsection3;
-content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
-&#125;
-h5::before &#123;
-counter-increment: subsection4;
-content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
-&#125;
-</code></pre><p>&lt;/style&gt;</p>
-<p><style><br>        video {<br>            width: 20%;<br>        }
-</style></p>
-<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
-<ul>
-<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
-</ul>
-<p>下载个人用途版本即可。</p>
-<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/img/html5/2.mp4"   controls="controls"></video>
+sudo apt-get update
 
-<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/img/html5/3.mp4"   controls="controls"></video>
+sudo apt-get install linux-surface<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>然后使用编辑器nano或者gedit编辑/<br><pre class="line-numbers language-none"><code class="language-none">lib&#x2F;udev&#x2F;rules.d&#x2F;50-bluetooth-hci-auto-poweron.rules<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>用#注释掉里面唯一的那一行，再打开/etc/bluetooth/main.conf<br>把#[Policy]<br>改成[Policy]<br>并把最后一排的<br><pre class="line-numbers language-none"><code class="language-none">#AutoEnable&#x3D;false改成AutoEnable&#x3D;true
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;安装rEFIndsudo
 
+apt-add-repository ppa:rodsmith&#x2F;refind
 
-]]></content>
+sudo apt-get update
+
+sudo apt-get install refind<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>用Shim给rEFind增加Secure Boot的启动方式<br><pre class="line-numbers language-none"><code class="language-none">refind-install --shim &#x2F;boot&#x2F;efi&#x2F;EFI&#x2F;ubuntu&#x2F;shimx64.efi --localkeys<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>然后把rEFind设为第一启动项refind-mkdefault开启Secure Boot</p>
+<h2 id="蓝牙驱动安装"><a href="#蓝牙驱动安装" class="headerlink" title="蓝牙驱动安装"></a>蓝牙驱动安装</h2><p>蓝牙（Bluetooth），是一种无线个人局域网（Wireless PAN），最初由爱立信创制，后来由蓝牙技术联盟订定技术标准。这个词的来源是10世纪丹麦和挪威国王蓝牙哈拉尔（丹麦语：Harald Blåtand Gormsen），借国王的绰号“Blåtand”当名称，直接翻译成中文为“蓝牙”（blå＝蓝，tand＝牙）。蓝牙是一种通用的射频频率是2.45GHZ的无线电接口，它使带有电子端口的设备能够在小范围内进行无线通信。</p>
+<h3 id="安装应用"><a href="#安装应用" class="headerlink" title="安装应用"></a>安装应用</h3><p>Blueman旨在提供最为常见的蓝牙管理功能。</p>
+<p>命令安装，终端执行：<br><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install blueman
+&#96;&#96;&#96;&#96;
+命令卸载，终端执行：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get remove blueman<br><pre class="line-numbers language-none"><code class="language-none">
+## Hexo安装
+### 安装nodejs:生成静态页面<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get install nodejs<br><pre class="line-numbers language-none"><code class="language-none">### 安装npm：一会用来安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo apt-get insall npm<br><pre class="line-numbers language-none"><code class="language-none">### 正式安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo npm install -g hexo<br><pre class="line-numbers language-none"><code class="language-none">### hexo部署<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>hexo clean<br>hexo g-d<br><pre class="line-numbers language-none"><code class="language-none">## git SSH Linux
+
+打开终端依次输入一下命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>Git Bash Here</p>
+<p>mkdir ~/.ssh</p>
+<p>cd .ssh/</p>
+<p>git config —global  user.name “mmrsl”</p>
+<p>git config —global  user.email “xxx@codekp.cn”<br>```<br>打开id_rsa.pub，在github的账号中进行修改，增加SHH。</p>
+<h1 id="完成后上传，如本文所示，surface双系统完美linux。"><a href="#完成后上传，如本文所示，surface双系统完美linux。" class="headerlink" title="完成后上传，如本文所示，surface双系统完美linux。"></a>完成后上传，如本文所示，surface双系统完美linux。</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>Deep in</tag>
+        <tag>surface</tag>
+      </tags>
   </entry>
   <entry>
     <title>English_learning</title>
@@ -871,6 +742,135 @@ If you are talking to a group of managers, you may refer to the disorganized met
         <tag>英语阅读</tag>
         <tag>markdown</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Detection_树莓派</title>
+    <url>/2021/06/07/Detection-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Raspberry-Pi-上运行-TensorFlow-Lite-目标检测"><a href="#Raspberry-Pi-上运行-TensorFlow-Lite-目标检测" class="headerlink" title="Raspberry Pi 上运行 TensorFlow Lite 目标检测"></a>Raspberry Pi 上运行 TensorFlow Lite 目标检测</h1> <div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=845957427&bvid=BV1B54y137xE&cid=350441154&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>本指南提供了有关如何在 Raspberry Pi 上设置 TensorFlow Lite 并使用它运行对象检测模型的分步说明。它还展示了如何在 Pi 上设置 Coral USB 加速器并运行 Edge TPU 检测模型。它适用于运行 Rasbpian Buster 或 Rasbpian Stretch 的 Raspberry Pi 3 和 Raspberry Pi 4。</p>
+<p>本指南是我更大的 TensorFlow Lite 教程系列的第二部分：</p>
+<ol>
+<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">如何在 Windows 10 上训练、转换和运行自定义 TensorFlow Lite 对象检测模型</a></li>
+<li>如何在 Raspberry Pi 上运行 TensorFlow Lite 对象检测模型&lt;—- 你在这里！</li>
+</ol>
+<p>本指南的这一部分分为三个部分：</p>
+<ul>
+<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#part-1---how-to-set-up-and-run-tensorflow-lite-object-detection-models-on-the-raspberry-pi">第 1 节 在 Raspberry Pi 上运行 TensorFlow Lite 对象检测模型</a></li>
+<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#section-2---run-edge-tpu-object-detection-models-on-the-raspberry-pi-using-the-coral-usb-accelerator">第 2 节。使用 Coral USB 加速器在 Raspberry Pi 上运行 Edge TPU 对象检测模型</a></li>
+</ul>
+<p>此存储库还包括用于在图像、视频或网络摄像头/Picamera 源上运行 TFLite 和 Edge TPU 模型的脚本。</p>
+<h2 id="如何在-Raspberry-Pi-上设置和运行-TensorFlow-Lite-对象检测模型"><a href="#如何在-Raspberry-Pi-上设置和运行-TensorFlow-Lite-对象检测模型" class="headerlink" title="如何在 Raspberry Pi 上设置和运行 TensorFlow Lite 对象检测模型"></a>如何在 Raspberry Pi 上设置和运行 TensorFlow Lite 对象检测模型</h2><p>在 Raspberry Pi 上设置 TensorFlow Lite 比常规 TensorFlow 容易得多！这些是设置 TensorFlow Lite 所需的步骤：</p>
+<ul>
+<li>1a. 更新树莓派</li>
+<li>1b. 下载此存储库并创建虚拟环境</li>
+<li>1c。安装 TensorFlow 和 OpenCV</li>
+<li>1天。设置 TensorFlow Lite 检测模型</li>
+<li>1e。运行 TensorFlow Lite 模型！</li>
+<li>我还制作了一个介绍本指南的 YouTube 视频：</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=aimSGOAUI8Y"><img src="https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/master/doc/YouTube_video1.JPG" alt="Link to my YouTube video!"></a></p>
+<h3 id="更新树莓派"><a href="#更新树莓派" class="headerlink" title="更新树莓派"></a>更新树莓派</h3><pre class="line-numbers language-none"><code class="language-none">sudo apt-get update
+sudo apt-get dist-upgrade<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>根据您更新 Pi 的时间，更新可能需要一分钟到一小时之间的任何时间。</p>
+<p>在此过程中，让我们确保在 Raspberry Pi 配置菜单中启用了相机界面。单击屏幕左上角的 Pi 图标，选择 Preferences -&gt; Raspberry Pi Configuration，然后转到 Interfaces 选项卡并确认 Camera 设置为 Enabled。如果不是，请立即启用它，然后重新启动 Raspberry Pi。</p>
+<h3 id="下载虚拟环境"><a href="#下载虚拟环境" class="headerlink" title="下载虚拟环境"></a>下载虚拟环境</h3><p>接下来，通过发出以下命令克隆此 GitHub 存储库。该存储库包含我们将用于运行 TensorFlow Lite 的脚本，以及一个使安装一切变得更容易的 shell 脚本。问题：</p>
+<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;EdjeElectronics&#x2F;TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这会将所有内容下载到名为 TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi 的文件夹中。这有点长，所以将文件夹重命名为“tflite1”，然后 cd 进入它：</p>
+<pre class="line-numbers language-none"><code class="language-none">mv TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi tflite1
+cd tflite1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>我们将在此 /home/pi/tflite1 目录中处理本指南的其余部分。接下来是创建一个名为“tflite1-env”的虚拟环境。</p>
+<p>我在本指南中使用了虚拟环境，因为它可以防止可能已安装在您的 Pi 上的软件包库版本之间发生任何冲突。将 TensorFlow 安装在自己的环境中可以避免版本冲突。例如，如果您已经使用我的其他指南在 Pi 上安装了 TensorFlow v1.8，则可以保持该安装不变，而不必担心覆盖它。</p>
+<p>通过发出以下命令安装 virtualenv：</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo pip3 install virtualenv<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后，通过发出以下命令创建“tflite1-env”虚拟环境：</p>
+<pre class="line-numbers language-none"><code class="language-none">python3 -m venv tflite1-env<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这将在 tflite1 目录中创建一个名为 tflite1-env 的文件夹。tflite1-env 文件夹将保存此环境的所有包库。接下来，通过发出以下命令激活环境：</p>
+<pre class="line-numbers language-none"><code class="language-none">source tflite1-env&#x2F;bin&#x2F;activate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>source tflite1-env/bin/activate每次打开新的终端窗口时，您都需要从 /home/pi/tflite1 目录中发出命令以重新激活环境。您可以通过检查 (tflite1-env) 是否出现在命令提示符中的路径之前来判断环境何时处于活动状态，如下面的屏幕截图所示。</strong></p>
+<p>此时，如果您发出 .tflite1 目录，那么您的 tflite1 目录应该是这样的<code>ls</code>。</p>
+<h3 id="安装TensorFlow和opencv"><a href="#安装TensorFlow和opencv" class="headerlink" title="安装TensorFlow和opencv"></a>安装TensorFlow和opencv</h3><p>接下来，我们将安装 TensorFlow、OpenCV 以及这两个包所需的所有依赖项。运行 TensorFlow Lite 不需要 OpenCV，但此存储库中的对象检测脚本使用它来抓取图像并在其上绘制检测结果。</p>
+<p>为了让事情更简单，我编写了一个 shell 脚本，它会自动下载并安装所有的包和依赖项。通过发出以下命令运行它：</p>
+<pre class="line-numbers language-none"><code class="language-none">bash get_pi_requirements.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这将下载大约 400MB 的安装文件，因此需要一段时间。在它工作的时候去喝杯咖啡吧！如果您想查看已安装的所有内容，只需打开 get_pi_dependencies.sh 即可查看软件包列表。</p>
+<p><strong>注意：如果您在运行bash get_pi_requirements.sh命令时遇到错误，可能是因为您的 Internet 连接超时，或者因为下载的包数据已损坏。如果出现错误，请尝试重新运行该命令几次。</strong></p>
+<p><strong>另一个注意事项：shell 脚本会自动安装最新版本的 TensorFlow。如果您想安装特定版本，pip3 install tensorflow==X.XX请在运行脚本后发出（其中 X.XX 替换为您要安装的版本）。这将使用指定版本覆盖现有安装。</strong></p>
+<p>那很简单！进入下一步。</p>
+<h3 id="步骤-1d。设置-TensorFlow-Lite-检测模型"><a href="#步骤-1d。设置-TensorFlow-Lite-检测模型" class="headerlink" title="步骤 1d。设置 TensorFlow Lite 检测模型"></a>步骤 1d。设置 TensorFlow Lite 检测模型</h3><p>接下来，我们将设置将与 TensorFlow Lite 一起使用的检测模型。本指南展示了如何下载由 Google 提供的示例 TFLite 模型，或如何使用您按照我的 TensorFlow Lite 教程系列<a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">第 1 部分自行训练的模型</a>。</p>
+<p>检测模型有两个与之关联的文件：detect.tflite 文件（模型本身）和 labelmap.txt 文件（为模型提供标签图）。我组织模型文件的首选方法是创建一个文件夹（例如“BirdSquirrelRaccoon_TFLite_model”）并将detect.tflite 和labelmap.txt 都保存在该文件夹中。这也是 Google 的可下载示例 TFLite 模型的组织方式。</p>
+<h3 id="选项-1-使用-Google-的示例-TFLite-模型"><a href="#选项-1-使用-Google-的示例-TFLite-模型" class="headerlink" title="选项 1. 使用 Google 的示例 TFLite 模型"></a>选项 1. 使用 Google 的示例 TFLite 模型</h3><p>Google 提供了一个示例量化 SSDLite-MobileNet-v2 对象检测模型，该模型在 MSCOCO 数据集上训练并转换为在 TensorFlow Lite 上运行。它可以检测和识别 80 种不同的常见物体，例如人、汽车、杯子等。</p>
+<p>通过发出以下命令下载示例模型（<a href="https://www.tensorflow.org/lite/models/object_detection/overview">可以在TensorFlow 官方网站的对象检测页面上找到</a>）：<br><pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;storage.googleapis.com&#x2F;download.tensorflow.org&#x2F;models&#x2F;tflite&#x2F;coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>通过发出（此命令自动创建文件夹）将其解压缩到名为“Sample_TFLite_model”的文件夹中：<br><pre class="line-numbers language-none"><code class="language-none">unzip coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip -d Sample_TFLite_model<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>好的，示例模型已准备就绪！</p>
+<h3 id="选项-2：使用您自己的自定义训练模型"><a href="#选项-2：使用您自己的自定义训练模型" class="headerlink" title="选项 2：使用您自己的自定义训练模型"></a>选项 2：使用您自己的自定义训练模型</h3><p>您还可以通过将模型文件夹移动到 /home/pi/tflite 目录来使用自定义对象检测模型。如果您按照我的 <a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">TensorFlow Lite 指南的第 1 部分</a>在您的 PC 上训练和转换 TFLite 模型，您应该有一个名为“TFLite_model”的文件夹，其中包含一个 detect.tflite 和 labelmap.txt 文件。（它还会有一个 tflite_graph.pb 和 tflite_graph.pbtxt 文件，TensorFlow Lite 不需要这些文件，但可以留在文件夹中。）</p>
+<p>您可以简单地将该文件夹复制到 USB 驱动器，将 USB 驱动器插入您的 Raspberry Pi，然后将该文件夹移动到 /home/pi/tflite1 目录中。（或者，您可以通过电子邮件将其发送给自己，或将其放在 Google 云端硬盘上，或者使用您喜欢的任何文件传输方法。）这是我的 /home/pi/tflite1 目录中的“BirdSquirrelRaccoon_TFLite_model”文件夹的示例：</p>
+<p>现在您的自定义模型已准备就绪！</p>
+<h3 id="步骤-1e。运行-TensorFlow-Lite-模型！"><a href="#步骤-1e。运行-TensorFlow-Lite-模型！" class="headerlink" title="步骤 1e。运行 TensorFlow Lite 模型！"></a>步骤 1e。运行 TensorFlow Lite 模型！</h3><p>是时候看看 TFLite 对象检测模型的实际效果了！首先，通过关闭您不使用的任何应用程序来释放内存和处理能力。另外，请确保您已插入网络摄像头或 Picamera。</p>
+<p>通过从 /home/pi/tflite1 目录中发出以下命令来运行实时网络摄像头检测脚本。（在运行该命令之前，通过检查 (tflite1-env) 出现在命令提示符前面来确保 tflite1-env 环境处于活动状态。）<strong>TFLite_detection_webcam.py 脚本将与 Picamera 或 USB 网络摄像头一起使用。</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">python3 TFLite_detection_webcam.py --modeldir&#x3D;Sample_TFLite_model<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>如果您的模型文件夹的名称与“Sample_TFLite_model”不同，请改用该名称。例如，我会<code>--modeldir=BirdSquirrelRaccoon_TFLite_model</code>用来运行我的自定义鸟类、松鼠和浣熊检测模型。</p>
+<p>初始化片刻后，将出现一个窗口，显示网络摄像头源。检测到的对象将实时显示边界框和标签。</p>
+<p>我TensorFlow精简版培训指导的第3部分给出的<a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#video">指令</a>使用TFLite_detection_image.py和TFLite_detection_video.py脚本。确保在运行脚本时使用<code>python3</code>而不是<code>python</code>。</p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
+        <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Fusion360学习笔记</title>
+    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
+<pre><code>h1 &#123;
+counter-reset: subsection;
+&#125;
+h2 &#123;
+counter-reset: subsection2;
+&#125;
+h3 &#123;
+counter-reset: subsection3;
+&#125;
+h4 &#123;
+counter-reset: subsection4;
+&#125;
+h1::before &#123;
+counter-increment: section;
+content:  &quot; &quot;;
+&#125;
+
+h2::before &#123;
+counter-increment: subsection;
+content: counter(subsection) &quot; &quot;;
+&#125;
+h3::before &#123;
+counter-increment: subsection2;
+content: counter(subsection) &quot;.&quot; counter(subsection2) ;
+&#125;
+h4::before &#123;
+counter-increment: subsection3;
+content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
+&#125;
+h5::before &#123;
+counter-increment: subsection4;
+content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
+&#125;
+</code></pre><p>&lt;/style&gt;</p>
+<p><style><br>        video {<br>            width: 20%;<br>        }
+</style></p>
+<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
+<ul>
+<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
+</ul>
+<p>下载个人用途版本即可。</p>
+<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/img/html5/2.mp4"   controls="controls"></video>
+
+<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/img/html5/3.mp4"   controls="controls"></video>
+
+
+]]></content>
   </entry>
   <entry>
     <title>LabelImg_使用</title>
@@ -1748,80 +1748,6 @@ transform_test &#x3D; transforms.Compose([
       </tags>
   </entry>
   <entry>
-    <title>Linux进程断连重新进入该进程方法</title>
-    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
-<ul>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
-</ul>
-<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
-<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
-<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
-<p><code>nohup python3 main.py &amp;</code></p>
-<ol>
-<li>nohup </li>
-</ol>
-<p>加在一个命令的最前面，表示不挂断的运行命令</p>
-<ol>
-<li>&amp;</li>
-</ol>
-<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
-<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
-<ol>
-<li>jobs 查看后台运行的命令</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
-[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<ol>
-<li><p>ps查看进程</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
-  PID TTY          TIME CMD
-20712 pts&#x2F;6    00:00:00 bash
-20793 pts&#x2F;6    02:49:24 python3
-22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>kill </p>
-</li>
-</ol>
-<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
-<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
-<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
-<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
-<p>将后台中的命令调至前台继续运行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
-<p>（2）Ctrl + z 命令</p>
-<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
-<p>（3）bg命令</p>
-<p>将一个在后台暂停的命令，变成在后台继续执行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
-<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
-<li>首先后台运行一个进程：</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
-<ul>
-<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
-<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
-</ul>
-<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
-<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
-<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
-<p>linux远程断联后重新进入该进程</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
-</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>研究生课程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>OCR_实时翻译</title>
     <url>/2021/10/27/OCR-%E5%AE%9E%E6%97%B6%E7%BF%BB%E8%AF%91/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="OCR-实时翻译"><a href="#OCR-实时翻译" class="headerlink" title="OCR_实时翻译"></a>OCR_实时翻译</h1><ul>
@@ -1933,6 +1859,80 @@ capture.release()<span aria-hidden="true" class="line-numbers-rows"><span></span
       <tags>
         <tag>OCR</tag>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux进程断连重新进入该进程方法</title>
+    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
+<ul>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
+</ul>
+<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
+<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
+<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
+<p><code>nohup python3 main.py &amp;</code></p>
+<ol>
+<li>nohup </li>
+</ol>
+<p>加在一个命令的最前面，表示不挂断的运行命令</p>
+<ol>
+<li>&amp;</li>
+</ol>
+<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
+<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
+<ol>
+<li>jobs 查看后台运行的命令</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
+[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ol>
+<li><p>ps查看进程</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
+  PID TTY          TIME CMD
+20712 pts&#x2F;6    00:00:00 bash
+20793 pts&#x2F;6    02:49:24 python3
+22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>kill </p>
+</li>
+</ol>
+<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
+<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
+<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
+<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
+<p>将后台中的命令调至前台继续运行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
+<p>（2）Ctrl + z 命令</p>
+<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
+<p>（3）bg命令</p>
+<p>将一个在后台暂停的命令，变成在后台继续执行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
+<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
+<li>首先后台运行一个进程：</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
+<ul>
+<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
+<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
+</ul>
+<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
+<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
+<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
+<p>linux远程断联后重新进入该进程</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
+</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>研究生课程</tag>
       </tags>
   </entry>
   <entry>
@@ -3969,6 +3969,99 @@ if (windowWidth &gt; 768) &#123;
       </tags>
   </entry>
   <entry>
+    <title>js_web_3D_模型设计</title>
+    <url>/2021/11/18/js_web_3D_%E6%A8%A1%E5%9E%8B%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+<h1 id="jsweb-3D模型设计"><a href="#jsweb-3D模型设计" class="headerlink" title="jsweb_3D模型设计"></a>js<em>web_3D</em>模型设计</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><pre><code>首先参考一下别人怎么做的3d模型，站在巨人的肩膀上看看要怎么操作。
+</code></pre><h3 id="chrome浏览器下的网站"><a href="#chrome浏览器下的网站" class="headerlink" title="chrome浏览器下的网站"></a>chrome浏览器下的网站</h3><p><a href="https://www.hightopo.com/demo/CementFactory/">https://www.hightopo.com/demo/CementFactory/</a><br><a href="https://www.hightopo.com/demo/3DRoom/index.html">https://www.hightopo.com/demo/3DRoom/index.html</a><br>原文链接在：<a href="https://www.cnblogs.com/xhload3d/p/8577889.html">hightopo</a></p>
+<h3 id="查看源码F12"><a href="#查看源码F12" class="headerlink" title="查看源码F12"></a>查看源码F12</h3><p>可以看到单个的js文件，除此以外看不到其他，因此<br><img src="https://www.mmrsl.cn/download/img/html5/3.png" alt=""><br>可以一行一行的下载但这样很麻烦，因此可以考虑用谷歌插件一键下载。</p>
+<h3 id="Save-All-Resources"><a href="#Save-All-Resources" class="headerlink" title="Save All Resources"></a>Save All Resources</h3><p><img src="https://www.mmrsl.cn/download/img/html5/4.png" alt=""><br><strong>使用方法：</strong><br><img src="https://www.mmrsl.cn/download/img/html5/5.png" alt=""><br>下载以后如图所示<br><img src="https://www.mmrsl.cn/download/img/html5/6.png" alt=""></p>
+<h2 id="详细阅读代码后"><a href="#详细阅读代码后" class="headerlink" title="详细阅读代码后"></a>详细阅读代码后</h2><p>可以发现以门为例：<br><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;二楼
+    HIGHT&#x3D;200
+    &#x2F;&#x2F; 创建墙体
+    var wall2 &#x3D; new ht.CSGShape();
+    wall2.setClosePath(true);
+    wall2.setTall(240);
+    wall2.setElevation(HIGHT+360);
+    wall2.setThickness(20);
+    wall2.setPoints([
+        &#123;x: -400, y: -600&#125;,
+        &#123;x: 400, y: -600&#125;,
+        &#123;x: 400, y: 600&#125;,
+        &#123;x: -400, y: 600&#125;
+    ]);
+    wall2.s(&#123;
+        &#39;shape.border.width&#39;: 20,
+        &#39;shape.border.color&#39;: &#39;#898989&#39;,
+        &#39;all.color&#39;: &#39;#5D5D5D&#39;,
+        &#39;front.color&#39;: &#39;lightgray&#39;,
+        &#39;back.color&#39;: &#39;lightgray&#39;,
+        &#39;csg.color&#39;: &#39;#DDDDDD&#39;
+    &#125;);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<blockquote>
+<p>可以设置墙的长宽高和厚度还有位置，即可制作第二层第三层直到n层的一个建筑物如图所示：</p>
+</blockquote>
+<p><img src="https://www.mmrsl.cn/download/img/html5/7.png" alt=""></p>
+<blockquote>
+<p>可以访问地址，以上述方法获取我修改后的源码：</p>
+</blockquote>
+<p><a href="https://www.mmrsl.cn/3droom/">3droom</a></p>
+<h2 id="进行一些优化，即可做出不一样的地图"><a href="#进行一些优化，即可做出不一样的地图" class="headerlink" title="进行一些优化，即可做出不一样的地图"></a>进行一些优化，即可做出不一样的地图</h2><p>如下图所示：<br><img src="https://www.mmrsl.cn/download/img/html5/8.png" alt=""></p>
+<p><a href="https://www.mmrsl.cn/3droom2/">3droom2</a></p>
+<h2 id="添加obj"><a href="#添加obj" class="headerlink" title="添加obj"></a>添加obj</h2><blockquote>
+<p>对于复杂的模型，需要用软件进行建模</p>
+</blockquote>
+<p>导入OBJ格式功能需要引入ht-obj.js的插件扩展包，本手册的大部分例子由于需要读取OBJ文件，浏览器存在跨域安全的限制， 因此需要通过Web方式发布来阅读本手册，或者修改浏览器的参数，例如对于Chrome浏览器可通过增加 —allow-file-access-from-files的启动参数。<br><img src="https://www.mmrsl.cn/download/img/html5/9.png" alt=""></p>
+<p>如果不这样操作，显示出来的图片就是花的。</p>
+<h2 id="ht-3d学习资料"><a href="#ht-3d学习资料" class="headerlink" title="ht 3d学习资料"></a>ht 3d学习资料</h2><ul>
+<li><a href="https://www.hightopo.com/guide/doc/ht.widget.TreeView.html">ht 说明手册</a></li>
+<li><a href="https://www.hightopo.com/guide/guide/core/3d/ht-3d-guide.html">HT for Web 3D 手册</a></li>
+<li><a href="https://www.hightopo.com/guide/guide/core/theme/ht-theme-guide.html">HT for Web 风格手册</a></li>
+<li><a href="https://blog.csdn.net/xhload3d/article/details/52323746">https://blog.csdn.net/xhload3d/article/details/52323746</a></li>
+<li><a href="https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html">https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>html5笔记</title>
     <url>/2021/11/16/html5%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="html5笔记"><a href="#html5笔记" class="headerlink" title="html5笔记"></a>html5笔记</h1><h2 id="开发者工具VS-Code"><a href="#开发者工具VS-Code" class="headerlink" title="开发者工具VS Code"></a>开发者工具VS Code</h2><h3 id = "one">vscode插件推荐</h3>
@@ -4376,99 +4469,6 @@ if (windowWidth &gt; 768) &#123;
       </tags>
   </entry>
   <entry>
-    <title>js_web_3D_模型设计</title>
-    <url>/2021/11/18/js_web_3D_%E6%A8%A1%E5%9E%8B%E8%AE%BE%E8%AE%A1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  " ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content:  counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
-
-<h1 id="jsweb-3D模型设计"><a href="#jsweb-3D模型设计" class="headerlink" title="jsweb_3D模型设计"></a>js<em>web_3D</em>模型设计</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><pre><code>首先参考一下别人怎么做的3d模型，站在巨人的肩膀上看看要怎么操作。
-</code></pre><h3 id="chrome浏览器下的网站"><a href="#chrome浏览器下的网站" class="headerlink" title="chrome浏览器下的网站"></a>chrome浏览器下的网站</h3><p><a href="https://www.hightopo.com/demo/CementFactory/">https://www.hightopo.com/demo/CementFactory/</a><br><a href="https://www.hightopo.com/demo/3DRoom/index.html">https://www.hightopo.com/demo/3DRoom/index.html</a><br>原文链接在：<a href="https://www.cnblogs.com/xhload3d/p/8577889.html">hightopo</a></p>
-<h3 id="查看源码F12"><a href="#查看源码F12" class="headerlink" title="查看源码F12"></a>查看源码F12</h3><p>可以看到单个的js文件，除此以外看不到其他，因此<br><img src="https://www.mmrsl.cn/download/img/html5/3.png" alt=""><br>可以一行一行的下载但这样很麻烦，因此可以考虑用谷歌插件一键下载。</p>
-<h3 id="Save-All-Resources"><a href="#Save-All-Resources" class="headerlink" title="Save All Resources"></a>Save All Resources</h3><p><img src="https://www.mmrsl.cn/download/img/html5/4.png" alt=""><br><strong>使用方法：</strong><br><img src="https://www.mmrsl.cn/download/img/html5/5.png" alt=""><br>下载以后如图所示<br><img src="https://www.mmrsl.cn/download/img/html5/6.png" alt=""></p>
-<h2 id="详细阅读代码后"><a href="#详细阅读代码后" class="headerlink" title="详细阅读代码后"></a>详细阅读代码后</h2><p>可以发现以门为例：<br><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;二楼
-    HIGHT&#x3D;200
-    &#x2F;&#x2F; 创建墙体
-    var wall2 &#x3D; new ht.CSGShape();
-    wall2.setClosePath(true);
-    wall2.setTall(240);
-    wall2.setElevation(HIGHT+360);
-    wall2.setThickness(20);
-    wall2.setPoints([
-        &#123;x: -400, y: -600&#125;,
-        &#123;x: 400, y: -600&#125;,
-        &#123;x: 400, y: 600&#125;,
-        &#123;x: -400, y: 600&#125;
-    ]);
-    wall2.s(&#123;
-        &#39;shape.border.width&#39;: 20,
-        &#39;shape.border.color&#39;: &#39;#898989&#39;,
-        &#39;all.color&#39;: &#39;#5D5D5D&#39;,
-        &#39;front.color&#39;: &#39;lightgray&#39;,
-        &#39;back.color&#39;: &#39;lightgray&#39;,
-        &#39;csg.color&#39;: &#39;#DDDDDD&#39;
-    &#125;);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<blockquote>
-<p>可以设置墙的长宽高和厚度还有位置，即可制作第二层第三层直到n层的一个建筑物如图所示：</p>
-</blockquote>
-<p><img src="https://www.mmrsl.cn/download/img/html5/7.png" alt=""></p>
-<blockquote>
-<p>可以访问地址，以上述方法获取我修改后的源码：</p>
-</blockquote>
-<p><a href="https://www.mmrsl.cn/3droom/">3droom</a></p>
-<h2 id="进行一些优化，即可做出不一样的地图"><a href="#进行一些优化，即可做出不一样的地图" class="headerlink" title="进行一些优化，即可做出不一样的地图"></a>进行一些优化，即可做出不一样的地图</h2><p>如下图所示：<br><img src="https://www.mmrsl.cn/download/img/html5/8.png" alt=""></p>
-<p><a href="https://www.mmrsl.cn/3droom2/">3droom2</a></p>
-<h2 id="添加obj"><a href="#添加obj" class="headerlink" title="添加obj"></a>添加obj</h2><blockquote>
-<p>对于复杂的模型，需要用软件进行建模</p>
-</blockquote>
-<p>导入OBJ格式功能需要引入ht-obj.js的插件扩展包，本手册的大部分例子由于需要读取OBJ文件，浏览器存在跨域安全的限制， 因此需要通过Web方式发布来阅读本手册，或者修改浏览器的参数，例如对于Chrome浏览器可通过增加 —allow-file-access-from-files的启动参数。<br><img src="https://www.mmrsl.cn/download/img/html5/9.png" alt=""></p>
-<p>如果不这样操作，显示出来的图片就是花的。</p>
-<h2 id="ht-3d学习资料"><a href="#ht-3d学习资料" class="headerlink" title="ht 3d学习资料"></a>ht 3d学习资料</h2><ul>
-<li><a href="https://www.hightopo.com/guide/doc/ht.widget.TreeView.html">ht 说明手册</a></li>
-<li><a href="https://www.hightopo.com/guide/guide/core/3d/ht-3d-guide.html">HT for Web 3D 手册</a></li>
-<li><a href="https://www.hightopo.com/guide/guide/core/theme/ht-theme-guide.html">HT for Web 风格手册</a></li>
-<li><a href="https://blog.csdn.net/xhload3d/article/details/52323746">https://blog.csdn.net/xhload3d/article/details/52323746</a></li>
-<li><a href="https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html">https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html</a></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
     <title>linux_rssi_信号强度获取</title>
     <url>/2021/07/13/linux-rssi-%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6%E8%8E%B7%E5%8F%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linuxrssi信号强度获取"><a href="#linuxrssi信号强度获取" class="headerlink" title="linuxrssi信号强度获取"></a>linux<em>rssi</em>信号强度获取</h1><h2 id="测试环境中，无线网卡的接口id为wlan0"><a href="#测试环境中，无线网卡的接口id为wlan0" class="headerlink" title="测试环境中，无线网卡的接口id为wlan0"></a>测试环境中，无线网卡的接口id为wlan0</h2><h2 id="一秒周期查看无线网卡信息"><a href="#一秒周期查看无线网卡信息" class="headerlink" title="一秒周期查看无线网卡信息"></a>一秒周期查看无线网卡信息</h2><p><code>watch -n 1 cat /proc/net/wireless</code></p>
@@ -4724,36 +4724,6 @@ wlx0ccf89606c44  IEEE 802.11  ESSID:&quot;SSID&quot;
       </tags>
   </entry>
   <entry>
-    <title>linux嵌入式开发_1</title>
-    <url>/2020/07/30/linux%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91-1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux基础"><a href="#linux基础" class="headerlink" title="linux基础"></a><strong>linux基础</strong></h1><h2 id="linux是什么？"><a href="#linux是什么？" class="headerlink" title="linux是什么？"></a>linux是什么？</h2><span id="more"></span>
-<ul>
-<li>linux是一款开源操作系统，开放了整组的调用接口给程序猿进行开发和使用。linux操作系统包含内核和系统调用，并不包含应用程序。由于linux的架构继承了unix良好传统，因此越来越多的开发者选择使用linux并为之设计了许多应用级软件。</li>
-</ul>
-<h2 id="开发环境的搭建"><a href="#开发环境的搭建" class="headerlink" title="开发环境的搭建"></a>开发环境的搭建</h2><ul>
-<li>开发环境需要用到交叉开发模式，这一点书上有很详细的介绍，包括硬件环境和软件环境的构建都写的十分清楚，所以这篇文章主要是写一下我在中间遇到的一些问题以及解决方法。虚拟机的话我用的是Ubuntu18.04版本，安装虚拟机啥的网上资源很多，直接百度就行。</li>
-</ul>
-<h2 id="linux下的环境搭建"><a href="#linux下的环境搭建" class="headerlink" title="linux下的环境搭建"></a>linux下的环境搭建</h2><h3 id="1、修改Ubuntu的一些配置"><a href="#1、修改Ubuntu的一些配置" class="headerlink" title="1、修改Ubuntu的一些配置"></a>1、修改Ubuntu的一些配置</h3><ul>
-<li><p>切换国内镜像源</p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp; 在使用apt命令安装包时，因为系统自带下载源在国外服务器上，所以需要切换为国内镜像源才能提升下载速度。这里有一篇博客详细说明了如何直接根据终端命令修改其配置文件，从而达到修改下载源的目的.或者，，，，你也可以直接用Ubuntu的图形界面去修改，步骤如下： 显示应用程序-&gt;软件和更新-&gt;下载自主服务器改为其他，然后选择合适的镜像源就行了，这里我选择的是阿里的镜像源。</p>
-</li>
-<li><p>修改语言和设置汉语输入法</p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp; 懒得写，直接贴别人博客了</p>
-</li>
-</ul>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/langshi_2011/article/details/78993781">Linux Ubuntu系统设置成中文语言</a></p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/sparkstrike/article/details/81487271">Linux.Ubuntu.中文输入法设置</a></p>
-]]></content>
-      <categories>
-        <category>程序设计</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>嵌入式开发</tag>
-        <tag>鸟哥的私房菜学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux批量分发_运行_killcode</title>
     <url>/2021/11/08/linux%E6%89%B9%E9%87%8F%E5%88%86%E5%8F%91-%E8%BF%90%E8%A1%8C-killcode/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux批量分发-运行-killcode-python"><a href="#linux批量分发-运行-killcode-python" class="headerlink" title="linux批量分发_运行_killcode(python)"></a>linux批量分发_运行_killcode(python)</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>对每个可以进入linux系统设备，统一用户名和密码。<br>同时对设备进行标号如<br>xxx001-xxx010</p>
@@ -4983,6 +4953,36 @@ if __name__&#x3D;&#x3D;&#39;__main__&#39;:
       <tags>
         <tag>python</tag>
         <tag>paramiko</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux嵌入式开发_1</title>
+    <url>/2020/07/30/linux%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91-1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux基础"><a href="#linux基础" class="headerlink" title="linux基础"></a><strong>linux基础</strong></h1><h2 id="linux是什么？"><a href="#linux是什么？" class="headerlink" title="linux是什么？"></a>linux是什么？</h2><span id="more"></span>
+<ul>
+<li>linux是一款开源操作系统，开放了整组的调用接口给程序猿进行开发和使用。linux操作系统包含内核和系统调用，并不包含应用程序。由于linux的架构继承了unix良好传统，因此越来越多的开发者选择使用linux并为之设计了许多应用级软件。</li>
+</ul>
+<h2 id="开发环境的搭建"><a href="#开发环境的搭建" class="headerlink" title="开发环境的搭建"></a>开发环境的搭建</h2><ul>
+<li>开发环境需要用到交叉开发模式，这一点书上有很详细的介绍，包括硬件环境和软件环境的构建都写的十分清楚，所以这篇文章主要是写一下我在中间遇到的一些问题以及解决方法。虚拟机的话我用的是Ubuntu18.04版本，安装虚拟机啥的网上资源很多，直接百度就行。</li>
+</ul>
+<h2 id="linux下的环境搭建"><a href="#linux下的环境搭建" class="headerlink" title="linux下的环境搭建"></a>linux下的环境搭建</h2><h3 id="1、修改Ubuntu的一些配置"><a href="#1、修改Ubuntu的一些配置" class="headerlink" title="1、修改Ubuntu的一些配置"></a>1、修改Ubuntu的一些配置</h3><ul>
+<li><p>切换国内镜像源</p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp; 在使用apt命令安装包时，因为系统自带下载源在国外服务器上，所以需要切换为国内镜像源才能提升下载速度。这里有一篇博客详细说明了如何直接根据终端命令修改其配置文件，从而达到修改下载源的目的.或者，，，，你也可以直接用Ubuntu的图形界面去修改，步骤如下： 显示应用程序-&gt;软件和更新-&gt;下载自主服务器改为其他，然后选择合适的镜像源就行了，这里我选择的是阿里的镜像源。</p>
+</li>
+<li><p>修改语言和设置汉语输入法</p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp; 懒得写，直接贴别人博客了</p>
+</li>
+</ul>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/langshi_2011/article/details/78993781">Linux Ubuntu系统设置成中文语言</a></p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/sparkstrike/article/details/81487271">Linux.Ubuntu.中文输入法设置</a></p>
+]]></content>
+      <categories>
+        <category>程序设计</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>嵌入式开发</tag>
+        <tag>鸟哥的私房菜学习</tag>
       </tags>
   </entry>
   <entry>
@@ -8397,55 +8397,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </tags>
   </entry>
   <entry>
-    <title>xmu健康打卡ios快捷指令</title>
-    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
-<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
-<li>浏览器</li>
-<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
-<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
-<li>接着，选择network<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center></li>
-<li><p>找到POST，不要寻找GET</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-</li>
-<li><p>如下：<br><center>
-<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
-</li>
-</ul>
-<p>即找到了我们需要的登录网址。</p>
-<p>接下来记录 username和userpassword，依次填入ios。</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-
-<ul>
-<li>将得到的数据填入一下列表<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ul>
-<blockquote>
-<p>仅只写到这里有兴趣的自己继续探索。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>厦门大学</category>
-      </categories>
-      <tags>
-        <tag>厦门大学</tag>
-        <tag>健康打卡</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于深度强化学习的超级马里奥和飞机大战自动控制</title>
     <url>/2021/03/15/%E5%9F%BA%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5%E5%92%8C%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
@@ -8650,7 +8601,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#107;&#x70;&#64;&#109;&#109;&#x72;&#115;&#108;&#46;&#x63;&#x6e;">&#107;&#x70;&#64;&#109;&#109;&#x72;&#115;&#108;&#46;&#x63;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#x6b;&#112;&#64;&#x6d;&#x6d;&#114;&#x73;&#x6c;&#46;&#x63;&#110;">&#x6b;&#112;&#64;&#x6d;&#x6d;&#114;&#x73;&#x6c;&#46;&#x63;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -8691,6 +8642,55 @@ img {
       <tags>
         <tag>强化学习</tag>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>xmu健康打卡ios快捷指令</title>
+    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
+<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
+<li>浏览器</li>
+<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
+<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
+<li>接着，选择network<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center></li>
+<li><p>找到POST，不要寻找GET</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+</li>
+<li><p>如下：<br><center>
+<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
+</li>
+</ul>
+<p>即找到了我们需要的登录网址。</p>
+<p>接下来记录 username和userpassword，依次填入ios。</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+
+<ul>
+<li>将得到的数据填入一下列表<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ul>
+<blockquote>
+<p>仅只写到这里有兴趣的自己继续探索。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>厦门大学</category>
+      </categories>
+      <tags>
+        <tag>厦门大学</tag>
+        <tag>健康打卡</tag>
       </tags>
   </entry>
   <entry>
@@ -10138,30 +10138,31 @@ def saveCutoutLabel(name):
 <td>or</td>
 <td>\</td>
 <td>\</td>
-<td></td>
-<td></td>
-<td></td>
+<td>\</td>
+<td>\</td>
+<td>\</td>
+<td>\</td>
 </tr>
 <tr>
 <td>与</td>
 <td>and</td>
 <td>&amp;&amp;</td>
-<td></td>
-<td></td>
+<td>&amp;&amp;</td>
+<td>&amp;&amp;</td>
 </tr>
 <tr>
 <td>非</td>
 <td>not</td>
 <td>!</td>
-<td></td>
-<td></td>
+<td>!</td>
+<td>!</td>
 </tr>
 <tr>
 <td>条件语句</td>
 <td>if 条件 :  制表符 elseif 或elif:  制表符 else :  制表符</td>
 <td>if (条件){   } else if() {  } else {  }</td>
-<td></td>
-<td></td>
+<td>if(布尔表达式){   如果布尔表达式的值为true}else{  如果布尔表达式的值为false}</td>
+<td>if r == c A(r,c) = 2;       elseif abs(r-c) == 1 A(r,c) = -1;else            A(r,c) = 0;end</td>
 </tr>
 <tr>
 <td>循环语句</td>
@@ -10174,8 +10175,8 @@ def saveCutoutLabel(name):
 <td>语句之间</td>
 <td>制表符</td>
 <td>{}</td>
-<td></td>
-<td></td>
+<td>{}    ;</td>
+<td>;  end</td>
 </tr>
 <tr>
 <td>dict表</td>
