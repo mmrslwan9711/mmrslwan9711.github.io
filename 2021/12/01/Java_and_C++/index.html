@@ -569,14 +569,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5.4k
+                    9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    23 分
+                    39 分
                 </div>
                 
 
@@ -1057,8 +1057,574 @@ string str = str1 + str2;</pre>
 <tr><td>6</td><td><b>strstr(s1, s2);</b><br/>返回一个指针，指向字符串 s1 中字符串 s2 的第一次出现的位置。</td></tr>
 </table>
 
-<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><pre class="line-numbers language-none"><code class="language-none">printf(&quot;Hello World\n&quot;);
-cout &lt;&lt; &quot;Hello World&quot;; &#x2F;&#x2F; 输出 Hello World<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h4><pre class="line-numbers language-none"><code class="language-none">type *var-name;
+int    *ip;    &#x2F;* 一个整型的指针 *&#x2F;
+double *dp;    &#x2F;* 一个 double 型的指针 *&#x2F;
+float  *fp;    &#x2F;* 一个浮点型的指针 *&#x2F;
+char   *ch;    &#x2F;* 一个字符型的指针 *&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><p>引用很容易与指针混淆，它们之间有三个主要的不同：</p>
+<ol>
+<li>不存在空引用。引用必须连接到一块合法的内存。</li>
+<li>一旦引用被初始化为一个对象，就不能被指向到另一个对象。指针可以在任何时候指向到另一个对象。</li>
+<li>引用必须在创建时被初始化。指针可以在任何时间被初始化。<pre class="line-numbers language-none"><code class="language-none">int&amp;  r &#x3D; i;
+double&amp; s &#x3D; d;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="基本的输入输出"><a href="#基本的输入输出" class="headerlink" title="基本的输入输出"></a>基本的输入输出</h3>C++ 的 I/O 发生在流中，流是字节序列。如果字节流是从设备（如键盘、磁盘驱动器、网络连接等）流向内存，这叫做输入操作。如果字节流是从内存流向设备（如显示屏、打印机、磁盘驱动器、网络连接等），这叫做输出操作。<table class="reference notranslate">
+<tr><th width="20%">头文件</th><th>函数和描述</th></tr>
+<tr><td>&lt;iostream&gt;</td><td>该文件定义了 <b>cin、cout、cerr</b> 和 <b>clog</b> 对象，分别对应于标准输入流、标准输出流、非缓冲标准错误流和缓冲标准错误流。</td> </tr>
+<tr><td>&lt;iomanip&gt;</td><td>该文件通过所谓的参数化的流操纵器（比如 <b>setw</b> 和 <b>setprecision</b>），来声明对执行标准化 I/O 有用的服务。</td> </tr>
+<tr><td>&lt;fstream&gt;</td><td>该文件为用户控制的文件处理声明服务。我们将在文件和流的相关章节讨论它的细节。</td> </tr>
+</table>
+
+</li>
+</ol>
+<h4 id="标准输出流"><a href="#标准输出流" class="headerlink" title="标准输出流"></a>标准输出流</h4><pre class="line-numbers language-none"><code class="language-none">#include &lt;iostream&gt;
+using namespace std;
+printf(&quot;Hello World\n&quot;);
+cout &lt;&lt; &quot;Hello World&quot;; &#x2F;&#x2F; 输出 Hello World<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="标准输入流（cin）"><a href="#标准输入流（cin）" class="headerlink" title="标准输入流（cin）"></a>标准输入流（cin）</h4><p>预定义的对象 cin 是 iostream 类的一个实例<br><code>cin &gt;&gt; name;</code></p>
+<h4 id="标准错误流（cerr）"><a href="#标准错误流（cerr）" class="headerlink" title="标准错误流（cerr）"></a>标准错误流（cerr）</h4><p>预定义的对象 cerr 是 iostream 类的一个实例。cerr 对象附属到标准错误设备，通常也是显示屏，但是 cerr 对象是非缓冲的，且每个流插入到 cerr 都会立即输出。<br><code>cerr &lt;&lt; &quot;Error message : &quot; &lt;&lt; str &lt;&lt; endl;</code></p>
+<h4 id="标准日志流（clog）"><a href="#标准日志流（clog）" class="headerlink" title="标准日志流（clog）"></a>标准日志流（clog）</h4><p>预定义的对象 clog 是 iostream 类的一个实例。<br><code>clog &lt;&lt; &quot;Error message : &quot; &lt;&lt; str &lt;&lt; endl;</code></p>
+<h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><h4 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h4><pre class="line-numbers language-none"><code class="language-none">struct type_name &#123;
+member_type1 member_name1;
+member_type2 member_name2;
+member_type3 member_name3;
+.
+.
+&#125; object_names;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+ 
+using namespace std;
+void printBook( struct Books book );
+ 
+&#x2F;&#x2F; 声明一个结构体类型 Books 
+struct Books
+&#123;
+   char  title[50];
+   char  author[50];
+   char  subject[100];
+   int   book_id;
+&#125;;
+ 
+int main( )
+&#123;
+   Books Book1;        &#x2F;&#x2F; 定义结构体类型 Books 的变量 Book1
+   Books Book2;        &#x2F;&#x2F; 定义结构体类型 Books 的变量 Book2
+ 
+    &#x2F;&#x2F; Book1 详述
+   strcpy( Book1.title, &quot;C++ 教程&quot;);
+   strcpy( Book1.author, &quot;Runoob&quot;); 
+   strcpy( Book1.subject, &quot;编程语言&quot;);
+   Book1.book_id &#x3D; 12345;
+ 
+   &#x2F;&#x2F; Book2 详述
+   strcpy( Book2.title, &quot;CSS 教程&quot;);
+   strcpy( Book2.author, &quot;Runoob&quot;);
+   strcpy( Book2.subject, &quot;前端技术&quot;);
+   Book2.book_id &#x3D; 12346;
+ 
+   &#x2F;&#x2F; 输出 Book1 信息
+   printBook( Book1 );
+ 
+   &#x2F;&#x2F; 输出 Book2 信息
+   printBook( Book2 );
+ 
+   return 0;
+&#125;
+void printBook( struct Books book )
+&#123;
+   cout &lt;&lt; &quot;书标题 : &quot; &lt;&lt; book.title &lt;&lt;endl;
+   cout &lt;&lt; &quot;书作者 : &quot; &lt;&lt; book.author &lt;&lt;endl;
+   cout &lt;&lt; &quot;书类目 : &quot; &lt;&lt; book.subject &lt;&lt;endl;
+   cout &lt;&lt; &quot;书 ID : &quot; &lt;&lt; book.book_id &lt;&lt;endl;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="typedef-1"><a href="#typedef-1" class="headerlink" title="typedef"></a>typedef</h4><pre class="line-numbers language-none"><code class="language-none">typedef struct Books
+&#123;
+   char  title[50];
+   char  author[50];
+   char  subject[100];
+   int   book_id;
+&#125;Books;
+Books Book1, Book2;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><pre class="line-numbers language-none"><code class="language-none">#include &lt;iostream&gt;
+ 
+using namespace std;
+ 
+class Box
+&#123;
+   public:
+      double length;   &#x2F;&#x2F; 长度
+      double breadth;  &#x2F;&#x2F; 宽度
+      double height;   &#x2F;&#x2F; 高度
+      &#x2F;&#x2F; 成员函数声明
+      double get(void);
+      void set( double len, double bre, double hei );
+&#125;;
+&#x2F;&#x2F; 成员函数定义
+double Box::get(void)
+&#123;
+    return length * breadth * height;
+&#125;
+ 
+void Box::set( double len, double bre, double hei)
+&#123;
+    length &#x3D; len;
+    breadth &#x3D; bre;
+    height &#x3D; hei;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这是个很简单的类的定义，看一下就懂了。</p>
+<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; 基类
+class Animal &#123;
+    &#x2F;&#x2F; eat() 函数
+    &#x2F;&#x2F; sleep() 函数
+&#125;;
+
+
+&#x2F;&#x2F;派生类
+class Dog : public Animal &#123;
+    &#x2F;&#x2F; bark() 函数
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>当创建一个类时，您不需要重新编写新的数据成员和成员函数，只需指定新建的类继承了一个已有的类的成员即可。这个已有的类称为基类，新建的类称为派生类。</p>
+<h4 id="访问权限"><a href="#访问权限" class="headerlink" title="访问权限"></a>访问权限</h4><table class="reference notranslate">
+<tr><th  width="25%">访问</th><th  width="25%">public</th><th  width="25%">protected</th><th  width="25%">private</th></tr>
+<tr><td>同一个类</td><td>yes</td><td>yes</td><td>yes</td></tr>
+<tr><td>派生类</td><td>yes</td><td>yes</td><td>no</td></tr>
+<tr><td>外部的类</td><td>yes</td><td>no</td><td>no</td></tr>
+</table>
+一个派生类继承了所有的基类方法，但下列情况除外：
+
+- 基类的构造函数、析构函数和拷贝构造函数。
+- 基类的重载运算符。
+- 基类的友元函数。
+
+#### 多继承
+多继承即一个子类可以有多个父类，它继承了多个父类的特性。
+
+<pre class="line-numbers language-none"><code class="language-none">class &lt;派生类名&gt;:&lt;继承方式1&gt;&lt;基类名1&gt;,&lt;继承方式2&gt;&lt;基类名2&gt;,…
+&#123;
+&lt;派生类类体&gt;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+### 函数重载
+在同一个作用域内，可以声明几个功能类似的同名函数，但是这些同名函数的形式参数（指参数的个数、类型或者顺序）必须不同。您不能仅通过返回类型的不同来重载函数。
+
+<pre class="line-numbers language-none"><code class="language-none">class printData
+&#123;
+   public:
+      void print(int i) &#123;
+        cout &lt;&lt; &quot;整数为: &quot; &lt;&lt; i &lt;&lt; endl;
+      &#125;
+ 
+      void print(double  f) &#123;
+        cout &lt;&lt; &quot;浮点数为: &quot; &lt;&lt; f &lt;&lt; endl;
+      &#125;
+ 
+      void print(char c[]) &#123;
+        cout &lt;&lt; &quot;字符串为: &quot; &lt;&lt; c &lt;&lt; endl;
+      &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+#### 运算符重载
+<pre class="line-numbers language-none"><code class="language-none">Box operator+(const Box&amp;);
+Box operator+(const Box&amp;, const Box&amp;);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; 重载 + 运算符，用于把两个 Box 对象相加
+      Box operator+(const Box&amp; b)
+      &#123;
+         Box box;
+         box.length &#x3D; this-&gt;length + b.length;
+         box.breadth &#x3D; this-&gt;breadth + b.breadth;
+         box.height &#x3D; this-&gt;height + b.height;
+         return box;
+      &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+#### 可重载的运算符
+<table class="reference">
+
+<tbody>
+<tr>
+<td>
+双目算术运算符</td>
+<td>
++ (加)，-(减)，*(乘)，/(除)，%&nbsp;(取模)</td>
+</tr>
+<tr>
+<td>
+关系运算符</td>
+<td>
+==(等于)，!= (不等于)，&lt; (小于)，&gt; (大于)，&lt;=(小于等于)，&gt;=(大于等于)</td>
+</tr>
+<tr>
+<td>
+逻辑运算符</td>
+<td>
+||(逻辑或)，&amp;&amp;(逻辑与)，!(逻辑非)</td>
+</tr>
+<tr>
+<td>
+单目运算符</td>
+<td>
++ (正)，-(负)，*(指针)，&amp;(取地址)</td>
+</tr>
+<tr>
+<td>
+自增自减运算符</td>
+<td>
+++(自增)，--(自减)</td>
+</tr>
+<tr>
+<td>
+位运算符</td>
+<td>
+| (按位或)，&amp; (按位与)，~(按位取反)，^(按位异或),，&lt;&lt;&nbsp;(左移)，&gt;&gt;(右移)</td>
+</tr>
+<tr>
+<td>
+赋值运算符</td>
+<td>
+=, +=, -=, *=, /= , % = , &amp;=, |=, ^=, &lt;&lt;=, &gt;&gt;=</td>
+</tr>
+<tr>
+<td>
+空间申请与释放</td>
+<td>
+new, delete, new[ ] , delete[]</td>
+</tr>
+<tr>
+<td>
+其他运算符</td>
+<td>
+<span class="marked">()</span>(函数调用)，<span class="marked">-&gt;</span>(成员访问)，<span class="marked">,</span>(逗号)，<span class="marked">[]</span>(下标)</td>
+</tr>
+</tbody>
+</table>
+下面是不可重载的运算符列表：
+
+- `.`：成员访问运算符
+- `.*, ->*`：成员指针访问运算符
+- `::`：域运算符
+- `sizeof`：长度运算符
+- `?:`：条件运算符
+- `#`： 预处理符号
+### 多态
+多态按字面的意思就是多种形态。当类之间存在层次结构，并且类之间是通过继承关联时，就会用到多态。
+因此，由于 tri 和 rec 类的对象的地址存储在 *shape 中，所以会调用各自的 area() 函数。
+<pre class="line-numbers language-none"><code class="language-none">#include &lt;iostream&gt; 
+
+using namespace std;
+ 
+class Shape &#123;
+   protected:
+      int width, height;
+   public:
+      Shape( int a&#x3D;0, int b&#x3D;0)
+      &#123;
+         width &#x3D; a;
+         height &#x3D; b;
+      &#125;
+      virtual int area()
+      &#123;
+         cout &lt;&lt; &quot;Parent class area :&quot; &lt;&lt;endl;
+         return 0;
+      &#125;
+&#125;;
+class Rectangle: public Shape&#123;
+   public:
+      Rectangle( int a&#x3D;0, int b&#x3D;0):Shape(a, b) &#123; &#125;
+      int area ()
+      &#123; 
+         cout &lt;&lt; &quot;Rectangle class area :&quot; &lt;&lt;endl;
+         return (width * height); 
+      &#125;
+&#125;;
+class Triangle: public Shape&#123;
+   public:
+      Triangle( int a&#x3D;0, int b&#x3D;0):Shape(a, b) &#123; &#125;
+      int area ()
+      &#123; 
+         cout &lt;&lt; &quot;Triangle class area :&quot; &lt;&lt;endl;
+         return (width * height &#x2F; 2); 
+      &#125;
+&#125;;
+&#x2F;&#x2F; 程序的主函数
+int main( )
+&#123;
+   Shape *shape;
+   Rectangle rec1(10,7);
+   Triangle  tri(10,5);
+   int a;
+   &#x2F;&#x2F; 存储矩形的地址
+   shape &#x3D; &amp;rec1;
+   &#x2F;&#x2F; 调用矩形的求面积函数 area
+   shape-&gt;area();
+ 
+   &#x2F;&#x2F; 存储三角形的地址
+   shape &#x3D; &amp;tri;
+   &#x2F;&#x2F; 调用三角形的求面积函数 area
+   shape-&gt;area();
+   cin &gt;&gt; a;
+   return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+#### 虚函数
+虚函数 是在基类中使用关键字 virtual 声明的函数。在派生类中重新定义基类中定义的虚函数时，会告诉编译器不要静态链接到该函数。
+
+<pre class="line-numbers language-none"><code class="language-none">class Shape &#123;
+   protected:
+      int width, height;
+   public:
+      Shape( int a&#x3D;0, int b&#x3D;0)
+      &#123;
+         width &#x3D; a;
+         height &#x3D; b;
+      &#125;
+      &#x2F;&#x2F; pure virtual function
+      virtual int area() &#x3D; 0;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+### 数据封装
+其实质是对数据private，只能调用类内部的方法，来改变数据的值。
+<pre class="line-numbers language-none"><code class="language-none">class Box
+&#123;
+   public:
+      double getVolume(void)
+      &#123;
+         return length * breadth * height;
+      &#125;
+   private:
+      double length;      &#x2F;&#x2F; 长度
+      double breadth;     &#x2F;&#x2F; 宽度
+      double height;      &#x2F;&#x2F; 高度
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+#### C++接口（抽象类）
+<pre class="line-numbers language-none"><code class="language-none">class Box
+&#123;
+   public:
+      &#x2F;&#x2F; 纯虚函数
+      virtual double getVolume() &#x3D; 0;
+   private:
+      double length;      &#x2F;&#x2F; 长度
+      double breadth;     &#x2F;&#x2F; 宽度
+      double height;      &#x2F;&#x2F; 高度
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+C++ 接口是使用抽象类来实现的，抽象类与数据抽象互不混淆，数据抽象是一个把实现细节与相关的数据分离开的概念。
+
+### 文件和流
+<table class="reference notranslate">
+<tr>
+<th width="30%">数据类型</th>
+<th>描述</th>
+</tr>
+<tr> 
+<td>ofstream</td>
+<td>该数据类型表示输出文件流，用于创建文件并向文件写入信息。</td>
+</tr>
+<tr> 
+<td>ifstream</td>
+<td>该数据类型表示输入文件流，用于从文件读取信息。</td> 
+</tr>
+<tr> 
+<td>fstream</td>
+<td>该数据类型通常表示文件流，且同时具有 ofstream 和 ifstream 两种功能，这意味着它可以创建文件，向文件写入信息，从文件读取信息。</td> 
+</tr>
+</table>
+
+<p>在从文件读取信息或者向文件写入信息之前，必须先打开文件。ofstream 和 fstream 对象都可以用来打开文件进行写操作，如果只需要打开文件进行读操作，则使用 ifstream 对象。</p>
+<p>下面是 open() 函数的标准语法，open() 函数是 fstream、ifstream 和 ofstream 对象的一个成员。<br><code>void open(const char *filename, ios::openmode mode);</code></p>
+<table class="reference notranslate">
+<tr>
+<th width="30%">模式标志</th>
+<th>描述</th>
+</tr>
+<tr> 
+<td>ios::app</td>
+<td>追加模式。所有写入都追加到文件末尾。</td>
+</tr>
+<tr> 
+<td>ios::ate</td>
+<td>文件打开后定位到文件末尾。</td>
+</tr>
+<tr> 
+<td>ios::in</td>
+<td>打开文件用于读取。</td>
+</tr>
+<tr> 
+<td>ios::out</td>
+<td>打开文件用于写入。</td>
+</tr>
+<tr> 
+<td>ios::trunc</td>
+<td>如果该文件已经存在，其内容将在打开文件之前被截断，即把文件长度设为 0。</td>
+</tr>
+</table>
+
+<pre class="line-numbers language-none"><code class="language-none">ofstream outfile;
+outfile.open(&quot;file.dat&quot;, ios::out | ios::trunc );<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">ofstream outfile;
+outfile.open(&quot;file.dat&quot;, ios::out | ios::trunc );<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><p>C++ 异常处理涉及到三个关键字：try、catch、throw。</p>
+<ul>
+<li>throw: 当问题出现时，程序会抛出一个异常。这是通过使用 throw 关键字来完成的。</li>
+<li>catch: 在您想要处理问题的地方，通过异常处理程序捕获异常。catch 关键字用于捕获异常。</li>
+<li>try: try 块中的代码标识将被激活的特定异常。它后面通常跟着一个或多个 catch 块<pre class="line-numbers language-none"><code class="language-none">try
+&#123;
+   &#x2F;&#x2F; 保护代码
+&#125;catch( ExceptionName e1 )
+&#123;
+   &#x2F;&#x2F; catch 块
+&#125;catch( ExceptionName e2 )
+&#123;
+   &#x2F;&#x2F; catch 块
+&#125;catch( ExceptionName eN )
+&#123;
+   &#x2F;&#x2F; catch 块
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="抛出异常"><a href="#抛出异常" class="headerlink" title="抛出异常"></a>抛出异常</h4>您可以使用 throw 语句在代码块中的任何地方抛出异常。throw 语句的操作数可以是任意的表达式，表达式的结果的类型决定了抛出的异常的类型。</li>
+</ul>
+<p>以下是尝试除以零时抛出异常的实例：<br><pre class="line-numbers language-none"><code class="language-none">double division(int a, int b)
+&#123;
+   if( b &#x3D;&#x3D; 0 )
+   &#123;
+      throw &quot;Division by zero condition!&quot;;
+   &#125;
+   return (a&#x2F;b);
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h4 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h4><p>catch 块跟在 try 块后面，用于捕获异常。您可以指定想要捕捉的异常类型，这是由 catch 关键字后的括号内的异常声明决定的。<br><pre class="line-numbers language-none"><code class="language-none">try
+&#123;
+   &#x2F;&#x2F; 保护代码
+&#125;catch( ExceptionName e )
+&#123;
+  &#x2F;&#x2F; 处理 ExceptionName 异常的代码
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h3 id="信号处理"><a href="#信号处理" class="headerlink" title="信号处理"></a>信号处理</h3><p>signal() 函数<br>C++ 信号处理库提供了 signal 函数，用来捕获突发事件。以下是 signal() 函数的语法：</p>
+<p><code>void (*signal (int sig, void (*func)(int)))(int);</code><br>这个看起来有点费劲，以下语法格式更容易理解：</p>
+<p><code>signal(registered signal, signal handler)</code><br>这个函数接收两个参数：第一个参数是一个整数，代表了信号的编号；第二个参数是一个指向信号处理函数的指针。</p>
+<p>让我们编写一个简单的 C++ 程序，使用 signal() 函数捕获 SIGINT 信号。不管您想在程序中捕获什么信号，您都必须使用 signal 函数来注册信号，并将其与信号处理程序相关联。看看下面的实例：</p>
+<h3 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h3><table class="reference notranslate">
+<tr>
+<th width="25%">参数</th>
+<th>描述</th>
+</tr>
+<tr>
+<td>thread</td>
+<td>指向线程标识符指针。</td>
+</tr>
+<tr>
+<td>attr</td>
+<td>一个不透明的属性对象，可以被用来设置线程属性。您可以指定线程属性对象，也可以使用默认值 NULL。</td>
+</tr>
+<tr>
+<td>start_routine</td>
+<td>线程运行函数起始地址，一旦线程被创建就会执行。</td>
+</tr>
+<tr>
+<td>arg</td>
+<td>运行函数的参数。它必须通过把引用作为指针强制转换为 void 类型进行传递。如果没有传递参数，则使用 NULL。</td>
+</tr>
+</table>
+
+<h4 id="向线程传递参数"><a href="#向线程传递参数" class="headerlink" title="向线程传递参数"></a>向线程传递参数</h4><pre class="line-numbers language-none"><code class="language-none">#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+#include &lt;pthread.h&gt;
+ 
+using namespace std;
+ 
+#define NUM_THREADS     5
+ 
+struct thread_data&#123;
+   int  thread_id;
+   char *message;
+&#125;;
+ 
+void *PrintHello(void *threadarg)
+&#123;
+   struct thread_data *my_data;
+ 
+   my_data &#x3D; (struct thread_data *) threadarg;
+ 
+   cout &lt;&lt; &quot;Thread ID : &quot; &lt;&lt; my_data-&gt;thread_id ;
+   cout &lt;&lt; &quot; Message : &quot; &lt;&lt; my_data-&gt;message &lt;&lt; endl;
+ 
+   pthread_exit(NULL);
+&#125;
+ 
+int main ()
+&#123;
+   pthread_t threads[NUM_THREADS];
+   struct thread_data td[NUM_THREADS];
+   int rc;
+   int i;
+ 
+   for( i&#x3D;0; i &lt; NUM_THREADS; i++ )&#123;
+      cout &lt;&lt;&quot;main() : creating thread, &quot; &lt;&lt; i &lt;&lt; endl;
+      td[i].thread_id &#x3D; i;
+      td[i].message &#x3D; (char*)&quot;This is message&quot;;
+      rc &#x3D; pthread_create(&amp;threads[i], NULL,
+                          PrintHello, (void *)&amp;td[i]);
+      if (rc)&#123;
+         cout &lt;&lt; &quot;Error:unable to create thread,&quot; &lt;&lt; rc &lt;&lt; endl;
+         exit(-1);
+      &#125;
+   &#125;
+   pthread_exit(NULL);
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="std-thread"><a href="#std-thread" class="headerlink" title="std::thread"></a>std::thread</h4><p>一个可调用对象可以是以下三个中的任何一个：</p>
+<ul>
+<li>函数指针</li>
+<li>函数对象</li>
+<li>lambda 表达式<br>定义 callable 后，将其传递给 std::thread 构造函数 thread_object。<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; 演示多线程的CPP程序
+&#x2F;&#x2F; 使用三个不同的可调用对象
+#include &lt;iostream&gt;
+#include &lt;thread&gt;
+using namespace std;
+ 
+&#x2F;&#x2F; 一个虚拟函数
+void foo(int Z)
+&#123;
+    for (int i &#x3D; 0; i &lt; Z; i++) &#123;
+        cout &lt;&lt; &quot;线程使用函数指针作为可调用参数\n&quot;;
+    &#125;
+&#125;
+ 
+&#x2F;&#x2F; 可调用对象
+class thread_obj &#123;
+public:
+    void operator()(int x)
+    &#123;
+        for (int i &#x3D; 0; i &lt; x; i++)
+            cout &lt;&lt; &quot;线程使用函数对象作为可调用参数\n&quot;;
+    &#125;
+&#125;;
+ 
+int main()
+&#123;
+    cout &lt;&lt; &quot;线程 1 、2 、3 &quot;
+         &quot;独立运行&quot; &lt;&lt; endl;
+ 
+    &#x2F;&#x2F; 函数指针
+    thread th1(foo, 3);
+ 
+    &#x2F;&#x2F; 函数对象
+    thread th2(thread_obj(), 3);
+ 
+    &#x2F;&#x2F; 定义 Lambda 表达式
+    auto f &#x3D; [](int x) &#123;
+        for (int i &#x3D; 0; i &lt; x; i++)
+            cout &lt;&lt; &quot;线程使用 lambda 表达式作为可调用参数\n&quot;;
+    &#125;;
+ 
+    &#x2F;&#x2F; 线程通过使用 lambda 表达式作为可调用的参数
+    thread th3(f, 3);
+ 
+    &#x2F;&#x2F; 等待线程完成
+    &#x2F;&#x2F; 等待线程 t1 完成
+    th1.join();
+ 
+    &#x2F;&#x2F; 等待线程 t2 完成
+    th2.join();
+ 
+    &#x2F;&#x2F; 等待线程 t3 完成
+    th3.join();
+ 
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
 
                 
             </div>
@@ -1661,7 +2227,7 @@ cout &lt;&lt; &quot;Hello World&quot;; &#x2F;&#x2F; 输出 Hello World<span aria
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">109.2k</span>&nbsp;字
+                class="white-color">112.8k</span>&nbsp;字
             
             
             
