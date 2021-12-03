@@ -708,6 +708,58 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       </tags>
   </entry>
   <entry>
+    <title>Fusion360学习笔记</title>
+    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
+<pre><code>h1 &#123;
+counter-reset: subsection;
+&#125;
+h2 &#123;
+counter-reset: subsection2;
+&#125;
+h3 &#123;
+counter-reset: subsection3;
+&#125;
+h4 &#123;
+counter-reset: subsection4;
+&#125;
+h1::before &#123;
+counter-increment: section;
+content:  &quot; &quot;;
+&#125;
+
+h2::before &#123;
+counter-increment: subsection;
+content: counter(subsection) &quot; &quot;;
+&#125;
+h3::before &#123;
+counter-increment: subsection2;
+content: counter(subsection) &quot;.&quot; counter(subsection2) ;
+&#125;
+h4::before &#123;
+counter-increment: subsection3;
+content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
+&#125;
+h5::before &#123;
+counter-increment: subsection4;
+content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
+&#125;
+</code></pre><p>&lt;/style&gt;</p>
+<p><style><br>        video {<br>            width: 20%;<br>        }
+</style></p>
+<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
+<ul>
+<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
+</ul>
+<p>下载个人用途版本即可。</p>
+<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/img/html5/2.mp4"   controls="controls"></video>
+
+<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/img/html5/3.mp4"   controls="controls"></video>
+
+
+]]></content>
+  </entry>
+  <entry>
     <title>English_learning</title>
     <url>/2020/07/31/English-learning/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
@@ -819,58 +871,6 @@ If you are talking to a group of managers, you may refer to the disorganized met
         <tag>英语阅读</tag>
         <tag>markdown</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Fusion360学习笔记</title>
-    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
-<pre><code>h1 &#123;
-counter-reset: subsection;
-&#125;
-h2 &#123;
-counter-reset: subsection2;
-&#125;
-h3 &#123;
-counter-reset: subsection3;
-&#125;
-h4 &#123;
-counter-reset: subsection4;
-&#125;
-h1::before &#123;
-counter-increment: section;
-content:  &quot; &quot;;
-&#125;
-
-h2::before &#123;
-counter-increment: subsection;
-content: counter(subsection) &quot; &quot;;
-&#125;
-h3::before &#123;
-counter-increment: subsection2;
-content: counter(subsection) &quot;.&quot; counter(subsection2) ;
-&#125;
-h4::before &#123;
-counter-increment: subsection3;
-content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
-&#125;
-h5::before &#123;
-counter-increment: subsection4;
-content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
-&#125;
-</code></pre><p>&lt;/style&gt;</p>
-<p><style><br>        video {<br>            width: 20%;<br>        }
-</style></p>
-<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
-<ul>
-<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
-</ul>
-<p>下载个人用途版本即可。</p>
-<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/img/html5/2.mp4"   controls="controls"></video>
-
-<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/img/html5/3.mp4"   controls="controls"></video>
-
-
-]]></content>
   </entry>
   <entry>
     <title>LabelImg_使用</title>
@@ -1745,194 +1745,6 @@ transform_test &#x3D; transforms.Compose([
       </categories>
       <tags>
         <tag>pytorch</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux进程断连重新进入该进程方法</title>
-    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
-<ul>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
-</ul>
-<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
-<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
-<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
-<p><code>nohup python3 main.py &amp;</code></p>
-<ol>
-<li>nohup </li>
-</ol>
-<p>加在一个命令的最前面，表示不挂断的运行命令</p>
-<ol>
-<li>&amp;</li>
-</ol>
-<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
-<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
-<ol>
-<li>jobs 查看后台运行的命令</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
-[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<ol>
-<li><p>ps查看进程</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
-  PID TTY          TIME CMD
-20712 pts&#x2F;6    00:00:00 bash
-20793 pts&#x2F;6    02:49:24 python3
-22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>kill </p>
-</li>
-</ol>
-<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
-<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
-<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
-<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
-<p>将后台中的命令调至前台继续运行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
-<p>（2）Ctrl + z 命令</p>
-<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
-<p>（3）bg命令</p>
-<p>将一个在后台暂停的命令，变成在后台继续执行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
-<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
-<li>首先后台运行一个进程：</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
-<ul>
-<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
-<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
-</ul>
-<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
-<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
-<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
-<p>linux远程断联后重新进入该进程</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
-</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>研究生课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OCR_实时翻译</title>
-    <url>/2021/10/27/OCR-%E5%AE%9E%E6%97%B6%E7%BF%BB%E8%AF%91/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="OCR-实时翻译"><a href="#OCR-实时翻译" class="headerlink" title="OCR_实时翻译"></a>OCR_实时翻译</h1><ul>
-<li>采用了easyocr</li>
-<li>爬虫，调取百度翻译接口</li>
-</ul>
-<h2 id="调用屏幕接口"><a href="#调用屏幕接口" class="headerlink" title="调用屏幕接口"></a>调用屏幕接口</h2><p>调用屏幕的方法很简单：<br><pre class="line-numbers language-none"><code class="language-none">import pyautogui
-import cv2
-import numpy as np
-img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 1920, 100])  # x,y,w,h
-# img.save(&#39;screenshot.png&#39;)
-img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
-cv2.imshow(&quot;1&quot;,img)
-cv2.waitKey(0)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>但感觉效率很低，最后改成了虚拟摄像头+cap=cv2.VideoCapture(1)的方式捕获。</p>
-<h2 id="调用百度翻译接口"><a href="#调用百度翻译接口" class="headerlink" title="调用百度翻译接口"></a>调用百度翻译接口</h2><pre class="line-numbers language-none"><code class="language-none">import urllib.request
-import urllib.parse
-import json
-import pyautogui
-import cv2
-import numpy as np
-url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
-headers &#x3D; &#123;
-    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
-&#125;
-data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
-request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
-response &#x3D; urllib.request.urlopen(request)
-content &#x3D; response.read().decode(&#39;utf-8&#39;)
-obj &#x3D; json.loads(content)
-print(obj)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>这个只能做单词翻译，还需要进一步优化。</p>
-<h2 id="easyocr"><a href="#easyocr" class="headerlink" title="easyocr"></a>easyocr</h2><p>这个参考<a href="https://www.codekp.cn/2021/10/25/EasyOCR%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB/">EasyOCR光学字符识别</a></p>
-<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><blockquote>
-<p>最终实现效果，在摄像头上和屏幕截取上都进行了测试.</p>
-</blockquote>
-<h3 id="首先是摄像头"><a href="#首先是摄像头" class="headerlink" title="首先是摄像头"></a>首先是摄像头</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu2.png" alt=""></p>
-<h3 id="然后是屏幕"><a href="#然后是屏幕" class="headerlink" title="然后是屏幕"></a>然后是屏幕</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu1.png" alt=""></p>
-<h2 id="最后是源码"><a href="#最后是源码" class="headerlink" title="最后是源码"></a>最后是源码</h2><pre class="line-numbers language-none"><code class="language-none">import time
-
-import easyocr
-import ssl
-import cv2
-# from matplotlib import pyplot as plt
-
-import cv2
-import numpy as np
-from PIL import Image, ImageDraw, ImageFont
-import urllib.request
-import urllib.parse
-import json
-import pyautogui
-import cv2
-import numpy as np
-
-
-ssl._create_default_https_context &#x3D; ssl._create_unverified_context
-# 设置识别中英文两种语言
-reader &#x3D; easyocr.Reader([&#39;ch_sim&#39;, &#39;en&#39;])  # need to run only once to load model into memory
-Image3&#x3D;&#39;https:&#x2F;&#x2F;www.codekp.cn&#x2F;download&#x2F;img&#x2F;ubuntu&#x2F;NVIDIA1.png&#39;
-Image2&#x3D;r&quot;H:\blog\wan_lab\blog_2020\source\download\img\ubuntu\NVIDIA1.png&quot;
-Image4&#x3D;&quot;1.jpg&quot;
-url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
-headers &#x3D; &#123;
-    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
-&#125;
-
-
-cap&#x3D;cv2.VideoCapture(0)
-
-
-while True:
-    ret,img&#x3D;cap.read()
-    # img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 500, 500])  # x,y,w,h
-    # img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
-    cv2.imwrite(&quot;1.jpg&quot;,img)
-    result &#x3D; reader.readtext(Image4, paragraph&#x3D;&quot;False&quot;)
-
-    start&#x3D;time.time()
-    for detection in result:
-        top_left &#x3D; tuple(detection[0][0])
-        bottom_right &#x3D; tuple(detection[0][2])
-        text &#x3D; detection[1]
-        img &#x3D; cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 3)
-        img &#x3D; cv2ImgAddText(img, text, bottom_right[0], bottom_right[1], (0, 255, 0), 18)
-        data &#x3D; &#123;
-            &#39;kw&#39;: text
-        &#125;
-        data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
-        request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
-        response &#x3D; urllib.request.urlopen(request)
-        content &#x3D; response.read().decode(&#39;utf-8&#39;)
-        obj &#x3D; json.loads(content)
-        print(obj)
-        try:
-            text2 &#x3D; str(obj[&#39;data&#39;][0][&#39;v&#39;])
-            img &#x3D; cv2ImgAddText(img, text2, bottom_right[0], bottom_right[1]+20, (0, 255, 0), 18)
-        except:
-            pass
-    cv2.imshow(&quot;1&quot;,img)
-    cv2.waitKey(1)
-    print((time.time()-start)*1000)
-capture.release()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><pre><code>将百度翻译的内容，和原始图像显示出来并列到一起就有了一个比较完整的东西。
-</code></pre><p><img src="https://www.codekp.cn/download/img/baidu/baidu3.png" alt=""></p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>OCR</tag>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -4469,6 +4281,194 @@ public class TestThread &#123;
       <tags>
         <tag>java</tag>
         <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux进程断连重新进入该进程方法</title>
+    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
+<ul>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
+</ul>
+<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
+<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
+<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
+<p><code>nohup python3 main.py &amp;</code></p>
+<ol>
+<li>nohup </li>
+</ol>
+<p>加在一个命令的最前面，表示不挂断的运行命令</p>
+<ol>
+<li>&amp;</li>
+</ol>
+<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
+<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
+<ol>
+<li>jobs 查看后台运行的命令</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
+[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ol>
+<li><p>ps查看进程</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
+  PID TTY          TIME CMD
+20712 pts&#x2F;6    00:00:00 bash
+20793 pts&#x2F;6    02:49:24 python3
+22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>kill </p>
+</li>
+</ol>
+<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
+<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
+<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
+<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
+<p>将后台中的命令调至前台继续运行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
+<p>（2）Ctrl + z 命令</p>
+<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
+<p>（3）bg命令</p>
+<p>将一个在后台暂停的命令，变成在后台继续执行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
+<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
+<li>首先后台运行一个进程：</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
+<ul>
+<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
+<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
+</ul>
+<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
+<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
+<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
+<p>linux远程断联后重新进入该进程</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
+</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>研究生课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>OCR_实时翻译</title>
+    <url>/2021/10/27/OCR-%E5%AE%9E%E6%97%B6%E7%BF%BB%E8%AF%91/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="OCR-实时翻译"><a href="#OCR-实时翻译" class="headerlink" title="OCR_实时翻译"></a>OCR_实时翻译</h1><ul>
+<li>采用了easyocr</li>
+<li>爬虫，调取百度翻译接口</li>
+</ul>
+<h2 id="调用屏幕接口"><a href="#调用屏幕接口" class="headerlink" title="调用屏幕接口"></a>调用屏幕接口</h2><p>调用屏幕的方法很简单：<br><pre class="line-numbers language-none"><code class="language-none">import pyautogui
+import cv2
+import numpy as np
+img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 1920, 100])  # x,y,w,h
+# img.save(&#39;screenshot.png&#39;)
+img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
+cv2.imshow(&quot;1&quot;,img)
+cv2.waitKey(0)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>但感觉效率很低，最后改成了虚拟摄像头+cap=cv2.VideoCapture(1)的方式捕获。</p>
+<h2 id="调用百度翻译接口"><a href="#调用百度翻译接口" class="headerlink" title="调用百度翻译接口"></a>调用百度翻译接口</h2><pre class="line-numbers language-none"><code class="language-none">import urllib.request
+import urllib.parse
+import json
+import pyautogui
+import cv2
+import numpy as np
+url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
+headers &#x3D; &#123;
+    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
+&#125;
+data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
+request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
+response &#x3D; urllib.request.urlopen(request)
+content &#x3D; response.read().decode(&#39;utf-8&#39;)
+obj &#x3D; json.loads(content)
+print(obj)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这个只能做单词翻译，还需要进一步优化。</p>
+<h2 id="easyocr"><a href="#easyocr" class="headerlink" title="easyocr"></a>easyocr</h2><p>这个参考<a href="https://www.codekp.cn/2021/10/25/EasyOCR%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB/">EasyOCR光学字符识别</a></p>
+<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><blockquote>
+<p>最终实现效果，在摄像头上和屏幕截取上都进行了测试.</p>
+</blockquote>
+<h3 id="首先是摄像头"><a href="#首先是摄像头" class="headerlink" title="首先是摄像头"></a>首先是摄像头</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu2.png" alt=""></p>
+<h3 id="然后是屏幕"><a href="#然后是屏幕" class="headerlink" title="然后是屏幕"></a>然后是屏幕</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu1.png" alt=""></p>
+<h2 id="最后是源码"><a href="#最后是源码" class="headerlink" title="最后是源码"></a>最后是源码</h2><pre class="line-numbers language-none"><code class="language-none">import time
+
+import easyocr
+import ssl
+import cv2
+# from matplotlib import pyplot as plt
+
+import cv2
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+import urllib.request
+import urllib.parse
+import json
+import pyautogui
+import cv2
+import numpy as np
+
+
+ssl._create_default_https_context &#x3D; ssl._create_unverified_context
+# 设置识别中英文两种语言
+reader &#x3D; easyocr.Reader([&#39;ch_sim&#39;, &#39;en&#39;])  # need to run only once to load model into memory
+Image3&#x3D;&#39;https:&#x2F;&#x2F;www.codekp.cn&#x2F;download&#x2F;img&#x2F;ubuntu&#x2F;NVIDIA1.png&#39;
+Image2&#x3D;r&quot;H:\blog\wan_lab\blog_2020\source\download\img\ubuntu\NVIDIA1.png&quot;
+Image4&#x3D;&quot;1.jpg&quot;
+url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
+headers &#x3D; &#123;
+    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
+&#125;
+
+
+cap&#x3D;cv2.VideoCapture(0)
+
+
+while True:
+    ret,img&#x3D;cap.read()
+    # img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 500, 500])  # x,y,w,h
+    # img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
+    cv2.imwrite(&quot;1.jpg&quot;,img)
+    result &#x3D; reader.readtext(Image4, paragraph&#x3D;&quot;False&quot;)
+
+    start&#x3D;time.time()
+    for detection in result:
+        top_left &#x3D; tuple(detection[0][0])
+        bottom_right &#x3D; tuple(detection[0][2])
+        text &#x3D; detection[1]
+        img &#x3D; cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 3)
+        img &#x3D; cv2ImgAddText(img, text, bottom_right[0], bottom_right[1], (0, 255, 0), 18)
+        data &#x3D; &#123;
+            &#39;kw&#39;: text
+        &#125;
+        data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
+        request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
+        response &#x3D; urllib.request.urlopen(request)
+        content &#x3D; response.read().decode(&#39;utf-8&#39;)
+        obj &#x3D; json.loads(content)
+        print(obj)
+        try:
+            text2 &#x3D; str(obj[&#39;data&#39;][0][&#39;v&#39;])
+            img &#x3D; cv2ImgAddText(img, text2, bottom_right[0], bottom_right[1]+20, (0, 255, 0), 18)
+        except:
+            pass
+    cv2.imshow(&quot;1&quot;,img)
+    cv2.waitKey(1)
+    print((time.time()-start)*1000)
+capture.release()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><pre><code>将百度翻译的内容，和原始图像显示出来并列到一起就有了一个比较完整的东西。
+</code></pre><p><img src="https://www.codekp.cn/download/img/baidu/baidu3.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>OCR</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -9259,6 +9259,28 @@ if __name__ &#x3D;&#x3D; &quot;__main__&quot;:
 ]]></content>
   </entry>
   <entry>
+    <title>network map</title>
+    <url>/2021/04/14/nmap/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>network map</category>
+      </categories>
+      <tags>
+        <tag>nmap</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>openwrt_树莓派_mesh自组织网络</title>
     <url>/2021/11/06/openwrt-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="openwrt-树莓派-mesh自组织网络"><a href="#openwrt-树莓派-mesh自组织网络" class="headerlink" title="openwrt_树莓派_mesh自组织网络"></a>openwrt_树莓派_mesh自组织网络</h1><h2 id="openwrt"><a href="#openwrt" class="headerlink" title="openwrt"></a>openwrt</h2><ul>
@@ -9639,28 +9661,6 @@ im_show.save(&#39;result.jpg&#39;)<span aria-hidden="true" class="line-numbers-r
       <tags>
         <tag>OCR</tag>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>network map</title>
-    <url>/2021/04/14/nmap/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>network map</category>
-      </categories>
-      <tags>
-        <tag>nmap</tag>
       </tags>
   </entry>
   <entry>
@@ -11137,7 +11137,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#107;&#x70;&#x40;&#x6d;&#x6d;&#114;&#x73;&#108;&#x2e;&#99;&#110;">&#107;&#x70;&#x40;&#x6d;&#x6d;&#114;&#x73;&#108;&#x2e;&#99;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x6b;&#x70;&#x40;&#x6d;&#109;&#114;&#x73;&#x6c;&#x2e;&#x63;&#x6e;">&#x6b;&#x70;&#x40;&#x6d;&#109;&#114;&#x73;&#x6c;&#x2e;&#x63;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -11282,180 +11282,6 @@ img {
       </categories>
       <tags>
         <tag>安卓APP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>强化学习</title>
-    <url>/2020/11/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Q-learning入门例程及Python实现"><a href="#Q-learning入门例程及Python实现" class="headerlink" title="Q-learning入门例程及Python实现"></a><center>Q-learning入门例程及Python实现</center></h1><p><strong>摘要：Q-learning算法是一种以马尔科夫决策作为理论基础与模型无关的强化学习算法。本文中会描述一个入门级强化学习例程，即房间连通性问题：根据房间的连通性与否及房间出口构建回报矩阵R。并通过python语言利用强化学习算法获得该场景下的评估矩阵Q，最后利用Q矩阵寻找最优路径。</strong><br><span id="more"></span></p>
-<p>关键词：Q-learning；R矩阵；Q矩阵；最优路径决策</p>
-<h2 id="一、从马尔科夫过程到Q学习"><a href="#一、从马尔科夫过程到Q学习" class="headerlink" title="一、从马尔科夫过程到Q学习"></a>一、从马尔科夫过程到Q学习</h2><p>标准的马尔科夫决策过程可以用一个五元组\<S,A,P,R,γ\> 表示，其中：</p>
-<ul>
-<li><p>S是一个离散有界的状态空间；</p>
-</li>
-<li><p>A是一个离散的动作空间；</p>
-</li>
-<li><p>P为状态转移概率函数，表示agent在状态s下选取动作a后转移到a’的概率；</p>
-</li>
-<li><p>R为回报函数，用于计算agent由当前状态 选取动作 后转移到下一状态<br>得到的立即回报值，由当前状态和选取的动作决定，体现了马尔科夫性的特点；</p>
-</li>
-<li><p>γ是折扣因子，用于确定延迟回报与立即回报的相对比例，<br>越大表明延迟回报的重要程度越高。</p>
-</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/2019092420285149.png" width = "200" height = "40" alt="图片名称" align=center /></p>
-<p>马尔科夫决策问题的目标是找到一个策略<br>，使其回报函数的长期累积值的数学期望最大。其中，策略π只和状态相关，与时间无关（静态的）。<img src="https://img-blog.csdnimg.cn/20190924203953879.png" width = "15" height = "15" alt="图片名称" align=center />是t时刻的环境状态，<img src="https://img-blog.csdnimg.cn/20190924204015148.png" width = "15" height = "15" alt="图片名称" align=center />是t时刻选择的动作。根据Bellman最优准则，得到最优策略 对应的最优指标为：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924203036514.png" width = "200" height = "40" alt="图片名称" align=center /></p>
-<p>其中，R(s,a)为r(st,at)的数学期望，<img src="https://img-blog.csdnimg.cn/20190924203122905.png" width = "45" height = "20" alt="图片名称" align=center />为在状态s下选取动作a后转移到下一状态状态s’的概率。由于某些环境中状态之间的转移概率P不容易获得，直接学习<img src="https://img-blog.csdnimg.cn/20190924203205467.png" width = "60" height = "20" alt="图片名称" align=center />是很困难的，而Q学习不需要获取转移概率P，因而可用来解决此类具有马尔科夫性的问题。</p>
-<p>Q学习是一种与环境无关的算法，是一种基于数值迭代的动态规划方法。定义一个Q函数作为评估函数：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924203315691.png" width = "200" height = "30" alt="图片名称" align=center /></p>
-<p>评估函数Q(s,a)的函数值是从状态s开始选择第一个动作a执行后获得的最大累积回报的折算值，通俗地说，Q值等于立即回报值r(s,a)<br>加上遵循最优策略的折算值，此时的最优策略可改写为：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924203357997.png" width = "200" height = "30" alt="图片名称" align=center /></p>
-<p>该策略表达式的意义在于：如果agent用Q函数代替<img src="https://img-blog.csdnimg.cn/20190924204358289.png" width = "15" height = "15" alt="图片名称" align=center />函数，就可以不考虑转移概率P，只考虑当前状态s的所有可供选择的动作a，并从中选出使Q(s,a)最大的动作，即agent对当前状态的部分Q值做出多次反应，便可以选出动作序列，使全局最优化。</p>
-<p>在Q学习中，agent由初始状态转移到目标状态的过程称为“Episode”，即“场景”。Q函数可以表示为以下的迭代形式进行Q矩阵的更新：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924203447849.png" width = "300" height = "30" alt="图片名称" align=center /></p>
-<p>在每一步的迭代中，上式又可写为：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924203502753.png" width = "300" height = "30" alt="图片名称" align=center /></p>
-<p>即Q矩阵(st,at)位置元素的值等于回报函数R的相应值加上折扣因子γ乘以转换到下一个状态后最大的Q值。</p>
-<p>上述的Q学习算法可以看出，当划分的状态有限时，每一场景开始时随机选择的初始状态s在算法的指导下探索环境，最终一定可以到达目标状态s*，回报函数R(s,a)是有界的，并且动作的选择能够使每个状态映射到动作对的访问是无限频率，则整个学习过程就能够训练出来。</p>
-<p>Q学习通过对环境的不断探索，积累历史经验，agent通过不断试错来强化自身，最终可以达到自主选择最优动作的目标，即不论出于何种状态，都可给出到达目标状态的最优选择路径，该算法中环境和动作相互影响，动作的选择影响环境状态，环境也可以通过强化回报函数<br>来反馈动作的优劣性，影响动作的选择。</p>
-<h2 id="二、由一个广为流传的小例子了解Q学习的算法逻辑"><a href="#二、由一个广为流传的小例子了解Q学习的算法逻辑" class="headerlink" title="二、由一个广为流传的小例子了解Q学习的算法逻辑"></a>二、由一个广为流传的小例子了解Q学习的算法逻辑</h2><p>一个由门连接的建筑物中有五个房间，如下图所示，分别用0-4号标识，将外界看作一个大房间，同样标识为5。</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924205406684.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsbV9weQ==,size_16,color_FFFFFF,t_70" width = "400" height = "200" alt="图片名称" align=center /></p>
-<p>每个房间代表一个节点，门代表连线，可以将上图抽象为下面这样：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924205532752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsbV9weQ==,size_16,color_FFFFFF,t_70" width = "400" height = "200" alt="图片名称" align=center /><br>agent会被随机放置在任意一个房间里，然后从那个房间出发，一直走到建筑外（即5号房间为目标房间）。门是双向的，所以相邻节点间是双向箭头连接。通过门可以立即得到奖励值100，通过其他门奖励值为0。将所有箭头标注奖励值如下图：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190925124638361.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsbV9weQ==,size_16,color_FFFFFF,t_70" width = "400" height = "200" alt="图片名称" align=center /></p>
-<p>在Q学习中，目标是达到奖励最高的状态，所以如果agent到达目标，它将永远在那里。这种类型的目标被称为“吸收目标”。</p>
-<p>想象一下，我们的agent是一个想象的虚拟机器人，可以通过经验学习。<br>agent可以从一个房间转移到另一个房间，但它没有上帝视角，也不知道哪一扇门通向外面。</p>
-<p>按照第一部分Q学习的理论，我们把每个房间抽象为一个状态，选择进入哪号房间作为动作，把状态图和即时奖励值放到下面的奖励值表“回报矩阵R”中：-1表示不可选择的动作，两个状态间没有连接）</p>
-<pre class="line-numbers language-none"><code class="language-none">R &#x3D; np.matrix([[-1, -1, -1, -1, 0, -1],  
-[-1, -1, -1, 0, -1, 100],  
-[-1, -1, -1, 0, -1, -1],  
-[-1, 0, 0, -1, 0, -1],  
-[ 0, -1, -1, 0, -1, 100],  
-[-1, 0, -1, -1, 0, 100]])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>现在我们将添加一个类似的矩阵“Q”给我们agent的大脑，代表了通过经验学到的东西的记忆。<br>矩阵Q的行表示agent的当前状态，列表示导致下一个状态的可能动作（节点之间的连线）。</p>
-<p>agent开始什么都不知道，矩阵Q被初始化为零。<br>在这个例子中，为了解释简单，我们假设状态的数目是已知的（六个，0-5）。<br>如果我们不知道涉及多少个状态，矩阵Q可能从只有一个元素开始。<br>如果找到新的状态，则在矩阵Q中添加更多的列和行是一项简单的任务。</p>
-<p>Q学习的更新规则如下：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924203502753.png" width = "200" height = "30" alt="图片名称" align=center /></p>
-<p>根据这个公式，分配给矩阵Q的特定元素的值等于矩阵R中相应值加上学习参数γ乘以下一状态下所有可能动作的Q的最大值。</p>
-<p>基于算法思想，训练Q矩阵的具体流程如下：</p>
-<ul>
-<li><p>步骤1.初始化仓库环境和算法参数（最大训练周期数，每一场景即为一个周期，折扣因子γ，即时回报函数R和评估矩阵Q。）。</p>
-</li>
-<li><p>步骤2.随机选择一个初始状态s，若s=s*，则结束此场景，重新选择初始状态。</p>
-</li>
-<li><p>步骤3.在当前状态s的所有可能动作中随机选择一个动作a，选择每一动作的概率相等。</p>
-</li>
-<li><p>步骤4.当前状态s选取动作a后到达状态s’。</p>
-</li>
-<li><p>步骤5.使用公式对Q矩阵进行更新。</p>
-</li>
-<li><p>步骤6.设置下一状态为当前状态，s=s‘。若s未达到目标状态，则转步骤3。</p>
-</li>
-<li><p>步骤7.如果算法未达到最大训练周期数，转步骤2进入下一场景。否则结束训练，此时得到训练完毕的收敛Q矩阵。</p>
-</li>
-</ul>
-<p>上面的流程是给agent用来学习经验的。 每一场景都相当于一个培训课程。<br>在每个培训课程中, agent将探索环境 (由矩阵R表示), 接收奖励 (如果有),<br>直到达到目标状态。训练的目的是提高我们的agent的 “大脑”（矩阵 Q）。<br>场景越多，Q矩阵越优化。 在这种情况下, 如果矩阵 Q<br>得到了增强,四处探索时并不会在同一个房间进进出出,<br>agent将找到最快的路线到达目标状态。</p>
-<p>参数γ的范围为0到1（0 \&lt;= γ\&lt; 1）。<br>如果γ接近零，agent将倾向于只考虑立即得到奖励值。<br>如果γ更接近1，那么agent将会考虑更多的权重，愿意延迟得到奖励。</p>
-<p>一旦矩阵Q足够接近收敛状态，我们知道我们的agent已经学习了任意状态到达目标状态的最佳路径。</p>
-<p>例如：</p>
-<ul>
-<li><p>从初始状态2开始，agent可以使用矩阵Q作为指导,从状态2开始，最大Q值表示选择进入状态3的动作。</p>
-</li>
-<li><p>从状态3开始，最大Q值表示有两种并列最优选择：进入状态1或4。假设我们任意选择去1。</p>
-</li>
-<li><p>从状态1开始，最大Q值表示选择进入状态5的动作。</p>
-</li>
-<li><p>因此，最优策略是2 - 3 - 1 - 5。</p>
-</li>
-</ul>
-<p>我们使用Python为训练agent编写代码：<br><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">import numpy as np  
-import random  
-  
-\# 初始化矩阵  
-Q &#x3D; np.zeros((6, 6))  
-Q &#x3D; np.matrix(Q)  
-  
-def wan_find(list, col, list2):  
-col_max &#x3D; 0  
-col_y &#x3D; 0  
-col&#x3D;col  
-\# a &#x3D; np.linspace(0, 5, 5);  
-  
-for i in [0, 1, 2, 3, 4, 5]:  
-if col_max \&lt; list[i, col] and (i not in list2):  
-col_y &#x3D; i  
-col_max &#x3D; list[i, col]  
-  
-return col_y, col_max  
-  
-\# 回报矩阵R  
-R &#x3D; np.matrix([[-1, -1, -1, -1, 0, -1],  
-[-1, -1, -1, 0, -1, 100],  
-[-1, -1, -1, 0, -1, -1],  
-[-1, 0, 0, -1, 0, -1],  
-[ 0, -1, -1, 0, -1, 100],  
-[-1, 0, -1, -1, 0, 100]])  
-  
-\# 设立学习参数  
-γ &#x3D; 0.8  
-  
-\# 训练  
-for i in range(2000):  
-\# 对每一个训练,随机选择一种状态  
-state &#x3D; random.randint(0, 5)  
-while True:  
-\# 选择当前状态下的所有可能动作  
-r_pos_action &#x3D; []  
-for action in range(6):  
-if R[state, action] \&gt;&#x3D; 0:  
-r_pos_action.append(action)  
-  
-next_state &#x3D; r_pos_action[random.randint(0, len(r_pos_action) - 1)]  
-Q[state, next_state] &#x3D; R[state, next_state] + γ \* (Q[next_state]).max() \# 更新  
-state &#x3D; next_state  
-\# 状态4位最优库存状态  
-if state &#x3D;&#x3D; 5:  
-break  
-  
-Q1&#x3D;np.zeros((6, 6))  
-Q1&#x3D;Q&#x2F;Q.max();  
-print(Q1)  
-\#frist_place &#x3D; input(&quot;请输入在那个地方:&quot;)  
-\#while frist_place!&#x3D;5 :  
-  
-next_place &#x3D; int(input(&#39;初始房间号&#39;))  
-list2 &#x3D; [next_place]  
-while next_place !&#x3D; 5:  
-next_place, value &#x3D; wan_find(Q1, next_place, list2)  
-list2.append(next_place)  
-print(list2)
-
-运行结果为：
-
-[[0. 0. 0. 0. 0.8 0. ]
-
-[0. 0. 0. 0.64 0. 1. ]
-
-[0. 0. 0. 0.64 0. 0. ]
-
-[0. 0.8 0.512 0. 0.8 0. ]
-
-[0.64 0. 0. 0.64 0. 1. ]
-
-[0. 0.8 0. 0. 0.8 1. ]]
-
-初始房间号2
-
-[2, 3, 1, 5]
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>matlab</tag>
-        <tag>强化学习</tag>
       </tags>
   </entry>
   <entry>
@@ -11744,6 +11570,180 @@ print(list2)
       </tags>
   </entry>
   <entry>
+    <title>强化学习</title>
+    <url>/2020/11/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Q-learning入门例程及Python实现"><a href="#Q-learning入门例程及Python实现" class="headerlink" title="Q-learning入门例程及Python实现"></a><center>Q-learning入门例程及Python实现</center></h1><p><strong>摘要：Q-learning算法是一种以马尔科夫决策作为理论基础与模型无关的强化学习算法。本文中会描述一个入门级强化学习例程，即房间连通性问题：根据房间的连通性与否及房间出口构建回报矩阵R。并通过python语言利用强化学习算法获得该场景下的评估矩阵Q，最后利用Q矩阵寻找最优路径。</strong><br><span id="more"></span></p>
+<p>关键词：Q-learning；R矩阵；Q矩阵；最优路径决策</p>
+<h2 id="一、从马尔科夫过程到Q学习"><a href="#一、从马尔科夫过程到Q学习" class="headerlink" title="一、从马尔科夫过程到Q学习"></a>一、从马尔科夫过程到Q学习</h2><p>标准的马尔科夫决策过程可以用一个五元组\<S,A,P,R,γ\> 表示，其中：</p>
+<ul>
+<li><p>S是一个离散有界的状态空间；</p>
+</li>
+<li><p>A是一个离散的动作空间；</p>
+</li>
+<li><p>P为状态转移概率函数，表示agent在状态s下选取动作a后转移到a’的概率；</p>
+</li>
+<li><p>R为回报函数，用于计算agent由当前状态 选取动作 后转移到下一状态<br>得到的立即回报值，由当前状态和选取的动作决定，体现了马尔科夫性的特点；</p>
+</li>
+<li><p>γ是折扣因子，用于确定延迟回报与立即回报的相对比例，<br>越大表明延迟回报的重要程度越高。</p>
+</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/2019092420285149.png" width = "200" height = "40" alt="图片名称" align=center /></p>
+<p>马尔科夫决策问题的目标是找到一个策略<br>，使其回报函数的长期累积值的数学期望最大。其中，策略π只和状态相关，与时间无关（静态的）。<img src="https://img-blog.csdnimg.cn/20190924203953879.png" width = "15" height = "15" alt="图片名称" align=center />是t时刻的环境状态，<img src="https://img-blog.csdnimg.cn/20190924204015148.png" width = "15" height = "15" alt="图片名称" align=center />是t时刻选择的动作。根据Bellman最优准则，得到最优策略 对应的最优指标为：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924203036514.png" width = "200" height = "40" alt="图片名称" align=center /></p>
+<p>其中，R(s,a)为r(st,at)的数学期望，<img src="https://img-blog.csdnimg.cn/20190924203122905.png" width = "45" height = "20" alt="图片名称" align=center />为在状态s下选取动作a后转移到下一状态状态s’的概率。由于某些环境中状态之间的转移概率P不容易获得，直接学习<img src="https://img-blog.csdnimg.cn/20190924203205467.png" width = "60" height = "20" alt="图片名称" align=center />是很困难的，而Q学习不需要获取转移概率P，因而可用来解决此类具有马尔科夫性的问题。</p>
+<p>Q学习是一种与环境无关的算法，是一种基于数值迭代的动态规划方法。定义一个Q函数作为评估函数：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924203315691.png" width = "200" height = "30" alt="图片名称" align=center /></p>
+<p>评估函数Q(s,a)的函数值是从状态s开始选择第一个动作a执行后获得的最大累积回报的折算值，通俗地说，Q值等于立即回报值r(s,a)<br>加上遵循最优策略的折算值，此时的最优策略可改写为：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924203357997.png" width = "200" height = "30" alt="图片名称" align=center /></p>
+<p>该策略表达式的意义在于：如果agent用Q函数代替<img src="https://img-blog.csdnimg.cn/20190924204358289.png" width = "15" height = "15" alt="图片名称" align=center />函数，就可以不考虑转移概率P，只考虑当前状态s的所有可供选择的动作a，并从中选出使Q(s,a)最大的动作，即agent对当前状态的部分Q值做出多次反应，便可以选出动作序列，使全局最优化。</p>
+<p>在Q学习中，agent由初始状态转移到目标状态的过程称为“Episode”，即“场景”。Q函数可以表示为以下的迭代形式进行Q矩阵的更新：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924203447849.png" width = "300" height = "30" alt="图片名称" align=center /></p>
+<p>在每一步的迭代中，上式又可写为：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924203502753.png" width = "300" height = "30" alt="图片名称" align=center /></p>
+<p>即Q矩阵(st,at)位置元素的值等于回报函数R的相应值加上折扣因子γ乘以转换到下一个状态后最大的Q值。</p>
+<p>上述的Q学习算法可以看出，当划分的状态有限时，每一场景开始时随机选择的初始状态s在算法的指导下探索环境，最终一定可以到达目标状态s*，回报函数R(s,a)是有界的，并且动作的选择能够使每个状态映射到动作对的访问是无限频率，则整个学习过程就能够训练出来。</p>
+<p>Q学习通过对环境的不断探索，积累历史经验，agent通过不断试错来强化自身，最终可以达到自主选择最优动作的目标，即不论出于何种状态，都可给出到达目标状态的最优选择路径，该算法中环境和动作相互影响，动作的选择影响环境状态，环境也可以通过强化回报函数<br>来反馈动作的优劣性，影响动作的选择。</p>
+<h2 id="二、由一个广为流传的小例子了解Q学习的算法逻辑"><a href="#二、由一个广为流传的小例子了解Q学习的算法逻辑" class="headerlink" title="二、由一个广为流传的小例子了解Q学习的算法逻辑"></a>二、由一个广为流传的小例子了解Q学习的算法逻辑</h2><p>一个由门连接的建筑物中有五个房间，如下图所示，分别用0-4号标识，将外界看作一个大房间，同样标识为5。</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924205406684.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsbV9weQ==,size_16,color_FFFFFF,t_70" width = "400" height = "200" alt="图片名称" align=center /></p>
+<p>每个房间代表一个节点，门代表连线，可以将上图抽象为下面这样：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924205532752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsbV9weQ==,size_16,color_FFFFFF,t_70" width = "400" height = "200" alt="图片名称" align=center /><br>agent会被随机放置在任意一个房间里，然后从那个房间出发，一直走到建筑外（即5号房间为目标房间）。门是双向的，所以相邻节点间是双向箭头连接。通过门可以立即得到奖励值100，通过其他门奖励值为0。将所有箭头标注奖励值如下图：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190925124638361.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsbV9weQ==,size_16,color_FFFFFF,t_70" width = "400" height = "200" alt="图片名称" align=center /></p>
+<p>在Q学习中，目标是达到奖励最高的状态，所以如果agent到达目标，它将永远在那里。这种类型的目标被称为“吸收目标”。</p>
+<p>想象一下，我们的agent是一个想象的虚拟机器人，可以通过经验学习。<br>agent可以从一个房间转移到另一个房间，但它没有上帝视角，也不知道哪一扇门通向外面。</p>
+<p>按照第一部分Q学习的理论，我们把每个房间抽象为一个状态，选择进入哪号房间作为动作，把状态图和即时奖励值放到下面的奖励值表“回报矩阵R”中：-1表示不可选择的动作，两个状态间没有连接）</p>
+<pre class="line-numbers language-none"><code class="language-none">R &#x3D; np.matrix([[-1, -1, -1, -1, 0, -1],  
+[-1, -1, -1, 0, -1, 100],  
+[-1, -1, -1, 0, -1, -1],  
+[-1, 0, 0, -1, 0, -1],  
+[ 0, -1, -1, 0, -1, 100],  
+[-1, 0, -1, -1, 0, 100]])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>现在我们将添加一个类似的矩阵“Q”给我们agent的大脑，代表了通过经验学到的东西的记忆。<br>矩阵Q的行表示agent的当前状态，列表示导致下一个状态的可能动作（节点之间的连线）。</p>
+<p>agent开始什么都不知道，矩阵Q被初始化为零。<br>在这个例子中，为了解释简单，我们假设状态的数目是已知的（六个，0-5）。<br>如果我们不知道涉及多少个状态，矩阵Q可能从只有一个元素开始。<br>如果找到新的状态，则在矩阵Q中添加更多的列和行是一项简单的任务。</p>
+<p>Q学习的更新规则如下：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924203502753.png" width = "200" height = "30" alt="图片名称" align=center /></p>
+<p>根据这个公式，分配给矩阵Q的特定元素的值等于矩阵R中相应值加上学习参数γ乘以下一状态下所有可能动作的Q的最大值。</p>
+<p>基于算法思想，训练Q矩阵的具体流程如下：</p>
+<ul>
+<li><p>步骤1.初始化仓库环境和算法参数（最大训练周期数，每一场景即为一个周期，折扣因子γ，即时回报函数R和评估矩阵Q。）。</p>
+</li>
+<li><p>步骤2.随机选择一个初始状态s，若s=s*，则结束此场景，重新选择初始状态。</p>
+</li>
+<li><p>步骤3.在当前状态s的所有可能动作中随机选择一个动作a，选择每一动作的概率相等。</p>
+</li>
+<li><p>步骤4.当前状态s选取动作a后到达状态s’。</p>
+</li>
+<li><p>步骤5.使用公式对Q矩阵进行更新。</p>
+</li>
+<li><p>步骤6.设置下一状态为当前状态，s=s‘。若s未达到目标状态，则转步骤3。</p>
+</li>
+<li><p>步骤7.如果算法未达到最大训练周期数，转步骤2进入下一场景。否则结束训练，此时得到训练完毕的收敛Q矩阵。</p>
+</li>
+</ul>
+<p>上面的流程是给agent用来学习经验的。 每一场景都相当于一个培训课程。<br>在每个培训课程中, agent将探索环境 (由矩阵R表示), 接收奖励 (如果有),<br>直到达到目标状态。训练的目的是提高我们的agent的 “大脑”（矩阵 Q）。<br>场景越多，Q矩阵越优化。 在这种情况下, 如果矩阵 Q<br>得到了增强,四处探索时并不会在同一个房间进进出出,<br>agent将找到最快的路线到达目标状态。</p>
+<p>参数γ的范围为0到1（0 \&lt;= γ\&lt; 1）。<br>如果γ接近零，agent将倾向于只考虑立即得到奖励值。<br>如果γ更接近1，那么agent将会考虑更多的权重，愿意延迟得到奖励。</p>
+<p>一旦矩阵Q足够接近收敛状态，我们知道我们的agent已经学习了任意状态到达目标状态的最佳路径。</p>
+<p>例如：</p>
+<ul>
+<li><p>从初始状态2开始，agent可以使用矩阵Q作为指导,从状态2开始，最大Q值表示选择进入状态3的动作。</p>
+</li>
+<li><p>从状态3开始，最大Q值表示有两种并列最优选择：进入状态1或4。假设我们任意选择去1。</p>
+</li>
+<li><p>从状态1开始，最大Q值表示选择进入状态5的动作。</p>
+</li>
+<li><p>因此，最优策略是2 - 3 - 1 - 5。</p>
+</li>
+</ul>
+<p>我们使用Python为训练agent编写代码：<br><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">import numpy as np  
+import random  
+  
+\# 初始化矩阵  
+Q &#x3D; np.zeros((6, 6))  
+Q &#x3D; np.matrix(Q)  
+  
+def wan_find(list, col, list2):  
+col_max &#x3D; 0  
+col_y &#x3D; 0  
+col&#x3D;col  
+\# a &#x3D; np.linspace(0, 5, 5);  
+  
+for i in [0, 1, 2, 3, 4, 5]:  
+if col_max \&lt; list[i, col] and (i not in list2):  
+col_y &#x3D; i  
+col_max &#x3D; list[i, col]  
+  
+return col_y, col_max  
+  
+\# 回报矩阵R  
+R &#x3D; np.matrix([[-1, -1, -1, -1, 0, -1],  
+[-1, -1, -1, 0, -1, 100],  
+[-1, -1, -1, 0, -1, -1],  
+[-1, 0, 0, -1, 0, -1],  
+[ 0, -1, -1, 0, -1, 100],  
+[-1, 0, -1, -1, 0, 100]])  
+  
+\# 设立学习参数  
+γ &#x3D; 0.8  
+  
+\# 训练  
+for i in range(2000):  
+\# 对每一个训练,随机选择一种状态  
+state &#x3D; random.randint(0, 5)  
+while True:  
+\# 选择当前状态下的所有可能动作  
+r_pos_action &#x3D; []  
+for action in range(6):  
+if R[state, action] \&gt;&#x3D; 0:  
+r_pos_action.append(action)  
+  
+next_state &#x3D; r_pos_action[random.randint(0, len(r_pos_action) - 1)]  
+Q[state, next_state] &#x3D; R[state, next_state] + γ \* (Q[next_state]).max() \# 更新  
+state &#x3D; next_state  
+\# 状态4位最优库存状态  
+if state &#x3D;&#x3D; 5:  
+break  
+  
+Q1&#x3D;np.zeros((6, 6))  
+Q1&#x3D;Q&#x2F;Q.max();  
+print(Q1)  
+\#frist_place &#x3D; input(&quot;请输入在那个地方:&quot;)  
+\#while frist_place!&#x3D;5 :  
+  
+next_place &#x3D; int(input(&#39;初始房间号&#39;))  
+list2 &#x3D; [next_place]  
+while next_place !&#x3D; 5:  
+next_place, value &#x3D; wan_find(Q1, next_place, list2)  
+list2.append(next_place)  
+print(list2)
+
+运行结果为：
+
+[[0. 0. 0. 0. 0.8 0. ]
+
+[0. 0. 0. 0.64 0. 1. ]
+
+[0. 0. 0. 0.64 0. 0. ]
+
+[0. 0.8 0.512 0. 0.8 0. ]
+
+[0.64 0. 0. 0.64 0. 1. ]
+
+[0. 0.8 0. 0. 0.8 1. ]]
+
+初始房间号2
+
+[2, 3, 1, 5]
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>matlab</tag>
+        <tag>强化学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>机器学习</title>
     <url>/2020/11/20/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a><center>机器学习</center></h1><span id="more"></span>
@@ -11817,6 +11817,28 @@ r = \frac{|w^Tx+b|}{||w||}</script><ol>
       </tags>
   </entry>
   <entry>
+    <title>树莓派_命令行连接wifi</title>
+    <url>/2021/06/28/%E6%A0%91%E8%8E%93%E6%B4%BE-%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5wifi/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="4e715f80f897530b0cad42515d34d49d2c91af69b2c9ed3b3156aee371454e16">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041aa2df045649d51c4d893ac0794f8d93e4df6a0e15c93ccb5b1002c4397ca1b8e49411e18e08210dc2e308886a40f394b3e1678267bb9d7abf42b4adac2bf404b18c0c7b94f2386c04aa5554c2f7509b34529781bb153679385e738f25ea17898a1a4129576d82d7f06fc92c6e73a9c62110236d596aac804eb9ba266ea0c6860529e232fc0a938255ba7bdabd04f4210ea766812de7093cfd28f8dd57548bc0f54054c9ff9f8afd5323e8bda9bfe5b6d59a69c21714f36db856fd8cf7f650e3f5e401d215b999b913c3577ea40930bd686f8d9540d2014517df8e9dc61dfbafa48aab1d3fedf0448294bf6d067727cf1f7f0fbf8d1e9ab5f93f7dc9e1e8cd6d690e7211011c894e0fcef0554b5764a4272dd11c0c612f409da2c716bc1e0e117ee5d6a3b6fcaec4f8ba43a20d24ce7fd1c2f171fe1709ae8dfb24aa22615ce8c7b1de459911b37d035543990972fe06cf88241d94059d67ab111ade010e1b2b8adac83a1a383911ee175d02eaec05b8e6ff44ac4932adadb5078d864a7cfe2ab5ac89c262d0caa07e70627af2f118f403d51c25847c4992c1a2f0b00280e2d9a17ad3b4e9c5be8ae6c1488f853f04f10ef8ccd16f68fc480bd16978d1407cfe27f836439400297ab2cb2bc0b62e88190e869cd273d8c0e31f4427af039eed3a61e9992b1fff2cd4cac66762f98578341e955c7a082dfb2c0c5d35c815d16805140d2cd9a22a543d5a620aececd000cc60382f2c0242534d4dcd2c44058e4fae7e71de3c3f4a09250bce9989d4f14442fc4581e526abe54370405b9955f809409b56070e730047ea6572ad26b2c40e6536bc37739010cfb5ba54453b898e759aca888783b6cc53a47fbbe4a5444c5768b5286e7f798aae532842f2351722ea7a03a9286f4d248849993b862a08f28fc28b8372e45cc910ba0df285c451f9ec55346482b8d9c7dc0b5cd7bf9a9b873996a9a924eb3dd61a8727ae68d0794505bd154c2ee92f0be5d7ea918b3f7dca9907606030dc667269abf38760d9db102f1fea3b79b34a8c07a95a00ab0e3f1ecb4af38cb75bde07ca2bf3f7d36a7eb9ae360f7627b419612da852f773b040332db74261ff350bf912dd5a76a72244ffef6dd01721379d6ea91b35486ee9bb3def5efa93687cb5cf04594d843fc3fbfdccc546c1c57b48a8983b039f4769534cae41b9f8be2946335d7babe3917541eb764e2c87cabbcb5985339d36fce34640c3cec0a6f3baeaef01ae91bd4850505247585333c891ede559f617295ecbfa370dd9b1a35268b6309e093cf16b226b37cb61b600f015ba6480a214f2ef1d1ec659296da8bad035e81ca418b1a2926768f7db11447f8936c33d0a399205f98fc8c1e71f0a868794bcb38315715e5dd29fd98742d1cab951349ed430cb9162e3e677bb02e19d136da4f5c237e9745e80adaa3c3e93d932d10a2d723a16670f027e301abb3d160c38e1d92ca112d202f15e02395ab0b5ffe805bc54406c071fca64f90823dce2024af30c602b5e8870ef4de55bc125ed053eab80d78af6221341c9c7578249a0779881483763e2d576148dce64632e882bab28cd7d9fb7afad5e2704a0b91f6c4bb38de74124cf82c11aac59d1341c069866b45aa63007f203161db12ca6713d9b8dd4ee9f3758eaed617ca06b81b2f0aad9a9f8e29c0f8c730120881ce936ab2b5f64819cdef31c9a24272a81706cae0d10e8cf87d8c3022392e8bba01f2280ded8e0f7d62323f18ee1e316e54f7e899e4cd989baa40401d401c8d01c682474ba5bbea179c17ec49d591269024fe8352b1ea55ecdbd0abf4b98d35779aad697bf0f9f870dca75e5039ef71558eea815a125594c49437b091660578cdabc9fd135c9a1716e570af3700ec3993bc8e91d3d4203d0d6ed0009c7bba5491ab8cceb9ec252635dd06641fee583d19af8762f8ca676bc55fa1c4c7b2a01dc2197b74e27bdeaac82da8a8f84ddcb364f6fba52064b8d48f09a9cb592c9a4361c562be314c66ef172c2119c1837ff5442bfb202da7bc55868e6e1e66931d02251f40956e5ce1e5a4d54e15a089e23c27f2f45f7dc556dff0ddaf645ecce4ca88b79b41fa72c3e5c8e4596083c00ebacab49a42fafc1399d6f2d169c9c13e4ff22844c8ea3b93f3ceecf06e31ddac56c4b4112bb58d93205ede0fe365be3b80178554f93c721e1655825b3671c5b813e2085b4167728c8ef7144d537c8c86844270befa082b219f431cb226c65b9a5bc0a7cb2e8502a8f5ff72a623062f078a2c4b10af00e5bf093687d0c4ef90cd142b3af51699ad9a2ad6b00aba9c152ee8cca55642daa92befc4f45be7626751fdb098c4790d598a47dfed7c5ec89576a0c2796df99f837de21af48b42b6bf508e37c54cde2e9522beca0988a7b1a5fcd5fdcb5a510273cdf5b0de868ad3c35724352d03e0ee1149fdca7cba29a8c5ecaec2b9d8ed1e7727eedf601e7a0bdba81657ce60a867db2deb716904c15ad6a8ceeb32ea668bada11f6f6abdea72804289ecc2e661a77f8bd59a05cbb251a2f7c302331d834c622ab8410e5ac5320a40d3806cfc8f50dab8392aefe431bc380ae2a1766f489042ba71dac0695dcda101a7414a4a0ea06b074ea6c7e8478ca2fedcc29dbf9dafd81309359077f0501e6d946a1d55c67c7699310299b053e12faec7b9d8267b24d2eee051d681c431b9edd4f139eb37acd6b804ab5fe3512b078a9fcf19a26b09d61cbd6eabab21f4f88017f8469acaf8e4c9264d34736040ce5c408ded5c0b61c6695d36f04c89be51b84847bbaf21824c30aa2760e82674b8f69c6f501f69ad048ebb8d7872d9a8acb63918779ba7788dd30da5f43a03d4e4dae0a6c83c3cfd746281f5dac6721bee4ad1dd518c6a1bd26e5e228d7c434a95278ba4901c5d8be33af3f87af4407949d4f12194fa86d87e5b38d81092de202cd02dafc825f3259661f1473998fb9d9e422fb93055bbcf21e03f394ee3d4b81d295a74dd7fb3045ef26611558506ca73e4518505c4a769d49f75e596d62d93d6e068a4e82de16c407fee1f87b3c77ff77c01a7fda5677ad2b74a6e9c297969d38ba35f3a3fdc0ed067666c8fa7cbaff85c8c063d47bfd5d1489d67a77061c291d2d6b6e07928774cb9e6b0c8af8bc8ccfa66cce528de08060596d8a2157e85e4f40205547015de3e54ea96b53b0a51390dae93344f505af334a762359e6bda7cff00a663c6285d038a9d1cc4bace16319a0c52a73a91627d5670d3c4c690dd985da541f80b0403f2d1b7472c206b58650470ba8195185bc32689c123cba71639dac27039b68d14fd22d40e5a162d8d81c38dfe7a1b1ee1a295a877f54f69aabe8f0875321f332735e1f98fed3c88d0152173278eac864d49a5122652107769dbe3abfff53ae46a1aefc59828df742d92c96765fc32980bd8e4c8ae4378d9059a9b2a4fdcede77216bea8c9ef0fcb3d7af327eaa2688aa95fe254453a378d5ef1103a299fadc40e9f06ec00bac4ef5194c1c6c2dbf2c2f1e56f56ae8f1499e232c9e54c7bcb13091f0e30b37c0709f6100a0f630edff459c751391307eac15b823fd10702a3b3ec7fbd5002ab83def308721b863119fac89f0026679d950d192c3cfcc8c85dd74c2b4af2eb1f6e89d270437a130ececd7015d1f8f91b86bd679dcb05f7189026f88badc0fdd9d0b999cc09134adf98888f11a0ca5d1b18a63927b9851d4d5166470015e328f0bcc06bd57d51829ca89108856dd71fdc829c8b25263c76a55b2003551be6e3e7e42f802aa1a65dc7505da96e8da0bfd2ade640b79e1adf4ae1567d58aabf18c6346a7c770ad696d8ea3ea739ce701ed0db157bd48cbc88c7118066d24ea654a2cd29795d4497dc3361c2e9e8e54aa24c68876dc6bcc4e06da7072cbd66d54d9daff87183869b74ae55ed6266c27704a7de21ec8f9b9dcf7b84cc2ef7c3b38330a27c04e09ef28cbd28eb6093b9fed613f9875d648968368d4563021eea34fee52d7979940d4ca3f6187f9894fea22e57db5d078101871286e9b79f10ea336aaab9d8101cc5ba0d292ee3fdfca65d56fd5095722b436f14f4e7c41999c60e43860a57b48bad0bca3f8f34f9e95f7baef083831115f5b393cc7e06039c8b9ea784c6cc568f5b7dbf1106ec097fe3491fc8d9bed7c4829343a79d280cf492468307288af6b1306afa47eeecac1b5a86f2b1b455e24654539e2e51c577f34af0b0926d934fa1af83c1ba186294f9b80ff78e7e2c3e011d69e60cf811e1958ee7a5600f1e32699f702fafd7ac0cb5a7ca46154c033f77bd92f1ccb310ab54076f8de57b99be7cbbc7f3ff4001edcca59c228a29ed9a9018d3a0ffc062848cfccde4df2cd01a6f589f2e310f4ffe2fbd729f6b6a672f0403cd1dc36e2a0ff59584353dfe3e5869427234bd5f4d21ef0929f05c695aaf4bf10ccdf25bb20050ed615a97459975ab8ef51a26211a74b8f66c57db2e883868c438d25d35bc678e99a9104c85f70ce4efd3ef074b053df2fd43f7be7320679fbb90690d</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>树莓派</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>树莓派3BTL-WN726N驱动</title>
     <url>/2021/04/20/%E6%A0%91%E8%8E%93%E6%B4%BE3BTL-WN726N%E9%A9%B1%E5%8A%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="树莓派3BTL-WN726N驱动"><a href="#树莓派3BTL-WN726N驱动" class="headerlink" title="树莓派3BTL-WN726N驱动"></a>树莓派3BTL-WN726N驱动</h1><h2 id="给树莓派3B装两个网卡"><a href="#给树莓派3B装两个网卡" class="headerlink" title="给树莓派3B装两个网卡"></a>给树莓派3B装两个网卡</h2><ul>
@@ -11852,28 +11874,6 @@ sudo modprobe 8188eu<span aria-hidden="true" class="line-numbers-rows"><span></s
 ]]></content>
       <categories>
         <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>树莓派_命令行连接wifi</title>
-    <url>/2021/06/28/%E6%A0%91%E8%8E%93%E6%B4%BE-%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5wifi/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="4e715f80f897530b0cad42515d34d49d2c91af69b2c9ed3b3156aee371454e16">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041aa2df045649d51c4d893ac0794f8d93e4df6a0e15c93ccb5b1002c4397ca1b8e49411e18e08210dc2e308886a40f394b3e1678267bb9d7abf42b4adac2bf404b18c0c7b94f2386c04aa5554c2f7509b34529781bb153679385e738f25ea17898a1a4129576d82d7f06fc92c6e73a9c62110236d596aac804eb9ba266ea0c6860529e232fc0a938255ba7bdabd04f4210ea766812de7093cfd28f8dd57548bc0f54054c9ff9f8afd5323e8bda9bfe5b6d59a69c21714f36db856fd8cf7f650e3f5e401d215b999b913c3577ea40930bd686f8d9540d2014517df8e9dc61dfbafa48aab1d3fedf0448294bf6d067727cf1f7f0fbf8d1e9ab5f93f7dc9e1e8cd6d690e7211011c894e0fcef0554b5764a4272dd11c0c612f409da2c716bc1e0e117ee5d6a3b6fcaec4f8ba43a20d24ce7fd1c2f171fe1709ae8dfb24aa22615ce8c7b1de459911b37d035543990972fe06cf88241d94059d67ab111ade010e1b2b8adac83a1a383911ee175d02eaec05b8e6ff44ac4932adadb5078d864a7cfe2ab5ac89c262d0caa07e70627af2f118f403d51c25847c4992c1a2f0b00280e2d9a17ad3b4e9c5be8ae6c1488f853f04f10ef8ccd16f68fc480bd16978d1407cfe27f836439400297ab2cb2bc0b62e88190e869cd273d8c0e31f4427af039eed3a61e9992b1fff2cd4cac66762f98578341e955c7a082dfb2c0c5d35c815d16805140d2cd9a22a543d5a620aececd000cc60382f2c0242534d4dcd2c44058e4fae7e71de3c3f4a09250bce9989d4f14442fc4581e526abe54370405b9955f809409b56070e730047ea6572ad26b2c40e6536bc37739010cfb5ba54453b898e759aca888783b6cc53a47fbbe4a5444c5768b5286e7f798aae532842f2351722ea7a03a9286f4d248849993b862a08f28fc28b8372e45cc910ba0df285c451f9ec55346482b8d9c7dc0b5cd7bf9a9b873996a9a924eb3dd61a8727ae68d0794505bd154c2ee92f0be5d7ea918b3f7dca9907606030dc667269abf38760d9db102f1fea3b79b34a8c07a95a00ab0e3f1ecb4af38cb75bde07ca2bf3f7d36a7eb9ae360f7627b419612da852f773b040332db74261ff350bf912dd5a76a72244ffef6dd01721379d6ea91b35486ee9bb3def5efa93687cb5cf04594d843fc3fbfdccc546c1c57b48a8983b039f4769534cae41b9f8be2946335d7babe3917541eb764e2c87cabbcb5985339d36fce34640c3cec0a6f3baeaef01ae91bd4850505247585333c891ede559f617295ecbfa370dd9b1a35268b6309e093cf16b226b37cb61b600f015ba6480a214f2ef1d1ec659296da8bad035e81ca418b1a2926768f7db11447f8936c33d0a399205f98fc8c1e71f0a868794bcb38315715e5dd29fd98742d1cab951349ed430cb9162e3e677bb02e19d136da4f5c237e9745e80adaa3c3e93d932d10a2d723a16670f027e301abb3d160c38e1d92ca112d202f15e02395ab0b5ffe805bc54406c071fca64f90823dce2024af30c602b5e8870ef4de55bc125ed053eab80d78af6221341c9c7578249a0779881483763e2d576148dce64632e882bab28cd7d9fb7afad5e2704a0b91f6c4bb38de74124cf82c11aac59d1341c069866b45aa63007f203161db12ca6713d9b8dd4ee9f3758eaed617ca06b81b2f0aad9a9f8e29c0f8c730120881ce936ab2b5f64819cdef31c9a24272a81706cae0d10e8cf87d8c3022392e8bba01f2280ded8e0f7d62323f18ee1e316e54f7e899e4cd989baa40401d401c8d01c682474ba5bbea179c17ec49d591269024fe8352b1ea55ecdbd0abf4b98d35779aad697bf0f9f870dca75e5039ef71558eea815a125594c49437b091660578cdabc9fd135c9a1716e570af3700ec3993bc8e91d3d4203d0d6ed0009c7bba5491ab8cceb9ec252635dd06641fee583d19af8762f8ca676bc55fa1c4c7b2a01dc2197b74e27bdeaac82da8a8f84ddcb364f6fba52064b8d48f09a9cb592c9a4361c562be314c66ef172c2119c1837ff5442bfb202da7bc55868e6e1e66931d02251f40956e5ce1e5a4d54e15a089e23c27f2f45f7dc556dff0ddaf645ecce4ca88b79b41fa72c3e5c8e4596083c00ebacab49a42fafc1399d6f2d169c9c13e4ff22844c8ea3b93f3ceecf06e31ddac56c4b4112bb58d93205ede0fe365be3b80178554f93c721e1655825b3671c5b813e2085b4167728c8ef7144d537c8c86844270befa082b219f431cb226c65b9a5bc0a7cb2e8502a8f5ff72a623062f078a2c4b10af00e5bf093687d0c4ef90cd142b3af51699ad9a2ad6b00aba9c152ee8cca55642daa92befc4f45be7626751fdb098c4790d598a47dfed7c5ec89576a0c2796df99f837de21af48b42b6bf508e37c54cde2e9522beca0988a7b1a5fcd5fdcb5a510273cdf5b0de868ad3c35724352d03e0ee1149fdca7cba29a8c5ecaec2b9d8ed1e7727eedf601e7a0bdba81657ce60a867db2deb716904c15ad6a8ceeb32ea668bada11f6f6abdea72804289ecc2e661a77f8bd59a05cbb251a2f7c302331d834c622ab8410e5ac5320a40d3806cfc8f50dab8392aefe431bc380ae2a1766f489042ba71dac0695dcda101a7414a4a0ea06b074ea6c7e8478ca2fedcc29dbf9dafd81309359077f0501e6d946a1d55c67c7699310299b053e12faec7b9d8267b24d2eee051d681c431b9edd4f139eb37acd6b804ab5fe3512b078a9fcf19a26b09d61cbd6eabab21f4f88017f8469acaf8e4c9264d34736040ce5c408ded5c0b61c6695d36f04c89be51b84847bbaf21824c30aa2760e82674b8f69c6f501f69ad048ebb8d7872d9a8acb63918779ba7788dd30da5f43a03d4e4dae0a6c83c3cfd746281f5dac6721bee4ad1dd518c6a1bd26e5e228d7c434a95278ba4901c5d8be33af3f87af4407949d4f12194fa86d87e5b38d81092de202cd02dafc825f3259661f1473998fb9d9e422fb93055bbcf21e03f394ee3d4b81d295a74dd7fb3045ef26611558506ca73e4518505c4a769d49f75e596d62d93d6e068a4e82de16c407fee1f87b3c77ff77c01a7fda5677ad2b74a6e9c297969d38ba35f3a3fdc0ed067666c8fa7cbaff85c8c063d47bfd5d1489d67a77061c291d2d6b6e07928774cb9e6b0c8af8bc8ccfa66cce528de08060596d8a2157e85e4f40205547015de3e54ea96b53b0a51390dae93344f505af334a762359e6bda7cff00a663c6285d038a9d1cc4bace16319a0c52a73a91627d5670d3c4c690dd985da541f80b0403f2d1b7472c206b58650470ba8195185bc32689c123cba71639dac27039b68d14fd22d40e5a162d8d81c38dfe7a1b1ee1a295a877f54f69aabe8f0875321f332735e1f98fed3c88d0152173278eac864d49a5122652107769dbe3abfff53ae46a1aefc59828df742d92c96765fc32980bd8e4c8ae4378d9059a9b2a4fdcede77216bea8c9ef0fcb3d7af327eaa2688aa95fe254453a378d5ef1103a299fadc40e9f06ec00bac4ef5194c1c6c2dbf2c2f1e56f56ae8f1499e232c9e54c7bcb13091f0e30b37c0709f6100a0f630edff459c751391307eac15b823fd10702a3b3ec7fbd5002ab83def308721b863119fac89f0026679d950d192c3cfcc8c85dd74c2b4af2eb1f6e89d270437a130ececd7015d1f8f91b86bd679dcb05f7189026f88badc0fdd9d0b999cc09134adf98888f11a0ca5d1b18a63927b9851d4d5166470015e328f0bcc06bd57d51829ca89108856dd71fdc829c8b25263c76a55b2003551be6e3e7e42f802aa1a65dc7505da96e8da0bfd2ade640b79e1adf4ae1567d58aabf18c6346a7c770ad696d8ea3ea739ce701ed0db157bd48cbc88c7118066d24ea654a2cd29795d4497dc3361c2e9e8e54aa24c68876dc6bcc4e06da7072cbd66d54d9daff87183869b74ae55ed6266c27704a7de21ec8f9b9dcf7b84cc2ef7c3b38330a27c04e09ef28cbd28eb6093b9fed613f9875d648968368d4563021eea34fee52d7979940d4ca3f6187f9894fea22e57db5d078101871286e9b79f10ea336aaab9d8101cc5ba0d292ee3fdfca65d56fd5095722b436f14f4e7c41999c60e43860a57b48bad0bca3f8f34f9e95f7baef083831115f5b393cc7e06039c8b9ea784c6cc568f5b7dbf1106ec097fe3491fc8d9bed7c4829343a79d280cf492468307288af6b1306afa47eeecac1b5a86f2b1b455e24654539e2e51c577f34af0b0926d934fa1af83c1ba186294f9b80ff78e7e2c3e011d69e60cf811e1958ee7a5600f1e32699f702fafd7ac0cb5a7ca46154c033f77bd92f1ccb310ab54076f8de57b99be7cbbc7f3ff4001edcca59c228a29ed9a9018d3a0ffc062848cfccde4df2cd01a6f589f2e310f4ffe2fbd729f6b6a672f0403cd1dc36e2a0ff59584353dfe3e5869427234bd5f4d21ef0929f05c695aaf4bf10ccdf25bb20050ed615a97459975ab8ef51a26211a74b8f66c57db2e883868c438d25d35bc678e99a9104c85f70ce4efd3ef074b053df2fd43f7be7320679fbb90690d</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>树莓派</category>
       </categories>
       <tags>
         <tag>linux</tag>
@@ -12807,6 +12807,39 @@ def saveCutoutLabel(name):
       </tags>
   </entry>
   <entry>
+    <title>南京大屠杀国家公祭日_网站变成灰色以表悼念</title>
+    <url>/2020/12/13/%E7%BD%91%E7%AB%99%E5%8F%98%E7%81%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="南京大屠杀国家公祭日-网站变成灰色以表悼念"><a href="#南京大屠杀国家公祭日-网站变成灰色以表悼念" class="headerlink" title=" 南京大屠杀国家公祭日_网站变成灰色以表悼念 "></a><center> 南京大屠杀国家公祭日_网站变成灰色以表悼念 </center></h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=78993619&bvid=BV1cJ411C7Dg&cid=135180758&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+<span id="more"></span>
+<p>12月13日是第七个南京大屠杀死难者国家公祭日。公祭无辜死难之生命，告慰血与泪浸染之土地。这一天，举国上下以各种形式深切缅怀死难同胞，深切缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，表达牢记历史、珍爱和平、矢志复兴，身为站长的我们都会让自己的网站的全部网页变成灰色（黑白色），以表示我们对逝者的悼念。</p>
+<h3 id="第一种：修改CSS文件"><a href="#第一种：修改CSS文件" class="headerlink" title="第一种：修改CSS文件"></a>第一种：修改CSS文件</h3><p>我们可以在网页的CSS文件中添加以下的CSS代码，来实现网页黑白色，也就是网站变灰</p>
+<pre class="line-numbers language-none"><code class="language-none">html &#123;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
+    -webkit-filter: grayscale(100%);
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="第二种：在网页的标签内加入以下代码"><a href="#第二种：在网页的标签内加入以下代码" class="headerlink" title="第二种：在网页的标签内加入以下代码"></a>第二种：在网页的<head>标签内加入以下代码</h3><p>如果你不想改动CSS文件，你可以通过在网页头部中的<head>标签内部加入内联CSS代码的形式实现网站网页变灰</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;
+html &#123;
+filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
+-webkit-filter: grayscale(100%);&#125;
+&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="第三种：修改标签加入内联样式"><a href="#第三种：修改标签加入内联样式" class="headerlink" title="第三种：修改标签加入内联样式"></a>第三种：修改<html>标签加入内联样式</h3><p>如里上面的两种方式都不喜欢，可以通过修改<html>标签，以加入内联样式的方法，达到网页变灰的效果</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;html style&#x3D;&quot;filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
+-webkit-filter: grayscale(100%);&quot;&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>南京大屠杀国家公祭日</tag>
+        <tag>hexo网站</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网站视频下载及按帧将视频转为jpg</title>
     <url>/2020/10/15/%E7%BD%91%E7%AB%99%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD%E5%8F%8A%E6%8C%89%E5%B8%A7%E8%BD%AC%E4%B8%BAjpg/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="网站视频下载及按帧转为jpg"><a href="#网站视频下载及按帧转为jpg" class="headerlink" title="网站视频下载及按帧转为jpg"></a>网站视频下载及按帧转为jpg</h1><h2 id="1、准备切割视频"><a href="#1、准备切割视频" class="headerlink" title="1、准备切割视频"></a>1、准备切割视频</h2><p>视频切割算法:<br><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">clc;
@@ -12870,36 +12903,35 @@ end<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
       </tags>
   </entry>
   <entry>
-    <title>南京大屠杀国家公祭日_网站变成灰色以表悼念</title>
-    <url>/2020/12/13/%E7%BD%91%E7%AB%99%E5%8F%98%E7%81%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="南京大屠杀国家公祭日-网站变成灰色以表悼念"><a href="#南京大屠杀国家公祭日-网站变成灰色以表悼念" class="headerlink" title=" 南京大屠杀国家公祭日_网站变成灰色以表悼念 "></a><center> 南京大屠杀国家公祭日_网站变成灰色以表悼念 </center></h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=78993619&bvid=BV1cJ411C7Dg&cid=135180758&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-<span id="more"></span>
-<p>12月13日是第七个南京大屠杀死难者国家公祭日。公祭无辜死难之生命，告慰血与泪浸染之土地。这一天，举国上下以各种形式深切缅怀死难同胞，深切缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，表达牢记历史、珍爱和平、矢志复兴，身为站长的我们都会让自己的网站的全部网页变成灰色（黑白色），以表示我们对逝者的悼念。</p>
-<h3 id="第一种：修改CSS文件"><a href="#第一种：修改CSS文件" class="headerlink" title="第一种：修改CSS文件"></a>第一种：修改CSS文件</h3><p>我们可以在网页的CSS文件中添加以下的CSS代码，来实现网页黑白色，也就是网站变灰</p>
-<pre class="line-numbers language-none"><code class="language-none">html &#123;
-    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
-    -webkit-filter: grayscale(100%);
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="第二种：在网页的标签内加入以下代码"><a href="#第二种：在网页的标签内加入以下代码" class="headerlink" title="第二种：在网页的标签内加入以下代码"></a>第二种：在网页的<head>标签内加入以下代码</h3><p>如果你不想改动CSS文件，你可以通过在网页头部中的<head>标签内部加入内联CSS代码的形式实现网站网页变灰</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;
-html &#123;
-filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
--webkit-filter: grayscale(100%);&#125;
-&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="第三种：修改标签加入内联样式"><a href="#第三种：修改标签加入内联样式" class="headerlink" title="第三种：修改标签加入内联样式"></a>第三种：修改<html>标签加入内联样式</h3><p>如里上面的两种方式都不喜欢，可以通过修改<html>标签，以加入内联样式的方法，达到网页变灰的效果</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;html style&#x3D;&quot;filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
--webkit-filter: grayscale(100%);&quot;&gt;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+    <title>自制树莓派镜像的最简单方法</title>
+    <url>/2021/07/14/%E8%87%AA%E5%88%B6%E6%A0%91%E8%8E%93%E6%B4%BE%E9%95%9C%E5%83%8F%E7%9A%84%E6%9C%80%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="自制树莓派镜像的最简单方法"><a href="#自制树莓派镜像的最简单方法" class="headerlink" title="自制树莓派镜像的最简单方法"></a>自制树莓派镜像的最简单方法</h1><h2 id="用sd卡制作img镜像"><a href="#用sd卡制作img镜像" class="headerlink" title="用sd卡制作img镜像"></a>用sd卡制作img镜像</h2><p>参考了很多博客和文档，有很多都是通过挂载的方式去烧录镜像，这种方法费时且低效。<br>并没有兴趣直接复制和挂载拷贝。<br>于是采用了第三个方法。</p>
+<ul>
+<li><p>将现有的系统制作成镜像img</p>
+</li>
+<li><p>将现有的系统制作成镜像img</p>
+</li>
+<li><p>将带有系统的sd卡用Win32DiskImager.exe工具Read成镜像文件xmu201.img</p>
+</li>
+</ul>
+<p><img src="https://www.codekp.cn/download/img/树莓派/win.png" width = "681" height = "302" alt="图片名称" align=center /></p>
+<blockquote>
+<p>（选择盘符里面的“boot”盘，在本机的任何一个盘符里面写于.img文件名称，手写输入，然后点击Read，等待读取）</p>
+</blockquote>
+<ul>
+<li>然后插入新卡到PC，将xmu201.img写入新卡</li>
+<li>现在就制作出了完全一模一样的多种带系统的sd卡，现在的卡是不能直接使用的，因为还需要对设备进行网络设置，才能连接ssh。</li>
+</ul>
+<p>（这种方法所制作的镜像会和所录制的sd卡一样大，因此如果使用这种方法需要原系统sd卡尽量的小，本人采用16G的sd卡所以问题不大）</p>
+<h2 id="通过balenaEtcher录入镜像"><a href="#通过balenaEtcher录入镜像" class="headerlink" title="通过balenaEtcher录入镜像"></a>通过balenaEtcher录入镜像</h2><ul>
+<li><a href="https://blog.csdn.net/weixin_41216356/article/details/107071740">balenaEtcher过程可参考CSDN</a></li>
+</ul>
 ]]></content>
       <categories>
-        <category>CSS</category>
+        <category>树莓派</category>
       </categories>
       <tags>
-        <tag>南京大屠杀国家公祭日</tag>
-        <tag>hexo网站</tag>
+        <tag>树莓派</tag>
       </tags>
   </entry>
   <entry>
@@ -12931,38 +12963,6 @@ if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
       </categories>
       <tags>
         <tag>网路比较</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>自制树莓派镜像的最简单方法</title>
-    <url>/2021/07/14/%E8%87%AA%E5%88%B6%E6%A0%91%E8%8E%93%E6%B4%BE%E9%95%9C%E5%83%8F%E7%9A%84%E6%9C%80%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="自制树莓派镜像的最简单方法"><a href="#自制树莓派镜像的最简单方法" class="headerlink" title="自制树莓派镜像的最简单方法"></a>自制树莓派镜像的最简单方法</h1><h2 id="用sd卡制作img镜像"><a href="#用sd卡制作img镜像" class="headerlink" title="用sd卡制作img镜像"></a>用sd卡制作img镜像</h2><p>参考了很多博客和文档，有很多都是通过挂载的方式去烧录镜像，这种方法费时且低效。<br>并没有兴趣直接复制和挂载拷贝。<br>于是采用了第三个方法。</p>
-<ul>
-<li><p>将现有的系统制作成镜像img</p>
-</li>
-<li><p>将现有的系统制作成镜像img</p>
-</li>
-<li><p>将带有系统的sd卡用Win32DiskImager.exe工具Read成镜像文件xmu201.img</p>
-</li>
-</ul>
-<p><img src="https://www.codekp.cn/download/img/树莓派/win.png" width = "681" height = "302" alt="图片名称" align=center /></p>
-<blockquote>
-<p>（选择盘符里面的“boot”盘，在本机的任何一个盘符里面写于.img文件名称，手写输入，然后点击Read，等待读取）</p>
-</blockquote>
-<ul>
-<li>然后插入新卡到PC，将xmu201.img写入新卡</li>
-<li>现在就制作出了完全一模一样的多种带系统的sd卡，现在的卡是不能直接使用的，因为还需要对设备进行网络设置，才能连接ssh。</li>
-</ul>
-<p>（这种方法所制作的镜像会和所录制的sd卡一样大，因此如果使用这种方法需要原系统sd卡尽量的小，本人采用16G的sd卡所以问题不大）</p>
-<h2 id="通过balenaEtcher录入镜像"><a href="#通过balenaEtcher录入镜像" class="headerlink" title="通过balenaEtcher录入镜像"></a>通过balenaEtcher录入镜像</h2><ul>
-<li><a href="https://blog.csdn.net/weixin_41216356/article/details/107071740">balenaEtcher过程可参考CSDN</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>树莓派</category>
-      </categories>
-      <tags>
-        <tag>树莓派</tag>
       </tags>
   </entry>
   <entry>
