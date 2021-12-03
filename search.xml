@@ -708,58 +708,6 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       </tags>
   </entry>
   <entry>
-    <title>Fusion360学习笔记</title>
-    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
-<pre><code>h1 &#123;
-counter-reset: subsection;
-&#125;
-h2 &#123;
-counter-reset: subsection2;
-&#125;
-h3 &#123;
-counter-reset: subsection3;
-&#125;
-h4 &#123;
-counter-reset: subsection4;
-&#125;
-h1::before &#123;
-counter-increment: section;
-content:  &quot; &quot;;
-&#125;
-
-h2::before &#123;
-counter-increment: subsection;
-content: counter(subsection) &quot; &quot;;
-&#125;
-h3::before &#123;
-counter-increment: subsection2;
-content: counter(subsection) &quot;.&quot; counter(subsection2) ;
-&#125;
-h4::before &#123;
-counter-increment: subsection3;
-content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
-&#125;
-h5::before &#123;
-counter-increment: subsection4;
-content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
-&#125;
-</code></pre><p>&lt;/style&gt;</p>
-<p><style><br>        video {<br>            width: 20%;<br>        }
-</style></p>
-<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
-<ul>
-<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
-</ul>
-<p>下载个人用途版本即可。</p>
-<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/img/html5/2.mp4"   controls="controls"></video>
-
-<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/img/html5/3.mp4"   controls="controls"></video>
-
-
-]]></content>
-  </entry>
-  <entry>
     <title>English_learning</title>
     <url>/2020/07/31/English-learning/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
@@ -871,6 +819,58 @@ If you are talking to a group of managers, you may refer to the disorganized met
         <tag>英语阅读</tag>
         <tag>markdown</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Fusion360学习笔记</title>
+    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
+<pre><code>h1 &#123;
+counter-reset: subsection;
+&#125;
+h2 &#123;
+counter-reset: subsection2;
+&#125;
+h3 &#123;
+counter-reset: subsection3;
+&#125;
+h4 &#123;
+counter-reset: subsection4;
+&#125;
+h1::before &#123;
+counter-increment: section;
+content:  &quot; &quot;;
+&#125;
+
+h2::before &#123;
+counter-increment: subsection;
+content: counter(subsection) &quot; &quot;;
+&#125;
+h3::before &#123;
+counter-increment: subsection2;
+content: counter(subsection) &quot;.&quot; counter(subsection2) ;
+&#125;
+h4::before &#123;
+counter-increment: subsection3;
+content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
+&#125;
+h5::before &#123;
+counter-increment: subsection4;
+content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
+&#125;
+</code></pre><p>&lt;/style&gt;</p>
+<p><style><br>        video {<br>            width: 20%;<br>        }
+</style></p>
+<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
+<ul>
+<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
+</ul>
+<p>下载个人用途版本即可。</p>
+<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/img/html5/2.mp4"   controls="controls"></video>
+
+<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/img/html5/3.mp4"   controls="controls"></video>
+
+
+]]></content>
   </entry>
   <entry>
     <title>LabelImg_使用</title>
@@ -1932,178 +1932,6 @@ capture.release()<span aria-hidden="true" class="line-numbers-rows"><span></span
       </categories>
       <tags>
         <tag>OCR</tag>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python_PyWebIO</title>
-    <url>/2021/12/01/Python-PyWebIO/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  " ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content:  counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
-
-<p><h1 align="center" name="pywebio-zh">Python_PyWebIO</h1></p>
-<p align="center">
-    <em>万鲲鹏</em>
-</p>
-
-<p>PyWebIO提供了一系列命令式的交互函数来在浏览器上获取用户输入和进行输出，将浏览器变成了一个“富文本终端”，可以用于构建简单的Web应用或基于浏览器的GUI应用。<br>PyWebIO还可以方便地整合进现有的Web服务，让你不需要编写HTML和JS代码，就可以构建出具有良好可用性的应用。</p>
-<p>功能特性：</p>
-<ul>
-<li>使用同步而不是基于回调的方式获取输入，代码编写逻辑更自然</li>
-<li>非声明式布局，布局方式简单高效</li>
-<li>代码侵入性小，旧脚本代码仅需修改输入输出逻辑便可改造为Web服务</li>
-<li>支持整合到现有的Web服务，目前支持与Flask、Django、Tornado、aiohttp、FastAPI框架集成</li>
-<li>同时支持基于线程的执行模型和基于协程的执行模型</li>
-<li>支持结合第三方库实现数据可视化</li>
-</ul>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>稳定版安装:</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>报错：<br><code>Fatal error in launcher: Unable to create process using</code></p>
-<p>主要是由于直接调用环境导致的遇到这种问题</p>
-<pre class="line-numbers language-none"><code class="language-none">python -m pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="Quickstart"><a href="#Quickstart" class="headerlink" title="Quickstart"></a>Quickstart</h2><p><strong>Hello, world</strong></p>
-<p>这是一个使用PyWebIO计算 <a href="https://en.wikipedia.org/wiki/Body_mass_index">BMI指数</a> 的脚本:</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio.input import input, FLOAT
-from pywebio.output import put_text
-
-def bmi():
-    height &#x3D; input(&quot;请输入你的身高(cm)：&quot;, type&#x3D;FLOAT)
-    weight &#x3D; input(&quot;请输入你的体重(kg)：&quot;, type&#x3D;FLOAT)
-
-    BMI &#x3D; weight &#x2F; (height &#x2F; 100) ** 2
-
-    top_status &#x3D; [(14.9, &#39;极瘦&#39;), (18.4, &#39;偏瘦&#39;),
-                  (22.9, &#39;正常&#39;), (27.5, &#39;过重&#39;),
-                  (40.0, &#39;肥胖&#39;), (float(&#39;inf&#39;), &#39;非常肥胖&#39;)]
-
-    for top, status in top_status:
-        if BMI &lt;&#x3D; top:
-            put_text(&#39;你的 BMI 值: %.1f，身体状态：%s&#39; % (BMI, status))
-            break
-
-if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
-    bmi()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>如果没有使用PyWebIO，这只是一个非常简单的脚本，而通过使用PyWebIO提供的输入输出函数，你可以在浏览器中与代码进行交互 <a href="http://pywebio-demos.pywebio.online/bmi">[demo]</a>：</p>
-<p align="center">
-    <a href="http://pywebio-demos.pywebio.online/?pywebio_api=bmi">
-        <img src="https://raw.githubusercontent.com/wang0618/PyWebIO/dev/docs/assets/demo_zh.gif" alt="PyWebIO demo" width="400px"/>
-    </a>
-</p>
-
-<p><strong>作为Web服务提供</strong></p>
-<p>上文BMI程序会在计算完毕后立刻退出，可以使用 <a href="https://pywebio.readthedocs.io/zh_CN/latest/platform.html#pywebio.platform.tornado.start_server"><code>pywebio.start_server()</code></a> 将 <code>bmi()</code> 函数作为Web服务提供：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio import start_server
-from pywebio.input import input, FLOAT
-from pywebio.output import put_text
-
-def bmi():  # bmi() 函数内容不变
-    ...  
-
-if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
-    start_server(bmi, port&#x3D;80)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Demos"><a href="#Demos" class="headerlink" title="Demos"></a>Demos</h2><ul>
-<li><a href="http://pywebio-demos.pywebio.online/">基本demo</a> : 包含PyWebIO基本输入输出演示和使用PyWebIO编写的小应用</li>
-<li><a href="http://pywebio-charts.pywebio.online/">数据可视化demo</a> : 使用 bokeh、plotly、pyecharts 等库进行数据可视化</li>
-</ul>
-<h3 id="武汉三维地图"><a href="#武汉三维地图" class="headerlink" title="武汉三维地图"></a>武汉三维地图</h3><pre class="line-numbers language-none"><code class="language-none">from pywebio.output import put_html
-from pyecharts import options as opts
-from pyecharts.charts import Map3D
-from pyecharts.globals import ChartType
-
-example_data &#x3D; [
-    [[119.107078, 36.70925, 1000], [116.587245, 35.415393, 1000]],
-    [[117.000923, 36.675807], [120.355173, 36.082982]],
-    [[118.047648, 36.814939], [118.66471, 37.434564]],
-    [[121.391382, 37.539297], [119.107078, 36.70925]],
-    [[116.587245, 35.415393], [122.116394, 37.509691]],
-    [[119.461208, 35.428588], [118.326443, 35.065282]],
-    [[116.307428, 37.453968], [115.469381, 35.246531]],
-]
-c &#x3D; (
-    Map3D()
-        .add_schema(
-        maptype&#x3D;&quot;武汉&quot;,
-        itemstyle_opts&#x3D;opts.ItemStyleOpts(
-            color&#x3D;&quot;rgb(5,101,123)&quot;,
-            opacity&#x3D;1,
-            border_width&#x3D;0.8,
-            border_color&#x3D;&quot;rgb(62,215,213)&quot;,
-        ),
-        light_opts&#x3D;opts.Map3DLightOpts(
-            main_color&#x3D;&quot;#fff&quot;,
-            main_intensity&#x3D;1.2,
-            is_main_shadow&#x3D;False,
-            main_alpha&#x3D;55,
-            main_beta&#x3D;10,
-            ambient_intensity&#x3D;0.3,
-        ),
-        view_control_opts&#x3D;opts.Map3DViewControlOpts(center&#x3D;[-10, 0, 10]),
-        post_effect_opts&#x3D;opts.Map3DPostEffectOpts(is_enable&#x3D;False),
-    )
-        .add(
-        series_name&#x3D;&quot;&quot;,
-        data_pair&#x3D;example_data,
-        type_&#x3D;ChartType.LINES3D,
-        effect&#x3D;opts.Lines3DEffectOpts(
-            is_show&#x3D;True,
-            period&#x3D;4,
-            trail_width&#x3D;3,
-            trail_length&#x3D;0.5,
-            trail_color&#x3D;&quot;#f00&quot;,
-            trail_opacity&#x3D;1,
-        ),
-        linestyle_opts&#x3D;opts.LineStyleOpts(is_show&#x3D;False, color&#x3D;&quot;#fff&quot;, opacity&#x3D;0),
-    )
-        .set_global_opts(title_opts&#x3D;opts.TitleOpts(title&#x3D;&quot;Map3D-Lines3D&quot;))
-
-)
-
-c.width &#x3D; &quot;100%&quot;
-put_html(c.render_notebook())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p><img src="https://www.mmrsl.cn/download/img/html5/15.jpg" alt=""></p>
-<h2 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h2><p>使用手册和实现文档见 <a href="https://pywebio.readthedocs.io/zh_CN/latest/">https://pywebio.readthedocs.io</a></p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
         <tag>python</tag>
       </tags>
   </entry>
@@ -4644,6 +4472,178 @@ public class TestThread &#123;
       </tags>
   </entry>
   <entry>
+    <title>Python_PyWebIO</title>
+    <url>/2021/12/01/Python-PyWebIO/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+<p><h1 align="center" name="pywebio-zh">Python_PyWebIO</h1></p>
+<p align="center">
+    <em>万鲲鹏</em>
+</p>
+
+<p>PyWebIO提供了一系列命令式的交互函数来在浏览器上获取用户输入和进行输出，将浏览器变成了一个“富文本终端”，可以用于构建简单的Web应用或基于浏览器的GUI应用。<br>PyWebIO还可以方便地整合进现有的Web服务，让你不需要编写HTML和JS代码，就可以构建出具有良好可用性的应用。</p>
+<p>功能特性：</p>
+<ul>
+<li>使用同步而不是基于回调的方式获取输入，代码编写逻辑更自然</li>
+<li>非声明式布局，布局方式简单高效</li>
+<li>代码侵入性小，旧脚本代码仅需修改输入输出逻辑便可改造为Web服务</li>
+<li>支持整合到现有的Web服务，目前支持与Flask、Django、Tornado、aiohttp、FastAPI框架集成</li>
+<li>同时支持基于线程的执行模型和基于协程的执行模型</li>
+<li>支持结合第三方库实现数据可视化</li>
+</ul>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>稳定版安装:</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>报错：<br><code>Fatal error in launcher: Unable to create process using</code></p>
+<p>主要是由于直接调用环境导致的遇到这种问题</p>
+<pre class="line-numbers language-none"><code class="language-none">python -m pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="Quickstart"><a href="#Quickstart" class="headerlink" title="Quickstart"></a>Quickstart</h2><p><strong>Hello, world</strong></p>
+<p>这是一个使用PyWebIO计算 <a href="https://en.wikipedia.org/wiki/Body_mass_index">BMI指数</a> 的脚本:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio.input import input, FLOAT
+from pywebio.output import put_text
+
+def bmi():
+    height &#x3D; input(&quot;请输入你的身高(cm)：&quot;, type&#x3D;FLOAT)
+    weight &#x3D; input(&quot;请输入你的体重(kg)：&quot;, type&#x3D;FLOAT)
+
+    BMI &#x3D; weight &#x2F; (height &#x2F; 100) ** 2
+
+    top_status &#x3D; [(14.9, &#39;极瘦&#39;), (18.4, &#39;偏瘦&#39;),
+                  (22.9, &#39;正常&#39;), (27.5, &#39;过重&#39;),
+                  (40.0, &#39;肥胖&#39;), (float(&#39;inf&#39;), &#39;非常肥胖&#39;)]
+
+    for top, status in top_status:
+        if BMI &lt;&#x3D; top:
+            put_text(&#39;你的 BMI 值: %.1f，身体状态：%s&#39; % (BMI, status))
+            break
+
+if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    bmi()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如果没有使用PyWebIO，这只是一个非常简单的脚本，而通过使用PyWebIO提供的输入输出函数，你可以在浏览器中与代码进行交互 <a href="http://pywebio-demos.pywebio.online/bmi">[demo]</a>：</p>
+<p align="center">
+    <a href="http://pywebio-demos.pywebio.online/?pywebio_api=bmi">
+        <img src="https://raw.githubusercontent.com/wang0618/PyWebIO/dev/docs/assets/demo_zh.gif" alt="PyWebIO demo" width="400px"/>
+    </a>
+</p>
+
+<p><strong>作为Web服务提供</strong></p>
+<p>上文BMI程序会在计算完毕后立刻退出，可以使用 <a href="https://pywebio.readthedocs.io/zh_CN/latest/platform.html#pywebio.platform.tornado.start_server"><code>pywebio.start_server()</code></a> 将 <code>bmi()</code> 函数作为Web服务提供：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio import start_server
+from pywebio.input import input, FLOAT
+from pywebio.output import put_text
+
+def bmi():  # bmi() 函数内容不变
+    ...  
+
+if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    start_server(bmi, port&#x3D;80)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Demos"><a href="#Demos" class="headerlink" title="Demos"></a>Demos</h2><ul>
+<li><a href="http://pywebio-demos.pywebio.online/">基本demo</a> : 包含PyWebIO基本输入输出演示和使用PyWebIO编写的小应用</li>
+<li><a href="http://pywebio-charts.pywebio.online/">数据可视化demo</a> : 使用 bokeh、plotly、pyecharts 等库进行数据可视化</li>
+</ul>
+<h3 id="武汉三维地图"><a href="#武汉三维地图" class="headerlink" title="武汉三维地图"></a>武汉三维地图</h3><pre class="line-numbers language-none"><code class="language-none">from pywebio.output import put_html
+from pyecharts import options as opts
+from pyecharts.charts import Map3D
+from pyecharts.globals import ChartType
+
+example_data &#x3D; [
+    [[119.107078, 36.70925, 1000], [116.587245, 35.415393, 1000]],
+    [[117.000923, 36.675807], [120.355173, 36.082982]],
+    [[118.047648, 36.814939], [118.66471, 37.434564]],
+    [[121.391382, 37.539297], [119.107078, 36.70925]],
+    [[116.587245, 35.415393], [122.116394, 37.509691]],
+    [[119.461208, 35.428588], [118.326443, 35.065282]],
+    [[116.307428, 37.453968], [115.469381, 35.246531]],
+]
+c &#x3D; (
+    Map3D()
+        .add_schema(
+        maptype&#x3D;&quot;武汉&quot;,
+        itemstyle_opts&#x3D;opts.ItemStyleOpts(
+            color&#x3D;&quot;rgb(5,101,123)&quot;,
+            opacity&#x3D;1,
+            border_width&#x3D;0.8,
+            border_color&#x3D;&quot;rgb(62,215,213)&quot;,
+        ),
+        light_opts&#x3D;opts.Map3DLightOpts(
+            main_color&#x3D;&quot;#fff&quot;,
+            main_intensity&#x3D;1.2,
+            is_main_shadow&#x3D;False,
+            main_alpha&#x3D;55,
+            main_beta&#x3D;10,
+            ambient_intensity&#x3D;0.3,
+        ),
+        view_control_opts&#x3D;opts.Map3DViewControlOpts(center&#x3D;[-10, 0, 10]),
+        post_effect_opts&#x3D;opts.Map3DPostEffectOpts(is_enable&#x3D;False),
+    )
+        .add(
+        series_name&#x3D;&quot;&quot;,
+        data_pair&#x3D;example_data,
+        type_&#x3D;ChartType.LINES3D,
+        effect&#x3D;opts.Lines3DEffectOpts(
+            is_show&#x3D;True,
+            period&#x3D;4,
+            trail_width&#x3D;3,
+            trail_length&#x3D;0.5,
+            trail_color&#x3D;&quot;#f00&quot;,
+            trail_opacity&#x3D;1,
+        ),
+        linestyle_opts&#x3D;opts.LineStyleOpts(is_show&#x3D;False, color&#x3D;&quot;#fff&quot;, opacity&#x3D;0),
+    )
+        .set_global_opts(title_opts&#x3D;opts.TitleOpts(title&#x3D;&quot;Map3D-Lines3D&quot;))
+
+)
+
+c.width &#x3D; &quot;100%&quot;
+put_html(c.render_notebook())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p><img src="https://www.mmrsl.cn/download/img/html5/15.jpg" alt=""></p>
+<h2 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h2><p>使用手册和实现文档见 <a href="https://pywebio.readthedocs.io/zh_CN/latest/">https://pywebio.readthedocs.io</a></p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Quantum-Mini-Linux—配置</title>
     <url>/2021/04/13/Quantum-Mini-Linux%E2%80%94%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span>
@@ -5624,6 +5624,152 @@ systemctl status rc-local.service<span aria-hidden="true" class="line-numbers-ro
       </tags>
   </entry>
   <entry>
+    <title>TensorFlow-lite模型训练</title>
+    <url>/2021/06/11/TensorFlow-lite%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="TensorFlow-lite模型训练"><a href="#TensorFlow-lite模型训练" class="headerlink" title="TensorFlow-lite模型训练"></a>TensorFlow-lite模型训练</h1><h2 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h2><h3 id="安装pytorch、conda"><a href="#安装pytorch、conda" class="headerlink" title="安装pytorch、conda"></a>安装pytorch、conda</h3><p>  该教程详情请见：<a href="https://segmentfault.com/a/1190000020889696">PyTorch环境配置及安装</a></p>
+<h3 id="从github安装一个目标检测的库"><a href="#从github安装一个目标检测的库" class="headerlink" title="从github安装一个目标检测的库"></a>从github安装一个目标检测的库</h3><p>在c盘新建一个文件夹 C:\tensorflow1</p>
+<h4 id="安装tensorflow"><a href="#安装tensorflow" class="headerlink" title="安装tensorflow"></a>安装tensorflow</h4><p>通过单击”克隆或下载”按钮并下载 zip 文件，下载位于<a href="https://github.com/tensorflow/models/tree/r1.13.0">https://github.com/tensorflow/models/tree/r1.13.0</a> 的完整 TensorFlow 对象检测存储库。打开下载的 zip 文件，将”模型主”文件夹直接提取到您刚刚创建的 C：\tensorflow1 目录中。将”models-master”更名为”models”。</p>
+<h3 id="下载模型从-TensorFlow-的模型下载-Faster-RCNN-Inception-V2-COCO-模型"><a href="#下载模型从-TensorFlow-的模型下载-Faster-RCNN-Inception-V2-COCO-模型" class="headerlink" title="下载模型从 TensorFlow 的模型下载 Faster-RCNN-Inception-V2-COCO 模型"></a>下载模型从 TensorFlow 的模型下载 Faster-RCNN-Inception-V2-COCO 模型</h3><p><a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md">模型库</a></p>
+<p>本教程将使用 Faster-RCNN-Inception-V2 模型。在此处下载模型。使用 WinZip 或 7-Zip 等文件归档程序打开下载的 fast_rcnn_inception_v2_coco_2018_01_28.tar.gz 文件，并将 fast_rcnn_inception_v2_coco_2018_01_28 文件夹解压到 C:\tensorflow1\models\research\object_detection 文件夹。（注意：模型日期和版本将来可能会发生变化，但它仍然适用于本教程。）</p>
+<h3 id="下载API存储库"><a href="#下载API存储库" class="headerlink" title="下载API存储库"></a>下载API存储库</h3><p>打开git bash 然后输入下列命令：</p>
+<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;EdjeElectronics&#x2F;TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>将提取到的文件保存到C:\tensorflow1\models\research\bject_detection</p>
+<p>如图所示：</p>
+<p><img src="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/doc/object_detection_directory.jpg" alt=""></p>
+<p><a href="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10">https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10</a></p>
+<h3 id="设置新的anaconda虚拟环境"><a href="#设置新的anaconda虚拟环境" class="headerlink" title="设置新的anaconda虚拟环境"></a>设置新的anaconda虚拟环境</h3><pre class="line-numbers language-none"><code class="language-none">C:\&gt; conda create -n tensorflow1 pip python&#x3D;3.7<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后发布激活环境<br><pre class="line-numbers language-none"><code class="language-none">C:\&gt; activate tensorflow1
+(tensorflow1) C:\&gt;python -m pip install --upgrade pip<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p>
+<p>在此环境中安装tensorflow-gpu：</p>
+<pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; pip install --ignore-installed --upgrade tensorflow-gpu<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>由于我们使用anaconda，安装tensorflow-gpu也将自动下载和安装正确的版本的CUDA和cuDNN。</p>
+<p>没有gpu可以只是用cpu进行训练，如下所示可以这样修改（用cpu会很慢，可我没有GPU）：<br><pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; pip install --ignore-installed --upgrade tensorflow<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
+<p>安装其他必要的包：<br><pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; conda install -c anaconda protobuf
+(tensorflow1) C:\&gt; pip install pillow
+(tensorflow1) C:\&gt; pip install lxml
+(tensorflow1) C:\&gt; pip install Cython
+(tensorflow1) C:\&gt; pip install contextlib2
+(tensorflow1) C:\&gt; pip install jupyter
+(tensorflow1) C:\&gt; pip install matplotlib
+(tensorflow1) C:\&gt; pip install pandas
+(tensorflow1) C:\&gt; pip install opencv-python<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h3 id="PYTH环境变量设置"><a href="#PYTH环境变量设置" class="headerlink" title="PYTH环境变量设置"></a>PYTH环境变量设置</h3><pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; set PYTHONPATH&#x3D;C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="编译原型运行setup-py"><a href="#编译原型运行setup-py" class="headerlink" title="编译原型运行setup.py"></a>编译原型运行setup.py</h3><p>在 Anaconda 命令提示中，将目录更改为 “模型” 研究目录：</p>
+<pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; cd C:\tensorflow1\models\research<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后将以下命令复制并粘贴到命令行中并按”输入”</p>
+<pre class="line-numbers language-none"><code class="language-none">protoc --python_out&#x3D;. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在目录 C:\tensorflow1\models\research\delf directory:中运行<br><pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\tensorflow1\models\research\delf&gt; python setup.py build
+(tensorflow1) C:\tensorflow1\models\research\delf&gt; python setup.py install
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p>
+<h3 id="测试tensorflow设置验证工作原理"><a href="#测试tensorflow设置验证工作原理" class="headerlink" title="测试tensorflow设置验证工作原理"></a>测试tensorflow设置验证工作原理</h3><p>TensorFlow 对象检测 API 现已全部设置，用于使用经过预先训练的对象检测模型，或培训新的模型。您可以通过启动与 Jupyter 的object_detection_tutorial.ipynb 脚本来测试它并验证您的安装是否正常工作。从 [object_detection 目录中，发布此命令：</p>
+<pre class="line-numbers language-none"><code class="language-none">cd C:\tensorflow1\models\research\object_detection\colab_tutorials<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\tensorflow1\models\research\object_detection\colab_tutorials&gt; jupyter notebook object_detection_tutorial.ipynb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="json转xml-参考自CSDN"><a href="#json转xml-参考自CSDN" class="headerlink" title="json转xml(参考自CSDN)"></a>json转xml(<a href="https://blog.csdn.net/u013894391/article/details/103006594">参考自CSDN</a>)</h3><ul>
+<li><p>python 安装</p>
+<p><code>pip install dicttoxml</code></p>
+</li>
+</ul>
+<ul>
+<li>源码<pre class="line-numbers language-none"><code class="language-none">import os
+from json import loads
+from dicttoxml import dicttoxml
+from xml.dom.minidom import parseString
+
+
+def jsonToXml(json_path, xml_path):
+    # @abstract: transfer json file to xml file
+    # json_path: complete path of the json file
+    # xml_path: complete path of the xml file
+    with open(json_path, &#39;r&#39;, encoding&#x3D;&#39;UTF-8&#39;)as json_file:
+        load_dict &#x3D; loads(json_file.read())
+    # print(load_dict)
+    my_item_func &#x3D; lambda x: &#39;Annotation&#39;
+    xml &#x3D; dicttoxml(load_dict, custom_root&#x3D;&#39;Annotations&#39;, item_func&#x3D;my_item_func, attr_type&#x3D;False)
+    dom &#x3D; parseString(xml)
+    # print(dom.toprettyxml())
+    # print(type(dom.toprettyxml()))
+    with open(xml_path, &#39;w&#39;, encoding&#x3D;&#39;UTF-8&#39;)as xml_file:
+        xml_file.write(dom.toprettyxml())
+
+
+def json_to_xml(json_dir, xml_dir):
+    # transfer all json file which in the json_dir to xml_dir
+    if (os.path.exists(xml_dir) &#x3D;&#x3D; False):
+        os.makedirs(xml_dir)
+    dir &#x3D; os.listdir(json_dir)
+    for file in dir:
+        file_list &#x3D; file.split(&quot;.&quot;)
+        if (file_list[-1] &#x3D;&#x3D; &#39;json&#39;):
+            jsonToXml(os.path.join(json_dir, file), os.path.join(xml_dir, file_list[0] + &#39;.xml&#39;))
+
+
+if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    # trandfer singal file
+    j_path &#x3D; &quot;annotations_all.json&quot;
+    x_path &#x3D; &quot;annotations_all.xml&quot;
+    jsonToXml(j_path, x_path)
+
+    # # transfer multi files
+    # j_dir &#x3D; &quot;F:&#x2F;清影科技&#x2F;work&#x2F;jsontoxml&#x2F;json&#x2F;&quot;
+    # x_dir &#x3D; &quot;F:&#x2F;清影科技&#x2F;work&#x2F;jsontoxml&#x2F;xml&#x2F;&quot;
+    # json_to_xml(j_dir, x_dir)
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<h2 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h2><h3 id="步骤-1b。配置训练"><a href="#步骤-1b。配置训练" class="headerlink" title="步骤 1b。配置训练"></a>步骤 1b。配置训练</h3><p>如果您正在训练自己的 TensorFlow Lite 模型，请确保已完成我之前指南中的以下项目：</p>
+<ul>
+<li>训练和测试图像及其 XML 标签文件放置在 \object_detection\images\train 和 \object_detection\images\test 文件夹中</li>
+<li>train_labels.csv 和 test_labels.csv 已生成并位于 \object_detection\images 文件夹中</li>
+<li>train.record 和 test.record 已生成并位于 \object_detection 文件夹中</li>
+<li>labelmap.pbtxt 文件已创建并位于 \object_detection\training 文件夹中</li>
+<li>\object_detection\protos 中的 proto 文件已经生成<br>如果您对这些文件有任何疑问或不知道如何生成它们，我之前教程的第 2、3、4 和 5 步展示了它们是如何创建的。</li>
+</ul>
+<p>将 ssd_mobilenet_v2_quantized_300x300_coco.config 文件从 \object_detection\samples\configs 文件夹复制到 \object_detection\training 文件夹。然后，使用文本编辑器打开文件。</p>
+<p>对 ssd_mobilenet_v2_quantized_300x300_coco.config 文件进行以下更改。注意：路径必须用单个正斜杠（不是反斜杠）输入，否则 TensorFlow 在尝试训练模型时会给出文件路径错误！此外，路径必须包含在双引号 ( “ ) 中，而不是单引号 ( ‘ ) 中。</p>
+<ul>
+<li><p>第 9 行。将 num_classes 更改为您希望分类器检测的不同对象的数量。对于我的鸟/松鼠/浣熊检测器示例，有三个类，所以我设置了 num_classes: 3</p>
+</li>
+<li><p>第 141 行。将 batch_size: 24 更改为 batch_size: 6 。较小的批大小将防止训练期间出现 OOM（内存不足）错误。</p>
+</li>
+<li><p>第 156 行。将fine_tune_checkpoint 更改为：“C:/tensorflow1/models/research/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03/model.ckpt”</p>
+</li>
+<li><p>第 175 行。将 input_path 更改为：“C:/tensorflow1/models/research/object_detection/train.record”</p>
+</li>
+<li><p>第 177 行。将 label_map_path 更改为：“C:/tensorflow1/models/research/object_detection/training/labelmap.pbtxt”</p>
+</li>
+<li><p>第 181 行。将 num_examples 更改为您在 \images\test 目录中拥有的图像数量。对于我的鸟/松鼠/浣熊检测器示例，有 582 个测试图像，因此我设置了 num_examples: 582。</p>
+</li>
+<li><p>第 189 行。将 input_path 更改为：“C:/tensorflow1/models/research/object_detection/test.record”</p>
+</li>
+<li><p>第 191 行。将 label_map_path 更改为：“C:/tensorflow1/models/research/object_detection/training/labelmap.pbtxt”</p>
+</li>
+</ul>
+<p>更改完成后保存并退出训练文件。</p>
+<h3 id="步骤-1c。在-Anaconda-虚拟环境中运行训练"><a href="#步骤-1c。在-Anaconda-虚拟环境中运行训练" class="headerlink" title="步骤 1c。在 Anaconda 虚拟环境中运行训练"></a>步骤 1c。在 Anaconda 虚拟环境中运行训练</h3><p>剩下要做的就是训练模型！首先，将“train.py”文件从 \object_detection\legacy 文件夹移动到主 \object_detection 文件夹中。（有关为什么我使用旧版 train.py 脚本而不是 model_main.py 进行训练，请参阅常见问题解答。）</p>
+<p>然后，通过在“开始”菜单中搜索“Anaconda Prompt”并单击它来打开一个新的 Anaconda Prompt 窗口。通过发出以下命令激活“tensorflow1”虚拟环境（在我之前的教程中设置）：<br><code>activate tensorflow1</code></p>
+<p>然后，通过发出以下命令来设置 PYTHONPATH 环境变量：</p>
+<p><code>set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim</code></p>
+<p>接下来，将目录更改为 \object_detection 文件夹：</p>
+<p><code>cd C:\tensorflow1\models\research\object_detection</code></p>
+<p>最后，通过发出以下命令来训练模型：<br><code>cd legacy</code></p>
+<p><code>python train.py --logtostderr –train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v2_quantized_300x300_coco.config</code></p>
+<p>如果一切设置正确，模型将在初始化几分钟后开始训练。</p>
+<p>允许模型训练，直到损失始终低于 2。对于我的鸟/松鼠/浣熊检测器模型，这需要大约 9000 步，或 8 小时的训练。（时间会根据您的 CPU 和 GPU 的强大程度而有所不同。有关训练的更多信息以及如何使用 TensorBoard 查看训练作业进度的说明，请参阅我之前教程的第 6 步。）</p>
+<p>一旦训练完成（即损失一直低于 2），按 Ctrl+C 停止训练。最新的检查点将保存在 \object_detection\training 文件夹中，我们将使用该检查点导出冻结的 TensorFlow Lite 图。记下training文件夹（即model.ckpt-XXXX）中model.ckpt文件的checkpoint号，后面会用到。</p>
+<pre class="line-numbers language-none"><code class="language-none">protoc --python_out&#x3D;. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto
+
+
+protoc --python_out&#x3D;. C:\tensorflow1\models\research\object_detection\protos\anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\argmax_matcher.proto C:\tensorflow1\models\research\object_detection\protos\bipartite_matcher.proto C:\tensorflow1\models\research\object_detection\protos\box_coder.proto C:\tensorflow1\models\research\object_detection\protos\box_predictor.proto C:\tensorflow1\models\research\object_detection\protos\eval.proto C:\tensorflow1\models\research\object_detection\protos\faster_rcnn.proto C:\tensorflow1\models\research\object_detection\protos\faster_rcnn_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\FILELIST.TXT C:\tensorflow1\models\research\object_detection\protos\graph_rewriter.proto C:\tensorflow1\models\research\object_detection\protos\grid_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\hyperparams.proto C:\tensorflow1\models\research\object_detection\protos\image_resizer.proto C:\tensorflow1\models\research\object_detection\protos\input_reader.proto C:\tensorflow1\models\research\object_detection\protos\keypoint_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\LIST.TXT C:\tensorflow1\models\research\object_detection\protos\losses.proto C:\tensorflow1\models\research\object_detection\protos\matcher.proto C:\tensorflow1\models\research\object_detection\protos\mean_stddev_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\model.proto C:\tensorflow1\models\research\object_detection\protos\multiscale_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\optimizer.proto C:\tensorflow1\models\research\object_detection\protos\pipeline.proto C:\tensorflow1\models\research\object_detection\protos\post_processing.proto C:\tensorflow1\models\research\object_detection\protos\preprocessor.proto C:\tensorflow1\models\research\object_detection\protos\region_similarity_calculator.proto C:\tensorflow1\models\research\object_detection\protos\square_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\ssd.proto C:\tensorflow1\models\research\object_detection\protos\ssd_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\string_int_label_map.proto C:\tensorflow1\models\research\object_detection\protos\train.proto <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>微型计算机</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>WebGL_3D_长江大桥_黄鹤楼_任意组合房</title>
     <url>/2021/11/24/WebGL-%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A5-%E9%BB%84%E9%B9%A4%E6%A5%BC-%E4%BB%BB%E6%84%8F%E7%BB%84%E5%90%88%E6%88%BF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
@@ -5944,152 +6090,6 @@ roomfloor(HIGHT*i,Width*z,Length*j,400,400,300)&#125;
       <tags>
         <tag>b站视频</tag>
         <tag>分享</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>TensorFlow-lite模型训练</title>
-    <url>/2021/06/11/TensorFlow-lite%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="TensorFlow-lite模型训练"><a href="#TensorFlow-lite模型训练" class="headerlink" title="TensorFlow-lite模型训练"></a>TensorFlow-lite模型训练</h1><h2 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h2><h3 id="安装pytorch、conda"><a href="#安装pytorch、conda" class="headerlink" title="安装pytorch、conda"></a>安装pytorch、conda</h3><p>  该教程详情请见：<a href="https://segmentfault.com/a/1190000020889696">PyTorch环境配置及安装</a></p>
-<h3 id="从github安装一个目标检测的库"><a href="#从github安装一个目标检测的库" class="headerlink" title="从github安装一个目标检测的库"></a>从github安装一个目标检测的库</h3><p>在c盘新建一个文件夹 C:\tensorflow1</p>
-<h4 id="安装tensorflow"><a href="#安装tensorflow" class="headerlink" title="安装tensorflow"></a>安装tensorflow</h4><p>通过单击”克隆或下载”按钮并下载 zip 文件，下载位于<a href="https://github.com/tensorflow/models/tree/r1.13.0">https://github.com/tensorflow/models/tree/r1.13.0</a> 的完整 TensorFlow 对象检测存储库。打开下载的 zip 文件，将”模型主”文件夹直接提取到您刚刚创建的 C：\tensorflow1 目录中。将”models-master”更名为”models”。</p>
-<h3 id="下载模型从-TensorFlow-的模型下载-Faster-RCNN-Inception-V2-COCO-模型"><a href="#下载模型从-TensorFlow-的模型下载-Faster-RCNN-Inception-V2-COCO-模型" class="headerlink" title="下载模型从 TensorFlow 的模型下载 Faster-RCNN-Inception-V2-COCO 模型"></a>下载模型从 TensorFlow 的模型下载 Faster-RCNN-Inception-V2-COCO 模型</h3><p><a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md">模型库</a></p>
-<p>本教程将使用 Faster-RCNN-Inception-V2 模型。在此处下载模型。使用 WinZip 或 7-Zip 等文件归档程序打开下载的 fast_rcnn_inception_v2_coco_2018_01_28.tar.gz 文件，并将 fast_rcnn_inception_v2_coco_2018_01_28 文件夹解压到 C:\tensorflow1\models\research\object_detection 文件夹。（注意：模型日期和版本将来可能会发生变化，但它仍然适用于本教程。）</p>
-<h3 id="下载API存储库"><a href="#下载API存储库" class="headerlink" title="下载API存储库"></a>下载API存储库</h3><p>打开git bash 然后输入下列命令：</p>
-<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;EdjeElectronics&#x2F;TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>将提取到的文件保存到C:\tensorflow1\models\research\bject_detection</p>
-<p>如图所示：</p>
-<p><img src="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/doc/object_detection_directory.jpg" alt=""></p>
-<p><a href="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10">https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10</a></p>
-<h3 id="设置新的anaconda虚拟环境"><a href="#设置新的anaconda虚拟环境" class="headerlink" title="设置新的anaconda虚拟环境"></a>设置新的anaconda虚拟环境</h3><pre class="line-numbers language-none"><code class="language-none">C:\&gt; conda create -n tensorflow1 pip python&#x3D;3.7<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>然后发布激活环境<br><pre class="line-numbers language-none"><code class="language-none">C:\&gt; activate tensorflow1
-(tensorflow1) C:\&gt;python -m pip install --upgrade pip<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p>
-<p>在此环境中安装tensorflow-gpu：</p>
-<pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; pip install --ignore-installed --upgrade tensorflow-gpu<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>由于我们使用anaconda，安装tensorflow-gpu也将自动下载和安装正确的版本的CUDA和cuDNN。</p>
-<p>没有gpu可以只是用cpu进行训练，如下所示可以这样修改（用cpu会很慢，可我没有GPU）：<br><pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; pip install --ignore-installed --upgrade tensorflow<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
-<p>安装其他必要的包：<br><pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; conda install -c anaconda protobuf
-(tensorflow1) C:\&gt; pip install pillow
-(tensorflow1) C:\&gt; pip install lxml
-(tensorflow1) C:\&gt; pip install Cython
-(tensorflow1) C:\&gt; pip install contextlib2
-(tensorflow1) C:\&gt; pip install jupyter
-(tensorflow1) C:\&gt; pip install matplotlib
-(tensorflow1) C:\&gt; pip install pandas
-(tensorflow1) C:\&gt; pip install opencv-python<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<h3 id="PYTH环境变量设置"><a href="#PYTH环境变量设置" class="headerlink" title="PYTH环境变量设置"></a>PYTH环境变量设置</h3><pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; set PYTHONPATH&#x3D;C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="编译原型运行setup-py"><a href="#编译原型运行setup-py" class="headerlink" title="编译原型运行setup.py"></a>编译原型运行setup.py</h3><p>在 Anaconda 命令提示中，将目录更改为 “模型” 研究目录：</p>
-<pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\&gt; cd C:\tensorflow1\models\research<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>然后将以下命令复制并粘贴到命令行中并按”输入”</p>
-<pre class="line-numbers language-none"><code class="language-none">protoc --python_out&#x3D;. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>在目录 C:\tensorflow1\models\research\delf directory:中运行<br><pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\tensorflow1\models\research\delf&gt; python setup.py build
-(tensorflow1) C:\tensorflow1\models\research\delf&gt; python setup.py install
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p>
-<h3 id="测试tensorflow设置验证工作原理"><a href="#测试tensorflow设置验证工作原理" class="headerlink" title="测试tensorflow设置验证工作原理"></a>测试tensorflow设置验证工作原理</h3><p>TensorFlow 对象检测 API 现已全部设置，用于使用经过预先训练的对象检测模型，或培训新的模型。您可以通过启动与 Jupyter 的object_detection_tutorial.ipynb 脚本来测试它并验证您的安装是否正常工作。从 [object_detection 目录中，发布此命令：</p>
-<pre class="line-numbers language-none"><code class="language-none">cd C:\tensorflow1\models\research\object_detection\colab_tutorials<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<pre class="line-numbers language-none"><code class="language-none">(tensorflow1) C:\tensorflow1\models\research\object_detection\colab_tutorials&gt; jupyter notebook object_detection_tutorial.ipynb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="json转xml-参考自CSDN"><a href="#json转xml-参考自CSDN" class="headerlink" title="json转xml(参考自CSDN)"></a>json转xml(<a href="https://blog.csdn.net/u013894391/article/details/103006594">参考自CSDN</a>)</h3><ul>
-<li><p>python 安装</p>
-<p><code>pip install dicttoxml</code></p>
-</li>
-</ul>
-<ul>
-<li>源码<pre class="line-numbers language-none"><code class="language-none">import os
-from json import loads
-from dicttoxml import dicttoxml
-from xml.dom.minidom import parseString
-
-
-def jsonToXml(json_path, xml_path):
-    # @abstract: transfer json file to xml file
-    # json_path: complete path of the json file
-    # xml_path: complete path of the xml file
-    with open(json_path, &#39;r&#39;, encoding&#x3D;&#39;UTF-8&#39;)as json_file:
-        load_dict &#x3D; loads(json_file.read())
-    # print(load_dict)
-    my_item_func &#x3D; lambda x: &#39;Annotation&#39;
-    xml &#x3D; dicttoxml(load_dict, custom_root&#x3D;&#39;Annotations&#39;, item_func&#x3D;my_item_func, attr_type&#x3D;False)
-    dom &#x3D; parseString(xml)
-    # print(dom.toprettyxml())
-    # print(type(dom.toprettyxml()))
-    with open(xml_path, &#39;w&#39;, encoding&#x3D;&#39;UTF-8&#39;)as xml_file:
-        xml_file.write(dom.toprettyxml())
-
-
-def json_to_xml(json_dir, xml_dir):
-    # transfer all json file which in the json_dir to xml_dir
-    if (os.path.exists(xml_dir) &#x3D;&#x3D; False):
-        os.makedirs(xml_dir)
-    dir &#x3D; os.listdir(json_dir)
-    for file in dir:
-        file_list &#x3D; file.split(&quot;.&quot;)
-        if (file_list[-1] &#x3D;&#x3D; &#39;json&#39;):
-            jsonToXml(os.path.join(json_dir, file), os.path.join(xml_dir, file_list[0] + &#39;.xml&#39;))
-
-
-if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
-    # trandfer singal file
-    j_path &#x3D; &quot;annotations_all.json&quot;
-    x_path &#x3D; &quot;annotations_all.xml&quot;
-    jsonToXml(j_path, x_path)
-
-    # # transfer multi files
-    # j_dir &#x3D; &quot;F:&#x2F;清影科技&#x2F;work&#x2F;jsontoxml&#x2F;json&#x2F;&quot;
-    # x_dir &#x3D; &quot;F:&#x2F;清影科技&#x2F;work&#x2F;jsontoxml&#x2F;xml&#x2F;&quot;
-    # json_to_xml(j_dir, x_dir)
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
-<h2 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h2><h3 id="步骤-1b。配置训练"><a href="#步骤-1b。配置训练" class="headerlink" title="步骤 1b。配置训练"></a>步骤 1b。配置训练</h3><p>如果您正在训练自己的 TensorFlow Lite 模型，请确保已完成我之前指南中的以下项目：</p>
-<ul>
-<li>训练和测试图像及其 XML 标签文件放置在 \object_detection\images\train 和 \object_detection\images\test 文件夹中</li>
-<li>train_labels.csv 和 test_labels.csv 已生成并位于 \object_detection\images 文件夹中</li>
-<li>train.record 和 test.record 已生成并位于 \object_detection 文件夹中</li>
-<li>labelmap.pbtxt 文件已创建并位于 \object_detection\training 文件夹中</li>
-<li>\object_detection\protos 中的 proto 文件已经生成<br>如果您对这些文件有任何疑问或不知道如何生成它们，我之前教程的第 2、3、4 和 5 步展示了它们是如何创建的。</li>
-</ul>
-<p>将 ssd_mobilenet_v2_quantized_300x300_coco.config 文件从 \object_detection\samples\configs 文件夹复制到 \object_detection\training 文件夹。然后，使用文本编辑器打开文件。</p>
-<p>对 ssd_mobilenet_v2_quantized_300x300_coco.config 文件进行以下更改。注意：路径必须用单个正斜杠（不是反斜杠）输入，否则 TensorFlow 在尝试训练模型时会给出文件路径错误！此外，路径必须包含在双引号 ( “ ) 中，而不是单引号 ( ‘ ) 中。</p>
-<ul>
-<li><p>第 9 行。将 num_classes 更改为您希望分类器检测的不同对象的数量。对于我的鸟/松鼠/浣熊检测器示例，有三个类，所以我设置了 num_classes: 3</p>
-</li>
-<li><p>第 141 行。将 batch_size: 24 更改为 batch_size: 6 。较小的批大小将防止训练期间出现 OOM（内存不足）错误。</p>
-</li>
-<li><p>第 156 行。将fine_tune_checkpoint 更改为：“C:/tensorflow1/models/research/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03/model.ckpt”</p>
-</li>
-<li><p>第 175 行。将 input_path 更改为：“C:/tensorflow1/models/research/object_detection/train.record”</p>
-</li>
-<li><p>第 177 行。将 label_map_path 更改为：“C:/tensorflow1/models/research/object_detection/training/labelmap.pbtxt”</p>
-</li>
-<li><p>第 181 行。将 num_examples 更改为您在 \images\test 目录中拥有的图像数量。对于我的鸟/松鼠/浣熊检测器示例，有 582 个测试图像，因此我设置了 num_examples: 582。</p>
-</li>
-<li><p>第 189 行。将 input_path 更改为：“C:/tensorflow1/models/research/object_detection/test.record”</p>
-</li>
-<li><p>第 191 行。将 label_map_path 更改为：“C:/tensorflow1/models/research/object_detection/training/labelmap.pbtxt”</p>
-</li>
-</ul>
-<p>更改完成后保存并退出训练文件。</p>
-<h3 id="步骤-1c。在-Anaconda-虚拟环境中运行训练"><a href="#步骤-1c。在-Anaconda-虚拟环境中运行训练" class="headerlink" title="步骤 1c。在 Anaconda 虚拟环境中运行训练"></a>步骤 1c。在 Anaconda 虚拟环境中运行训练</h3><p>剩下要做的就是训练模型！首先，将“train.py”文件从 \object_detection\legacy 文件夹移动到主 \object_detection 文件夹中。（有关为什么我使用旧版 train.py 脚本而不是 model_main.py 进行训练，请参阅常见问题解答。）</p>
-<p>然后，通过在“开始”菜单中搜索“Anaconda Prompt”并单击它来打开一个新的 Anaconda Prompt 窗口。通过发出以下命令激活“tensorflow1”虚拟环境（在我之前的教程中设置）：<br><code>activate tensorflow1</code></p>
-<p>然后，通过发出以下命令来设置 PYTHONPATH 环境变量：</p>
-<p><code>set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim</code></p>
-<p>接下来，将目录更改为 \object_detection 文件夹：</p>
-<p><code>cd C:\tensorflow1\models\research\object_detection</code></p>
-<p>最后，通过发出以下命令来训练模型：<br><code>cd legacy</code></p>
-<p><code>python train.py --logtostderr –train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v2_quantized_300x300_coco.config</code></p>
-<p>如果一切设置正确，模型将在初始化几分钟后开始训练。</p>
-<p>允许模型训练，直到损失始终低于 2。对于我的鸟/松鼠/浣熊检测器模型，这需要大约 9000 步，或 8 小时的训练。（时间会根据您的 CPU 和 GPU 的强大程度而有所不同。有关训练的更多信息以及如何使用 TensorBoard 查看训练作业进度的说明，请参阅我之前教程的第 6 步。）</p>
-<p>一旦训练完成（即损失一直低于 2），按 Ctrl+C 停止训练。最新的检查点将保存在 \object_detection\training 文件夹中，我们将使用该检查点导出冻结的 TensorFlow Lite 图。记下training文件夹（即model.ckpt-XXXX）中model.ckpt文件的checkpoint号，后面会用到。</p>
-<pre class="line-numbers language-none"><code class="language-none">protoc --python_out&#x3D;. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto
-
-
-protoc --python_out&#x3D;. C:\tensorflow1\models\research\object_detection\protos\anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\argmax_matcher.proto C:\tensorflow1\models\research\object_detection\protos\bipartite_matcher.proto C:\tensorflow1\models\research\object_detection\protos\box_coder.proto C:\tensorflow1\models\research\object_detection\protos\box_predictor.proto C:\tensorflow1\models\research\object_detection\protos\eval.proto C:\tensorflow1\models\research\object_detection\protos\faster_rcnn.proto C:\tensorflow1\models\research\object_detection\protos\faster_rcnn_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\FILELIST.TXT C:\tensorflow1\models\research\object_detection\protos\graph_rewriter.proto C:\tensorflow1\models\research\object_detection\protos\grid_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\hyperparams.proto C:\tensorflow1\models\research\object_detection\protos\image_resizer.proto C:\tensorflow1\models\research\object_detection\protos\input_reader.proto C:\tensorflow1\models\research\object_detection\protos\keypoint_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\LIST.TXT C:\tensorflow1\models\research\object_detection\protos\losses.proto C:\tensorflow1\models\research\object_detection\protos\matcher.proto C:\tensorflow1\models\research\object_detection\protos\mean_stddev_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\model.proto C:\tensorflow1\models\research\object_detection\protos\multiscale_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\optimizer.proto C:\tensorflow1\models\research\object_detection\protos\pipeline.proto C:\tensorflow1\models\research\object_detection\protos\post_processing.proto C:\tensorflow1\models\research\object_detection\protos\preprocessor.proto C:\tensorflow1\models\research\object_detection\protos\region_similarity_calculator.proto C:\tensorflow1\models\research\object_detection\protos\square_box_coder.proto C:\tensorflow1\models\research\object_detection\protos\ssd.proto C:\tensorflow1\models\research\object_detection\protos\ssd_anchor_generator.proto C:\tensorflow1\models\research\object_detection\protos\string_int_label_map.proto C:\tensorflow1\models\research\object_detection\protos\train.proto <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>微型计算机</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -8435,49 +8435,6 @@ iptables-restore &lt; &#x2F;etc&#x2F;iptables.ipv4.nat
       </tags>
   </entry>
   <entry>
-    <title>Merry Christmas</title>
-    <url>/2020/12/24/merry_christmas/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-</center>
-
-<span id="more"></span>
-<ol>
-<li>git push 方法</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">git init
-git add .
-git commit -m &quot;first commit&quot;
-git remote add origin URL
-git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
-<ol>
-<li>圣诞网站模板分享</li>
-</ol>
-<ul>
-<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
-<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
-</ul>
-<ol>
-<li>电影分享 </li>
-</ol>
-<ul>
-<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
-</ul>
-<center>
-
-
-<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
-      <categories>
-        <category>电影推荐</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux系统通信功率信道修改方法</title>
     <url>/2021/04/22/linux%E7%B3%BB%E7%BB%9F%E9%80%9A%E4%BF%A1%E5%8A%9F%E7%8E%87%E4%BF%A1%E9%81%93%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux系统通信功率信道修改方法"><a href="#linux系统通信功率信道修改方法" class="headerlink" title="linux系统通信功率信道修改方法"></a>linux系统通信功率信道修改方法</h1><h2 id="配置频段"><a href="#配置频段" class="headerlink" title="配置频段"></a>配置频段</h2><h3 id="可以先查看有哪些频段："><a href="#可以先查看有哪些频段：" class="headerlink" title="可以先查看有哪些频段："></a>可以先查看有哪些频段：</h3><p><code>iwlist channel</code> </p>
@@ -8950,6 +8907,49 @@ sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="
       </tags>
   </entry>
   <entry>
+    <title>Merry Christmas</title>
+    <url>/2020/12/24/merry_christmas/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+</center>
+
+<span id="more"></span>
+<ol>
+<li>git push 方法</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">git init
+git add .
+git commit -m &quot;first commit&quot;
+git remote add origin URL
+git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
+<ol>
+<li>圣诞网站模板分享</li>
+</ol>
+<ul>
+<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
+<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
+</ul>
+<ol>
+<li>电影分享 </li>
+</ol>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
+</ul>
+<center>
+
+
+<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
+      <categories>
+        <category>电影推荐</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mjpg-streamer</title>
     <url>/2021/11/23/mjpg-streamer/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
@@ -9257,28 +9257,6 @@ if __name__ &#x3D;&#x3D; &quot;__main__&quot;:
 <p><a href="https://blog.csdn.net/zhengqijun_/article/details/72473177">https://blog.csdn.net/zhengqijun_/article/details/72473177</a></p>
 <p><a href="https://www.cnblogs.com/wanghuaijun/p/8098460.html">https://www.cnblogs.com/wanghuaijun/p/8098460.html</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>network map</title>
-    <url>/2021/04/14/nmap/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>network map</category>
-      </categories>
-      <tags>
-        <tag>nmap</tag>
-      </tags>
   </entry>
   <entry>
     <title>openwrt_树莓派_mesh自组织网络</title>
@@ -9661,6 +9639,28 @@ im_show.save(&#39;result.jpg&#39;)<span aria-hidden="true" class="line-numbers-r
       <tags>
         <tag>OCR</tag>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>network map</title>
+    <url>/2021/04/14/nmap/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>network map</category>
+      </categories>
+      <tags>
+        <tag>nmap</tag>
       </tags>
   </entry>
   <entry>
@@ -10933,55 +10933,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </tags>
   </entry>
   <entry>
-    <title>xmu健康打卡ios快捷指令</title>
-    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
-<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
-<li>浏览器</li>
-<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
-<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
-<li>接着，选择network<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center></li>
-<li><p>找到POST，不要寻找GET</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-</li>
-<li><p>如下：<br><center>
-<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
-</li>
-</ul>
-<p>即找到了我们需要的登录网址。</p>
-<p>接下来记录 username和userpassword，依次填入ios。</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-
-<ul>
-<li>将得到的数据填入一下列表<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ul>
-<blockquote>
-<p>仅只写到这里有兴趣的自己继续探索。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>厦门大学</category>
-      </categories>
-      <tags>
-        <tag>厦门大学</tag>
-        <tag>健康打卡</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于深度强化学习的超级马里奥和飞机大战自动控制</title>
     <url>/2021/03/15/%E5%9F%BA%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5%E5%92%8C%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
@@ -11186,7 +11137,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#107;&#112;&#x40;&#x6d;&#x6d;&#114;&#115;&#x6c;&#46;&#99;&#x6e;">&#107;&#112;&#x40;&#x6d;&#x6d;&#114;&#115;&#x6c;&#46;&#99;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#107;&#x70;&#x40;&#x6d;&#x6d;&#114;&#x73;&#108;&#x2e;&#99;&#110;">&#107;&#x70;&#x40;&#x6d;&#x6d;&#114;&#x73;&#108;&#x2e;&#99;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -11227,6 +11178,55 @@ img {
       <tags>
         <tag>强化学习</tag>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>xmu健康打卡ios快捷指令</title>
+    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
+<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
+<li>浏览器</li>
+<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
+<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
+<li>接着，选择network<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center></li>
+<li><p>找到POST，不要寻找GET</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+</li>
+<li><p>如下：<br><center>
+<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
+</li>
+</ul>
+<p>即找到了我们需要的登录网址。</p>
+<p>接下来记录 username和userpassword，依次填入ios。</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+
+<ul>
+<li>将得到的数据填入一下列表<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ul>
+<blockquote>
+<p>仅只写到这里有兴趣的自己继续探索。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>厦门大学</category>
+      </categories>
+      <tags>
+        <tag>厦门大学</tag>
+        <tag>健康打卡</tag>
       </tags>
   </entry>
   <entry>
@@ -11817,28 +11817,6 @@ r = \frac{|w^Tx+b|}{||w||}</script><ol>
       </tags>
   </entry>
   <entry>
-    <title>树莓派_命令行连接wifi</title>
-    <url>/2021/06/28/%E6%A0%91%E8%8E%93%E6%B4%BE-%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5wifi/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="4e715f80f897530b0cad42515d34d49d2c91af69b2c9ed3b3156aee371454e16">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041aa2df045649d51c4d893ac0794f8d93e4df6a0e15c93ccb5b1002c4397ca1b8e49411e18e08210dc2e308886a40f394b3e1678267bb9d7abf42b4adac2bf404b18c0c7b94f2386c04aa5554c2f7509b34529781bb153679385e738f25ea17898a1a4129576d82d7f06fc92c6e73a9c62110236d596aac804eb9ba266ea0c6860529e232fc0a938255ba7bdabd04f4210ea766812de7093cfd28f8dd57548bc0f54054c9ff9f8afd5323e8bda9bfe5b6d59a69c21714f36db856fd8cf7f650e3f5e401d215b999b913c3577ea40930bd686f8d9540d2014517df8e9dc61dfbafa48aab1d3fedf0448294bf6d067727cf1f7f0fbf8d1e9ab5f93f7dc9e1e8cd6d690e7211011c894e0fcef0554b5764a4272dd11c0c612f409da2c716bc1e0e117ee5d6a3b6fcaec4f8ba43a20d24ce7fd1c2f171fe1709ae8dfb24aa22615ce8c7b1de459911b37d035543990972fe06cf88241d94059d67ab111ade010e1b2b8adac83a1a383911ee175d02eaec05b8e6ff44ac4932adadb5078d864a7cfe2ab5ac89c262d0caa07e70627af2f118f403d51c25847c4992c1a2f0b00280e2d9a17ad3b4e9c5be8ae6c1488f853f04f10ef8ccd16f68fc480bd16978d1407cfe27f836439400297ab2cb2bc0b62e88190e869cd273d8c0e31f4427af039eed3a61e9992b1fff2cd4cac66762f98578341e955c7a082dfb2c0c5d35c815d16805140d2cd9a22a543d5a620aececd000cc60382f2c0242534d4dcd2c44058e4fae7e71de3c3f4a09250bce9989d4f14442fc4581e526abe54370405b9955f809409b56070e730047ea6572ad26b2c40e6536bc37739010cfb5ba54453b898e759aca888783b6cc53a47fbbe4a5444c5768b5286e7f798aae532842f2351722ea7a03a9286f4d248849993b862a08f28fc28b8372e45cc910ba0df285c451f9ec55346482b8d9c7dc0b5cd7bf9a9b873996a9a924eb3dd61a8727ae68d0794505bd154c2ee92f0be5d7ea918b3f7dca9907606030dc667269abf38760d9db102f1fea3b79b34a8c07a95a00ab0e3f1ecb4af38cb75bde07ca2bf3f7d36a7eb9ae360f7627b419612da852f773b040332db74261ff350bf912dd5a76a72244ffef6dd01721379d6ea91b35486ee9bb3def5efa93687cb5cf04594d843fc3fbfdccc546c1c57b48a8983b039f4769534cae41b9f8be2946335d7babe3917541eb764e2c87cabbcb5985339d36fce34640c3cec0a6f3baeaef01ae91bd4850505247585333c891ede559f617295ecbfa370dd9b1a35268b6309e093cf16b226b37cb61b600f015ba6480a214f2ef1d1ec659296da8bad035e81ca418b1a2926768f7db11447f8936c33d0a399205f98fc8c1e71f0a868794bcb38315715e5dd29fd98742d1cab951349ed430cb9162e3e677bb02e19d136da4f5c237e9745e80adaa3c3e93d932d10a2d723a16670f027e301abb3d160c38e1d92ca112d202f15e02395ab0b5ffe805bc54406c071fca64f90823dce2024af30c602b5e8870ef4de55bc125ed053eab80d78af6221341c9c7578249a0779881483763e2d576148dce64632e882bab28cd7d9fb7afad5e2704a0b91f6c4bb38de74124cf82c11aac59d1341c069866b45aa63007f203161db12ca6713d9b8dd4ee9f3758eaed617ca06b81b2f0aad9a9f8e29c0f8c730120881ce936ab2b5f64819cdef31c9a24272a81706cae0d10e8cf87d8c3022392e8bba01f2280ded8e0f7d62323f18ee1e316e54f7e899e4cd989baa40401d401c8d01c682474ba5bbea179c17ec49d591269024fe8352b1ea55ecdbd0abf4b98d35779aad697bf0f9f870dca75e5039ef71558eea815a125594c49437b091660578cdabc9fd135c9a1716e570af3700ec3993bc8e91d3d4203d0d6ed0009c7bba5491ab8cceb9ec252635dd06641fee583d19af8762f8ca676bc55fa1c4c7b2a01dc2197b74e27bdeaac82da8a8f84ddcb364f6fba52064b8d48f09a9cb592c9a4361c562be314c66ef172c2119c1837ff5442bfb202da7bc55868e6e1e66931d02251f40956e5ce1e5a4d54e15a089e23c27f2f45f7dc556dff0ddaf645ecce4ca88b79b41fa72c3e5c8e4596083c00ebacab49a42fafc1399d6f2d169c9c13e4ff22844c8ea3b93f3ceecf06e31ddac56c4b4112bb58d93205ede0fe365be3b80178554f93c721e1655825b3671c5b813e2085b4167728c8ef7144d537c8c86844270befa082b219f431cb226c65b9a5bc0a7cb2e8502a8f5ff72a623062f078a2c4b10af00e5bf093687d0c4ef90cd142b3af51699ad9a2ad6b00aba9c152ee8cca55642daa92befc4f45be7626751fdb098c4790d598a47dfed7c5ec89576a0c2796df99f837de21af48b42b6bf508e37c54cde2e9522beca0988a7b1a5fcd5fdcb5a510273cdf5b0de868ad3c35724352d03e0ee1149fdca7cba29a8c5ecaec2b9d8ed1e7727eedf601e7a0bdba81657ce60a867db2deb716904c15ad6a8ceeb32ea668bada11f6f6abdea72804289ecc2e661a77f8bd59a05cbb251a2f7c302331d834c622ab8410e5ac5320a40d3806cfc8f50dab8392aefe431bc380ae2a1766f489042ba71dac0695dcda101a7414a4a0ea06b074ea6c7e8478ca2fedcc29dbf9dafd81309359077f0501e6d946a1d55c67c7699310299b053e12faec7b9d8267b24d2eee051d681c431b9edd4f139eb37acd6b804ab5fe3512b078a9fcf19a26b09d61cbd6eabab21f4f88017f8469acaf8e4c9264d34736040ce5c408ded5c0b61c6695d36f04c89be51b84847bbaf21824c30aa2760e82674b8f69c6f501f69ad048ebb8d7872d9a8acb63918779ba7788dd30da5f43a03d4e4dae0a6c83c3cfd746281f5dac6721bee4ad1dd518c6a1bd26e5e228d7c434a95278ba4901c5d8be33af3f87af4407949d4f12194fa86d87e5b38d81092de202cd02dafc825f3259661f1473998fb9d9e422fb93055bbcf21e03f394ee3d4b81d295a74dd7fb3045ef26611558506ca73e4518505c4a769d49f75e596d62d93d6e068a4e82de16c407fee1f87b3c77ff77c01a7fda5677ad2b74a6e9c297969d38ba35f3a3fdc0ed067666c8fa7cbaff85c8c063d47bfd5d1489d67a77061c291d2d6b6e07928774cb9e6b0c8af8bc8ccfa66cce528de08060596d8a2157e85e4f40205547015de3e54ea96b53b0a51390dae93344f505af334a762359e6bda7cff00a663c6285d038a9d1cc4bace16319a0c52a73a91627d5670d3c4c690dd985da541f80b0403f2d1b7472c206b58650470ba8195185bc32689c123cba71639dac27039b68d14fd22d40e5a162d8d81c38dfe7a1b1ee1a295a877f54f69aabe8f0875321f332735e1f98fed3c88d0152173278eac864d49a5122652107769dbe3abfff53ae46a1aefc59828df742d92c96765fc32980bd8e4c8ae4378d9059a9b2a4fdcede77216bea8c9ef0fcb3d7af327eaa2688aa95fe254453a378d5ef1103a299fadc40e9f06ec00bac4ef5194c1c6c2dbf2c2f1e56f56ae8f1499e232c9e54c7bcb13091f0e30b37c0709f6100a0f630edff459c751391307eac15b823fd10702a3b3ec7fbd5002ab83def308721b863119fac89f0026679d950d192c3cfcc8c85dd74c2b4af2eb1f6e89d270437a130ececd7015d1f8f91b86bd679dcb05f7189026f88badc0fdd9d0b999cc09134adf98888f11a0ca5d1b18a63927b9851d4d5166470015e328f0bcc06bd57d51829ca89108856dd71fdc829c8b25263c76a55b2003551be6e3e7e42f802aa1a65dc7505da96e8da0bfd2ade640b79e1adf4ae1567d58aabf18c6346a7c770ad696d8ea3ea739ce701ed0db157bd48cbc88c7118066d24ea654a2cd29795d4497dc3361c2e9e8e54aa24c68876dc6bcc4e06da7072cbd66d54d9daff87183869b74ae55ed6266c27704a7de21ec8f9b9dcf7b84cc2ef7c3b38330a27c04e09ef28cbd28eb6093b9fed613f9875d648968368d4563021eea34fee52d7979940d4ca3f6187f9894fea22e57db5d078101871286e9b79f10ea336aaab9d8101cc5ba0d292ee3fdfca65d56fd5095722b436f14f4e7c41999c60e43860a57b48bad0bca3f8f34f9e95f7baef083831115f5b393cc7e06039c8b9ea784c6cc568f5b7dbf1106ec097fe3491fc8d9bed7c4829343a79d280cf492468307288af6b1306afa47eeecac1b5a86f2b1b455e24654539e2e51c577f34af0b0926d934fa1af83c1ba186294f9b80ff78e7e2c3e011d69e60cf811e1958ee7a5600f1e32699f702fafd7ac0cb5a7ca46154c033f77bd92f1ccb310ab54076f8de57b99be7cbbc7f3ff4001edcca59c228a29ed9a9018d3a0ffc062848cfccde4df2cd01a6f589f2e310f4ffe2fbd729f6b6a672f0403cd1dc36e2a0ff59584353dfe3e5869427234bd5f4d21ef0929f05c695aaf4bf10ccdf25bb20050ed615a97459975ab8ef51a26211a74b8f66c57db2e883868c438d25d35bc678e99a9104c85f70ce4efd3ef074b053df2fd43f7be7320679fbb90690d</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>树莓派</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>树莓派3BTL-WN726N驱动</title>
     <url>/2021/04/20/%E6%A0%91%E8%8E%93%E6%B4%BE3BTL-WN726N%E9%A9%B1%E5%8A%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="树莓派3BTL-WN726N驱动"><a href="#树莓派3BTL-WN726N驱动" class="headerlink" title="树莓派3BTL-WN726N驱动"></a>树莓派3BTL-WN726N驱动</h1><h2 id="给树莓派3B装两个网卡"><a href="#给树莓派3B装两个网卡" class="headerlink" title="给树莓派3B装两个网卡"></a>给树莓派3B装两个网卡</h2><ul>
@@ -11874,6 +11852,28 @@ sudo modprobe 8188eu<span aria-hidden="true" class="line-numbers-rows"><span></s
 ]]></content>
       <categories>
         <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>树莓派_命令行连接wifi</title>
+    <url>/2021/06/28/%E6%A0%91%E8%8E%93%E6%B4%BE-%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5wifi/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="4e715f80f897530b0cad42515d34d49d2c91af69b2c9ed3b3156aee371454e16">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041aa2df045649d51c4d893ac0794f8d93e4df6a0e15c93ccb5b1002c4397ca1b8e49411e18e08210dc2e308886a40f394b3e1678267bb9d7abf42b4adac2bf404b18c0c7b94f2386c04aa5554c2f7509b34529781bb153679385e738f25ea17898a1a4129576d82d7f06fc92c6e73a9c62110236d596aac804eb9ba266ea0c6860529e232fc0a938255ba7bdabd04f4210ea766812de7093cfd28f8dd57548bc0f54054c9ff9f8afd5323e8bda9bfe5b6d59a69c21714f36db856fd8cf7f650e3f5e401d215b999b913c3577ea40930bd686f8d9540d2014517df8e9dc61dfbafa48aab1d3fedf0448294bf6d067727cf1f7f0fbf8d1e9ab5f93f7dc9e1e8cd6d690e7211011c894e0fcef0554b5764a4272dd11c0c612f409da2c716bc1e0e117ee5d6a3b6fcaec4f8ba43a20d24ce7fd1c2f171fe1709ae8dfb24aa22615ce8c7b1de459911b37d035543990972fe06cf88241d94059d67ab111ade010e1b2b8adac83a1a383911ee175d02eaec05b8e6ff44ac4932adadb5078d864a7cfe2ab5ac89c262d0caa07e70627af2f118f403d51c25847c4992c1a2f0b00280e2d9a17ad3b4e9c5be8ae6c1488f853f04f10ef8ccd16f68fc480bd16978d1407cfe27f836439400297ab2cb2bc0b62e88190e869cd273d8c0e31f4427af039eed3a61e9992b1fff2cd4cac66762f98578341e955c7a082dfb2c0c5d35c815d16805140d2cd9a22a543d5a620aececd000cc60382f2c0242534d4dcd2c44058e4fae7e71de3c3f4a09250bce9989d4f14442fc4581e526abe54370405b9955f809409b56070e730047ea6572ad26b2c40e6536bc37739010cfb5ba54453b898e759aca888783b6cc53a47fbbe4a5444c5768b5286e7f798aae532842f2351722ea7a03a9286f4d248849993b862a08f28fc28b8372e45cc910ba0df285c451f9ec55346482b8d9c7dc0b5cd7bf9a9b873996a9a924eb3dd61a8727ae68d0794505bd154c2ee92f0be5d7ea918b3f7dca9907606030dc667269abf38760d9db102f1fea3b79b34a8c07a95a00ab0e3f1ecb4af38cb75bde07ca2bf3f7d36a7eb9ae360f7627b419612da852f773b040332db74261ff350bf912dd5a76a72244ffef6dd01721379d6ea91b35486ee9bb3def5efa93687cb5cf04594d843fc3fbfdccc546c1c57b48a8983b039f4769534cae41b9f8be2946335d7babe3917541eb764e2c87cabbcb5985339d36fce34640c3cec0a6f3baeaef01ae91bd4850505247585333c891ede559f617295ecbfa370dd9b1a35268b6309e093cf16b226b37cb61b600f015ba6480a214f2ef1d1ec659296da8bad035e81ca418b1a2926768f7db11447f8936c33d0a399205f98fc8c1e71f0a868794bcb38315715e5dd29fd98742d1cab951349ed430cb9162e3e677bb02e19d136da4f5c237e9745e80adaa3c3e93d932d10a2d723a16670f027e301abb3d160c38e1d92ca112d202f15e02395ab0b5ffe805bc54406c071fca64f90823dce2024af30c602b5e8870ef4de55bc125ed053eab80d78af6221341c9c7578249a0779881483763e2d576148dce64632e882bab28cd7d9fb7afad5e2704a0b91f6c4bb38de74124cf82c11aac59d1341c069866b45aa63007f203161db12ca6713d9b8dd4ee9f3758eaed617ca06b81b2f0aad9a9f8e29c0f8c730120881ce936ab2b5f64819cdef31c9a24272a81706cae0d10e8cf87d8c3022392e8bba01f2280ded8e0f7d62323f18ee1e316e54f7e899e4cd989baa40401d401c8d01c682474ba5bbea179c17ec49d591269024fe8352b1ea55ecdbd0abf4b98d35779aad697bf0f9f870dca75e5039ef71558eea815a125594c49437b091660578cdabc9fd135c9a1716e570af3700ec3993bc8e91d3d4203d0d6ed0009c7bba5491ab8cceb9ec252635dd06641fee583d19af8762f8ca676bc55fa1c4c7b2a01dc2197b74e27bdeaac82da8a8f84ddcb364f6fba52064b8d48f09a9cb592c9a4361c562be314c66ef172c2119c1837ff5442bfb202da7bc55868e6e1e66931d02251f40956e5ce1e5a4d54e15a089e23c27f2f45f7dc556dff0ddaf645ecce4ca88b79b41fa72c3e5c8e4596083c00ebacab49a42fafc1399d6f2d169c9c13e4ff22844c8ea3b93f3ceecf06e31ddac56c4b4112bb58d93205ede0fe365be3b80178554f93c721e1655825b3671c5b813e2085b4167728c8ef7144d537c8c86844270befa082b219f431cb226c65b9a5bc0a7cb2e8502a8f5ff72a623062f078a2c4b10af00e5bf093687d0c4ef90cd142b3af51699ad9a2ad6b00aba9c152ee8cca55642daa92befc4f45be7626751fdb098c4790d598a47dfed7c5ec89576a0c2796df99f837de21af48b42b6bf508e37c54cde2e9522beca0988a7b1a5fcd5fdcb5a510273cdf5b0de868ad3c35724352d03e0ee1149fdca7cba29a8c5ecaec2b9d8ed1e7727eedf601e7a0bdba81657ce60a867db2deb716904c15ad6a8ceeb32ea668bada11f6f6abdea72804289ecc2e661a77f8bd59a05cbb251a2f7c302331d834c622ab8410e5ac5320a40d3806cfc8f50dab8392aefe431bc380ae2a1766f489042ba71dac0695dcda101a7414a4a0ea06b074ea6c7e8478ca2fedcc29dbf9dafd81309359077f0501e6d946a1d55c67c7699310299b053e12faec7b9d8267b24d2eee051d681c431b9edd4f139eb37acd6b804ab5fe3512b078a9fcf19a26b09d61cbd6eabab21f4f88017f8469acaf8e4c9264d34736040ce5c408ded5c0b61c6695d36f04c89be51b84847bbaf21824c30aa2760e82674b8f69c6f501f69ad048ebb8d7872d9a8acb63918779ba7788dd30da5f43a03d4e4dae0a6c83c3cfd746281f5dac6721bee4ad1dd518c6a1bd26e5e228d7c434a95278ba4901c5d8be33af3f87af4407949d4f12194fa86d87e5b38d81092de202cd02dafc825f3259661f1473998fb9d9e422fb93055bbcf21e03f394ee3d4b81d295a74dd7fb3045ef26611558506ca73e4518505c4a769d49f75e596d62d93d6e068a4e82de16c407fee1f87b3c77ff77c01a7fda5677ad2b74a6e9c297969d38ba35f3a3fdc0ed067666c8fa7cbaff85c8c063d47bfd5d1489d67a77061c291d2d6b6e07928774cb9e6b0c8af8bc8ccfa66cce528de08060596d8a2157e85e4f40205547015de3e54ea96b53b0a51390dae93344f505af334a762359e6bda7cff00a663c6285d038a9d1cc4bace16319a0c52a73a91627d5670d3c4c690dd985da541f80b0403f2d1b7472c206b58650470ba8195185bc32689c123cba71639dac27039b68d14fd22d40e5a162d8d81c38dfe7a1b1ee1a295a877f54f69aabe8f0875321f332735e1f98fed3c88d0152173278eac864d49a5122652107769dbe3abfff53ae46a1aefc59828df742d92c96765fc32980bd8e4c8ae4378d9059a9b2a4fdcede77216bea8c9ef0fcb3d7af327eaa2688aa95fe254453a378d5ef1103a299fadc40e9f06ec00bac4ef5194c1c6c2dbf2c2f1e56f56ae8f1499e232c9e54c7bcb13091f0e30b37c0709f6100a0f630edff459c751391307eac15b823fd10702a3b3ec7fbd5002ab83def308721b863119fac89f0026679d950d192c3cfcc8c85dd74c2b4af2eb1f6e89d270437a130ececd7015d1f8f91b86bd679dcb05f7189026f88badc0fdd9d0b999cc09134adf98888f11a0ca5d1b18a63927b9851d4d5166470015e328f0bcc06bd57d51829ca89108856dd71fdc829c8b25263c76a55b2003551be6e3e7e42f802aa1a65dc7505da96e8da0bfd2ade640b79e1adf4ae1567d58aabf18c6346a7c770ad696d8ea3ea739ce701ed0db157bd48cbc88c7118066d24ea654a2cd29795d4497dc3361c2e9e8e54aa24c68876dc6bcc4e06da7072cbd66d54d9daff87183869b74ae55ed6266c27704a7de21ec8f9b9dcf7b84cc2ef7c3b38330a27c04e09ef28cbd28eb6093b9fed613f9875d648968368d4563021eea34fee52d7979940d4ca3f6187f9894fea22e57db5d078101871286e9b79f10ea336aaab9d8101cc5ba0d292ee3fdfca65d56fd5095722b436f14f4e7c41999c60e43860a57b48bad0bca3f8f34f9e95f7baef083831115f5b393cc7e06039c8b9ea784c6cc568f5b7dbf1106ec097fe3491fc8d9bed7c4829343a79d280cf492468307288af6b1306afa47eeecac1b5a86f2b1b455e24654539e2e51c577f34af0b0926d934fa1af83c1ba186294f9b80ff78e7e2c3e011d69e60cf811e1958ee7a5600f1e32699f702fafd7ac0cb5a7ca46154c033f77bd92f1ccb310ab54076f8de57b99be7cbbc7f3ff4001edcca59c228a29ed9a9018d3a0ffc062848cfccde4df2cd01a6f589f2e310f4ffe2fbd729f6b6a672f0403cd1dc36e2a0ff59584353dfe3e5869427234bd5f4d21ef0929f05c695aaf4bf10ccdf25bb20050ed615a97459975ab8ef51a26211a74b8f66c57db2e883868c438d25d35bc678e99a9104c85f70ce4efd3ef074b053df2fd43f7be7320679fbb90690d</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>树莓派</category>
       </categories>
       <tags>
         <tag>linux</tag>
@@ -12807,39 +12807,6 @@ def saveCutoutLabel(name):
       </tags>
   </entry>
   <entry>
-    <title>南京大屠杀国家公祭日_网站变成灰色以表悼念</title>
-    <url>/2020/12/13/%E7%BD%91%E7%AB%99%E5%8F%98%E7%81%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="南京大屠杀国家公祭日-网站变成灰色以表悼念"><a href="#南京大屠杀国家公祭日-网站变成灰色以表悼念" class="headerlink" title=" 南京大屠杀国家公祭日_网站变成灰色以表悼念 "></a><center> 南京大屠杀国家公祭日_网站变成灰色以表悼念 </center></h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=78993619&bvid=BV1cJ411C7Dg&cid=135180758&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-<span id="more"></span>
-<p>12月13日是第七个南京大屠杀死难者国家公祭日。公祭无辜死难之生命，告慰血与泪浸染之土地。这一天，举国上下以各种形式深切缅怀死难同胞，深切缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，表达牢记历史、珍爱和平、矢志复兴，身为站长的我们都会让自己的网站的全部网页变成灰色（黑白色），以表示我们对逝者的悼念。</p>
-<h3 id="第一种：修改CSS文件"><a href="#第一种：修改CSS文件" class="headerlink" title="第一种：修改CSS文件"></a>第一种：修改CSS文件</h3><p>我们可以在网页的CSS文件中添加以下的CSS代码，来实现网页黑白色，也就是网站变灰</p>
-<pre class="line-numbers language-none"><code class="language-none">html &#123;
-    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
-    -webkit-filter: grayscale(100%);
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="第二种：在网页的标签内加入以下代码"><a href="#第二种：在网页的标签内加入以下代码" class="headerlink" title="第二种：在网页的标签内加入以下代码"></a>第二种：在网页的<head>标签内加入以下代码</h3><p>如果你不想改动CSS文件，你可以通过在网页头部中的<head>标签内部加入内联CSS代码的形式实现网站网页变灰</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;
-html &#123;
-filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
--webkit-filter: grayscale(100%);&#125;
-&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="第三种：修改标签加入内联样式"><a href="#第三种：修改标签加入内联样式" class="headerlink" title="第三种：修改标签加入内联样式"></a>第三种：修改<html>标签加入内联样式</h3><p>如里上面的两种方式都不喜欢，可以通过修改<html>标签，以加入内联样式的方法，达到网页变灰的效果</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;html style&#x3D;&quot;filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
--webkit-filter: grayscale(100%);&quot;&gt;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>CSS</category>
-      </categories>
-      <tags>
-        <tag>南京大屠杀国家公祭日</tag>
-        <tag>hexo网站</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>网站视频下载及按帧将视频转为jpg</title>
     <url>/2020/10/15/%E7%BD%91%E7%AB%99%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD%E5%8F%8A%E6%8C%89%E5%B8%A7%E8%BD%AC%E4%B8%BAjpg/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="网站视频下载及按帧转为jpg"><a href="#网站视频下载及按帧转为jpg" class="headerlink" title="网站视频下载及按帧转为jpg"></a>网站视频下载及按帧转为jpg</h1><h2 id="1、准备切割视频"><a href="#1、准备切割视频" class="headerlink" title="1、准备切割视频"></a>1、准备切割视频</h2><p>视频切割算法:<br><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">clc;
@@ -12903,35 +12870,36 @@ end<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
       </tags>
   </entry>
   <entry>
-    <title>自制树莓派镜像的最简单方法</title>
-    <url>/2021/07/14/%E8%87%AA%E5%88%B6%E6%A0%91%E8%8E%93%E6%B4%BE%E9%95%9C%E5%83%8F%E7%9A%84%E6%9C%80%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="自制树莓派镜像的最简单方法"><a href="#自制树莓派镜像的最简单方法" class="headerlink" title="自制树莓派镜像的最简单方法"></a>自制树莓派镜像的最简单方法</h1><h2 id="用sd卡制作img镜像"><a href="#用sd卡制作img镜像" class="headerlink" title="用sd卡制作img镜像"></a>用sd卡制作img镜像</h2><p>参考了很多博客和文档，有很多都是通过挂载的方式去烧录镜像，这种方法费时且低效。<br>并没有兴趣直接复制和挂载拷贝。<br>于是采用了第三个方法。</p>
-<ul>
-<li><p>将现有的系统制作成镜像img</p>
-</li>
-<li><p>将现有的系统制作成镜像img</p>
-</li>
-<li><p>将带有系统的sd卡用Win32DiskImager.exe工具Read成镜像文件xmu201.img</p>
-</li>
-</ul>
-<p><img src="https://www.codekp.cn/download/img/树莓派/win.png" width = "681" height = "302" alt="图片名称" align=center /></p>
-<blockquote>
-<p>（选择盘符里面的“boot”盘，在本机的任何一个盘符里面写于.img文件名称，手写输入，然后点击Read，等待读取）</p>
-</blockquote>
-<ul>
-<li>然后插入新卡到PC，将xmu201.img写入新卡</li>
-<li>现在就制作出了完全一模一样的多种带系统的sd卡，现在的卡是不能直接使用的，因为还需要对设备进行网络设置，才能连接ssh。</li>
-</ul>
-<p>（这种方法所制作的镜像会和所录制的sd卡一样大，因此如果使用这种方法需要原系统sd卡尽量的小，本人采用16G的sd卡所以问题不大）</p>
-<h2 id="通过balenaEtcher录入镜像"><a href="#通过balenaEtcher录入镜像" class="headerlink" title="通过balenaEtcher录入镜像"></a>通过balenaEtcher录入镜像</h2><ul>
-<li><a href="https://blog.csdn.net/weixin_41216356/article/details/107071740">balenaEtcher过程可参考CSDN</a></li>
-</ul>
+    <title>南京大屠杀国家公祭日_网站变成灰色以表悼念</title>
+    <url>/2020/12/13/%E7%BD%91%E7%AB%99%E5%8F%98%E7%81%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="南京大屠杀国家公祭日-网站变成灰色以表悼念"><a href="#南京大屠杀国家公祭日-网站变成灰色以表悼念" class="headerlink" title=" 南京大屠杀国家公祭日_网站变成灰色以表悼念 "></a><center> 南京大屠杀国家公祭日_网站变成灰色以表悼念 </center></h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=78993619&bvid=BV1cJ411C7Dg&cid=135180758&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+<span id="more"></span>
+<p>12月13日是第七个南京大屠杀死难者国家公祭日。公祭无辜死难之生命，告慰血与泪浸染之土地。这一天，举国上下以各种形式深切缅怀死难同胞，深切缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，表达牢记历史、珍爱和平、矢志复兴，身为站长的我们都会让自己的网站的全部网页变成灰色（黑白色），以表示我们对逝者的悼念。</p>
+<h3 id="第一种：修改CSS文件"><a href="#第一种：修改CSS文件" class="headerlink" title="第一种：修改CSS文件"></a>第一种：修改CSS文件</h3><p>我们可以在网页的CSS文件中添加以下的CSS代码，来实现网页黑白色，也就是网站变灰</p>
+<pre class="line-numbers language-none"><code class="language-none">html &#123;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
+    -webkit-filter: grayscale(100%);
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="第二种：在网页的标签内加入以下代码"><a href="#第二种：在网页的标签内加入以下代码" class="headerlink" title="第二种：在网页的标签内加入以下代码"></a>第二种：在网页的<head>标签内加入以下代码</h3><p>如果你不想改动CSS文件，你可以通过在网页头部中的<head>标签内部加入内联CSS代码的形式实现网站网页变灰</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;
+html &#123;
+filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
+-webkit-filter: grayscale(100%);&#125;
+&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="第三种：修改标签加入内联样式"><a href="#第三种：修改标签加入内联样式" class="headerlink" title="第三种：修改标签加入内联样式"></a>第三种：修改<html>标签加入内联样式</h3><p>如里上面的两种方式都不喜欢，可以通过修改<html>标签，以加入内联样式的方法，达到网页变灰的效果</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;html style&#x3D;&quot;filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
+-webkit-filter: grayscale(100%);&quot;&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 ]]></content>
       <categories>
-        <category>树莓派</category>
+        <category>CSS</category>
       </categories>
       <tags>
-        <tag>树莓派</tag>
+        <tag>南京大屠杀国家公祭日</tag>
+        <tag>hexo网站</tag>
       </tags>
   </entry>
   <entry>
@@ -12963,6 +12931,38 @@ if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
       </categories>
       <tags>
         <tag>网路比较</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自制树莓派镜像的最简单方法</title>
+    <url>/2021/07/14/%E8%87%AA%E5%88%B6%E6%A0%91%E8%8E%93%E6%B4%BE%E9%95%9C%E5%83%8F%E7%9A%84%E6%9C%80%E7%AE%80%E5%8D%95%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="自制树莓派镜像的最简单方法"><a href="#自制树莓派镜像的最简单方法" class="headerlink" title="自制树莓派镜像的最简单方法"></a>自制树莓派镜像的最简单方法</h1><h2 id="用sd卡制作img镜像"><a href="#用sd卡制作img镜像" class="headerlink" title="用sd卡制作img镜像"></a>用sd卡制作img镜像</h2><p>参考了很多博客和文档，有很多都是通过挂载的方式去烧录镜像，这种方法费时且低效。<br>并没有兴趣直接复制和挂载拷贝。<br>于是采用了第三个方法。</p>
+<ul>
+<li><p>将现有的系统制作成镜像img</p>
+</li>
+<li><p>将现有的系统制作成镜像img</p>
+</li>
+<li><p>将带有系统的sd卡用Win32DiskImager.exe工具Read成镜像文件xmu201.img</p>
+</li>
+</ul>
+<p><img src="https://www.codekp.cn/download/img/树莓派/win.png" width = "681" height = "302" alt="图片名称" align=center /></p>
+<blockquote>
+<p>（选择盘符里面的“boot”盘，在本机的任何一个盘符里面写于.img文件名称，手写输入，然后点击Read，等待读取）</p>
+</blockquote>
+<ul>
+<li>然后插入新卡到PC，将xmu201.img写入新卡</li>
+<li>现在就制作出了完全一模一样的多种带系统的sd卡，现在的卡是不能直接使用的，因为还需要对设备进行网络设置，才能连接ssh。</li>
+</ul>
+<p>（这种方法所制作的镜像会和所录制的sd卡一样大，因此如果使用这种方法需要原系统sd卡尽量的小，本人采用16G的sd卡所以问题不大）</p>
+<h2 id="通过balenaEtcher录入镜像"><a href="#通过balenaEtcher录入镜像" class="headerlink" title="通过balenaEtcher录入镜像"></a>通过balenaEtcher录入镜像</h2><ul>
+<li><a href="https://blog.csdn.net/weixin_41216356/article/details/107071740">balenaEtcher过程可参考CSDN</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>树莓派</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
       </tags>
   </entry>
   <entry>
@@ -13017,6 +13017,85 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       <tags>
         <tag>表白网站</tag>
         <tag>罗盘时钟</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>读书笔记</title>
+    <url>/2021/01/27/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>今年有一个想法，每周阅读一本书，并且在博客中发表阅读心得，每周更新一次。</p>
+<h1 id="阅读笔记"><a href="#阅读笔记" class="headerlink" title="阅读笔记"></a>阅读笔记</h1><h2 id="阅读清单"><a href="#阅读清单" class="headerlink" title="阅读清单"></a>阅读清单</h2><ul>
+<li>[x] 时间简史</li>
+<li>[x] 小王子</li>
+<li>[x] 朱光潜给年轻人的十二封信</li>
+<li>[x] 健身笔记：如何成为一个身材有料的人</li>
+<li>[x] 从零开始学钢琴</li>
+<li>[x] 我与地坛</li>
+<li>[x] 当下的力量</li>
+<li>[x] 人间值得</li>
+<li>[x] 鳗鱼的旅行</li>
+<li>[ ] 啊哪啊那神去村</li>
+<li>[ ] 非暴力沟通</li>
+<li>[ ] 长大了就会变好吗</li>
+<li>[ ] 巨大的拥抱</li>
+<li>[ ] 女生呵护指南</li>
+<li>[ ] 当你学会独处</li>
+<li>[ ] 莫泊桑短片小说集</li>
+<li>[ ] 飞鸟集</li>
+<li>[ ] 挪威的森林</li>
+<li>[ ] 神曲</li>
+<li>[ ] 月亮与六便士</li>
+<li>[ ] 呐喊</li>
+<li>[ ] 老人与海</li>
+<li>[ ] 追风筝的人</li>
+<li>[ ] 瓦尔登湖</li>
+<li>[ ] 金刚经说什么</li>
+<li>[ ] 牡丹亭</li>
+<li>[ ] 我在未来等你</li>
+<li>[ ] 苏菲的世界</li>
+<li>[ ] 鲁迅杂文集</li>
+<li>[ ] 无人生还</li>
+<li>[ ] 万物起源</li>
+<li>[ ] 人类简史<h2 id="读书心得"><a href="#读书心得" class="headerlink" title="读书心得"></a>读书心得</h2><h3 id="时间简史"><a href="#时间简史" class="headerlink" title="时间简史"></a>时间简史</h3>这本书前三章主要讲的是亚里士多德的地心说到哥白尼的日星说，然后到伽利略和牛顿的经典物理学，再到法拉第、麦克斯韦的电磁场理论，基本主要内容还是讲的高中物理，基本上就是一个综述。</li>
+</ul>
+</blockquote>
+<p>然后讲到量子力学和相对论，如果没读这本书我一开始一直以为相对论和量子力学，两者都是正确的，但是看这本书的时候发现两者只有其中之一是正确的。但目前相对论让我们产生核能，原子弹。量子力学也在不断的发展给人类带来了直接利益，无论两者中的哪一个都无法直接判断是错误的。</p>
+<p>量子力学里面解释的并不是很详细，但是大学物理有讲，我看了这本书印象更深刻了一点，其实量子力学就是，微小的粒子，在进行测量的时候主要是采用的光的反射进行测量，因为该粒子在测量其速度的时，需要使用光进行测量所以其光的能量如果过高就会导致粒子振荡，速度变快。如果测量粒子的位置就需要采用高频率的光波依次获得更小的波长，即可获得粒子的位置。因此我们在某一时刻，只能准确的获得粒子的位置或者速度。不能同时测得粒子的两种物理属性。</p>
+<p>其中讲了一个比较有意思的实验，即红移和蓝移。由于多普勒效应天体正向我们移动的时候其恒星光谱会向红端移动，如果远离我们会向蓝段移动。但是过去了几十年，人类测量了无数光的光谱，均为红移，因此可以得出结论，所有的星体都在远离我们，因此宇宙正在逐渐的扩张。即测不准定理。</p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fgss0.baidu.com%2F-Po3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2Fd0c8a786c9177f3ec454da7376cf3bc79f3d566f.jpg&amp;refer=http%3A%2F%2Fgss0.baidu.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1613314542&amp;t=b6ae3fe03bf7f657e5ddbac5c9507e4d" alt="在这里插入图片描述"></p>
+<p>还有一个实验，其实我们生活在三维空间，但是我们可以推断的空间其实可以到四维空间，因此我们其实是可以脑袋里面构想出四维空间的，其实物理学中早有解释，你想太阳的光需要8分钟才能到地球，因此我们只能看到太阳8分钟前的样子，这样我们其实活在太阳的8分钟之前，即太阳8分钟以后的三维空间之中。</p>
+<p>星球之间主要的力是引力，霍金说主要的力分为强相互作用力、弱相互作用力，电磁力和引力。目前没有公式能将其整合成唯一的定理，因此我联想到了科学事实和客观事实，目前人类所思考的其实是科学事实，不一定是世界的正向，其存在人类的主观判断，因此不一定正确。霍金说宇宙如果有一个扩张，必然会存在一个收缩，而宇宙的收缩可能要在1亿亿年以后，暂时我们不需要担心，但是你可以想象到一件事情，无论是任何事情，即使人类可以长生不死也会有一个必然的终结，除非人类可以同时具备长生不死和穿越时空。</p>
+<p>其实引力只有在天梯之间才成立，但是人类无法通过万有引力定律计算四星运动。因为宇宙太大了，但是当质量密度达到一个点就可以通过引力产生黑洞，其实之前我一直不知道黑洞是个什么东西。但其实黑洞是人类推断出来的一个东西，其实一个小的黑洞可以小到分子级别，比你的指甲小几万倍，只要密度达到就可以产生黑洞和体积无关。因此只要人类发展到一定程度，必然可以人造黑洞，而且这个黑洞可以很小。而分子间主要是强弱相互作用和电磁力。只要讲做到三十钛福特在一个点上就可以造出一个黑洞，但目前实验室只能造出3000福特具体值不清楚但是达不到。<br>黑洞到底是怎么推论出来的呢？其实之前我也在思考黑洞到底是什么，其实很简单，我们知道其他恒星的光通过太阳的时候会因为太阳的引力光会弯曲，这样就只要质量足够的大，光就可以背弯曲成一个圆，或者变成一个抛物线，即光无法离开那个星球，光就像火箭坠机一样，被引力拉回来，即可推论出黑洞的样子大概是一个圆环，中间是黑色的因为中间的光出不来，外侧的光可以因为光的挤压在事件界面上挤压出来，即可为一个圆环状。目前人类已经发现了黑洞。<br>黑洞的重心就是奇点，当然人类是无法前往这个点的，如果有飞行员进入黑洞必死无疑，可能一瞬间就被压成了一个分子，被剥夺其存在性。<br><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2830392986,3183821195&amp;fm=26&amp;gp=0.jpg" alt="在这里插入图片描述"></p>
+<p>讲一讲相对论，相对论其实就是一个测量学，其实之前的物理世界是，不同的参考系其测量是一样的，但是爱因斯坦的相对论其实给了一个很有趣的解释，就是不同的参考系如果你接近了光速，测量是不一样的，因此可以有很多科幻片说的双生子谬论。目前人类能加速的最大速度是电子，在全球最大的电子发射机内，只能将电子加速到光速的0.999999但无法超过光速。很可惜。</p>
+<p>如果超过光速人类就可以时间穿梭，这是为什么，其实你不难想象，如果你开一艘飞船从地球出发，你超过了光速，你就可以在你出发前回到地球，你懂这是什么意思吗，就是你可以前往你出发之前的那个时刻。即时空穿梭。</p>
+<p>其实你们可以想象我们活在一个四维空间中，我们可以通过超光速相当于逆时间移动，就是传统意义的穿越。</p>
+<p>那么我们如何超光速，其实霍金给出了方法，就是利用负能量和正能量在时空中制造一个虫洞，目前可以通过量子力学制造负能量点，其能量守恒定律其实之前有讲过，能量一般都是大于等于零的但是量子力学说可以在空间中制造一个负能量点和正能量点，在这两个点之间可以造成时空扭曲。产生充电，目前离地球最近的一颗恒星是比邻星，距离我们大概4光年，就是光走思念才能到比邻星。我们其实通过虫洞来回比邻星就可以超光速，如果可能的话大概咱们可以回到八年前的地球。</p>
+<p>霍金还推测五维空间不存在，因为如果多维空间存在，那么如果万有引力成立，那么其引力就会按照维数进行下降，因为引力和距离成反比，距离越大引力越小，你想维度没多一维，咱们的引力就会变成  四维空间1/2、五维1/4。。。可以想象到咱们的空间会崩塌，由于人存在性定理，其实这种多维空间是不存在的，或者万有引力有问题。</p>
+<p>看完时间简史，我感觉人类其实是十分渺小的事物，我们对世界的理解其实还很浅薄。大家总觉得目前的科技能够达到很高的地步。其实我想说，人类目前连地球都不能进行完全的探索。而且核能也只是基础，其实任何物质按照质能方程都能进行转换，按照这样的推想，石油未来并不会像现在这样被重视，因为可能一吨海水可以供人类获几百年。</p>
+<p>当初相对论刚出来的时候，全世界可能就几个人能够理解相对论和量子力学，但是现在，研究生可能有几百万人能够同时理解这两门学问，因此未来可能能够存在一个定理即物理学统一定理将一切的公式统合在一起。</p>
+<h3 id="小王子"><a href="#小王子" class="headerlink" title="小王子"></a>小王子</h3><p>小王子讲的其实是飞行员，他在沙漠中遇难他和自己对话的故事，可能是在极端的条件下，他看到了他自己，其实我们也会从这本书中看到小时候的自己，世界上的人被小王子分为了四种，用小王子所路过的星球所指代。这本书很短，2小时就可以读完，其很有趣，让你从小孩子的眼中审视这个世界，到底人们在追寻一些什么。其实细细想来很奇怪，在光里面追光。人生活的是一个过程，不是结果。希望每个人都能懂。<br>小王子对玫瑰和狐狸的解释挺有趣的，可以细细品味。</p>
+<h3 id="朱光潜给年轻人的十二封信"><a href="#朱光潜给年轻人的十二封信" class="headerlink" title="朱光潜给年轻人的十二封信"></a>朱光潜给年轻人的十二封信</h3><p>这本书感觉是给中学生写的，其实我没怎么看进去，希望你们能看进去。</p>
+<h3 id="健身笔记：如何成为一个身材有料的人"><a href="#健身笔记：如何成为一个身材有料的人" class="headerlink" title="健身笔记：如何成为一个身材有料的人"></a>健身笔记：如何成为一个身材有料的人</h3><p>讲如何健身、减肥。健身的动作、流程，减肥的方法，其中对于减肥人士的基础代谢很有用，可以自己去计算一下自己的基础代谢量。</p>
+<h3 id="从零开始学钢琴"><a href="#从零开始学钢琴" class="headerlink" title="从零开始学钢琴"></a>从零开始学钢琴</h3><p>讲钢琴的一些基础知识、如何读五线谱、然后怎么弹、左右 ，右手高音、左手低音、然后从5个音到6个音、到左右手换位置的8个音，到升降调。钢琴其实就是训练只要你会练就能学的很好，加油！<br>今年计划，学会钢琴。</p>
+<h3 id="我与地坛"><a href="#我与地坛" class="headerlink" title="我与地坛"></a>我与地坛</h3><p>史铁生在20岁的年纪失去了自己的双腿、在北京的地坛公园读书思考看到很多的人和事情，主要都是他在地坛里想了些什么，这本书对于有抑郁、对生命失去信心的人很有帮助。<br>还是那句话，人活的是一个过程，绝不是结果，自付价值，自付使命。加油！</p>
+<h3 id="当下的力量"><a href="#当下的力量" class="headerlink" title="当下的力量"></a>当下的力量</h3><p>主要讲的就是，让我们去除时间观念，没有未来，没有过去，我们能够把握的只有当下，不要</p>
+<p>未来不会拯救你，未来不会因为你的期待而自动变得更好，你能把握的只有当下的每一秒。</p>
+<p>你要学会感受生活中的每一秒，在每一秒享受生活，做自己喜欢的事情，做自己想要做的事情。</p>
+<blockquote>
+<p>是的——春天需要你。经常会有一颗星<br>等着你抬头去看。波涛会从遥远的过去<br>向你涌来，或者当你从一扇<br>开着的窗下走过，小提琴的音乐<br>会渴望你倾听。所有这些都是使命。<br>可是你能完成吗？</p>
+</blockquote>
+<p>关注在当下真的很神奇的，你关注与当下，然后体会很多感觉，而不只是去思考，你能感觉到你很幸福。<br>但是文中有句话说我思故我在是错误的，这个有待辩证，但是也有很多的道理，可以减少思考，但是不要像文章中完全不思考，完全不思考我尝试过会降低智商，和物质基础。<br>当下的力量，推荐大家看看。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fcdnimg103.lizhi.fm%2Faudio_cover%2F2018%2F07%2F01%2F2678344019888704519_320x320.jpg&amp;refer=http%3A%2F%2Fcdnimg103.lizhi.fm&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1614341106&amp;t=7d39c87785083627fc5441116ca0cde2" alt="在这里插入图片描述"></p>
+<h3 id="人间值得"><a href="#人间值得" class="headerlink" title="人间值得"></a>人间值得</h3><p>这是一个护士给一位日本老奶奶写的自传，讲的是中村恒子从出生到90岁的故事，一直在工作，有讲很多方法论，如何让自己幸福，如何和生活和解，如何让自己过的幸福，探索人生的真谛。其中讲了许多和工作相关的故事，就比如不要抱怨一般尝试后都能行，学会把工作当成是人生的一部分不要去排斥你的工作，也不要因为很多事情烦恼，没有什么必要性。不以物喜，不以己悲。<br>人生是一场经历，热爱生活，享受这段过程。<br>泰山崩于前而色不变，黄河决于顶而面不惊。人生，一定要有一颗强大的内心，才不会轻易被打倒。人生，要学会坚强，在遇到挫折的时候才能从容地去面对，让自己处于泰山之崩而沉着镇定，处于黄河之边而不惊不慌，人生想要会当凌绝顶，一览众山小，就要从山脚下开始战胜重重困难，一步一步往上爬，才能有可能到达山顶。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201909%2F13%2F20190913213654_kmuwe.thumb.400_0.jpg&amp;refer=http%3A%2F%2Fc-ssl.duitang.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1614341233&amp;t=792b0fafbd08b514b5c2a9b68d1ecc69" alt="在这里插入图片描述"></p>
+<h3 id="鳗鱼的旅行"><a href="#鳗鱼的旅行" class="headerlink" title="鳗鱼的旅行"></a>鳗鱼的旅行</h3><p>这篇文章，很有趣，讲的是鳗鱼习性的研究历程，鳗鱼这个生物很有趣，在古希腊时期到18世纪，鳗鱼一直都不被认为是一种鱼，是一种独立的物种，即鳗鱼非鱼，其实我现在也觉得这玩意不是鱼。<br>很有趣啊，鳗鱼这个生物，亚里士多德在生物志中有详细的调查，这应该是当时最详细的一篇调查，鳗鱼这种生物当干旱的时候不存在，但是来年春天当水满了以后鳗鱼又会出现，就仿佛是从泥土里长出来的。<br>所有的人都不知道鳗鱼这种生物从哪来的，这个问题困扰了人类n久。你们难以想象1920年上世纪人类才知道鳗鱼的习性，所有你们可以知道人类目前的科技水平只能达到什么程度了吗？<br>当时为了找到一条带卵的鳗鱼，政府发出巨额赏金，于是当时大量的鱼民拿其他鱼的卵放在鳗鱼的体内，你可能难以想象。当然对科学研究有一定的影响，就直到1920年。<br>1920年有个研究员一直躲到一战结束才敢开船去找鳗鱼的发源地，方法也很简单，就是慢慢的去捕鱼，他从英国一直开到太平洋，鳗鱼的大小越来越小，最终才确定了鳗鱼的出生地，是在一片海里，而且很神奇的是就只有那一块是鳗鱼的出生地，不在别的地方繁衍，就在这一片海域。<br>最后研究表明，鳗鱼一开始是雌性，游几千海里前往其他水域进行生存，等玩腻了，每条鳗鱼选择的时间不一样，只要不繁衍这货可以活50年，这对于生物是极其长寿的，但是当他游会那片海域准备繁衍的时候，这时鳗鱼就会变成雄性，然后繁衍，随后就会死去。很浪漫，可能鳗鱼一生走的路比许多人要远得多。<br>是一个很不错的科技题材的小说，全球的鳗鱼都来自于同一片海域，而且每一条鳗鱼都是游了这么远来到的你的身边，无一例外，你吃的每一条鳗鱼都是一位旅行家。不知道你的旅行的目的是什么，但鳗鱼显然告诉了你它的答案。<br><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3999767242,4285497006&amp;fm=26&amp;gp=0.jpg" alt="在这里插入图片描述"></p>
+<h3 id="北飞的候鸟"><a href="#北飞的候鸟" class="headerlink" title="北飞的候鸟"></a>北飞的候鸟</h3><p>如果有来生，要做一棵树， 站成永恒。没有悲欢的姿势， 一半在尘土里安详， 一半在风里飞扬； 一半洒落荫凉， 一半沐浴阳光。 非常沉默、非常骄傲。 从不依靠、从不寻找。   </p>
+<p>如果有来生，要化成一阵风， 一瞬间也能成为永恒。 没有善感的情怀， 没有多情的眼睛。 一半在雨里洒脱， 一半在春光里旅行； 寂寞了，孤自去远行， 把淡淡的思念统带走， 从不思念、从不爱恋；   </p>
+<p>如果有来生，要做一只鸟， 飞越永恒，没有迷途的苦恼。东方有火红的希望，南方有温暖的巢床， 向西逐退残阳，向北唤醒芬芳。  如果有来生， 希望每次相遇， 都能化为永恒。<br><img src="https://iknow-pic.cdn.bcebos.com/63d9f2d3572c11df7624b6486e2762d0f603c2e0?x-bce-process=image/resize,m_lfit,w_600,h_800,limit_1" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>阅读</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -13223,85 +13302,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </categories>
       <tags>
         <tag>研究生课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>读书笔记</title>
-    <url>/2021/01/27/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<p>今年有一个想法，每周阅读一本书，并且在博客中发表阅读心得，每周更新一次。</p>
-<h1 id="阅读笔记"><a href="#阅读笔记" class="headerlink" title="阅读笔记"></a>阅读笔记</h1><h2 id="阅读清单"><a href="#阅读清单" class="headerlink" title="阅读清单"></a>阅读清单</h2><ul>
-<li>[x] 时间简史</li>
-<li>[x] 小王子</li>
-<li>[x] 朱光潜给年轻人的十二封信</li>
-<li>[x] 健身笔记：如何成为一个身材有料的人</li>
-<li>[x] 从零开始学钢琴</li>
-<li>[x] 我与地坛</li>
-<li>[x] 当下的力量</li>
-<li>[x] 人间值得</li>
-<li>[x] 鳗鱼的旅行</li>
-<li>[ ] 啊哪啊那神去村</li>
-<li>[ ] 非暴力沟通</li>
-<li>[ ] 长大了就会变好吗</li>
-<li>[ ] 巨大的拥抱</li>
-<li>[ ] 女生呵护指南</li>
-<li>[ ] 当你学会独处</li>
-<li>[ ] 莫泊桑短片小说集</li>
-<li>[ ] 飞鸟集</li>
-<li>[ ] 挪威的森林</li>
-<li>[ ] 神曲</li>
-<li>[ ] 月亮与六便士</li>
-<li>[ ] 呐喊</li>
-<li>[ ] 老人与海</li>
-<li>[ ] 追风筝的人</li>
-<li>[ ] 瓦尔登湖</li>
-<li>[ ] 金刚经说什么</li>
-<li>[ ] 牡丹亭</li>
-<li>[ ] 我在未来等你</li>
-<li>[ ] 苏菲的世界</li>
-<li>[ ] 鲁迅杂文集</li>
-<li>[ ] 无人生还</li>
-<li>[ ] 万物起源</li>
-<li>[ ] 人类简史<h2 id="读书心得"><a href="#读书心得" class="headerlink" title="读书心得"></a>读书心得</h2><h3 id="时间简史"><a href="#时间简史" class="headerlink" title="时间简史"></a>时间简史</h3>这本书前三章主要讲的是亚里士多德的地心说到哥白尼的日星说，然后到伽利略和牛顿的经典物理学，再到法拉第、麦克斯韦的电磁场理论，基本主要内容还是讲的高中物理，基本上就是一个综述。</li>
-</ul>
-</blockquote>
-<p>然后讲到量子力学和相对论，如果没读这本书我一开始一直以为相对论和量子力学，两者都是正确的，但是看这本书的时候发现两者只有其中之一是正确的。但目前相对论让我们产生核能，原子弹。量子力学也在不断的发展给人类带来了直接利益，无论两者中的哪一个都无法直接判断是错误的。</p>
-<p>量子力学里面解释的并不是很详细，但是大学物理有讲，我看了这本书印象更深刻了一点，其实量子力学就是，微小的粒子，在进行测量的时候主要是采用的光的反射进行测量，因为该粒子在测量其速度的时，需要使用光进行测量所以其光的能量如果过高就会导致粒子振荡，速度变快。如果测量粒子的位置就需要采用高频率的光波依次获得更小的波长，即可获得粒子的位置。因此我们在某一时刻，只能准确的获得粒子的位置或者速度。不能同时测得粒子的两种物理属性。</p>
-<p>其中讲了一个比较有意思的实验，即红移和蓝移。由于多普勒效应天体正向我们移动的时候其恒星光谱会向红端移动，如果远离我们会向蓝段移动。但是过去了几十年，人类测量了无数光的光谱，均为红移，因此可以得出结论，所有的星体都在远离我们，因此宇宙正在逐渐的扩张。即测不准定理。</p>
-<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fgss0.baidu.com%2F-Po3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2Fd0c8a786c9177f3ec454da7376cf3bc79f3d566f.jpg&amp;refer=http%3A%2F%2Fgss0.baidu.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1613314542&amp;t=b6ae3fe03bf7f657e5ddbac5c9507e4d" alt="在这里插入图片描述"></p>
-<p>还有一个实验，其实我们生活在三维空间，但是我们可以推断的空间其实可以到四维空间，因此我们其实是可以脑袋里面构想出四维空间的，其实物理学中早有解释，你想太阳的光需要8分钟才能到地球，因此我们只能看到太阳8分钟前的样子，这样我们其实活在太阳的8分钟之前，即太阳8分钟以后的三维空间之中。</p>
-<p>星球之间主要的力是引力，霍金说主要的力分为强相互作用力、弱相互作用力，电磁力和引力。目前没有公式能将其整合成唯一的定理，因此我联想到了科学事实和客观事实，目前人类所思考的其实是科学事实，不一定是世界的正向，其存在人类的主观判断，因此不一定正确。霍金说宇宙如果有一个扩张，必然会存在一个收缩，而宇宙的收缩可能要在1亿亿年以后，暂时我们不需要担心，但是你可以想象到一件事情，无论是任何事情，即使人类可以长生不死也会有一个必然的终结，除非人类可以同时具备长生不死和穿越时空。</p>
-<p>其实引力只有在天梯之间才成立，但是人类无法通过万有引力定律计算四星运动。因为宇宙太大了，但是当质量密度达到一个点就可以通过引力产生黑洞，其实之前我一直不知道黑洞是个什么东西。但其实黑洞是人类推断出来的一个东西，其实一个小的黑洞可以小到分子级别，比你的指甲小几万倍，只要密度达到就可以产生黑洞和体积无关。因此只要人类发展到一定程度，必然可以人造黑洞，而且这个黑洞可以很小。而分子间主要是强弱相互作用和电磁力。只要讲做到三十钛福特在一个点上就可以造出一个黑洞，但目前实验室只能造出3000福特具体值不清楚但是达不到。<br>黑洞到底是怎么推论出来的呢？其实之前我也在思考黑洞到底是什么，其实很简单，我们知道其他恒星的光通过太阳的时候会因为太阳的引力光会弯曲，这样就只要质量足够的大，光就可以背弯曲成一个圆，或者变成一个抛物线，即光无法离开那个星球，光就像火箭坠机一样，被引力拉回来，即可推论出黑洞的样子大概是一个圆环，中间是黑色的因为中间的光出不来，外侧的光可以因为光的挤压在事件界面上挤压出来，即可为一个圆环状。目前人类已经发现了黑洞。<br>黑洞的重心就是奇点，当然人类是无法前往这个点的，如果有飞行员进入黑洞必死无疑，可能一瞬间就被压成了一个分子，被剥夺其存在性。<br><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2830392986,3183821195&amp;fm=26&amp;gp=0.jpg" alt="在这里插入图片描述"></p>
-<p>讲一讲相对论，相对论其实就是一个测量学，其实之前的物理世界是，不同的参考系其测量是一样的，但是爱因斯坦的相对论其实给了一个很有趣的解释，就是不同的参考系如果你接近了光速，测量是不一样的，因此可以有很多科幻片说的双生子谬论。目前人类能加速的最大速度是电子，在全球最大的电子发射机内，只能将电子加速到光速的0.999999但无法超过光速。很可惜。</p>
-<p>如果超过光速人类就可以时间穿梭，这是为什么，其实你不难想象，如果你开一艘飞船从地球出发，你超过了光速，你就可以在你出发前回到地球，你懂这是什么意思吗，就是你可以前往你出发之前的那个时刻。即时空穿梭。</p>
-<p>其实你们可以想象我们活在一个四维空间中，我们可以通过超光速相当于逆时间移动，就是传统意义的穿越。</p>
-<p>那么我们如何超光速，其实霍金给出了方法，就是利用负能量和正能量在时空中制造一个虫洞，目前可以通过量子力学制造负能量点，其能量守恒定律其实之前有讲过，能量一般都是大于等于零的但是量子力学说可以在空间中制造一个负能量点和正能量点，在这两个点之间可以造成时空扭曲。产生充电，目前离地球最近的一颗恒星是比邻星，距离我们大概4光年，就是光走思念才能到比邻星。我们其实通过虫洞来回比邻星就可以超光速，如果可能的话大概咱们可以回到八年前的地球。</p>
-<p>霍金还推测五维空间不存在，因为如果多维空间存在，那么如果万有引力成立，那么其引力就会按照维数进行下降，因为引力和距离成反比，距离越大引力越小，你想维度没多一维，咱们的引力就会变成  四维空间1/2、五维1/4。。。可以想象到咱们的空间会崩塌，由于人存在性定理，其实这种多维空间是不存在的，或者万有引力有问题。</p>
-<p>看完时间简史，我感觉人类其实是十分渺小的事物，我们对世界的理解其实还很浅薄。大家总觉得目前的科技能够达到很高的地步。其实我想说，人类目前连地球都不能进行完全的探索。而且核能也只是基础，其实任何物质按照质能方程都能进行转换，按照这样的推想，石油未来并不会像现在这样被重视，因为可能一吨海水可以供人类获几百年。</p>
-<p>当初相对论刚出来的时候，全世界可能就几个人能够理解相对论和量子力学，但是现在，研究生可能有几百万人能够同时理解这两门学问，因此未来可能能够存在一个定理即物理学统一定理将一切的公式统合在一起。</p>
-<h3 id="小王子"><a href="#小王子" class="headerlink" title="小王子"></a>小王子</h3><p>小王子讲的其实是飞行员，他在沙漠中遇难他和自己对话的故事，可能是在极端的条件下，他看到了他自己，其实我们也会从这本书中看到小时候的自己，世界上的人被小王子分为了四种，用小王子所路过的星球所指代。这本书很短，2小时就可以读完，其很有趣，让你从小孩子的眼中审视这个世界，到底人们在追寻一些什么。其实细细想来很奇怪，在光里面追光。人生活的是一个过程，不是结果。希望每个人都能懂。<br>小王子对玫瑰和狐狸的解释挺有趣的，可以细细品味。</p>
-<h3 id="朱光潜给年轻人的十二封信"><a href="#朱光潜给年轻人的十二封信" class="headerlink" title="朱光潜给年轻人的十二封信"></a>朱光潜给年轻人的十二封信</h3><p>这本书感觉是给中学生写的，其实我没怎么看进去，希望你们能看进去。</p>
-<h3 id="健身笔记：如何成为一个身材有料的人"><a href="#健身笔记：如何成为一个身材有料的人" class="headerlink" title="健身笔记：如何成为一个身材有料的人"></a>健身笔记：如何成为一个身材有料的人</h3><p>讲如何健身、减肥。健身的动作、流程，减肥的方法，其中对于减肥人士的基础代谢很有用，可以自己去计算一下自己的基础代谢量。</p>
-<h3 id="从零开始学钢琴"><a href="#从零开始学钢琴" class="headerlink" title="从零开始学钢琴"></a>从零开始学钢琴</h3><p>讲钢琴的一些基础知识、如何读五线谱、然后怎么弹、左右 ，右手高音、左手低音、然后从5个音到6个音、到左右手换位置的8个音，到升降调。钢琴其实就是训练只要你会练就能学的很好，加油！<br>今年计划，学会钢琴。</p>
-<h3 id="我与地坛"><a href="#我与地坛" class="headerlink" title="我与地坛"></a>我与地坛</h3><p>史铁生在20岁的年纪失去了自己的双腿、在北京的地坛公园读书思考看到很多的人和事情，主要都是他在地坛里想了些什么，这本书对于有抑郁、对生命失去信心的人很有帮助。<br>还是那句话，人活的是一个过程，绝不是结果，自付价值，自付使命。加油！</p>
-<h3 id="当下的力量"><a href="#当下的力量" class="headerlink" title="当下的力量"></a>当下的力量</h3><p>主要讲的就是，让我们去除时间观念，没有未来，没有过去，我们能够把握的只有当下，不要</p>
-<p>未来不会拯救你，未来不会因为你的期待而自动变得更好，你能把握的只有当下的每一秒。</p>
-<p>你要学会感受生活中的每一秒，在每一秒享受生活，做自己喜欢的事情，做自己想要做的事情。</p>
-<blockquote>
-<p>是的——春天需要你。经常会有一颗星<br>等着你抬头去看。波涛会从遥远的过去<br>向你涌来，或者当你从一扇<br>开着的窗下走过，小提琴的音乐<br>会渴望你倾听。所有这些都是使命。<br>可是你能完成吗？</p>
-</blockquote>
-<p>关注在当下真的很神奇的，你关注与当下，然后体会很多感觉，而不只是去思考，你能感觉到你很幸福。<br>但是文中有句话说我思故我在是错误的，这个有待辩证，但是也有很多的道理，可以减少思考，但是不要像文章中完全不思考，完全不思考我尝试过会降低智商，和物质基础。<br>当下的力量，推荐大家看看。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fcdnimg103.lizhi.fm%2Faudio_cover%2F2018%2F07%2F01%2F2678344019888704519_320x320.jpg&amp;refer=http%3A%2F%2Fcdnimg103.lizhi.fm&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1614341106&amp;t=7d39c87785083627fc5441116ca0cde2" alt="在这里插入图片描述"></p>
-<h3 id="人间值得"><a href="#人间值得" class="headerlink" title="人间值得"></a>人间值得</h3><p>这是一个护士给一位日本老奶奶写的自传，讲的是中村恒子从出生到90岁的故事，一直在工作，有讲很多方法论，如何让自己幸福，如何和生活和解，如何让自己过的幸福，探索人生的真谛。其中讲了许多和工作相关的故事，就比如不要抱怨一般尝试后都能行，学会把工作当成是人生的一部分不要去排斥你的工作，也不要因为很多事情烦恼，没有什么必要性。不以物喜，不以己悲。<br>人生是一场经历，热爱生活，享受这段过程。<br>泰山崩于前而色不变，黄河决于顶而面不惊。人生，一定要有一颗强大的内心，才不会轻易被打倒。人生，要学会坚强，在遇到挫折的时候才能从容地去面对，让自己处于泰山之崩而沉着镇定，处于黄河之边而不惊不慌，人生想要会当凌绝顶，一览众山小，就要从山脚下开始战胜重重困难，一步一步往上爬，才能有可能到达山顶。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201909%2F13%2F20190913213654_kmuwe.thumb.400_0.jpg&amp;refer=http%3A%2F%2Fc-ssl.duitang.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1614341233&amp;t=792b0fafbd08b514b5c2a9b68d1ecc69" alt="在这里插入图片描述"></p>
-<h3 id="鳗鱼的旅行"><a href="#鳗鱼的旅行" class="headerlink" title="鳗鱼的旅行"></a>鳗鱼的旅行</h3><p>这篇文章，很有趣，讲的是鳗鱼习性的研究历程，鳗鱼这个生物很有趣，在古希腊时期到18世纪，鳗鱼一直都不被认为是一种鱼，是一种独立的物种，即鳗鱼非鱼，其实我现在也觉得这玩意不是鱼。<br>很有趣啊，鳗鱼这个生物，亚里士多德在生物志中有详细的调查，这应该是当时最详细的一篇调查，鳗鱼这种生物当干旱的时候不存在，但是来年春天当水满了以后鳗鱼又会出现，就仿佛是从泥土里长出来的。<br>所有的人都不知道鳗鱼这种生物从哪来的，这个问题困扰了人类n久。你们难以想象1920年上世纪人类才知道鳗鱼的习性，所有你们可以知道人类目前的科技水平只能达到什么程度了吗？<br>当时为了找到一条带卵的鳗鱼，政府发出巨额赏金，于是当时大量的鱼民拿其他鱼的卵放在鳗鱼的体内，你可能难以想象。当然对科学研究有一定的影响，就直到1920年。<br>1920年有个研究员一直躲到一战结束才敢开船去找鳗鱼的发源地，方法也很简单，就是慢慢的去捕鱼，他从英国一直开到太平洋，鳗鱼的大小越来越小，最终才确定了鳗鱼的出生地，是在一片海里，而且很神奇的是就只有那一块是鳗鱼的出生地，不在别的地方繁衍，就在这一片海域。<br>最后研究表明，鳗鱼一开始是雌性，游几千海里前往其他水域进行生存，等玩腻了，每条鳗鱼选择的时间不一样，只要不繁衍这货可以活50年，这对于生物是极其长寿的，但是当他游会那片海域准备繁衍的时候，这时鳗鱼就会变成雄性，然后繁衍，随后就会死去。很浪漫，可能鳗鱼一生走的路比许多人要远得多。<br>是一个很不错的科技题材的小说，全球的鳗鱼都来自于同一片海域，而且每一条鳗鱼都是游了这么远来到的你的身边，无一例外，你吃的每一条鳗鱼都是一位旅行家。不知道你的旅行的目的是什么，但鳗鱼显然告诉了你它的答案。<br><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3999767242,4285497006&amp;fm=26&amp;gp=0.jpg" alt="在这里插入图片描述"></p>
-<h3 id="北飞的候鸟"><a href="#北飞的候鸟" class="headerlink" title="北飞的候鸟"></a>北飞的候鸟</h3><p>如果有来生，要做一棵树， 站成永恒。没有悲欢的姿势， 一半在尘土里安详， 一半在风里飞扬； 一半洒落荫凉， 一半沐浴阳光。 非常沉默、非常骄傲。 从不依靠、从不寻找。   </p>
-<p>如果有来生，要化成一阵风， 一瞬间也能成为永恒。 没有善感的情怀， 没有多情的眼睛。 一半在雨里洒脱， 一半在春光里旅行； 寂寞了，孤自去远行， 把淡淡的思念统带走， 从不思念、从不爱恋；   </p>
-<p>如果有来生，要做一只鸟， 飞越永恒，没有迷途的苦恼。东方有火红的希望，南方有温暖的巢床， 向西逐退残阳，向北唤醒芬芳。  如果有来生， 希望每次相遇， 都能化为永恒。<br><img src="https://iknow-pic.cdn.bcebos.com/63d9f2d3572c11df7624b6486e2762d0f603c2e0?x-bce-process=image/resize,m_lfit,w_600,h_800,limit_1" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>阅读</category>
-      </categories>
-      <tags>
-        <tag>读书笔记</tag>
       </tags>
   </entry>
 </search>
