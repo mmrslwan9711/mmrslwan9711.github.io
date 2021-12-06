@@ -6,7 +6,7 @@
   <link href="http://www.mmrsl.cn/atom.xml" rel="self"/>
   
   <link href="http://www.mmrsl.cn/"/>
-  <updated>2021-12-02T13:32:37.576Z</updated>
+  <updated>2021-12-06T07:54:54.894Z</updated>
   <id>http://www.mmrsl.cn/</id>
   
   <author>
@@ -17,11 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>StarCraft_环境配置</title>
+    <link href="http://www.mmrsl.cn/2021/12/06/StarCraft-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <id>http://www.mmrsl.cn/2021/12/06/StarCraft-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-12-06T03:10:32.000Z</published>
+    <updated>2021-12-06T07:54:54.894Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>My_leetcode</title>
+    <link href="http://www.mmrsl.cn/2021/12/03/My-leetcode/"/>
+    <id>http://www.mmrsl.cn/2021/12/03/My-leetcode/</id>
+    <published>2021-12-03T02:01:43.000Z</published>
+    <updated>2021-12-03T02:01:43.755Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Java_and_C++</title>
     <link href="http://www.mmrsl.cn/2021/12/01/Java_and_C++/"/>
     <id>http://www.mmrsl.cn/2021/12/01/Java_and_C++/</id>
     <published>2021-12-01T13:12:33.000Z</published>
-    <updated>2021-12-02T13:32:37.576Z</updated>
+    <updated>2021-12-03T01:43:41.185Z</updated>
     
     
       
@@ -142,7 +184,7 @@
     <link href="http://www.mmrsl.cn/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://www.mmrsl.cn/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2021-11-19T01:55:10.000Z</published>
-    <updated>2021-11-24T02:24:42.097Z</updated>
+    <updated>2021-12-06T07:55:02.013Z</updated>
     
     
       
@@ -459,58 +501,6 @@
     <category term="微信小程序" scheme="http://www.mmrsl.cn/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
     <category term="js" scheme="http://www.mmrsl.cn/tags/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu_NVIDIA30xx，开发环境显卡安装</title>
-    <link href="http://www.mmrsl.cn/2021/10/22/ubuntu-NVIDIA30xx%E6%98%BE%E5%8D%A1%E5%AE%89%E8%A3%85/"/>
-    <id>http://www.mmrsl.cn/2021/10/22/ubuntu-NVIDIA30xx%E6%98%BE%E5%8D%A1%E5%AE%89%E8%A3%85/</id>
-    <published>2021-10-22T08:35:22.000Z</published>
-    <updated>2021-10-22T09:24:37.661Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ubuntu" scheme="http://www.mmrsl.cn/categories/ubuntu/"/>
-    
-    
-    <category term="ubuntu" scheme="http://www.mmrsl.cn/tags/ubuntu/"/>
-    
-    <category term="NVIDIA30xx" scheme="http://www.mmrsl.cn/tags/NVIDIA30xx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux常用指令</title>
-    <link href="http://www.mmrsl.cn/2021/07/28/linux-ssh-scp%E6%8C%87%E4%BB%A4/"/>
-    <id>http://www.mmrsl.cn/2021/07/28/linux-ssh-scp%E6%8C%87%E4%BB%A4/</id>
-    <published>2021-07-28T08:34:24.000Z</published>
-    <updated>2021-07-30T02:53:37.834Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="目标检测" scheme="http://www.mmrsl.cn/categories/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/"/>
-    
-    
-    <category term="目标检测数据集扩充2" scheme="http://www.mmrsl.cn/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%95%B0%E6%8D%AE%E9%9B%86%E6%89%A9%E5%85%852/"/>
     
   </entry>
   
