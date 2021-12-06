@@ -506,83 +506,6 @@ sudo apt-get install refind<span aria-hidden="true" class="line-numbers-rows"><s
       </tags>
   </entry>
   <entry>
-    <title>Detection_树莓派</title>
-    <url>/2021/06/07/Detection-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Raspberry-Pi-上运行-TensorFlow-Lite-目标检测"><a href="#Raspberry-Pi-上运行-TensorFlow-Lite-目标检测" class="headerlink" title="Raspberry Pi 上运行 TensorFlow Lite 目标检测"></a>Raspberry Pi 上运行 TensorFlow Lite 目标检测</h1> <div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=845957427&bvid=BV1B54y137xE&cid=350441154&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>本指南提供了有关如何在 Raspberry Pi 上设置 TensorFlow Lite 并使用它运行对象检测模型的分步说明。它还展示了如何在 Pi 上设置 Coral USB 加速器并运行 Edge TPU 检测模型。它适用于运行 Rasbpian Buster 或 Rasbpian Stretch 的 Raspberry Pi 3 和 Raspberry Pi 4。</p>
-<p>本指南是我更大的 TensorFlow Lite 教程系列的第二部分：</p>
-<ol>
-<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">如何在 Windows 10 上训练、转换和运行自定义 TensorFlow Lite 对象检测模型</a></li>
-<li>如何在 Raspberry Pi 上运行 TensorFlow Lite 对象检测模型&lt;—- 你在这里！</li>
-</ol>
-<p>本指南的这一部分分为三个部分：</p>
-<ul>
-<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#part-1---how-to-set-up-and-run-tensorflow-lite-object-detection-models-on-the-raspberry-pi">第 1 节 在 Raspberry Pi 上运行 TensorFlow Lite 对象检测模型</a></li>
-<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#section-2---run-edge-tpu-object-detection-models-on-the-raspberry-pi-using-the-coral-usb-accelerator">第 2 节。使用 Coral USB 加速器在 Raspberry Pi 上运行 Edge TPU 对象检测模型</a></li>
-</ul>
-<p>此存储库还包括用于在图像、视频或网络摄像头/Picamera 源上运行 TFLite 和 Edge TPU 模型的脚本。</p>
-<h2 id="如何在-Raspberry-Pi-上设置和运行-TensorFlow-Lite-对象检测模型"><a href="#如何在-Raspberry-Pi-上设置和运行-TensorFlow-Lite-对象检测模型" class="headerlink" title="如何在 Raspberry Pi 上设置和运行 TensorFlow Lite 对象检测模型"></a>如何在 Raspberry Pi 上设置和运行 TensorFlow Lite 对象检测模型</h2><p>在 Raspberry Pi 上设置 TensorFlow Lite 比常规 TensorFlow 容易得多！这些是设置 TensorFlow Lite 所需的步骤：</p>
-<ul>
-<li>1a. 更新树莓派</li>
-<li>1b. 下载此存储库并创建虚拟环境</li>
-<li>1c。安装 TensorFlow 和 OpenCV</li>
-<li>1天。设置 TensorFlow Lite 检测模型</li>
-<li>1e。运行 TensorFlow Lite 模型！</li>
-<li>我还制作了一个介绍本指南的 YouTube 视频：</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=aimSGOAUI8Y"><img src="https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/master/doc/YouTube_video1.JPG" alt="Link to my YouTube video!"></a></p>
-<h3 id="更新树莓派"><a href="#更新树莓派" class="headerlink" title="更新树莓派"></a>更新树莓派</h3><pre class="line-numbers language-none"><code class="language-none">sudo apt-get update
-sudo apt-get dist-upgrade<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>根据您更新 Pi 的时间，更新可能需要一分钟到一小时之间的任何时间。</p>
-<p>在此过程中，让我们确保在 Raspberry Pi 配置菜单中启用了相机界面。单击屏幕左上角的 Pi 图标，选择 Preferences -&gt; Raspberry Pi Configuration，然后转到 Interfaces 选项卡并确认 Camera 设置为 Enabled。如果不是，请立即启用它，然后重新启动 Raspberry Pi。</p>
-<h3 id="下载虚拟环境"><a href="#下载虚拟环境" class="headerlink" title="下载虚拟环境"></a>下载虚拟环境</h3><p>接下来，通过发出以下命令克隆此 GitHub 存储库。该存储库包含我们将用于运行 TensorFlow Lite 的脚本，以及一个使安装一切变得更容易的 shell 脚本。问题：</p>
-<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;EdjeElectronics&#x2F;TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这会将所有内容下载到名为 TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi 的文件夹中。这有点长，所以将文件夹重命名为“tflite1”，然后 cd 进入它：</p>
-<pre class="line-numbers language-none"><code class="language-none">mv TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi tflite1
-cd tflite1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>我们将在此 /home/pi/tflite1 目录中处理本指南的其余部分。接下来是创建一个名为“tflite1-env”的虚拟环境。</p>
-<p>我在本指南中使用了虚拟环境，因为它可以防止可能已安装在您的 Pi 上的软件包库版本之间发生任何冲突。将 TensorFlow 安装在自己的环境中可以避免版本冲突。例如，如果您已经使用我的其他指南在 Pi 上安装了 TensorFlow v1.8，则可以保持该安装不变，而不必担心覆盖它。</p>
-<p>通过发出以下命令安装 virtualenv：</p>
-<pre class="line-numbers language-none"><code class="language-none">sudo pip3 install virtualenv<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>然后，通过发出以下命令创建“tflite1-env”虚拟环境：</p>
-<pre class="line-numbers language-none"><code class="language-none">python3 -m venv tflite1-env<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这将在 tflite1 目录中创建一个名为 tflite1-env 的文件夹。tflite1-env 文件夹将保存此环境的所有包库。接下来，通过发出以下命令激活环境：</p>
-<pre class="line-numbers language-none"><code class="language-none">source tflite1-env&#x2F;bin&#x2F;activate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><strong>source tflite1-env/bin/activate每次打开新的终端窗口时，您都需要从 /home/pi/tflite1 目录中发出命令以重新激活环境。您可以通过检查 (tflite1-env) 是否出现在命令提示符中的路径之前来判断环境何时处于活动状态，如下面的屏幕截图所示。</strong></p>
-<p>此时，如果您发出 .tflite1 目录，那么您的 tflite1 目录应该是这样的<code>ls</code>。</p>
-<h3 id="安装TensorFlow和opencv"><a href="#安装TensorFlow和opencv" class="headerlink" title="安装TensorFlow和opencv"></a>安装TensorFlow和opencv</h3><p>接下来，我们将安装 TensorFlow、OpenCV 以及这两个包所需的所有依赖项。运行 TensorFlow Lite 不需要 OpenCV，但此存储库中的对象检测脚本使用它来抓取图像并在其上绘制检测结果。</p>
-<p>为了让事情更简单，我编写了一个 shell 脚本，它会自动下载并安装所有的包和依赖项。通过发出以下命令运行它：</p>
-<pre class="line-numbers language-none"><code class="language-none">bash get_pi_requirements.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这将下载大约 400MB 的安装文件，因此需要一段时间。在它工作的时候去喝杯咖啡吧！如果您想查看已安装的所有内容，只需打开 get_pi_dependencies.sh 即可查看软件包列表。</p>
-<p><strong>注意：如果您在运行bash get_pi_requirements.sh命令时遇到错误，可能是因为您的 Internet 连接超时，或者因为下载的包数据已损坏。如果出现错误，请尝试重新运行该命令几次。</strong></p>
-<p><strong>另一个注意事项：shell 脚本会自动安装最新版本的 TensorFlow。如果您想安装特定版本，pip3 install tensorflow==X.XX请在运行脚本后发出（其中 X.XX 替换为您要安装的版本）。这将使用指定版本覆盖现有安装。</strong></p>
-<p>那很简单！进入下一步。</p>
-<h3 id="步骤-1d。设置-TensorFlow-Lite-检测模型"><a href="#步骤-1d。设置-TensorFlow-Lite-检测模型" class="headerlink" title="步骤 1d。设置 TensorFlow Lite 检测模型"></a>步骤 1d。设置 TensorFlow Lite 检测模型</h3><p>接下来，我们将设置将与 TensorFlow Lite 一起使用的检测模型。本指南展示了如何下载由 Google 提供的示例 TFLite 模型，或如何使用您按照我的 TensorFlow Lite 教程系列<a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">第 1 部分自行训练的模型</a>。</p>
-<p>检测模型有两个与之关联的文件：detect.tflite 文件（模型本身）和 labelmap.txt 文件（为模型提供标签图）。我组织模型文件的首选方法是创建一个文件夹（例如“BirdSquirrelRaccoon_TFLite_model”）并将detect.tflite 和labelmap.txt 都保存在该文件夹中。这也是 Google 的可下载示例 TFLite 模型的组织方式。</p>
-<h3 id="选项-1-使用-Google-的示例-TFLite-模型"><a href="#选项-1-使用-Google-的示例-TFLite-模型" class="headerlink" title="选项 1. 使用 Google 的示例 TFLite 模型"></a>选项 1. 使用 Google 的示例 TFLite 模型</h3><p>Google 提供了一个示例量化 SSDLite-MobileNet-v2 对象检测模型，该模型在 MSCOCO 数据集上训练并转换为在 TensorFlow Lite 上运行。它可以检测和识别 80 种不同的常见物体，例如人、汽车、杯子等。</p>
-<p>通过发出以下命令下载示例模型（<a href="https://www.tensorflow.org/lite/models/object_detection/overview">可以在TensorFlow 官方网站的对象检测页面上找到</a>）：<br><pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;storage.googleapis.com&#x2F;download.tensorflow.org&#x2F;models&#x2F;tflite&#x2F;coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>通过发出（此命令自动创建文件夹）将其解压缩到名为“Sample_TFLite_model”的文件夹中：<br><pre class="line-numbers language-none"><code class="language-none">unzip coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip -d Sample_TFLite_model<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>好的，示例模型已准备就绪！</p>
-<h3 id="选项-2：使用您自己的自定义训练模型"><a href="#选项-2：使用您自己的自定义训练模型" class="headerlink" title="选项 2：使用您自己的自定义训练模型"></a>选项 2：使用您自己的自定义训练模型</h3><p>您还可以通过将模型文件夹移动到 /home/pi/tflite 目录来使用自定义对象检测模型。如果您按照我的 <a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">TensorFlow Lite 指南的第 1 部分</a>在您的 PC 上训练和转换 TFLite 模型，您应该有一个名为“TFLite_model”的文件夹，其中包含一个 detect.tflite 和 labelmap.txt 文件。（它还会有一个 tflite_graph.pb 和 tflite_graph.pbtxt 文件，TensorFlow Lite 不需要这些文件，但可以留在文件夹中。）</p>
-<p>您可以简单地将该文件夹复制到 USB 驱动器，将 USB 驱动器插入您的 Raspberry Pi，然后将该文件夹移动到 /home/pi/tflite1 目录中。（或者，您可以通过电子邮件将其发送给自己，或将其放在 Google 云端硬盘上，或者使用您喜欢的任何文件传输方法。）这是我的 /home/pi/tflite1 目录中的“BirdSquirrelRaccoon_TFLite_model”文件夹的示例：</p>
-<p>现在您的自定义模型已准备就绪！</p>
-<h3 id="步骤-1e。运行-TensorFlow-Lite-模型！"><a href="#步骤-1e。运行-TensorFlow-Lite-模型！" class="headerlink" title="步骤 1e。运行 TensorFlow Lite 模型！"></a>步骤 1e。运行 TensorFlow Lite 模型！</h3><p>是时候看看 TFLite 对象检测模型的实际效果了！首先，通过关闭您不使用的任何应用程序来释放内存和处理能力。另外，请确保您已插入网络摄像头或 Picamera。</p>
-<p>通过从 /home/pi/tflite1 目录中发出以下命令来运行实时网络摄像头检测脚本。（在运行该命令之前，通过检查 (tflite1-env) 出现在命令提示符前面来确保 tflite1-env 环境处于活动状态。）<strong>TFLite_detection_webcam.py 脚本将与 Picamera 或 USB 网络摄像头一起使用。</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">python3 TFLite_detection_webcam.py --modeldir&#x3D;Sample_TFLite_model<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>如果您的模型文件夹的名称与“Sample_TFLite_model”不同，请改用该名称。例如，我会<code>--modeldir=BirdSquirrelRaccoon_TFLite_model</code>用来运行我的自定义鸟类、松鼠和浣熊检测模型。</p>
-<p>初始化片刻后，将出现一个窗口，显示网络摄像头源。检测到的对象将实时显示边界框和标签。</p>
-<p>我TensorFlow精简版培训指导的第3部分给出的<a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#video">指令</a>使用TFLite_detection_image.py和TFLite_detection_video.py脚本。确保在运行脚本时使用<code>python3</code>而不是<code>python</code>。</p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>树莓派</tag>
-        <tag>深度学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>EasyOCR光学字符识别</title>
     <url>/2021/10/25/EasyOCR%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="EasyOCR光学字符识别"><a href="#EasyOCR光学字符识别" class="headerlink" title="EasyOCR光学字符识别"></a>EasyOCR光学字符识别</h1><pre><code>OCR光学字符识别，将不同类型的文档，图像中的字符保存为可编辑和可搜索的数据。
@@ -705,6 +628,83 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       <tags>
         <tag>OCR</tag>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Detection_树莓派</title>
+    <url>/2021/06/07/Detection-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Raspberry-Pi-上运行-TensorFlow-Lite-目标检测"><a href="#Raspberry-Pi-上运行-TensorFlow-Lite-目标检测" class="headerlink" title="Raspberry Pi 上运行 TensorFlow Lite 目标检测"></a>Raspberry Pi 上运行 TensorFlow Lite 目标检测</h1> <div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=845957427&bvid=BV1B54y137xE&cid=350441154&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>本指南提供了有关如何在 Raspberry Pi 上设置 TensorFlow Lite 并使用它运行对象检测模型的分步说明。它还展示了如何在 Pi 上设置 Coral USB 加速器并运行 Edge TPU 检测模型。它适用于运行 Rasbpian Buster 或 Rasbpian Stretch 的 Raspberry Pi 3 和 Raspberry Pi 4。</p>
+<p>本指南是我更大的 TensorFlow Lite 教程系列的第二部分：</p>
+<ol>
+<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">如何在 Windows 10 上训练、转换和运行自定义 TensorFlow Lite 对象检测模型</a></li>
+<li>如何在 Raspberry Pi 上运行 TensorFlow Lite 对象检测模型&lt;—- 你在这里！</li>
+</ol>
+<p>本指南的这一部分分为三个部分：</p>
+<ul>
+<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#part-1---how-to-set-up-and-run-tensorflow-lite-object-detection-models-on-the-raspberry-pi">第 1 节 在 Raspberry Pi 上运行 TensorFlow Lite 对象检测模型</a></li>
+<li><a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#section-2---run-edge-tpu-object-detection-models-on-the-raspberry-pi-using-the-coral-usb-accelerator">第 2 节。使用 Coral USB 加速器在 Raspberry Pi 上运行 Edge TPU 对象检测模型</a></li>
+</ul>
+<p>此存储库还包括用于在图像、视频或网络摄像头/Picamera 源上运行 TFLite 和 Edge TPU 模型的脚本。</p>
+<h2 id="如何在-Raspberry-Pi-上设置和运行-TensorFlow-Lite-对象检测模型"><a href="#如何在-Raspberry-Pi-上设置和运行-TensorFlow-Lite-对象检测模型" class="headerlink" title="如何在 Raspberry Pi 上设置和运行 TensorFlow Lite 对象检测模型"></a>如何在 Raspberry Pi 上设置和运行 TensorFlow Lite 对象检测模型</h2><p>在 Raspberry Pi 上设置 TensorFlow Lite 比常规 TensorFlow 容易得多！这些是设置 TensorFlow Lite 所需的步骤：</p>
+<ul>
+<li>1a. 更新树莓派</li>
+<li>1b. 下载此存储库并创建虚拟环境</li>
+<li>1c。安装 TensorFlow 和 OpenCV</li>
+<li>1天。设置 TensorFlow Lite 检测模型</li>
+<li>1e。运行 TensorFlow Lite 模型！</li>
+<li>我还制作了一个介绍本指南的 YouTube 视频：</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=aimSGOAUI8Y"><img src="https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/master/doc/YouTube_video1.JPG" alt="Link to my YouTube video!"></a></p>
+<h3 id="更新树莓派"><a href="#更新树莓派" class="headerlink" title="更新树莓派"></a>更新树莓派</h3><pre class="line-numbers language-none"><code class="language-none">sudo apt-get update
+sudo apt-get dist-upgrade<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>根据您更新 Pi 的时间，更新可能需要一分钟到一小时之间的任何时间。</p>
+<p>在此过程中，让我们确保在 Raspberry Pi 配置菜单中启用了相机界面。单击屏幕左上角的 Pi 图标，选择 Preferences -&gt; Raspberry Pi Configuration，然后转到 Interfaces 选项卡并确认 Camera 设置为 Enabled。如果不是，请立即启用它，然后重新启动 Raspberry Pi。</p>
+<h3 id="下载虚拟环境"><a href="#下载虚拟环境" class="headerlink" title="下载虚拟环境"></a>下载虚拟环境</h3><p>接下来，通过发出以下命令克隆此 GitHub 存储库。该存储库包含我们将用于运行 TensorFlow Lite 的脚本，以及一个使安装一切变得更容易的 shell 脚本。问题：</p>
+<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;EdjeElectronics&#x2F;TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这会将所有内容下载到名为 TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi 的文件夹中。这有点长，所以将文件夹重命名为“tflite1”，然后 cd 进入它：</p>
+<pre class="line-numbers language-none"><code class="language-none">mv TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi tflite1
+cd tflite1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>我们将在此 /home/pi/tflite1 目录中处理本指南的其余部分。接下来是创建一个名为“tflite1-env”的虚拟环境。</p>
+<p>我在本指南中使用了虚拟环境，因为它可以防止可能已安装在您的 Pi 上的软件包库版本之间发生任何冲突。将 TensorFlow 安装在自己的环境中可以避免版本冲突。例如，如果您已经使用我的其他指南在 Pi 上安装了 TensorFlow v1.8，则可以保持该安装不变，而不必担心覆盖它。</p>
+<p>通过发出以下命令安装 virtualenv：</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo pip3 install virtualenv<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后，通过发出以下命令创建“tflite1-env”虚拟环境：</p>
+<pre class="line-numbers language-none"><code class="language-none">python3 -m venv tflite1-env<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这将在 tflite1 目录中创建一个名为 tflite1-env 的文件夹。tflite1-env 文件夹将保存此环境的所有包库。接下来，通过发出以下命令激活环境：</p>
+<pre class="line-numbers language-none"><code class="language-none">source tflite1-env&#x2F;bin&#x2F;activate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>source tflite1-env/bin/activate每次打开新的终端窗口时，您都需要从 /home/pi/tflite1 目录中发出命令以重新激活环境。您可以通过检查 (tflite1-env) 是否出现在命令提示符中的路径之前来判断环境何时处于活动状态，如下面的屏幕截图所示。</strong></p>
+<p>此时，如果您发出 .tflite1 目录，那么您的 tflite1 目录应该是这样的<code>ls</code>。</p>
+<h3 id="安装TensorFlow和opencv"><a href="#安装TensorFlow和opencv" class="headerlink" title="安装TensorFlow和opencv"></a>安装TensorFlow和opencv</h3><p>接下来，我们将安装 TensorFlow、OpenCV 以及这两个包所需的所有依赖项。运行 TensorFlow Lite 不需要 OpenCV，但此存储库中的对象检测脚本使用它来抓取图像并在其上绘制检测结果。</p>
+<p>为了让事情更简单，我编写了一个 shell 脚本，它会自动下载并安装所有的包和依赖项。通过发出以下命令运行它：</p>
+<pre class="line-numbers language-none"><code class="language-none">bash get_pi_requirements.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这将下载大约 400MB 的安装文件，因此需要一段时间。在它工作的时候去喝杯咖啡吧！如果您想查看已安装的所有内容，只需打开 get_pi_dependencies.sh 即可查看软件包列表。</p>
+<p><strong>注意：如果您在运行bash get_pi_requirements.sh命令时遇到错误，可能是因为您的 Internet 连接超时，或者因为下载的包数据已损坏。如果出现错误，请尝试重新运行该命令几次。</strong></p>
+<p><strong>另一个注意事项：shell 脚本会自动安装最新版本的 TensorFlow。如果您想安装特定版本，pip3 install tensorflow==X.XX请在运行脚本后发出（其中 X.XX 替换为您要安装的版本）。这将使用指定版本覆盖现有安装。</strong></p>
+<p>那很简单！进入下一步。</p>
+<h3 id="步骤-1d。设置-TensorFlow-Lite-检测模型"><a href="#步骤-1d。设置-TensorFlow-Lite-检测模型" class="headerlink" title="步骤 1d。设置 TensorFlow Lite 检测模型"></a>步骤 1d。设置 TensorFlow Lite 检测模型</h3><p>接下来，我们将设置将与 TensorFlow Lite 一起使用的检测模型。本指南展示了如何下载由 Google 提供的示例 TFLite 模型，或如何使用您按照我的 TensorFlow Lite 教程系列<a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">第 1 部分自行训练的模型</a>。</p>
+<p>检测模型有两个与之关联的文件：detect.tflite 文件（模型本身）和 labelmap.txt 文件（为模型提供标签图）。我组织模型文件的首选方法是创建一个文件夹（例如“BirdSquirrelRaccoon_TFLite_model”）并将detect.tflite 和labelmap.txt 都保存在该文件夹中。这也是 Google 的可下载示例 TFLite 模型的组织方式。</p>
+<h3 id="选项-1-使用-Google-的示例-TFLite-模型"><a href="#选项-1-使用-Google-的示例-TFLite-模型" class="headerlink" title="选项 1. 使用 Google 的示例 TFLite 模型"></a>选项 1. 使用 Google 的示例 TFLite 模型</h3><p>Google 提供了一个示例量化 SSDLite-MobileNet-v2 对象检测模型，该模型在 MSCOCO 数据集上训练并转换为在 TensorFlow Lite 上运行。它可以检测和识别 80 种不同的常见物体，例如人、汽车、杯子等。</p>
+<p>通过发出以下命令下载示例模型（<a href="https://www.tensorflow.org/lite/models/object_detection/overview">可以在TensorFlow 官方网站的对象检测页面上找到</a>）：<br><pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;storage.googleapis.com&#x2F;download.tensorflow.org&#x2F;models&#x2F;tflite&#x2F;coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>通过发出（此命令自动创建文件夹）将其解压缩到名为“Sample_TFLite_model”的文件夹中：<br><pre class="line-numbers language-none"><code class="language-none">unzip coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip -d Sample_TFLite_model<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>好的，示例模型已准备就绪！</p>
+<h3 id="选项-2：使用您自己的自定义训练模型"><a href="#选项-2：使用您自己的自定义训练模型" class="headerlink" title="选项 2：使用您自己的自定义训练模型"></a>选项 2：使用您自己的自定义训练模型</h3><p>您还可以通过将模型文件夹移动到 /home/pi/tflite 目录来使用自定义对象检测模型。如果您按照我的 <a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10">TensorFlow Lite 指南的第 1 部分</a>在您的 PC 上训练和转换 TFLite 模型，您应该有一个名为“TFLite_model”的文件夹，其中包含一个 detect.tflite 和 labelmap.txt 文件。（它还会有一个 tflite_graph.pb 和 tflite_graph.pbtxt 文件，TensorFlow Lite 不需要这些文件，但可以留在文件夹中。）</p>
+<p>您可以简单地将该文件夹复制到 USB 驱动器，将 USB 驱动器插入您的 Raspberry Pi，然后将该文件夹移动到 /home/pi/tflite1 目录中。（或者，您可以通过电子邮件将其发送给自己，或将其放在 Google 云端硬盘上，或者使用您喜欢的任何文件传输方法。）这是我的 /home/pi/tflite1 目录中的“BirdSquirrelRaccoon_TFLite_model”文件夹的示例：</p>
+<p>现在您的自定义模型已准备就绪！</p>
+<h3 id="步骤-1e。运行-TensorFlow-Lite-模型！"><a href="#步骤-1e。运行-TensorFlow-Lite-模型！" class="headerlink" title="步骤 1e。运行 TensorFlow Lite 模型！"></a>步骤 1e。运行 TensorFlow Lite 模型！</h3><p>是时候看看 TFLite 对象检测模型的实际效果了！首先，通过关闭您不使用的任何应用程序来释放内存和处理能力。另外，请确保您已插入网络摄像头或 Picamera。</p>
+<p>通过从 /home/pi/tflite1 目录中发出以下命令来运行实时网络摄像头检测脚本。（在运行该命令之前，通过检查 (tflite1-env) 出现在命令提示符前面来确保 tflite1-env 环境处于活动状态。）<strong>TFLite_detection_webcam.py 脚本将与 Picamera 或 USB 网络摄像头一起使用。</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">python3 TFLite_detection_webcam.py --modeldir&#x3D;Sample_TFLite_model<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>如果您的模型文件夹的名称与“Sample_TFLite_model”不同，请改用该名称。例如，我会<code>--modeldir=BirdSquirrelRaccoon_TFLite_model</code>用来运行我的自定义鸟类、松鼠和浣熊检测模型。</p>
+<p>初始化片刻后，将出现一个窗口，显示网络摄像头源。检测到的对象将实时显示边界框和标签。</p>
+<p>我TensorFlow精简版培训指导的第3部分给出的<a href="https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#video">指令</a>使用TFLite_detection_image.py和TFLite_detection_video.py脚本。确保在运行脚本时使用<code>python3</code>而不是<code>python</code>。</p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
+        <tag>深度学习</tag>
       </tags>
   </entry>
   <entry>
@@ -924,80 +924,6 @@ other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></spa
       </categories>
       <tags>
         <tag>目标检测</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux进程断连重新进入该进程方法</title>
-    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
-<ul>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
-</ul>
-<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
-<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
-<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
-<p><code>nohup python3 main.py &amp;</code></p>
-<ol>
-<li>nohup </li>
-</ol>
-<p>加在一个命令的最前面，表示不挂断的运行命令</p>
-<ol>
-<li>&amp;</li>
-</ol>
-<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
-<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
-<ol>
-<li>jobs 查看后台运行的命令</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
-[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<ol>
-<li><p>ps查看进程</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
-  PID TTY          TIME CMD
-20712 pts&#x2F;6    00:00:00 bash
-20793 pts&#x2F;6    02:49:24 python3
-22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>kill </p>
-</li>
-</ol>
-<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
-<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
-<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
-<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
-<p>将后台中的命令调至前台继续运行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
-<p>（2）Ctrl + z 命令</p>
-<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
-<p>（3）bg命令</p>
-<p>将一个在后台暂停的命令，变成在后台继续执行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
-<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
-<li>首先后台运行一个进程：</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
-<ul>
-<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
-<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
-</ul>
-<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
-<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
-<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
-<p>linux远程断联后重新进入该进程</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
-</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>研究生课程</tag>
       </tags>
   </entry>
   <entry>
@@ -1822,334 +1748,77 @@ transform_test &#x3D; transforms.Compose([
       </tags>
   </entry>
   <entry>
-    <title>My_leetcode</title>
-    <url>/2021/12/03/My-leetcode/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  " ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
-
-]]></content>
-  </entry>
-  <entry>
-    <title>OCR_实时翻译</title>
-    <url>/2021/10/27/OCR-%E5%AE%9E%E6%97%B6%E7%BF%BB%E8%AF%91/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="OCR-实时翻译"><a href="#OCR-实时翻译" class="headerlink" title="OCR_实时翻译"></a>OCR_实时翻译</h1><ul>
-<li>采用了easyocr</li>
-<li>爬虫，调取百度翻译接口</li>
-</ul>
-<h2 id="调用屏幕接口"><a href="#调用屏幕接口" class="headerlink" title="调用屏幕接口"></a>调用屏幕接口</h2><p>调用屏幕的方法很简单：<br><pre class="line-numbers language-none"><code class="language-none">import pyautogui
-import cv2
-import numpy as np
-img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 1920, 100])  # x,y,w,h
-# img.save(&#39;screenshot.png&#39;)
-img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
-cv2.imshow(&quot;1&quot;,img)
-cv2.waitKey(0)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>但感觉效率很低，最后改成了虚拟摄像头+cap=cv2.VideoCapture(1)的方式捕获。</p>
-<h2 id="调用百度翻译接口"><a href="#调用百度翻译接口" class="headerlink" title="调用百度翻译接口"></a>调用百度翻译接口</h2><pre class="line-numbers language-none"><code class="language-none">import urllib.request
-import urllib.parse
-import json
-import pyautogui
-import cv2
-import numpy as np
-url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
-headers &#x3D; &#123;
-    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
-&#125;
-data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
-request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
-response &#x3D; urllib.request.urlopen(request)
-content &#x3D; response.read().decode(&#39;utf-8&#39;)
-obj &#x3D; json.loads(content)
-print(obj)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>这个只能做单词翻译，还需要进一步优化。</p>
-<h2 id="easyocr"><a href="#easyocr" class="headerlink" title="easyocr"></a>easyocr</h2><p>这个参考<a href="https://www.codekp.cn/2021/10/25/EasyOCR%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB/">EasyOCR光学字符识别</a></p>
-<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><blockquote>
-<p>最终实现效果，在摄像头上和屏幕截取上都进行了测试.</p>
-</blockquote>
-<h3 id="首先是摄像头"><a href="#首先是摄像头" class="headerlink" title="首先是摄像头"></a>首先是摄像头</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu2.png" alt=""></p>
-<h3 id="然后是屏幕"><a href="#然后是屏幕" class="headerlink" title="然后是屏幕"></a>然后是屏幕</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu1.png" alt=""></p>
-<h2 id="最后是源码"><a href="#最后是源码" class="headerlink" title="最后是源码"></a>最后是源码</h2><pre class="line-numbers language-none"><code class="language-none">import time
-
-import easyocr
-import ssl
-import cv2
-# from matplotlib import pyplot as plt
-
-import cv2
-import numpy as np
-from PIL import Image, ImageDraw, ImageFont
-import urllib.request
-import urllib.parse
-import json
-import pyautogui
-import cv2
-import numpy as np
-
-
-ssl._create_default_https_context &#x3D; ssl._create_unverified_context
-# 设置识别中英文两种语言
-reader &#x3D; easyocr.Reader([&#39;ch_sim&#39;, &#39;en&#39;])  # need to run only once to load model into memory
-Image3&#x3D;&#39;https:&#x2F;&#x2F;www.codekp.cn&#x2F;download&#x2F;img&#x2F;ubuntu&#x2F;NVIDIA1.png&#39;
-Image2&#x3D;r&quot;H:\blog\wan_lab\blog_2020\source\download\img\ubuntu\NVIDIA1.png&quot;
-Image4&#x3D;&quot;1.jpg&quot;
-url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
-headers &#x3D; &#123;
-    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
-&#125;
-
-
-cap&#x3D;cv2.VideoCapture(0)
-
-
-while True:
-    ret,img&#x3D;cap.read()
-    # img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 500, 500])  # x,y,w,h
-    # img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
-    cv2.imwrite(&quot;1.jpg&quot;,img)
-    result &#x3D; reader.readtext(Image4, paragraph&#x3D;&quot;False&quot;)
-
-    start&#x3D;time.time()
-    for detection in result:
-        top_left &#x3D; tuple(detection[0][0])
-        bottom_right &#x3D; tuple(detection[0][2])
-        text &#x3D; detection[1]
-        img &#x3D; cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 3)
-        img &#x3D; cv2ImgAddText(img, text, bottom_right[0], bottom_right[1], (0, 255, 0), 18)
-        data &#x3D; &#123;
-            &#39;kw&#39;: text
-        &#125;
-        data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
-        request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
-        response &#x3D; urllib.request.urlopen(request)
-        content &#x3D; response.read().decode(&#39;utf-8&#39;)
-        obj &#x3D; json.loads(content)
-        print(obj)
-        try:
-            text2 &#x3D; str(obj[&#39;data&#39;][0][&#39;v&#39;])
-            img &#x3D; cv2ImgAddText(img, text2, bottom_right[0], bottom_right[1]+20, (0, 255, 0), 18)
-        except:
-            pass
-    cv2.imshow(&quot;1&quot;,img)
-    cv2.waitKey(1)
-    print((time.time()-start)*1000)
-capture.release()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><pre><code>将百度翻译的内容，和原始图像显示出来并列到一起就有了一个比较完整的东西。
-</code></pre><p><img src="https://www.codekp.cn/download/img/baidu/baidu3.png" alt=""></p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>OCR</tag>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python_PyWebIO</title>
-    <url>/2021/12/01/Python-PyWebIO/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  " ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content:  counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
-
-<p><h1 align="center" name="pywebio-zh">Python_PyWebIO</h1></p>
-<p align="center">
-    <em>万鲲鹏</em>
-</p>
-
-<p>PyWebIO提供了一系列命令式的交互函数来在浏览器上获取用户输入和进行输出，将浏览器变成了一个“富文本终端”，可以用于构建简单的Web应用或基于浏览器的GUI应用。<br>PyWebIO还可以方便地整合进现有的Web服务，让你不需要编写HTML和JS代码，就可以构建出具有良好可用性的应用。</p>
-<p>功能特性：</p>
+    <title>Linux进程断连重新进入该进程方法</title>
+    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
 <ul>
-<li>使用同步而不是基于回调的方式获取输入，代码编写逻辑更自然</li>
-<li>非声明式布局，布局方式简单高效</li>
-<li>代码侵入性小，旧脚本代码仅需修改输入输出逻辑便可改造为Web服务</li>
-<li>支持整合到现有的Web服务，目前支持与Flask、Django、Tornado、aiohttp、FastAPI框架集成</li>
-<li>同时支持基于线程的执行模型和基于协程的执行模型</li>
-<li>支持结合第三方库实现数据可视化</li>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
 </ul>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>稳定版安装:</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>报错：<br><code>Fatal error in launcher: Unable to create process using</code></p>
-<p>主要是由于直接调用环境导致的遇到这种问题</p>
-<pre class="line-numbers language-none"><code class="language-none">python -m pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="Quickstart"><a href="#Quickstart" class="headerlink" title="Quickstart"></a>Quickstart</h2><p><strong>Hello, world</strong></p>
-<p>这是一个使用PyWebIO计算 <a href="https://en.wikipedia.org/wiki/Body_mass_index">BMI指数</a> 的脚本:</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio.input import input, FLOAT
-from pywebio.output import put_text
-
-def bmi():
-    height &#x3D; input(&quot;请输入你的身高(cm)：&quot;, type&#x3D;FLOAT)
-    weight &#x3D; input(&quot;请输入你的体重(kg)：&quot;, type&#x3D;FLOAT)
-
-    BMI &#x3D; weight &#x2F; (height &#x2F; 100) ** 2
-
-    top_status &#x3D; [(14.9, &#39;极瘦&#39;), (18.4, &#39;偏瘦&#39;),
-                  (22.9, &#39;正常&#39;), (27.5, &#39;过重&#39;),
-                  (40.0, &#39;肥胖&#39;), (float(&#39;inf&#39;), &#39;非常肥胖&#39;)]
-
-    for top, status in top_status:
-        if BMI &lt;&#x3D; top:
-            put_text(&#39;你的 BMI 值: %.1f，身体状态：%s&#39; % (BMI, status))
-            break
-
-if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
-    bmi()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>如果没有使用PyWebIO，这只是一个非常简单的脚本，而通过使用PyWebIO提供的输入输出函数，你可以在浏览器中与代码进行交互 <a href="http://pywebio-demos.pywebio.online/bmi">[demo]</a>：</p>
-<p align="center">
-    <a href="http://pywebio-demos.pywebio.online/?pywebio_api=bmi">
-        <img src="https://raw.githubusercontent.com/wang0618/PyWebIO/dev/docs/assets/demo_zh.gif" alt="PyWebIO demo" width="400px"/>
-    </a>
-</p>
-
-<p><strong>作为Web服务提供</strong></p>
-<p>上文BMI程序会在计算完毕后立刻退出，可以使用 <a href="https://pywebio.readthedocs.io/zh_CN/latest/platform.html#pywebio.platform.tornado.start_server"><code>pywebio.start_server()</code></a> 将 <code>bmi()</code> 函数作为Web服务提供：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio import start_server
-from pywebio.input import input, FLOAT
-from pywebio.output import put_text
-
-def bmi():  # bmi() 函数内容不变
-    ...  
-
-if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
-    start_server(bmi, port&#x3D;80)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Demos"><a href="#Demos" class="headerlink" title="Demos"></a>Demos</h2><ul>
-<li><a href="http://pywebio-demos.pywebio.online/">基本demo</a> : 包含PyWebIO基本输入输出演示和使用PyWebIO编写的小应用</li>
-<li><a href="http://pywebio-charts.pywebio.online/">数据可视化demo</a> : 使用 bokeh、plotly、pyecharts 等库进行数据可视化</li>
+<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
+<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
+<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
+<p><code>nohup python3 main.py &amp;</code></p>
+<ol>
+<li>nohup </li>
+</ol>
+<p>加在一个命令的最前面，表示不挂断的运行命令</p>
+<ol>
+<li>&amp;</li>
+</ol>
+<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
+<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
+<ol>
+<li>jobs 查看后台运行的命令</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
+[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ol>
+<li><p>ps查看进程</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
+  PID TTY          TIME CMD
+20712 pts&#x2F;6    00:00:00 bash
+20793 pts&#x2F;6    02:49:24 python3
+22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>kill </p>
+</li>
+</ol>
+<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
+<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
+<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
+<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
+<p>将后台中的命令调至前台继续运行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
+<p>（2）Ctrl + z 命令</p>
+<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
+<p>（3）bg命令</p>
+<p>将一个在后台暂停的命令，变成在后台继续执行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
+<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
+<li>首先后台运行一个进程：</li>
 </ul>
-<h3 id="武汉三维地图"><a href="#武汉三维地图" class="headerlink" title="武汉三维地图"></a>武汉三维地图</h3><pre class="line-numbers language-none"><code class="language-none">from pywebio.output import put_html
-from pyecharts import options as opts
-from pyecharts.charts import Map3D
-from pyecharts.globals import ChartType
-
-example_data &#x3D; [
-    [[119.107078, 36.70925, 1000], [116.587245, 35.415393, 1000]],
-    [[117.000923, 36.675807], [120.355173, 36.082982]],
-    [[118.047648, 36.814939], [118.66471, 37.434564]],
-    [[121.391382, 37.539297], [119.107078, 36.70925]],
-    [[116.587245, 35.415393], [122.116394, 37.509691]],
-    [[119.461208, 35.428588], [118.326443, 35.065282]],
-    [[116.307428, 37.453968], [115.469381, 35.246531]],
-]
-c &#x3D; (
-    Map3D()
-        .add_schema(
-        maptype&#x3D;&quot;武汉&quot;,
-        itemstyle_opts&#x3D;opts.ItemStyleOpts(
-            color&#x3D;&quot;rgb(5,101,123)&quot;,
-            opacity&#x3D;1,
-            border_width&#x3D;0.8,
-            border_color&#x3D;&quot;rgb(62,215,213)&quot;,
-        ),
-        light_opts&#x3D;opts.Map3DLightOpts(
-            main_color&#x3D;&quot;#fff&quot;,
-            main_intensity&#x3D;1.2,
-            is_main_shadow&#x3D;False,
-            main_alpha&#x3D;55,
-            main_beta&#x3D;10,
-            ambient_intensity&#x3D;0.3,
-        ),
-        view_control_opts&#x3D;opts.Map3DViewControlOpts(center&#x3D;[-10, 0, 10]),
-        post_effect_opts&#x3D;opts.Map3DPostEffectOpts(is_enable&#x3D;False),
-    )
-        .add(
-        series_name&#x3D;&quot;&quot;,
-        data_pair&#x3D;example_data,
-        type_&#x3D;ChartType.LINES3D,
-        effect&#x3D;opts.Lines3DEffectOpts(
-            is_show&#x3D;True,
-            period&#x3D;4,
-            trail_width&#x3D;3,
-            trail_length&#x3D;0.5,
-            trail_color&#x3D;&quot;#f00&quot;,
-            trail_opacity&#x3D;1,
-        ),
-        linestyle_opts&#x3D;opts.LineStyleOpts(is_show&#x3D;False, color&#x3D;&quot;#fff&quot;, opacity&#x3D;0),
-    )
-        .set_global_opts(title_opts&#x3D;opts.TitleOpts(title&#x3D;&quot;Map3D-Lines3D&quot;))
-
-)
-
-c.width &#x3D; &quot;100%&quot;
-put_html(c.render_notebook())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p><img src="https://www.mmrsl.cn/download/img/html5/15.jpg" alt=""></p>
-<h2 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h2><p>使用手册和实现文档见 <a href="https://pywebio.readthedocs.io/zh_CN/latest/">https://pywebio.readthedocs.io</a></p>
+<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
+<ul>
+<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
+<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
+</ul>
+<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
+<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
+<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
+<p>linux远程断联后重新进入该进程</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
+</a></li>
+</ul>
 ]]></content>
       <categories>
-        <category>python</category>
+        <category>研究生课程</category>
       </categories>
       <tags>
-        <tag>python</tag>
+        <tag>研究生课程</tag>
       </tags>
   </entry>
   <entry>
@@ -4690,6 +4359,337 @@ public class TestThread &#123;
       </tags>
   </entry>
   <entry>
+    <title>My_leetcode</title>
+    <url>/2021/12/03/My-leetcode/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>OCR_实时翻译</title>
+    <url>/2021/10/27/OCR-%E5%AE%9E%E6%97%B6%E7%BF%BB%E8%AF%91/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="OCR-实时翻译"><a href="#OCR-实时翻译" class="headerlink" title="OCR_实时翻译"></a>OCR_实时翻译</h1><ul>
+<li>采用了easyocr</li>
+<li>爬虫，调取百度翻译接口</li>
+</ul>
+<h2 id="调用屏幕接口"><a href="#调用屏幕接口" class="headerlink" title="调用屏幕接口"></a>调用屏幕接口</h2><p>调用屏幕的方法很简单：<br><pre class="line-numbers language-none"><code class="language-none">import pyautogui
+import cv2
+import numpy as np
+img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 1920, 100])  # x,y,w,h
+# img.save(&#39;screenshot.png&#39;)
+img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
+cv2.imshow(&quot;1&quot;,img)
+cv2.waitKey(0)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>但感觉效率很低，最后改成了虚拟摄像头+cap=cv2.VideoCapture(1)的方式捕获。</p>
+<h2 id="调用百度翻译接口"><a href="#调用百度翻译接口" class="headerlink" title="调用百度翻译接口"></a>调用百度翻译接口</h2><pre class="line-numbers language-none"><code class="language-none">import urllib.request
+import urllib.parse
+import json
+import pyautogui
+import cv2
+import numpy as np
+url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
+headers &#x3D; &#123;
+    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
+&#125;
+data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
+request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
+response &#x3D; urllib.request.urlopen(request)
+content &#x3D; response.read().decode(&#39;utf-8&#39;)
+obj &#x3D; json.loads(content)
+print(obj)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这个只能做单词翻译，还需要进一步优化。</p>
+<h2 id="easyocr"><a href="#easyocr" class="headerlink" title="easyocr"></a>easyocr</h2><p>这个参考<a href="https://www.codekp.cn/2021/10/25/EasyOCR%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB/">EasyOCR光学字符识别</a></p>
+<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><blockquote>
+<p>最终实现效果，在摄像头上和屏幕截取上都进行了测试.</p>
+</blockquote>
+<h3 id="首先是摄像头"><a href="#首先是摄像头" class="headerlink" title="首先是摄像头"></a>首先是摄像头</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu2.png" alt=""></p>
+<h3 id="然后是屏幕"><a href="#然后是屏幕" class="headerlink" title="然后是屏幕"></a>然后是屏幕</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu1.png" alt=""></p>
+<h2 id="最后是源码"><a href="#最后是源码" class="headerlink" title="最后是源码"></a>最后是源码</h2><pre class="line-numbers language-none"><code class="language-none">import time
+
+import easyocr
+import ssl
+import cv2
+# from matplotlib import pyplot as plt
+
+import cv2
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+import urllib.request
+import urllib.parse
+import json
+import pyautogui
+import cv2
+import numpy as np
+
+
+ssl._create_default_https_context &#x3D; ssl._create_unverified_context
+# 设置识别中英文两种语言
+reader &#x3D; easyocr.Reader([&#39;ch_sim&#39;, &#39;en&#39;])  # need to run only once to load model into memory
+Image3&#x3D;&#39;https:&#x2F;&#x2F;www.codekp.cn&#x2F;download&#x2F;img&#x2F;ubuntu&#x2F;NVIDIA1.png&#39;
+Image2&#x3D;r&quot;H:\blog\wan_lab\blog_2020\source\download\img\ubuntu\NVIDIA1.png&quot;
+Image4&#x3D;&quot;1.jpg&quot;
+url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
+headers &#x3D; &#123;
+    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
+&#125;
+
+
+cap&#x3D;cv2.VideoCapture(0)
+
+
+while True:
+    ret,img&#x3D;cap.read()
+    # img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 500, 500])  # x,y,w,h
+    # img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
+    cv2.imwrite(&quot;1.jpg&quot;,img)
+    result &#x3D; reader.readtext(Image4, paragraph&#x3D;&quot;False&quot;)
+
+    start&#x3D;time.time()
+    for detection in result:
+        top_left &#x3D; tuple(detection[0][0])
+        bottom_right &#x3D; tuple(detection[0][2])
+        text &#x3D; detection[1]
+        img &#x3D; cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 3)
+        img &#x3D; cv2ImgAddText(img, text, bottom_right[0], bottom_right[1], (0, 255, 0), 18)
+        data &#x3D; &#123;
+            &#39;kw&#39;: text
+        &#125;
+        data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
+        request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
+        response &#x3D; urllib.request.urlopen(request)
+        content &#x3D; response.read().decode(&#39;utf-8&#39;)
+        obj &#x3D; json.loads(content)
+        print(obj)
+        try:
+            text2 &#x3D; str(obj[&#39;data&#39;][0][&#39;v&#39;])
+            img &#x3D; cv2ImgAddText(img, text2, bottom_right[0], bottom_right[1]+20, (0, 255, 0), 18)
+        except:
+            pass
+    cv2.imshow(&quot;1&quot;,img)
+    cv2.waitKey(1)
+    print((time.time()-start)*1000)
+capture.release()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><pre><code>将百度翻译的内容，和原始图像显示出来并列到一起就有了一个比较完整的东西。
+</code></pre><p><img src="https://www.codekp.cn/download/img/baidu/baidu3.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>OCR</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python_PyWebIO</title>
+    <url>/2021/12/01/Python-PyWebIO/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+<p><h1 align="center" name="pywebio-zh">Python_PyWebIO</h1></p>
+<p align="center">
+    <em>万鲲鹏</em>
+</p>
+
+<p>PyWebIO提供了一系列命令式的交互函数来在浏览器上获取用户输入和进行输出，将浏览器变成了一个“富文本终端”，可以用于构建简单的Web应用或基于浏览器的GUI应用。<br>PyWebIO还可以方便地整合进现有的Web服务，让你不需要编写HTML和JS代码，就可以构建出具有良好可用性的应用。</p>
+<p>功能特性：</p>
+<ul>
+<li>使用同步而不是基于回调的方式获取输入，代码编写逻辑更自然</li>
+<li>非声明式布局，布局方式简单高效</li>
+<li>代码侵入性小，旧脚本代码仅需修改输入输出逻辑便可改造为Web服务</li>
+<li>支持整合到现有的Web服务，目前支持与Flask、Django、Tornado、aiohttp、FastAPI框架集成</li>
+<li>同时支持基于线程的执行模型和基于协程的执行模型</li>
+<li>支持结合第三方库实现数据可视化</li>
+</ul>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>稳定版安装:</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>报错：<br><code>Fatal error in launcher: Unable to create process using</code></p>
+<p>主要是由于直接调用环境导致的遇到这种问题</p>
+<pre class="line-numbers language-none"><code class="language-none">python -m pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="Quickstart"><a href="#Quickstart" class="headerlink" title="Quickstart"></a>Quickstart</h2><p><strong>Hello, world</strong></p>
+<p>这是一个使用PyWebIO计算 <a href="https://en.wikipedia.org/wiki/Body_mass_index">BMI指数</a> 的脚本:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio.input import input, FLOAT
+from pywebio.output import put_text
+
+def bmi():
+    height &#x3D; input(&quot;请输入你的身高(cm)：&quot;, type&#x3D;FLOAT)
+    weight &#x3D; input(&quot;请输入你的体重(kg)：&quot;, type&#x3D;FLOAT)
+
+    BMI &#x3D; weight &#x2F; (height &#x2F; 100) ** 2
+
+    top_status &#x3D; [(14.9, &#39;极瘦&#39;), (18.4, &#39;偏瘦&#39;),
+                  (22.9, &#39;正常&#39;), (27.5, &#39;过重&#39;),
+                  (40.0, &#39;肥胖&#39;), (float(&#39;inf&#39;), &#39;非常肥胖&#39;)]
+
+    for top, status in top_status:
+        if BMI &lt;&#x3D; top:
+            put_text(&#39;你的 BMI 值: %.1f，身体状态：%s&#39; % (BMI, status))
+            break
+
+if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    bmi()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如果没有使用PyWebIO，这只是一个非常简单的脚本，而通过使用PyWebIO提供的输入输出函数，你可以在浏览器中与代码进行交互 <a href="http://pywebio-demos.pywebio.online/bmi">[demo]</a>：</p>
+<p align="center">
+    <a href="http://pywebio-demos.pywebio.online/?pywebio_api=bmi">
+        <img src="https://raw.githubusercontent.com/wang0618/PyWebIO/dev/docs/assets/demo_zh.gif" alt="PyWebIO demo" width="400px"/>
+    </a>
+</p>
+
+<p><strong>作为Web服务提供</strong></p>
+<p>上文BMI程序会在计算完毕后立刻退出，可以使用 <a href="https://pywebio.readthedocs.io/zh_CN/latest/platform.html#pywebio.platform.tornado.start_server"><code>pywebio.start_server()</code></a> 将 <code>bmi()</code> 函数作为Web服务提供：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio import start_server
+from pywebio.input import input, FLOAT
+from pywebio.output import put_text
+
+def bmi():  # bmi() 函数内容不变
+    ...  
+
+if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    start_server(bmi, port&#x3D;80)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Demos"><a href="#Demos" class="headerlink" title="Demos"></a>Demos</h2><ul>
+<li><a href="http://pywebio-demos.pywebio.online/">基本demo</a> : 包含PyWebIO基本输入输出演示和使用PyWebIO编写的小应用</li>
+<li><a href="http://pywebio-charts.pywebio.online/">数据可视化demo</a> : 使用 bokeh、plotly、pyecharts 等库进行数据可视化</li>
+</ul>
+<h3 id="武汉三维地图"><a href="#武汉三维地图" class="headerlink" title="武汉三维地图"></a>武汉三维地图</h3><pre class="line-numbers language-none"><code class="language-none">from pywebio.output import put_html
+from pyecharts import options as opts
+from pyecharts.charts import Map3D
+from pyecharts.globals import ChartType
+
+example_data &#x3D; [
+    [[119.107078, 36.70925, 1000], [116.587245, 35.415393, 1000]],
+    [[117.000923, 36.675807], [120.355173, 36.082982]],
+    [[118.047648, 36.814939], [118.66471, 37.434564]],
+    [[121.391382, 37.539297], [119.107078, 36.70925]],
+    [[116.587245, 35.415393], [122.116394, 37.509691]],
+    [[119.461208, 35.428588], [118.326443, 35.065282]],
+    [[116.307428, 37.453968], [115.469381, 35.246531]],
+]
+c &#x3D; (
+    Map3D()
+        .add_schema(
+        maptype&#x3D;&quot;武汉&quot;,
+        itemstyle_opts&#x3D;opts.ItemStyleOpts(
+            color&#x3D;&quot;rgb(5,101,123)&quot;,
+            opacity&#x3D;1,
+            border_width&#x3D;0.8,
+            border_color&#x3D;&quot;rgb(62,215,213)&quot;,
+        ),
+        light_opts&#x3D;opts.Map3DLightOpts(
+            main_color&#x3D;&quot;#fff&quot;,
+            main_intensity&#x3D;1.2,
+            is_main_shadow&#x3D;False,
+            main_alpha&#x3D;55,
+            main_beta&#x3D;10,
+            ambient_intensity&#x3D;0.3,
+        ),
+        view_control_opts&#x3D;opts.Map3DViewControlOpts(center&#x3D;[-10, 0, 10]),
+        post_effect_opts&#x3D;opts.Map3DPostEffectOpts(is_enable&#x3D;False),
+    )
+        .add(
+        series_name&#x3D;&quot;&quot;,
+        data_pair&#x3D;example_data,
+        type_&#x3D;ChartType.LINES3D,
+        effect&#x3D;opts.Lines3DEffectOpts(
+            is_show&#x3D;True,
+            period&#x3D;4,
+            trail_width&#x3D;3,
+            trail_length&#x3D;0.5,
+            trail_color&#x3D;&quot;#f00&quot;,
+            trail_opacity&#x3D;1,
+        ),
+        linestyle_opts&#x3D;opts.LineStyleOpts(is_show&#x3D;False, color&#x3D;&quot;#fff&quot;, opacity&#x3D;0),
+    )
+        .set_global_opts(title_opts&#x3D;opts.TitleOpts(title&#x3D;&quot;Map3D-Lines3D&quot;))
+
+)
+
+c.width &#x3D; &quot;100%&quot;
+put_html(c.render_notebook())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p><img src="https://www.mmrsl.cn/download/img/html5/15.jpg" alt=""></p>
+<h2 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h2><p>使用手册和实现文档见 <a href="https://pywebio.readthedocs.io/zh_CN/latest/">https://pywebio.readthedocs.io</a></p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Quantum-Mini-Linux—配置</title>
     <url>/2021/04/13/Quantum-Mini-Linux%E2%80%94%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span>
@@ -5670,7 +5670,7 @@ systemctl status rc-local.service<span aria-hidden="true" class="line-numbers-ro
       </tags>
   </entry>
   <entry>
-    <title>多智能体强化学习</title>
+    <title>多智能体强化学习算法及环境</title>
     <url>/2021/12/06/StarCraft-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
     body {
@@ -5712,7 +5712,7 @@ systemctl status rc-local.service<span aria-hidden="true" class="line-numbers-ro
     }
 </style>
 
-<h1 id="多智能体强化学习-StarCraft"><a href="#多智能体强化学习-StarCraft" class="headerlink" title="多智能体强化学习_StarCraft"></a>多智能体强化学习_StarCraft</h1><p>Pytorch实现的多智能体强化学习算法，包括IQL、QMIX、VDN、COMA、QTRAN（QTRAN-base和QTRAN-alt）、MAVEN、CommNet、DyMA-CL和G2ANet，这些都是最先进的MARL算法。SMAC是星际争霸II的分散式微观管理场景。</p>
+<h1 id="多智能体强化学习算法及环境"><a href="#多智能体强化学习算法及环境" class="headerlink" title="多智能体强化学习算法及环境"></a>多智能体强化学习算法及环境</h1><p>Pytorch实现的多智能体强化学习算法，包括IQL、QMIX、VDN、COMA、QTRAN（QTRAN-base和QTRAN-alt）、MAVEN、CommNet、DyMA-CL和G2ANet，这些都是最先进的MARL算法。SMAC是星际争霸II的分散式微观管理场景。</p>
 <h2 id="项目地址："><a href="#项目地址：" class="headerlink" title="项目地址："></a>项目地址：</h2><p><a href="https://github.com/starry-sky6688/StarCraft">https://github.com/starry-sky6688/StarCraft</a></p>
 <p>运行：</p>
 <p><code>python main.py --map=3m --alg=qmix</code></p>
@@ -5832,7 +5832,7 @@ systemctl status rc-local.service<span aria-hidden="true" class="line-numbers-ro
 </div>
 <p>通过<code>python main.py --scenario-name=simple_tag --evaluate-episodes=10</code></p>
 <p>修改<code>simple_tag</code>替换环境。</p>
-<h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><h3 id="欺骗"><a href="#欺骗" class="headerlink" title="欺骗"></a>欺骗</h3><p>在这项任务中，两个蓝色代理通过最小化它们与绿色地标的最近距离（只有一个需要靠近以获得最佳奖励）来获得奖励，同时最大化红色对手与绿色地标的距离。红色对手通过最小化它与绿色地标的距离来获得奖励；然而，在任何给定的试验中，它不知道哪个地标是绿色的，所以它必须跟随蓝色代理。因此，蓝色代理应该学会通过覆盖两个地标来欺骗红色代理。</p>
+<h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>在这项任务中，两个蓝色代理通过最小化它们与绿色地标的最近距离（只有一个需要靠近以获得最佳奖励）来获得奖励，同时最大化红色对手与绿色地标的距离。红色对手通过最小化它与绿色地标的距离来获得奖励；然而，在任何给定的试验中，它不知道哪个地标是绿色的，所以它必须跟随蓝色代理。因此，蓝色代理应该学会通过覆盖两个地标来欺骗红色代理。</p>
 <div align=center><img src="https://www.mmrsl.cn/download/img/xmu/1.gif?raw=true" width="20%"> <img src="https://www.mmrsl.cn/download/img/xmu/2.gif?raw=true" width="20%"> <img src="https://www.mmrsl.cn/download/img/xmu/3.gif?raw=true" width="20%"></div>
 
 
@@ -6170,21 +6170,6 @@ roomfloor(HIGHT*i,Width*z,Length*j,400,400,300)&#125;
 ]]></content>
   </entry>
   <entry>
-    <title>b站视频分享</title>
-    <url>/2017/11/17/b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=414001980&bvid=BV1TV411z7aB&cid=218691406&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div><br><span id="more"></span></p>
-]]></content>
-      <categories>
-        <category>分享</category>
-      </categories>
-      <tags>
-        <tag>b站视频</tag>
-        <tag>分享</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>b站up主推荐</title>
     <url>/2021/04/14/b%E7%AB%99up%E4%B8%BB%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="position:relative; padding-bottom:75%; width:100%; height:0">
@@ -6306,6 +6291,21 @@ roomfloor(HIGHT*i,Width*z,Length*j,400,400,300)&#125;
       </categories>
       <tags>
         <tag>b站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>b站视频分享</title>
+    <url>/2017/11/17/b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=414001980&bvid=BV1TV411z7aB&cid=218691406&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div><br><span id="more"></span></p>
+]]></content>
+      <categories>
+        <category>分享</category>
+      </categories>
+      <tags>
+        <tag>b站视频</tag>
+        <tag>分享</tag>
       </tags>
   </entry>
   <entry>
@@ -7395,6 +7395,36 @@ wlx0ccf89606c44  IEEE 802.11  ESSID:&quot;SSID&quot;
       </tags>
   </entry>
   <entry>
+    <title>linux嵌入式开发_1</title>
+    <url>/2020/07/30/linux%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91-1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux基础"><a href="#linux基础" class="headerlink" title="linux基础"></a><strong>linux基础</strong></h1><h2 id="linux是什么？"><a href="#linux是什么？" class="headerlink" title="linux是什么？"></a>linux是什么？</h2><span id="more"></span>
+<ul>
+<li>linux是一款开源操作系统，开放了整组的调用接口给程序猿进行开发和使用。linux操作系统包含内核和系统调用，并不包含应用程序。由于linux的架构继承了unix良好传统，因此越来越多的开发者选择使用linux并为之设计了许多应用级软件。</li>
+</ul>
+<h2 id="开发环境的搭建"><a href="#开发环境的搭建" class="headerlink" title="开发环境的搭建"></a>开发环境的搭建</h2><ul>
+<li>开发环境需要用到交叉开发模式，这一点书上有很详细的介绍，包括硬件环境和软件环境的构建都写的十分清楚，所以这篇文章主要是写一下我在中间遇到的一些问题以及解决方法。虚拟机的话我用的是Ubuntu18.04版本，安装虚拟机啥的网上资源很多，直接百度就行。</li>
+</ul>
+<h2 id="linux下的环境搭建"><a href="#linux下的环境搭建" class="headerlink" title="linux下的环境搭建"></a>linux下的环境搭建</h2><h3 id="1、修改Ubuntu的一些配置"><a href="#1、修改Ubuntu的一些配置" class="headerlink" title="1、修改Ubuntu的一些配置"></a>1、修改Ubuntu的一些配置</h3><ul>
+<li><p>切换国内镜像源</p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp; 在使用apt命令安装包时，因为系统自带下载源在国外服务器上，所以需要切换为国内镜像源才能提升下载速度。这里有一篇博客详细说明了如何直接根据终端命令修改其配置文件，从而达到修改下载源的目的.或者，，，，你也可以直接用Ubuntu的图形界面去修改，步骤如下： 显示应用程序-&gt;软件和更新-&gt;下载自主服务器改为其他，然后选择合适的镜像源就行了，这里我选择的是阿里的镜像源。</p>
+</li>
+<li><p>修改语言和设置汉语输入法</p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp; 懒得写，直接贴别人博客了</p>
+</li>
+</ul>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/langshi_2011/article/details/78993781">Linux Ubuntu系统设置成中文语言</a></p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/sparkstrike/article/details/81487271">Linux.Ubuntu.中文输入法设置</a></p>
+]]></content>
+      <categories>
+        <category>程序设计</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>嵌入式开发</tag>
+        <tag>鸟哥的私房菜学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux学习笔记</title>
     <url>/2021/03/26/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux操作系统学习笔记"><a href="#linux操作系统学习笔记" class="headerlink" title="linux操作系统学习笔记"></a><center>linux操作系统学习笔记</center></h1><h1 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h1><h2 id="linux常用命令"><a href="#linux常用命令" class="headerlink" title="linux常用命令"></a>linux常用命令</h2><h3 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h3><p><img src="https://www.runoob.com/wp-content/uploads/2014/06/d0c50-linux2bfile2bsystem2bhierarchy.jpg" alt=""></p>
@@ -7473,36 +7503,6 @@ wlx0ccf89606c44  IEEE 802.11  ESSID:&quot;SSID&quot;
       <tags>
         <tag>linux</tag>
         <tag>嵌入式开发</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux嵌入式开发_1</title>
-    <url>/2020/07/30/linux%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91-1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux基础"><a href="#linux基础" class="headerlink" title="linux基础"></a><strong>linux基础</strong></h1><h2 id="linux是什么？"><a href="#linux是什么？" class="headerlink" title="linux是什么？"></a>linux是什么？</h2><span id="more"></span>
-<ul>
-<li>linux是一款开源操作系统，开放了整组的调用接口给程序猿进行开发和使用。linux操作系统包含内核和系统调用，并不包含应用程序。由于linux的架构继承了unix良好传统，因此越来越多的开发者选择使用linux并为之设计了许多应用级软件。</li>
-</ul>
-<h2 id="开发环境的搭建"><a href="#开发环境的搭建" class="headerlink" title="开发环境的搭建"></a>开发环境的搭建</h2><ul>
-<li>开发环境需要用到交叉开发模式，这一点书上有很详细的介绍，包括硬件环境和软件环境的构建都写的十分清楚，所以这篇文章主要是写一下我在中间遇到的一些问题以及解决方法。虚拟机的话我用的是Ubuntu18.04版本，安装虚拟机啥的网上资源很多，直接百度就行。</li>
-</ul>
-<h2 id="linux下的环境搭建"><a href="#linux下的环境搭建" class="headerlink" title="linux下的环境搭建"></a>linux下的环境搭建</h2><h3 id="1、修改Ubuntu的一些配置"><a href="#1、修改Ubuntu的一些配置" class="headerlink" title="1、修改Ubuntu的一些配置"></a>1、修改Ubuntu的一些配置</h3><ul>
-<li><p>切换国内镜像源</p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp; 在使用apt命令安装包时，因为系统自带下载源在国外服务器上，所以需要切换为国内镜像源才能提升下载速度。这里有一篇博客详细说明了如何直接根据终端命令修改其配置文件，从而达到修改下载源的目的.或者，，，，你也可以直接用Ubuntu的图形界面去修改，步骤如下： 显示应用程序-&gt;软件和更新-&gt;下载自主服务器改为其他，然后选择合适的镜像源就行了，这里我选择的是阿里的镜像源。</p>
-</li>
-<li><p>修改语言和设置汉语输入法</p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp; 懒得写，直接贴别人博客了</p>
-</li>
-</ul>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/langshi_2011/article/details/78993781">Linux Ubuntu系统设置成中文语言</a></p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/sparkstrike/article/details/81487271">Linux.Ubuntu.中文输入法设置</a></p>
-]]></content>
-      <categories>
-        <category>程序设计</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>嵌入式开发</tag>
-        <tag>鸟哥的私房菜学习</tag>
       </tags>
   </entry>
   <entry>
@@ -8651,6 +8651,49 @@ iptables-restore &lt; &#x2F;etc&#x2F;iptables.ipv4.nat
       </tags>
   </entry>
   <entry>
+    <title>Merry Christmas</title>
+    <url>/2020/12/24/merry_christmas/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+</center>
+
+<span id="more"></span>
+<ol>
+<li>git push 方法</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">git init
+git add .
+git commit -m &quot;first commit&quot;
+git remote add origin URL
+git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
+<ol>
+<li>圣诞网站模板分享</li>
+</ol>
+<ul>
+<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
+<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
+</ul>
+<ol>
+<li>电影分享 </li>
+</ol>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
+</ul>
+<center>
+
+
+<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
+      <categories>
+        <category>电影推荐</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux系统通信功率信道修改方法</title>
     <url>/2021/04/22/linux%E7%B3%BB%E7%BB%9F%E9%80%9A%E4%BF%A1%E5%8A%9F%E7%8E%87%E4%BF%A1%E9%81%93%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux系统通信功率信道修改方法"><a href="#linux系统通信功率信道修改方法" class="headerlink" title="linux系统通信功率信道修改方法"></a>linux系统通信功率信道修改方法</h1><h2 id="配置频段"><a href="#配置频段" class="headerlink" title="配置频段"></a>配置频段</h2><h3 id="可以先查看有哪些频段："><a href="#可以先查看有哪些频段：" class="headerlink" title="可以先查看有哪些频段："></a>可以先查看有哪些频段：</h3><p><code>iwlist channel</code> </p>
@@ -9123,49 +9166,6 @@ sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="
       </tags>
   </entry>
   <entry>
-    <title>Merry Christmas</title>
-    <url>/2020/12/24/merry_christmas/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-</center>
-
-<span id="more"></span>
-<ol>
-<li>git push 方法</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">git init
-git add .
-git commit -m &quot;first commit&quot;
-git remote add origin URL
-git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
-<ol>
-<li>圣诞网站模板分享</li>
-</ol>
-<ul>
-<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
-<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
-</ul>
-<ol>
-<li>电影分享 </li>
-</ol>
-<ul>
-<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
-</ul>
-<center>
-
-
-<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
-      <categories>
-        <category>电影推荐</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mjpg-streamer</title>
     <url>/2021/11/23/mjpg-streamer/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
@@ -9475,6 +9475,28 @@ if __name__ &#x3D;&#x3D; &quot;__main__&quot;:
 ]]></content>
   </entry>
   <entry>
+    <title>network map</title>
+    <url>/2021/04/14/nmap/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>network map</category>
+      </categories>
+      <tags>
+        <tag>nmap</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>openwrt_树莓派_mesh自组织网络</title>
     <url>/2021/11/06/openwrt-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="openwrt-树莓派-mesh自组织网络"><a href="#openwrt-树莓派-mesh自组织网络" class="headerlink" title="openwrt_树莓派_mesh自组织网络"></a>openwrt_树莓派_mesh自组织网络</h1><h2 id="openwrt"><a href="#openwrt" class="headerlink" title="openwrt"></a>openwrt</h2><ul>
@@ -9763,28 +9785,6 @@ DEST ADDR         NEXT HOP          IFACE       SN      METRIC  QLEN    EXPTIMED
       <tags>
         <tag>python</tag>
         <tag>pyqt5</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>network map</title>
-    <url>/2021/04/14/nmap/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>network map</category>
-      </categories>
-      <tags>
-        <tag>nmap</tag>
       </tags>
   </entry>
   <entry>
@@ -10458,6 +10458,120 @@ plt.show()
       </tags>
   </entry>
   <entry>
+    <title>ubuntu_NVIDIA30xx，开发环境显卡安装</title>
+    <url>/2021/10/22/ubuntu-NVIDIA30xx%E6%98%BE%E5%8D%A1%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装"><a href="#Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装" class="headerlink" title="Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装"></a>Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装</h1><h2 id="ubuntu系统安装"><a href="#ubuntu系统安装" class="headerlink" title="ubuntu系统安装"></a>ubuntu系统安装</h2><h3 id="ubuntu系统尝试"><a href="#ubuntu系统尝试" class="headerlink" title="ubuntu系统尝试"></a>ubuntu系统尝试</h3><blockquote>
+<p>在尝试过ubuntu20.04和18.04以后发现这两个系统均无法成果安装NVIDIA30xx系列显卡,可能是内核版本不行，最终使用ubuntu21.04成功安装NVIDIA30xx显卡。</p>
+<h3 id="系统盘制作"><a href="#系统盘制作" class="headerlink" title="系统盘制作"></a>系统盘制作</h3><ul>
+<li>在ubuntu官网安装系统镜像</li>
+<li>使用Rufus制作启动盘<h3 id="安装系统"><a href="#安装系统" class="headerlink" title="安装系统"></a>安装系统</h3></li>
+<li>该过程过于简单略过（磁盘分配随意）</li>
+</ul>
+</blockquote>
+<h2 id="显卡驱动安装预操作"><a href="#显卡驱动安装预操作" class="headerlink" title="显卡驱动安装预操作"></a>显卡驱动安装预操作</h2><h3 id="进入BIOS关闭安全启动"><a href="#进入BIOS关闭安全启动" class="headerlink" title="进入BIOS关闭安全启动"></a>进入BIOS关闭安全启动</h3><p><img src="https://www.codekp.cn/download/img/ubuntu/secureboot.png" alt=""><br>进入bios关闭安全启动，disable掉安全启动</p>
+<h3 id="关闭windows-bitlocker"><a href="#关闭windows-bitlocker" class="headerlink" title="关闭windows-bitlocker"></a>关闭windows-bitlocker</h3><p><img src="https://www.codekp.cn/download/img/ubuntu/bitlocker.png" alt=""><br>进入控制面板关闭磁盘锁</p>
+<h2 id="显卡驱动安装（RTX30xx显卡）"><a href="#显卡驱动安装（RTX30xx显卡）" class="headerlink" title="显卡驱动安装（RTX30xx显卡）"></a>显卡驱动安装（RTX30xx显卡）</h2><h3 id="安装驱动"><a href="#安装驱动" class="headerlink" title="安装驱动"></a>安装驱动</h3><ul>
+<li>下载NVIDIA驱动程序，RTX3060对应版本为370约，240M<br>驱动对应搜索如下：<br><img src="https://www.codekp.cn/download/img/ubuntu/NVIDIA1.png" alt=""><h3 id="重要环境"><a href="#重要环境" class="headerlink" title="重要环境"></a>重要环境</h3>为了安装成果本人建议，使用8月10号的驱动版本，个人建议，9月10号貌似安装不上<br><img src="https://www.codekp.cn/download/img/ubuntu/NVIDIA2.png" alt=""></li>
+</ul>
+<p>将 该 .run file 拷贝到 /home 下， 以方便获取并安装</p>
+<h2 id="Ubuntu图形界面配置"><a href="#Ubuntu图形界面配置" class="headerlink" title="Ubuntu图形界面配置"></a>Ubuntu图形界面配置</h2><p>不要再ubuntu上插任何显示器。</p>
+<h3 id="禁用nouveau，禁用掉集成显卡驱动"><a href="#禁用nouveau，禁用掉集成显卡驱动" class="headerlink" title="禁用nouveau，禁用掉集成显卡驱动"></a>禁用nouveau，禁用掉集成显卡驱动</h3><pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;modprobe.d&#x2F;blacklist.conf <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ol>
+<li>在文件最后一行加入<pre class="line-numbers language-none"><code class="language-none">blacklist nouveau
+options nouveau modeset&#x3D;0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li>更新内核<pre class="line-numbers language-none"><code class="language-none">sudo update-initramfs -u <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>重启系统<pre class="line-numbers language-none"><code class="language-none">sudo reboot<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>重启后验证nouveau是否被成果禁用<pre class="line-numbers language-none"><code class="language-none">lsmod | grep nouveau<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+无输出则为禁用成果</li>
+</ol>
+<h3 id="关闭lightdm"><a href="#关闭lightdm" class="headerlink" title="关闭lightdm"></a>关闭lightdm</h3><pre class="line-numbers language-none"><code class="language-none">sudo service lightdm stop<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>此时进入黑窗界面<br><pre class="line-numbers language-none"><code class="language-none">Ctrl+Alt+F1 or  Ctrl+Alt+F6<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>登录账户</p>
+<ul>
+<li>进入下一步安装显卡驱动</li>
+</ul>
+<h2 id="显卡驱动安装"><a href="#显卡驱动安装" class="headerlink" title="显卡驱动安装"></a>显卡驱动安装</h2><h3 id="找到之前在-home-中保存的-NVIDIA-run-文件"><a href="#找到之前在-home-中保存的-NVIDIA-run-文件" class="headerlink" title="找到之前在 /home 中保存的 NVIDIA-*.run 文件"></a>找到之前在 /home 中保存的 NVIDIA-*.run 文件</h3><pre class="line-numbers language-none"><code class="language-none">sudo bash NVIDIA-*.run<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h3><ul>
+<li>这里很关键,如果前面配置都完成了，基本是一路确定，其中 32-bit 库 选择 No， restart X service 选择 Yes </li>
+<li>补充，最好还是一个问题一个问题去网上搜别人的选项，不要选错了！！！</li>
+</ul>
+<h3 id="显卡驱动验证-："><a href="#显卡驱动验证-：" class="headerlink" title="显卡驱动验证 ："></a>显卡驱动验证 ：</h3><pre class="line-numbers language-none"><code class="language-none">nvidia-smi
+
+
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 471.96       Driver Version: 471.96       CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name            TCC&#x2F;WDDM | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage&#x2F;Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;|
+|   0  NVIDIA GeForce ... WDDM  | 00000000:01:00.0  On |                  N&#x2F;A |
+|  0%   42C    P8    13W &#x2F; 170W |    819MiB &#x2F; 12288MiB |      0%      Default |
+|                               |                      |                  N&#x2F;A |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;|
+|    0   N&#x2F;A  N&#x2F;A      1192    C+G   Insufficient Permissions        N&#x2F;A      |
+|    0   N&#x2F;A  N&#x2F;A      5292    C+G   ...wekyb3d8bbwe\Video.UI.exe    N&#x2F;A      |
+|    0   N&#x2F;A  N&#x2F;A      6620    C+G   ...ge\Application\msedge.exe    N&#x2F;A      |
+|    0   N&#x2F;A  N&#x2F;A      6808    C+G   C:\Windows\explorer.exe         N&#x2F;A      |
+|    0   N&#x2F;A  N&#x2F;A      8560    C+G   ...5n1h2txyewy\SearchApp.exe    N&#x2F;A      |
+|    0   N&#x2F;A  N&#x2F;A      8724    C+G   ...nputApp\TextInputHost.exe    N&#x2F;A      |
+|    0   N&#x2F;A  N&#x2F;A      9264    C+G   ...y\ShellExperienceHost.exe    N&#x2F;A      |
+|    0   N&#x2F;A  N&#x2F;A     13340    C+G   ...icrosoft VS Code\Code.exe    N&#x2F;A      |
+|    0   N&#x2F;A  N&#x2F;A     13728    C+G   ...e\root\Office16\VISIO.EXE    N&#x2F;A      |
+|    0   N&#x2F;A  N&#x2F;A     14816    C+G   ...5n1h2txyewy\SearchApp.exe    N&#x2F;A      |
++-----------------------------------------------------------------------------+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如过正常输出，则安装完成。</p>
+<h3 id="黑窗解决方案"><a href="#黑窗解决方案" class="headerlink" title="黑窗解决方案"></a>黑窗解决方案</h3><p>最后最重要的一步，安装后重启系统，会发现进不了图形界面了，只能进入黑窗。<br>这是由于 Ubuntu 21.04 和 NVIDIA RTX 3080 Ti 驱动 略微不兼容导致的。（Ubuntu 18.04 以及 20.04 更别提了，完全不兼容）<br>解决方法：<br>通过ubuntu高级选项，进入ubuntu修复系统。<br><pre class="line-numbers language-none"><code class="language-none">sudo rm &#x2F;etc&#x2F;X11&#x2F;xorg.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>重启后即可进入图形界面</p>
+<p>该问题我只在RTX3060上遇到，RTX3050Ti未遇到黑窗问题。</p>
+<h2 id="Anconda-pytorch-linux"><a href="#Anconda-pytorch-linux" class="headerlink" title="Anconda_pytorch_linux"></a>Anconda_pytorch_linux</h2><h3 id="Anaconda-下载"><a href="#Anaconda-下载" class="headerlink" title="Anaconda 下载"></a>Anaconda 下载</h3><p>Anaconda官网下载地址<a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a>下载最新的即可，下载很慢<br>可以使用Anaconda清华镜像源进行下载<a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</a>下载最新的即可</p>
+<p>我下载的为<code>Anaconda3-2021.04-Linux-x86_64.sh    539.9 MiB    2021-05-11 04:17</code></p>
+<h3 id="anaconda安装"><a href="#anaconda安装" class="headerlink" title="anaconda安装"></a>anaconda安装</h3><p>进入到下载目录，然后bash命令，如：</p>
+<p><code>bash Anaconda3-2018.12-Linux-x86_64.sh</code></p>
+<p>一路enter就行</p>
+<h4 id="环境变量配置"><a href="#环境变量配置" class="headerlink" title="环境变量配置"></a>环境变量配置</h4><pre class="line-numbers language-none"><code class="language-none"> vi ~&#x2F;.bashrc
+在最后一行加入
+ export PATH&#x3D;&quot;&#x2F;home&#x2F;Sweeneys&#x2F;anaconda3&#x2F;bin:$PATH&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><code>/home/Sweeneys/anaconda3</code>这个地方改为你自己的安装路径pwd</p>
+<h4 id="安装验证"><a href="#安装验证" class="headerlink" title="安装验证"></a>安装验证</h4><pre class="line-numbers language-none"><code class="language-none">conda --version
+conda 4.10.1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="pytorch"><a href="#pytorch" class="headerlink" title="pytorch"></a>pytorch</h3><p>首先创建一个独立的环境，版本可自己选择<br><pre class="line-numbers language-none"><code class="language-none">conda create -n pytorch python&#x3D;3.8.5<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>如果弹出提示，yes即可</p>
+<h3 id="验证操作"><a href="#验证操作" class="headerlink" title="验证操作"></a>验证操作</h3><pre class="line-numbers language-none"><code class="language-none">conda info --envs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none"># conda environments:
+#
+base                  *  D:\Users\vadmin\anaconda3
+pytorch                  D:\Users\vadmin\anaconda3\envs\pytorch
+pytorchgpu               D:\Users\vadmin\anaconda3\envs\pytorchgpu
+tensorflow1              D:\Users\vadmin\anaconda3\envs\tensorflow1
+tf_hjz                   D:\Users\vadmin\anaconda3\envs\tf_hjz<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="安装pytorch"><a href="#安装pytorch" class="headerlink" title="安装pytorch"></a>安装pytorch</h3><p>找到pytorch官网<a href="https://pytorch.org/">https://pytorch.org/</a></p>
+<p><img src="https://www.codekp.cn/download/img/ubuntu/pytorch.png" alt=""></p>
+<p>在anaconda 环境中加入<br><pre class="line-numbers language-none"><code class="language-none">conda install pytorch torchvision torchaudio cudatoolkit&#x3D;11.3 -c pytorch<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>果断输入y，之后就是漫长的等待。或者去休息吧，慢慢等着。看看剧啥的，等着它慢慢下吧。如果你的并不慢，恭喜恭喜。</p>
+<h3 id="成功性验证"><a href="#成功性验证" class="headerlink" title="成功性验证"></a>成功性验证</h3><ol>
+<li>在命令行左边为 pytorch 环境中，输入 python</li>
+<li>之后，输入 import torch，如果没有报错，意味着 PyTorch 已经顺利安装了</li>
+<li>接下来，输入 torch.cuda.is_available，如果是 True，意味着你可以使用 GPU，如果是 False，意味着只能使用CPU。</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">(pytorch) C:\Users\vadmin&gt;python
+Python 3.6.13 |Anaconda, Inc.| (default, Mar 16 2021, 11:37:27) [MSC v.1916 64 bit (AMD64)] on win32
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import torch
+&gt;&gt;&gt; torch.cuda.is_available
+&lt;function is_available at 0x00000168FE9951E0&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>NVIDIA30xx</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>pywifi_局域网WiFi暴力破解</title>
     <url>/2021/05/26/pywifi-%E5%B1%80%E5%9F%9F%E7%BD%91WiFi%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="pywifi-局域网WiFi暴力破解"><a href="#pywifi-局域网WiFi暴力破解" class="headerlink" title="pywifi_局域网WiFi暴力破解"></a>pywifi_局域网WiFi暴力破解</h1><p>最近又看到python的一个组件，pywifi，然后了解了一下就发现可以用程序连接wifi，然后我去csdn用了50积分下载了一个wifi常用字典。就可以暴力破解wifi密码，前提是密码库里面有你需要的密码。</p>
@@ -10573,120 +10687,6 @@ while True:
       </categories>
       <tags>
         <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ubuntu_NVIDIA30xx，开发环境显卡安装</title>
-    <url>/2021/10/22/ubuntu-NVIDIA30xx%E6%98%BE%E5%8D%A1%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装"><a href="#Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装" class="headerlink" title="Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装"></a>Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装</h1><h2 id="ubuntu系统安装"><a href="#ubuntu系统安装" class="headerlink" title="ubuntu系统安装"></a>ubuntu系统安装</h2><h3 id="ubuntu系统尝试"><a href="#ubuntu系统尝试" class="headerlink" title="ubuntu系统尝试"></a>ubuntu系统尝试</h3><blockquote>
-<p>在尝试过ubuntu20.04和18.04以后发现这两个系统均无法成果安装NVIDIA30xx系列显卡,可能是内核版本不行，最终使用ubuntu21.04成功安装NVIDIA30xx显卡。</p>
-<h3 id="系统盘制作"><a href="#系统盘制作" class="headerlink" title="系统盘制作"></a>系统盘制作</h3><ul>
-<li>在ubuntu官网安装系统镜像</li>
-<li>使用Rufus制作启动盘<h3 id="安装系统"><a href="#安装系统" class="headerlink" title="安装系统"></a>安装系统</h3></li>
-<li>该过程过于简单略过（磁盘分配随意）</li>
-</ul>
-</blockquote>
-<h2 id="显卡驱动安装预操作"><a href="#显卡驱动安装预操作" class="headerlink" title="显卡驱动安装预操作"></a>显卡驱动安装预操作</h2><h3 id="进入BIOS关闭安全启动"><a href="#进入BIOS关闭安全启动" class="headerlink" title="进入BIOS关闭安全启动"></a>进入BIOS关闭安全启动</h3><p><img src="https://www.codekp.cn/download/img/ubuntu/secureboot.png" alt=""><br>进入bios关闭安全启动，disable掉安全启动</p>
-<h3 id="关闭windows-bitlocker"><a href="#关闭windows-bitlocker" class="headerlink" title="关闭windows-bitlocker"></a>关闭windows-bitlocker</h3><p><img src="https://www.codekp.cn/download/img/ubuntu/bitlocker.png" alt=""><br>进入控制面板关闭磁盘锁</p>
-<h2 id="显卡驱动安装（RTX30xx显卡）"><a href="#显卡驱动安装（RTX30xx显卡）" class="headerlink" title="显卡驱动安装（RTX30xx显卡）"></a>显卡驱动安装（RTX30xx显卡）</h2><h3 id="安装驱动"><a href="#安装驱动" class="headerlink" title="安装驱动"></a>安装驱动</h3><ul>
-<li>下载NVIDIA驱动程序，RTX3060对应版本为370约，240M<br>驱动对应搜索如下：<br><img src="https://www.codekp.cn/download/img/ubuntu/NVIDIA1.png" alt=""><h3 id="重要环境"><a href="#重要环境" class="headerlink" title="重要环境"></a>重要环境</h3>为了安装成果本人建议，使用8月10号的驱动版本，个人建议，9月10号貌似安装不上<br><img src="https://www.codekp.cn/download/img/ubuntu/NVIDIA2.png" alt=""></li>
-</ul>
-<p>将 该 .run file 拷贝到 /home 下， 以方便获取并安装</p>
-<h2 id="Ubuntu图形界面配置"><a href="#Ubuntu图形界面配置" class="headerlink" title="Ubuntu图形界面配置"></a>Ubuntu图形界面配置</h2><p>不要再ubuntu上插任何显示器。</p>
-<h3 id="禁用nouveau，禁用掉集成显卡驱动"><a href="#禁用nouveau，禁用掉集成显卡驱动" class="headerlink" title="禁用nouveau，禁用掉集成显卡驱动"></a>禁用nouveau，禁用掉集成显卡驱动</h3><pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;modprobe.d&#x2F;blacklist.conf <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ol>
-<li>在文件最后一行加入<pre class="line-numbers language-none"><code class="language-none">blacklist nouveau
-options nouveau modeset&#x3D;0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
-<li>更新内核<pre class="line-numbers language-none"><code class="language-none">sudo update-initramfs -u <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>重启系统<pre class="line-numbers language-none"><code class="language-none">sudo reboot<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>重启后验证nouveau是否被成果禁用<pre class="line-numbers language-none"><code class="language-none">lsmod | grep nouveau<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-无输出则为禁用成果</li>
-</ol>
-<h3 id="关闭lightdm"><a href="#关闭lightdm" class="headerlink" title="关闭lightdm"></a>关闭lightdm</h3><pre class="line-numbers language-none"><code class="language-none">sudo service lightdm stop<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>此时进入黑窗界面<br><pre class="line-numbers language-none"><code class="language-none">Ctrl+Alt+F1 or  Ctrl+Alt+F6<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>登录账户</p>
-<ul>
-<li>进入下一步安装显卡驱动</li>
-</ul>
-<h2 id="显卡驱动安装"><a href="#显卡驱动安装" class="headerlink" title="显卡驱动安装"></a>显卡驱动安装</h2><h3 id="找到之前在-home-中保存的-NVIDIA-run-文件"><a href="#找到之前在-home-中保存的-NVIDIA-run-文件" class="headerlink" title="找到之前在 /home 中保存的 NVIDIA-*.run 文件"></a>找到之前在 /home 中保存的 NVIDIA-*.run 文件</h3><pre class="line-numbers language-none"><code class="language-none">sudo bash NVIDIA-*.run<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h3><ul>
-<li>这里很关键,如果前面配置都完成了，基本是一路确定，其中 32-bit 库 选择 No， restart X service 选择 Yes </li>
-<li>补充，最好还是一个问题一个问题去网上搜别人的选项，不要选错了！！！</li>
-</ul>
-<h3 id="显卡驱动验证-："><a href="#显卡驱动验证-：" class="headerlink" title="显卡驱动验证 ："></a>显卡驱动验证 ：</h3><pre class="line-numbers language-none"><code class="language-none">nvidia-smi
-
-
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 471.96       Driver Version: 471.96       CUDA Version: 11.4     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name            TCC&#x2F;WDDM | Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage&#x2F;Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;|
-|   0  NVIDIA GeForce ... WDDM  | 00000000:01:00.0  On |                  N&#x2F;A |
-|  0%   42C    P8    13W &#x2F; 170W |    819MiB &#x2F; 12288MiB |      0%      Default |
-|                               |                      |                  N&#x2F;A |
-+-------------------------------+----------------------+----------------------+
-
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;|
-|    0   N&#x2F;A  N&#x2F;A      1192    C+G   Insufficient Permissions        N&#x2F;A      |
-|    0   N&#x2F;A  N&#x2F;A      5292    C+G   ...wekyb3d8bbwe\Video.UI.exe    N&#x2F;A      |
-|    0   N&#x2F;A  N&#x2F;A      6620    C+G   ...ge\Application\msedge.exe    N&#x2F;A      |
-|    0   N&#x2F;A  N&#x2F;A      6808    C+G   C:\Windows\explorer.exe         N&#x2F;A      |
-|    0   N&#x2F;A  N&#x2F;A      8560    C+G   ...5n1h2txyewy\SearchApp.exe    N&#x2F;A      |
-|    0   N&#x2F;A  N&#x2F;A      8724    C+G   ...nputApp\TextInputHost.exe    N&#x2F;A      |
-|    0   N&#x2F;A  N&#x2F;A      9264    C+G   ...y\ShellExperienceHost.exe    N&#x2F;A      |
-|    0   N&#x2F;A  N&#x2F;A     13340    C+G   ...icrosoft VS Code\Code.exe    N&#x2F;A      |
-|    0   N&#x2F;A  N&#x2F;A     13728    C+G   ...e\root\Office16\VISIO.EXE    N&#x2F;A      |
-|    0   N&#x2F;A  N&#x2F;A     14816    C+G   ...5n1h2txyewy\SearchApp.exe    N&#x2F;A      |
-+-----------------------------------------------------------------------------+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>如过正常输出，则安装完成。</p>
-<h3 id="黑窗解决方案"><a href="#黑窗解决方案" class="headerlink" title="黑窗解决方案"></a>黑窗解决方案</h3><p>最后最重要的一步，安装后重启系统，会发现进不了图形界面了，只能进入黑窗。<br>这是由于 Ubuntu 21.04 和 NVIDIA RTX 3080 Ti 驱动 略微不兼容导致的。（Ubuntu 18.04 以及 20.04 更别提了，完全不兼容）<br>解决方法：<br>通过ubuntu高级选项，进入ubuntu修复系统。<br><pre class="line-numbers language-none"><code class="language-none">sudo rm &#x2F;etc&#x2F;X11&#x2F;xorg.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>重启后即可进入图形界面</p>
-<p>该问题我只在RTX3060上遇到，RTX3050Ti未遇到黑窗问题。</p>
-<h2 id="Anconda-pytorch-linux"><a href="#Anconda-pytorch-linux" class="headerlink" title="Anconda_pytorch_linux"></a>Anconda_pytorch_linux</h2><h3 id="Anaconda-下载"><a href="#Anaconda-下载" class="headerlink" title="Anaconda 下载"></a>Anaconda 下载</h3><p>Anaconda官网下载地址<a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a>下载最新的即可，下载很慢<br>可以使用Anaconda清华镜像源进行下载<a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</a>下载最新的即可</p>
-<p>我下载的为<code>Anaconda3-2021.04-Linux-x86_64.sh    539.9 MiB    2021-05-11 04:17</code></p>
-<h3 id="anaconda安装"><a href="#anaconda安装" class="headerlink" title="anaconda安装"></a>anaconda安装</h3><p>进入到下载目录，然后bash命令，如：</p>
-<p><code>bash Anaconda3-2018.12-Linux-x86_64.sh</code></p>
-<p>一路enter就行</p>
-<h4 id="环境变量配置"><a href="#环境变量配置" class="headerlink" title="环境变量配置"></a>环境变量配置</h4><pre class="line-numbers language-none"><code class="language-none"> vi ~&#x2F;.bashrc
-在最后一行加入
- export PATH&#x3D;&quot;&#x2F;home&#x2F;Sweeneys&#x2F;anaconda3&#x2F;bin:$PATH&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p><code>/home/Sweeneys/anaconda3</code>这个地方改为你自己的安装路径pwd</p>
-<h4 id="安装验证"><a href="#安装验证" class="headerlink" title="安装验证"></a>安装验证</h4><pre class="line-numbers language-none"><code class="language-none">conda --version
-conda 4.10.1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="pytorch"><a href="#pytorch" class="headerlink" title="pytorch"></a>pytorch</h3><p>首先创建一个独立的环境，版本可自己选择<br><pre class="line-numbers language-none"><code class="language-none">conda create -n pytorch python&#x3D;3.8.5<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>如果弹出提示，yes即可</p>
-<h3 id="验证操作"><a href="#验证操作" class="headerlink" title="验证操作"></a>验证操作</h3><pre class="line-numbers language-none"><code class="language-none">conda info --envs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<pre class="line-numbers language-none"><code class="language-none"># conda environments:
-#
-base                  *  D:\Users\vadmin\anaconda3
-pytorch                  D:\Users\vadmin\anaconda3\envs\pytorch
-pytorchgpu               D:\Users\vadmin\anaconda3\envs\pytorchgpu
-tensorflow1              D:\Users\vadmin\anaconda3\envs\tensorflow1
-tf_hjz                   D:\Users\vadmin\anaconda3\envs\tf_hjz<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="安装pytorch"><a href="#安装pytorch" class="headerlink" title="安装pytorch"></a>安装pytorch</h3><p>找到pytorch官网<a href="https://pytorch.org/">https://pytorch.org/</a></p>
-<p><img src="https://www.codekp.cn/download/img/ubuntu/pytorch.png" alt=""></p>
-<p>在anaconda 环境中加入<br><pre class="line-numbers language-none"><code class="language-none">conda install pytorch torchvision torchaudio cudatoolkit&#x3D;11.3 -c pytorch<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>果断输入y，之后就是漫长的等待。或者去休息吧，慢慢等着。看看剧啥的，等着它慢慢下吧。如果你的并不慢，恭喜恭喜。</p>
-<h3 id="成功性验证"><a href="#成功性验证" class="headerlink" title="成功性验证"></a>成功性验证</h3><ol>
-<li>在命令行左边为 pytorch 环境中，输入 python</li>
-<li>之后，输入 import torch，如果没有报错，意味着 PyTorch 已经顺利安装了</li>
-<li>接下来，输入 torch.cuda.is_available，如果是 True，意味着你可以使用 GPU，如果是 False，意味着只能使用CPU。</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">(pytorch) C:\Users\vadmin&gt;python
-Python 3.6.13 |Anaconda, Inc.| (default, Mar 16 2021, 11:37:27) [MSC v.1916 64 bit (AMD64)] on win32
-Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
-&gt;&gt;&gt; import torch
-&gt;&gt;&gt; torch.cuda.is_available
-&lt;function is_available at 0x00000168FE9951E0&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>ubuntu</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-        <tag>NVIDIA30xx</tag>
       </tags>
   </entry>
   <entry>
@@ -11017,6 +11017,64 @@ c1<span class="token operator">=</span><span class="token function">input</span>
       </tags>
   </entry>
   <entry>
+    <title>合成厦大</title>
+    <url>/2021/01/31/%E5%90%88%E6%88%90%E5%8E%A6%E5%A4%A7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="合成厦大"><a href="#合成厦大" class="headerlink" title="合成厦大"></a><center>合成厦大</center></h1><p>最近合成大西瓜蛮火的，就想把里面的图片改了，然后做一个自己的合成厦大。<br><span id="more"></span></p>
+<h2 id="找合成大西瓜的源码"><a href="#找合成大西瓜的源码" class="headerlink" title="找合成大西瓜的源码"></a>找合成大西瓜的源码</h2><p>首先只是想做个python的发现没有python的源码，但是最后找到了一个网址，找到了源码<br><a href="https://github.com/liyupi/daxigua/releases/tag/1.0.0" title="合成大西瓜">合成大西瓜</a>大家也可以自行下载。</p>
+<h2 id="然后看懂源码里面的东西"><a href="#然后看懂源码里面的东西" class="headerlink" title="然后看懂源码里面的东西"></a>然后看懂源码里面的东西</h2><p>其实仔细看看就是把里面的资源文件给改掉就可以达到目的，接下来编写excel记录需要修改的文件，然后依次修改修改里面的文件。<br>可以通过F12开发者模式找到每种水果对应什么图片。<br>这里我用excel将所有水果修改后的图片、像素和图片内容一一对应，有需要的可以自行修改内容：<br><a href="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_d946f9006675e38d1a687a8510a70136.jpg"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_d946f9006675e38d1a687a8510a70136.jpg" alt=""></a><br>可以参考上诉的图片进行修改。</p>
+<h2 id="去广告"><a href="#去广告" class="headerlink" title="去广告"></a>去广告</h2><p>去广告其实如果会的话可以F12找到那个广告的网址，然后将广告网址替换成自己的网址。（不多赘述，可以自行尝试）</p>
+<h2 id="上线发布"><a href="#上线发布" class="headerlink" title="上线发布"></a>上线发布</h2><p>本人采用的是github，如何上传可以参考我之前的文章—<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/" title="如何优雅的制作表白网站">如何优雅的制作表白网站</a>。</p>
+<h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><p>GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。</p>
+<p>GitHub 于 2008 年 4 月 10 日正式上线，除了 Git 代码仓库托管及基本的 Web 管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过 350 万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等。</p>
+<p>本文需要先下载git <a href="https://git-scm.com/downloads">下载地址</a></p>
+<p>git教程请参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰Git</a></p>
+<h3 id="首先我们来学习一下，一些git的push方法"><a href="#首先我们来学习一下，一些git的push方法" class="headerlink" title="首先我们来学习一下，一些git的push方法"></a>首先我们来学习一下，一些git的push方法</h3><pre class="line-numbers language-none"><code class="language-none">git init
+git add .
+git commit -m &quot;first commit&quot;
+git branch -M main
+git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;HCXMU.git
+git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>本过程可以参考我为大家寻找的教程<a href="https://www.cnblogs.com/lijiayi/p/githubpages.html">github创建账号、上传文件</a></p>
+<h5 id="合成大西瓜源码下载"><a href="#合成大西瓜源码下载" class="headerlink" title="合成大西瓜源码下载"></a>合成大西瓜源码下载</h5><p>建议采用命令行形式下载会更快，当然可以直接downloadzip文件。</p>
+<h5 id="上传源码到自己的web"><a href="#上传源码到自己的web" class="headerlink" title="上传源码到自己的web"></a>上传源码到自己的web</h5><ol>
+<li>创建自己的仓库 参考1中教程</li>
+<li>输入git init<pre class="line-numbers language-none"><code class="language-none">git init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<img src="https://img-blog.csdnimg.cn/20201212232314167.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">可以看到git创建了一个.git文件</li>
+<li><p>git add .</p>
+<pre class="line-numbers language-none"><code class="language-none">git add .<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20201212232615556.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+</li>
+<li><p>git commit -m “first commit”</p>
+<pre class="line-numbers language-none"><code class="language-none">git commit -m &quot;first commit&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ol>
+<p><img src="https://img-blog.csdnimg.cn/20201212232746366.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<ol>
+<li>git remote add origin <a href="https://github.com/mmrslwan1110/Clock.git">https://github.com/mmrslwan1110/Clock.git</a><pre class="line-numbers language-none"><code class="language-none">
+git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<img src="https://img-blog.csdnimg.cn/20201212233029800.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></li>
+</ol>
+<p>记得换成自己的链接哦</p>
+<ol>
+<li>git push -u origin master<pre class="line-numbers language-none"><code class="language-none">git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<img src="https://img-blog.csdnimg.cn/20201212233354499.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">已经发布到自己的网站了可以访问看看自己的网站测一下效果哦。</li>
+</ol>
+<h2 id="发现由于我替换的资源是白底的导致游戏很奇怪"><a href="#发现由于我替换的资源是白底的导致游戏很奇怪" class="headerlink" title="发现由于我替换的资源是白底的导致游戏很奇怪"></a>发现由于我替换的资源是白底的导致游戏很奇怪</h2><p> 该问题有两种解决方法</p>
+<ul>
+<li>1.修改图片，想办法将图片的底层白底删除成为空白</li>
+<li>2.修改背景，将背景变为白色。<h3 id="为了偷懒先采用方法2改背景"><a href="#为了偷懒先采用方法2改背景" class="headerlink" title="为了偷懒先采用方法2改背景"></a>为了偷懒先采用方法2改背景</h3>先用F12开发者模式找到背景所在的位置<br><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/CS4LXVGR7B5BT322.png" alt=""><br>将图片修改为白色，接下来就很简单了，测试<br><a href="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_7c98485a44cce7e35a943f7808afeebe.jpg"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_7c98485a44cce7e35a943f7808afeebe.jpg" alt=""></a><br>测试发现还是会有突兀的白色边框出现，接下来咱们只能修改每张素材的背景颜色了。<h3 id="采用方法1修改图片背景"><a href="#采用方法1修改图片背景" class="headerlink" title="采用方法1修改图片背景"></a>采用方法1修改图片背景</h3>通过PS对每张图片进行修改，将所有图片的背景白色底全部去掉，然后就恢复到了这样。<br><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/E45185267C0E492E2A061A6C3E7E9DF7.jpg" alt=""><br>接下来将之前的底复原，即可得到结果，最终版本如下<br><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/BD7F4999E4F669692729B18BB026DC2B.jpg" alt=""></li>
+</ul>
+<h2 id="合成大西瓜游戏运行"><a href="#合成大西瓜游戏运行" class="headerlink" title="合成大西瓜游戏运行"></a>合成大西瓜游戏运行</h2><p>体验网址为：<a href="https://www.codekp.cn/HCXMU/index.html" title="合成厦大">合成厦大</a></p>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>合成大西瓜</tag>
+        <tag>厦门大学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo、markdown图片并行显示</title>
     <url>/2020/11/28/%E5%9B%BE%E7%89%87%E5%B9%B6%E8%A1%8C%E6%98%BE%E7%A4%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo、markdown图片并行显示"><a href="#hexo、markdown图片并行显示" class="headerlink" title="hexo、markdown图片并行显示"></a><center>hexo、markdown图片并行显示</center></h1><h2 id="1-markdown图片显示方法"><a href="#1-markdown图片显示方法" class="headerlink" title="1.markdown图片显示方法"></a>1.markdown图片显示方法</h2><h3 id="1-1-Alt-text"><a href="#1-1-Alt-text" class="headerlink" title="1.1 Alt text"></a>1.1 <a href="">Alt text</a></h3><pre class="line-numbers language-none"><code class="language-none">![Alt text](https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20190811133756709.png &quot;optional title&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -11088,55 +11146,6 @@ c1<span class="token operator">=</span><span class="token function">input</span>
       <tags>
         <tag>markdown</tag>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>xmu健康打卡ios快捷指令</title>
-    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
-<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
-<li>浏览器</li>
-<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
-<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
-<li>接着，选择network<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center></li>
-<li><p>找到POST，不要寻找GET</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-</li>
-<li><p>如下：<br><center>
-<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
-</li>
-</ul>
-<p>即找到了我们需要的登录网址。</p>
-<p>接下来记录 username和userpassword，依次填入ios。</p>
-<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-
-<ul>
-<li>将得到的数据填入一下列表<center>
-<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
-</center>
-
-
-</li>
-</ul>
-<blockquote>
-<p>仅只写到这里有兴趣的自己继续探索。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>厦门大学</category>
-      </categories>
-      <tags>
-        <tag>厦门大学</tag>
-        <tag>健康打卡</tag>
       </tags>
   </entry>
   <entry>
@@ -11344,7 +11353,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#x6d;&#x61;&#105;&#108;&#116;&#111;&#58;&#107;&#112;&#64;&#109;&#x6d;&#114;&#x73;&#x6c;&#x2e;&#x63;&#110;">&#107;&#112;&#64;&#109;&#x6d;&#114;&#x73;&#x6c;&#x2e;&#x63;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#107;&#112;&#64;&#109;&#109;&#114;&#x73;&#x6c;&#x2e;&#x63;&#x6e;">&#107;&#112;&#64;&#109;&#109;&#114;&#x73;&#x6c;&#x2e;&#x63;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -11388,61 +11397,52 @@ img {
       </tags>
   </entry>
   <entry>
-    <title>合成厦大</title>
-    <url>/2021/01/31/%E5%90%88%E6%88%90%E5%8E%A6%E5%A4%A7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="合成厦大"><a href="#合成厦大" class="headerlink" title="合成厦大"></a><center>合成厦大</center></h1><p>最近合成大西瓜蛮火的，就想把里面的图片改了，然后做一个自己的合成厦大。<br><span id="more"></span></p>
-<h2 id="找合成大西瓜的源码"><a href="#找合成大西瓜的源码" class="headerlink" title="找合成大西瓜的源码"></a>找合成大西瓜的源码</h2><p>首先只是想做个python的发现没有python的源码，但是最后找到了一个网址，找到了源码<br><a href="https://github.com/liyupi/daxigua/releases/tag/1.0.0" title="合成大西瓜">合成大西瓜</a>大家也可以自行下载。</p>
-<h2 id="然后看懂源码里面的东西"><a href="#然后看懂源码里面的东西" class="headerlink" title="然后看懂源码里面的东西"></a>然后看懂源码里面的东西</h2><p>其实仔细看看就是把里面的资源文件给改掉就可以达到目的，接下来编写excel记录需要修改的文件，然后依次修改修改里面的文件。<br>可以通过F12开发者模式找到每种水果对应什么图片。<br>这里我用excel将所有水果修改后的图片、像素和图片内容一一对应，有需要的可以自行修改内容：<br><a href="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_d946f9006675e38d1a687a8510a70136.jpg"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_d946f9006675e38d1a687a8510a70136.jpg" alt=""></a><br>可以参考上诉的图片进行修改。</p>
-<h2 id="去广告"><a href="#去广告" class="headerlink" title="去广告"></a>去广告</h2><p>去广告其实如果会的话可以F12找到那个广告的网址，然后将广告网址替换成自己的网址。（不多赘述，可以自行尝试）</p>
-<h2 id="上线发布"><a href="#上线发布" class="headerlink" title="上线发布"></a>上线发布</h2><p>本人采用的是github，如何上传可以参考我之前的文章—<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/" title="如何优雅的制作表白网站">如何优雅的制作表白网站</a>。</p>
-<h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><p>GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。</p>
-<p>GitHub 于 2008 年 4 月 10 日正式上线，除了 Git 代码仓库托管及基本的 Web 管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过 350 万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等。</p>
-<p>本文需要先下载git <a href="https://git-scm.com/downloads">下载地址</a></p>
-<p>git教程请参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰Git</a></p>
-<h3 id="首先我们来学习一下，一些git的push方法"><a href="#首先我们来学习一下，一些git的push方法" class="headerlink" title="首先我们来学习一下，一些git的push方法"></a>首先我们来学习一下，一些git的push方法</h3><pre class="line-numbers language-none"><code class="language-none">git init
-git add .
-git commit -m &quot;first commit&quot;
-git branch -M main
-git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;HCXMU.git
-git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>本过程可以参考我为大家寻找的教程<a href="https://www.cnblogs.com/lijiayi/p/githubpages.html">github创建账号、上传文件</a></p>
-<h5 id="合成大西瓜源码下载"><a href="#合成大西瓜源码下载" class="headerlink" title="合成大西瓜源码下载"></a>合成大西瓜源码下载</h5><p>建议采用命令行形式下载会更快，当然可以直接downloadzip文件。</p>
-<h5 id="上传源码到自己的web"><a href="#上传源码到自己的web" class="headerlink" title="上传源码到自己的web"></a>上传源码到自己的web</h5><ol>
-<li>创建自己的仓库 参考1中教程</li>
-<li>输入git init<pre class="line-numbers language-none"><code class="language-none">git init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="https://img-blog.csdnimg.cn/20201212232314167.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">可以看到git创建了一个.git文件</li>
-<li><p>git add .</p>
-<pre class="line-numbers language-none"><code class="language-none">git add .<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20201212232615556.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+    <title>xmu健康打卡ios快捷指令</title>
+    <url>/2020/12/06/%E5%A4%A7%E5%AD%A6ios%E7%B3%BB%E7%BB%9F%E6%89%93%E5%8D%A1%E6%8D%B7%E5%BE%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="XMU健康打卡ios快捷指令"><a href="#XMU健康打卡ios快捷指令" class="headerlink" title="XMU健康打卡ios快捷指令"></a><center>XMU健康打卡ios快捷指令</center></h1><h2 id="XMU-Health-Report-Base-On-Iphone"><a href="#XMU-Health-Report-Base-On-Iphone" class="headerlink" title=" XMU Health Report Base On Iphone "></a><center> XMU Health Report Base On Iphone </center></h2><span id="more"></span>
+<h2 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h2><ul>
+<li>浏览器</li>
+<li>由于各个网页不同，可能会有不一样的结果，因此这个过程仅供参考。</li>
+<li>下面说一下大概的思路，先用浏览器打开我们打卡的链接，接着打开浏览器，按F12进入开发者模式。</li>
+<li>接着，选择network<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/F12.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center></li>
+<li><p>找到POST，不要寻找GET</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/get.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
 </li>
-<li><p>git commit -m “first commit”</p>
-<pre class="line-numbers language-none"><code class="language-none">git commit -m &quot;first commit&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<li><p>如下：<br><center>
+<img src="https://www.codekp.cn/download/img/xmu_r/post.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center><br>将里面的连接保存下来<br><a href="https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu">https://ids.xmu.edu.cn/authserver/login?service=https://xmuxg.xmu.edu.cn/login/cas/xmu</a></p>
 </li>
-</ol>
-<p><img src="https://img-blog.csdnimg.cn/20201212232746366.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<ol>
-<li>git remote add origin <a href="https://github.com/mmrslwan1110/Clock.git">https://github.com/mmrslwan1110/Clock.git</a><pre class="line-numbers language-none"><code class="language-none">
-git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<img src="https://img-blog.csdnimg.cn/20201212233029800.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></li>
-</ol>
-<p>记得换成自己的链接哦</p>
-<ol>
-<li>git push -u origin master<pre class="line-numbers language-none"><code class="language-none">git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="https://img-blog.csdnimg.cn/20201212233354499.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">已经发布到自己的网站了可以访问看看自己的网站测一下效果哦。</li>
-</ol>
-<h2 id="发现由于我替换的资源是白底的导致游戏很奇怪"><a href="#发现由于我替换的资源是白底的导致游戏很奇怪" class="headerlink" title="发现由于我替换的资源是白底的导致游戏很奇怪"></a>发现由于我替换的资源是白底的导致游戏很奇怪</h2><p> 该问题有两种解决方法</p>
-<ul>
-<li>1.修改图片，想办法将图片的底层白底删除成为空白</li>
-<li>2.修改背景，将背景变为白色。<h3 id="为了偷懒先采用方法2改背景"><a href="#为了偷懒先采用方法2改背景" class="headerlink" title="为了偷懒先采用方法2改背景"></a>为了偷懒先采用方法2改背景</h3>先用F12开发者模式找到背景所在的位置<br><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/CS4LXVGR7B5BT322.png" alt=""><br>将图片修改为白色，接下来就很简单了，测试<br><a href="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_7c98485a44cce7e35a943f7808afeebe.jpg"><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/wp_editor_md_7c98485a44cce7e35a943f7808afeebe.jpg" alt=""></a><br>测试发现还是会有突兀的白色边框出现，接下来咱们只能修改每张素材的背景颜色了。<h3 id="采用方法1修改图片背景"><a href="#采用方法1修改图片背景" class="headerlink" title="采用方法1修改图片背景"></a>采用方法1修改图片背景</h3>通过PS对每张图片进行修改，将所有图片的背景白色底全部去掉，然后就恢复到了这样。<br><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/E45185267C0E492E2A061A6C3E7E9DF7.jpg" alt=""><br>接下来将之前的底复原，即可得到结果，最终版本如下<br><img src="http://www.mmrsl.cn/wp-content/uploads/2021/01/BD7F4999E4F669692729B18BB026DC2B.jpg" alt=""></li>
 </ul>
-<h2 id="合成大西瓜游戏运行"><a href="#合成大西瓜游戏运行" class="headerlink" title="合成大西瓜游戏运行"></a>合成大西瓜游戏运行</h2><p>体验网址为：<a href="https://www.codekp.cn/HCXMU/index.html" title="合成厦大">合成厦大</a></p>
+<p>即找到了我们需要的登录网址。</p>
+<p>接下来记录 username和userpassword，依次填入ios。</p>
+<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report.PNG" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+
+<ul>
+<li>将得到的数据填入一下列表<center>
+<img src="https://www.codekp.cn/download/img/xmu_r/report_ios.jpg" width = "400" height = "302" alt="图片名称" align=center />
+</center>
+
+
+</li>
+</ul>
+<blockquote>
+<p>仅只写到这里有兴趣的自己继续探索。</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>JavaScript</category>
+        <category>厦门大学</category>
       </categories>
       <tags>
         <tag>厦门大学</tag>
-        <tag>合成大西瓜</tag>
+        <tag>健康打卡</tag>
       </tags>
   </entry>
   <entry>
@@ -12055,47 +12055,6 @@ r = \frac{|w^Tx+b|}{||w||}</script><ol>
       </tags>
   </entry>
   <entry>
-    <title>树莓派3BTL-WN726N驱动</title>
-    <url>/2021/04/20/%E6%A0%91%E8%8E%93%E6%B4%BE3BTL-WN726N%E9%A9%B1%E5%8A%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="树莓派3BTL-WN726N驱动"><a href="#树莓派3BTL-WN726N驱动" class="headerlink" title="树莓派3BTL-WN726N驱动"></a>树莓派3BTL-WN726N驱动</h1><h2 id="给树莓派3B装两个网卡"><a href="#给树莓派3B装两个网卡" class="headerlink" title="给树莓派3B装两个网卡"></a>给树莓派3B装两个网卡</h2><ul>
-<li>为了得到两条独立的非干扰信道，采用外接usb网卡的形式。</li>
-</ul>
-<p>但是遇到了一个问题，无线网卡插入树莓派无法识别。于是只好安装驱动，网络上有很多方法，但一点用都没得。</p>
-<p>最终只能在树莓派的官方文档中找解决方法<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=62371">教程</a></p>
-<p>根据帖子内容，找到自己内核版本对应的驱动</p>
-<p><code>3.18.11+ #780, #781 - 8188eu--3.18.3-739.tar.gz</code></p>
-<pre class="line-numbers language-none"><code class="language-none">mkdir TP-Link
-cd TP-Link
-sudo wget http:&#x2F;&#x2F;downloads.fars-robotics.net&#x2F;wifi-drivers&#x2F;8188eu-drivers&#x2F;8188eu-3.18.3-739.tar.gz
-
-tar -zxvf 8188eu-3.18.3-739.tar.gz
-
-mkdir -p &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;kernel&#x2F;drivers&#x2F;net&#x2F;wireless
-sudo vim &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;modules.order
-sudo .&#x2F;install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="对本地网络地址进行配置"><a href="#对本地网络地址进行配置" class="headerlink" title="对本地网络地址进行配置"></a>对本地网络地址进行配置</h2><p>由于在实验室，所用的路由器的端口号是10.xxx.xxx.xxx 然后直接ip连接到了该位置，这肯定有问题。</p>
-<pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;network&#x2F;interfaces<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>修改以下内容设置默认网关，具体数值可以根据自身情况增加</p>
-<pre class="line-numbers language-none"><code class="language-none">auto wlan1
-iface wlan1 inet dhcp
-pre-up wpa_supplicant -Dwext -i wlan0 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf$
-
-
-allow-hotplug wlan1
-iface wlan1 inet manual
-    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><pre class="line-numbers language-none"><code class="language-none">sudo depmod -a 
-sudo modprobe 8188eu<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>树莓派4B_tensorflow</title>
     <url>/2021/06/07/%E6%A0%91%E8%8E%93%E6%B4%BE4B-tensorflow/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="树莓派4B-tensorflow"><a href="#树莓派4B-tensorflow" class="headerlink" title="树莓派4B_tensorflow"></a>树莓派4B_tensorflow</h1><h2 id="安装python-virtualenv"><a href="#安装python-virtualenv" class="headerlink" title="安装python virtualenv"></a>安装python virtualenv</h2><ul>
@@ -12177,6 +12136,47 @@ python label_image.py -m mobilenet_v1_1.0_224_quant.tflite -l labels_mobilenet_q
         <tag>研究生课程</tag>
         <tag>matlab</tag>
         <tag>水声通信</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>树莓派3BTL-WN726N驱动</title>
+    <url>/2021/04/20/%E6%A0%91%E8%8E%93%E6%B4%BE3BTL-WN726N%E9%A9%B1%E5%8A%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="树莓派3BTL-WN726N驱动"><a href="#树莓派3BTL-WN726N驱动" class="headerlink" title="树莓派3BTL-WN726N驱动"></a>树莓派3BTL-WN726N驱动</h1><h2 id="给树莓派3B装两个网卡"><a href="#给树莓派3B装两个网卡" class="headerlink" title="给树莓派3B装两个网卡"></a>给树莓派3B装两个网卡</h2><ul>
+<li>为了得到两条独立的非干扰信道，采用外接usb网卡的形式。</li>
+</ul>
+<p>但是遇到了一个问题，无线网卡插入树莓派无法识别。于是只好安装驱动，网络上有很多方法，但一点用都没得。</p>
+<p>最终只能在树莓派的官方文档中找解决方法<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=62371">教程</a></p>
+<p>根据帖子内容，找到自己内核版本对应的驱动</p>
+<p><code>3.18.11+ #780, #781 - 8188eu--3.18.3-739.tar.gz</code></p>
+<pre class="line-numbers language-none"><code class="language-none">mkdir TP-Link
+cd TP-Link
+sudo wget http:&#x2F;&#x2F;downloads.fars-robotics.net&#x2F;wifi-drivers&#x2F;8188eu-drivers&#x2F;8188eu-3.18.3-739.tar.gz
+
+tar -zxvf 8188eu-3.18.3-739.tar.gz
+
+mkdir -p &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;kernel&#x2F;drivers&#x2F;net&#x2F;wireless
+sudo vim &#x2F;lib&#x2F;modules&#x2F;3.18.3+&#x2F;modules.order
+sudo .&#x2F;install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="对本地网络地址进行配置"><a href="#对本地网络地址进行配置" class="headerlink" title="对本地网络地址进行配置"></a>对本地网络地址进行配置</h2><p>由于在实验室，所用的路由器的端口号是10.xxx.xxx.xxx 然后直接ip连接到了该位置，这肯定有问题。</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;network&#x2F;interfaces<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>修改以下内容设置默认网关，具体数值可以根据自身情况增加</p>
+<pre class="line-numbers language-none"><code class="language-none">auto wlan1
+iface wlan1 inet dhcp
+pre-up wpa_supplicant -Dwext -i wlan0 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf$
+
+
+allow-hotplug wlan1
+iface wlan1 inet manual
+    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><pre class="line-numbers language-none"><code class="language-none">sudo depmod -a 
+sudo modprobe 8188eu<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -13023,6 +13023,39 @@ def saveCutoutLabel(name):
       </tags>
   </entry>
   <entry>
+    <title>南京大屠杀国家公祭日_网站变成灰色以表悼念</title>
+    <url>/2020/12/13/%E7%BD%91%E7%AB%99%E5%8F%98%E7%81%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="南京大屠杀国家公祭日-网站变成灰色以表悼念"><a href="#南京大屠杀国家公祭日-网站变成灰色以表悼念" class="headerlink" title=" 南京大屠杀国家公祭日_网站变成灰色以表悼念 "></a><center> 南京大屠杀国家公祭日_网站变成灰色以表悼念 </center></h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=78993619&bvid=BV1cJ411C7Dg&cid=135180758&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+
+<span id="more"></span>
+<p>12月13日是第七个南京大屠杀死难者国家公祭日。公祭无辜死难之生命，告慰血与泪浸染之土地。这一天，举国上下以各种形式深切缅怀死难同胞，深切缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，表达牢记历史、珍爱和平、矢志复兴，身为站长的我们都会让自己的网站的全部网页变成灰色（黑白色），以表示我们对逝者的悼念。</p>
+<h3 id="第一种：修改CSS文件"><a href="#第一种：修改CSS文件" class="headerlink" title="第一种：修改CSS文件"></a>第一种：修改CSS文件</h3><p>我们可以在网页的CSS文件中添加以下的CSS代码，来实现网页黑白色，也就是网站变灰</p>
+<pre class="line-numbers language-none"><code class="language-none">html &#123;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
+    -webkit-filter: grayscale(100%);
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="第二种：在网页的标签内加入以下代码"><a href="#第二种：在网页的标签内加入以下代码" class="headerlink" title="第二种：在网页的标签内加入以下代码"></a>第二种：在网页的<head>标签内加入以下代码</h3><p>如果你不想改动CSS文件，你可以通过在网页头部中的<head>标签内部加入内联CSS代码的形式实现网站网页变灰</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;
+html &#123;
+filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
+-webkit-filter: grayscale(100%);&#125;
+&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="第三种：修改标签加入内联样式"><a href="#第三种：修改标签加入内联样式" class="headerlink" title="第三种：修改标签加入内联样式"></a>第三种：修改<html>标签加入内联样式</h3><p>如里上面的两种方式都不喜欢，可以通过修改<html>标签，以加入内联样式的方法，达到网页变灰的效果</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;html style&#x3D;&quot;filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
+-webkit-filter: grayscale(100%);&quot;&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>南京大屠杀国家公祭日</tag>
+        <tag>hexo网站</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网站视频下载及按帧将视频转为jpg</title>
     <url>/2020/10/15/%E7%BD%91%E7%AB%99%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD%E5%8F%8A%E6%8C%89%E5%B8%A7%E8%BD%AC%E4%B8%BAjpg/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="网站视频下载及按帧转为jpg"><a href="#网站视频下载及按帧转为jpg" class="headerlink" title="网站视频下载及按帧转为jpg"></a>网站视频下载及按帧转为jpg</h1><h2 id="1、准备切割视频"><a href="#1、准备切割视频" class="headerlink" title="1、准备切割视频"></a>1、准备切割视频</h2><p>视频切割算法:<br><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">clc;
@@ -13485,39 +13518,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </categories>
       <tags>
         <tag>读书笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>南京大屠杀国家公祭日_网站变成灰色以表悼念</title>
-    <url>/2020/12/13/%E7%BD%91%E7%AB%99%E5%8F%98%E7%81%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="南京大屠杀国家公祭日-网站变成灰色以表悼念"><a href="#南京大屠杀国家公祭日-网站变成灰色以表悼念" class="headerlink" title=" 南京大屠杀国家公祭日_网站变成灰色以表悼念 "></a><center> 南京大屠杀国家公祭日_网站变成灰色以表悼念 </center></h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=78993619&bvid=BV1cJ411C7Dg&cid=135180758&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-
-<span id="more"></span>
-<p>12月13日是第七个南京大屠杀死难者国家公祭日。公祭无辜死难之生命，告慰血与泪浸染之土地。这一天，举国上下以各种形式深切缅怀死难同胞，深切缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，表达牢记历史、珍爱和平、矢志复兴，身为站长的我们都会让自己的网站的全部网页变成灰色（黑白色），以表示我们对逝者的悼念。</p>
-<h3 id="第一种：修改CSS文件"><a href="#第一种：修改CSS文件" class="headerlink" title="第一种：修改CSS文件"></a>第一种：修改CSS文件</h3><p>我们可以在网页的CSS文件中添加以下的CSS代码，来实现网页黑白色，也就是网站变灰</p>
-<pre class="line-numbers language-none"><code class="language-none">html &#123;
-    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
-    -webkit-filter: grayscale(100%);
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="第二种：在网页的标签内加入以下代码"><a href="#第二种：在网页的标签内加入以下代码" class="headerlink" title="第二种：在网页的标签内加入以下代码"></a>第二种：在网页的<head>标签内加入以下代码</h3><p>如果你不想改动CSS文件，你可以通过在网页头部中的<head>标签内部加入内联CSS代码的形式实现网站网页变灰</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;
-html &#123;
-filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
--webkit-filter: grayscale(100%);&#125;
-&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="第三种：修改标签加入内联样式"><a href="#第三种：修改标签加入内联样式" class="headerlink" title="第三种：修改标签加入内联样式"></a>第三种：修改<html>标签加入内联样式</h3><p>如里上面的两种方式都不喜欢，可以通过修改<html>标签，以加入内联样式的方法，达到网页变灰的效果</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;html style&#x3D;&quot;filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale&#x3D;1);
--webkit-filter: grayscale(100%);&quot;&gt;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>CSS</category>
-      </categories>
-      <tags>
-        <tag>南京大屠杀国家公祭日</tag>
-        <tag>hexo网站</tag>
       </tags>
   </entry>
 </search>
