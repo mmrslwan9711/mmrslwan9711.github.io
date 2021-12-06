@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="多智能体强化学习_StarCraft, 漫漫人生路">
+    <meta name="keywords" content="多智能体强化学习, 漫漫人生路">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>多智能体强化学习_StarCraft | 漫漫人生路</title>
+    <title>多智能体强化学习 | 漫漫人生路</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -406,7 +406,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">多智能体强化学习_StarCraft</h1>
+                    <h1 class="description center-align post-title">多智能体强化学习</h1>
                 </div>
             </div>
         </div>
@@ -548,14 +548,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    549
+                    1.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    6 分
                 </div>
                 
 
@@ -647,6 +647,101 @@
 平均胜率为8次,独立运行3m --difficulty=7(VeryHard)
 
 <div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/overview_3m.png"/></div>
+
+
+
+<h2 id="MADDPG"><a href="#MADDPG" class="headerlink" title="MADDPG"></a>MADDPG</h2><p>git上找到的都运行不了，测试了很久，在<a target="_blank" rel="noopener" href="https://github.com/starry-sky6688/MADDPG">https://github.com/starry-sky6688/MADDPG</a> 的基础上改了一下，成功运行。</p>
+<ul>
+<li>对应的论文：<a target="_blank" rel="noopener" href="https://arxiv.org/abs/1706.02275">Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments</a></li>
+<li>对应的环境：<a target="_blank" rel="noopener" href="https://github.com/openai/multiagent-particle-envs">MPE</a></li>
+</ul>
+<h3 id="多智能体环境"><a href="#多智能体环境" class="headerlink" title="多智能体环境"></a>多智能体环境</h3><p><a target="_blank" rel="noopener" href="https://github.com/openai/multiagent-particle-envs">MPE</a></p>
+<ol>
+<li>安装方法1:</li>
+</ol>
+<p><code>cd into the root directory and type pip install -e .</code></p>
+<ol>
+<li>安装方法2:<br><a target="_blank" rel="noopener" href="https://www.pettingzoo.ml/mpe">https://www.pettingzoo.ml/mpe</a></li>
+</ol>
+<p><code>pip install pettingzoo[mpe]</code></p>
+<h3 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h3><p>python=3.6.5<br>Multi-Agent Particle Environment(MPE)<br>torch=1.1.0</p>
+<h3 id="运行-1"><a href="#运行-1" class="headerlink" title="运行"></a>运行</h3><p><code>python main.py --scenario-name=simple_tag --evaluate-episodes=10</code></p>
+<div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/2.png"/></div>
+
+<h3 id="环境列表"><a href="#环境列表" class="headerlink" title="环境列表"></a>环境列表</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>代码中的环境名称</th>
+<th>沟通</th>
+<th>竞争</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>simple</td>
+<td>N</td>
+<td>N</td>
+<td>单个代理看到地标位置，根据它与地标的接近程度进行奖励。不是多代理环境——用于调试策略。</td>
+</tr>
+<tr>
+<td>simple_adversary.py</td>
+<td>（物理欺骗）</td>
+<td>N</td>
+<td>是    1 个对手（红色），N 个优秀代理（绿色），N 个地标（通常 N=2）。所有代理都会观察地标和其他代理的位置。一个地标是“目标地标”（绿色）。好的代理根据其中一个与目标地标的接近程度进行奖励，但如果对手靠近目标地标，则获得负面奖励。对手根据它与目标的接近程度获得奖励，但它不知道哪个地标是目标地标。因此，优秀的代理必须学会“拆分”并覆盖所有地标以欺骗对手。</td>
+</tr>
+<tr>
+<td>simple_crypto.py （秘密交流）</td>
+<td>是</td>
+<td>是</td>
+<td>两个好代理人（爱丽丝和鲍勃），一个对手（夏娃）。Alice 必须通过公共频道向 bob 发送私人消息。Alice 和 bob 会根据 bob 重建消息的程度获得奖励，但如果 eve 能够重建消息，则获得负面奖励。Alice 和 bob 有一个私钥（在每集开始时随机生成），他们必须学会使用它来加密消息。</td>
+</tr>
+<tr>
+<td>simple_push.py （远离）</td>
+<td>N</td>
+<td>是</td>
+<td>1 个代理、1 个对手、1 个地标。代理根据与地标的距离进行奖励。如果对手靠近地标，并且代理远离地标，则它会得到奖励。因此，对手学会将代理推离地标。</td>
+</tr>
+<tr>
+<td>simple_reference.py</td>
+<td>是</td>
+<td>N</td>
+<td>2 个代理，3 个不同颜色的地标。每个代理都想到达他们的目标地标，只有其他代理知道。奖励是集体的。因此，代理必须学会传达另一个代理的目标，并导航到他们的地标。这与 simple_speaker_listener 场景相同，其中两个代理同时是说话者和听众。</td>
+</tr>
+<tr>
+<td>simple_speaker_listener.py （合作交流）</td>
+<td>是</td>
+<td>N</td>
+<td>与 simple_reference 相同，除了一个代理是不动的“说话者”（灰色）（观察其他代理的目标），另一个代理是听者（不能说话，但必须导航到正确的地标）。</td>
+</tr>
+<tr>
+<td>simple_spread.py （合作导航）</td>
+<td>N</td>
+<td>N</td>
+<td>N 个代理，N 个地标。根据任何代理与每个地标的距离对代理进行奖励。如果代理与其他代理发生冲突，则会受到惩罚。因此，代理必须学会在避免碰撞的同时覆盖所有地标。</td>
+</tr>
+<tr>
+<td>simple_tag.py （捕食者-猎物）</td>
+<td>N</td>
+<td>是</td>
+<td>捕食者-猎物环境。好的代理（绿色）速度更快，并且希望避免被对手（红色）击中。对手速度较慢，并希望打击优秀的代理。障碍物（大黑圈）挡住了去路。</td>
+</tr>
+<tr>
+<td>simple_world_comm.py</td>
+<td>是</td>
+<td>是</td>
+<td>在论文随附的视频中看到的环境。与 simple_tag 相同，除了 (1) 有食物（蓝色小球），好代理会因为靠近而获得奖励，（2）我们现在有“森林”，可以将代理隐藏在里面，从外面看不到；(3)有一个“领导对手”，可以随时看到代理人，并可以与其他对手沟通，帮助协调追击。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>通过<code>python main.py --scenario-name=simple_tag --evaluate-episodes=10</code></p>
+<p>修改<code>simple_tag</code>替换环境。</p>
+<h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><h3 id="欺骗"><a href="#欺骗" class="headerlink" title="欺骗"></a>欺骗</h3><p>在这项任务中，两个蓝色代理通过最小化它们与绿色地标的最近距离（只有一个需要靠近以获得最佳奖励）来获得奖励，同时最大化红色对手与绿色地标的距离。红色对手通过最小化它与绿色地标的距离来获得奖励；然而，在任何给定的试验中，它不知道哪个地标是绿色的，所以它必须跟随蓝色代理。因此，蓝色代理应该学会通过覆盖两个地标来欺骗红色代理。<br><img src="https://www.mmrsl.cn/download/img/xmu/1.gif?raw=true" width="33%"> <img src="https://www.mmrsl.cn/download/img/xmu/2.gif?raw=true" width="33%"> <img src="https://www.mmrsl.cn/download/img/xmu/3.gif?raw=true" width="33%"></p>
+<h3 id="合作"><a href="#合作" class="headerlink" title="合作"></a>合作</h3><p>这项任务涉及两个代理，一个是静止的，一个是可以移动的。静止代理将另一个代理的颜色视为其观察，并输出一个单热通信向量作为其动作。移动代理接收通信向量，以及它与屏幕上所有地标的相对距离；然而，它不知道自己的颜色。两个代理的目标都是让移动代理到达与其自身颜色相匹配的地标。因此，代理必须学会交流，以便移动的代理知道在每个随机试验中去哪里。<br><img src="https://www.mmrsl.cn/download/img/xmu/1(2).gif?raw=true" width="33%"> <img src="https://www.mmrsl.cn/download/img/xmu/2(2).gif?raw=true" width="33%"> <img src="https://www.mmrsl.cn/download/img/xmu/3(2).gif?raw=true" width="33%"></p>
+<h3 id="捕食者和猎物"><a href="#捕食者和猎物" class="headerlink" title="捕食者和猎物"></a>捕食者和猎物</h3><p>此任务涉及单个猎物代理（绿色）和三个捕食者（红色）组成的团队。猎物代理比捕食者快 30%，因此捕食者必须学会如何组队才能捕捉到猎物。</p>
+<p><img src="https://www.mmrsl.cn/download/img/xmu/1(1).gif?raw=true" width="33%"> <img src="https://www.mmrsl.cn/download/img/xmu/2(1).gif?raw=true" width="33%"> <img src="https://www.mmrsl.cn/download/img/xmu/3(1).gif?raw=true" width="33%"></p>
 
                 
             </div>
@@ -913,9 +1008,9 @@
                 <a href="/2021/12/06/StarCraft-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
                     <div class="card-image">
                         
-                        <img src="https://www.mmrsl.cn/download/img/xmu/1.png" class="responsive-img" alt="多智能体强化学习_StarCraft">
+                        <img src="https://www.mmrsl.cn/download/img/xmu/1.png" class="responsive-img" alt="多智能体强化学习">
                         
-                        <span class="card-title">多智能体强化学习_StarCraft</span>
+                        <span class="card-title">多智能体强化学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1209,7 +1304,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">122.7k</span>&nbsp;字
+                class="white-color">124k</span>&nbsp;字
             
             
             
