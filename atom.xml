@@ -6,7 +6,7 @@
   <link href="http://www.mmrsl.cn/atom.xml" rel="self"/>
   
   <link href="http://www.mmrsl.cn/"/>
-  <updated>2021-12-06T11:43:58.229Z</updated>
+  <updated>2021-12-07T09:41:07.705Z</updated>
   <id>http://www.mmrsl.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux获取带宽、cpu占用率、能耗</title>
+    <link href="http://www.mmrsl.cn/2021/12/07/linux%E5%B8%A6%E5%AE%BD%E3%80%81cpu%E5%8D%A0%E7%94%A8%E7%8E%87%E3%80%81%E8%83%BD%E8%80%97/"/>
+    <id>http://www.mmrsl.cn/2021/12/07/linux%E5%B8%A6%E5%AE%BD%E3%80%81cpu%E5%8D%A0%E7%94%A8%E7%8E%87%E3%80%81%E8%83%BD%E8%80%97/</id>
+    <published>2021-12-07T08:39:56.000Z</published>
+    <updated>2021-12-07T09:41:07.705Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>多智能体强化学习算法及环境</title>
@@ -474,33 +495,6 @@
     <category term="OCR" scheme="http://www.mmrsl.cn/tags/OCR/"/>
     
     <category term="python" scheme="http://www.mmrsl.cn/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信小程序开发</title>
-    <link href="http://www.mmrsl.cn/2021/10/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/"/>
-    <id>http://www.mmrsl.cn/2021/10/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/</id>
-    <published>2021-10-25T01:50:17.000Z</published>
-    <updated>2021-10-25T02:24:58.302Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="js" scheme="http://www.mmrsl.cn/categories/js/"/>
-    
-    
-    <category term="微信小程序" scheme="http://www.mmrsl.cn/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    <category term="js" scheme="http://www.mmrsl.cn/tags/js/"/>
     
   </entry>
   
