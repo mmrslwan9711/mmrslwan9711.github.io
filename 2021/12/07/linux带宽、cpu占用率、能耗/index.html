@@ -541,21 +541,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-07
+                    2021-12-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    613
+                    793
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
 
@@ -665,9 +665,57 @@ Devices：自定义监控的网卡，默认是全部监控的，使用左右键�
 
 如只监控eth0命令： nload eth0
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="iftop"><a href="#iftop" class="headerlink" title="iftop"></a>iftop</h3><p><code>sudo apt-get install iftop</code></p>
+<h3 id="nethogs"><a href="#nethogs" class="headerlink" title="nethogs"></a>nethogs</h3><p><code>sudo apt-get install nethogs</code></p>
 <p><code>sudo nethogs</code></p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>局域网 iperf<br>外网 speedtest-cli<br>流量统计 nload iftop</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li>局域网 iperf</li>
+<li>外网 speedtest-cli</li>
+<li>流量统计 nload iftop</li>
+</ul>
+<h3 id="iperf3-python"><a href="#iperf3-python" class="headerlink" title="iperf3 python"></a>iperf3 python</h3><ol>
+<li>服务端<pre class="line-numbers language-none"><code class="language-none">import iperf3
+def iperfserver():
+    server &#x3D; iperf3.Server()
+    result &#x3D; server.run()
+    result.remote_host
+    print(result)
+iperfserver(received_Mbps)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>客户端<pre class="line-numbers language-none"><code class="language-none">import iperf3
+
+
+def iperfclient():
+    client &#x3D; iperf3.Client()
+    client.duration &#x3D; 1
+    client.server_hostname &#x3D; &#39;127.0.0.1&#39;
+    client.port &#x3D; 5201
+    result &#x3D; client.run()
+    result.sent_Mbps
+iperfclient()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>tips:预先<code>pip install iperf3</code>和<code>sudo apt-get install iperf</code></p>
+</blockquote>
+</li>
+</ol>
+<p>输出结果</p>
+<div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/3.png"/></div>
+
+<pre class="line-numbers language-none"><code class="language-none"># Bits are measured in 10**3 terms
+# Bytes are measured in 2**10 terms
+# kbps &#x3D; Kilobits per second
+# Mbps &#x3D; Megabits per second
+# kB_s &#x3D; kiloBytes per second
+# MB_s &#x3D; MegaBytes per second
+
+self.sent_kbps &#x3D; self.sent_bps &#x2F; 1000
+self.sent_Mbps &#x3D; self.sent_kbps &#x2F; 1000
+self.sent_kB_s &#x3D; self.sent_bps &#x2F; (8 * 1024)
+self.sent_MB_s &#x3D; self.sent_kB_s &#x2F; 1024
+
+self.received_kbps &#x3D; self.received_bps &#x2F; 1000
+self.received_Mbps &#x3D; self.received_kbps &#x2F; 1000
+self.received_kB_s &#x3D; self.received_bps &#x2F; (8 * 1024)
+self.received_MB_s &#x3D; self.received_kB_s &#x2F; 1024<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>看一眼源码，然后就拿到了输出数据</p>
 
                 
             </div>
@@ -969,7 +1017,7 @@ Devices：自定义监控的网卡，默认是全部监控的，使用左右键�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/06/StarCraft-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+                <a href="/2021/12/06/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8F%8A%E7%8E%AF%E5%A2%83/">
                     <div class="card-image">
                         
                         <img src="https://www.mmrsl.cn/download/img/xmu/1.png" class="responsive-img" alt="多智能体强化学习算法及环境">
@@ -1231,7 +1279,7 @@ Devices：自定义监控的网卡，默认是全部监控的，使用左右键�
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">125k</span>&nbsp;字
+                class="white-color">125.2k</span>&nbsp;字
             
             
             
@@ -1557,21 +1605,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 
 </html>
