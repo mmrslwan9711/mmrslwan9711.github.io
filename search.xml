@@ -708,6 +708,58 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       </tags>
   </entry>
   <entry>
+    <title>Fusion360学习笔记</title>
+    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
+<pre><code>h1 &#123;
+counter-reset: subsection;
+&#125;
+h2 &#123;
+counter-reset: subsection2;
+&#125;
+h3 &#123;
+counter-reset: subsection3;
+&#125;
+h4 &#123;
+counter-reset: subsection4;
+&#125;
+h1::before &#123;
+counter-increment: section;
+content:  &quot; &quot;;
+&#125;
+
+h2::before &#123;
+counter-increment: subsection;
+content: counter(subsection) &quot; &quot;;
+&#125;
+h3::before &#123;
+counter-increment: subsection2;
+content: counter(subsection) &quot;.&quot; counter(subsection2) ;
+&#125;
+h4::before &#123;
+counter-increment: subsection3;
+content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
+&#125;
+h5::before &#123;
+counter-increment: subsection4;
+content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
+&#125;
+</code></pre><p>&lt;/style&gt;</p>
+<p><style><br>        video {<br>            width: 20%;<br>        }
+</style></p>
+<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
+<ul>
+<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
+</ul>
+<p>下载个人用途版本即可。</p>
+<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/video/2.mp4"   controls="controls"></video>
+
+<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/video/3.mp4"   controls="controls"></video>
+
+
+]]></content>
+  </entry>
+  <entry>
     <title>English_learning</title>
     <url>/2020/07/31/English-learning/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
@@ -821,58 +873,6 @@ If you are talking to a group of managers, you may refer to the disorganized met
       </tags>
   </entry>
   <entry>
-    <title>Fusion360学习笔记</title>
-    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
-<pre><code>h1 &#123;
-counter-reset: subsection;
-&#125;
-h2 &#123;
-counter-reset: subsection2;
-&#125;
-h3 &#123;
-counter-reset: subsection3;
-&#125;
-h4 &#123;
-counter-reset: subsection4;
-&#125;
-h1::before &#123;
-counter-increment: section;
-content:  &quot; &quot;;
-&#125;
-
-h2::before &#123;
-counter-increment: subsection;
-content: counter(subsection) &quot; &quot;;
-&#125;
-h3::before &#123;
-counter-increment: subsection2;
-content: counter(subsection) &quot;.&quot; counter(subsection2) ;
-&#125;
-h4::before &#123;
-counter-increment: subsection3;
-content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
-&#125;
-h5::before &#123;
-counter-increment: subsection4;
-content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
-&#125;
-</code></pre><p>&lt;/style&gt;</p>
-<p><style><br>        video {<br>            width: 20%;<br>        }
-</style></p>
-<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
-<ul>
-<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
-</ul>
-<p>下载个人用途版本即可。</p>
-<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/video/2.mp4"   controls="controls"></video>
-
-<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/video/3.mp4"   controls="controls"></video>
-
-
-]]></content>
-  </entry>
-  <entry>
     <title>LabelImg_使用</title>
     <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
@@ -924,6 +924,827 @@ other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></spa
       </categories>
       <tags>
         <tag>目标检测</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeNet_AlexNet_VGG_ResNet34_on_CIFAR10</title>
+    <url>/2021/11/15/LeNet-AlexNet-VGG-ResNet34-on-CIFAR10/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度"><a href="#LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度" class="headerlink" title="LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度"></a>LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度</h1><p>忽然对CNN卷积神经网络比较感兴趣，于是选择了CIFAR-10数据集进行机器视觉的学习。</p>
+<span id="more"></span>
+<h2 id="CIFAR-10"><a href="#CIFAR-10" class="headerlink" title="CIFAR-10"></a>CIFAR-10</h2><p><img src="https://www.mmrsl.cn/download/img/cifar10/1.png" alt=""></p>
+<p>CIFAR-10是一个更接近普适物体的彩色图像数据集。CIFAR-10 是一个用于识别普适物体的小型数据集。一共包含10 个类别的RGB 彩色图片：飞机（ airplane ）、汽车（ automobile ）、鸟类（ bird ）、猫（ cat ）、鹿（ deer ）、狗（ dog ）、蛙类（ frog ）、马（ horse ）、船（ ship ）和卡车（ truck ）。</p>
+<p>每个图片的尺寸为32 × 32 ，每个类别有6000个图像，数据集中一共有50000 张训练图片和10000 张测试图片。</p>
+<h2 id="MNIST数据集"><a href="#MNIST数据集" class="headerlink" title="MNIST数据集"></a>MNIST数据集</h2><p>MNIST数据集是机器学习领域中非常经典的一个数据集，训练数据集包含 60,000 个样本, 测试数据集包含 10,000 样本. 在 MNIST 数据集中的每张图片由 28 x 28 个像素点构成, 每个像素点用一个灰度值表示. </p>
+<p><img src="https://www.mmrsl.cn/download/img/cifar10/2.png" alt=""></p>
+<h2 id="CIFAR-10和与MNIST之间的区别"><a href="#CIFAR-10和与MNIST之间的区别" class="headerlink" title="CIFAR-10和与MNIST之间的区别"></a>CIFAR-10和与MNIST之间的区别</h2><p>与MNIST数据集中目比， CIFAR-10 真高以下不同点</p>
+<p>(1)、CIFAR-10 是3 通道的彩色RGB 图像，而MNIST 是灰度图像。<br>(2)、CIFAR-10 的图片尺寸为32 × 32 ， 而MNIST 的图片尺寸为28 × 28 ，比MNIST 稍大。<br>(3)、相比于手写字符， CIFAR-10 含有的是现实世界中真实的物体，不仅噪声很大，而且物体的比例、特征都不尽相同，这为识别带来很大困难。直接的线性模型如Softmax 在CIFAR-10 上表现得很差。</p>
+<h2 id="LeNet代码"><a href="#LeNet代码" class="headerlink" title="LeNet代码"></a>LeNet代码</h2><pre class="line-numbers language-none"><code class="language-none">import torch
+import torch.nn as nn
+from torch import optim
+from torch.utils.data import DataLoader
+from torchvision import transforms
+from torchvision import datasets
+from tqdm import tqdm
+
+transform &#x3D; transforms.Compose([
+    transforms.RandomHorizontalFlip(),
+    transforms.ToTensor()
+    ])
+
+# 定义超参数
+BATCH_SIZE &#x3D; 128  # 批的大小
+# CIFAR-10
+train_dataset &#x3D; datasets.CIFAR10(&#39;.&#x2F;data1&#39;, train&#x3D;True, transform&#x3D;transform, download&#x3D;False)
+train_loader &#x3D; DataLoader(train_dataset, batch_size&#x3D;BATCH_SIZE, shuffle&#x3D;True, num_workers&#x3D;0, pin_memory&#x3D;True)
+test_dataset &#x3D; datasets.CIFAR10(&#39;.&#x2F;data1&#39;, train&#x3D;False, transform&#x3D;transform, download&#x3D;False)
+test_loader &#x3D; DataLoader(test_dataset, batch_size&#x3D;BATCH_SIZE, shuffle&#x3D;False, num_workers&#x3D;0, pin_memory&#x3D;True)
+classes &#x3D; (&#39;plane&#39;, &#39;car&#39;, &#39;bird&#39;, &#39;cat&#39;, &#39;deer&#39;, &#39;dog&#39;, &#39;frog&#39;, &#39;horse&#39;, &#39;ship&#39;, &#39;truck&#39;)
+
+# 定义网络模型
+class LeNet(nn.Module):
+    def __init__(self):
+        super(LeNet, self).__init__()
+
+        # 卷积层
+        self.cnn &#x3D; nn.Sequential(
+            # 卷积层1，3通道输入，6个卷积核，核大小5*5
+            # 经过该层图像大小变为32-5+1，28*28
+            # 经2*2最大池化，图像变为14*14
+            nn.Conv2d(3, 6, 5),
+            nn.ReLU(),
+            nn.MaxPool2d(2),
+
+            # 卷积层2，6输入通道，16个卷积核，核大小5*5
+            # 经过该层图像变为14-5+1，10*10
+            # 经2*2最大池化，图像变为5*5
+            nn.Conv2d(6, 16, 5),
+            nn.ReLU(),
+            nn.MaxPool2d(2)
+        )
+
+        # 全连接层
+        self.fc &#x3D; nn.Sequential(
+            # 16个feature，每个feature 5*5
+            nn.Linear(16 * 5 * 5, 120),
+            nn.ReLU(),
+            nn.Linear(120, 84),
+            nn.ReLU(),
+            nn.Linear(84, 10)
+        )
+
+    def forward(self, x):
+        x &#x3D; self.cnn(x)
+
+        # x.size()[0]: batch size
+        x &#x3D; x.view(x.size()[0], -1)
+        x &#x3D; self.fc(x)
+
+        return x
+# 创建模型
+net &#x3D; LeNet().to(&#39;cuda&#39;)
+# 定义优化器和损失函数
+criterion &#x3D; nn.CrossEntropyLoss()  # 交叉式损失函数
+optimizer &#x3D; optim.SGD(net.parameters(), lr&#x3D;0.001, momentum&#x3D;0.9)  # 优化器
+
+
+# 定义轮数
+EPOCHS &#x3D; 50
+
+for epoch in range(EPOCHS):
+    train_loss &#x3D; 0.0
+    for i, (datas, labels) in tqdm(enumerate(train_loader)):
+        datas, labels &#x3D; datas.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
+        # 梯度置零
+        optimizer.zero_grad()
+        # 训练
+        outputs &#x3D; net(datas)
+        # 计算损失
+        loss &#x3D; criterion(outputs, labels)
+        # 反向传播
+        loss.backward()
+        # 参数更新
+        optimizer.step()
+        # 累计损失
+        train_loss +&#x3D; loss.item()
+    print(&quot;Epoch : &#123;&#125; , Batch :&#123;&#125; , Loss : &#123;:.3f&#125;&quot;.format(epoch+1, i+1, train_loss&#x2F;len(train_loader.dataset)))
+
+
+# 保存模型
+PATH &#x3D; &#39;cifar_net.pth&#39;
+torch.save(net.state_dict(), PATH)
+
+# 加载模型
+model &#x3D; net.to(&#39;cuda&#39;)
+model.load_state_dict(torch.load(PATH))     # .load_state_dict() 加载模型
+
+# 测试
+correct &#x3D; 0
+total &#x3D; 0
+with torch.no_grad():
+    for i, (datas, labels) in enumerate(test_loader):
+        datas, labels &#x3D; datas.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
+        # 输出
+        outputs &#x3D; model(datas)  # outputs.data.shape --&gt; torch.Size([128, 10])
+        _, predicted &#x3D; torch.max(outputs.data, dim&#x3D;1)   # 第一个是值的张量，第二个是序号的张量
+        # 累计数据量
+        total +&#x3D; labels.size(0)     # labels.size() --&gt; torch.Size([128]), labels.size(0) --&gt; 128
+        # 比较有多少个预测正确
+        correct +&#x3D; (predicted &#x3D;&#x3D; labels).sum()  # 相同为1，不同为0，利用sum()求总和
+    print(&#39;在10000张测试集图片上的准确率：&#123;:.3f&#125;&#39;.format(correct &#x2F; total * 100))
+
+# 显示每一类预测的概率
+class_correct &#x3D; list(0. for i in range(10))
+total &#x3D; list(0. for i in range(10))
+with torch.no_grad():
+    for (images, labels) in test_loader:
+        # 输出
+        images, labels &#x3D; images.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
+        outputs &#x3D; model(images)
+        # 获取到每一行最大值的索引
+        _, predicted &#x3D; torch.max(outputs.data, dim&#x3D;1)
+        c &#x3D; (predicted &#x3D;&#x3D; labels).squeeze()     # squeeze() 去掉0维[默认]， unsqueeze() 增加一维
+        if labels.shape[0] &#x3D;&#x3D; 128:
+            for i in range(BATCH_SIZE):
+                label &#x3D; labels[i]   # 获取每一个label
+                class_correct[label] +&#x3D; c[i].item()     # 累计True的个数，注意 1+True&#x3D;2， 1+False&#x3D;1
+                total[label] +&#x3D; 1   # 该类总的个数
+
+# 输出正确率
+for i in range(10):
+    print(&#39;正确率 ： %5s : %2d %%&#39; % (classes[i], 100 * class_correct[i] &#x2F; total[i]))
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="AlexNet"><a href="#AlexNet" class="headerlink" title="AlexNet"></a>AlexNet</h2><pre class="line-numbers language-none"><code class="language-none">class AlexNet(nn.Module):
+    def __init__(self, num_classes):
+        super(AlexNet, self).__init__()
+        self.features &#x3D; nn.Sequential(
+            nn.Conv2d(3, 64, kernel_size&#x3D;3, stride&#x3D;2, padding&#x3D;1),  # 修改了这个地方，不知道为什么就对了
+            # raw kernel_size&#x3D;11, stride&#x3D;4, padding&#x3D;2. For use img size 224 * 224.
+            nn.ReLU(inplace&#x3D;True),
+            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2),
+
+            nn.Conv2d(64, 192, kernel_size&#x3D;5, padding&#x3D;2),
+            nn.ReLU(inplace&#x3D;True),
+            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2),
+
+            nn.Conv2d(192, 384, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.ReLU(inplace&#x3D;True),
+
+            nn.Conv2d(384, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.ReLU(inplace&#x3D;True),
+
+            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.ReLU(inplace&#x3D;True),
+            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2), )
+        self.classifier &#x3D; nn.Sequential(
+            nn.Dropout(),
+            nn.Linear(256 * 1 * 1, 4096),
+            nn.ReLU(inplace&#x3D;True),
+            nn.Dropout(),
+            nn.Linear(4096, 4096),
+            nn.ReLU(inplace&#x3D;True),
+            nn.Linear(4096, num_classes), )
+
+    def forward(self, x):
+        x &#x3D; self.features(x)
+        x &#x3D; x.view(x.size(0), 256 * 1 * 1)
+        x &#x3D; self.classifier(x)
+        # return F.log_softmax(inputs, dim&#x3D;3)
+        return x<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="VGG"><a href="#VGG" class="headerlink" title="VGG"></a>VGG</h2><h3 id="VGG16"><a href="#VGG16" class="headerlink" title="VGG16"></a>VGG16</h3><pre class="line-numbers language-none"><code class="language-none">
+# 定义网络模型
+class VGG16(nn.Module):
+    def __init__(self, num_classes&#x3D;1000):
+        super(VGG16, self).__init__()
+        self.features &#x3D; nn.Sequential(
+            # 1
+            nn.Conv2d(3, 64, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(True),
+            # 2
+            nn.Conv2d(64, 64, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+            # 3
+            nn.Conv2d(64, 128, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(128),
+            nn.ReLU(True),
+            # 4
+            nn.Conv2d(128, 128, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(128),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+            # 5
+            nn.Conv2d(128, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(256),
+            nn.ReLU(True),
+            # 6
+            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(256),
+            nn.ReLU(True),
+            # 7
+            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(256),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+            # 8
+            nn.Conv2d(256, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            # 9
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            # 10
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+            # 11
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            # 12
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            # 13
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            # nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+        )
+        self.classifier &#x3D; nn.Sequential(
+            # 14
+            nn.Linear(512, 4096),
+            nn.ReLU(True),
+            nn.Dropout(),
+            # 15
+            nn.Linear(4096, 4096),
+            nn.ReLU(True),
+            nn.Dropout(),
+            # 16
+            nn.Linear(4096, num_classes),
+        )
+        # self.classifier &#x3D; nn.Linear(512, 10)
+
+    def forward(self, x):
+        out &#x3D; self.features(x)
+        out &#x3D; out.view(out.size(0), -1)
+        out &#x3D; self.classifier(out)
+        return out
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="VGG19"><a href="#VGG19" class="headerlink" title="VGG19"></a>VGG19</h3><pre class="line-numbers language-none"><code class="language-none">
+&#39;&#39;&#39;
+创建VGG块
+参数分别为输入通道数，输出通道数，卷积层个数，是否做最大池化
+&#39;&#39;&#39;
+def make_vgg_block(in_channel, out_channel, convs, pool&#x3D;True):
+    net &#x3D; []
+
+    # 不改变图片尺寸卷积
+    net.append(nn.Conv2d(in_channel, out_channel, kernel_size&#x3D;3, padding&#x3D;1))
+    net.append(nn.BatchNorm2d(out_channel))
+    net.append(nn.ReLU(inplace&#x3D;True))
+
+    for i in range(convs - 1):
+        # 不改变图片尺寸卷积
+        net.append(nn.Conv2d(out_channel, out_channel, kernel_size&#x3D;3, padding&#x3D;1))
+        net.append(nn.BatchNorm2d(out_channel))
+        net.append(nn.ReLU(inplace&#x3D;True))
+
+    if pool:
+        # 2*2最大池化，图片变为w&#x2F;2 * h&#x2F;2
+        net.append(nn.MaxPool2d(2))
+
+    return nn.Sequential(*net)
+
+# 定义网络模型
+class VGG19Net(nn.Module):
+    def __init__(self):
+        super(VGG19Net, self).__init__()
+
+        net &#x3D; []
+
+        # 输入32*32，输出16*16
+        net.append(make_vgg_block(3, 64, 2))
+
+        # 输出8*8
+        net.append(make_vgg_block(64, 128, 2))
+
+        # 输出4*4
+        net.append(make_vgg_block(128, 256, 4))
+
+        # 输出2*2
+        net.append(make_vgg_block(256, 512, 4))
+
+        # 无池化层，输出保持2*2
+        net.append(make_vgg_block(512, 512, 4, False))
+
+        self.cnn &#x3D; nn.Sequential(*net)
+
+        self.fc &#x3D; nn.Sequential(
+            # 512个feature，每个feature 2*2
+            nn.Linear(512*2*2, 256),
+            nn.ReLU(),
+
+            nn.Linear(256, 256),
+            nn.ReLU(),
+
+            nn.Linear(256, 10)
+        )
+
+    def forward(self, x):
+        x &#x3D; self.cnn(x)
+        # x.size()[0]: batch size
+        x &#x3D; x.view(x.size()[0], -1)
+        x &#x3D; self.fc(x)
+
+        return x
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="ResNet34"><a href="#ResNet34" class="headerlink" title="ResNet34"></a>ResNet34</h2><h3 id="ResNet34-model1"><a href="#ResNet34-model1" class="headerlink" title="ResNet34 model1"></a>ResNet34 model1</h3><pre class="line-numbers language-none"><code class="language-none">class ResBlock(nn.Module):
+    def __init__(self, in_channels, out_channels, stride&#x3D;1):
+        super(ResBlock, self).__init__()
+
+        # 残差块的第一个卷积
+        # 通道数变换in-&gt;out，每一层（除第一层外）的第一个block
+        # 图片尺寸变换：stride&#x3D;2时，w-3+2 &#x2F; 2 + 1 &#x3D; w&#x2F;2，w&#x2F;2 * w&#x2F;2
+        # stride&#x3D;1时尺寸不变，w-3+2 &#x2F; 1 + 1 &#x3D; w
+        self.conv1 &#x3D; nn.Conv2d(in_channels, out_channels, kernel_size&#x3D;3, stride&#x3D;stride, padding&#x3D;1)
+        self.bn1 &#x3D; nn.BatchNorm2d(out_channels)
+        self.relu &#x3D; nn.ReLU(inplace&#x3D;True)
+
+        # 残差块的第二个卷积
+        # 通道数、图片尺寸均不变
+        self.conv2 &#x3D; nn.Conv2d(out_channels, out_channels, kernel_size&#x3D;3, stride&#x3D;1, padding&#x3D;1)
+        self.bn2 &#x3D; nn.BatchNorm2d(out_channels)
+
+        # 残差块的shortcut
+        # 如果残差块的输入输出通道数不同，则需要变换通道数及图片尺寸，以和residual部分相加
+        # 输出：通道数*2 图片尺寸&#x2F;2
+        if in_channels !&#x3D; out_channels:
+            self.downsample &#x3D; nn.Sequential(
+                nn.Conv2d(in_channels, out_channels, kernel_size&#x3D;1, stride&#x3D;2),
+                nn.BatchNorm2d(out_channels)
+            )
+        else:
+            # 通道数相同，无需做变换，在forward中identity &#x3D; x
+            self.downsample &#x3D; None
+
+    def forward(self, x):
+        identity &#x3D; x
+
+        out &#x3D; self.conv1(x)
+        out &#x3D; self.bn1(out)
+        out &#x3D; self.relu(out)
+
+        out &#x3D; self.conv2(out)
+        out &#x3D; self.bn2(out)
+
+        if self.downsample is not None:
+            identity &#x3D; self.downsample(x)
+
+        out +&#x3D; identity
+        out &#x3D; self.relu(out)
+
+        return out
+
+
+&#39;&#39;&#39;
+# 定义网络模型
+&#39;&#39;&#39;
+#定义网络结构
+
+class ResNet34(nn.Module):
+    def __init__(self, block):
+        super(ResNet34, self).__init__()
+
+        # 初始卷积层核池化层
+        self.first &#x3D; nn.Sequential(
+            # 卷基层1：7*7kernel，2stride，3padding，outmap：32-7+2*3 &#x2F; 2 + 1，16*16
+            nn.Conv2d(3, 64, 7, 2, 3),
+            nn.BatchNorm2d(64),
+            nn.ReLU(inplace&#x3D;True),
+
+            # 最大池化，3*3kernel，1stride（32的原始输入图片较小，不再缩小尺寸），1padding，
+            # outmap：16-3+2*1 &#x2F; 1 + 1，16*16
+            nn.MaxPool2d(3, 1, 1)
+        )
+
+        # 第一层，通道数不变
+        self.layer1 &#x3D; self.make_layer(block, 64, 64, 3, 1)
+
+        # 第2、3、4层，通道数*2，图片尺寸&#x2F;2
+        self.layer2 &#x3D; self.make_layer(block, 64, 128, 4, 2)  # 输出8*8
+        self.layer3 &#x3D; self.make_layer(block, 128, 256, 6, 2)  # 输出4*4
+        self.layer4 &#x3D; self.make_layer(block, 256, 512, 3, 2)  # 输出2*2
+
+        self.avg_pool &#x3D; nn.AvgPool2d(2)  # 输出512*1
+        self.fc &#x3D; nn.Linear(512, 10)
+
+    def make_layer(self, block, in_channels, out_channels, block_num, stride):
+        layers &#x3D; []
+
+        # 每一层的第一个block，通道数可能不同
+        layers.append(block(in_channels, out_channels, stride))
+
+        # 每一层的其他block，通道数不变，图片尺寸不变
+        for i in range(block_num - 1):
+            layers.append(block(out_channels, out_channels, 1))
+
+        return nn.Sequential(*layers)
+
+    def forward(self, x):
+        x &#x3D; self.first(x)
+        x &#x3D; self.layer1(x)
+        x &#x3D; self.layer2(x)
+        x &#x3D; self.layer3(x)
+        x &#x3D; self.layer4(x)
+        x &#x3D; self.avg_pool(x)
+
+        # x.size()[0]: batch size
+        x &#x3D; x.view(x.size()[0], -1)
+        x &#x3D; self.fc(x)
+
+        return x
+# 创建模型
+net &#x3D; ResNet34(ResBlock).to(&#39;cuda&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="ResNet34-model2"><a href="#ResNet34-model2" class="headerlink" title="ResNet34 model2"></a>ResNet34 model2</h3><pre class="line-numbers language-none"><code class="language-none">
+#定义网络结构
+class ResNet34(nn.Module):
+    def __init__(self, block):
+        super(ResNet34, self).__init__()
+
+        # 初始卷积层核池化层
+        self.first &#x3D; nn.Sequential(
+            # 卷基层1：3*3kernel，1stride，1padding，outmap：32-3+1*2 &#x2F; 1 + 1，32*32
+            nn.Conv2d(3, 64, 3, 1, 1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(inplace&#x3D;True),
+
+            # 最大池化，3*3kernel，1stride（保持尺寸），1padding，
+            # outmap：32-3+2*1 &#x2F; 1 + 1，32*32
+            nn.MaxPool2d(3, 1, 1)
+        )
+
+        # 第一层，通道数不变
+        self.layer1 &#x3D; self.make_layer(block, 64, 64, 3, 1)
+
+        # 第2、3、4层，通道数*2，图片尺寸&#x2F;2
+        self.layer2 &#x3D; self.make_layer(block, 64, 128, 4, 2)  # 输出16*16
+        self.layer3 &#x3D; self.make_layer(block, 128, 256, 6, 2)  # 输出8*8
+        self.layer4 &#x3D; self.make_layer(block, 256, 512, 3, 2)  # 输出4*4
+
+        self.avg_pool &#x3D; nn.AvgPool2d(4)  # 输出512*1
+        self.fc &#x3D; nn.Linear(512, 10)
+
+    def make_layer(self, block, in_channels, out_channels, block_num, stride):
+        layers &#x3D; []
+
+        # 每一层的第一个block，通道数可能不同
+        layers.append(block(in_channels, out_channels, stride))
+
+        # 每一层的其他block，通道数不变，图片尺寸不变
+        for i in range(block_num - 1):
+            layers.append(block(out_channels, out_channels, 1))
+
+        return nn.Sequential(*layers)
+
+    def forward(self, x):
+        x &#x3D; self.first(x)
+        x &#x3D; self.layer1(x)
+        x &#x3D; self.layer2(x)
+        x &#x3D; self.layer3(x)
+        x &#x3D; self.layer4(x)
+        x &#x3D; self.avg_pool(x)
+
+        # x.size()[0]: batch size
+        x &#x3D; x.view(x.size()[0], -1)
+        x &#x3D; self.fc(x)
+
+        return x
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>若第一次运行可以<code>train_dataset = datasets.CIFAR10(&#39;./data1&#39;, train=True, transform=transform, download=False)</code>将download改为true.</li>
+<li>其他网络在LeNet基础上替换网络即可运行。</li>
+<li>参考我之前的文章安装环境<a href="https://www.mmrsl.cn/2021/10/22/ubuntu-NVIDIA30xx%E6%98%BE%E5%8D%A1%E5%AE%89%E8%A3%85/">Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装</a></li>
+</ol>
+<h3 id="数据扩充"><a href="#数据扩充" class="headerlink" title="数据扩充"></a>数据扩充</h3><pre class="line-numbers language-none"><code class="language-none">transform &#x3D; transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
+
+transform_train &#x3D; transforms.Compose([
+    # 对原始32*32图像四周各填充4个0像素（40*40），然后随机裁剪成32*32
+    transforms.RandomCrop(32, padding&#x3D;4),
+    # 按0.5的概率水平翻转图片
+    transforms.RandomHorizontalFlip(),
+    transforms.ToTensor(),
+    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
+
+transform_test &#x3D; transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="不同网络测试结果"><a href="#不同网络测试结果" class="headerlink" title="不同网络测试结果"></a>不同网络测试结果</h2><blockquote>
+<p>EPOCHS=50</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>网络类型</th>
+<th>LeNet</th>
+<th>AlexNet</th>
+<th>VGG19</th>
+<th>VGG16</th>
+<th>ResNet34 1</th>
+<th>ResNet34 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>准确度</td>
+<td>58.990%</td>
+<td>64.55%</td>
+<td>84.610%</td>
+<td>83.670%</td>
+<td>78.790%</td>
+<td>85.14%</td>
+</tr>
+<tr>
+<td>loss</td>
+<td>0.009</td>
+<td>0.007</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>plane 准确度</td>
+<td>66%</td>
+<td>81%</td>
+<td>87%</td>
+<td>88%</td>
+<td>83%</td>
+<td>88%</td>
+</tr>
+<tr>
+<td>car 准确度</td>
+<td>70%</td>
+<td>85%</td>
+<td>90%</td>
+<td>90%</td>
+<td>84%</td>
+<td>93%</td>
+</tr>
+<tr>
+<td>bird 准确度</td>
+<td>48%</td>
+<td>56%</td>
+<td>74%</td>
+<td>73%</td>
+<td>69%</td>
+<td>79%</td>
+</tr>
+<tr>
+<td>cat 准确度</td>
+<td>39%</td>
+<td>32%</td>
+<td>67%</td>
+<td>71%</td>
+<td>59%</td>
+<td>70%</td>
+</tr>
+<tr>
+<td>deer 准确度</td>
+<td>58%</td>
+<td>66%</td>
+<td>86%</td>
+<td>86%</td>
+<td>74%</td>
+<td>82%</td>
+</tr>
+<tr>
+<td>dog 准确度</td>
+<td>44%</td>
+<td>46%</td>
+<td>77%</td>
+<td>77%</td>
+<td>68%</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>frog 准确度</td>
+<td>72%</td>
+<td>65%</td>
+<td>90%</td>
+<td>86%</td>
+<td>84%</td>
+<td>89%</td>
+</tr>
+<tr>
+<td>horse 准确度</td>
+<td>65%</td>
+<td>64%</td>
+<td>89%</td>
+<td>83%</td>
+<td>82%</td>
+<td>89%</td>
+</tr>
+<tr>
+<td>ship 准确度</td>
+<td>69%</td>
+<td>79%</td>
+<td>91%</td>
+<td>92%</td>
+<td>89%</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>truck 准确度</td>
+<td>59%</td>
+<td>64%</td>
+<td>90%</td>
+<td>90%</td>
+<td>86%</td>
+<td>90%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>扩充准确度 EPOCHS=50</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>网络类型</th>
+<th>VGG19</th>
+<th>ResNet34 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>准确度</td>
+<td>87.220%</td>
+<td>87.09%</td>
+</tr>
+<tr>
+<td>loss</td>
+<td>0.001</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>plane 准确度</td>
+<td>85%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>car 准确度</td>
+<td>93%</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>bird 准确度</td>
+<td>80%</td>
+<td>82%</td>
+</tr>
+<tr>
+<td>cat 准确度</td>
+<td>76%</td>
+<td>74%</td>
+</tr>
+<tr>
+<td>deer 准确度</td>
+<td>86%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>dog 准确度</td>
+<td>82%</td>
+<td>83%</td>
+</tr>
+<tr>
+<td>frog 准确度</td>
+<td>90%</td>
+<td>91%</td>
+</tr>
+<tr>
+<td>horse 准确度</td>
+<td>88%</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>ship 准确度</td>
+<td>93%</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>truck 准确度</td>
+<td>94%</td>
+<td>91%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>扩充准确度 EPOCHS=100</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">VGG19 在10000张测试集图片上的准确率：88.840
+正确率 ： plane : 91 %
+正确率 ：   car : 96 %
+正确率 ：  bird : 85 %
+正确率 ：   cat : 78 %
+正确率 ：  deer : 88 %
+正确率 ：   dog : 79 %
+正确率 ：  frog : 90 %
+正确率 ： horse : 93 %
+正确率 ：  ship : 94 %
+正确率 ： truck : 90 %
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>网络类型</th>
+<th>VGG19</th>
+<th>ResNet34 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>准确度</td>
+<td>88.84%</td>
+<td>88.05%</td>
+</tr>
+<tr>
+<td>loss</td>
+<td>0.000</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>plane 准确度</td>
+<td>91%</td>
+<td>89%</td>
+</tr>
+<tr>
+<td>car 准确度</td>
+<td>96%</td>
+<td>93%</td>
+</tr>
+<tr>
+<td>bird 准确度</td>
+<td>85%</td>
+<td>82%</td>
+</tr>
+<tr>
+<td>cat 准确度</td>
+<td>78%</td>
+<td>79%</td>
+</tr>
+<tr>
+<td>deer 准确度</td>
+<td>88%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>dog 准确度</td>
+<td>79%</td>
+<td>79%</td>
+</tr>
+<tr>
+<td>frog 准确度</td>
+<td>90%</td>
+<td>91%</td>
+</tr>
+<tr>
+<td>horse 准确度</td>
+<td>93%</td>
+<td>91%</td>
+</tr>
+<tr>
+<td>ship 准确度</td>
+<td>94%</td>
+<td>93%</td>
+</tr>
+<tr>
+<td>truck 准确度</td>
+<td>90%</td>
+<td>93%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>以上结果可以看出<code>ResNet34 2&gt;VGG19&gt;VGG16&gt;ResNet34 1&gt;AlexNet&gt;LeNet</code></p>
+]]></content>
+      <categories>
+        <category>pytorch</category>
+      </categories>
+      <tags>
+        <tag>pytorch</tag>
       </tags>
   </entry>
   <entry>
@@ -3464,901 +4285,6 @@ public class TestThread &#123;
       </tags>
   </entry>
   <entry>
-    <title>LeNet_AlexNet_VGG_ResNet34_on_CIFAR10</title>
-    <url>/2021/11/15/LeNet-AlexNet-VGG-ResNet34-on-CIFAR10/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度"><a href="#LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度" class="headerlink" title="LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度"></a>LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度</h1><p>忽然对CNN卷积神经网络比较感兴趣，于是选择了CIFAR-10数据集进行机器视觉的学习。</p>
-<span id="more"></span>
-<h2 id="CIFAR-10"><a href="#CIFAR-10" class="headerlink" title="CIFAR-10"></a>CIFAR-10</h2><p><img src="https://www.mmrsl.cn/download/img/cifar10/1.png" alt=""></p>
-<p>CIFAR-10是一个更接近普适物体的彩色图像数据集。CIFAR-10 是一个用于识别普适物体的小型数据集。一共包含10 个类别的RGB 彩色图片：飞机（ airplane ）、汽车（ automobile ）、鸟类（ bird ）、猫（ cat ）、鹿（ deer ）、狗（ dog ）、蛙类（ frog ）、马（ horse ）、船（ ship ）和卡车（ truck ）。</p>
-<p>每个图片的尺寸为32 × 32 ，每个类别有6000个图像，数据集中一共有50000 张训练图片和10000 张测试图片。</p>
-<h2 id="MNIST数据集"><a href="#MNIST数据集" class="headerlink" title="MNIST数据集"></a>MNIST数据集</h2><p>MNIST数据集是机器学习领域中非常经典的一个数据集，训练数据集包含 60,000 个样本, 测试数据集包含 10,000 样本. 在 MNIST 数据集中的每张图片由 28 x 28 个像素点构成, 每个像素点用一个灰度值表示. </p>
-<p><img src="https://www.mmrsl.cn/download/img/cifar10/2.png" alt=""></p>
-<h2 id="CIFAR-10和与MNIST之间的区别"><a href="#CIFAR-10和与MNIST之间的区别" class="headerlink" title="CIFAR-10和与MNIST之间的区别"></a>CIFAR-10和与MNIST之间的区别</h2><p>与MNIST数据集中目比， CIFAR-10 真高以下不同点</p>
-<p>(1)、CIFAR-10 是3 通道的彩色RGB 图像，而MNIST 是灰度图像。<br>(2)、CIFAR-10 的图片尺寸为32 × 32 ， 而MNIST 的图片尺寸为28 × 28 ，比MNIST 稍大。<br>(3)、相比于手写字符， CIFAR-10 含有的是现实世界中真实的物体，不仅噪声很大，而且物体的比例、特征都不尽相同，这为识别带来很大困难。直接的线性模型如Softmax 在CIFAR-10 上表现得很差。</p>
-<h2 id="LeNet代码"><a href="#LeNet代码" class="headerlink" title="LeNet代码"></a>LeNet代码</h2><pre class="line-numbers language-none"><code class="language-none">import torch
-import torch.nn as nn
-from torch import optim
-from torch.utils.data import DataLoader
-from torchvision import transforms
-from torchvision import datasets
-from tqdm import tqdm
-
-transform &#x3D; transforms.Compose([
-    transforms.RandomHorizontalFlip(),
-    transforms.ToTensor()
-    ])
-
-# 定义超参数
-BATCH_SIZE &#x3D; 128  # 批的大小
-# CIFAR-10
-train_dataset &#x3D; datasets.CIFAR10(&#39;.&#x2F;data1&#39;, train&#x3D;True, transform&#x3D;transform, download&#x3D;False)
-train_loader &#x3D; DataLoader(train_dataset, batch_size&#x3D;BATCH_SIZE, shuffle&#x3D;True, num_workers&#x3D;0, pin_memory&#x3D;True)
-test_dataset &#x3D; datasets.CIFAR10(&#39;.&#x2F;data1&#39;, train&#x3D;False, transform&#x3D;transform, download&#x3D;False)
-test_loader &#x3D; DataLoader(test_dataset, batch_size&#x3D;BATCH_SIZE, shuffle&#x3D;False, num_workers&#x3D;0, pin_memory&#x3D;True)
-classes &#x3D; (&#39;plane&#39;, &#39;car&#39;, &#39;bird&#39;, &#39;cat&#39;, &#39;deer&#39;, &#39;dog&#39;, &#39;frog&#39;, &#39;horse&#39;, &#39;ship&#39;, &#39;truck&#39;)
-
-# 定义网络模型
-class LeNet(nn.Module):
-    def __init__(self):
-        super(LeNet, self).__init__()
-
-        # 卷积层
-        self.cnn &#x3D; nn.Sequential(
-            # 卷积层1，3通道输入，6个卷积核，核大小5*5
-            # 经过该层图像大小变为32-5+1，28*28
-            # 经2*2最大池化，图像变为14*14
-            nn.Conv2d(3, 6, 5),
-            nn.ReLU(),
-            nn.MaxPool2d(2),
-
-            # 卷积层2，6输入通道，16个卷积核，核大小5*5
-            # 经过该层图像变为14-5+1，10*10
-            # 经2*2最大池化，图像变为5*5
-            nn.Conv2d(6, 16, 5),
-            nn.ReLU(),
-            nn.MaxPool2d(2)
-        )
-
-        # 全连接层
-        self.fc &#x3D; nn.Sequential(
-            # 16个feature，每个feature 5*5
-            nn.Linear(16 * 5 * 5, 120),
-            nn.ReLU(),
-            nn.Linear(120, 84),
-            nn.ReLU(),
-            nn.Linear(84, 10)
-        )
-
-    def forward(self, x):
-        x &#x3D; self.cnn(x)
-
-        # x.size()[0]: batch size
-        x &#x3D; x.view(x.size()[0], -1)
-        x &#x3D; self.fc(x)
-
-        return x
-# 创建模型
-net &#x3D; LeNet().to(&#39;cuda&#39;)
-# 定义优化器和损失函数
-criterion &#x3D; nn.CrossEntropyLoss()  # 交叉式损失函数
-optimizer &#x3D; optim.SGD(net.parameters(), lr&#x3D;0.001, momentum&#x3D;0.9)  # 优化器
-
-
-# 定义轮数
-EPOCHS &#x3D; 50
-
-for epoch in range(EPOCHS):
-    train_loss &#x3D; 0.0
-    for i, (datas, labels) in tqdm(enumerate(train_loader)):
-        datas, labels &#x3D; datas.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
-        # 梯度置零
-        optimizer.zero_grad()
-        # 训练
-        outputs &#x3D; net(datas)
-        # 计算损失
-        loss &#x3D; criterion(outputs, labels)
-        # 反向传播
-        loss.backward()
-        # 参数更新
-        optimizer.step()
-        # 累计损失
-        train_loss +&#x3D; loss.item()
-    print(&quot;Epoch : &#123;&#125; , Batch :&#123;&#125; , Loss : &#123;:.3f&#125;&quot;.format(epoch+1, i+1, train_loss&#x2F;len(train_loader.dataset)))
-
-
-# 保存模型
-PATH &#x3D; &#39;cifar_net.pth&#39;
-torch.save(net.state_dict(), PATH)
-
-# 加载模型
-model &#x3D; net.to(&#39;cuda&#39;)
-model.load_state_dict(torch.load(PATH))     # .load_state_dict() 加载模型
-
-# 测试
-correct &#x3D; 0
-total &#x3D; 0
-with torch.no_grad():
-    for i, (datas, labels) in enumerate(test_loader):
-        datas, labels &#x3D; datas.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
-        # 输出
-        outputs &#x3D; model(datas)  # outputs.data.shape --&gt; torch.Size([128, 10])
-        _, predicted &#x3D; torch.max(outputs.data, dim&#x3D;1)   # 第一个是值的张量，第二个是序号的张量
-        # 累计数据量
-        total +&#x3D; labels.size(0)     # labels.size() --&gt; torch.Size([128]), labels.size(0) --&gt; 128
-        # 比较有多少个预测正确
-        correct +&#x3D; (predicted &#x3D;&#x3D; labels).sum()  # 相同为1，不同为0，利用sum()求总和
-    print(&#39;在10000张测试集图片上的准确率：&#123;:.3f&#125;&#39;.format(correct &#x2F; total * 100))
-
-# 显示每一类预测的概率
-class_correct &#x3D; list(0. for i in range(10))
-total &#x3D; list(0. for i in range(10))
-with torch.no_grad():
-    for (images, labels) in test_loader:
-        # 输出
-        images, labels &#x3D; images.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
-        outputs &#x3D; model(images)
-        # 获取到每一行最大值的索引
-        _, predicted &#x3D; torch.max(outputs.data, dim&#x3D;1)
-        c &#x3D; (predicted &#x3D;&#x3D; labels).squeeze()     # squeeze() 去掉0维[默认]， unsqueeze() 增加一维
-        if labels.shape[0] &#x3D;&#x3D; 128:
-            for i in range(BATCH_SIZE):
-                label &#x3D; labels[i]   # 获取每一个label
-                class_correct[label] +&#x3D; c[i].item()     # 累计True的个数，注意 1+True&#x3D;2， 1+False&#x3D;1
-                total[label] +&#x3D; 1   # 该类总的个数
-
-# 输出正确率
-for i in range(10):
-    print(&#39;正确率 ： %5s : %2d %%&#39; % (classes[i], 100 * class_correct[i] &#x2F; total[i]))
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="AlexNet"><a href="#AlexNet" class="headerlink" title="AlexNet"></a>AlexNet</h2><pre class="line-numbers language-none"><code class="language-none">class AlexNet(nn.Module):
-    def __init__(self, num_classes):
-        super(AlexNet, self).__init__()
-        self.features &#x3D; nn.Sequential(
-            nn.Conv2d(3, 64, kernel_size&#x3D;3, stride&#x3D;2, padding&#x3D;1),  # 修改了这个地方，不知道为什么就对了
-            # raw kernel_size&#x3D;11, stride&#x3D;4, padding&#x3D;2. For use img size 224 * 224.
-            nn.ReLU(inplace&#x3D;True),
-            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2),
-
-            nn.Conv2d(64, 192, kernel_size&#x3D;5, padding&#x3D;2),
-            nn.ReLU(inplace&#x3D;True),
-            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2),
-
-            nn.Conv2d(192, 384, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.ReLU(inplace&#x3D;True),
-
-            nn.Conv2d(384, 256, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.ReLU(inplace&#x3D;True),
-
-            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.ReLU(inplace&#x3D;True),
-            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2), )
-        self.classifier &#x3D; nn.Sequential(
-            nn.Dropout(),
-            nn.Linear(256 * 1 * 1, 4096),
-            nn.ReLU(inplace&#x3D;True),
-            nn.Dropout(),
-            nn.Linear(4096, 4096),
-            nn.ReLU(inplace&#x3D;True),
-            nn.Linear(4096, num_classes), )
-
-    def forward(self, x):
-        x &#x3D; self.features(x)
-        x &#x3D; x.view(x.size(0), 256 * 1 * 1)
-        x &#x3D; self.classifier(x)
-        # return F.log_softmax(inputs, dim&#x3D;3)
-        return x<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="VGG"><a href="#VGG" class="headerlink" title="VGG"></a>VGG</h2><h3 id="VGG16"><a href="#VGG16" class="headerlink" title="VGG16"></a>VGG16</h3><pre class="line-numbers language-none"><code class="language-none">
-# 定义网络模型
-class VGG16(nn.Module):
-    def __init__(self, num_classes&#x3D;1000):
-        super(VGG16, self).__init__()
-        self.features &#x3D; nn.Sequential(
-            # 1
-            nn.Conv2d(3, 64, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(64),
-            nn.ReLU(True),
-            # 2
-            nn.Conv2d(64, 64, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(64),
-            nn.ReLU(True),
-            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
-            # 3
-            nn.Conv2d(64, 128, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(128),
-            nn.ReLU(True),
-            # 4
-            nn.Conv2d(128, 128, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(128),
-            nn.ReLU(True),
-            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
-            # 5
-            nn.Conv2d(128, 256, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(256),
-            nn.ReLU(True),
-            # 6
-            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(256),
-            nn.ReLU(True),
-            # 7
-            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(256),
-            nn.ReLU(True),
-            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
-            # 8
-            nn.Conv2d(256, 512, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(512),
-            nn.ReLU(True),
-            # 9
-            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(512),
-            nn.ReLU(True),
-            # 10
-            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(512),
-            nn.ReLU(True),
-            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
-            # 11
-            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(512),
-            nn.ReLU(True),
-            # 12
-            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(512),
-            nn.ReLU(True),
-            # 13
-            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
-            # nn.BatchNorm2d(512),
-            nn.ReLU(True),
-            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
-        )
-        self.classifier &#x3D; nn.Sequential(
-            # 14
-            nn.Linear(512, 4096),
-            nn.ReLU(True),
-            nn.Dropout(),
-            # 15
-            nn.Linear(4096, 4096),
-            nn.ReLU(True),
-            nn.Dropout(),
-            # 16
-            nn.Linear(4096, num_classes),
-        )
-        # self.classifier &#x3D; nn.Linear(512, 10)
-
-    def forward(self, x):
-        out &#x3D; self.features(x)
-        out &#x3D; out.view(out.size(0), -1)
-        out &#x3D; self.classifier(out)
-        return out
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="VGG19"><a href="#VGG19" class="headerlink" title="VGG19"></a>VGG19</h3><pre class="line-numbers language-none"><code class="language-none">
-&#39;&#39;&#39;
-创建VGG块
-参数分别为输入通道数，输出通道数，卷积层个数，是否做最大池化
-&#39;&#39;&#39;
-def make_vgg_block(in_channel, out_channel, convs, pool&#x3D;True):
-    net &#x3D; []
-
-    # 不改变图片尺寸卷积
-    net.append(nn.Conv2d(in_channel, out_channel, kernel_size&#x3D;3, padding&#x3D;1))
-    net.append(nn.BatchNorm2d(out_channel))
-    net.append(nn.ReLU(inplace&#x3D;True))
-
-    for i in range(convs - 1):
-        # 不改变图片尺寸卷积
-        net.append(nn.Conv2d(out_channel, out_channel, kernel_size&#x3D;3, padding&#x3D;1))
-        net.append(nn.BatchNorm2d(out_channel))
-        net.append(nn.ReLU(inplace&#x3D;True))
-
-    if pool:
-        # 2*2最大池化，图片变为w&#x2F;2 * h&#x2F;2
-        net.append(nn.MaxPool2d(2))
-
-    return nn.Sequential(*net)
-
-# 定义网络模型
-class VGG19Net(nn.Module):
-    def __init__(self):
-        super(VGG19Net, self).__init__()
-
-        net &#x3D; []
-
-        # 输入32*32，输出16*16
-        net.append(make_vgg_block(3, 64, 2))
-
-        # 输出8*8
-        net.append(make_vgg_block(64, 128, 2))
-
-        # 输出4*4
-        net.append(make_vgg_block(128, 256, 4))
-
-        # 输出2*2
-        net.append(make_vgg_block(256, 512, 4))
-
-        # 无池化层，输出保持2*2
-        net.append(make_vgg_block(512, 512, 4, False))
-
-        self.cnn &#x3D; nn.Sequential(*net)
-
-        self.fc &#x3D; nn.Sequential(
-            # 512个feature，每个feature 2*2
-            nn.Linear(512*2*2, 256),
-            nn.ReLU(),
-
-            nn.Linear(256, 256),
-            nn.ReLU(),
-
-            nn.Linear(256, 10)
-        )
-
-    def forward(self, x):
-        x &#x3D; self.cnn(x)
-        # x.size()[0]: batch size
-        x &#x3D; x.view(x.size()[0], -1)
-        x &#x3D; self.fc(x)
-
-        return x
-
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="ResNet34"><a href="#ResNet34" class="headerlink" title="ResNet34"></a>ResNet34</h2><h3 id="ResNet34-model1"><a href="#ResNet34-model1" class="headerlink" title="ResNet34 model1"></a>ResNet34 model1</h3><pre class="line-numbers language-none"><code class="language-none">class ResBlock(nn.Module):
-    def __init__(self, in_channels, out_channels, stride&#x3D;1):
-        super(ResBlock, self).__init__()
-
-        # 残差块的第一个卷积
-        # 通道数变换in-&gt;out，每一层（除第一层外）的第一个block
-        # 图片尺寸变换：stride&#x3D;2时，w-3+2 &#x2F; 2 + 1 &#x3D; w&#x2F;2，w&#x2F;2 * w&#x2F;2
-        # stride&#x3D;1时尺寸不变，w-3+2 &#x2F; 1 + 1 &#x3D; w
-        self.conv1 &#x3D; nn.Conv2d(in_channels, out_channels, kernel_size&#x3D;3, stride&#x3D;stride, padding&#x3D;1)
-        self.bn1 &#x3D; nn.BatchNorm2d(out_channels)
-        self.relu &#x3D; nn.ReLU(inplace&#x3D;True)
-
-        # 残差块的第二个卷积
-        # 通道数、图片尺寸均不变
-        self.conv2 &#x3D; nn.Conv2d(out_channels, out_channels, kernel_size&#x3D;3, stride&#x3D;1, padding&#x3D;1)
-        self.bn2 &#x3D; nn.BatchNorm2d(out_channels)
-
-        # 残差块的shortcut
-        # 如果残差块的输入输出通道数不同，则需要变换通道数及图片尺寸，以和residual部分相加
-        # 输出：通道数*2 图片尺寸&#x2F;2
-        if in_channels !&#x3D; out_channels:
-            self.downsample &#x3D; nn.Sequential(
-                nn.Conv2d(in_channels, out_channels, kernel_size&#x3D;1, stride&#x3D;2),
-                nn.BatchNorm2d(out_channels)
-            )
-        else:
-            # 通道数相同，无需做变换，在forward中identity &#x3D; x
-            self.downsample &#x3D; None
-
-    def forward(self, x):
-        identity &#x3D; x
-
-        out &#x3D; self.conv1(x)
-        out &#x3D; self.bn1(out)
-        out &#x3D; self.relu(out)
-
-        out &#x3D; self.conv2(out)
-        out &#x3D; self.bn2(out)
-
-        if self.downsample is not None:
-            identity &#x3D; self.downsample(x)
-
-        out +&#x3D; identity
-        out &#x3D; self.relu(out)
-
-        return out
-
-
-&#39;&#39;&#39;
-# 定义网络模型
-&#39;&#39;&#39;
-#定义网络结构
-
-class ResNet34(nn.Module):
-    def __init__(self, block):
-        super(ResNet34, self).__init__()
-
-        # 初始卷积层核池化层
-        self.first &#x3D; nn.Sequential(
-            # 卷基层1：7*7kernel，2stride，3padding，outmap：32-7+2*3 &#x2F; 2 + 1，16*16
-            nn.Conv2d(3, 64, 7, 2, 3),
-            nn.BatchNorm2d(64),
-            nn.ReLU(inplace&#x3D;True),
-
-            # 最大池化，3*3kernel，1stride（32的原始输入图片较小，不再缩小尺寸），1padding，
-            # outmap：16-3+2*1 &#x2F; 1 + 1，16*16
-            nn.MaxPool2d(3, 1, 1)
-        )
-
-        # 第一层，通道数不变
-        self.layer1 &#x3D; self.make_layer(block, 64, 64, 3, 1)
-
-        # 第2、3、4层，通道数*2，图片尺寸&#x2F;2
-        self.layer2 &#x3D; self.make_layer(block, 64, 128, 4, 2)  # 输出8*8
-        self.layer3 &#x3D; self.make_layer(block, 128, 256, 6, 2)  # 输出4*4
-        self.layer4 &#x3D; self.make_layer(block, 256, 512, 3, 2)  # 输出2*2
-
-        self.avg_pool &#x3D; nn.AvgPool2d(2)  # 输出512*1
-        self.fc &#x3D; nn.Linear(512, 10)
-
-    def make_layer(self, block, in_channels, out_channels, block_num, stride):
-        layers &#x3D; []
-
-        # 每一层的第一个block，通道数可能不同
-        layers.append(block(in_channels, out_channels, stride))
-
-        # 每一层的其他block，通道数不变，图片尺寸不变
-        for i in range(block_num - 1):
-            layers.append(block(out_channels, out_channels, 1))
-
-        return nn.Sequential(*layers)
-
-    def forward(self, x):
-        x &#x3D; self.first(x)
-        x &#x3D; self.layer1(x)
-        x &#x3D; self.layer2(x)
-        x &#x3D; self.layer3(x)
-        x &#x3D; self.layer4(x)
-        x &#x3D; self.avg_pool(x)
-
-        # x.size()[0]: batch size
-        x &#x3D; x.view(x.size()[0], -1)
-        x &#x3D; self.fc(x)
-
-        return x
-# 创建模型
-net &#x3D; ResNet34(ResBlock).to(&#39;cuda&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="ResNet34-model2"><a href="#ResNet34-model2" class="headerlink" title="ResNet34 model2"></a>ResNet34 model2</h3><pre class="line-numbers language-none"><code class="language-none">
-#定义网络结构
-class ResNet34(nn.Module):
-    def __init__(self, block):
-        super(ResNet34, self).__init__()
-
-        # 初始卷积层核池化层
-        self.first &#x3D; nn.Sequential(
-            # 卷基层1：3*3kernel，1stride，1padding，outmap：32-3+1*2 &#x2F; 1 + 1，32*32
-            nn.Conv2d(3, 64, 3, 1, 1),
-            nn.BatchNorm2d(64),
-            nn.ReLU(inplace&#x3D;True),
-
-            # 最大池化，3*3kernel，1stride（保持尺寸），1padding，
-            # outmap：32-3+2*1 &#x2F; 1 + 1，32*32
-            nn.MaxPool2d(3, 1, 1)
-        )
-
-        # 第一层，通道数不变
-        self.layer1 &#x3D; self.make_layer(block, 64, 64, 3, 1)
-
-        # 第2、3、4层，通道数*2，图片尺寸&#x2F;2
-        self.layer2 &#x3D; self.make_layer(block, 64, 128, 4, 2)  # 输出16*16
-        self.layer3 &#x3D; self.make_layer(block, 128, 256, 6, 2)  # 输出8*8
-        self.layer4 &#x3D; self.make_layer(block, 256, 512, 3, 2)  # 输出4*4
-
-        self.avg_pool &#x3D; nn.AvgPool2d(4)  # 输出512*1
-        self.fc &#x3D; nn.Linear(512, 10)
-
-    def make_layer(self, block, in_channels, out_channels, block_num, stride):
-        layers &#x3D; []
-
-        # 每一层的第一个block，通道数可能不同
-        layers.append(block(in_channels, out_channels, stride))
-
-        # 每一层的其他block，通道数不变，图片尺寸不变
-        for i in range(block_num - 1):
-            layers.append(block(out_channels, out_channels, 1))
-
-        return nn.Sequential(*layers)
-
-    def forward(self, x):
-        x &#x3D; self.first(x)
-        x &#x3D; self.layer1(x)
-        x &#x3D; self.layer2(x)
-        x &#x3D; self.layer3(x)
-        x &#x3D; self.layer4(x)
-        x &#x3D; self.avg_pool(x)
-
-        # x.size()[0]: batch size
-        x &#x3D; x.view(x.size()[0], -1)
-        x &#x3D; self.fc(x)
-
-        return x
-
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
-<li>若第一次运行可以<code>train_dataset = datasets.CIFAR10(&#39;./data1&#39;, train=True, transform=transform, download=False)</code>将download改为true.</li>
-<li>其他网络在LeNet基础上替换网络即可运行。</li>
-<li>参考我之前的文章安装环境<a href="https://www.mmrsl.cn/2021/10/22/ubuntu-NVIDIA30xx%E6%98%BE%E5%8D%A1%E5%AE%89%E8%A3%85/">Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装</a></li>
-</ol>
-<h3 id="数据扩充"><a href="#数据扩充" class="headerlink" title="数据扩充"></a>数据扩充</h3><pre class="line-numbers language-none"><code class="language-none">transform &#x3D; transforms.Compose([
-    transforms.ToTensor(),
-    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
-
-transform_train &#x3D; transforms.Compose([
-    # 对原始32*32图像四周各填充4个0像素（40*40），然后随机裁剪成32*32
-    transforms.RandomCrop(32, padding&#x3D;4),
-    # 按0.5的概率水平翻转图片
-    transforms.RandomHorizontalFlip(),
-    transforms.ToTensor(),
-    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
-
-transform_test &#x3D; transforms.Compose([
-    transforms.ToTensor(),
-    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="不同网络测试结果"><a href="#不同网络测试结果" class="headerlink" title="不同网络测试结果"></a>不同网络测试结果</h2><blockquote>
-<p>EPOCHS=50</p>
-</blockquote>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>网络类型</th>
-<th>LeNet</th>
-<th>AlexNet</th>
-<th>VGG19</th>
-<th>VGG16</th>
-<th>ResNet34 1</th>
-<th>ResNet34 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>准确度</td>
-<td>58.990%</td>
-<td>64.55%</td>
-<td>84.610%</td>
-<td>83.670%</td>
-<td>78.790%</td>
-<td>85.14%</td>
-</tr>
-<tr>
-<td>loss</td>
-<td>0.009</td>
-<td>0.007</td>
-<td>0.000</td>
-<td>0.000</td>
-<td>0.00</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>plane 准确度</td>
-<td>66%</td>
-<td>81%</td>
-<td>87%</td>
-<td>88%</td>
-<td>83%</td>
-<td>88%</td>
-</tr>
-<tr>
-<td>car 准确度</td>
-<td>70%</td>
-<td>85%</td>
-<td>90%</td>
-<td>90%</td>
-<td>84%</td>
-<td>93%</td>
-</tr>
-<tr>
-<td>bird 准确度</td>
-<td>48%</td>
-<td>56%</td>
-<td>74%</td>
-<td>73%</td>
-<td>69%</td>
-<td>79%</td>
-</tr>
-<tr>
-<td>cat 准确度</td>
-<td>39%</td>
-<td>32%</td>
-<td>67%</td>
-<td>71%</td>
-<td>59%</td>
-<td>70%</td>
-</tr>
-<tr>
-<td>deer 准确度</td>
-<td>58%</td>
-<td>66%</td>
-<td>86%</td>
-<td>86%</td>
-<td>74%</td>
-<td>82%</td>
-</tr>
-<tr>
-<td>dog 准确度</td>
-<td>44%</td>
-<td>46%</td>
-<td>77%</td>
-<td>77%</td>
-<td>68%</td>
-<td>75%</td>
-</tr>
-<tr>
-<td>frog 准确度</td>
-<td>72%</td>
-<td>65%</td>
-<td>90%</td>
-<td>86%</td>
-<td>84%</td>
-<td>89%</td>
-</tr>
-<tr>
-<td>horse 准确度</td>
-<td>65%</td>
-<td>64%</td>
-<td>89%</td>
-<td>83%</td>
-<td>82%</td>
-<td>89%</td>
-</tr>
-<tr>
-<td>ship 准确度</td>
-<td>69%</td>
-<td>79%</td>
-<td>91%</td>
-<td>92%</td>
-<td>89%</td>
-<td>92%</td>
-</tr>
-<tr>
-<td>truck 准确度</td>
-<td>59%</td>
-<td>64%</td>
-<td>90%</td>
-<td>90%</td>
-<td>86%</td>
-<td>90%</td>
-</tr>
-</tbody>
-</table>
-</div>
-<blockquote>
-<p>扩充准确度 EPOCHS=50</p>
-</blockquote>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>网络类型</th>
-<th>VGG19</th>
-<th>ResNet34 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>准确度</td>
-<td>87.220%</td>
-<td>87.09%</td>
-</tr>
-<tr>
-<td>loss</td>
-<td>0.001</td>
-<td>0.000</td>
-</tr>
-<tr>
-<td>plane 准确度</td>
-<td>85%</td>
-<td>85%</td>
-</tr>
-<tr>
-<td>car 准确度</td>
-<td>93%</td>
-<td>92%</td>
-</tr>
-<tr>
-<td>bird 准确度</td>
-<td>80%</td>
-<td>82%</td>
-</tr>
-<tr>
-<td>cat 准确度</td>
-<td>76%</td>
-<td>74%</td>
-</tr>
-<tr>
-<td>deer 准确度</td>
-<td>86%</td>
-<td>85%</td>
-</tr>
-<tr>
-<td>dog 准确度</td>
-<td>82%</td>
-<td>83%</td>
-</tr>
-<tr>
-<td>frog 准确度</td>
-<td>90%</td>
-<td>91%</td>
-</tr>
-<tr>
-<td>horse 准确度</td>
-<td>88%</td>
-<td>90%</td>
-</tr>
-<tr>
-<td>ship 准确度</td>
-<td>93%</td>
-<td>92%</td>
-</tr>
-<tr>
-<td>truck 准确度</td>
-<td>94%</td>
-<td>91%</td>
-</tr>
-</tbody>
-</table>
-</div>
-<blockquote>
-<p>扩充准确度 EPOCHS=100</p>
-</blockquote>
-<pre class="line-numbers language-none"><code class="language-none">VGG19 在10000张测试集图片上的准确率：88.840
-正确率 ： plane : 91 %
-正确率 ：   car : 96 %
-正确率 ：  bird : 85 %
-正确率 ：   cat : 78 %
-正确率 ：  deer : 88 %
-正确率 ：   dog : 79 %
-正确率 ：  frog : 90 %
-正确率 ： horse : 93 %
-正确率 ：  ship : 94 %
-正确率 ： truck : 90 %
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>网络类型</th>
-<th>VGG19</th>
-<th>ResNet34 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>准确度</td>
-<td>88.84%</td>
-<td>88.05%</td>
-</tr>
-<tr>
-<td>loss</td>
-<td>0.000</td>
-<td>0.000</td>
-</tr>
-<tr>
-<td>plane 准确度</td>
-<td>91%</td>
-<td>89%</td>
-</tr>
-<tr>
-<td>car 准确度</td>
-<td>96%</td>
-<td>93%</td>
-</tr>
-<tr>
-<td>bird 准确度</td>
-<td>85%</td>
-<td>82%</td>
-</tr>
-<tr>
-<td>cat 准确度</td>
-<td>78%</td>
-<td>79%</td>
-</tr>
-<tr>
-<td>deer 准确度</td>
-<td>88%</td>
-<td>85%</td>
-</tr>
-<tr>
-<td>dog 准确度</td>
-<td>79%</td>
-<td>79%</td>
-</tr>
-<tr>
-<td>frog 准确度</td>
-<td>90%</td>
-<td>91%</td>
-</tr>
-<tr>
-<td>horse 准确度</td>
-<td>93%</td>
-<td>91%</td>
-</tr>
-<tr>
-<td>ship 准确度</td>
-<td>94%</td>
-<td>93%</td>
-</tr>
-<tr>
-<td>truck 准确度</td>
-<td>90%</td>
-<td>93%</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>以上结果可以看出<code>ResNet34 2&gt;VGG19&gt;VGG16&gt;ResNet34 1&gt;AlexNet&gt;LeNet</code></p>
-]]></content>
-      <categories>
-        <category>pytorch</category>
-      </categories>
-      <tags>
-        <tag>pytorch</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux进程断连重新进入该进程方法</title>
-    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
-<ul>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
-</ul>
-<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
-<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
-<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
-<p><code>nohup python3 main.py &amp;</code></p>
-<ol>
-<li>nohup </li>
-</ol>
-<p>加在一个命令的最前面，表示不挂断的运行命令</p>
-<ol>
-<li>&amp;</li>
-</ol>
-<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
-<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
-<ol>
-<li>jobs 查看后台运行的命令</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
-[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<ol>
-<li><p>ps查看进程</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
-  PID TTY          TIME CMD
-20712 pts&#x2F;6    00:00:00 bash
-20793 pts&#x2F;6    02:49:24 python3
-22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>kill </p>
-</li>
-</ol>
-<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
-<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
-<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
-<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
-<p>将后台中的命令调至前台继续运行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
-<p>（2）Ctrl + z 命令</p>
-<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
-<p>（3）bg命令</p>
-<p>将一个在后台暂停的命令，变成在后台继续执行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
-<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
-<li>首先后台运行一个进程：</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
-<ul>
-<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
-<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
-</ul>
-<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
-<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
-<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
-<p>linux远程断联后重新进入该进程</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
-</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>研究生课程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>My_leetcode</title>
     <url>/2021/12/03/My-leetcode/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
@@ -4502,6 +4428,80 @@ public:
     &#125;
 &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>主要这道题可以理解链表，自己写几遍可以加深一下印象。<br>pre记录最前面的地址，最后pre.next，即可获得第二个地址，就很巧妙。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Linux进程断连重新进入该进程方法</title>
+    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
+<ul>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
+</ul>
+<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
+<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
+<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
+<p><code>nohup python3 main.py &amp;</code></p>
+<ol>
+<li>nohup </li>
+</ol>
+<p>加在一个命令的最前面，表示不挂断的运行命令</p>
+<ol>
+<li>&amp;</li>
+</ol>
+<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
+<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
+<ol>
+<li>jobs 查看后台运行的命令</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
+[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ol>
+<li><p>ps查看进程</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
+  PID TTY          TIME CMD
+20712 pts&#x2F;6    00:00:00 bash
+20793 pts&#x2F;6    02:49:24 python3
+22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>kill </p>
+</li>
+</ol>
+<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
+<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
+<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
+<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
+<p>将后台中的命令调至前台继续运行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
+<p>（2）Ctrl + z 命令</p>
+<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
+<p>（3）bg命令</p>
+<p>将一个在后台暂停的命令，变成在后台继续执行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
+<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
+<li>首先后台运行一个进程：</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
+<ul>
+<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
+<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
+</ul>
+<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
+<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
+<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
+<p>linux远程断联后重新进入该进程</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
+</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>研究生课程</tag>
+      </tags>
   </entry>
   <entry>
     <title>OCR_实时翻译</title>
@@ -7557,7 +7557,7 @@ iperfclient()<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
 </li>
 </ol>
 <p>输出结果</p>
-<div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/3.png"/></div>
+<div align=center><img width = '500' height ='500' src ="https://www.mmrsl.cn/download/img/xmu/3.png"/></div>
 
 <pre class="line-numbers language-none"><code class="language-none"># Bits are measured in 10**3 terms
 # Bytes are measured in 2**10 terms
@@ -11067,6 +11067,29 @@ c1<span class="token operator">=</span><span class="token function">input</span>
       </tags>
   </entry>
   <entry>
+    <title>保研经历</title>
+    <url>/2019/09/28/%E4%BF%9D%E7%A0%94%E7%BB%8F%E5%8E%86/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="2feee347f81a4ae77037db5b7a086e0ff9cf6c318d3469f8756eed623233ac81">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f0410fccf8773ba3e911613ea7724d97e23308b31ae231fddf04245e170677088a8da3c2511e2c0f7111906998326dec24790e160e95739d65f68fcc90e9844f9a423b6a8c3c00c83d0029b0a42d3620bebde8da160142d25d318b3ac7e123f4e71434ee099b89e81bb1957f51cfd20e77e70d7af1b457c5efff0c023aa7df303880b044a115cdfebd84a80799f7ce97af6dc04d3513b7b2d65532c68010f2347e31630ecfb1edc0d73d45a0e4454e06c53b0dc9a892dc5145e9ca505704429fbaa6d831f199a20c79c40797ee58e5658bec9f040b883bae2d53bf38b154e45383143aa78b7bb3c1f7c38705c15c891e9235d336fb48d54d2cfbc43001bd33416a560778987e2927cf07a6a4ca84746a06d4650681382ff239c7f61c645ff31e7a73be2f0057400dc8b011f1db191d39104f49bea86096982ae17debb41b9fa819816204e88c7a86fe9721ff75a8cb1e3093281a51868c755f19f6c550acc1d6cc0a2fd922e12661586870cba0b175705a1d03fc3a15c605ef84ff5cea9636459a1124d75e11d10c3b4d3a382a6c9c3e73933dd10541b87b7bf0ce3aa5696dd19148f79c6cb3dbd952fffdadbc1a8abe04ea4be8bf93550d43228a9461a08fc83054eac9ef58fe4ecb7f05868b2c4c6ba33defd8a72034493580b3b1a915e5ef9e80ba13402661fba8fed423f038a61fc31bd75a915cf82d14fcdc7474ef759bef03d53a841fcf1787c5660e073efb02b22e0994731410310b8c13796972ad7f32f35b04234252c1151024d46e922e85c2da1e8e7a86032b5a74cccc8ef287e76f435a9941d3fb2f34206648f6bdf9aa50eee0b087c1a9dd9ea385e2c7b643d3d39335f64804a4ed982264b23e23720fef9900e0d97132d56a9dc0a3ea67dcd3cac7cc752130200ccbfffd802bae7145ed6c25fed06f6eb99ea5e6f61fc9b4d21733db4101f2d2cdf890cf7e38948640867a5c9052a0965e99141cd1e0b37c5380131d53e436dfa25b1b7b52c18e2c81e34fc9b2f1db365f225d6ec405ff87959921b267516849bf8f439ee4adba8973a6e698eceecaa81aaa3419c5112830f7d4d4dc66324bc052bbf16bfe413e2a887e25a3d76627f976d182b0aee02a9a67436c7ee108a7d6f16257adebe5a14476b5d9dd6c6e58c086f69ed4b9a0557a4ad5aa7aaa9c1222f0b884515bed48a075755fa43c25934fcfb3fbf3b9d8abb981541768f251ff44b2d2ec9739556ee18f66a1f01c1eda641a9a2b1fe3551e4fd2478e50069ba223b3f61ff42ac5a0e16e8b89c3d52a5db24c62be01317eacdc0d7a00bfcda4a28ba8f301d1a101f6abbb860115cd5d9e7f9007269432abd04b91dee52e1ae95c85d98d06b693d324e8f3c4d1e43ae98fd749c9bab03a530e1a8ea7323c4c2fe16d8de72857e8e02435c6bf21a7823e1978ff31d76691a298bcbe05746c8736db87487dbb044ac1fbcafb7a1c5a3f914991f724a2971133dce4880c470fb660a9b516728ad19dd1b0f6bb403ad3851a89abe14aa55c7a4b01f7353a152b800b74f9ca76b780cf4b81ac87a2f149d771de815b1b02d8080fa3ec2cf1fd609691dc10c982016232d11d8c5f3acaaa14a68b729c5da615438f14591c7db2ab2c05e019ba057852e8c97febb31cffe3ccc587cf95978e698b471091dd71cbe3bd6d7bd4c23d7bce31c7a199f9057bbaf5ac9dd9a3354d7fdf9e85bf133b2f7a61d6d831d3af82b0c1620892eee0556e9823d6b48dd46bd39909e01f1f2b1b6e65d05ac65b4b5fdccc7dea95129be41662e10ac14d1b6d078a6f26af3fcd052f1667a53f482b68d6ede203d573ef2b5506c071692168f086eaab2c6a1e61e717886dc97a50b5bba36fe8081dc2bee356fe8f04f1676ffdf34d4762ac9ad76199a5ad0a819cba6a8cb5cc350aadf06cb2c56122e240dc71593a0fd65f434ef6d1d0d1ca6bdc4dfb9ecc9b49b0c0cc4ddbfc7f75760fdef9c9cb3b00fb8bd79770edfbef87374bcb8ced4291f17d7d15a20f8d3286f97e21232762a892ccd2782a4d8c21d74eded8b99e88523d24773111547f5caceece273a2a8cc52dbecc4aab7b15e25e249f83d71c37305ccf51031cfce0727eeaa5b83939f33691419a634d43c18c055fb7fc534cb30e511e0c4097da5cec7db830cd83075d8ca3d812821012bd2c55ca47aa8076aa067ba4860635aa9678e85a0aadac328f2ab6d4cad2ab7fbf522fc84895d6fc83f50a74e643a61b1de4f20b5ad466960d7b9597f841ee6329589b02f1e342a86d9a939ddd1685c3366e41aeabe1cde5f0c17d1b754e5052f9ec0ce70538fa1c05ee74a48ad3ee82e779a64571040c977f397745eb7296fe7547d33c98cba9d5f6af2f4005c49720b1acba6ab46e4b32e943c13eeb36d44a66645c36bf79375fcfca62dbdeb1157111017f66c2481e1eb83f4d59c6ec888dd01e8d885a890ae51f7318259099a6d2cb420d589d43d1ca603a805bdee83dd9740973717e4bca893e0a382ce73dca5301becd34d3d8bd433b98de0fec28c319bdfc8f3aedfe83984a2766bbb6577b22180c86d8aaf85f9fdd5857cd9e5e47f65f6fe382c7b6b398a07417cfd22535d6f815fc7e02cdb5db4ca170a2e57c616988be55f6e286ef04c1b2ba41c448df69135ed030fbc3463afb9592a7a9a54e11ad3f8d650bc2b2718678ca1e3f4fd0cf9b20efd4f1d31e3161a28349e2492020ad331927b56a9b3b4a3ef058ec89f354afbf8f3eddeaa00ae7e7d0049ce4fa4770b1d68db8ee5d54e26f10c57a9853fc3ec898836f15a570550b4fd88589d57dbb708c6446547f46f5dd4e35c5a20834ce9dc1261b781d43c78d8f7a4da7329089550ba39afb63f75b5758456c9edcffb803905da69bae608d8184776904356f61c942f8d8ffdc4d5f423fd4d644aa48cd42bd97ee993b44231d33af54132f64603cc50127384ff9291746b8c0b97c004bd9844793f19757930d6150e1447d79f558f22dd5b94e4970d2cb0d6a3fc27978e4f05208e6de1e2ab3cb700556905a60a318158f7d9a99ad59ac4e769402d1e4b5b4f3218d9b15750f2baf5d336f6265efbf670e59dc9ed7ba0ce61bdf91f53936dcff8dfac6ba7867d976f5c0fbb437cd6e658e6f08e3b9e41fb924c5801e998ceb450876cf9f96b6d26e5d98b9c9ff683dcefb0bf40536506d305c8a1e9e3750a962b69fe07acd2ccdfba2bd693c7c1c965d1307e4c2890b5d7205c269649cb3f55a54e1a66a158087ae18cec5022cef66b144807c023b5185fc8508df1f4ab2a9a89faa9c22921ba8f3ddcb82b729f3818000cd2ffb87fe292b3ad5a04c45f4161addf33636cde5f548d6a4267bf9b7042f21bd76a7497cae5ac642a6a7a406e96ecac57802034e8c827af766ad4395c7167ad19d1abfd61e09886837e2674ec7e8e9aa6d2b84f9f09cf54339f2eed565291caaf5e43539c3d3044ab36abd6c8948b5bf7c5729ca1e715b524db7624a56e837ca7cf75cbcd27a50ac8188bc3b26ed5cb0ad2bf7aae25307c3f4e276562eb9e3e9d56a4d11c7710f8ee8d5de11dbb38e980dced8326161e6a5826d63d954443edfaacff26862c7a4edd581d8f1f8c3ae60c2c43cbc9cdc9340b8c83934a3272fa31308a229264eeaa96fa52b369602acd676cdecfe53b15fce06c011190e5093d19b01b9b22a5c0587df3cfa67f850cc66bbd8e5fec13163e47f042fdbaa9a27edc7a367eb37bbcac2b7a9bf153b70ec7e432804d0703c4f63d14f404a3ecc22be3a109205b4f5a4559e86e6f547de8943b13ca6bf41a9c87ad45fd733627868c81c27a68a7b06b327c32496d8f27c2d2618d034e42949de826d6188da208dbc3590aa273c5649e4c20250f190f849bfcb61f3f2116e4baba61e038f6c494986600eacdd13099fbae9beab29bf607e5c07ee3d791a54ded548f17979626324069938720db6defe96b135379ffa9c462df12beee051e2be59b5a9dc2ddc13afb2d48cc7ac2efd664859e34d6279c5c2b6462d2216576bdc7ec526c14089bba59d35b7c41681765dfafc6ca15c522fe170399e3ac39f7ad616771906f6ccc6b38eb050e1fa46cc22400f00c9368625585ab89f828d17e538e5cfec3e4d8cb89171b1a64f4eb296c30b0de92c2b259f97ffcd31dd8a4f7abd60d4c3d9fac3cd063e68b8ac6462efe02ec45133f4eadb14846586b443c7c00448e5b3703153bcc97ac561f3c183c9a29cc51b0977f1153dd810f6cc6f58df2ea429c6ed8b64cb47e2662944bc44bdc8c2c15ff4ae4b05cd14ff53f94b065ebcad03de3a234073981b34bc8b95bb980b0e360ccf73b213d7ef3877ceaef94d78bda5d99bd70d9ff94a9441bce80e515013cb19035d1ed0ea2c18a66972bed9ad1c203786fe6344ca6fe40dab596b217b8a324c97cf8384e307298ff388d5d4291cec28f241f1b26023f3a99538d292697ed2ece92feec9c640f76aa1296955098035bb9b29d28cb5129954fddb589263c849b667bb6291fd40144b97af6e2694c61fc5aca3b34f8de5db447e465cdd0e54391afd530572b54f65b6c194835356e61dbcf06b4dc54ec424da11fce55de86933030de1d64ce0c4dacd3ec3cefec6cf6c8c0e17ebdd0742e873013a02cb31196c6a06faca8e54af554f6f0856e23425877edc7070d04602738429acb3fcb3c23506fc8fe3ff0973f8adb1deed304503cc84ade3dded6ddb58020c744fdd6093106d1440a551f73507652965da11e5bb333b4440e642474a7409dd0eee9f474da510fa22a70e838e82414be78d199f00945c39892de8e5339d33f989192e0e3a9fc98fbaf549ff86e7849136964981cbbf91f91ef0cb78093f1e6dda866aaf84f6c5949b0956cc80ac14e84b48abfae132246b66cbb1cbf555a3844ca50bf66bede172a13fe6ae4287fefb58fc931667fa38c9b6aca0503811c6751016b4953f96c9bd59406fd3ef2ea614f304716163b096a565a44db8d8280b8e4f8fd56897a7a4d26d2e3457366d66ae00e06937a02ae5c1887979cbaef8d81d4f9370ad524c190963817bef4c9fc88f42bd7c9d0c52f20677b5ade31a60b2e7a1baef44f4f36f6dce3b4f020fb2d44b1ddb4994bfbab116570a6bc5f1b606db6fb679246fc403a3b6f05f588762febd26823919cab30fc65437dcfeb7bac49f2e6e0c6b8340ef011475687602ed16d8394ebbfecb25ed5818cc81e6df2635be9b09305928acb0a1a16c01626d6fd48fd296c5d08a154a60088553a63a28c084c036ba0b6f11c33afefaf13d22b877e92d7e5d1ba7da51949bede6ae759553b30618ae4a7246273dce99e6ab992fc62f606b82bc8b56b55e8e2d6d1ff56b3df3db2f29738ad607e56cba30f95412ed4200b09a18ab750b67e796e140b399ccedc3c5b3f0efcb8f7899fca1b8ca3b37cfc5eba0f9017580c076b90afc99f81f7897305b81465830892c52334a4cb3e44c338a4d421f8f31f5c2b8ae7da551210a5bedb6e36c1ea05fd8a24d387579f7c2cbc056de64ad9f9cfb7e180371db3e37befd83df57dd2fbb9e8081eab5142b8df27f44d9e5474ce042c17cddaace8c51b8fae65fdb7ce23152dbf401445cd662f7d03366db207418718437efece37e6fac9a554fc6cb3ec81df41e0294221580016dc631fa8c38519fb7d406b660b8ba39352ef3c1c8a114d65597e4e1058ebff2c8a538a4237c597d10bec7e238dcc5ba0537994329dca5173a63acdc8fc533eb6a325a5f92b82d0caa178ac620b7e943b47ba45831b0e87210ebd66dd683335c87a3e0748e3de715c8f6d84536d7b6545e364ba53953ec4364c1a547cd7ddec2aa28f061d6320bcee46806925c803ad25780ace43669b222247b13342ec223abd84a466881c46d31ea7b3f9ea6df95afe2d3a664ea9e4a94566356bf7567455aa5201ca51a229c8ab0fe603e25a7b4e7b1ec2f3a4244e844919ff3fc018bb8e79fd5199a5dd2ad1e9d5d7e41424d39dbba32beeabf6e06a815eb8cb2051327d5c308d6df3208750c322fc80c878fe7f6598bebec3f04fb7b7e2f5ed14bf6d74195fb8770764ca3b05fcd39e6533810ce4869dc371bf7c3d350b23eb47b799deabbb620a84634b2007800e046b34738688e7ef4a79a57cd8981888e11a21d3e2bbd1d45941d436dadc4745639c48df2e4a511d6d1a8eb09877460d9c6f5eb2d70e5ed05d67960cbd85e57ef2afb7e717cb115d2a327922b2f3dd3a84b2c28bbf9125606285ce6c6faa2ee363d1168577c09d5d658f3e44663b1ddfce5f22bcb0c540af650cfc98eb5c9c601f8acfd04fa7d0668a9ab5c6302fc048274d47d0f813809a913410bcb92d453facbf21401dc38e4243dbe0905e3726f358fbe31c2608f25c2b792242112eef1ec47feca1b1598a14c2c2f7b629ae0690974639669461014e1b5eaec6577739961c7c80e50424283e3c69ac81e1e688d26d814149e4c5137e35719b972d0130d1813fc701594887ee98e9b83515bab3c4e4b961058cac1dbc4a5a93d0e0850129f45b7fbdb9c0f1e86881ac4755137de58f35b88ebbd5ad4bd28ea7a5e513bae7415b274a2e9f203ae42540c778f6a70a25122ea61311fbae04cab801f79e389bd72e5f3a95de37c7387416d586eb8b0648eb5d07337ffc3d95c3a9847bf8e3e469d0bc332b89fd3609cbef1239e0e0fd98684da6eac8d0cb2fa8d86cbe854f073a9dc85f05e12c0f8ae8e4b5120982727ccd9a2e6a5303291a9d3bb4a3a93c8250170ffed9776758def4005d926f950334249a35b075d4f7e4848b7f83fbc7dfc6e6eb5f43fd255151d159899169d1fd10b2f057c1134eaec27408074759430a863be835c3b8c380772b45656cd97e74efed8a94d33a81adcd40b2da250a2f832950468aaec728d4c2360d843b304f8738b9ae602dc69b2dc9ed96972b8dfcde2123caae87e2d3f90d6682308dcc7c15b48dbb4cb277d29e124238de5858c9690dc7e52320ec0075f8a5e2a97a69e726adab1e870266133d32e959e693b3fe4f374db9379e2f5cb1610cfc97508f0eff30547e3e9f4cdec3bc0f73bca52a456d7d5060e745f2c8b84e0ef4cd96c8cdf8493c7a8bb5e6056268eecd06c0561a9d670548103e39cb925f124cea75a9eb94413a5354b8ab56c296998a4e188dbeaf2a3bfde0a420bad9c137a161b3a05bcf163e5c39711c4962fa3bd0ab33c25e1a5f5f21e866cf2a3ae38179d8e5732cf80e1571fa2d2ac7728b8f431125a9f1bf28a704143585143e82400a79117612036780b53be9c208874252f029bda991ad151a195329eb623fb018741c0849266ea323c5aba2960b501e4462e65ea452e21c2cc973848fb94adfa22ecb0f5f13d82344414d1d9be83c6adf5ecd58681903bcf8406a97eecb44fe070dd56a0259a0d204d43a8175e6e03dc21eb5d0fcd5989574e7ddf628a0abd05d60e16bd2f9346aa31041b98df5ec1be3ca8fd3b73d87a2510bee7bcb6a0810df6171bcf194f6faedd520539ea8267e6785f8fd054049ad3393898c5a4cb2094801fdc3644801cd7eb9b966845a1915e7898ec771f994cd162c3ee234294201fe17e43c546dd0b6d4211382eeeca6009728d89db32e60a1641dac59cf30f24a06f735ff0737d296aa8488dc69bee3e00f8b340649680dba7fc3eaee99312a93a5a657221f833047642efbda0c3c6d9a85d516eb2b1819d53a4b981c704974af9fa6ae2edeabaa2a77affabd37474de39276c0e80ec14c218fc0130917d622b421078f9edaf760b78bba4a626706138839d73fb57dba41524d7cb031911044aac1d15be4ea9a5a54cec76d6b83f55069fa00b919e8724024f98ccaed911db603b4520c82a4c65f2c7f5d3c54854e94faa059796041eb80e9f30e6ec32286297f0a191037991695d8507a29fc5d04316b2c44266948a489671ea6caaadb84c77c2b85298374ea729228d66f49dd909e3031e7b707c51f0dfb3ad9a6e395472dafbbfbc368ae06ef1265f5adf505d218f70cd716b051d576622dfb8e54491176fe811c642f091b9f67314ba013afad2b9265fcfd0bae19b17a3f8ded8ca410f0430b387be5261e352fe141519dfdb2fb9b52760c0c3640a9329a1f74ec833fcb761104404f4370c683bb088757b407af6fcd6b54ec80a7067d1aec67eea72cb281abfc1748251582ce97f9b4d3067fa41bd19c535263bbac8a7a15e13398267845f5b9a3414e690d4f1b017e947a258ebc52bd2238f94059d5b3fff200344440892a9ad118f333462d696d2c090afa423e81de206fdc34322fa78f0b6d348eaec13f1304e74d3eb48cb1e3363e02b7361d84c4d3a5c2f47da3887a60bd30a144e070026e8da7243b12011c876df894183ee18b8a435bfaf13ed2614fa50baba644800f691ad3e81bb34bd072c54ed4f87df9aaffb498cc21f208682e781d7a6ee822bc2fec607360f85a22755fc9e6c5298d87982e342ea8d0774137cc2c6c5bf13052bcc48a06b87c97d0317c4274a3f0e47b2b5af64ba4774ef001af13877356b3346987175ccab5025e0d8817e1569abbfe8b6dcdf0cb4467e7c261522323b648f204973c1f46e596a1ff9427586123f5289bf97f0e59a753979329123c41aa2d4bfbb1fd57ba641700d0cad68bb34d69a20340218dd382f72106c00e1ce21a822fe7c4b6c409d78f8c6989db127fdccf005f44715e2b2eaee93f5d3170ed5d335e53f3b301c1cc8413d343957bc82dde88dce798e97a8eda0eb57ab64bb5cdd96c531d4f5cb90af2eb5f3338677e865ceb6fef5ed85a4506d1b2f7b204590ec2e6d4a340a04ef23de3e834b024b6fa206291b1998d2492a52330c5029da4b591b172d6ee0f1a2751e8452cb6baef6edb45bd676b1ea08ccb9346afc2c042d653c78ea39cc8f9d91faa47037b954fb47e3dfb332c4eff2adf372331a57460a827fe4784e999ff90b8941212d8fe646ae5e6aab439c16f0b0caf70aed6dd1c831d81bedca9dbfcac04c8b7dc94518a1278e943a3249f396bba4d030e0230bdb3cbd91dc69f2d704f9cc605db2c547c2aac4c5ba97231c92850517e7e5f5e4a6193e7efc100351b9a0eafb73da5108d45e48ec835475008b1ee3cc569a9ab9c46a6f2fb4fbaa6500a5cee9a7a3a7cc6c00415e9dfadd664da810f9ab4ce89d887e4ee0056d277f97af0296d6922875921f23dc9f93f0a1d19721a18639af6e69cacf20648b2acb8b34e0c2c5fd86de3e9f5c7875439c48ab4f02e531a0c0e6198b5220fc218508d11592cc08a998596b178c4676ce4eb616e2f198a21aa29ddd8a4f934e1e9178cf42038d58eedd78116d0920d08e1bfc7a231fa50c4adbf9c49a2c</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>加密</tag>
+        <tag>推免</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>合成厦大</title>
     <url>/2021/01/31/%E5%90%88%E6%88%90%E5%8E%A6%E5%A4%A7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="合成厦大"><a href="#合成厦大" class="headerlink" title="合成厦大"></a><center>合成厦大</center></h1><p>最近合成大西瓜蛮火的，就想把里面的图片改了，然后做一个自己的合成厦大。<br><span id="more"></span></p>
@@ -11196,29 +11219,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       <tags>
         <tag>markdown</tag>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>保研经历</title>
-    <url>/2019/09/28/%E4%BF%9D%E7%A0%94%E7%BB%8F%E5%8E%86/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="2feee347f81a4ae77037db5b7a086e0ff9cf6c318d3469f8756eed623233ac81">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f0410fccf8773ba3e911613ea7724d97e23308b31ae231fddf04245e170677088a8da3c2511e2c0f7111906998326dec24790e160e95739d65f68fcc90e9844f9a423b6a8c3c00c83d0029b0a42d3620bebde8da160142d25d318b3ac7e123f4e71434ee099b89e81bb1957f51cfd20e77e70d7af1b457c5efff0c023aa7df303880b044a115cdfebd84a80799f7ce97af6dc04d3513b7b2d65532c68010f2347e31630ecfb1edc0d73d45a0e4454e06c53b0dc9a892dc5145e9ca505704429fbaa6d831f199a20c79c40797ee58e5658bec9f040b883bae2d53bf38b154e45383143aa78b7bb3c1f7c38705c15c891e9235d336fb48d54d2cfbc43001bd33416a560778987e2927cf07a6a4ca84746a06d4650681382ff239c7f61c645ff31e7a73be2f0057400dc8b011f1db191d39104f49bea86096982ae17debb41b9fa819816204e88c7a86fe9721ff75a8cb1e3093281a51868c755f19f6c550acc1d6cc0a2fd922e12661586870cba0b175705a1d03fc3a15c605ef84ff5cea9636459a1124d75e11d10c3b4d3a382a6c9c3e73933dd10541b87b7bf0ce3aa5696dd19148f79c6cb3dbd952fffdadbc1a8abe04ea4be8bf93550d43228a9461a08fc83054eac9ef58fe4ecb7f05868b2c4c6ba33defd8a72034493580b3b1a915e5ef9e80ba13402661fba8fed423f038a61fc31bd75a915cf82d14fcdc7474ef759bef03d53a841fcf1787c5660e073efb02b22e0994731410310b8c13796972ad7f32f35b04234252c1151024d46e922e85c2da1e8e7a86032b5a74cccc8ef287e76f435a9941d3fb2f34206648f6bdf9aa50eee0b087c1a9dd9ea385e2c7b643d3d39335f64804a4ed982264b23e23720fef9900e0d97132d56a9dc0a3ea67dcd3cac7cc752130200ccbfffd802bae7145ed6c25fed06f6eb99ea5e6f61fc9b4d21733db4101f2d2cdf890cf7e38948640867a5c9052a0965e99141cd1e0b37c5380131d53e436dfa25b1b7b52c18e2c81e34fc9b2f1db365f225d6ec405ff87959921b267516849bf8f439ee4adba8973a6e698eceecaa81aaa3419c5112830f7d4d4dc66324bc052bbf16bfe413e2a887e25a3d76627f976d182b0aee02a9a67436c7ee108a7d6f16257adebe5a14476b5d9dd6c6e58c086f69ed4b9a0557a4ad5aa7aaa9c1222f0b884515bed48a075755fa43c25934fcfb3fbf3b9d8abb981541768f251ff44b2d2ec9739556ee18f66a1f01c1eda641a9a2b1fe3551e4fd2478e50069ba223b3f61ff42ac5a0e16e8b89c3d52a5db24c62be01317eacdc0d7a00bfcda4a28ba8f301d1a101f6abbb860115cd5d9e7f9007269432abd04b91dee52e1ae95c85d98d06b693d324e8f3c4d1e43ae98fd749c9bab03a530e1a8ea7323c4c2fe16d8de72857e8e02435c6bf21a7823e1978ff31d76691a298bcbe05746c8736db87487dbb044ac1fbcafb7a1c5a3f914991f724a2971133dce4880c470fb660a9b516728ad19dd1b0f6bb403ad3851a89abe14aa55c7a4b01f7353a152b800b74f9ca76b780cf4b81ac87a2f149d771de815b1b02d8080fa3ec2cf1fd609691dc10c982016232d11d8c5f3acaaa14a68b729c5da615438f14591c7db2ab2c05e019ba057852e8c97febb31cffe3ccc587cf95978e698b471091dd71cbe3bd6d7bd4c23d7bce31c7a199f9057bbaf5ac9dd9a3354d7fdf9e85bf133b2f7a61d6d831d3af82b0c1620892eee0556e9823d6b48dd46bd39909e01f1f2b1b6e65d05ac65b4b5fdccc7dea95129be41662e10ac14d1b6d078a6f26af3fcd052f1667a53f482b68d6ede203d573ef2b5506c071692168f086eaab2c6a1e61e717886dc97a50b5bba36fe8081dc2bee356fe8f04f1676ffdf34d4762ac9ad76199a5ad0a819cba6a8cb5cc350aadf06cb2c56122e240dc71593a0fd65f434ef6d1d0d1ca6bdc4dfb9ecc9b49b0c0cc4ddbfc7f75760fdef9c9cb3b00fb8bd79770edfbef87374bcb8ced4291f17d7d15a20f8d3286f97e21232762a892ccd2782a4d8c21d74eded8b99e88523d24773111547f5caceece273a2a8cc52dbecc4aab7b15e25e249f83d71c37305ccf51031cfce0727eeaa5b83939f33691419a634d43c18c055fb7fc534cb30e511e0c4097da5cec7db830cd83075d8ca3d812821012bd2c55ca47aa8076aa067ba4860635aa9678e85a0aadac328f2ab6d4cad2ab7fbf522fc84895d6fc83f50a74e643a61b1de4f20b5ad466960d7b9597f841ee6329589b02f1e342a86d9a939ddd1685c3366e41aeabe1cde5f0c17d1b754e5052f9ec0ce70538fa1c05ee74a48ad3ee82e779a64571040c977f397745eb7296fe7547d33c98cba9d5f6af2f4005c49720b1acba6ab46e4b32e943c13eeb36d44a66645c36bf79375fcfca62dbdeb1157111017f66c2481e1eb83f4d59c6ec888dd01e8d885a890ae51f7318259099a6d2cb420d589d43d1ca603a805bdee83dd9740973717e4bca893e0a382ce73dca5301becd34d3d8bd433b98de0fec28c319bdfc8f3aedfe83984a2766bbb6577b22180c86d8aaf85f9fdd5857cd9e5e47f65f6fe382c7b6b398a07417cfd22535d6f815fc7e02cdb5db4ca170a2e57c616988be55f6e286ef04c1b2ba41c448df69135ed030fbc3463afb9592a7a9a54e11ad3f8d650bc2b2718678ca1e3f4fd0cf9b20efd4f1d31e3161a28349e2492020ad331927b56a9b3b4a3ef058ec89f354afbf8f3eddeaa00ae7e7d0049ce4fa4770b1d68db8ee5d54e26f10c57a9853fc3ec898836f15a570550b4fd88589d57dbb708c6446547f46f5dd4e35c5a20834ce9dc1261b781d43c78d8f7a4da7329089550ba39afb63f75b5758456c9edcffb803905da69bae608d8184776904356f61c942f8d8ffdc4d5f423fd4d644aa48cd42bd97ee993b44231d33af54132f64603cc50127384ff9291746b8c0b97c004bd9844793f19757930d6150e1447d79f558f22dd5b94e4970d2cb0d6a3fc27978e4f05208e6de1e2ab3cb700556905a60a318158f7d9a99ad59ac4e769402d1e4b5b4f3218d9b15750f2baf5d336f6265efbf670e59dc9ed7ba0ce61bdf91f53936dcff8dfac6ba7867d976f5c0fbb437cd6e658e6f08e3b9e41fb924c5801e998ceb450876cf9f96b6d26e5d98b9c9ff683dcefb0bf40536506d305c8a1e9e3750a962b69fe07acd2ccdfba2bd693c7c1c965d1307e4c2890b5d7205c269649cb3f55a54e1a66a158087ae18cec5022cef66b144807c023b5185fc8508df1f4ab2a9a89faa9c22921ba8f3ddcb82b729f3818000cd2ffb87fe292b3ad5a04c45f4161addf33636cde5f548d6a4267bf9b7042f21bd76a7497cae5ac642a6a7a406e96ecac57802034e8c827af766ad4395c7167ad19d1abfd61e09886837e2674ec7e8e9aa6d2b84f9f09cf54339f2eed565291caaf5e43539c3d3044ab36abd6c8948b5bf7c5729ca1e715b524db7624a56e837ca7cf75cbcd27a50ac8188bc3b26ed5cb0ad2bf7aae25307c3f4e276562eb9e3e9d56a4d11c7710f8ee8d5de11dbb38e980dced8326161e6a5826d63d954443edfaacff26862c7a4edd581d8f1f8c3ae60c2c43cbc9cdc9340b8c83934a3272fa31308a229264eeaa96fa52b369602acd676cdecfe53b15fce06c011190e5093d19b01b9b22a5c0587df3cfa67f850cc66bbd8e5fec13163e47f042fdbaa9a27edc7a367eb37bbcac2b7a9bf153b70ec7e432804d0703c4f63d14f404a3ecc22be3a109205b4f5a4559e86e6f547de8943b13ca6bf41a9c87ad45fd733627868c81c27a68a7b06b327c32496d8f27c2d2618d034e42949de826d6188da208dbc3590aa273c5649e4c20250f190f849bfcb61f3f2116e4baba61e038f6c494986600eacdd13099fbae9beab29bf607e5c07ee3d791a54ded548f17979626324069938720db6defe96b135379ffa9c462df12beee051e2be59b5a9dc2ddc13afb2d48cc7ac2efd664859e34d6279c5c2b6462d2216576bdc7ec526c14089bba59d35b7c41681765dfafc6ca15c522fe170399e3ac39f7ad616771906f6ccc6b38eb050e1fa46cc22400f00c9368625585ab89f828d17e538e5cfec3e4d8cb89171b1a64f4eb296c30b0de92c2b259f97ffcd31dd8a4f7abd60d4c3d9fac3cd063e68b8ac6462efe02ec45133f4eadb14846586b443c7c00448e5b3703153bcc97ac561f3c183c9a29cc51b0977f1153dd810f6cc6f58df2ea429c6ed8b64cb47e2662944bc44bdc8c2c15ff4ae4b05cd14ff53f94b065ebcad03de3a234073981b34bc8b95bb980b0e360ccf73b213d7ef3877ceaef94d78bda5d99bd70d9ff94a9441bce80e515013cb19035d1ed0ea2c18a66972bed9ad1c203786fe6344ca6fe40dab596b217b8a324c97cf8384e307298ff388d5d4291cec28f241f1b26023f3a99538d292697ed2ece92feec9c640f76aa1296955098035bb9b29d28cb5129954fddb589263c849b667bb6291fd40144b97af6e2694c61fc5aca3b34f8de5db447e465cdd0e54391afd530572b54f65b6c194835356e61dbcf06b4dc54ec424da11fce55de86933030de1d64ce0c4dacd3ec3cefec6cf6c8c0e17ebdd0742e873013a02cb31196c6a06faca8e54af554f6f0856e23425877edc7070d04602738429acb3fcb3c23506fc8fe3ff0973f8adb1deed304503cc84ade3dded6ddb58020c744fdd6093106d1440a551f73507652965da11e5bb333b4440e642474a7409dd0eee9f474da510fa22a70e838e82414be78d199f00945c39892de8e5339d33f989192e0e3a9fc98fbaf549ff86e7849136964981cbbf91f91ef0cb78093f1e6dda866aaf84f6c5949b0956cc80ac14e84b48abfae132246b66cbb1cbf555a3844ca50bf66bede172a13fe6ae4287fefb58fc931667fa38c9b6aca0503811c6751016b4953f96c9bd59406fd3ef2ea614f304716163b096a565a44db8d8280b8e4f8fd56897a7a4d26d2e3457366d66ae00e06937a02ae5c1887979cbaef8d81d4f9370ad524c190963817bef4c9fc88f42bd7c9d0c52f20677b5ade31a60b2e7a1baef44f4f36f6dce3b4f020fb2d44b1ddb4994bfbab116570a6bc5f1b606db6fb679246fc403a3b6f05f588762febd26823919cab30fc65437dcfeb7bac49f2e6e0c6b8340ef011475687602ed16d8394ebbfecb25ed5818cc81e6df2635be9b09305928acb0a1a16c01626d6fd48fd296c5d08a154a60088553a63a28c084c036ba0b6f11c33afefaf13d22b877e92d7e5d1ba7da51949bede6ae759553b30618ae4a7246273dce99e6ab992fc62f606b82bc8b56b55e8e2d6d1ff56b3df3db2f29738ad607e56cba30f95412ed4200b09a18ab750b67e796e140b399ccedc3c5b3f0efcb8f7899fca1b8ca3b37cfc5eba0f9017580c076b90afc99f81f7897305b81465830892c52334a4cb3e44c338a4d421f8f31f5c2b8ae7da551210a5bedb6e36c1ea05fd8a24d387579f7c2cbc056de64ad9f9cfb7e180371db3e37befd83df57dd2fbb9e8081eab5142b8df27f44d9e5474ce042c17cddaace8c51b8fae65fdb7ce23152dbf401445cd662f7d03366db207418718437efece37e6fac9a554fc6cb3ec81df41e0294221580016dc631fa8c38519fb7d406b660b8ba39352ef3c1c8a114d65597e4e1058ebff2c8a538a4237c597d10bec7e238dcc5ba0537994329dca5173a63acdc8fc533eb6a325a5f92b82d0caa178ac620b7e943b47ba45831b0e87210ebd66dd683335c87a3e0748e3de715c8f6d84536d7b6545e364ba53953ec4364c1a547cd7ddec2aa28f061d6320bcee46806925c803ad25780ace43669b222247b13342ec223abd84a466881c46d31ea7b3f9ea6df95afe2d3a664ea9e4a94566356bf7567455aa5201ca51a229c8ab0fe603e25a7b4e7b1ec2f3a4244e844919ff3fc018bb8e79fd5199a5dd2ad1e9d5d7e41424d39dbba32beeabf6e06a815eb8cb2051327d5c308d6df3208750c322fc80c878fe7f6598bebec3f04fb7b7e2f5ed14bf6d74195fb8770764ca3b05fcd39e6533810ce4869dc371bf7c3d350b23eb47b799deabbb620a84634b2007800e046b34738688e7ef4a79a57cd8981888e11a21d3e2bbd1d45941d436dadc4745639c48df2e4a511d6d1a8eb09877460d9c6f5eb2d70e5ed05d67960cbd85e57ef2afb7e717cb115d2a327922b2f3dd3a84b2c28bbf9125606285ce6c6faa2ee363d1168577c09d5d658f3e44663b1ddfce5f22bcb0c540af650cfc98eb5c9c601f8acfd04fa7d0668a9ab5c6302fc048274d47d0f813809a913410bcb92d453facbf21401dc38e4243dbe0905e3726f358fbe31c2608f25c2b792242112eef1ec47feca1b1598a14c2c2f7b629ae0690974639669461014e1b5eaec6577739961c7c80e50424283e3c69ac81e1e688d26d814149e4c5137e35719b972d0130d1813fc701594887ee98e9b83515bab3c4e4b961058cac1dbc4a5a93d0e0850129f45b7fbdb9c0f1e86881ac4755137de58f35b88ebbd5ad4bd28ea7a5e513bae7415b274a2e9f203ae42540c778f6a70a25122ea61311fbae04cab801f79e389bd72e5f3a95de37c7387416d586eb8b0648eb5d07337ffc3d95c3a9847bf8e3e469d0bc332b89fd3609cbef1239e0e0fd98684da6eac8d0cb2fa8d86cbe854f073a9dc85f05e12c0f8ae8e4b5120982727ccd9a2e6a5303291a9d3bb4a3a93c8250170ffed9776758def4005d926f950334249a35b075d4f7e4848b7f83fbc7dfc6e6eb5f43fd255151d159899169d1fd10b2f057c1134eaec27408074759430a863be835c3b8c380772b45656cd97e74efed8a94d33a81adcd40b2da250a2f832950468aaec728d4c2360d843b304f8738b9ae602dc69b2dc9ed96972b8dfcde2123caae87e2d3f90d6682308dcc7c15b48dbb4cb277d29e124238de5858c9690dc7e52320ec0075f8a5e2a97a69e726adab1e870266133d32e959e693b3fe4f374db9379e2f5cb1610cfc97508f0eff30547e3e9f4cdec3bc0f73bca52a456d7d5060e745f2c8b84e0ef4cd96c8cdf8493c7a8bb5e6056268eecd06c0561a9d670548103e39cb925f124cea75a9eb94413a5354b8ab56c296998a4e188dbeaf2a3bfde0a420bad9c137a161b3a05bcf163e5c39711c4962fa3bd0ab33c25e1a5f5f21e866cf2a3ae38179d8e5732cf80e1571fa2d2ac7728b8f431125a9f1bf28a704143585143e82400a79117612036780b53be9c208874252f029bda991ad151a195329eb623fb018741c0849266ea323c5aba2960b501e4462e65ea452e21c2cc973848fb94adfa22ecb0f5f13d82344414d1d9be83c6adf5ecd58681903bcf8406a97eecb44fe070dd56a0259a0d204d43a8175e6e03dc21eb5d0fcd5989574e7ddf628a0abd05d60e16bd2f9346aa31041b98df5ec1be3ca8fd3b73d87a2510bee7bcb6a0810df6171bcf194f6faedd520539ea8267e6785f8fd054049ad3393898c5a4cb2094801fdc3644801cd7eb9b966845a1915e7898ec771f994cd162c3ee234294201fe17e43c546dd0b6d4211382eeeca6009728d89db32e60a1641dac59cf30f24a06f735ff0737d296aa8488dc69bee3e00f8b340649680dba7fc3eaee99312a93a5a657221f833047642efbda0c3c6d9a85d516eb2b1819d53a4b981c704974af9fa6ae2edeabaa2a77affabd37474de39276c0e80ec14c218fc0130917d622b421078f9edaf760b78bba4a626706138839d73fb57dba41524d7cb031911044aac1d15be4ea9a5a54cec76d6b83f55069fa00b919e8724024f98ccaed911db603b4520c82a4c65f2c7f5d3c54854e94faa059796041eb80e9f30e6ec32286297f0a191037991695d8507a29fc5d04316b2c44266948a489671ea6caaadb84c77c2b85298374ea729228d66f49dd909e3031e7b707c51f0dfb3ad9a6e395472dafbbfbc368ae06ef1265f5adf505d218f70cd716b051d576622dfb8e54491176fe811c642f091b9f67314ba013afad2b9265fcfd0bae19b17a3f8ded8ca410f0430b387be5261e352fe141519dfdb2fb9b52760c0c3640a9329a1f74ec833fcb761104404f4370c683bb088757b407af6fcd6b54ec80a7067d1aec67eea72cb281abfc1748251582ce97f9b4d3067fa41bd19c535263bbac8a7a15e13398267845f5b9a3414e690d4f1b017e947a258ebc52bd2238f94059d5b3fff200344440892a9ad118f333462d696d2c090afa423e81de206fdc34322fa78f0b6d348eaec13f1304e74d3eb48cb1e3363e02b7361d84c4d3a5c2f47da3887a60bd30a144e070026e8da7243b12011c876df894183ee18b8a435bfaf13ed2614fa50baba644800f691ad3e81bb34bd072c54ed4f87df9aaffb498cc21f208682e781d7a6ee822bc2fec607360f85a22755fc9e6c5298d87982e342ea8d0774137cc2c6c5bf13052bcc48a06b87c97d0317c4274a3f0e47b2b5af64ba4774ef001af13877356b3346987175ccab5025e0d8817e1569abbfe8b6dcdf0cb4467e7c261522323b648f204973c1f46e596a1ff9427586123f5289bf97f0e59a753979329123c41aa2d4bfbb1fd57ba641700d0cad68bb34d69a20340218dd382f72106c00e1ce21a822fe7c4b6c409d78f8c6989db127fdccf005f44715e2b2eaee93f5d3170ed5d335e53f3b301c1cc8413d343957bc82dde88dce798e97a8eda0eb57ab64bb5cdd96c531d4f5cb90af2eb5f3338677e865ceb6fef5ed85a4506d1b2f7b204590ec2e6d4a340a04ef23de3e834b024b6fa206291b1998d2492a52330c5029da4b591b172d6ee0f1a2751e8452cb6baef6edb45bd676b1ea08ccb9346afc2c042d653c78ea39cc8f9d91faa47037b954fb47e3dfb332c4eff2adf372331a57460a827fe4784e999ff90b8941212d8fe646ae5e6aab439c16f0b0caf70aed6dd1c831d81bedca9dbfcac04c8b7dc94518a1278e943a3249f396bba4d030e0230bdb3cbd91dc69f2d704f9cc605db2c547c2aac4c5ba97231c92850517e7e5f5e4a6193e7efc100351b9a0eafb73da5108d45e48ec835475008b1ee3cc569a9ab9c46a6f2fb4fbaa6500a5cee9a7a3a7cc6c00415e9dfadd664da810f9ab4ce89d887e4ee0056d277f97af0296d6922875921f23dc9f93f0a1d19721a18639af6e69cacf20648b2acb8b34e0c2c5fd86de3e9f5c7875439c48ab4f02e531a0c0e6198b5220fc218508d11592cc08a998596b178c4676ce4eb616e2f198a21aa29ddd8a4f934e1e9178cf42038d58eedd78116d0920d08e1bfc7a231fa50c4adbf9c49a2c</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>加密</tag>
-        <tag>推免</tag>
       </tags>
   </entry>
   <entry>
@@ -11426,7 +11426,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#107;&#112;&#64;&#x6d;&#109;&#114;&#x73;&#108;&#46;&#x63;&#110;">&#107;&#112;&#64;&#x6d;&#109;&#114;&#x73;&#108;&#46;&#x63;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#x6b;&#112;&#x40;&#109;&#x6d;&#114;&#115;&#x6c;&#46;&#x63;&#x6e;">&#x6b;&#112;&#x40;&#109;&#x6d;&#114;&#115;&#x6c;&#46;&#x63;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -11560,7 +11560,7 @@ img {
 <p><code>pip install pettingzoo[mpe]</code></p>
 <h3 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h3><p>python=3.6.5<br>Multi-Agent Particle Environment(MPE)<br>torch=1.1.0</p>
 <h3 id="运行-1"><a href="#运行-1" class="headerlink" title="运行"></a>运行</h3><p><code>python main.py --scenario-name=simple_tag --evaluate-episodes=10</code></p>
-<div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/2.png"/></div>
+<div align=center><img width = '500' height ='600' src ="https://www.mmrsl.cn/download/img/xmu/2.png"/></div>
 
 <h3 id="环境列表"><a href="#环境列表" class="headerlink" title="环境列表"></a>环境列表</h3><div class="table-container">
 <table>
