@@ -548,14 +548,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    8 分
                 </div>
                 
 
@@ -579,19 +579,28 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="linux获取带宽、cpu占用率、能耗"><a href="#linux获取带宽、cpu占用率、能耗" class="headerlink" title="linux获取带宽、cpu占用率、能耗"></a>linux获取带宽、cpu占用率、能耗</h1><h2 id="带宽"><a href="#带宽" class="headerlink" title="带宽"></a>带宽</h2><h3 id="iperf"><a href="#iperf" class="headerlink" title="iperf"></a>iperf</h3><ol>
-<li><p>安装<br><code>sudo apt-get install iperf</code></p>
-</li>
-<li><p>测试时记得关闭防火墙或者自行配置防火墙规则，为了快速测试，这里就直接关闭防火墙</p>
-</li>
+<li>安装</li>
+</ol>
+<ul>
+<li>windows端</li>
+</ul>
+<p>Windows分为32位和64位的，对应自己的系统版本下载，下载解压完成之后，将解压得到的文件复制到%systemroot%目录下，就能够直接使用了。</p>
+<p>Windows的%systemroot%目录是C:\Windows\System32</p>
+<p>不管是使用CMD还是Powershell，都必须要以管理员身份运行，否则无法正常使用</p>
+<ul>
+<li>linux端<br><code>sudo apt-get install iperf3</code></li>
+</ul>
+<ol>
+<li>测试时记得关闭防火墙或者自行配置防火墙规则，为了快速测试，这里就直接关闭防火墙</li>
 </ol>
 <p><code>systemctl stop  firewalld</code></p>
 <ol>
 <li>安装完iperf后，在Server端执行</li>
 </ol>
-<pre class="line-numbers language-none"><code class="language-none">iperf   -s -i 1 -f  m
+<pre class="line-numbers language-none"><code class="language-none">iperf3   -s -i 1 -f  m
 		-s表示server，-i表示显示时间间隔，-f表示显示格式化的单位<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ol>
-<li>在Client端执行如下命令<pre class="line-numbers language-none"><code class="language-none">iperf -c 10.241.18.1 -i 1 -t 30 -f m
+<li>在Client端执行如下命令<pre class="line-numbers language-none"><code class="language-none">iperf3 -c 10.241.18.1 -i 1 -t 30 -f m
  -c表示客户端，后面接server的地址，-t代表运行的时间<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h4 id="通用参数："><a href="#通用参数：" class="headerlink" title="通用参数："></a>通用参数：</h4></li>
 </ol>
@@ -763,13 +772,33 @@ self.received_MB_s &#x3D; self.received_kB_s &#x2F; 1024<span aria-hidden="true"
 <p>看一眼源码，然后就拿到了输出数据</p>
 <ol>
 <li>bandwidth 目标带宽（以位/秒为单位）</li>
-<li>blksize<br>测试 blksize。</li>
+<li>blksize 测试 blksize。</li>
+<li>duration 测试持续时间（以秒为单位）。</li>
 </ol>
-<p>3.duration<br>测试持续时间（以秒为单位）。</p>
-<p>num_streams<br>要使用的流数。</p>
-<p>protocol<br>iperf3 实例协议</p>
-<p>有效的协议是”tcp”和”udp”</p>
-<p>返回类型：    str<br>reverse<br>切换测试方向</p>
+<p>看了一下最小测试时间为1s,有点长。</p>
+<h3 id="iperf2"><a href="#iperf2" class="headerlink" title="iperf2"></a>iperf2</h3><pre class="line-numbers language-none"><code class="language-none">tcp:
+iperf -s -p 5001
+iperf -c localhost -p 5001 -R -t 0.1 -f s
+udp:
+iperf -s -p 5001 -u
+iperf -c localhost -p 5001 -R -t 0.1 -f s -u -b 10000m<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>-R 双向测试</li>
+<li>iperf3中则不区分两者区别。<br>udp时发现传输带宽只有1.05Mbits/sec</li>
+</ul>
+<p>1.05Mbits/sec远低于TCP测试中观察到的值，它也远远低于1GB 的最大出站贷款上限，这是因为默认情况下，iperf讲UDP客户端的贷款限制为每秒1Mbit。</p>
+<p>可以用-b标志更改此值，讲数字替换为要测试的最大带宽速率。如果需要测试网络速度，可以将数字设置为高于网络提供商提供的最大带宽上线：</p>
+<p><code>iperf -c 198.51.100.5 -u -b 1000m</code><br>这将告诉客户端我们希望尽可能达到每秒1000Mbits的最大值，该-b标志仅在使用UDP连接时有效，因为iperf未在TCP客户端上设置带宽限制。</p>
+<pre class="line-numbers language-none"><code class="language-none">import os
+tmp &#x3D; os.popen(&#39;iperf3 -c localhost -R  -t 0.1 -f s&#39;).readlines()
+print(tmp[6].split(&quot; &quot;)[12])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>输出<br><pre class="line-numbers language-none"><code class="language-none">110M&#x2F;bits<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
+<blockquote>
+<p>tips 后台运行<br><pre class="line-numbers language-none"><code class="language-none">iperf3 -s -D
+# 注意D一定要大写<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p>
+<p>默认情况下我们进行测试，都是客户端发送数据，服务器端接收数据，这种情况下相当于只对上行带宽进行了测试，如果我们需要检测下行带宽，只需要使用<code>-R</code>命令，即可变为客户端接收，服务器端发送。</p>
+</blockquote>
+<h3 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h3><p><code>https://iperf.fr/iperf-doc.php</code></p>
 
                 
             </div>
@@ -1333,7 +1362,7 @@ self.received_MB_s &#x3D; self.received_kB_s &#x2F; 1024<span aria-hidden="true"
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">125.9k</span>&nbsp;字
+                class="white-color">126.3k</span>&nbsp;字
             
             
             
