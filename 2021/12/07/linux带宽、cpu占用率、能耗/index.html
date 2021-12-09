@@ -548,14 +548,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.9k
+                    2.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    8 分
+                    10 分
                 </div>
                 
 
@@ -799,6 +799,51 @@ print(tmp[6].split(&quot; &quot;)[12])<span aria-hidden="true" class="line-numbe
 <p>默认情况下我们进行测试，都是客户端发送数据，服务器端接收数据，这种情况下相当于只对上行带宽进行了测试，如果我们需要检测下行带宽，只需要使用<code>-R</code>命令，即可变为客户端接收，服务器端发送。</p>
 </blockquote>
 <h3 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h3><p><code>https://iperf.fr/iperf-doc.php</code></p>
+<p><code>https://github.com/thiezn/iperf3-python</code></p>
+<h2 id="cpu-内存-网络-进程信息"><a href="#cpu-内存-网络-进程信息" class="headerlink" title="cpu\内存\网络\进程信息"></a>cpu\内存\网络\进程信息</h2><h3 id="psutil"><a href="#psutil" class="headerlink" title="psutil"></a>psutil</h3><p>在Python中获取系统信息的另一个好办法是使用psutil这个第三方模块。顾名思义，psutil = process and system utilities，它不仅可以通过一两行代码实现系统监控，还可以跨平台使用，支持Linux／UNIX／OSX／Windows等，是系统管理员和运维小伙伴不可或缺的必备模块。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><code>pip install psutil</code></p>
+<h3 id="cpu信息"><a href="#cpu信息" class="headerlink" title="cpu信息"></a>cpu信息</h3><p>使用: <code>psutil.cpu_percent(interval=0.1, percpu=False)</code></p>
+<ul>
+<li>percpu True 的每个核的使用率、 False 平均使用率</li>
+<li>interval 好像是s，0.1是最小值<pre class="line-numbers language-none"><code class="language-none">psutil.cpu_times() #统计CPU的用户／系统／空闲时间：
+psutil.cpu_count() # CPU逻辑数量
+psutil.cpu_count(logical&#x3D;False) # CPU物理核心<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="内存信息"><a href="#内存信息" class="headerlink" title="内存信息"></a>内存信息</h3><pre class="line-numbers language-none"><code class="language-none">psutil.virtual_memory()
+psutil.swap_memory()
+svmem(total&#x3D;8589934592, available&#x3D;2866520064, percent&#x3D;66.6, used&#x3D;7201386496, free&#x3D;216178688, active&#x3D;3342192640, inactive&#x3D;2650341376, wired&#x3D;1208852480)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="磁盘信息"><a href="#磁盘信息" class="headerlink" title="磁盘信息"></a>磁盘信息</h3><pre class="line-numbers language-none"><code class="language-none">psutil.disk_partitions() # 磁盘分区信息
+psutil.disk_usage(&#39;&#x2F;&#39;) # 磁盘使用情况
+psutil.disk_io_counters() # 磁盘IO<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="网络信息"><a href="#网络信息" class="headerlink" title="网络信息"></a>网络信息</h3><pre class="line-numbers language-none"><code class="language-none">psutil.net_io_counters() # 获取网络读写字节／包的个数
+psutil.net_if_addrs() # 获取网络接口信息
+psutil.net_if_stats() # 获取网络接口状态<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="进程信息"><a href="#进程信息" class="headerlink" title="进程信息"></a>进程信息</h3><pre class="line-numbers language-none"><code class="language-none">psutil.pids() # 所有进程ID
+p &#x3D; psutil.Process(3776) # 获取指定进程ID&#x3D;3776，其实就是当前Python交互环境
+p.name() # 进程名称
+p.exe() # 进程exe路径
+p.cwd() # 进程工作目录
+p.cmdline() # 进程启动的命令行
+p.ppid() # 父进程ID
+p.parent() # 父进程
+p.children() # 子进程列表
+p.status() # 进程状态
+p.username() # 进程用户名
+p.create_time() # 进程创建时间
+p.terminal() # 进程终端
+p.cpu_times() # 进程使用的CPU时间
+p.memory_info() # 进程使用的内存
+p.open_files() # 进程打开的文件
+p.connections() # 进程相关网络连接
+p.num_threads() # 进程的线程数量
+p.threads() # 所有线程信息
+p.environ() # 进程环境变量
+p.terminate() # 结束进程<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>psutil还提供了一个test()函数，可以模拟出ps命令的效果：</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="进程能耗"><a href="#进程能耗" class="headerlink" title="进程能耗"></a>进程能耗</h2><h3 id="PowerTOP"><a href="#PowerTOP" class="headerlink" title="PowerTOP"></a>PowerTOP</h3><p>PowerTOP 是一个 Linux 工具，用于诊断电量消耗和电源管理的问题。<br><code>sudo powertop --csv=&quot;1.txt&quot; --time=0.01</code></p>
 
                 
             </div>
@@ -1362,7 +1407,7 @@ print(tmp[6].split(&quot; &quot;)[12])<span aria-hidden="true" class="line-numbe
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">126.3k</span>&nbsp;字
+                class="white-color">126.9k</span>&nbsp;字
             
             
             
