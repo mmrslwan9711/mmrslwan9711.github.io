@@ -541,21 +541,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-08
+                    2021-12-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.4k
+                    2.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    10 分
+                    13 分
                 </div>
                 
 
@@ -843,7 +843,83 @@ p.terminate() # 结束进程<span aria-hidden="true" class="line-numbers-rows"><
 </blockquote>
 </li>
 </ul>
-<h2 id="进程能耗"><a href="#进程能耗" class="headerlink" title="进程能耗"></a>进程能耗</h2><h3 id="PowerTOP"><a href="#PowerTOP" class="headerlink" title="PowerTOP"></a>PowerTOP</h3><p>PowerTOP 是一个 Linux 工具，用于诊断电量消耗和电源管理的问题。<br><code>sudo powertop --csv=&quot;1.txt&quot; --time=0.01</code></p>
+<h2 id="进程能耗"><a href="#进程能耗" class="headerlink" title="进程能耗"></a>进程能耗</h2><h3 id="PowerTOP"><a href="#PowerTOP" class="headerlink" title="PowerTOP"></a>PowerTOP</h3><p>PowerTOP 是一个 Linux 工具，用于诊断电量消耗和电源管理的问题。</p>
+<p><code>sudo powertop --csv=&quot;1.txt&quot; --time=0.01</code></p>
+<h2 id="s-tui"><a href="#s-tui" class="headerlink" title="s-tui"></a>s-tui</h2><h3 id="该工具可以测能耗、温度、占用率"><a href="#该工具可以测能耗、温度、占用率" class="headerlink" title="该工具可以测能耗、温度、占用率"></a>该工具可以测能耗、温度、占用率</h3><ul>
+<li>地址为： <code>https://github.com/amanusk/s-tui</code></li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;amanusk&#x2F;s-tui
+cd s-tui
+sudo pip install urwid 
+sudo pip install psutil 
+
+sudo apt-get install stress(可选)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="源码使用"><a href="#源码使用" class="headerlink" title="源码使用"></a>源码使用</h3><p><code>sudo python -m s_tui.s_tui</code></p>
+<div align=center><img width = '700' height ='700' src ="https://www.mmrsl.cn/download/img/cpu/1.png"/></div>
+
+
+<h3 id="命令行使用"><a href="#命令行使用" class="headerlink" title="命令行使用"></a>命令行使用</h3><pre class="line-numbers language-none"><code class="language-none">sudo add-apt-repository ppa:amanusk&#x2F;python-s-tui
+sudo apt-get update
+sudo apt-get install python3-s-tui
+sudo python3-s-tui<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<div align=center><img width = '700' height ='700' src ="https://www.mmrsl.cn/download/img/cpu/1.jpg"/></div>
+
+<h3 id="特别提醒"><a href="#特别提醒" class="headerlink" title="特别提醒"></a>特别提醒</h3><p>windows不能使用该方法，只有linux可以用，看power需要管理员权限。</p>
+<pre class="line-numbers language-none"><code class="language-none">optional arguments:
+  -h, --help            show this help message and exit
+  -d, --debug           Output debug log to _s-tui.log
+  --debug-file DEBUG_FILE
+                        Use a custom debug file. Default: _s-tui.log
+  -c, --csv             Save stats to csv file
+  --csv-file CSV_FILE   Use a custom CSV file. Default: s-tui_log_&lt;TIME&gt;.csv
+  -t, --terminal        Display a single line of stats without tui
+  -j, --json            Display a single line of stats in JSON format
+  -nm, --no-mouse       Disable Mouse for TTY systems
+  -v, --version         Display version
+  -ct CUSTOM_TEMP, --custom_temp CUSTOM_TEMP
+                        Custom temperature sensors.
+                        The format is: &lt;sensors&gt;,&lt;number&gt;
+                        As it appears in &#39;sensors&#39;
+                        e.g
+                        &gt; sensors
+                        it8792-isa-0a60,
+                        temp1: +47.0C
+                        temp2: +35.0C
+                        temp3: +37.0C
+
+                        use: -ct it8792,0 for temp 1
+
+  -tt T_THRESH, --t_thresh T_THRESH
+                        High Temperature threshold. Default: 80
+  -cf CUSTOM_FAN, --custom_fan CUSTOM_FAN
+                        Similar to custom temp
+                        e.g
+                        &gt;sensors
+                        thinkpad-isa-0000
+                        Adapter: ISA adapter
+                        fan1:        1975 RPM
+
+                        use: -cf thinkpad,0 for fan1
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>可以通过以下方法进行获取结果<br><code>sudo s-tui --csv-file=&#39;1.txt&#39;</code></p>
+<p><code>sudo s-tui -t</code>即可获取一次结果</p>
+<h3 id="python获取代码总结"><a href="#python获取代码总结" class="headerlink" title="python获取代码总结"></a>python获取代码总结</h3><pre class="line-numbers language-none"><code class="language-none">
+import os
+import time
+while True:
+        start&#x3D;time.time()
+        tmp &#x3D; os.popen(&#39;iperf -c xxxx -R -t 0.3 -f s -f Mbytes&#39;).readlines()
+        tmp2 &#x3D; os.popen(&#39;sudo s-tui -t&#39;).readlines()
+        print(float(tmp[6].split(&quot; &quot;)[tmp[6].split(&quot; &quot;).index(&quot;MBytes&#x2F;sec\n&quot;)-1])*8,&quot;MBbits&#x2F;sec&quot;)
+        print(tmp2[0].split(&#39; &#39;)[tmp2[0].split(&quot; &quot;).index(&quot;Utilization:&quot;) + 1])
+        print(tmp2[0].split(&#39; &#39;)[tmp2[0].split(&quot; &quot;).index(&quot;Power:&quot;)+1])
+        print(&quot;time:&quot;,time.time()-start)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>测试结果<br><pre class="line-numbers language-none"><code class="language-none">4000MBbits
+1.3
+30.5
+time: 0.3945608139038086<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></p>
+<p>0.3s获取一次结果。</p>
+<p>再加一个线程池，即可更进一步的将速度降低到0.3s，完美满足需求。</p>
 
                 
             </div>
@@ -1407,7 +1483,7 @@ p.terminate() # 结束进程<span aria-hidden="true" class="line-numbers-rows"><
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">126.9k</span>&nbsp;字
+                class="white-color">127.4k</span>&nbsp;字
             
             
             
