@@ -548,14 +548,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3k
+                    3.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    13 分
+                    14 分
                 </div>
                 
 
@@ -925,6 +925,73 @@ time: 0.3945608139038086<span aria-hidden="true" class="line-numbers-rows"><span
 <li>先切换到root用户，执行xhost +</li>
 <li>然后再切换到oracle用户，执行export DISPLAY=:0.0<br>案件损坏，可以修改按键nano mouse.py</li>
 </ol>
+<p>图形界面下的控制<br>主要控制指令是：xset<br>想要永久防止它进入休眠可以用以下指令：</p>
+<h5 id="创建文件"><a href="#创建文件" class="headerlink" title="创建文件:"></a>创建文件:</h5><p><code>sudo nano /etc/profile.d/Screen.sh</code></p>
+<h5 id="文件内容"><a href="#文件内容" class="headerlink" title="文件内容:"></a>文件内容:</h5><pre class="line-numbers language-none"><code class="language-none">xset dpms 0 0 0 
+xset s off<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="加执行权限"><a href="#加执行权限" class="headerlink" title="加执行权限:"></a>加执行权限:</h4><p><code>sudo chmod +x /etc/profile.d/Screen.sh</code></p>
+<h4 id="唤醒"><a href="#唤醒" class="headerlink" title="唤醒"></a>唤醒</h4><p>如果只是想临时让它从休眠中自动醒过来, 可以让程序执行自动指令:</p>
+<p><code>xset dpms force on</code></p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xset s off</td>
+<td>禁用屏幕保护</td>
+</tr>
+<tr>
+<td>xset s 3600 3600</td>
+<td>设置空闲时间为1小时</td>
+</tr>
+<tr>
+<td>xset -dpms</td>
+<td>关闭 DPMS</td>
+</tr>
+<tr>
+<td>xset s off -dpms</td>
+<td>禁用 DPMS 并阻止屏幕进入空闲</td>
+</tr>
+<tr>
+<td>xset dpms force off</td>
+<td>立即关闭屏幕</td>
+</tr>
+<tr>
+<td>xset dpms force standby</td>
+<td>强制屏幕进入待命状态</td>
+</tr>
+<tr>
+<td>xset dpms force suspend</td>
+<td>强制屏幕进入暂停状态</td>
+</tr>
+</tbody>
+</table>
+
+
+<ol>
+<li>方法<br><code>sudo nano /etc/lightdm/lightdm.conf</code><pre class="line-numbers language-none"><code class="language-none">[Seat:*]
+#type&#x3D;local
+#pam-service&#x3D;lightdm
+#pam-autologin-service&#x3D;lightdm-autologin
+#pam-greeter-service&#x3D;lightdm-greeter
+#xserver-backend&#x3D;
+xserver-command&#x3D;X -s 0-dpms
+#xserver-command&#x3D;X<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+增加<br><code>xserver-command=X -s 0-dpms</code></li>
+</ol>
+<ol>
+<li>命令行</li>
+</ol>
+<p><code>xset</code><br>想要永久防止它进入休眠可以用以下2条指令<br><pre class="line-numbers language-none"><code class="language-none">xset dpms 0 0 0
+xset s off<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>如果只是想临时让它从休眠中自动醒过来, 可以让程序执行自动指令</p>
+<p><code>xset dpms force on</code> </p>
+<p>附上xset的常规用法</p>
+<p>关于文字界面(Console)下防止休眠,顺带提一下:<br><pre class="line-numbers language-none"><code class="language-none">setterm --blank 0
+setterm --powersave off<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p>
 
                 
             </div>
@@ -1183,17 +1250,16 @@ time: 0.3945608139038086<span aria-hidden="true" class="line-numbers-rows"><span
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/07/linux%E5%B8%A6%E5%AE%BD%E3%80%81cpu%E5%8D%A0%E7%94%A8%E7%8E%87%E3%80%81%E8%83%BD%E8%80%97/">
+                <a href="/2021/12/20/pythonmpu6050/">
                     <div class="card-image">
                         
-                        <img src="https://www.mmrsl.cn/download/img/cpu/1.jpg" class="responsive-img" alt="linux获取带宽、cpu占用率、能耗">
+                        <img src="https://www.mmrsl.cn/download/img/mpu6050/1.jpg" class="responsive-img" alt="pythonmpu6050">
                         
-                        <span class="card-title">linux获取带宽、cpu占用率、能耗</span>
+                        <span class="card-title">pythonmpu6050</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1203,18 +1269,33 @@ time: 0.3945608139038086<span aria-hidden="true" class="line-numbers-rows"><span
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-07
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-20
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            万鲲鹏
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python/" class="post-category">
+                                    python
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/">
+                        <span class="chip bg-color">树莓派</span>
+                    </a>
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1487,7 +1568,7 @@ time: 0.3945608139038086<span aria-hidden="true" class="line-numbers-rows"><span
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">127.5k</span>&nbsp;字
+                class="white-color">128.4k</span>&nbsp;字
             
             
             
