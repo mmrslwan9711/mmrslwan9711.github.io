@@ -6,7 +6,7 @@
   <link href="http://www.mmrsl.cn/atom.xml" rel="self"/>
   
   <link href="http://www.mmrsl.cn/"/>
-  <updated>2021-12-20T03:14:12.295Z</updated>
+  <updated>2021-12-22T09:25:35.191Z</updated>
   <id>http://www.mmrsl.cn/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>iwlist/iwconfig/iw/wpa_supplicant命令</title>
+    <link href="http://www.mmrsl.cn/2021/12/22/iwlist-iwconfig-iw-wpa-supplicant/"/>
+    <id>http://www.mmrsl.cn/2021/12/22/iwlist-iwconfig-iw-wpa-supplicant/</id>
+    <published>2021-12-22T08:07:23.000Z</published>
+    <updated>2021-12-22T09:25:35.191Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>pythonmpu6050</title>
     <link href="http://www.mmrsl.cn/2021/12/20/pythonmpu6050/"/>
     <id>http://www.mmrsl.cn/2021/12/20/pythonmpu6050/</id>
     <published>2021-12-20T03:00:48.000Z</published>
-    <updated>2021-12-20T03:14:12.295Z</updated>
+    <updated>2021-12-22T02:50:43.788Z</updated>
     
     
       
@@ -48,7 +69,7 @@
     <link href="http://www.mmrsl.cn/2021/12/07/linux%E5%B8%A6%E5%AE%BD%E3%80%81cpu%E5%8D%A0%E7%94%A8%E7%8E%87%E3%80%81%E8%83%BD%E8%80%97/"/>
     <id>http://www.mmrsl.cn/2021/12/07/linux%E5%B8%A6%E5%AE%BD%E3%80%81cpu%E5%8D%A0%E7%94%A8%E7%8E%87%E3%80%81%E8%83%BD%E8%80%97/</id>
     <published>2021-12-07T08:39:56.000Z</published>
-    <updated>2021-12-15T12:55:23.959Z</updated>
+    <updated>2021-12-22T01:40:48.013Z</updated>
     
     
       
@@ -211,7 +232,7 @@
     <link href="http://www.mmrsl.cn/2021/11/23/mjpg-streamer/"/>
     <id>http://www.mmrsl.cn/2021/11/23/mjpg-streamer/</id>
     <published>2021-11-23T07:22:27.000Z</published>
-    <updated>2021-11-23T08:51:10.435Z</updated>
+    <updated>2021-12-21T12:58:06.705Z</updated>
     
     
       
@@ -468,33 +489,6 @@
     <category term="python" scheme="http://www.mmrsl.cn/tags/python/"/>
     
     <category term="爬虫" scheme="http://www.mmrsl.cn/tags/%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PaddleOCR光学字符识别</title>
-    <link href="http://www.mmrsl.cn/2021/10/25/paddleocr/"/>
-    <id>http://www.mmrsl.cn/2021/10/25/paddleocr/</id>
-    <published>2021-10-25T07:12:55.000Z</published>
-    <updated>2021-10-25T12:16:41.328Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="python" scheme="http://www.mmrsl.cn/categories/python/"/>
-    
-    
-    <category term="OCR" scheme="http://www.mmrsl.cn/tags/OCR/"/>
-    
-    <category term="python" scheme="http://www.mmrsl.cn/tags/python/"/>
     
   </entry>
   
