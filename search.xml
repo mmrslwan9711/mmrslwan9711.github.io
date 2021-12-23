@@ -708,6 +708,66 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       </tags>
   </entry>
   <entry>
+    <title>Fusion360学习笔记</title>
+    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
+<pre><code>h1 &#123;
+counter-reset: subsection;
+&#125;
+h2 &#123;
+counter-reset: subsection2;
+&#125;
+h3 &#123;
+counter-reset: subsection3;
+&#125;
+h4 &#123;
+counter-reset: subsection4;
+&#125;
+h1::before &#123;
+counter-increment: section;
+content:  &quot; &quot;;
+&#125;
+
+h2::before &#123;
+counter-increment: subsection;
+content: counter(subsection) &quot; &quot;;
+&#125;
+h3::before &#123;
+counter-increment: subsection2;
+content: counter(subsection) &quot;.&quot; counter(subsection2) ;
+&#125;
+h4::before &#123;
+counter-increment: subsection3;
+content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
+&#125;
+h5::before &#123;
+counter-increment: subsection4;
+content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
+&#125;
+</code></pre><p>&lt;/style&gt;</p>
+<p><style><br>        video {<br>            width: 20%;<br>        }
+</style></p>
+<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
+<ul>
+<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
+</ul>
+<p>下载个人用途版本即可。</p>
+<h2 id="创建草图"><a href="#创建草图" class="headerlink" title="创建草图"></a>创建草图</h2><p>用一张普通图片做背景，然后进行抠图，类似ps。</p>
+<p><img src="https://www.mmrsl.cn/download/img/xmu/5.png" alt=""></p>
+<h2 id="拉伸、圆角、倒角"><a href="#拉伸、圆角、倒角" class="headerlink" title="拉伸、圆角、倒角"></a>拉伸、圆角、倒角</h2><p>可以剪切，拉伸都行，反正最终都可以获得你想要的模型。<br><img src="https://www.mmrsl.cn/download/img/xmu/6.png" alt=""></p>
+<h2 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h2><p>可以选中模型，然后点击外观。</p>
+<p>可选项很多，可以自由选择材质，通俗易懂。</p>
+<h2 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h2><p>最终效果<br><img src="https://www.mmrsl.cn/download/img/xmu/4.png" alt=""></p>
+<h2 id="螺丝刀"><a href="#螺丝刀" class="headerlink" title="螺丝刀"></a>螺丝刀</h2><p><img src="https://www.mmrsl.cn/download/img/xmu/7.png" alt=""></p>
+<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/video/2.mp4"   controls="controls"></video>
+
+<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/video/3.mp4"   controls="controls"></video>
+
+
+<p><img src="https://www.mmrsl.cn/download/img/html5/2.jpg" alt=""></p>
+]]></content>
+  </entry>
+  <entry>
     <title>English_learning</title>
     <url>/2020/07/31/English-learning/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
@@ -821,66 +881,6 @@ If you are talking to a group of managers, you may refer to the disorganized met
       </tags>
   </entry>
   <entry>
-    <title>Fusion360学习笔记</title>
-    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
-<pre><code>h1 &#123;
-counter-reset: subsection;
-&#125;
-h2 &#123;
-counter-reset: subsection2;
-&#125;
-h3 &#123;
-counter-reset: subsection3;
-&#125;
-h4 &#123;
-counter-reset: subsection4;
-&#125;
-h1::before &#123;
-counter-increment: section;
-content:  &quot; &quot;;
-&#125;
-
-h2::before &#123;
-counter-increment: subsection;
-content: counter(subsection) &quot; &quot;;
-&#125;
-h3::before &#123;
-counter-increment: subsection2;
-content: counter(subsection) &quot;.&quot; counter(subsection2) ;
-&#125;
-h4::before &#123;
-counter-increment: subsection3;
-content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
-&#125;
-h5::before &#123;
-counter-increment: subsection4;
-content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
-&#125;
-</code></pre><p>&lt;/style&gt;</p>
-<p><style><br>        video {<br>            width: 20%;<br>        }
-</style></p>
-<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
-<ul>
-<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
-</ul>
-<p>下载个人用途版本即可。</p>
-<h2 id="创建草图"><a href="#创建草图" class="headerlink" title="创建草图"></a>创建草图</h2><p>用一张普通图片做背景，然后进行抠图，类似ps。</p>
-<p><img src="https://www.mmrsl.cn/download/img/xmu/5.png" alt=""></p>
-<h2 id="拉伸、圆角、倒角"><a href="#拉伸、圆角、倒角" class="headerlink" title="拉伸、圆角、倒角"></a>拉伸、圆角、倒角</h2><p>可以剪切，拉伸都行，反正最终都可以获得你想要的模型。<br><img src="https://www.mmrsl.cn/download/img/xmu/6.png" alt=""></p>
-<h2 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h2><p>可以选中模型，然后点击外观。</p>
-<p>可选项很多，可以自由选择材质，通俗易懂。</p>
-<h2 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h2><p>最终效果<br><img src="https://www.mmrsl.cn/download/img/xmu/4.png" alt=""></p>
-<h2 id="螺丝刀"><a href="#螺丝刀" class="headerlink" title="螺丝刀"></a>螺丝刀</h2><p><img src="https://www.mmrsl.cn/download/img/xmu/7.png" alt=""></p>
-<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/video/2.mp4"   controls="controls"></video>
-
-<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/video/3.mp4"   controls="controls"></video>
-
-
-<p><img src="https://www.mmrsl.cn/download/img/html5/2.jpg" alt=""></p>
-]]></content>
-  </entry>
-  <entry>
     <title>LabelImg_使用</title>
     <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
@@ -932,80 +932,6 @@ other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></spa
       </categories>
       <tags>
         <tag>目标检测</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux进程断连重新进入该进程方法</title>
-    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
-<ul>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
-</ul>
-<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
-<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
-<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
-<p><code>nohup python3 main.py &amp;</code></p>
-<ol>
-<li>nohup </li>
-</ol>
-<p>加在一个命令的最前面，表示不挂断的运行命令</p>
-<ol>
-<li>&amp;</li>
-</ol>
-<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
-<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
-<ol>
-<li>jobs 查看后台运行的命令</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
-[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<ol>
-<li><p>ps查看进程</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
-  PID TTY          TIME CMD
-20712 pts&#x2F;6    00:00:00 bash
-20793 pts&#x2F;6    02:49:24 python3
-22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>kill </p>
-</li>
-</ol>
-<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
-<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
-<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
-<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
-<p>将后台中的命令调至前台继续运行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
-<p>（2）Ctrl + z 命令</p>
-<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
-<p>（3）bg命令</p>
-<p>将一个在后台暂停的命令，变成在后台继续执行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
-<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
-<li>首先后台运行一个进程：</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
-<ul>
-<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
-<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
-</ul>
-<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
-<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
-<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
-<p>linux远程断联后重新进入该进程</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
-</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>研究生课程</tag>
       </tags>
   </entry>
   <entry>
@@ -1827,6 +1753,194 @@ transform_test &#x3D; transforms.Compose([
       </categories>
       <tags>
         <tag>pytorch</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux进程断连重新进入该进程方法</title>
+    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
+<ul>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
+</ul>
+<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
+<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
+<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
+<p><code>nohup python3 main.py &amp;</code></p>
+<ol>
+<li>nohup </li>
+</ol>
+<p>加在一个命令的最前面，表示不挂断的运行命令</p>
+<ol>
+<li>&amp;</li>
+</ol>
+<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
+<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
+<ol>
+<li>jobs 查看后台运行的命令</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
+[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ol>
+<li><p>ps查看进程</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
+  PID TTY          TIME CMD
+20712 pts&#x2F;6    00:00:00 bash
+20793 pts&#x2F;6    02:49:24 python3
+22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>kill </p>
+</li>
+</ol>
+<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
+<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
+<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
+<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
+<p>将后台中的命令调至前台继续运行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
+<p>（2）Ctrl + z 命令</p>
+<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
+<p>（3）bg命令</p>
+<p>将一个在后台暂停的命令，变成在后台继续执行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
+<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
+<li>首先后台运行一个进程：</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
+<ul>
+<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
+<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
+</ul>
+<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
+<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
+<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
+<p>linux远程断联后重新进入该进程</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
+</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>研究生课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>OCR_实时翻译</title>
+    <url>/2021/10/27/OCR-%E5%AE%9E%E6%97%B6%E7%BF%BB%E8%AF%91/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="OCR-实时翻译"><a href="#OCR-实时翻译" class="headerlink" title="OCR_实时翻译"></a>OCR_实时翻译</h1><ul>
+<li>采用了easyocr</li>
+<li>爬虫，调取百度翻译接口</li>
+</ul>
+<h2 id="调用屏幕接口"><a href="#调用屏幕接口" class="headerlink" title="调用屏幕接口"></a>调用屏幕接口</h2><p>调用屏幕的方法很简单：<br><pre class="line-numbers language-none"><code class="language-none">import pyautogui
+import cv2
+import numpy as np
+img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 1920, 100])  # x,y,w,h
+# img.save(&#39;screenshot.png&#39;)
+img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
+cv2.imshow(&quot;1&quot;,img)
+cv2.waitKey(0)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>但感觉效率很低，最后改成了虚拟摄像头+cap=cv2.VideoCapture(1)的方式捕获。</p>
+<h2 id="调用百度翻译接口"><a href="#调用百度翻译接口" class="headerlink" title="调用百度翻译接口"></a>调用百度翻译接口</h2><pre class="line-numbers language-none"><code class="language-none">import urllib.request
+import urllib.parse
+import json
+import pyautogui
+import cv2
+import numpy as np
+url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
+headers &#x3D; &#123;
+    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
+&#125;
+data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
+request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
+response &#x3D; urllib.request.urlopen(request)
+content &#x3D; response.read().decode(&#39;utf-8&#39;)
+obj &#x3D; json.loads(content)
+print(obj)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这个只能做单词翻译，还需要进一步优化。</p>
+<h2 id="easyocr"><a href="#easyocr" class="headerlink" title="easyocr"></a>easyocr</h2><p>这个参考<a href="https://www.codekp.cn/2021/10/25/EasyOCR%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB/">EasyOCR光学字符识别</a></p>
+<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><blockquote>
+<p>最终实现效果，在摄像头上和屏幕截取上都进行了测试.</p>
+</blockquote>
+<h3 id="首先是摄像头"><a href="#首先是摄像头" class="headerlink" title="首先是摄像头"></a>首先是摄像头</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu2.png" alt=""></p>
+<h3 id="然后是屏幕"><a href="#然后是屏幕" class="headerlink" title="然后是屏幕"></a>然后是屏幕</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu1.png" alt=""></p>
+<h2 id="最后是源码"><a href="#最后是源码" class="headerlink" title="最后是源码"></a>最后是源码</h2><pre class="line-numbers language-none"><code class="language-none">import time
+
+import easyocr
+import ssl
+import cv2
+# from matplotlib import pyplot as plt
+
+import cv2
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+import urllib.request
+import urllib.parse
+import json
+import pyautogui
+import cv2
+import numpy as np
+
+
+ssl._create_default_https_context &#x3D; ssl._create_unverified_context
+# 设置识别中英文两种语言
+reader &#x3D; easyocr.Reader([&#39;ch_sim&#39;, &#39;en&#39;])  # need to run only once to load model into memory
+Image3&#x3D;&#39;https:&#x2F;&#x2F;www.codekp.cn&#x2F;download&#x2F;img&#x2F;ubuntu&#x2F;NVIDIA1.png&#39;
+Image2&#x3D;r&quot;H:\blog\wan_lab\blog_2020\source\download\img\ubuntu\NVIDIA1.png&quot;
+Image4&#x3D;&quot;1.jpg&quot;
+url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
+headers &#x3D; &#123;
+    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
+&#125;
+
+
+cap&#x3D;cv2.VideoCapture(0)
+
+
+while True:
+    ret,img&#x3D;cap.read()
+    # img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 500, 500])  # x,y,w,h
+    # img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
+    cv2.imwrite(&quot;1.jpg&quot;,img)
+    result &#x3D; reader.readtext(Image4, paragraph&#x3D;&quot;False&quot;)
+
+    start&#x3D;time.time()
+    for detection in result:
+        top_left &#x3D; tuple(detection[0][0])
+        bottom_right &#x3D; tuple(detection[0][2])
+        text &#x3D; detection[1]
+        img &#x3D; cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 3)
+        img &#x3D; cv2ImgAddText(img, text, bottom_right[0], bottom_right[1], (0, 255, 0), 18)
+        data &#x3D; &#123;
+            &#39;kw&#39;: text
+        &#125;
+        data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
+        request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
+        response &#x3D; urllib.request.urlopen(request)
+        content &#x3D; response.read().decode(&#39;utf-8&#39;)
+        obj &#x3D; json.loads(content)
+        print(obj)
+        try:
+            text2 &#x3D; str(obj[&#39;data&#39;][0][&#39;v&#39;])
+            img &#x3D; cv2ImgAddText(img, text2, bottom_right[0], bottom_right[1]+20, (0, 255, 0), 18)
+        except:
+            pass
+    cv2.imshow(&quot;1&quot;,img)
+    cv2.waitKey(1)
+    print((time.time()-start)*1000)
+capture.release()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><pre><code>将百度翻译的内容，和原始图像显示出来并列到一起就有了一个比较完整的东西。
+</code></pre><p><img src="https://www.codekp.cn/download/img/baidu/baidu3.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>OCR</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -4367,116 +4481,319 @@ public class TestThread &#123;
       </tags>
   </entry>
   <entry>
-    <title>OCR_实时翻译</title>
-    <url>/2021/10/27/OCR-%E5%AE%9E%E6%97%B6%E7%BF%BB%E8%AF%91/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="OCR-实时翻译"><a href="#OCR-实时翻译" class="headerlink" title="OCR_实时翻译"></a>OCR_实时翻译</h1><ul>
-<li>采用了easyocr</li>
-<li>爬虫，调取百度翻译接口</li>
-</ul>
-<h2 id="调用屏幕接口"><a href="#调用屏幕接口" class="headerlink" title="调用屏幕接口"></a>调用屏幕接口</h2><p>调用屏幕的方法很简单：<br><pre class="line-numbers language-none"><code class="language-none">import pyautogui
-import cv2
-import numpy as np
-img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 1920, 100])  # x,y,w,h
-# img.save(&#39;screenshot.png&#39;)
-img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
-cv2.imshow(&quot;1&quot;,img)
-cv2.waitKey(0)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>但感觉效率很低，最后改成了虚拟摄像头+cap=cv2.VideoCapture(1)的方式捕获。</p>
-<h2 id="调用百度翻译接口"><a href="#调用百度翻译接口" class="headerlink" title="调用百度翻译接口"></a>调用百度翻译接口</h2><pre class="line-numbers language-none"><code class="language-none">import urllib.request
-import urllib.parse
-import json
-import pyautogui
-import cv2
-import numpy as np
-url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
-headers &#x3D; &#123;
-    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
-&#125;
-data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
-request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
-response &#x3D; urllib.request.urlopen(request)
-content &#x3D; response.read().decode(&#39;utf-8&#39;)
-obj &#x3D; json.loads(content)
-print(obj)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>这个只能做单词翻译，还需要进一步优化。</p>
-<h2 id="easyocr"><a href="#easyocr" class="headerlink" title="easyocr"></a>easyocr</h2><p>这个参考<a href="https://www.codekp.cn/2021/10/25/EasyOCR%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB/">EasyOCR光学字符识别</a></p>
-<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><blockquote>
-<p>最终实现效果，在摄像头上和屏幕截取上都进行了测试.</p>
-</blockquote>
-<h3 id="首先是摄像头"><a href="#首先是摄像头" class="headerlink" title="首先是摄像头"></a>首先是摄像头</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu2.png" alt=""></p>
-<h3 id="然后是屏幕"><a href="#然后是屏幕" class="headerlink" title="然后是屏幕"></a>然后是屏幕</h3><p><img src="https://www.codekp.cn/download/img/baidu/baidu1.png" alt=""></p>
-<h2 id="最后是源码"><a href="#最后是源码" class="headerlink" title="最后是源码"></a>最后是源码</h2><pre class="line-numbers language-none"><code class="language-none">import time
+    <title>My_leetcode</title>
+    <url>/2021/12/03/My-leetcode/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
 
-import easyocr
-import ssl
-import cv2
-# from matplotlib import pyplot as plt
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
 
-import cv2
-import numpy as np
-from PIL import Image, ImageDraw, ImageFont
-import urllib.request
-import urllib.parse
-import json
-import pyautogui
-import cv2
-import numpy as np
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
 
-
-ssl._create_default_https_context &#x3D; ssl._create_unverified_context
-# 设置识别中英文两种语言
-reader &#x3D; easyocr.Reader([&#39;ch_sim&#39;, &#39;en&#39;])  # need to run only once to load model into memory
-Image3&#x3D;&#39;https:&#x2F;&#x2F;www.codekp.cn&#x2F;download&#x2F;img&#x2F;ubuntu&#x2F;NVIDIA1.png&#39;
-Image2&#x3D;r&quot;H:\blog\wan_lab\blog_2020\source\download\img\ubuntu\NVIDIA1.png&quot;
-Image4&#x3D;&quot;1.jpg&quot;
-url &#x3D; &#39;https:&#x2F;&#x2F;fanyi.baidu.com&#x2F;sug&#39;
-headers &#x3D; &#123;
-    &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;92.0.4515.159 Safari&#x2F;537.36&#39;
-&#125;
-
-
-cap&#x3D;cv2.VideoCapture(0)
-
-
-while True:
-    ret,img&#x3D;cap.read()
-    # img &#x3D; pyautogui.screenshot(region&#x3D;[0, 0, 500, 500])  # x,y,w,h
-    # img &#x3D; cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
-    cv2.imwrite(&quot;1.jpg&quot;,img)
-    result &#x3D; reader.readtext(Image4, paragraph&#x3D;&quot;False&quot;)
-
-    start&#x3D;time.time()
-    for detection in result:
-        top_left &#x3D; tuple(detection[0][0])
-        bottom_right &#x3D; tuple(detection[0][2])
-        text &#x3D; detection[1]
-        img &#x3D; cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 3)
-        img &#x3D; cv2ImgAddText(img, text, bottom_right[0], bottom_right[1], (0, 255, 0), 18)
-        data &#x3D; &#123;
-            &#39;kw&#39;: text
+<h2 id="My-leetcode"><a href="#My-leetcode" class="headerlink" title="My_leetcode"></a>My_leetcode</h2><h3 id="截断句子"><a href="#截断句子" class="headerlink" title="截断句子"></a>截断句子</h3><p>句子 是一个单词列表，列表中的单词之间用单个空格隔开，且不存在前导或尾随空格。每个单词仅由大小写英文字母组成（不含标点符号）。</p>
+<p>例如，”Hello World”、”HELLO” 和 “hello world hello world” 都是句子。<br>给你一个句子 s​​​​​​ 和一个整数 k​​​​​​ ，请你将 s​​ 截断 ​，​​​使截断后的句子仅含 前 k​​​​​​ 个单词。返回 截断 s​​​​​​ 后得到的句子。</p>
+<ul>
+<li>C++<pre class="line-numbers language-none"><code class="language-none">lass Solution &#123;
+public:
+    string truncateSentence(string s, int k) &#123;
+    string s1;
+    int i,flag&#x3D;0;
+    for(i&#x3D;0;i&lt;s.length();i++)&#123;
+        if(s[i]&#x3D;&#x3D;&#39; &#39;)&#123;
+            flag++;
         &#125;
-        data &#x3D; urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)
-        request &#x3D; urllib.request.Request(url&#x3D;url, data&#x3D;data, headers&#x3D;headers)
-        response &#x3D; urllib.request.urlopen(request)
-        content &#x3D; response.read().decode(&#39;utf-8&#39;)
-        obj &#x3D; json.loads(content)
-        print(obj)
-        try:
-            text2 &#x3D; str(obj[&#39;data&#39;][0][&#39;v&#39;])
-            img &#x3D; cv2ImgAddText(img, text2, bottom_right[0], bottom_right[1]+20, (0, 255, 0), 18)
-        except:
-            pass
-    cv2.imshow(&quot;1&quot;,img)
-    cv2.waitKey(1)
-    print((time.time()-start)*1000)
-capture.release()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><pre><code>将百度翻译的内容，和原始图像显示出来并列到一起就有了一个比较完整的东西。
-</code></pre><p><img src="https://www.codekp.cn/download/img/baidu/baidu3.png" alt=""></p>
+        if(flag&#x3D;&#x3D;k)&#123;
+            break;
+        &#125;
+        
+        s1+&#x3D;s[i];
+    &#125;
+    return s1;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>java<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+    public String truncateSentence(String s, int k) &#123;
+        String[] s1&#x3D;s.split(&quot; &quot;);;
+        String s2&#x3D;&quot;&quot;;
+        int i;
+        for(i&#x3D;0;i&lt;k;i++)&#123;
+            s2&#x3D;s2.concat(s1[i]);
+            if(i&lt;k-1)&#123;
+                s2&#x3D;s2.concat(&quot; &quot;);
+            &#125;&#125;
+        return s2;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><p>链表问题，<br>求和<br>2 3 4<br>3 4 5<br>输出<br>x x x<br>/**</p>
+<p>java<br><pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) &#123;
+        ListNode pre&#x3D;new ListNode(0);
+        ListNode cru&#x3D;pre;
+        int carry&#x3D;0;
+        while(l1!&#x3D;null||l2!&#x3D;null)&#123;
+            int x&#x3D; l1&#x3D;&#x3D;null? 0 : l1.val;
+            int y&#x3D; l2&#x3D;&#x3D;null? 0 : l2.val;
+            int sum&#x3D;0;
+            sum&#x3D;x+y+carry;
+            carry&#x3D;sum&#x2F;10;
+            cru.next&#x3D;new ListNode(sum%10);
+            cru&#x3D;cru.next;
+            if(l1!&#x3D;null)&#123;
+            l1&#x3D;l1.next;
+            &#125;
+            if(l2!&#x3D;null)&#123;
+            l2&#x3D;l2.next;
+            &#125;
+        &#125;
+        if (carry!&#x3D; 0)&#123;
+            cru.next&#x3D;new ListNode(carry);
+        &#125;
+        return pre.next;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>C++<br><pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for singly-linked list.
+ * struct ListNode &#123;
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) &#123;&#125;
+ *     ListNode(int x) : val(x), next(nullptr) &#123;&#125;
+ *     ListNode(int x, ListNode *next) : val(x), next(next) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+#define null ((void *)0)
+class Solution &#123;
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) &#123;
+        ListNode* pre &#x3D; new ListNode(0);
+        ListNode* cur &#x3D; pre;
+        int carry&#x3D;0;
+        while( l1 !&#x3D; null || l2 !&#x3D; null) &#123;
+            int x&#x3D;l1&#x3D;&#x3D;null ? 0:l1-&gt;val;
+            int y&#x3D;l2&#x3D;&#x3D;null ? 0:l2-&gt;val;
+            int sum&#x3D;x+y+carry;
+
+            carry&#x3D;sum&#x2F;10;
+            sum&#x3D;sum%10;
+            cur-&gt;next &#x3D; new ListNode(sum);
+            cur &#x3D; cur-&gt;next;
+            if(l1 !&#x3D; null)
+                l1 &#x3D; l1-&gt;next;
+            if(l2 !&#x3D; null)
+                l2 &#x3D; l2-&gt;next;
+        &#125;
+        if(carry &#x3D;&#x3D; 1) &#123;
+            cur-&gt;next &#x3D; new ListNode(carry);
+        &#125;
+        return pre-&gt;next;
+
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>主要这道题可以理解链表，自己写几遍可以加深一下印象。<br>pre记录最前面的地址，最后pre.next，即可获得第二个地址，就很巧妙。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Python_PyWebIO</title>
+    <url>/2021/12/01/Python-PyWebIO/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+<p><h1 align="center" name="pywebio-zh">Python_PyWebIO</h1></p>
+<p align="center">
+    <em>万鲲鹏</em>
+</p>
+
+<p>PyWebIO提供了一系列命令式的交互函数来在浏览器上获取用户输入和进行输出，将浏览器变成了一个“富文本终端”，可以用于构建简单的Web应用或基于浏览器的GUI应用。<br>PyWebIO还可以方便地整合进现有的Web服务，让你不需要编写HTML和JS代码，就可以构建出具有良好可用性的应用。</p>
+<p>功能特性：</p>
+<ul>
+<li>使用同步而不是基于回调的方式获取输入，代码编写逻辑更自然</li>
+<li>非声明式布局，布局方式简单高效</li>
+<li>代码侵入性小，旧脚本代码仅需修改输入输出逻辑便可改造为Web服务</li>
+<li>支持整合到现有的Web服务，目前支持与Flask、Django、Tornado、aiohttp、FastAPI框架集成</li>
+<li>同时支持基于线程的执行模型和基于协程的执行模型</li>
+<li>支持结合第三方库实现数据可视化</li>
+</ul>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>稳定版安装:</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>报错：<br><code>Fatal error in launcher: Unable to create process using</code></p>
+<p>主要是由于直接调用环境导致的遇到这种问题</p>
+<pre class="line-numbers language-none"><code class="language-none">python -m pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="Quickstart"><a href="#Quickstart" class="headerlink" title="Quickstart"></a>Quickstart</h2><p><strong>Hello, world</strong></p>
+<p>这是一个使用PyWebIO计算 <a href="https://en.wikipedia.org/wiki/Body_mass_index">BMI指数</a> 的脚本:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio.input import input, FLOAT
+from pywebio.output import put_text
+
+def bmi():
+    height &#x3D; input(&quot;请输入你的身高(cm)：&quot;, type&#x3D;FLOAT)
+    weight &#x3D; input(&quot;请输入你的体重(kg)：&quot;, type&#x3D;FLOAT)
+
+    BMI &#x3D; weight &#x2F; (height &#x2F; 100) ** 2
+
+    top_status &#x3D; [(14.9, &#39;极瘦&#39;), (18.4, &#39;偏瘦&#39;),
+                  (22.9, &#39;正常&#39;), (27.5, &#39;过重&#39;),
+                  (40.0, &#39;肥胖&#39;), (float(&#39;inf&#39;), &#39;非常肥胖&#39;)]
+
+    for top, status in top_status:
+        if BMI &lt;&#x3D; top:
+            put_text(&#39;你的 BMI 值: %.1f，身体状态：%s&#39; % (BMI, status))
+            break
+
+if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    bmi()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如果没有使用PyWebIO，这只是一个非常简单的脚本，而通过使用PyWebIO提供的输入输出函数，你可以在浏览器中与代码进行交互 <a href="http://pywebio-demos.pywebio.online/bmi">[demo]</a>：</p>
+<p align="center">
+    <a href="http://pywebio-demos.pywebio.online/?pywebio_api=bmi">
+        <img src="https://raw.githubusercontent.com/wang0618/PyWebIO/dev/docs/assets/demo_zh.gif" alt="PyWebIO demo" width="400px"/>
+    </a>
+</p>
+
+<p><strong>作为Web服务提供</strong></p>
+<p>上文BMI程序会在计算完毕后立刻退出，可以使用 <a href="https://pywebio.readthedocs.io/zh_CN/latest/platform.html#pywebio.platform.tornado.start_server"><code>pywebio.start_server()</code></a> 将 <code>bmi()</code> 函数作为Web服务提供：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio import start_server
+from pywebio.input import input, FLOAT
+from pywebio.output import put_text
+
+def bmi():  # bmi() 函数内容不变
+    ...  
+
+if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    start_server(bmi, port&#x3D;80)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Demos"><a href="#Demos" class="headerlink" title="Demos"></a>Demos</h2><ul>
+<li><a href="http://pywebio-demos.pywebio.online/">基本demo</a> : 包含PyWebIO基本输入输出演示和使用PyWebIO编写的小应用</li>
+<li><a href="http://pywebio-charts.pywebio.online/">数据可视化demo</a> : 使用 bokeh、plotly、pyecharts 等库进行数据可视化</li>
+</ul>
+<h3 id="武汉三维地图"><a href="#武汉三维地图" class="headerlink" title="武汉三维地图"></a>武汉三维地图</h3><pre class="line-numbers language-none"><code class="language-none">from pywebio.output import put_html
+from pyecharts import options as opts
+from pyecharts.charts import Map3D
+from pyecharts.globals import ChartType
+
+example_data &#x3D; [
+    [[119.107078, 36.70925, 1000], [116.587245, 35.415393, 1000]],
+    [[117.000923, 36.675807], [120.355173, 36.082982]],
+    [[118.047648, 36.814939], [118.66471, 37.434564]],
+    [[121.391382, 37.539297], [119.107078, 36.70925]],
+    [[116.587245, 35.415393], [122.116394, 37.509691]],
+    [[119.461208, 35.428588], [118.326443, 35.065282]],
+    [[116.307428, 37.453968], [115.469381, 35.246531]],
+]
+c &#x3D; (
+    Map3D()
+        .add_schema(
+        maptype&#x3D;&quot;武汉&quot;,
+        itemstyle_opts&#x3D;opts.ItemStyleOpts(
+            color&#x3D;&quot;rgb(5,101,123)&quot;,
+            opacity&#x3D;1,
+            border_width&#x3D;0.8,
+            border_color&#x3D;&quot;rgb(62,215,213)&quot;,
+        ),
+        light_opts&#x3D;opts.Map3DLightOpts(
+            main_color&#x3D;&quot;#fff&quot;,
+            main_intensity&#x3D;1.2,
+            is_main_shadow&#x3D;False,
+            main_alpha&#x3D;55,
+            main_beta&#x3D;10,
+            ambient_intensity&#x3D;0.3,
+        ),
+        view_control_opts&#x3D;opts.Map3DViewControlOpts(center&#x3D;[-10, 0, 10]),
+        post_effect_opts&#x3D;opts.Map3DPostEffectOpts(is_enable&#x3D;False),
+    )
+        .add(
+        series_name&#x3D;&quot;&quot;,
+        data_pair&#x3D;example_data,
+        type_&#x3D;ChartType.LINES3D,
+        effect&#x3D;opts.Lines3DEffectOpts(
+            is_show&#x3D;True,
+            period&#x3D;4,
+            trail_width&#x3D;3,
+            trail_length&#x3D;0.5,
+            trail_color&#x3D;&quot;#f00&quot;,
+            trail_opacity&#x3D;1,
+        ),
+        linestyle_opts&#x3D;opts.LineStyleOpts(is_show&#x3D;False, color&#x3D;&quot;#fff&quot;, opacity&#x3D;0),
+    )
+        .set_global_opts(title_opts&#x3D;opts.TitleOpts(title&#x3D;&quot;Map3D-Lines3D&quot;))
+
+)
+
+c.width &#x3D; &quot;100%&quot;
+put_html(c.render_notebook())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p><img src="https://www.mmrsl.cn/download/img/html5/15.jpg" alt=""></p>
+<h2 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h2><p>使用手册和实现文档见 <a href="https://pywebio.readthedocs.io/zh_CN/latest/">https://pywebio.readthedocs.io</a></p>
 ]]></content>
       <categories>
         <category>python</category>
       </categories>
       <tags>
-        <tag>OCR</tag>
         <tag>python</tag>
       </tags>
   </entry>
@@ -5791,6 +6108,21 @@ roomfloor(HIGHT*i,Width*z,Length*j,400,400,300)&#125;
 ]]></content>
   </entry>
   <entry>
+    <title>b站视频分享</title>
+    <url>/2017/11/17/b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=414001980&bvid=BV1TV411z7aB&cid=218691406&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div><br><span id="more"></span></p>
+]]></content>
+      <categories>
+        <category>分享</category>
+      </categories>
+      <tags>
+        <tag>b站视频</tag>
+        <tag>分享</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>b站up主推荐</title>
     <url>/2021/04/14/b%E7%AB%99up%E4%B8%BB%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="position:relative; padding-bottom:75%; width:100%; height:0">
@@ -5912,21 +6244,6 @@ roomfloor(HIGHT*i,Width*z,Length*j,400,400,300)&#125;
       </categories>
       <tags>
         <tag>b站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>b站视频分享</title>
-    <url>/2017/11/17/b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=414001980&bvid=BV1TV411z7aB&cid=218691406&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div><br><span id="more"></span></p>
-]]></content>
-      <categories>
-        <category>分享</category>
-      </categories>
-      <tags>
-        <tag>b站视频</tag>
-        <tag>分享</tag>
       </tags>
   </entry>
   <entry>
@@ -6080,151 +6397,6 @@ const type variable &#x3D; value;<span aria-hidden="true" class="line-numbers-ro
 ]]></content>
   </entry>
   <entry>
-    <title>My_leetcode</title>
-    <url>/2021/12/03/My-leetcode/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  " ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
-
-<h2 id="My-leetcode"><a href="#My-leetcode" class="headerlink" title="My_leetcode"></a>My_leetcode</h2><h3 id="截断句子"><a href="#截断句子" class="headerlink" title="截断句子"></a>截断句子</h3><p>句子 是一个单词列表，列表中的单词之间用单个空格隔开，且不存在前导或尾随空格。每个单词仅由大小写英文字母组成（不含标点符号）。</p>
-<p>例如，”Hello World”、”HELLO” 和 “hello world hello world” 都是句子。<br>给你一个句子 s​​​​​​ 和一个整数 k​​​​​​ ，请你将 s​​ 截断 ​，​​​使截断后的句子仅含 前 k​​​​​​ 个单词。返回 截断 s​​​​​​ 后得到的句子。</p>
-<ul>
-<li>C++<pre class="line-numbers language-none"><code class="language-none">lass Solution &#123;
-public:
-    string truncateSentence(string s, int k) &#123;
-    string s1;
-    int i,flag&#x3D;0;
-    for(i&#x3D;0;i&lt;s.length();i++)&#123;
-        if(s[i]&#x3D;&#x3D;&#39; &#39;)&#123;
-            flag++;
-        &#125;
-        if(flag&#x3D;&#x3D;k)&#123;
-            break;
-        &#125;
-        
-        s1+&#x3D;s[i];
-    &#125;
-    return s1;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>java<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
-    public String truncateSentence(String s, int k) &#123;
-        String[] s1&#x3D;s.split(&quot; &quot;);;
-        String s2&#x3D;&quot;&quot;;
-        int i;
-        for(i&#x3D;0;i&lt;k;i++)&#123;
-            s2&#x3D;s2.concat(s1[i]);
-            if(i&lt;k-1)&#123;
-                s2&#x3D;s2.concat(&quot; &quot;);
-            &#125;&#125;
-        return s2;
-    &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
-<h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><p>链表问题，<br>求和<br>2 3 4<br>3 4 5<br>输出<br>x x x<br>/**</p>
-<p>java<br><pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) &#123;
-        ListNode pre&#x3D;new ListNode(0);
-        ListNode cru&#x3D;pre;
-        int carry&#x3D;0;
-        while(l1!&#x3D;null||l2!&#x3D;null)&#123;
-            int x&#x3D; l1&#x3D;&#x3D;null? 0 : l1.val;
-            int y&#x3D; l2&#x3D;&#x3D;null? 0 : l2.val;
-            int sum&#x3D;0;
-            sum&#x3D;x+y+carry;
-            carry&#x3D;sum&#x2F;10;
-            cru.next&#x3D;new ListNode(sum%10);
-            cru&#x3D;cru.next;
-            if(l1!&#x3D;null)&#123;
-            l1&#x3D;l1.next;
-            &#125;
-            if(l2!&#x3D;null)&#123;
-            l2&#x3D;l2.next;
-            &#125;
-        &#125;
-        if (carry!&#x3D; 0)&#123;
-            cru.next&#x3D;new ListNode(carry);
-        &#125;
-        return pre.next;
-    &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>C++<br><pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for singly-linked list.
- * struct ListNode &#123;
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) &#123;&#125;
- *     ListNode(int x) : val(x), next(nullptr) &#123;&#125;
- *     ListNode(int x, ListNode *next) : val(x), next(next) &#123;&#125;
- * &#125;;
- *&#x2F;
-#define null ((void *)0)
-class Solution &#123;
-public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) &#123;
-        ListNode* pre &#x3D; new ListNode(0);
-        ListNode* cur &#x3D; pre;
-        int carry&#x3D;0;
-        while( l1 !&#x3D; null || l2 !&#x3D; null) &#123;
-            int x&#x3D;l1&#x3D;&#x3D;null ? 0:l1-&gt;val;
-            int y&#x3D;l2&#x3D;&#x3D;null ? 0:l2-&gt;val;
-            int sum&#x3D;x+y+carry;
-
-            carry&#x3D;sum&#x2F;10;
-            sum&#x3D;sum%10;
-            cur-&gt;next &#x3D; new ListNode(sum);
-            cur &#x3D; cur-&gt;next;
-            if(l1 !&#x3D; null)
-                l1 &#x3D; l1-&gt;next;
-            if(l2 !&#x3D; null)
-                l2 &#x3D; l2-&gt;next;
-        &#125;
-        if(carry &#x3D;&#x3D; 1) &#123;
-            cur-&gt;next &#x3D; new ListNode(carry);
-        &#125;
-        return pre-&gt;next;
-
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>主要这道题可以理解链表，自己写几遍可以加深一下印象。<br>pre记录最前面的地址，最后pre.next，即可获得第二个地址，就很巧妙。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>hexo插入视频代码块及音频</title>
     <url>/2020/11/24/hexo-b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo插件安装插入视频代码块及音频"><a href="#hexo插件安装插入视频代码块及音频" class="headerlink" title="hexo插件安装插入视频代码块及音频"></a><center>hexo插件安装插入视频代码块及音频</center></h1><h2 id="1-hexo插件安装"><a href="#1-hexo插件安装" class="headerlink" title="1.hexo插件安装"></a>1.hexo插件安装</h2><p>使用 Hexo 插件插入音乐/视频<br>两个好用的hexo插件：</p>
@@ -6287,178 +6459,6 @@ public:
       <tags>
         <tag>B站</tag>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python_PyWebIO</title>
-    <url>/2021/12/01/Python-PyWebIO/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  " ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content:  counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
-
-<p><h1 align="center" name="pywebio-zh">Python_PyWebIO</h1></p>
-<p align="center">
-    <em>万鲲鹏</em>
-</p>
-
-<p>PyWebIO提供了一系列命令式的交互函数来在浏览器上获取用户输入和进行输出，将浏览器变成了一个“富文本终端”，可以用于构建简单的Web应用或基于浏览器的GUI应用。<br>PyWebIO还可以方便地整合进现有的Web服务，让你不需要编写HTML和JS代码，就可以构建出具有良好可用性的应用。</p>
-<p>功能特性：</p>
-<ul>
-<li>使用同步而不是基于回调的方式获取输入，代码编写逻辑更自然</li>
-<li>非声明式布局，布局方式简单高效</li>
-<li>代码侵入性小，旧脚本代码仅需修改输入输出逻辑便可改造为Web服务</li>
-<li>支持整合到现有的Web服务，目前支持与Flask、Django、Tornado、aiohttp、FastAPI框架集成</li>
-<li>同时支持基于线程的执行模型和基于协程的执行模型</li>
-<li>支持结合第三方库实现数据可视化</li>
-</ul>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>稳定版安装:</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>报错：<br><code>Fatal error in launcher: Unable to create process using</code></p>
-<p>主要是由于直接调用环境导致的遇到这种问题</p>
-<pre class="line-numbers language-none"><code class="language-none">python -m pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="Quickstart"><a href="#Quickstart" class="headerlink" title="Quickstart"></a>Quickstart</h2><p><strong>Hello, world</strong></p>
-<p>这是一个使用PyWebIO计算 <a href="https://en.wikipedia.org/wiki/Body_mass_index">BMI指数</a> 的脚本:</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio.input import input, FLOAT
-from pywebio.output import put_text
-
-def bmi():
-    height &#x3D; input(&quot;请输入你的身高(cm)：&quot;, type&#x3D;FLOAT)
-    weight &#x3D; input(&quot;请输入你的体重(kg)：&quot;, type&#x3D;FLOAT)
-
-    BMI &#x3D; weight &#x2F; (height &#x2F; 100) ** 2
-
-    top_status &#x3D; [(14.9, &#39;极瘦&#39;), (18.4, &#39;偏瘦&#39;),
-                  (22.9, &#39;正常&#39;), (27.5, &#39;过重&#39;),
-                  (40.0, &#39;肥胖&#39;), (float(&#39;inf&#39;), &#39;非常肥胖&#39;)]
-
-    for top, status in top_status:
-        if BMI &lt;&#x3D; top:
-            put_text(&#39;你的 BMI 值: %.1f，身体状态：%s&#39; % (BMI, status))
-            break
-
-if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
-    bmi()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>如果没有使用PyWebIO，这只是一个非常简单的脚本，而通过使用PyWebIO提供的输入输出函数，你可以在浏览器中与代码进行交互 <a href="http://pywebio-demos.pywebio.online/bmi">[demo]</a>：</p>
-<p align="center">
-    <a href="http://pywebio-demos.pywebio.online/?pywebio_api=bmi">
-        <img src="https://raw.githubusercontent.com/wang0618/PyWebIO/dev/docs/assets/demo_zh.gif" alt="PyWebIO demo" width="400px"/>
-    </a>
-</p>
-
-<p><strong>作为Web服务提供</strong></p>
-<p>上文BMI程序会在计算完毕后立刻退出，可以使用 <a href="https://pywebio.readthedocs.io/zh_CN/latest/platform.html#pywebio.platform.tornado.start_server"><code>pywebio.start_server()</code></a> 将 <code>bmi()</code> 函数作为Web服务提供：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio import start_server
-from pywebio.input import input, FLOAT
-from pywebio.output import put_text
-
-def bmi():  # bmi() 函数内容不变
-    ...  
-
-if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
-    start_server(bmi, port&#x3D;80)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Demos"><a href="#Demos" class="headerlink" title="Demos"></a>Demos</h2><ul>
-<li><a href="http://pywebio-demos.pywebio.online/">基本demo</a> : 包含PyWebIO基本输入输出演示和使用PyWebIO编写的小应用</li>
-<li><a href="http://pywebio-charts.pywebio.online/">数据可视化demo</a> : 使用 bokeh、plotly、pyecharts 等库进行数据可视化</li>
-</ul>
-<h3 id="武汉三维地图"><a href="#武汉三维地图" class="headerlink" title="武汉三维地图"></a>武汉三维地图</h3><pre class="line-numbers language-none"><code class="language-none">from pywebio.output import put_html
-from pyecharts import options as opts
-from pyecharts.charts import Map3D
-from pyecharts.globals import ChartType
-
-example_data &#x3D; [
-    [[119.107078, 36.70925, 1000], [116.587245, 35.415393, 1000]],
-    [[117.000923, 36.675807], [120.355173, 36.082982]],
-    [[118.047648, 36.814939], [118.66471, 37.434564]],
-    [[121.391382, 37.539297], [119.107078, 36.70925]],
-    [[116.587245, 35.415393], [122.116394, 37.509691]],
-    [[119.461208, 35.428588], [118.326443, 35.065282]],
-    [[116.307428, 37.453968], [115.469381, 35.246531]],
-]
-c &#x3D; (
-    Map3D()
-        .add_schema(
-        maptype&#x3D;&quot;武汉&quot;,
-        itemstyle_opts&#x3D;opts.ItemStyleOpts(
-            color&#x3D;&quot;rgb(5,101,123)&quot;,
-            opacity&#x3D;1,
-            border_width&#x3D;0.8,
-            border_color&#x3D;&quot;rgb(62,215,213)&quot;,
-        ),
-        light_opts&#x3D;opts.Map3DLightOpts(
-            main_color&#x3D;&quot;#fff&quot;,
-            main_intensity&#x3D;1.2,
-            is_main_shadow&#x3D;False,
-            main_alpha&#x3D;55,
-            main_beta&#x3D;10,
-            ambient_intensity&#x3D;0.3,
-        ),
-        view_control_opts&#x3D;opts.Map3DViewControlOpts(center&#x3D;[-10, 0, 10]),
-        post_effect_opts&#x3D;opts.Map3DPostEffectOpts(is_enable&#x3D;False),
-    )
-        .add(
-        series_name&#x3D;&quot;&quot;,
-        data_pair&#x3D;example_data,
-        type_&#x3D;ChartType.LINES3D,
-        effect&#x3D;opts.Lines3DEffectOpts(
-            is_show&#x3D;True,
-            period&#x3D;4,
-            trail_width&#x3D;3,
-            trail_length&#x3D;0.5,
-            trail_color&#x3D;&quot;#f00&quot;,
-            trail_opacity&#x3D;1,
-        ),
-        linestyle_opts&#x3D;opts.LineStyleOpts(is_show&#x3D;False, color&#x3D;&quot;#fff&quot;, opacity&#x3D;0),
-    )
-        .set_global_opts(title_opts&#x3D;opts.TitleOpts(title&#x3D;&quot;Map3D-Lines3D&quot;))
-
-)
-
-c.width &#x3D; &quot;100%&quot;
-put_html(c.render_notebook())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p><img src="https://www.mmrsl.cn/download/img/html5/15.jpg" alt=""></p>
-<h2 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h2><p>使用手册和实现文档见 <a href="https://pywebio.readthedocs.io/zh_CN/latest/">https://pywebio.readthedocs.io</a></p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -7213,34 +7213,71 @@ network&#x3D;&#123;
 [&#39;-38&#39;, &#39;-49&#39;, &#39;-29&#39;, &#39;-45&#39;, &#39;-45&#39;, &#39;-43&#39;, &#39;-38&#39;, &#39;-42&#39;, &#39;-42&#39;, &#39;-63&#39;, &#39;-42&#39;, &#39;-30&#39;, &#39;-45&#39;, &#39;-46&#39;, &#39;-34&#39;, &#39;-71&#39;, &#39;-70&#39;, &#39;-74&#39;, &#39;-43&#39;, &#39;-32&#39;, &#39;-45&#39;, &#39;-65&#39;, &#39;-49&#39;, &#39;-72&#39;, &#39;-72&#39;, &#39;-45&#39;, &#39;-75&#39;, &#39;-72&#39;, &#39;-72&#39;, &#39;-69&#39;, &#39;-39&#39;, &#39;-68&#39;, &#39;-64&#39;, &#39;-39&#39;, &#39;-80&#39;, &#39;-37&#39;, &#39;-49&#39;, &#39;-38&#39;]
 [&#39;5&#39;, &#39;1&#39;, &#39;1&#39;, &#39;1&#39;, &#39;1&#39;, &#39;3&#39;, &#39;5&#39;, &#39;6&#39;, &#39;6&#39;, &#39;6&#39;, &#39;9&#39;, &#39;8&#39;, &#39;11&#39;, &#39;11&#39;, &#39;10&#39;, &#39;11&#39;, &#39;11&#39;, &#39;11&#39;, &#39;11&#39;, &#39;10&#39;, &#39;11&#39;, &#39;149&#39;, &#39;149&#39;, &#39;149&#39;, &#39;149&#39;, &#39;153&#39;, &#39;153&#39;, &#39;157&#39;, &#39;157&#39;, &#39;161&#39;, &#39;161&#39;, &#39;1&#39;, &#39;6&#39;, &#39;9&#39;, &#39;149&#39;, &#39;149&#39;, &#39;149&#39;, &#39;157&#39;]
 [&#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 6 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;1 Mb&#x2F;s; 2 Mb&#x2F;s; 5.5 Mb&#x2F;s; 11 Mb&#x2F;s; 9 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;, &#39;6 Mb&#x2F;s; 9 Mb&#x2F;s; 12 Mb&#x2F;s; 18 Mb&#x2F;s; 24 Mb&#x2F;s&#39;]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<h3 id="将数据进行显示"><a href="#将数据进行显示" class="headerlink" title="将数据进行显示"></a>将数据进行显示</h3><p><img src="https://www.mmrsl.cn/download/img/cpu/2.jpg" alt=""><br>参考：</p>
+<h2 id="动态柱状图"><a href="#动态柱状图" class="headerlink" title="动态柱状图"></a>动态柱状图</h2><pre class="line-numbers language-none"><code class="language-none">class Quadrotor():
+    def __init__(self,labels, quants,x_label&#x3D;&#39;Chnnel&#39;,y_label&#x3D;&#39;num&#39;,img_title&#x3D;&#39;WIFI_Chnnel&#39;,  show_animation&#x3D;True):
+
+        self.show_animation &#x3D; show_animation
+
+        if self.show_animation:
+            plt.ion()
+            fig &#x3D; plt.figure()
+            self.ax &#x3D; fig.add_subplot(111)
+
+        self.update_pose(labels,quants)
+
+    def update_pose(self, labels,quants):
+        self.labels&#x3D;labels
+        self.quants&#x3D;quants
+        if self.show_animation:
+            self.draw_bar()
+
+
+    def draw_bar(self,x_label&#x3D;&#39;Chnnel&#39;,y_label&#x3D;&#39;num&#39;,img_title&#x3D;&#39;WIFI_Chnnel&#39;):
+        width &#x3D; 0.4
+        ind &#x3D; np.linspace(0.5, 9.5, len(self.labels))
+        # make a square figure
+        # Bar Plot
+        self.ax.bar(ind - width &#x2F; 2, self.quants, width, color&#x3D;&#39;green&#39;)
+        # Set the ticks on x-axis
+        self.ax.set_xticks(ind)
+        self.ax.set_xticklabels(self.labels)
+        # labels
+        self.ax.set_xlabel(x_label)
+        self.ax.set_ylabel(y_label)
+        # title
+        self.ax.set_title(img_title, bbox&#x3D;&#123;&#39;facecolor&#39;: &#39;0.8&#39;, &#39;pad&#39;: 5&#125;)
+        plt.grid(True)
+        plt.pause(0.1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="数据解析"><a href="#数据解析" class="headerlink" title="数据解析"></a>数据解析</h2><pre class="line-numbers language-none"><code class="language-none">iwscanSSIDstr.append(iwscanSSID[i].split(&quot;\n&quot;)[5].split(&quot;                    &quot;)[1] +&#39;,&#39;+iwscanSSID[i].split(&quot;\n&quot;)[2].split(&quot;                    &quot;)[1]+&#39;,&#39;+iwscanSSID[i].split(&quot;\n&quot;)[3].split(&quot;                    &quot;)[1]+&#39;,&#39;+iwscanSSID[i].split(&quot;\n&quot;)[6].split(&quot;                    &quot;)[1]+&#39;,&#39;+iwscanSSID[i].split(&quot;\n&quot;)[1].split(&quot;                    &quot;)[1])
+# print(iwscanSSID[i].split(&quot;\n&quot;)[5].split(&quot;                    &quot;)[1])
+# print(iwscanSSID[i].split(&quot;\n&quot;)[2].split(&quot;                    &quot;)[1])
+# print(iwscanSSID[i].split(&quot;\n&quot;)[3].split(&quot;                    &quot;)[1])
+# print(iwscanSSID[i].split(&quot;\n&quot;)[6].split(&quot;                    &quot;)[1])
+SSID.append(iwscanSSIDstr[i-1].split(&quot;,&quot;)[0][iwscanSSIDstr[i-1].split(&quot;,&quot;)[0].find(&quot;:&quot;)+1:len(iwscanSSIDstr[i-1].split(&quot;,&quot;)[0])])
+Chnnel_sign.append(iwscanSSIDstr[i-1].split(&quot;,&quot;)[1][iwscanSSIDstr[i-1].split(&quot;,&quot;)[1].find(&quot;:&quot;)+1:len(iwscanSSIDstr[i-1].split(&quot;,&quot;)[1])])
+Quality.append(iwscanSSIDstr[i-1].split(&quot;,&quot;)[2][iwscanSSIDstr[i-1].split(&quot;,&quot;)[2].find(&quot;&#x3D;&quot;)+1:iwscanSSIDstr[i-1].split(&quot;,&quot;)[2].find(&quot;&#x2F;&quot;)])
+Signal_level.append(iwscanSSIDstr[i-1].split(&quot;,&quot;)[2][iwscanSSIDstr[i-1].split(&quot;,&quot;)[2].find(&quot;&#x3D;&quot;,10)+1:iwscanSSIDstr[i-1].split(&quot;,&quot;)[2].find(&quot; dBm&quot;)])
+channel2.append(iwscanSSIDstr[i-1].split(&quot;,&quot;)[4][iwscanSSIDstr[i-1].split(&quot;,&quot;)[4].find(&quot;:&quot;)+1:len(iwscanSSIDstr[i-1].split(&quot;,&quot;)[4])])
+Bit_Rates.append(iwscanSSIDstr[i-1].split(&quot;,&quot;)[3][iwscanSSIDstr[i-1].split(&quot;,&quot;)[3].find(&quot;:&quot;)+1:len(iwscanSSIDstr[i-1].split(&quot;,&quot;)[3])])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="在树莓派上显示太卡，用tcp发给电脑进行解析"><a href="#在树莓派上显示太卡，用tcp发给电脑进行解析" class="headerlink" title="在树莓派上显示太卡，用tcp发给电脑进行解析"></a>在树莓派上显示太卡，用tcp发给电脑进行解析</h2><pre class="line-numbers language-none"><code class="language-none">dict1 &#x3D; &#123;
+    &quot;SSID&quot;:SSID,
+    &quot;Chnnel_sign&quot;:Chnnel_sign,
+    &quot;Quality&quot;:Quality,
+    &quot;Signal_level&quot;:Signal_level,
+    &quot;Bit_Rates&quot;:Bit_Rates,
+    &quot;channel2&quot;:channel2
+&#125;
+
+send_one_message(tctimeClient,dict1)
+from pickle import dumps, loads
+&lt;!-- 通过这个来进行打包发送 --&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>显示效果：</p>
+<h3 id="将数据进行显示"><a href="#将数据进行显示" class="headerlink" title="将数据进行显示"></a>将数据进行显示</h3><p><img src="https://www.mmrsl.cn/download/img/cpu/2.jpg" alt=""><br><img src="https://www.mmrsl.cn/download/img/cpu/3.jpg" alt=""></p>
+<p>参考：</p>
 <ul>
 <li><a href="https://blog.csdn.net/weixin_44498318/article/details/107428543?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164015995016780274118720%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=164015995016780274118720&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-3-107428543.pc_search_insert_es_download_v2&amp;utm_term=iwlist%2Fiwconfig%2Fiw%E5%91%BD%E4%BB%A4&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/weixin_44498318/article/details/107428543?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164015995016780274118720%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=164015995016780274118720&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-3-107428543.pc_search_insert_es_download_v2&amp;utm_term=iwlist%2Fiwconfig%2Fiw%E5%91%BD%E4%BB%A4&amp;spm=1018.2226.3001.4187</a></li>
 </ul>
 ]]></content>
-  </entry>
-  <entry>
-    <title>linux_rssi_信号强度获取</title>
-    <url>/2021/07/13/linux-rssi-%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6%E8%8E%B7%E5%8F%96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linuxrssi信号强度获取"><a href="#linuxrssi信号强度获取" class="headerlink" title="linuxrssi信号强度获取"></a>linux<em>rssi</em>信号强度获取</h1><h2 id="测试环境中，无线网卡的接口id为wlan0"><a href="#测试环境中，无线网卡的接口id为wlan0" class="headerlink" title="测试环境中，无线网卡的接口id为wlan0"></a>测试环境中，无线网卡的接口id为wlan0</h2><h2 id="一秒周期查看无线网卡信息"><a href="#一秒周期查看无线网卡信息" class="headerlink" title="一秒周期查看无线网卡信息"></a>一秒周期查看无线网卡信息</h2><p><code>watch -n 1 cat /proc/net/wireless</code></p>
-<h2 id="获取信号强度："><a href="#获取信号强度：" class="headerlink" title="获取信号强度："></a>获取信号强度：</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $3&#125;&#39;</code><br>70.</p>
-<h2 id="获取信号质量：单位dBm"><a href="#获取信号质量：单位dBm" class="headerlink" title="获取信号质量：单位dBm"></a>获取信号质量：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $4&#125;&#39;</code><br>-38.</p>
-<h2 id="网口的背景噪声：单位dBm"><a href="#网口的背景噪声：单位dBm" class="headerlink" title="网口的背景噪声：单位dBm"></a>网口的背景噪声：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $5&#125;&#39;</code></p>
-<p>-256</p>
-<h2 id="网口的传输速率：Mb-s-1000000bps"><a href="#网口的传输速率：Mb-s-1000000bps" class="headerlink" title="网口的传输速率：Mb/s = 1000000bps"></a>网口的传输速率：Mb/s = 1000000bps</h2><p><code>iwconfig wlan0 | sed &#39;s/ /\n/g&#39; | grep -i Rate | sed &#39;s/=/ /g&#39;|awk &#39;&#123;print $2&#125;&#39;</code></p>
-<p>在程序中执行这些命令后需要获取返回结果，最简单的方法是，将命令行结果重定向到一个临时文件，然后读取这个临时文件，从而获得外部命令执行结果。</p>
-<p>参考：</p>
-<ul>
-<li><a href="https://www.jb51.net/LINUXjishu/421311.html">Linux系统中iwconfig命令使用详解</a></li>
-<li><a href="https://blog.csdn.net/lbyyy/article/details/51392629">无线信号强度解析及linux如何查看wifi信号强弱等</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
   </entry>
   <entry>
     <title>js_web_3D_模型设计</title>
@@ -7334,6 +7371,29 @@ network&#x3D;&#123;
 <li><a href="https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html">https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html</a></li>
 </ul>
 ]]></content>
+  </entry>
+  <entry>
+    <title>linux_rssi_信号强度获取</title>
+    <url>/2021/07/13/linux-rssi-%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6%E8%8E%B7%E5%8F%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linuxrssi信号强度获取"><a href="#linuxrssi信号强度获取" class="headerlink" title="linuxrssi信号强度获取"></a>linux<em>rssi</em>信号强度获取</h1><h2 id="测试环境中，无线网卡的接口id为wlan0"><a href="#测试环境中，无线网卡的接口id为wlan0" class="headerlink" title="测试环境中，无线网卡的接口id为wlan0"></a>测试环境中，无线网卡的接口id为wlan0</h2><h2 id="一秒周期查看无线网卡信息"><a href="#一秒周期查看无线网卡信息" class="headerlink" title="一秒周期查看无线网卡信息"></a>一秒周期查看无线网卡信息</h2><p><code>watch -n 1 cat /proc/net/wireless</code></p>
+<h2 id="获取信号强度："><a href="#获取信号强度：" class="headerlink" title="获取信号强度："></a>获取信号强度：</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $3&#125;&#39;</code><br>70.</p>
+<h2 id="获取信号质量：单位dBm"><a href="#获取信号质量：单位dBm" class="headerlink" title="获取信号质量：单位dBm"></a>获取信号质量：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $4&#125;&#39;</code><br>-38.</p>
+<h2 id="网口的背景噪声：单位dBm"><a href="#网口的背景噪声：单位dBm" class="headerlink" title="网口的背景噪声：单位dBm"></a>网口的背景噪声：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $5&#125;&#39;</code></p>
+<p>-256</p>
+<h2 id="网口的传输速率：Mb-s-1000000bps"><a href="#网口的传输速率：Mb-s-1000000bps" class="headerlink" title="网口的传输速率：Mb/s = 1000000bps"></a>网口的传输速率：Mb/s = 1000000bps</h2><p><code>iwconfig wlan0 | sed &#39;s/ /\n/g&#39; | grep -i Rate | sed &#39;s/=/ /g&#39;|awk &#39;&#123;print $2&#125;&#39;</code></p>
+<p>在程序中执行这些命令后需要获取返回结果，最简单的方法是，将命令行结果重定向到一个临时文件，然后读取这个临时文件，从而获得外部命令执行结果。</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.jb51.net/LINUXjishu/421311.html">Linux系统中iwconfig命令使用详解</a></li>
+<li><a href="https://blog.csdn.net/lbyyy/article/details/51392629">无线信号强度解析及linux如何查看wifi信号强弱等</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
   </entry>
   <entry>
     <title>linux常用指令</title>
@@ -8250,49 +8310,6 @@ if __name__&#x3D;&#x3D;&#39;__main__&#39;:
       </tags>
   </entry>
   <entry>
-    <title>Merry Christmas</title>
-    <url>/2020/12/24/merry_christmas/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-</center>
-
-<span id="more"></span>
-<ol>
-<li>git push 方法</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">git init
-git add .
-git commit -m &quot;first commit&quot;
-git remote add origin URL
-git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
-<ol>
-<li>圣诞网站模板分享</li>
-</ol>
-<ul>
-<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
-<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
-</ul>
-<ol>
-<li>电影分享 </li>
-</ol>
-<ul>
-<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
-</ul>
-<center>
-
-
-<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
-      <categories>
-        <category>电影推荐</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>树莓派系统双网卡</title>
     <url>/2021/04/30/linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%8C%E7%BD%91%E5%8D%A1%E5%88%B6%E4%BD%9C/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="抗干扰树莓派操作系统双网卡"><a href="#抗干扰树莓派操作系统双网卡" class="headerlink" title="抗干扰树莓派操作系统双网卡"></a>抗干扰树莓派操作系统双网卡</h1><h2 id="本文主要是讲解如何让一个设备具有两条独立的信道"><a href="#本文主要是讲解如何让一个设备具有两条独立的信道" class="headerlink" title="本文主要是讲解如何让一个设备具有两条独立的信道"></a>本文主要是讲解如何让一个设备具有两条独立的信道</h2><p>首先是我在解决问题中所写的一些东西，就随手的一个笔记。<br><pre class="line-numbers language-none"><code class="language-none">auto lo
@@ -9206,6 +9223,49 @@ iptables-restore &lt; &#x2F;etc&#x2F;iptables.ipv4.nat
       </tags>
   </entry>
   <entry>
+    <title>Merry Christmas</title>
+    <url>/2020/12/24/merry_christmas/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+</center>
+
+<span id="more"></span>
+<ol>
+<li>git push 方法</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">git init
+git add .
+git commit -m &quot;first commit&quot;
+git remote add origin URL
+git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
+<ol>
+<li>圣诞网站模板分享</li>
+</ol>
+<ul>
+<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
+<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
+</ul>
+<ol>
+<li>电影分享 </li>
+</ol>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
+</ul>
+<center>
+
+
+<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
+      <categories>
+        <category>电影推荐</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux系统通信功率信道修改方法</title>
     <url>/2021/04/22/linux%E7%B3%BB%E7%BB%9F%E9%80%9A%E4%BF%A1%E5%8A%9F%E7%8E%87%E4%BF%A1%E9%81%93%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux系统通信功率信道修改方法"><a href="#linux系统通信功率信道修改方法" class="headerlink" title="linux系统通信功率信道修改方法"></a>linux系统通信功率信道修改方法</h1><h2 id="配置频段"><a href="#配置频段" class="headerlink" title="配置频段"></a>配置频段</h2><h3 id="可以先查看有哪些频段："><a href="#可以先查看有哪些频段：" class="headerlink" title="可以先查看有哪些频段："></a>可以先查看有哪些频段：</h3><p><code>iwlist channel</code> </p>
@@ -9678,28 +9738,6 @@ sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="
       </tags>
   </entry>
   <entry>
-    <title>network map</title>
-    <url>/2021/04/14/nmap/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>network map</category>
-      </categories>
-      <tags>
-        <tag>nmap</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mjpg-streamer</title>
     <url>/2021/11/23/mjpg-streamer/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="mjpg-streamer"><a href="#mjpg-streamer" class="headerlink" title="mjpg-streamer"></a>mjpg-streamer</h1><p> 开源地址：<a href="https://github.com/jacksonliam/mjpg-streamer">https://github.com/jacksonliam/mjpg-streamer</a><br> 这是<a href="http://sourceforge.net/projects/mjpg-streamer/">http://sourceforge.net/projects/mjpg-streamer/</a> 的一个分支，通过 input_raspicam 插件增加了对 Raspberry Pi 相机的支持。<br> mjpg-streamer 是一种命令行应用程序，可将 JPEG 帧从一个或多个输入插件复制到多个输出插件。它可用于通过基于 IP 的网络将 JPEG 文件从网络摄像头流式传输到各种类型的查看器，例如 Chrome、Firefox、Cambozola、VLC、mplayer 和其他能够接收 MJPG 流的软件。</p>
@@ -9967,6 +10005,28 @@ if __name__ &#x3D;&#x3D; &quot;__main__&quot;:
 <p><a href="https://blog.csdn.net/zhengqijun_/article/details/72473177">https://blog.csdn.net/zhengqijun_/article/details/72473177</a></p>
 <p><a href="https://www.cnblogs.com/wanghuaijun/p/8098460.html">https://www.cnblogs.com/wanghuaijun/p/8098460.html</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>network map</title>
+    <url>/2021/04/14/nmap/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>network map</category>
+      </categories>
+      <tags>
+        <tag>nmap</tag>
+      </tags>
   </entry>
   <entry>
     <title>openwrt_树莓派_mesh自组织网络</title>
@@ -10528,6 +10588,199 @@ xxx &#x3D; Image.open(recv_bytes)<span aria-hidden="true" class="line-numbers-ro
       </tags>
   </entry>
   <entry>
+    <title>实时视频传输_切割压缩、丢包统计</title>
+    <url>/2021/04/28/python-%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93-%E5%88%87%E5%89%B2%E5%8E%8B%E7%BC%A9%E3%80%81%E4%B8%A2%E5%8C%85%E7%BB%9F%E8%AE%A1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="实时视频传输-切割压缩、丢包统计"><a href="#实时视频传输-切割压缩、丢包统计" class="headerlink" title="实时视频传输_切割压缩、丢包统计"></a>实时视频传输_切割压缩、丢包统计</h1><h2 id="UDP实时视频传输"><a href="#UDP实时视频传输" class="headerlink" title="UDP实时视频传输"></a>UDP实时视频传输</h2><h3 id="udp连接"><a href="#udp连接" class="headerlink" title="udp连接"></a>udp连接</h3><h4 id="原理："><a href="#原理：" class="headerlink" title="原理："></a>原理：</h4><p>在选择UDP作为传输协议时必须要谨慎。在网络质量令人十分不满意的环境下，UDP协议数据包丢失会比较严重。但是由于UDP的特性：它不属于连接型协议，因而具有资源消耗小，处理速度快的优点，所以通常音频、视频和普通数据在传送时使用UDP较多，因为它们即使偶尔丢失一两个数据包，也不会对接收结果产生太大影响。比如我们聊天用的ICQ和QQ就是使用的UDP协议。  </p>
+<p>在现场测控领域，面向的是分布化的控制器、监测器等，其应用场合环境比较恶劣，这样就对待传输数据提出了不同的要求，如实时、抗干扰性、安全性等。基于此，现场通信中，若某一应用要将一组数据传送给网络中的另一个节点，可由UDP进程将数据加上报头后传送给IP进程，UDP协议省去了建立连接和拆除连接的过程，取消了重发检验机制，能够达到较高的通信速率。</p>
+<p>1.发送端<br><pre class="line-numbers language-none"><code class="language-none">import threading
+import socket
+sock &#x3D; socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+t &#x3D; threading.Thread(target&#x3D;mythread, args&#x3D;(sock, string, (&#39;192.168.201.106&#39;, 9999)))
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><br>2.接收端<br><pre class="line-numbers language-none"><code class="language-none">import socket
+import time
+import threading
+s &#x3D; socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.bind((&#39;192.168.201.106&#39;, 9999))
+data, addr &#x3D; s.recvfrom(60000)
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<h3 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h3><h4 id="旋转变换"><a href="#旋转变换" class="headerlink" title="旋转变换"></a>旋转变换</h4><pre class="line-numbers language-none"><code class="language-none">img &#x3D; img.transpose(Image.ROTATE_180)
+img &#x3D; img.transpose(Image.FLIP_LEFT_RIGHT)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>这分别为图像旋转和左右翻转变换，我们拍到的视频是镜像翻转对称的，因此要进行以下处理，才能看到正像。</p>
+<h3 id="图像转Bytes"><a href="#图像转Bytes" class="headerlink" title="图像转Bytes"></a>图像转Bytes</h3><p>这个我找到了好几种方法：cv2转Image转bytes、cv2转np转bytes、</p>
+<h4 id="cv2转np转Image转bytes"><a href="#cv2转np转Image转bytes" class="headerlink" title="cv2转np转Image转bytes"></a>cv2转np转Image转bytes</h4><pre class="line-numbers language-none"><code class="language-none">image &#x3D; Image.fromarray(cv.cvtColor(frame, cv.COLOR_BGR2RGB))
+string &#x3D; Image.fromarray(np.uint8(image)).tobytes()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="cv2转np转bytes"><a href="#cv2转np转bytes" class="headerlink" title="cv2转np转bytes"></a>cv2转np转bytes</h4><pre class="line-numbers language-none"><code class="language-none">image &#x3D; Image.fromarray(cv.cvtColor(frame, cv.COLOR_BGR2RGB))
+string&#x3D;np.uint8(image).tostring()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="pygame转bytes"><a href="#pygame转bytes" class="headerlink" title="pygame转bytes"></a>pygame转bytes</h4><pre class="line-numbers language-none"><code class="language-none">Img &#x3D; pygame.image.load(&#39;&#x2F;home&#x2F;pi&#x2F;实验&#x2F;视频传输数据采集&#x2F;test.jpg&#39;)
+string &#x3D; pygame.image.tostring(Img, &quot;RGB&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="Bytes转图片"><a href="#Bytes转图片" class="headerlink" title="Bytes转图片"></a>Bytes转图片</h3><h4 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h4><pre class="line-numbers language-none"><code class="language-none">img &#x3D; Image.frombuffer(&quot;RGB&quot;, (160, 120), data)#, &#39;raw&#39;, &quot;L&quot;, 0, 1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="pygame"><a href="#pygame" class="headerlink" title="pygame"></a>pygame</h3><pre class="line-numbers language-none"><code class="language-none">img &#x3D; pygame.image.frombuffer(data, (160, 120), &quot;RGB&quot;)
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h3><ol>
+<li>发送端</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none"># coding:utf-8
+import cv2 as cv
+import time
+import threading
+import socket
+import numpy as np
+from PIL import Image
+def mythread(sock, data, addr):
+    sock.sendto(data, addr)
+    print(&quot;已发送 &quot; + str(len(data)) + &quot; bytes&quot;)
+    sock.close()
+def main():
+    print(&quot;begin&quot;)
+    start &#x3D; time.clock()
+    capture &#x3D; cv.VideoCapture(0)
+    while True:
+        ret, frame &#x3D; capture.read()
+        frame &#x3D; cv.flip(frame, -1)
+        frame &#x3D; cv.resize(frame, (160, 120))
+        image &#x3D; Image.fromarray(cv.cvtColor(frame, cv.COLOR_BGR2RGB))
+        string &#x3D; Image.fromarray(np.uint8(image)).tobytes()
+        sock &#x3D; socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        t &#x3D; threading.Thread(target&#x3D;mythread, args&#x3D;(sock, string, (&#39;192.168.201.106&#39;, 9999)))
+        t.start()
+        if cv.waitKey(10) &amp; 0xff &#x3D;&#x3D; ord(&#39;q&#39;):
+            capture.release()
+            break
+main()
+cv.destroyAllWindows()
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ol>
+<li>接收端<pre class="line-numbers language-none"><code class="language-none">#coding&#x3D;utf-8
+import socket
+import time
+import threading
+import numpy as np
+import cv2
+from PIL import Image
+s &#x3D; socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.bind((&#39;192.168.201.106&#39;, 9999))
+print(&#39;Waiting for connection...&#39;)
+start &#x3D; time.perf_counter()
+while not False:
+    data, addr &#x3D; s.recvfrom(60000)
+    if time.perf_counter() - start &gt; 1:
+        start &#x3D; time.perf_counter()
+    print(&#39;Received from %s:%s.&#39; % addr)
+    img &#x3D; Image.frombuffer(&quot;RGB&quot;, (160, 120), data)#, &#39;raw&#39;, &quot;L&quot;, 0, 1
+    img &#x3D; img.transpose(Image.ROTATE_180)
+    img &#x3D; img.transpose(Image.FLIP_LEFT_RIGHT)
+    crop_im &#x3D; cv2.cvtColor(np.array(img), cv2.COLOR_RGBA2BGRA)
+    cv2.imshow(&#39;UDP 视频传输&#39;,crop_im)
+    if cv2.waitKey(1) &#x3D;&#x3D; 27:  # 按下“ESC”退出
+        break
+    print(&#39;have received one frame&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="udp视频传输结果："><a href="#udp视频传输结果：" class="headerlink" title="udp视频传输结果："></a>udp视频传输结果：</h3></li>
+</ol>
+<p><img src="E:\blog\blog_2020\source\download\img\实时视频传输\接收端.jpg" alt=""></p>
+<p><img src="E:\blog\blog_2020\source\download\img\实时视频传输\实时捕获.jpg" alt=""></p>
+<h2 id="图片的切割与拼接"><a href="#图片的切割与拼接" class="headerlink" title="图片的切割与拼接"></a>图片的切割与拼接</h2><h2 id="各种类型转bytes传输"><a href="#各种类型转bytes传输" class="headerlink" title="各种类型转bytes传输"></a>各种类型转bytes传输</h2><h2 id="对图片进行jpg压缩与还原"><a href="#对图片进行jpg压缩与还原" class="headerlink" title="对图片进行jpg压缩与还原"></a>对图片进行jpg压缩与还原</h2><h2 id="jpg压缩后的切割与传输"><a href="#jpg压缩后的切割与传输" class="headerlink" title="jpg压缩后的切割与传输"></a>jpg压缩后的切割与传输</h2><p>传输时延、丢包率</p>
+<pre class="line-numbers language-none"><code class="language-none">auto lo
+iface lo inet loopback
+
+iface eth0 inet manual
+
+
+auto wlan0
+iface wlan0 inet static 
+address 192.168.201.165
+netmask 255.255.255.0
+gateway 192.168.201.1
+pre-up wpa_supplicant -Dwext -i wlan0 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant2.conf -B
+
+allow-hotplug wlan0
+iface wlan0 inet manual
+    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant2.conf
+
+auto wlan1
+iface wlan1 inet static 
+address 192.168.201.165
+netmask 255.255.255.0
+gateway 192.168.201.1
+pre-up wpa_supplicant -Dwext -i wlan1 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf -B
+
+allow-hotplug wlan1
+iface wlan1 inet manual
+    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>sudo create_ap -n wlan0 car_wifi xmu20111 -c 1</p>
+<p>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev<br>update_config=1<br>country=CN</p>
+<p>network={<br>        ssid=”xmu201_1”<br>        psk=”xmu20111”<br>        key_mgmt=WPA-PSK<br>}</p>
+<p> sudo nano /media/pi/rootfs/etc/network/interfaces<br> sudo nano /etc/network/interfaces<br> cd /media/pi/rootfs/etc/wpa_supplicant/</p>
+<p>sudo nano /media/pi/rootfs/etc/dhcpcd.conf<br>sudo nano /etc/dhcpcd.conf</p>
+<p>dhcp 域名解析</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;dhcpcd.conf
+# A sample configuration for dhcpcd.
+# See dhcpcd.conf(5) for details.
+
+# Allow users of this group to interact with dhcpcd via the control socket.
+#controlgroup wheel
+
+# Inform the DHCP server of our hostname for DDNS.
+hostname
+
+# Use the hardware address of the interface for the Client ID.
+clientid
+# or
+# Use the same DUID + IAID as set in DHCPv6 for DHCPv4 ClientID as per RFC4361.
+#duid
+
+# Persist interface configuration when dhcpcd exits.
+persistent
+
+# Rapid commit support.
+# Safe to enable by default because it requires the equivalent option set
+# on the server to actually work.
+option rapid_commit
+
+# A list of options to request from the DHCP server.
+option domain_name_servers, domain_name, domain_search, host_name
+option classless_static_routes
+# Most distributions have NTP support.
+option ntp_servers
+# Respect the network MTU.
+# Some interface drivers reset when changing the MTU so disabled by default.
+#option interface_mtu
+
+# A ServerID is required by RFC2131.
+require dhcp_server_identifier
+
+# Generate Stable Private IPv6 Addresses instead of hardware based ones
+slaac private
+
+# A hook script is provided to lookup the hostname if not set by the DHCP
+# server, but it should not be run by default.
+nohook lookup-hostname
+
+interface eth0
+static ip_address&#x3D;192.168.3.233&#x2F;24
+static routers&#x3D;192.168.3.1
+static domain_name_servers&#x3D;114.114.114.114
+
+interface wlan0
+#static ip_address&#x3D;172.16.233.233&#x2F;16
+#static routers&#x3D;172.16.0.1
+static domain_name_servers&#x3D;114.114.114.114
+
+static ip_address&#x3D;10.42.0.233&#x2F;24
+static routers&#x3D;10.42.0.1
+
+
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>pythonmpu6050</title>
     <url>/2021/12/20/pythonmpu6050/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="树莓派mpu6050-姿态估计"><a href="#树莓派mpu6050-姿态估计" class="headerlink" title="树莓派mpu6050_姿态估计"></a>树莓派mpu6050_姿态估计</h1><p>MPU6050是世界上第一款也是唯一一款专为智能手机、平板电脑和可穿戴传感器的低功耗、低成本和高性能要求而设计的6轴运动跟踪设备。</p>
@@ -10962,199 +11215,6 @@ for i in range(50000):
       </categories>
       <tags>
         <tag>树莓派</tag>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>实时视频传输_切割压缩、丢包统计</title>
-    <url>/2021/04/28/python-%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93-%E5%88%87%E5%89%B2%E5%8E%8B%E7%BC%A9%E3%80%81%E4%B8%A2%E5%8C%85%E7%BB%9F%E8%AE%A1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="实时视频传输-切割压缩、丢包统计"><a href="#实时视频传输-切割压缩、丢包统计" class="headerlink" title="实时视频传输_切割压缩、丢包统计"></a>实时视频传输_切割压缩、丢包统计</h1><h2 id="UDP实时视频传输"><a href="#UDP实时视频传输" class="headerlink" title="UDP实时视频传输"></a>UDP实时视频传输</h2><h3 id="udp连接"><a href="#udp连接" class="headerlink" title="udp连接"></a>udp连接</h3><h4 id="原理："><a href="#原理：" class="headerlink" title="原理："></a>原理：</h4><p>在选择UDP作为传输协议时必须要谨慎。在网络质量令人十分不满意的环境下，UDP协议数据包丢失会比较严重。但是由于UDP的特性：它不属于连接型协议，因而具有资源消耗小，处理速度快的优点，所以通常音频、视频和普通数据在传送时使用UDP较多，因为它们即使偶尔丢失一两个数据包，也不会对接收结果产生太大影响。比如我们聊天用的ICQ和QQ就是使用的UDP协议。  </p>
-<p>在现场测控领域，面向的是分布化的控制器、监测器等，其应用场合环境比较恶劣，这样就对待传输数据提出了不同的要求，如实时、抗干扰性、安全性等。基于此，现场通信中，若某一应用要将一组数据传送给网络中的另一个节点，可由UDP进程将数据加上报头后传送给IP进程，UDP协议省去了建立连接和拆除连接的过程，取消了重发检验机制，能够达到较高的通信速率。</p>
-<p>1.发送端<br><pre class="line-numbers language-none"><code class="language-none">import threading
-import socket
-sock &#x3D; socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-t &#x3D; threading.Thread(target&#x3D;mythread, args&#x3D;(sock, string, (&#39;192.168.201.106&#39;, 9999)))
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><br>2.接收端<br><pre class="line-numbers language-none"><code class="language-none">import socket
-import time
-import threading
-s &#x3D; socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-s.bind((&#39;192.168.201.106&#39;, 9999))
-data, addr &#x3D; s.recvfrom(60000)
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<h3 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h3><h4 id="旋转变换"><a href="#旋转变换" class="headerlink" title="旋转变换"></a>旋转变换</h4><pre class="line-numbers language-none"><code class="language-none">img &#x3D; img.transpose(Image.ROTATE_180)
-img &#x3D; img.transpose(Image.FLIP_LEFT_RIGHT)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>这分别为图像旋转和左右翻转变换，我们拍到的视频是镜像翻转对称的，因此要进行以下处理，才能看到正像。</p>
-<h3 id="图像转Bytes"><a href="#图像转Bytes" class="headerlink" title="图像转Bytes"></a>图像转Bytes</h3><p>这个我找到了好几种方法：cv2转Image转bytes、cv2转np转bytes、</p>
-<h4 id="cv2转np转Image转bytes"><a href="#cv2转np转Image转bytes" class="headerlink" title="cv2转np转Image转bytes"></a>cv2转np转Image转bytes</h4><pre class="line-numbers language-none"><code class="language-none">image &#x3D; Image.fromarray(cv.cvtColor(frame, cv.COLOR_BGR2RGB))
-string &#x3D; Image.fromarray(np.uint8(image)).tobytes()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h4 id="cv2转np转bytes"><a href="#cv2转np转bytes" class="headerlink" title="cv2转np转bytes"></a>cv2转np转bytes</h4><pre class="line-numbers language-none"><code class="language-none">image &#x3D; Image.fromarray(cv.cvtColor(frame, cv.COLOR_BGR2RGB))
-string&#x3D;np.uint8(image).tostring()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h4 id="pygame转bytes"><a href="#pygame转bytes" class="headerlink" title="pygame转bytes"></a>pygame转bytes</h4><pre class="line-numbers language-none"><code class="language-none">Img &#x3D; pygame.image.load(&#39;&#x2F;home&#x2F;pi&#x2F;实验&#x2F;视频传输数据采集&#x2F;test.jpg&#39;)
-string &#x3D; pygame.image.tostring(Img, &quot;RGB&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="Bytes转图片"><a href="#Bytes转图片" class="headerlink" title="Bytes转图片"></a>Bytes转图片</h3><h4 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h4><pre class="line-numbers language-none"><code class="language-none">img &#x3D; Image.frombuffer(&quot;RGB&quot;, (160, 120), data)#, &#39;raw&#39;, &quot;L&quot;, 0, 1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="pygame"><a href="#pygame" class="headerlink" title="pygame"></a>pygame</h3><pre class="line-numbers language-none"><code class="language-none">img &#x3D; pygame.image.frombuffer(data, (160, 120), &quot;RGB&quot;)
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h3><ol>
-<li>发送端</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none"># coding:utf-8
-import cv2 as cv
-import time
-import threading
-import socket
-import numpy as np
-from PIL import Image
-def mythread(sock, data, addr):
-    sock.sendto(data, addr)
-    print(&quot;已发送 &quot; + str(len(data)) + &quot; bytes&quot;)
-    sock.close()
-def main():
-    print(&quot;begin&quot;)
-    start &#x3D; time.clock()
-    capture &#x3D; cv.VideoCapture(0)
-    while True:
-        ret, frame &#x3D; capture.read()
-        frame &#x3D; cv.flip(frame, -1)
-        frame &#x3D; cv.resize(frame, (160, 120))
-        image &#x3D; Image.fromarray(cv.cvtColor(frame, cv.COLOR_BGR2RGB))
-        string &#x3D; Image.fromarray(np.uint8(image)).tobytes()
-        sock &#x3D; socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        t &#x3D; threading.Thread(target&#x3D;mythread, args&#x3D;(sock, string, (&#39;192.168.201.106&#39;, 9999)))
-        t.start()
-        if cv.waitKey(10) &amp; 0xff &#x3D;&#x3D; ord(&#39;q&#39;):
-            capture.release()
-            break
-main()
-cv.destroyAllWindows()
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ol>
-<li>接收端<pre class="line-numbers language-none"><code class="language-none">#coding&#x3D;utf-8
-import socket
-import time
-import threading
-import numpy as np
-import cv2
-from PIL import Image
-s &#x3D; socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-s.bind((&#39;192.168.201.106&#39;, 9999))
-print(&#39;Waiting for connection...&#39;)
-start &#x3D; time.perf_counter()
-while not False:
-    data, addr &#x3D; s.recvfrom(60000)
-    if time.perf_counter() - start &gt; 1:
-        start &#x3D; time.perf_counter()
-    print(&#39;Received from %s:%s.&#39; % addr)
-    img &#x3D; Image.frombuffer(&quot;RGB&quot;, (160, 120), data)#, &#39;raw&#39;, &quot;L&quot;, 0, 1
-    img &#x3D; img.transpose(Image.ROTATE_180)
-    img &#x3D; img.transpose(Image.FLIP_LEFT_RIGHT)
-    crop_im &#x3D; cv2.cvtColor(np.array(img), cv2.COLOR_RGBA2BGRA)
-    cv2.imshow(&#39;UDP 视频传输&#39;,crop_im)
-    if cv2.waitKey(1) &#x3D;&#x3D; 27:  # 按下“ESC”退出
-        break
-    print(&#39;have received one frame&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="udp视频传输结果："><a href="#udp视频传输结果：" class="headerlink" title="udp视频传输结果："></a>udp视频传输结果：</h3></li>
-</ol>
-<p><img src="E:\blog\blog_2020\source\download\img\实时视频传输\接收端.jpg" alt=""></p>
-<p><img src="E:\blog\blog_2020\source\download\img\实时视频传输\实时捕获.jpg" alt=""></p>
-<h2 id="图片的切割与拼接"><a href="#图片的切割与拼接" class="headerlink" title="图片的切割与拼接"></a>图片的切割与拼接</h2><h2 id="各种类型转bytes传输"><a href="#各种类型转bytes传输" class="headerlink" title="各种类型转bytes传输"></a>各种类型转bytes传输</h2><h2 id="对图片进行jpg压缩与还原"><a href="#对图片进行jpg压缩与还原" class="headerlink" title="对图片进行jpg压缩与还原"></a>对图片进行jpg压缩与还原</h2><h2 id="jpg压缩后的切割与传输"><a href="#jpg压缩后的切割与传输" class="headerlink" title="jpg压缩后的切割与传输"></a>jpg压缩后的切割与传输</h2><p>传输时延、丢包率</p>
-<pre class="line-numbers language-none"><code class="language-none">auto lo
-iface lo inet loopback
-
-iface eth0 inet manual
-
-
-auto wlan0
-iface wlan0 inet static 
-address 192.168.201.165
-netmask 255.255.255.0
-gateway 192.168.201.1
-pre-up wpa_supplicant -Dwext -i wlan0 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant2.conf -B
-
-allow-hotplug wlan0
-iface wlan0 inet manual
-    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant2.conf
-
-auto wlan1
-iface wlan1 inet static 
-address 192.168.201.165
-netmask 255.255.255.0
-gateway 192.168.201.1
-pre-up wpa_supplicant -Dwext -i wlan1 -c&#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf -B
-
-allow-hotplug wlan1
-iface wlan1 inet manual
-    wpa-conf &#x2F;etc&#x2F;wpa_supplicant&#x2F;wpa_supplicant.conf
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>sudo create_ap -n wlan0 car_wifi xmu20111 -c 1</p>
-<p>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev<br>update_config=1<br>country=CN</p>
-<p>network={<br>        ssid=”xmu201_1”<br>        psk=”xmu20111”<br>        key_mgmt=WPA-PSK<br>}</p>
-<p> sudo nano /media/pi/rootfs/etc/network/interfaces<br> sudo nano /etc/network/interfaces<br> cd /media/pi/rootfs/etc/wpa_supplicant/</p>
-<p>sudo nano /media/pi/rootfs/etc/dhcpcd.conf<br>sudo nano /etc/dhcpcd.conf</p>
-<p>dhcp 域名解析</p>
-<pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;dhcpcd.conf
-# A sample configuration for dhcpcd.
-# See dhcpcd.conf(5) for details.
-
-# Allow users of this group to interact with dhcpcd via the control socket.
-#controlgroup wheel
-
-# Inform the DHCP server of our hostname for DDNS.
-hostname
-
-# Use the hardware address of the interface for the Client ID.
-clientid
-# or
-# Use the same DUID + IAID as set in DHCPv6 for DHCPv4 ClientID as per RFC4361.
-#duid
-
-# Persist interface configuration when dhcpcd exits.
-persistent
-
-# Rapid commit support.
-# Safe to enable by default because it requires the equivalent option set
-# on the server to actually work.
-option rapid_commit
-
-# A list of options to request from the DHCP server.
-option domain_name_servers, domain_name, domain_search, host_name
-option classless_static_routes
-# Most distributions have NTP support.
-option ntp_servers
-# Respect the network MTU.
-# Some interface drivers reset when changing the MTU so disabled by default.
-#option interface_mtu
-
-# A ServerID is required by RFC2131.
-require dhcp_server_identifier
-
-# Generate Stable Private IPv6 Addresses instead of hardware based ones
-slaac private
-
-# A hook script is provided to lookup the hostname if not set by the DHCP
-# server, but it should not be run by default.
-nohook lookup-hostname
-
-interface eth0
-static ip_address&#x3D;192.168.3.233&#x2F;24
-static routers&#x3D;192.168.3.1
-static domain_name_servers&#x3D;114.114.114.114
-
-interface wlan0
-#static ip_address&#x3D;172.16.233.233&#x2F;16
-#static routers&#x3D;172.16.0.1
-static domain_name_servers&#x3D;114.114.114.114
-
-static ip_address&#x3D;10.42.0.233&#x2F;24
-static routers&#x3D;10.42.0.1
-
-
-
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
         <tag>python</tag>
       </tags>
   </entry>
@@ -12059,6 +12119,254 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </tags>
   </entry>
   <entry>
+    <title>基于深度强化学习的超级马里奥和飞机大战自动控制</title>
+    <url>/2021/03/15/%E5%9F%BA%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5%E5%92%8C%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+img {
+    display: block;
+    margin: 0 auto;
+}
+</style>
+
+<h1 id="基于深度强化学习的超级马里奥和飞机大战自动控制"><a href="#基于深度强化学习的超级马里奥和飞机大战自动控制" class="headerlink" title="基于深度强化学习的超级马里奥和飞机大战自动控制"></a><center>基于深度强化学习的超级马里奥和飞机大战自动控制</center></h1><span id="more"></span>
+<p><strong>摘 要</strong>：2012年深度神经网络模型的成功构建，解决了传统强化学习的诸多不足，使得直接从原始数据中自适应地提取精确的高层次特征成为可能，学者们开始着手研究于深度学习在强化学习中的应用。而为了测试结合深度学习模型和强化学习模型在不同的游戏中的表现，本文通过开发一个卷积神经网络模型，应用强化学习设计了两个专门的智能体分别来完成《超级马里奥兄弟》和《飞机大战》这两款游戏。该模型通过基于游戏画面场景的状态分析完成了图像的识别分类，从游戏画面帧的原始像素数据中学习控制策略，并训练模型使之在输入未知和多维数据时选择正确的操作，其本质上是一个对游戏场景中特定状态的模式识别过程。这种方式可以进行学习，且算法可以学会自动对图像进行特征提取，对于训练中未出现的场景和状态也同样可以进行分类和预测。本文中通过将博弈环境抽象为状态向量，并使用DQN算法来处理复杂的游戏环境，实现了以上两款游戏的自动控制。</p>
+<p><strong>关键词</strong>：强化学习；强化学习；游戏；自动控制</p>
+<h2 id="引-言"><a href="#引-言" class="headerlink" title="引 言"></a>引 言</h2><p>深层卷积神经网络其上含有的卷积核可通过和前层平面的每个小邻域相卷积来探测具有代表性的图像特征。在应用强化学习实现游戏的自动智能体的过程中，我们的研究目标是利用图像中的不同对象训练卷积神经网络，构建一个强化学习的控制器智能体，它可以学习游戏环境并且通过将整个环境抽象描述为几个离散的键值属性来表示状态[1]，使用Q-Learning算法作为以最大化奖励为目标的决策策略，从而使之在输入未知和多维数据时选择正确的操作。</p>
+<p>值的注意的是，计算机在训练过程中所获得的信息与人类玩家完全一致，其仅包括游戏的每一帧图像、小鸟的动作列表(跳跃、无操作)、计算机做出动作之后的奖励、游戏是否结束的标志等。使用强化学习的难点在于如何定义状态、行动、奖励和解决时滞问题，并且当智能体获得奖励时，我们必须确定究竟是哪一动作在获得奖励中发挥了作用以及其作用发挥的权重。</p>
+<p>本报告的其余部分组织如下:在论文的第2部分我们主要简要概述了游戏的AI界面和Q-Learning算法；在第3部分中解释了在实验中我们是如何定义状态、行动、奖励在强化学习中使用并对实验结果进行了展示与分析。</p>
+<p><strong>1 绪论</strong></p>
+<h3 id="1-1研究动机与目的"><a href="#1-1研究动机与目的" class="headerlink" title="1.1研究动机与目的"></a><strong>1.1研究动机与目的</strong></h3><p>应用强化学习实现游戏的自动智能体的思路一经提出便受到了广大学者们的关注和讨论，相较于人类玩家的游戏模式，计算机自主进行游戏的模式可以得到有价值的观察，这对于作为游戏设计师而言，可以更好地理解游戏参数和玩家体验之间的关系，提供更多更有效的改进算法的思路，通过调整的游戏参数去探索游戏空间从而调整游戏难度以获得理想的玩家体验，并且还可助力于之后的游戏开发。此外，它还能带动无人驾驶、机器人导航和物体追踪等同类领域的研究工作。</p>
+<h3 id="1-2-研究背景及意义"><a href="#1-2-研究背景及意义" class="headerlink" title="1.2 研究背景及意义"></a><strong>1.2 研究背景及意义</strong></h3><h4 id="1-2-1深度学习与强化学习背景"><a href="#1-2-1深度学习与强化学习背景" class="headerlink" title="1.2.1深度学习与强化学习背景"></a><strong>1.2.1深度学习与强化学习背景</strong></h4><p>2006年机器学习界的泰斗发表的«A fast learning algorithm for deep belief<br>nets»[2],文章中主要阐述的观点有：</p>
+<p>在网络中包含多个隐藏层，其通过一定的训练方法后可以得到更优越的特征表达式，这些特征能更清晰地描述原始数据的本质特征，有利于将特征可视化或者任务分类。</p>
+<p>可以使用逐层初始化（layer-wise<br>pre-training）的方法来解决传统神经网络训练中的难题。该方法是通过无监督特征学习[3,4,5,6]（Unsupervised<br>Feature Learning）来实现的。</p>
+<p>2012年Google Brain<br>项目引起了广泛关注，其使用大规模并行计算平台进行算法部署和模型训练，构建了一个“深度学习的网络”（DNN，Deep<br>Neural<br>Networks）的模型[7]。由此之后深度学习给诸多领域都带来了新的发展，其中包括语音识别、图像处理等众多领域。</p>
+<p>随着深度学习在各个领域的重大发展，使得其为强化学习领域的发展带来可能。传统强化学习[2]主要依赖于组合人工特征和线性价值函数或策略表达来实现，但是，系统的性能很大程度依赖于所提取的特征提取的效果，同时，人工提取特征存在只对特定任务有效的特性，且难度较大，耗费时间较长等特性。深度学习的发展使得直接从原始数据中自适应地提取精确的高层次特征成为可能。将深度学习应用于强化学习开始进入人们的视野。本文通过研究有趣的游戏来测试结合深度学习模型和强化学习模型在不同的游戏中的表现，对强化学习的算法进行分析。同时我们相信这项技术将可以应用到更多的领域。</p>
+<h4 id="1-2-2-游戏"><a href="#1-2-2-游戏" class="headerlink" title="1.2.2 游戏"></a><strong>1.2.2 游戏</strong></h4><p>本文尝试将将深度学习应用到游戏中去。首先分析视频游戏中的步骤：</p>
+<p>玩家点击开始按键，游戏场景开始切换，玩家对出现的画面进行信号的处理。</p>
+<p>大脑将视觉信号转换为语义信息，其中包括物体的类别，不同物体所在的位置信息。其后玩家根据大脑反馈的信息选择接下来的具体操作。并通过按键将此决策传递到游戏内部。</p>
+<p>游戏接收指令并处理完成后，场景切换到下一帧，玩家可能会因此得到相应的奖励或惩罚。如此循环，直到游戏结束。</p>
+<p>由分析可得出此视频游戏的流程图，分为玩家无法干涉的环境部分和玩家控制的游戏部分。接下来使用agent模拟人类玩家，即让agent去代替人来玩家执行以上玩家执行的操作。Agent通过与人类玩家的对比得出需进行以下操作：</p>
+<p>接收游戏场景信号和回复信号，对收到的信号进行处理，如特征提取等。进而识别位置信息等。</p>
+<p>根据历史信息及经验，对当前的游戏场景进性分析后作出相应的游戏操作。</p>
+<p>将采取的相应游戏操作通过按键传递给游戏模拟器。</p>
+<p>我们希望agent可以像人类一样通过不断的更新经验值来使游戏玩的越来越好，将DL强大的特征提取能力和RL的环境学习能力结合的深度强化学习模型（Deep<br>Reinforcement Learning, DRL）[8].</p>
+<h3 id="1-3研究现状"><a href="#1-3研究现状" class="headerlink" title="1.3研究现状"></a><strong>1.3研究现状</strong></h3><p>应用强化学习(RL)[9]玩游戏一直是当今AI的研究热点，它可以通过场景训练模拟玩家行为从而实现智能体。在此研究领域，Mnih等人于2013年提出了结合深层神经网络的强化学习的DQN（Deep<br>Q-Network）模型[10]，并成功训练出相应的智能体使之可自主完成2600种Atari游戏，并且在多个游戏[11][12]上达到了超越人类的专家级水平，受其启发，我们在这两款游戏中，很大程度地模仿了前人的方法，以深层神经网络作为近似函数代表Q-Learning中的Q值（动作值），并通过使用以前经验的“经验回放”从中随机抽取部分经验来更新网络，以便将模型得到的经验和延迟更新联系起来，从而获得目标值以提高稳定性。</p>
+<p><strong>2</strong> 算法设计</p>
+<h3 id="2-1-Q-Learning"><a href="#2-1-Q-Learning" class="headerlink" title="2.1 Q-Learning"></a><strong>2.1 Q-Learning</strong></h3><p>由于智能体只在任何一个时间步长观察当前帧，即其只能对任务进行局部观察，这意味着当前屏幕的信息不足以理解智能体的整个游戏环境。所以我们考虑一系列的行为和状态，并从中学习策略。我们假设环境中的所有序列都可在有限的时间步长内终止，从而将游戏建模为一个有限马尔可夫决策过程[13]。此时状态之间的具体转换概率是未知的，因此我们无法采用常规的强化学习进行迭代，而Q-Learning算法却可以在不使用状态转移概率的情况下收敛，符合我们的需要。这也是我们选择Q-Learning算法的缘由所在。</p>
+<p>在Q-Learning算法中，我们将学习环境视为一个状态机，通过值迭代来寻找最优策略，从而使总回报（奖励）最大化，对于表中的每一对状态、动作，它维护一个由Q表示的期望总回报(即时+未来)的值。对于特定状态下的每一个动作，都会给予奖励，Q值总是使用贝尔曼方程进行迭代更新：</p>
+<p>（2-1）</p>
+<p>但在实际处理过程中，我们并不直接使用估计Q值来更新Q值，而是通过梯度下降的逐步逼近的做法，使其收敛到最优的Q值，转移规则如下：</p>
+<p>（2-2）</p>
+<p>在Q-Learning算法中，其输入点由四项组成，分别代表四个主要因素:当前状态、选择动作、奖励和未来状态，函数通过其输入点来构建一个整体回报最大且可据此预测未来动作的模型[14]。</p>
+<p>式(2-2)表示对于每个当前状态，我们将Q值更新为当前值、当前奖励和最大可能未来值的组合。其中为影响学习收敛的速度的学习因子，为权衡长短期回报间折扣因子，它表示在优化过程中有多少未来状态被考虑在内，为当前状态的Q值,为未来状态的Q值，r为奖励，表示根据当前的Q表，在状态执行动作转移到状态后得到的真实的Q值。其原理图如下：</p>
+<p><img src="https://www.mmrsl.cn/download/img/media/43d961dc8df137f0dc134a12a07cdbb7.png" alt=""></p>
+<p>图1 Q-learning原理图</p>
+<p>实际上，在训练智能体时，我们使用的是贪婪的Q-Learning算法，该算法是Q-Learning的一个小变体，它根据概率随机选择每一步的行动或根据概率为的Q表，选择最佳行动。执行该操作后，Q表更新为1。</p>
+<h3 id="2-2-Deep-Q-Networks"><a href="#2-2-Deep-Q-Networks" class="headerlink" title="2.2 Deep Q Networks"></a><strong>2.2 Deep Q Networks</strong></h3><p>由于Q-Learning的核心是R表与Q表，其行表示状态，列表示动作，因此，若我们使用Q-Learning进行迭代来更新值的过程中，需要读取和维护整个状态表，才能计算出未来期望状态值，而无论是维护还是读取，其代价都是比较大的。</p>
+<p>而我们知道，神经网络天生比较适合用来表示十分复杂的形式，所以用神经网络来维护Q表是比较合适的方式。DQN就是Q-Learning神经网络的结果，其属于一种多层卷积神经网络，其输出为一个给定状态和网络参数的动作值向量，是一个从Rn到Rm的函数，其n和m分别表示是状态空间与动作空间的维数[6]。因此，在DQN中，只需输入一个状态，神经网络即可直接生成Q值，其有着比Q-Learning快得多的更新速度，由此，我们通常用DQN来处理状态更加复杂的问题。</p>
+<p>由于在Q-Learning中，连续存储的经验数据具有高度相关性。而由于样本之间的强相关性，若直接以相同的顺序在连续样本中完成DQN参数的更新显然是十分低效的。因此，我们想到：是否可通过随机化样本的方式来破坏样本的连续性从而降低其相关性，以达到减少更新的方差的目的。为此我们设置了一个经验回放存储器用于保存马里奥或我方战机过去所有的经历，采用“经验回放存储器+随机采样”的方式来破坏样本的连续性并用于进行DQN参数上的梯度下降，设置其DQN参数会在固定的时间间隔内进行更新，由于小批量选择结果具有随机性，所得的用于更新DQN参数的数据是去相关的，因此，此时得到的训练结果更加有效。经验回放解决了之前提到的奖励通常具有时滞性的问题。</p>
+<p>而我们使用神经网络来预测动作，就必须了解训练神经网络的权重，但不同于输出层只有一个神经元的分类问题，此时的DQN输出层中有多个神经元来分别对应多个动作，因此，就无法直接采用交叉熵函数作为损失函数，针对这种情况，我们采用两个结构一致参数不同的DQN网络：Q_net与Q_netT，每隔若干个时间步训练之后，就将Q_net的参数赋予Q_netT，并使用一组参数<br>来参数化逼近值函数，这种参数化逼近的方式使得在更新的同时，同步完成整体更新，不仅避免了过拟合情况，还使得模型的泛化能力更强。DQN模型的总体结构示意图如下：</p>
+<p><img src="https://www.mmrsl.cn/download/img/media/4c6aa4a335d8593e27bb56d1e643195d.png" alt=""></p>
+<p>图2 DQN模型的总体结构示意图</p>
+<p>在研究Q-Learning 的损失函数之前，我们首先确立Q-Learning<br>的优化目标——使得最小，见式（2-3）：</p>
+<p>(2-3)</p>
+<p>若将TD目标作为标签，将作为模型的输出y，在加入参数θ后，原优化目标转化为式（2-4）：</p>
+<p>(2-4)</p>
+<p>由此问题就转化为我们所熟悉的监督学习中的回归问题，显然我们所要确定的损失函数就是其均方误差，因此可用梯度下降算法最小化损失，从而更新参数θ，得到的损失函数的梯度下降公式如式（2-5）所示：</p>
+<p>(2-5)</p>
+<p>但此TD目标是标签，所以中的是无法更新的，这种方法只有部分梯度，称为半梯度法。而后，DeepMind在Nature-2015版本中将TD</p>
+<p>网络单独分开，通过每隔固定步数将值函数逼近的网络参数拷贝给其本身的参数，由此保证DQN的训练更加稳定，式（2-6）即为含有目标网络参数的梯度下降公式：</p>
+<p>(2-6)</p>
+<p>此外，我们一般将奖励固定在某个阈值上，避免Q值过大的情况发生同时确保梯度是有条件的。</p>
+<p>DQN算法和Q-Learning的区别是用CNN（深度卷积神经网络）代替Q矩阵。其Q矩阵的更新公式为：</p>
+<p>（2-7）</p>
+<p>CNN根据SGD（随机梯度下降算法）选取下一步的动作，以类似的方式给出损失函数：</p>
+<p>（2-8）</p>
+<p><strong>3 系统模型</strong></p>
+<h3 id="3-1游戏系统模型"><a href="#3-1游戏系统模型" class="headerlink" title="3.1游戏系统模型"></a><strong>3.1游戏系统模型</strong></h3><p>对于游戏而言，存在环境、游戏角色和玩家所构成的一个游戏系统，玩家可以通过键盘或手柄控制角色的运动，在环境中获得最大的一个收益。而本文则采用强化学习算法选择下一时隙的动作在环境中获得一个最大收益。为简化模型本文仅考虑游戏中的三个部分：角色、环境和智能体，拓扑结构如下图所示：</p>
+<p><img src="https://www.mmrsl.cn/download/img/media/343c055c95493d3cb90466bbe2efc778.png" alt=""></p>
+<p>图3 游戏系统拓扑图</p>
+<p>智能体选择动作，游戏角色执行智能体选择的动作，环境进行反馈，角色在该动作下的动作、。游戏图像、角色所处位置和游戏角色在该动作下的回报，游戏系统的控制模型如下图所示。</p>
+<p><img src="https://www.mmrsl.cn/download/img/media/624796c3a764a7a780abb1cea6301d16.png" alt=""></p>
+<p>图4 游戏系统控制模型</p>
+<p>智能体通过强化学习算法，做出决策选择合适的动作，环境做出反馈后获得游戏的收益。本游戏系统中所用的参数设置如下表所示：</p>
+<p>表1 系统参数</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>当前动作</td>
+</tr>
+<tr>
+<td></td>
+<td>图像数据</td>
+</tr>
+<tr>
+<td></td>
+<td>游戏角色所处位置</td>
+</tr>
+<tr>
+<td></td>
+<td>游戏角色在当前动作下的奖励</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="3-2-智能体的算法设置"><a href="#3-2-智能体的算法设置" class="headerlink" title="3.2 智能体的算法设置"></a><strong>3.2 智能体的算法设置</strong></h3><p>本文采用强化学习算法，通过Q矩阵或CNN(卷积神经网络)进行决策，根据当前状态选择下一时刻的动作。致力于让游戏中的角色选择最好的动作，获得最大的效益。</p>
+<p>本文中主要采用RLAGC算法，通过Q矩阵，通过贪婪算法选择该状态下Q矩阵中值最大的动作，决策下一轮的游戏动作。RLAGC算法伪代码如下所示：</p>
+<p>表2 RLAGC伪代码</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>1:初始化算法参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2:获取初始的动作</td>
+</tr>
+<tr>
+<td>3: For</td>
+</tr>
+<tr>
+<td>4:获取上一时刻的状态信息</td>
+</tr>
+<tr>
+<td>5根据获得的状态信息，计算奖励函数</td>
+</tr>
+<tr>
+<td>6:使用状态、选择的坐标（动作）和奖励函数，以学习率、折扣因子更新Q表</td>
+</tr>
+<tr>
+<td>7:根据量化方案编码状态，并获取对应状态下所有动作的Q值</td>
+</tr>
+<tr>
+<td>8:根据-greedy算法获取当前状态下收益最好的动作</td>
+</tr>
+<tr>
+<td>9:智能体选择动作获得动作下的回报值</td>
+</tr>
+<tr>
+<td>10：通过k时隙的状态、动作和回报更新Q表</td>
+</tr>
+<tr>
+<td>11: End for</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>本文中主要采用DRLAGC算法，通过卷积神经网络，通过随机梯度下降算法选择该状态下的较好功率，决策下一轮的发射功率。DRLATPC算法伪代码如下所示：</p>
+<p>表<strong>3</strong> DRLAGC伪代码</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>1:初始化算法参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2:获取初始的动作</td>
+</tr>
+<tr>
+<td>3:For</td>
+</tr>
+<tr>
+<td>4:获取上一时刻的状态信息、</td>
+</tr>
+<tr>
+<td>5:根据获得的状态信息，计算奖励函数</td>
+</tr>
+<tr>
+<td>6:使用状态、选择的坐标（动作）和奖励函数，以学习率、折扣因子更新CNN</td>
+</tr>
+<tr>
+<td>7:获取对应状态下所有动作的奖励值</td>
+</tr>
+<tr>
+<td>8:根据算法获取当前时刻状态下收益较好的动作</td>
+</tr>
+<tr>
+<td>9:智能体选择动作获得动作下的回报值</td>
+</tr>
+<tr>
+<td>10：通过k时隙的状态、动作和回报更新CNN网络</td>
+</tr>
+<tr>
+<td>11:End for</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>4飞机大战智能体强化学习控制</strong></p>
+<h3 id="4-1-飞机大战实验模型"><a href="#4-1-飞机大战实验模型" class="headerlink" title="4.1 飞机大战实验模型"></a><strong>4.1 飞机大战实验模型</strong></h3><p>在《飞机大战》这一游戏的AI界面中，飞机只有左、右、下三个控制按键。其中敌机在每30步随机生成一个，并向前直线运动攻击对面的智能体。智能体通过三个按键选择不同的动作避开障碍，并以最大限度攻击对面的敌机，飞机每5步发射一次子弹。</p>
+<p><img src="https://www.mmrsl.cn/download/img/media/561e33edec5911fd19976424af715928.png" alt=""></p>
+<p>图5 飞机大战实验模型图</p>
+<p>奖励设置：当前步数没有被击中奖励0.2分、击中敌机奖励2分、被击落扣除5分。状态设置：状态设置为图像信息，图像宽度为400像素、高度为800像素，经过灰度处理后，通过OpenCV改变图像大小为高度80、长度80的矩阵，最终修改格式为1行6400列的矩阵以此为状态。</p>
+<p>（4-1）</p>
+<p>其中reward函数如公式4-1所示，其中L为角色是否存活：存活reward增加0.2，若否则减少5、若击中敌机则增加2。</p>
+<h3 id="4-2-实验结果"><a href="#4-2-实验结果" class="headerlink" title="4.2 实验结果"></a><strong>4.2 实验结果</strong></h3><p>本文对飞机大战，加入深度强化学习，并对模型进行训练，飞机有3个动作、状态数为6041个图像和位置信息所构成的1行6041列的矩阵。本文对该游戏进行了训练，实验结果请查看demo。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<p><img src="https://www.mmrsl.cn/download/img/media/a029bdd39328a375d99639207c6f8b7e.png" alt=""></p>
+<p>图6 飞机大战实验结果图</p>
+<h3 id="4-3结果分析"><a href="#4-3结果分析" class="headerlink" title="4.3结果分析"></a><strong>4.3结果分析</strong></h3><p>深度强化学习没有现成的样本，而是智能体在与环境的交互中收集相应的(状态、动作、奖赏)样本进行试错学习，从而不断地改善自身策略来获取最大的累积奖赏。由实验结果可以显示深度强化学习相比于深度学习，在相同训练次数的情况下，可以得到更多奖励，且随着训练次数的增加深度强化学习相比于深度学习得到奖励的优势愈加突出。得出强化学习在游戏中的可以更好的完成智能体的自动控制。</p>
+<p><strong>5超级马里奥兄弟智能体强化学习控制</strong></p>
+<h3 id="5-1-超级马里奥兄弟游戏模型"><a href="#5-1-超级马里奥兄弟游戏模型" class="headerlink" title="5.1 超级马里奥兄弟游戏模型"></a><strong>5.1 超级马里奥兄弟游戏模型</strong></h3><p>在《超级马里奥兄弟》这一游戏的AI界面中，马里奥有6个控制按键:上、下、左、右、跳跃和攻击。在每个时间步长中，智能体可从合法博弈动作集合中选择一个动作将其传递给模拟器，模拟器相应修改其内部状态和游戏分数并返回当前场景的完整观察结果(包含该范围内敌人/道具/平台的位置和类型的数组)，而智能体通过游戏总分数的变化获得相应的奖励。这款游戏的目标均是在每个阶段结束时，控制马里奥在不失去生命的基础上，通过收集道具、杀死敌人和快速完成关卡而获得尽可能高的分数。</p>
+<p>其中马里奥有如图所示的13种不同的动作，并设置奖励为该状态下马里奥获得分数，选择向左+5，向右-5每秒扣除0.1。</p>
+<p>（4-1）</p>
+<p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
+<p>图7 超级马里奥兄弟实验模型图</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x6b;&#x70;&#x40;&#109;&#109;&#x72;&#115;&#108;&#46;&#99;&#x6e;">&#x6b;&#x70;&#x40;&#109;&#109;&#x72;&#115;&#108;&#46;&#99;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
+<p>图8 超级马里奥兄弟实验结果图</p>
+<h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
+<h2 id="6-结论"><a href="#6-结论" class="headerlink" title="6 结论"></a><strong>6 结论</strong></h2><p>深度强化学习已经成功地应用于许多问题，由于在围棋和其他电子游戏上的出色表现而受到广泛关注。我们主要关注在游戏产业中如何利用深度强化学习技术，提升效率，改变生产方式。深度强化学习技术，是通过让智能体在游戏世界内探索的方式来训练模型提升水平，在合适的设计的基础上，往往能得到比较高水平的模型。本文通过强化学习设计了两个智能体来完成《超级马里奥兄弟》和《飞机大战》这两款游戏。通过将博弈环境抽象为状态向量，并使用DQN算法来处理复杂的游戏环境，实现了以上两款游戏的自动控制。在本文中我们只是列举了深度强化学习在游戏中的一些比较典型的例子，其中有的已经为产业带来价值，且其应用前景广阔。</p>
+<h2 id="视频结果："><a href="#视频结果：" class="headerlink" title="视频结果："></a>视频结果：</h2><p><div>
+<span><video src="https://www.codekp.cn/Learning_Classwork/%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98.mp4"   controls="controls"></video></span>
+<strong ><center> 飞机大战 </center></strong>
+<span><video src="https://www.codekp.cn/Learning_Classwork/%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5.mp4"   controls="controls"></video></span>
+<strong ><center> 超级玛丽 </center></strong>
+</div></p>
+<style>
+        video {
+            width: 100%;
+        }
+</style>
+
+
+<p><strong>参考文献</strong></p>
+<p>[1] Tsay J J, Chen C C, Hsu J J. Evolving intelligent mario controller by<br>reinforcement learning[C]//2011 International Conference on Technologies and<br>Applications of Artificial Intelligence. IEEE, 2011: 266-272.</p>
+<p>[2] Geoffrey E.Hinton and Simon Osindero. A fast learning algorithm for deep<br>belief nets[J].In Neural Computation,2006.</p>
+<p>[3] Coates,A.Demystifying Unsupervised Feature Learning[D].PhD thesis,Stanford<br>University,Palo Alto,USA,2012.</p>
+<p>[4] Bengio,Y.Learning Deep Architectures for AI[J].Found.trends<br>Mach.Learn.2(2009),1-127.</p>
+<p>[5] Yu,D.Seltzer,M.l.,Li,J.,Huang,J.-T.,and Seide,F.Feature learning in deep<br>neural networks-a study on speech recogniyion tasks[J].CoRR abs/1301.3605(2013).</p>
+<p>[6] Ranzato,M.,lan Boureau,Y.,and Cun,Y.L.Sparse feature learning for deep<br>belief networks[J].In Advance in Neural Information Processing Systems<br>20,J.Platt,D.Koller,Y.Singer,and S.Roweis,Eds.Curran<br>Associates,Inc.,2008,pp.1185-1192.</p>
+<p>[7] Arnold,L.,Rebecchi,S.,Chevallier,S.,and Paugam-Moisy,H.An Introduction to<br>Deep Learning[M]. In Advances in Computational Intelligence and Machine<br>Learning,ESANN’2011(2011),pp.477-488.</p>
+<p>[8] Volodymyr Mnih,Koray Kavukcuoglu,and David Silver.Playing Atari with Deep<br>Reinforcement Learning[J].In ICML,2014.</p>
+<p>[9] Richard Sutton and Andrew Barto. Rcinforcement Learning:An<br>Introduction[M].MIT Press,1998.</p>
+<p>[10]Sutton R S, Barto A G. Introduction to reinforcement learning[M]. Cambridge:<br>MIT press, 1998.</p>
+<p>[11]Mnih V, Kavukcuoglu K, Silver D, et al. Playing atari with deep<br>reinforcement learning[J]. arXiv preprint arXiv:1312.5602, 2013.</p>
+<p>[12]Mnih V, Kavukcuoglu K, Silver D, et al. Human-level control through deep<br>reinforcement learning[J]. nature, 2015, 518(7540): 529-533.</p>
+<p>[13]Klein S. CS229 Final Report Deep Q-Learning to Play Mario[J].</p>
+<p>[14]Chen K. Deep reinforcement learning for flappy bird[J]. 2015.</p>
+]]></content>
+      <categories>
+        <category>强化学习</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>强化学习</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>多智能体强化学习算法及环境</title>
     <url>/2021/12/06/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8F%8A%E7%8E%AF%E5%A2%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
@@ -12278,254 +12586,6 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </tags>
   </entry>
   <entry>
-    <title>基于深度强化学习的超级马里奥和飞机大战自动控制</title>
-    <url>/2021/03/15/%E5%9F%BA%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5%E5%92%8C%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-img {
-    display: block;
-    margin: 0 auto;
-}
-</style>
-
-<h1 id="基于深度强化学习的超级马里奥和飞机大战自动控制"><a href="#基于深度强化学习的超级马里奥和飞机大战自动控制" class="headerlink" title="基于深度强化学习的超级马里奥和飞机大战自动控制"></a><center>基于深度强化学习的超级马里奥和飞机大战自动控制</center></h1><span id="more"></span>
-<p><strong>摘 要</strong>：2012年深度神经网络模型的成功构建，解决了传统强化学习的诸多不足，使得直接从原始数据中自适应地提取精确的高层次特征成为可能，学者们开始着手研究于深度学习在强化学习中的应用。而为了测试结合深度学习模型和强化学习模型在不同的游戏中的表现，本文通过开发一个卷积神经网络模型，应用强化学习设计了两个专门的智能体分别来完成《超级马里奥兄弟》和《飞机大战》这两款游戏。该模型通过基于游戏画面场景的状态分析完成了图像的识别分类，从游戏画面帧的原始像素数据中学习控制策略，并训练模型使之在输入未知和多维数据时选择正确的操作，其本质上是一个对游戏场景中特定状态的模式识别过程。这种方式可以进行学习，且算法可以学会自动对图像进行特征提取，对于训练中未出现的场景和状态也同样可以进行分类和预测。本文中通过将博弈环境抽象为状态向量，并使用DQN算法来处理复杂的游戏环境，实现了以上两款游戏的自动控制。</p>
-<p><strong>关键词</strong>：强化学习；强化学习；游戏；自动控制</p>
-<h2 id="引-言"><a href="#引-言" class="headerlink" title="引 言"></a>引 言</h2><p>深层卷积神经网络其上含有的卷积核可通过和前层平面的每个小邻域相卷积来探测具有代表性的图像特征。在应用强化学习实现游戏的自动智能体的过程中，我们的研究目标是利用图像中的不同对象训练卷积神经网络，构建一个强化学习的控制器智能体，它可以学习游戏环境并且通过将整个环境抽象描述为几个离散的键值属性来表示状态[1]，使用Q-Learning算法作为以最大化奖励为目标的决策策略，从而使之在输入未知和多维数据时选择正确的操作。</p>
-<p>值的注意的是，计算机在训练过程中所获得的信息与人类玩家完全一致，其仅包括游戏的每一帧图像、小鸟的动作列表(跳跃、无操作)、计算机做出动作之后的奖励、游戏是否结束的标志等。使用强化学习的难点在于如何定义状态、行动、奖励和解决时滞问题，并且当智能体获得奖励时，我们必须确定究竟是哪一动作在获得奖励中发挥了作用以及其作用发挥的权重。</p>
-<p>本报告的其余部分组织如下:在论文的第2部分我们主要简要概述了游戏的AI界面和Q-Learning算法；在第3部分中解释了在实验中我们是如何定义状态、行动、奖励在强化学习中使用并对实验结果进行了展示与分析。</p>
-<p><strong>1 绪论</strong></p>
-<h3 id="1-1研究动机与目的"><a href="#1-1研究动机与目的" class="headerlink" title="1.1研究动机与目的"></a><strong>1.1研究动机与目的</strong></h3><p>应用强化学习实现游戏的自动智能体的思路一经提出便受到了广大学者们的关注和讨论，相较于人类玩家的游戏模式，计算机自主进行游戏的模式可以得到有价值的观察，这对于作为游戏设计师而言，可以更好地理解游戏参数和玩家体验之间的关系，提供更多更有效的改进算法的思路，通过调整的游戏参数去探索游戏空间从而调整游戏难度以获得理想的玩家体验，并且还可助力于之后的游戏开发。此外，它还能带动无人驾驶、机器人导航和物体追踪等同类领域的研究工作。</p>
-<h3 id="1-2-研究背景及意义"><a href="#1-2-研究背景及意义" class="headerlink" title="1.2 研究背景及意义"></a><strong>1.2 研究背景及意义</strong></h3><h4 id="1-2-1深度学习与强化学习背景"><a href="#1-2-1深度学习与强化学习背景" class="headerlink" title="1.2.1深度学习与强化学习背景"></a><strong>1.2.1深度学习与强化学习背景</strong></h4><p>2006年机器学习界的泰斗发表的«A fast learning algorithm for deep belief<br>nets»[2],文章中主要阐述的观点有：</p>
-<p>在网络中包含多个隐藏层，其通过一定的训练方法后可以得到更优越的特征表达式，这些特征能更清晰地描述原始数据的本质特征，有利于将特征可视化或者任务分类。</p>
-<p>可以使用逐层初始化（layer-wise<br>pre-training）的方法来解决传统神经网络训练中的难题。该方法是通过无监督特征学习[3,4,5,6]（Unsupervised<br>Feature Learning）来实现的。</p>
-<p>2012年Google Brain<br>项目引起了广泛关注，其使用大规模并行计算平台进行算法部署和模型训练，构建了一个“深度学习的网络”（DNN，Deep<br>Neural<br>Networks）的模型[7]。由此之后深度学习给诸多领域都带来了新的发展，其中包括语音识别、图像处理等众多领域。</p>
-<p>随着深度学习在各个领域的重大发展，使得其为强化学习领域的发展带来可能。传统强化学习[2]主要依赖于组合人工特征和线性价值函数或策略表达来实现，但是，系统的性能很大程度依赖于所提取的特征提取的效果，同时，人工提取特征存在只对特定任务有效的特性，且难度较大，耗费时间较长等特性。深度学习的发展使得直接从原始数据中自适应地提取精确的高层次特征成为可能。将深度学习应用于强化学习开始进入人们的视野。本文通过研究有趣的游戏来测试结合深度学习模型和强化学习模型在不同的游戏中的表现，对强化学习的算法进行分析。同时我们相信这项技术将可以应用到更多的领域。</p>
-<h4 id="1-2-2-游戏"><a href="#1-2-2-游戏" class="headerlink" title="1.2.2 游戏"></a><strong>1.2.2 游戏</strong></h4><p>本文尝试将将深度学习应用到游戏中去。首先分析视频游戏中的步骤：</p>
-<p>玩家点击开始按键，游戏场景开始切换，玩家对出现的画面进行信号的处理。</p>
-<p>大脑将视觉信号转换为语义信息，其中包括物体的类别，不同物体所在的位置信息。其后玩家根据大脑反馈的信息选择接下来的具体操作。并通过按键将此决策传递到游戏内部。</p>
-<p>游戏接收指令并处理完成后，场景切换到下一帧，玩家可能会因此得到相应的奖励或惩罚。如此循环，直到游戏结束。</p>
-<p>由分析可得出此视频游戏的流程图，分为玩家无法干涉的环境部分和玩家控制的游戏部分。接下来使用agent模拟人类玩家，即让agent去代替人来玩家执行以上玩家执行的操作。Agent通过与人类玩家的对比得出需进行以下操作：</p>
-<p>接收游戏场景信号和回复信号，对收到的信号进行处理，如特征提取等。进而识别位置信息等。</p>
-<p>根据历史信息及经验，对当前的游戏场景进性分析后作出相应的游戏操作。</p>
-<p>将采取的相应游戏操作通过按键传递给游戏模拟器。</p>
-<p>我们希望agent可以像人类一样通过不断的更新经验值来使游戏玩的越来越好，将DL强大的特征提取能力和RL的环境学习能力结合的深度强化学习模型（Deep<br>Reinforcement Learning, DRL）[8].</p>
-<h3 id="1-3研究现状"><a href="#1-3研究现状" class="headerlink" title="1.3研究现状"></a><strong>1.3研究现状</strong></h3><p>应用强化学习(RL)[9]玩游戏一直是当今AI的研究热点，它可以通过场景训练模拟玩家行为从而实现智能体。在此研究领域，Mnih等人于2013年提出了结合深层神经网络的强化学习的DQN（Deep<br>Q-Network）模型[10]，并成功训练出相应的智能体使之可自主完成2600种Atari游戏，并且在多个游戏[11][12]上达到了超越人类的专家级水平，受其启发，我们在这两款游戏中，很大程度地模仿了前人的方法，以深层神经网络作为近似函数代表Q-Learning中的Q值（动作值），并通过使用以前经验的“经验回放”从中随机抽取部分经验来更新网络，以便将模型得到的经验和延迟更新联系起来，从而获得目标值以提高稳定性。</p>
-<p><strong>2</strong> 算法设计</p>
-<h3 id="2-1-Q-Learning"><a href="#2-1-Q-Learning" class="headerlink" title="2.1 Q-Learning"></a><strong>2.1 Q-Learning</strong></h3><p>由于智能体只在任何一个时间步长观察当前帧，即其只能对任务进行局部观察，这意味着当前屏幕的信息不足以理解智能体的整个游戏环境。所以我们考虑一系列的行为和状态，并从中学习策略。我们假设环境中的所有序列都可在有限的时间步长内终止，从而将游戏建模为一个有限马尔可夫决策过程[13]。此时状态之间的具体转换概率是未知的，因此我们无法采用常规的强化学习进行迭代，而Q-Learning算法却可以在不使用状态转移概率的情况下收敛，符合我们的需要。这也是我们选择Q-Learning算法的缘由所在。</p>
-<p>在Q-Learning算法中，我们将学习环境视为一个状态机，通过值迭代来寻找最优策略，从而使总回报（奖励）最大化，对于表中的每一对状态、动作，它维护一个由Q表示的期望总回报(即时+未来)的值。对于特定状态下的每一个动作，都会给予奖励，Q值总是使用贝尔曼方程进行迭代更新：</p>
-<p>（2-1）</p>
-<p>但在实际处理过程中，我们并不直接使用估计Q值来更新Q值，而是通过梯度下降的逐步逼近的做法，使其收敛到最优的Q值，转移规则如下：</p>
-<p>（2-2）</p>
-<p>在Q-Learning算法中，其输入点由四项组成，分别代表四个主要因素:当前状态、选择动作、奖励和未来状态，函数通过其输入点来构建一个整体回报最大且可据此预测未来动作的模型[14]。</p>
-<p>式(2-2)表示对于每个当前状态，我们将Q值更新为当前值、当前奖励和最大可能未来值的组合。其中为影响学习收敛的速度的学习因子，为权衡长短期回报间折扣因子，它表示在优化过程中有多少未来状态被考虑在内，为当前状态的Q值,为未来状态的Q值，r为奖励，表示根据当前的Q表，在状态执行动作转移到状态后得到的真实的Q值。其原理图如下：</p>
-<p><img src="https://www.mmrsl.cn/download/img/media/43d961dc8df137f0dc134a12a07cdbb7.png" alt=""></p>
-<p>图1 Q-learning原理图</p>
-<p>实际上，在训练智能体时，我们使用的是贪婪的Q-Learning算法，该算法是Q-Learning的一个小变体，它根据概率随机选择每一步的行动或根据概率为的Q表，选择最佳行动。执行该操作后，Q表更新为1。</p>
-<h3 id="2-2-Deep-Q-Networks"><a href="#2-2-Deep-Q-Networks" class="headerlink" title="2.2 Deep Q Networks"></a><strong>2.2 Deep Q Networks</strong></h3><p>由于Q-Learning的核心是R表与Q表，其行表示状态，列表示动作，因此，若我们使用Q-Learning进行迭代来更新值的过程中，需要读取和维护整个状态表，才能计算出未来期望状态值，而无论是维护还是读取，其代价都是比较大的。</p>
-<p>而我们知道，神经网络天生比较适合用来表示十分复杂的形式，所以用神经网络来维护Q表是比较合适的方式。DQN就是Q-Learning神经网络的结果，其属于一种多层卷积神经网络，其输出为一个给定状态和网络参数的动作值向量，是一个从Rn到Rm的函数，其n和m分别表示是状态空间与动作空间的维数[6]。因此，在DQN中，只需输入一个状态，神经网络即可直接生成Q值，其有着比Q-Learning快得多的更新速度，由此，我们通常用DQN来处理状态更加复杂的问题。</p>
-<p>由于在Q-Learning中，连续存储的经验数据具有高度相关性。而由于样本之间的强相关性，若直接以相同的顺序在连续样本中完成DQN参数的更新显然是十分低效的。因此，我们想到：是否可通过随机化样本的方式来破坏样本的连续性从而降低其相关性，以达到减少更新的方差的目的。为此我们设置了一个经验回放存储器用于保存马里奥或我方战机过去所有的经历，采用“经验回放存储器+随机采样”的方式来破坏样本的连续性并用于进行DQN参数上的梯度下降，设置其DQN参数会在固定的时间间隔内进行更新，由于小批量选择结果具有随机性，所得的用于更新DQN参数的数据是去相关的，因此，此时得到的训练结果更加有效。经验回放解决了之前提到的奖励通常具有时滞性的问题。</p>
-<p>而我们使用神经网络来预测动作，就必须了解训练神经网络的权重，但不同于输出层只有一个神经元的分类问题，此时的DQN输出层中有多个神经元来分别对应多个动作，因此，就无法直接采用交叉熵函数作为损失函数，针对这种情况，我们采用两个结构一致参数不同的DQN网络：Q_net与Q_netT，每隔若干个时间步训练之后，就将Q_net的参数赋予Q_netT，并使用一组参数<br>来参数化逼近值函数，这种参数化逼近的方式使得在更新的同时，同步完成整体更新，不仅避免了过拟合情况，还使得模型的泛化能力更强。DQN模型的总体结构示意图如下：</p>
-<p><img src="https://www.mmrsl.cn/download/img/media/4c6aa4a335d8593e27bb56d1e643195d.png" alt=""></p>
-<p>图2 DQN模型的总体结构示意图</p>
-<p>在研究Q-Learning 的损失函数之前，我们首先确立Q-Learning<br>的优化目标——使得最小，见式（2-3）：</p>
-<p>(2-3)</p>
-<p>若将TD目标作为标签，将作为模型的输出y，在加入参数θ后，原优化目标转化为式（2-4）：</p>
-<p>(2-4)</p>
-<p>由此问题就转化为我们所熟悉的监督学习中的回归问题，显然我们所要确定的损失函数就是其均方误差，因此可用梯度下降算法最小化损失，从而更新参数θ，得到的损失函数的梯度下降公式如式（2-5）所示：</p>
-<p>(2-5)</p>
-<p>但此TD目标是标签，所以中的是无法更新的，这种方法只有部分梯度，称为半梯度法。而后，DeepMind在Nature-2015版本中将TD</p>
-<p>网络单独分开，通过每隔固定步数将值函数逼近的网络参数拷贝给其本身的参数，由此保证DQN的训练更加稳定，式（2-6）即为含有目标网络参数的梯度下降公式：</p>
-<p>(2-6)</p>
-<p>此外，我们一般将奖励固定在某个阈值上，避免Q值过大的情况发生同时确保梯度是有条件的。</p>
-<p>DQN算法和Q-Learning的区别是用CNN（深度卷积神经网络）代替Q矩阵。其Q矩阵的更新公式为：</p>
-<p>（2-7）</p>
-<p>CNN根据SGD（随机梯度下降算法）选取下一步的动作，以类似的方式给出损失函数：</p>
-<p>（2-8）</p>
-<p><strong>3 系统模型</strong></p>
-<h3 id="3-1游戏系统模型"><a href="#3-1游戏系统模型" class="headerlink" title="3.1游戏系统模型"></a><strong>3.1游戏系统模型</strong></h3><p>对于游戏而言，存在环境、游戏角色和玩家所构成的一个游戏系统，玩家可以通过键盘或手柄控制角色的运动，在环境中获得最大的一个收益。而本文则采用强化学习算法选择下一时隙的动作在环境中获得一个最大收益。为简化模型本文仅考虑游戏中的三个部分：角色、环境和智能体，拓扑结构如下图所示：</p>
-<p><img src="https://www.mmrsl.cn/download/img/media/343c055c95493d3cb90466bbe2efc778.png" alt=""></p>
-<p>图3 游戏系统拓扑图</p>
-<p>智能体选择动作，游戏角色执行智能体选择的动作，环境进行反馈，角色在该动作下的动作、。游戏图像、角色所处位置和游戏角色在该动作下的回报，游戏系统的控制模型如下图所示。</p>
-<p><img src="https://www.mmrsl.cn/download/img/media/624796c3a764a7a780abb1cea6301d16.png" alt=""></p>
-<p>图4 游戏系统控制模型</p>
-<p>智能体通过强化学习算法，做出决策选择合适的动作，环境做出反馈后获得游戏的收益。本游戏系统中所用的参数设置如下表所示：</p>
-<p>表1 系统参数</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>当前动作</td>
-</tr>
-<tr>
-<td></td>
-<td>图像数据</td>
-</tr>
-<tr>
-<td></td>
-<td>游戏角色所处位置</td>
-</tr>
-<tr>
-<td></td>
-<td>游戏角色在当前动作下的奖励</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="3-2-智能体的算法设置"><a href="#3-2-智能体的算法设置" class="headerlink" title="3.2 智能体的算法设置"></a><strong>3.2 智能体的算法设置</strong></h3><p>本文采用强化学习算法，通过Q矩阵或CNN(卷积神经网络)进行决策，根据当前状态选择下一时刻的动作。致力于让游戏中的角色选择最好的动作，获得最大的效益。</p>
-<p>本文中主要采用RLAGC算法，通过Q矩阵，通过贪婪算法选择该状态下Q矩阵中值最大的动作，决策下一轮的游戏动作。RLAGC算法伪代码如下所示：</p>
-<p>表2 RLAGC伪代码</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>1:初始化算法参数</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2:获取初始的动作</td>
-</tr>
-<tr>
-<td>3: For</td>
-</tr>
-<tr>
-<td>4:获取上一时刻的状态信息</td>
-</tr>
-<tr>
-<td>5根据获得的状态信息，计算奖励函数</td>
-</tr>
-<tr>
-<td>6:使用状态、选择的坐标（动作）和奖励函数，以学习率、折扣因子更新Q表</td>
-</tr>
-<tr>
-<td>7:根据量化方案编码状态，并获取对应状态下所有动作的Q值</td>
-</tr>
-<tr>
-<td>8:根据-greedy算法获取当前状态下收益最好的动作</td>
-</tr>
-<tr>
-<td>9:智能体选择动作获得动作下的回报值</td>
-</tr>
-<tr>
-<td>10：通过k时隙的状态、动作和回报更新Q表</td>
-</tr>
-<tr>
-<td>11: End for</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>本文中主要采用DRLAGC算法，通过卷积神经网络，通过随机梯度下降算法选择该状态下的较好功率，决策下一轮的发射功率。DRLATPC算法伪代码如下所示：</p>
-<p>表<strong>3</strong> DRLAGC伪代码</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>1:初始化算法参数</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2:获取初始的动作</td>
-</tr>
-<tr>
-<td>3:For</td>
-</tr>
-<tr>
-<td>4:获取上一时刻的状态信息、</td>
-</tr>
-<tr>
-<td>5:根据获得的状态信息，计算奖励函数</td>
-</tr>
-<tr>
-<td>6:使用状态、选择的坐标（动作）和奖励函数，以学习率、折扣因子更新CNN</td>
-</tr>
-<tr>
-<td>7:获取对应状态下所有动作的奖励值</td>
-</tr>
-<tr>
-<td>8:根据算法获取当前时刻状态下收益较好的动作</td>
-</tr>
-<tr>
-<td>9:智能体选择动作获得动作下的回报值</td>
-</tr>
-<tr>
-<td>10：通过k时隙的状态、动作和回报更新CNN网络</td>
-</tr>
-<tr>
-<td>11:End for</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>4飞机大战智能体强化学习控制</strong></p>
-<h3 id="4-1-飞机大战实验模型"><a href="#4-1-飞机大战实验模型" class="headerlink" title="4.1 飞机大战实验模型"></a><strong>4.1 飞机大战实验模型</strong></h3><p>在《飞机大战》这一游戏的AI界面中，飞机只有左、右、下三个控制按键。其中敌机在每30步随机生成一个，并向前直线运动攻击对面的智能体。智能体通过三个按键选择不同的动作避开障碍，并以最大限度攻击对面的敌机，飞机每5步发射一次子弹。</p>
-<p><img src="https://www.mmrsl.cn/download/img/media/561e33edec5911fd19976424af715928.png" alt=""></p>
-<p>图5 飞机大战实验模型图</p>
-<p>奖励设置：当前步数没有被击中奖励0.2分、击中敌机奖励2分、被击落扣除5分。状态设置：状态设置为图像信息，图像宽度为400像素、高度为800像素，经过灰度处理后，通过OpenCV改变图像大小为高度80、长度80的矩阵，最终修改格式为1行6400列的矩阵以此为状态。</p>
-<p>（4-1）</p>
-<p>其中reward函数如公式4-1所示，其中L为角色是否存活：存活reward增加0.2，若否则减少5、若击中敌机则增加2。</p>
-<h3 id="4-2-实验结果"><a href="#4-2-实验结果" class="headerlink" title="4.2 实验结果"></a><strong>4.2 实验结果</strong></h3><p>本文对飞机大战，加入深度强化学习，并对模型进行训练，飞机有3个动作、状态数为6041个图像和位置信息所构成的1行6041列的矩阵。本文对该游戏进行了训练，实验结果请查看demo。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
-<p><img src="https://www.mmrsl.cn/download/img/media/a029bdd39328a375d99639207c6f8b7e.png" alt=""></p>
-<p>图6 飞机大战实验结果图</p>
-<h3 id="4-3结果分析"><a href="#4-3结果分析" class="headerlink" title="4.3结果分析"></a><strong>4.3结果分析</strong></h3><p>深度强化学习没有现成的样本，而是智能体在与环境的交互中收集相应的(状态、动作、奖赏)样本进行试错学习，从而不断地改善自身策略来获取最大的累积奖赏。由实验结果可以显示深度强化学习相比于深度学习，在相同训练次数的情况下，可以得到更多奖励，且随着训练次数的增加深度强化学习相比于深度学习得到奖励的优势愈加突出。得出强化学习在游戏中的可以更好的完成智能体的自动控制。</p>
-<p><strong>5超级马里奥兄弟智能体强化学习控制</strong></p>
-<h3 id="5-1-超级马里奥兄弟游戏模型"><a href="#5-1-超级马里奥兄弟游戏模型" class="headerlink" title="5.1 超级马里奥兄弟游戏模型"></a><strong>5.1 超级马里奥兄弟游戏模型</strong></h3><p>在《超级马里奥兄弟》这一游戏的AI界面中，马里奥有6个控制按键:上、下、左、右、跳跃和攻击。在每个时间步长中，智能体可从合法博弈动作集合中选择一个动作将其传递给模拟器，模拟器相应修改其内部状态和游戏分数并返回当前场景的完整观察结果(包含该范围内敌人/道具/平台的位置和类型的数组)，而智能体通过游戏总分数的变化获得相应的奖励。这款游戏的目标均是在每个阶段结束时，控制马里奥在不失去生命的基础上，通过收集道具、杀死敌人和快速完成关卡而获得尽可能高的分数。</p>
-<p>其中马里奥有如图所示的13种不同的动作，并设置奖励为该状态下马里奥获得分数，选择向左+5，向右-5每秒扣除0.1。</p>
-<p>（4-1）</p>
-<p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
-<p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#107;&#x70;&#64;&#x6d;&#109;&#x72;&#115;&#x6c;&#x2e;&#x63;&#x6e;">&#107;&#x70;&#64;&#x6d;&#109;&#x72;&#115;&#x6c;&#x2e;&#x63;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
-<p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
-<p>图8 超级马里奥兄弟实验结果图</p>
-<h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
-<h2 id="6-结论"><a href="#6-结论" class="headerlink" title="6 结论"></a><strong>6 结论</strong></h2><p>深度强化学习已经成功地应用于许多问题，由于在围棋和其他电子游戏上的出色表现而受到广泛关注。我们主要关注在游戏产业中如何利用深度强化学习技术，提升效率，改变生产方式。深度强化学习技术，是通过让智能体在游戏世界内探索的方式来训练模型提升水平，在合适的设计的基础上，往往能得到比较高水平的模型。本文通过强化学习设计了两个智能体来完成《超级马里奥兄弟》和《飞机大战》这两款游戏。通过将博弈环境抽象为状态向量，并使用DQN算法来处理复杂的游戏环境，实现了以上两款游戏的自动控制。在本文中我们只是列举了深度强化学习在游戏中的一些比较典型的例子，其中有的已经为产业带来价值，且其应用前景广阔。</p>
-<h2 id="视频结果："><a href="#视频结果：" class="headerlink" title="视频结果："></a>视频结果：</h2><p><div>
-<span><video src="https://www.codekp.cn/Learning_Classwork/%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98.mp4"   controls="controls"></video></span>
-<strong ><center> 飞机大战 </center></strong>
-<span><video src="https://www.codekp.cn/Learning_Classwork/%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5.mp4"   controls="controls"></video></span>
-<strong ><center> 超级玛丽 </center></strong>
-</div></p>
-<style>
-        video {
-            width: 100%;
-        }
-</style>
-
-
-<p><strong>参考文献</strong></p>
-<p>[1] Tsay J J, Chen C C, Hsu J J. Evolving intelligent mario controller by<br>reinforcement learning[C]//2011 International Conference on Technologies and<br>Applications of Artificial Intelligence. IEEE, 2011: 266-272.</p>
-<p>[2] Geoffrey E.Hinton and Simon Osindero. A fast learning algorithm for deep<br>belief nets[J].In Neural Computation,2006.</p>
-<p>[3] Coates,A.Demystifying Unsupervised Feature Learning[D].PhD thesis,Stanford<br>University,Palo Alto,USA,2012.</p>
-<p>[4] Bengio,Y.Learning Deep Architectures for AI[J].Found.trends<br>Mach.Learn.2(2009),1-127.</p>
-<p>[5] Yu,D.Seltzer,M.l.,Li,J.,Huang,J.-T.,and Seide,F.Feature learning in deep<br>neural networks-a study on speech recogniyion tasks[J].CoRR abs/1301.3605(2013).</p>
-<p>[6] Ranzato,M.,lan Boureau,Y.,and Cun,Y.L.Sparse feature learning for deep<br>belief networks[J].In Advance in Neural Information Processing Systems<br>20,J.Platt,D.Koller,Y.Singer,and S.Roweis,Eds.Curran<br>Associates,Inc.,2008,pp.1185-1192.</p>
-<p>[7] Arnold,L.,Rebecchi,S.,Chevallier,S.,and Paugam-Moisy,H.An Introduction to<br>Deep Learning[M]. In Advances in Computational Intelligence and Machine<br>Learning,ESANN’2011(2011),pp.477-488.</p>
-<p>[8] Volodymyr Mnih,Koray Kavukcuoglu,and David Silver.Playing Atari with Deep<br>Reinforcement Learning[J].In ICML,2014.</p>
-<p>[9] Richard Sutton and Andrew Barto. Rcinforcement Learning:An<br>Introduction[M].MIT Press,1998.</p>
-<p>[10]Sutton R S, Barto A G. Introduction to reinforcement learning[M]. Cambridge:<br>MIT press, 1998.</p>
-<p>[11]Mnih V, Kavukcuoglu K, Silver D, et al. Playing atari with deep<br>reinforcement learning[J]. arXiv preprint arXiv:1312.5602, 2013.</p>
-<p>[12]Mnih V, Kavukcuoglu K, Silver D, et al. Human-level control through deep<br>reinforcement learning[J]. nature, 2015, 518(7540): 529-533.</p>
-<p>[13]Klein S. CS229 Final Report Deep Q-Learning to Play Mario[J].</p>
-<p>[14]Chen K. Deep reinforcement learning for flappy bird[J]. 2015.</p>
-]]></content>
-      <categories>
-        <category>强化学习</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>强化学习</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>实时视频传输APP</title>
     <url>/2021/01/15/%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93APP/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- wp:heading -->
@@ -12578,6 +12638,180 @@ img {
       </categories>
       <tags>
         <tag>安卓APP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>强化学习</title>
+    <url>/2020/11/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Q-learning入门例程及Python实现"><a href="#Q-learning入门例程及Python实现" class="headerlink" title="Q-learning入门例程及Python实现"></a><center>Q-learning入门例程及Python实现</center></h1><p><strong>摘要：Q-learning算法是一种以马尔科夫决策作为理论基础与模型无关的强化学习算法。本文中会描述一个入门级强化学习例程，即房间连通性问题：根据房间的连通性与否及房间出口构建回报矩阵R。并通过python语言利用强化学习算法获得该场景下的评估矩阵Q，最后利用Q矩阵寻找最优路径。</strong><br><span id="more"></span></p>
+<p>关键词：Q-learning；R矩阵；Q矩阵；最优路径决策</p>
+<h2 id="一、从马尔科夫过程到Q学习"><a href="#一、从马尔科夫过程到Q学习" class="headerlink" title="一、从马尔科夫过程到Q学习"></a>一、从马尔科夫过程到Q学习</h2><p>标准的马尔科夫决策过程可以用一个五元组\<S,A,P,R,γ\> 表示，其中：</p>
+<ul>
+<li><p>S是一个离散有界的状态空间；</p>
+</li>
+<li><p>A是一个离散的动作空间；</p>
+</li>
+<li><p>P为状态转移概率函数，表示agent在状态s下选取动作a后转移到a’的概率；</p>
+</li>
+<li><p>R为回报函数，用于计算agent由当前状态 选取动作 后转移到下一状态<br>得到的立即回报值，由当前状态和选取的动作决定，体现了马尔科夫性的特点；</p>
+</li>
+<li><p>γ是折扣因子，用于确定延迟回报与立即回报的相对比例，<br>越大表明延迟回报的重要程度越高。</p>
+</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/2019092420285149.png" width = "200" height = "40" alt="图片名称" align=center /></p>
+<p>马尔科夫决策问题的目标是找到一个策略<br>，使其回报函数的长期累积值的数学期望最大。其中，策略π只和状态相关，与时间无关（静态的）。<img src="https://img-blog.csdnimg.cn/20190924203953879.png" width = "15" height = "15" alt="图片名称" align=center />是t时刻的环境状态，<img src="https://img-blog.csdnimg.cn/20190924204015148.png" width = "15" height = "15" alt="图片名称" align=center />是t时刻选择的动作。根据Bellman最优准则，得到最优策略 对应的最优指标为：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924203036514.png" width = "200" height = "40" alt="图片名称" align=center /></p>
+<p>其中，R(s,a)为r(st,at)的数学期望，<img src="https://img-blog.csdnimg.cn/20190924203122905.png" width = "45" height = "20" alt="图片名称" align=center />为在状态s下选取动作a后转移到下一状态状态s’的概率。由于某些环境中状态之间的转移概率P不容易获得，直接学习<img src="https://img-blog.csdnimg.cn/20190924203205467.png" width = "60" height = "20" alt="图片名称" align=center />是很困难的，而Q学习不需要获取转移概率P，因而可用来解决此类具有马尔科夫性的问题。</p>
+<p>Q学习是一种与环境无关的算法，是一种基于数值迭代的动态规划方法。定义一个Q函数作为评估函数：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924203315691.png" width = "200" height = "30" alt="图片名称" align=center /></p>
+<p>评估函数Q(s,a)的函数值是从状态s开始选择第一个动作a执行后获得的最大累积回报的折算值，通俗地说，Q值等于立即回报值r(s,a)<br>加上遵循最优策略的折算值，此时的最优策略可改写为：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924203357997.png" width = "200" height = "30" alt="图片名称" align=center /></p>
+<p>该策略表达式的意义在于：如果agent用Q函数代替<img src="https://img-blog.csdnimg.cn/20190924204358289.png" width = "15" height = "15" alt="图片名称" align=center />函数，就可以不考虑转移概率P，只考虑当前状态s的所有可供选择的动作a，并从中选出使Q(s,a)最大的动作，即agent对当前状态的部分Q值做出多次反应，便可以选出动作序列，使全局最优化。</p>
+<p>在Q学习中，agent由初始状态转移到目标状态的过程称为“Episode”，即“场景”。Q函数可以表示为以下的迭代形式进行Q矩阵的更新：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924203447849.png" width = "300" height = "30" alt="图片名称" align=center /></p>
+<p>在每一步的迭代中，上式又可写为：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924203502753.png" width = "300" height = "30" alt="图片名称" align=center /></p>
+<p>即Q矩阵(st,at)位置元素的值等于回报函数R的相应值加上折扣因子γ乘以转换到下一个状态后最大的Q值。</p>
+<p>上述的Q学习算法可以看出，当划分的状态有限时，每一场景开始时随机选择的初始状态s在算法的指导下探索环境，最终一定可以到达目标状态s*，回报函数R(s,a)是有界的，并且动作的选择能够使每个状态映射到动作对的访问是无限频率，则整个学习过程就能够训练出来。</p>
+<p>Q学习通过对环境的不断探索，积累历史经验，agent通过不断试错来强化自身，最终可以达到自主选择最优动作的目标，即不论出于何种状态，都可给出到达目标状态的最优选择路径，该算法中环境和动作相互影响，动作的选择影响环境状态，环境也可以通过强化回报函数<br>来反馈动作的优劣性，影响动作的选择。</p>
+<h2 id="二、由一个广为流传的小例子了解Q学习的算法逻辑"><a href="#二、由一个广为流传的小例子了解Q学习的算法逻辑" class="headerlink" title="二、由一个广为流传的小例子了解Q学习的算法逻辑"></a>二、由一个广为流传的小例子了解Q学习的算法逻辑</h2><p>一个由门连接的建筑物中有五个房间，如下图所示，分别用0-4号标识，将外界看作一个大房间，同样标识为5。</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924205406684.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsbV9weQ==,size_16,color_FFFFFF,t_70" width = "400" height = "200" alt="图片名称" align=center /></p>
+<p>每个房间代表一个节点，门代表连线，可以将上图抽象为下面这样：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924205532752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsbV9weQ==,size_16,color_FFFFFF,t_70" width = "400" height = "200" alt="图片名称" align=center /><br>agent会被随机放置在任意一个房间里，然后从那个房间出发，一直走到建筑外（即5号房间为目标房间）。门是双向的，所以相邻节点间是双向箭头连接。通过门可以立即得到奖励值100，通过其他门奖励值为0。将所有箭头标注奖励值如下图：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190925124638361.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsbV9weQ==,size_16,color_FFFFFF,t_70" width = "400" height = "200" alt="图片名称" align=center /></p>
+<p>在Q学习中，目标是达到奖励最高的状态，所以如果agent到达目标，它将永远在那里。这种类型的目标被称为“吸收目标”。</p>
+<p>想象一下，我们的agent是一个想象的虚拟机器人，可以通过经验学习。<br>agent可以从一个房间转移到另一个房间，但它没有上帝视角，也不知道哪一扇门通向外面。</p>
+<p>按照第一部分Q学习的理论，我们把每个房间抽象为一个状态，选择进入哪号房间作为动作，把状态图和即时奖励值放到下面的奖励值表“回报矩阵R”中：-1表示不可选择的动作，两个状态间没有连接）</p>
+<pre class="line-numbers language-none"><code class="language-none">R &#x3D; np.matrix([[-1, -1, -1, -1, 0, -1],  
+[-1, -1, -1, 0, -1, 100],  
+[-1, -1, -1, 0, -1, -1],  
+[-1, 0, 0, -1, 0, -1],  
+[ 0, -1, -1, 0, -1, 100],  
+[-1, 0, -1, -1, 0, 100]])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>现在我们将添加一个类似的矩阵“Q”给我们agent的大脑，代表了通过经验学到的东西的记忆。<br>矩阵Q的行表示agent的当前状态，列表示导致下一个状态的可能动作（节点之间的连线）。</p>
+<p>agent开始什么都不知道，矩阵Q被初始化为零。<br>在这个例子中，为了解释简单，我们假设状态的数目是已知的（六个，0-5）。<br>如果我们不知道涉及多少个状态，矩阵Q可能从只有一个元素开始。<br>如果找到新的状态，则在矩阵Q中添加更多的列和行是一项简单的任务。</p>
+<p>Q学习的更新规则如下：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190924203502753.png" width = "200" height = "30" alt="图片名称" align=center /></p>
+<p>根据这个公式，分配给矩阵Q的特定元素的值等于矩阵R中相应值加上学习参数γ乘以下一状态下所有可能动作的Q的最大值。</p>
+<p>基于算法思想，训练Q矩阵的具体流程如下：</p>
+<ul>
+<li><p>步骤1.初始化仓库环境和算法参数（最大训练周期数，每一场景即为一个周期，折扣因子γ，即时回报函数R和评估矩阵Q。）。</p>
+</li>
+<li><p>步骤2.随机选择一个初始状态s，若s=s*，则结束此场景，重新选择初始状态。</p>
+</li>
+<li><p>步骤3.在当前状态s的所有可能动作中随机选择一个动作a，选择每一动作的概率相等。</p>
+</li>
+<li><p>步骤4.当前状态s选取动作a后到达状态s’。</p>
+</li>
+<li><p>步骤5.使用公式对Q矩阵进行更新。</p>
+</li>
+<li><p>步骤6.设置下一状态为当前状态，s=s‘。若s未达到目标状态，则转步骤3。</p>
+</li>
+<li><p>步骤7.如果算法未达到最大训练周期数，转步骤2进入下一场景。否则结束训练，此时得到训练完毕的收敛Q矩阵。</p>
+</li>
+</ul>
+<p>上面的流程是给agent用来学习经验的。 每一场景都相当于一个培训课程。<br>在每个培训课程中, agent将探索环境 (由矩阵R表示), 接收奖励 (如果有),<br>直到达到目标状态。训练的目的是提高我们的agent的 “大脑”（矩阵 Q）。<br>场景越多，Q矩阵越优化。 在这种情况下, 如果矩阵 Q<br>得到了增强,四处探索时并不会在同一个房间进进出出,<br>agent将找到最快的路线到达目标状态。</p>
+<p>参数γ的范围为0到1（0 \&lt;= γ\&lt; 1）。<br>如果γ接近零，agent将倾向于只考虑立即得到奖励值。<br>如果γ更接近1，那么agent将会考虑更多的权重，愿意延迟得到奖励。</p>
+<p>一旦矩阵Q足够接近收敛状态，我们知道我们的agent已经学习了任意状态到达目标状态的最佳路径。</p>
+<p>例如：</p>
+<ul>
+<li><p>从初始状态2开始，agent可以使用矩阵Q作为指导,从状态2开始，最大Q值表示选择进入状态3的动作。</p>
+</li>
+<li><p>从状态3开始，最大Q值表示有两种并列最优选择：进入状态1或4。假设我们任意选择去1。</p>
+</li>
+<li><p>从状态1开始，最大Q值表示选择进入状态5的动作。</p>
+</li>
+<li><p>因此，最优策略是2 - 3 - 1 - 5。</p>
+</li>
+</ul>
+<p>我们使用Python为训练agent编写代码：<br><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">import numpy as np  
+import random  
+  
+\# 初始化矩阵  
+Q &#x3D; np.zeros((6, 6))  
+Q &#x3D; np.matrix(Q)  
+  
+def wan_find(list, col, list2):  
+col_max &#x3D; 0  
+col_y &#x3D; 0  
+col&#x3D;col  
+\# a &#x3D; np.linspace(0, 5, 5);  
+  
+for i in [0, 1, 2, 3, 4, 5]:  
+if col_max \&lt; list[i, col] and (i not in list2):  
+col_y &#x3D; i  
+col_max &#x3D; list[i, col]  
+  
+return col_y, col_max  
+  
+\# 回报矩阵R  
+R &#x3D; np.matrix([[-1, -1, -1, -1, 0, -1],  
+[-1, -1, -1, 0, -1, 100],  
+[-1, -1, -1, 0, -1, -1],  
+[-1, 0, 0, -1, 0, -1],  
+[ 0, -1, -1, 0, -1, 100],  
+[-1, 0, -1, -1, 0, 100]])  
+  
+\# 设立学习参数  
+γ &#x3D; 0.8  
+  
+\# 训练  
+for i in range(2000):  
+\# 对每一个训练,随机选择一种状态  
+state &#x3D; random.randint(0, 5)  
+while True:  
+\# 选择当前状态下的所有可能动作  
+r_pos_action &#x3D; []  
+for action in range(6):  
+if R[state, action] \&gt;&#x3D; 0:  
+r_pos_action.append(action)  
+  
+next_state &#x3D; r_pos_action[random.randint(0, len(r_pos_action) - 1)]  
+Q[state, next_state] &#x3D; R[state, next_state] + γ \* (Q[next_state]).max() \# 更新  
+state &#x3D; next_state  
+\# 状态4位最优库存状态  
+if state &#x3D;&#x3D; 5:  
+break  
+  
+Q1&#x3D;np.zeros((6, 6))  
+Q1&#x3D;Q&#x2F;Q.max();  
+print(Q1)  
+\#frist_place &#x3D; input(&quot;请输入在那个地方:&quot;)  
+\#while frist_place!&#x3D;5 :  
+  
+next_place &#x3D; int(input(&#39;初始房间号&#39;))  
+list2 &#x3D; [next_place]  
+while next_place !&#x3D; 5:  
+next_place, value &#x3D; wan_find(Q1, next_place, list2)  
+list2.append(next_place)  
+print(list2)
+
+运行结果为：
+
+[[0. 0. 0. 0. 0.8 0. ]
+
+[0. 0. 0. 0.64 0. 1. ]
+
+[0. 0. 0. 0.64 0. 0. ]
+
+[0. 0.8 0.512 0. 0.8 0. ]
+
+[0.64 0. 0. 0.64 0. 1. ]
+
+[0. 0.8 0. 0. 0.8 1. ]]
+
+初始房间号2
+
+[2, 3, 1, 5]
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>matlab</tag>
+        <tag>强化学习</tag>
       </tags>
   </entry>
   <entry>
@@ -12863,180 +13097,6 @@ img {
       <tags>
         <tag>微信小程序</tag>
         <tag>js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>强化学习</title>
-    <url>/2020/11/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Q-learning入门例程及Python实现"><a href="#Q-learning入门例程及Python实现" class="headerlink" title="Q-learning入门例程及Python实现"></a><center>Q-learning入门例程及Python实现</center></h1><p><strong>摘要：Q-learning算法是一种以马尔科夫决策作为理论基础与模型无关的强化学习算法。本文中会描述一个入门级强化学习例程，即房间连通性问题：根据房间的连通性与否及房间出口构建回报矩阵R。并通过python语言利用强化学习算法获得该场景下的评估矩阵Q，最后利用Q矩阵寻找最优路径。</strong><br><span id="more"></span></p>
-<p>关键词：Q-learning；R矩阵；Q矩阵；最优路径决策</p>
-<h2 id="一、从马尔科夫过程到Q学习"><a href="#一、从马尔科夫过程到Q学习" class="headerlink" title="一、从马尔科夫过程到Q学习"></a>一、从马尔科夫过程到Q学习</h2><p>标准的马尔科夫决策过程可以用一个五元组\<S,A,P,R,γ\> 表示，其中：</p>
-<ul>
-<li><p>S是一个离散有界的状态空间；</p>
-</li>
-<li><p>A是一个离散的动作空间；</p>
-</li>
-<li><p>P为状态转移概率函数，表示agent在状态s下选取动作a后转移到a’的概率；</p>
-</li>
-<li><p>R为回报函数，用于计算agent由当前状态 选取动作 后转移到下一状态<br>得到的立即回报值，由当前状态和选取的动作决定，体现了马尔科夫性的特点；</p>
-</li>
-<li><p>γ是折扣因子，用于确定延迟回报与立即回报的相对比例，<br>越大表明延迟回报的重要程度越高。</p>
-</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/2019092420285149.png" width = "200" height = "40" alt="图片名称" align=center /></p>
-<p>马尔科夫决策问题的目标是找到一个策略<br>，使其回报函数的长期累积值的数学期望最大。其中，策略π只和状态相关，与时间无关（静态的）。<img src="https://img-blog.csdnimg.cn/20190924203953879.png" width = "15" height = "15" alt="图片名称" align=center />是t时刻的环境状态，<img src="https://img-blog.csdnimg.cn/20190924204015148.png" width = "15" height = "15" alt="图片名称" align=center />是t时刻选择的动作。根据Bellman最优准则，得到最优策略 对应的最优指标为：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924203036514.png" width = "200" height = "40" alt="图片名称" align=center /></p>
-<p>其中，R(s,a)为r(st,at)的数学期望，<img src="https://img-blog.csdnimg.cn/20190924203122905.png" width = "45" height = "20" alt="图片名称" align=center />为在状态s下选取动作a后转移到下一状态状态s’的概率。由于某些环境中状态之间的转移概率P不容易获得，直接学习<img src="https://img-blog.csdnimg.cn/20190924203205467.png" width = "60" height = "20" alt="图片名称" align=center />是很困难的，而Q学习不需要获取转移概率P，因而可用来解决此类具有马尔科夫性的问题。</p>
-<p>Q学习是一种与环境无关的算法，是一种基于数值迭代的动态规划方法。定义一个Q函数作为评估函数：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924203315691.png" width = "200" height = "30" alt="图片名称" align=center /></p>
-<p>评估函数Q(s,a)的函数值是从状态s开始选择第一个动作a执行后获得的最大累积回报的折算值，通俗地说，Q值等于立即回报值r(s,a)<br>加上遵循最优策略的折算值，此时的最优策略可改写为：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924203357997.png" width = "200" height = "30" alt="图片名称" align=center /></p>
-<p>该策略表达式的意义在于：如果agent用Q函数代替<img src="https://img-blog.csdnimg.cn/20190924204358289.png" width = "15" height = "15" alt="图片名称" align=center />函数，就可以不考虑转移概率P，只考虑当前状态s的所有可供选择的动作a，并从中选出使Q(s,a)最大的动作，即agent对当前状态的部分Q值做出多次反应，便可以选出动作序列，使全局最优化。</p>
-<p>在Q学习中，agent由初始状态转移到目标状态的过程称为“Episode”，即“场景”。Q函数可以表示为以下的迭代形式进行Q矩阵的更新：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924203447849.png" width = "300" height = "30" alt="图片名称" align=center /></p>
-<p>在每一步的迭代中，上式又可写为：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924203502753.png" width = "300" height = "30" alt="图片名称" align=center /></p>
-<p>即Q矩阵(st,at)位置元素的值等于回报函数R的相应值加上折扣因子γ乘以转换到下一个状态后最大的Q值。</p>
-<p>上述的Q学习算法可以看出，当划分的状态有限时，每一场景开始时随机选择的初始状态s在算法的指导下探索环境，最终一定可以到达目标状态s*，回报函数R(s,a)是有界的，并且动作的选择能够使每个状态映射到动作对的访问是无限频率，则整个学习过程就能够训练出来。</p>
-<p>Q学习通过对环境的不断探索，积累历史经验，agent通过不断试错来强化自身，最终可以达到自主选择最优动作的目标，即不论出于何种状态，都可给出到达目标状态的最优选择路径，该算法中环境和动作相互影响，动作的选择影响环境状态，环境也可以通过强化回报函数<br>来反馈动作的优劣性，影响动作的选择。</p>
-<h2 id="二、由一个广为流传的小例子了解Q学习的算法逻辑"><a href="#二、由一个广为流传的小例子了解Q学习的算法逻辑" class="headerlink" title="二、由一个广为流传的小例子了解Q学习的算法逻辑"></a>二、由一个广为流传的小例子了解Q学习的算法逻辑</h2><p>一个由门连接的建筑物中有五个房间，如下图所示，分别用0-4号标识，将外界看作一个大房间，同样标识为5。</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924205406684.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsbV9weQ==,size_16,color_FFFFFF,t_70" width = "400" height = "200" alt="图片名称" align=center /></p>
-<p>每个房间代表一个节点，门代表连线，可以将上图抽象为下面这样：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924205532752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsbV9weQ==,size_16,color_FFFFFF,t_70" width = "400" height = "200" alt="图片名称" align=center /><br>agent会被随机放置在任意一个房间里，然后从那个房间出发，一直走到建筑外（即5号房间为目标房间）。门是双向的，所以相邻节点间是双向箭头连接。通过门可以立即得到奖励值100，通过其他门奖励值为0。将所有箭头标注奖励值如下图：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190925124638361.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsbV9weQ==,size_16,color_FFFFFF,t_70" width = "400" height = "200" alt="图片名称" align=center /></p>
-<p>在Q学习中，目标是达到奖励最高的状态，所以如果agent到达目标，它将永远在那里。这种类型的目标被称为“吸收目标”。</p>
-<p>想象一下，我们的agent是一个想象的虚拟机器人，可以通过经验学习。<br>agent可以从一个房间转移到另一个房间，但它没有上帝视角，也不知道哪一扇门通向外面。</p>
-<p>按照第一部分Q学习的理论，我们把每个房间抽象为一个状态，选择进入哪号房间作为动作，把状态图和即时奖励值放到下面的奖励值表“回报矩阵R”中：-1表示不可选择的动作，两个状态间没有连接）</p>
-<pre class="line-numbers language-none"><code class="language-none">R &#x3D; np.matrix([[-1, -1, -1, -1, 0, -1],  
-[-1, -1, -1, 0, -1, 100],  
-[-1, -1, -1, 0, -1, -1],  
-[-1, 0, 0, -1, 0, -1],  
-[ 0, -1, -1, 0, -1, 100],  
-[-1, 0, -1, -1, 0, 100]])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>现在我们将添加一个类似的矩阵“Q”给我们agent的大脑，代表了通过经验学到的东西的记忆。<br>矩阵Q的行表示agent的当前状态，列表示导致下一个状态的可能动作（节点之间的连线）。</p>
-<p>agent开始什么都不知道，矩阵Q被初始化为零。<br>在这个例子中，为了解释简单，我们假设状态的数目是已知的（六个，0-5）。<br>如果我们不知道涉及多少个状态，矩阵Q可能从只有一个元素开始。<br>如果找到新的状态，则在矩阵Q中添加更多的列和行是一项简单的任务。</p>
-<p>Q学习的更新规则如下：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190924203502753.png" width = "200" height = "30" alt="图片名称" align=center /></p>
-<p>根据这个公式，分配给矩阵Q的特定元素的值等于矩阵R中相应值加上学习参数γ乘以下一状态下所有可能动作的Q的最大值。</p>
-<p>基于算法思想，训练Q矩阵的具体流程如下：</p>
-<ul>
-<li><p>步骤1.初始化仓库环境和算法参数（最大训练周期数，每一场景即为一个周期，折扣因子γ，即时回报函数R和评估矩阵Q。）。</p>
-</li>
-<li><p>步骤2.随机选择一个初始状态s，若s=s*，则结束此场景，重新选择初始状态。</p>
-</li>
-<li><p>步骤3.在当前状态s的所有可能动作中随机选择一个动作a，选择每一动作的概率相等。</p>
-</li>
-<li><p>步骤4.当前状态s选取动作a后到达状态s’。</p>
-</li>
-<li><p>步骤5.使用公式对Q矩阵进行更新。</p>
-</li>
-<li><p>步骤6.设置下一状态为当前状态，s=s‘。若s未达到目标状态，则转步骤3。</p>
-</li>
-<li><p>步骤7.如果算法未达到最大训练周期数，转步骤2进入下一场景。否则结束训练，此时得到训练完毕的收敛Q矩阵。</p>
-</li>
-</ul>
-<p>上面的流程是给agent用来学习经验的。 每一场景都相当于一个培训课程。<br>在每个培训课程中, agent将探索环境 (由矩阵R表示), 接收奖励 (如果有),<br>直到达到目标状态。训练的目的是提高我们的agent的 “大脑”（矩阵 Q）。<br>场景越多，Q矩阵越优化。 在这种情况下, 如果矩阵 Q<br>得到了增强,四处探索时并不会在同一个房间进进出出,<br>agent将找到最快的路线到达目标状态。</p>
-<p>参数γ的范围为0到1（0 \&lt;= γ\&lt; 1）。<br>如果γ接近零，agent将倾向于只考虑立即得到奖励值。<br>如果γ更接近1，那么agent将会考虑更多的权重，愿意延迟得到奖励。</p>
-<p>一旦矩阵Q足够接近收敛状态，我们知道我们的agent已经学习了任意状态到达目标状态的最佳路径。</p>
-<p>例如：</p>
-<ul>
-<li><p>从初始状态2开始，agent可以使用矩阵Q作为指导,从状态2开始，最大Q值表示选择进入状态3的动作。</p>
-</li>
-<li><p>从状态3开始，最大Q值表示有两种并列最优选择：进入状态1或4。假设我们任意选择去1。</p>
-</li>
-<li><p>从状态1开始，最大Q值表示选择进入状态5的动作。</p>
-</li>
-<li><p>因此，最优策略是2 - 3 - 1 - 5。</p>
-</li>
-</ul>
-<p>我们使用Python为训练agent编写代码：<br><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">import numpy as np  
-import random  
-  
-\# 初始化矩阵  
-Q &#x3D; np.zeros((6, 6))  
-Q &#x3D; np.matrix(Q)  
-  
-def wan_find(list, col, list2):  
-col_max &#x3D; 0  
-col_y &#x3D; 0  
-col&#x3D;col  
-\# a &#x3D; np.linspace(0, 5, 5);  
-  
-for i in [0, 1, 2, 3, 4, 5]:  
-if col_max \&lt; list[i, col] and (i not in list2):  
-col_y &#x3D; i  
-col_max &#x3D; list[i, col]  
-  
-return col_y, col_max  
-  
-\# 回报矩阵R  
-R &#x3D; np.matrix([[-1, -1, -1, -1, 0, -1],  
-[-1, -1, -1, 0, -1, 100],  
-[-1, -1, -1, 0, -1, -1],  
-[-1, 0, 0, -1, 0, -1],  
-[ 0, -1, -1, 0, -1, 100],  
-[-1, 0, -1, -1, 0, 100]])  
-  
-\# 设立学习参数  
-γ &#x3D; 0.8  
-  
-\# 训练  
-for i in range(2000):  
-\# 对每一个训练,随机选择一种状态  
-state &#x3D; random.randint(0, 5)  
-while True:  
-\# 选择当前状态下的所有可能动作  
-r_pos_action &#x3D; []  
-for action in range(6):  
-if R[state, action] \&gt;&#x3D; 0:  
-r_pos_action.append(action)  
-  
-next_state &#x3D; r_pos_action[random.randint(0, len(r_pos_action) - 1)]  
-Q[state, next_state] &#x3D; R[state, next_state] + γ \* (Q[next_state]).max() \# 更新  
-state &#x3D; next_state  
-\# 状态4位最优库存状态  
-if state &#x3D;&#x3D; 5:  
-break  
-  
-Q1&#x3D;np.zeros((6, 6))  
-Q1&#x3D;Q&#x2F;Q.max();  
-print(Q1)  
-\#frist_place &#x3D; input(&quot;请输入在那个地方:&quot;)  
-\#while frist_place!&#x3D;5 :  
-  
-next_place &#x3D; int(input(&#39;初始房间号&#39;))  
-list2 &#x3D; [next_place]  
-while next_place !&#x3D; 5:  
-next_place, value &#x3D; wan_find(Q1, next_place, list2)  
-list2.append(next_place)  
-print(list2)
-
-运行结果为：
-
-[[0. 0. 0. 0. 0.8 0. ]
-
-[0. 0. 0. 0.64 0. 1. ]
-
-[0. 0. 0. 0.64 0. 0. ]
-
-[0. 0.8 0.512 0. 0.8 0. ]
-
-[0.64 0. 0. 0.64 0. 1. ]
-
-[0. 0.8 0. 0. 0.8 1. ]]
-
-初始房间号2
-
-[2, 3, 1, 5]
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>matlab</tag>
-        <tag>强化学习</tag>
       </tags>
   </entry>
   <entry>
@@ -13499,20 +13559,6 @@ y &#x3D; rchan(x);
       </tags>
   </entry>
   <entry>
-    <title>深度学习_花书</title>
-    <url>/2020/07/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E8%8A%B1%E4%B9%A6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><span id="more"></span>
-<p>&nbsp;&nbsp; 深度学习(DL, Deep Learning)是机器学习(ML, Machine Learning)领域中一个新的研究方向，它被引入机器学习使其更接近于最初的目标——人工智能(AI, Artificial Intelligence)。<br>&nbsp;&nbsp; 深度学习是学习样本数据的内在规律和表示层次，这些学习过程中获得的信息对诸如文字，图像和声音等数据的解释有很大的帮助。它的最终目标是让机器能够像人一样具有分析学习能力，能够识别文字、图像和声音等数据。 深度学习是一个复杂的机器学习算法，在语音和图像识别方面取得的效果，远远超过先前相关技术。<br>&nbsp;&nbsp; 深度学习在搜索技术，数据挖掘，机器学习，机器翻译，自然语言处理，多媒体学习，语音，推荐和个性化技术，以及其他相关领域都取得了很多成果。深度学习使机器模仿视听和思考等人类的活动，解决了很多复杂的模式识别难题，使得人工智能相关技术取得了很大进步。  </p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-        <tag>分类器</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>百度谷歌搜索引擎索引</title>
     <url>/2020/12/04/%E7%99%BE%E5%BA%A6%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%8B%97%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%B4%A2%E5%BC%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="百度谷歌搜索引擎索引"><a href="#百度谷歌搜索引擎索引" class="headerlink" title="百度谷歌搜索引擎索引"></a><center>百度谷歌搜索引擎索引</center></h2><span id="more"></span>
@@ -13559,6 +13605,20 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
       <tags>
         <tag>hexo</tag>
         <tag>搜索引擎</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度学习_花书</title>
+    <url>/2020/07/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E8%8A%B1%E4%B9%A6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><span id="more"></span>
+<p>&nbsp;&nbsp; 深度学习(DL, Deep Learning)是机器学习(ML, Machine Learning)领域中一个新的研究方向，它被引入机器学习使其更接近于最初的目标——人工智能(AI, Artificial Intelligence)。<br>&nbsp;&nbsp; 深度学习是学习样本数据的内在规律和表示层次，这些学习过程中获得的信息对诸如文字，图像和声音等数据的解释有很大的帮助。它的最终目标是让机器能够像人一样具有分析学习能力，能够识别文字、图像和声音等数据。 深度学习是一个复杂的机器学习算法，在语音和图像识别方面取得的效果，远远超过先前相关技术。<br>&nbsp;&nbsp; 深度学习在搜索技术，数据挖掘，机器学习，机器翻译，自然语言处理，多媒体学习，语音，推荐和个性化技术，以及其他相关领域都取得了很多成果。深度学习使机器模仿视听和思考等人类的活动，解决了很多复杂的模式识别难题，使得人工智能相关技术取得了很大进步。  </p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+        <tag>分类器</tag>
       </tags>
   </entry>
   <entry>
