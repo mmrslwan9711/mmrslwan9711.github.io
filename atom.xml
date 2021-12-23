@@ -6,7 +6,7 @@
   <link href="http://www.mmrsl.cn/atom.xml" rel="self"/>
   
   <link href="http://www.mmrsl.cn/"/>
-  <updated>2021-12-23T03:11:44.862Z</updated>
+  <updated>2021-12-23T03:28:03.740Z</updated>
   <id>http://www.mmrsl.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>iwlist/iwconfig/iw/wpa_supplicant命令</title>
+    <title>iwlist/iwconfig/iw/wpa_supplicant命令及信道可视化</title>
     <link href="http://www.mmrsl.cn/2021/12/22/iwlist-iwconfig-iw-wpa-supplicant/"/>
     <id>http://www.mmrsl.cn/2021/12/22/iwlist-iwconfig-iw-wpa-supplicant/</id>
     <published>2021-12-22T08:07:23.000Z</published>
-    <updated>2021-12-23T03:11:44.862Z</updated>
+    <updated>2021-12-23T03:28:03.740Z</updated>
     
     
       

@@ -1,6 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>surface完美安装linux操作系统、hexo博客</title>
+    <url>/2021/03/19/Deepin%E7%B3%BB%E7%BB%9F%E4%B8%8Esurface%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="surface完美安装linux操作系统、hexo博客"><a href="#surface完美安装linux操作系统、hexo博客" class="headerlink" title="surface完美安装linux操作系统、hexo博客"></a><center>surface完美安装linux操作系统、hexo博客</center></h1><p>最近由于linux课程需要使用linux系统，于是在ubuntu、kali、Elementary OS、Chrome OS和deepin操作系统中选择一个比较靠谱的。<br><span id="more"></span></p>
+<h2 id="linux操作系统介绍"><a href="#linux操作系统介绍" class="headerlink" title="linux操作系统介绍"></a>linux操作系统介绍</h2><h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><p>作为全球最流行且最有影响力的Linux开源系统之一，Ubuntu自发布以来在应用体验方面：有较大幅度的提升，即使对比Windows、MacOS等操作系统，最新版本的Ubuntu也不逊色。<br><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3931899733,1893021162&amp;fm=26&amp;gp=0.jpg" alt="">  </p>
+<h3 id="kali"><a href="#kali" class="headerlink" title="kali"></a>kali</h3><p>Kali Linux是基于Debian的Linux发行版， 设计用于数字取证操作系统。每一季度更新一次。由Offensive Security Ltd维护和资助。最先由Offensive Security的Mati Aharoni和Devon Kearns通过重写BackTrack来完成，BackTrack是他们之前写的用于取证的Linux发行版 。</p>
+<p>主要是用来渗透网络—所以俗话说kali从入门到入狱。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/3b87e950352ac65c1038fd5662baa5119313b07e1cf7?x-bce-process=image/watermark,image_d2里奴性F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5/format,f_auto" alt=""></p>
+<h3 id="Elementary-OS"><a href="#Elementary-OS" class="headerlink" title="Elementary OS"></a>Elementary OS</h3><p>Elementary OS是基于 Ubuntu 精心打磨美化的桌面 Linux 发行版的一款软件，号称 “最美的 Linux”， 最早是 Ubuntu 的一个美化主题项目，现在成了独立的发行版<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww2.sinaimg.cn%2Fmw1024%2F6595c7c6tw1e7nlcg38qoj211s0lcag0.jpg&amp;refer=http%3A%2F%2Fwww.sina.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754413&amp;t=c4cc435286c020b6845bd352d5a1dd8c" alt=""></p>
+<h3 id="Chrome-OS"><a href="#Chrome-OS" class="headerlink" title="Chrome OS"></a>Chrome OS</h3><p>Chrome OS是一款Google开发的基于PC的操作系统。 Google Chrome OS是一款基于Linux的开源操作系统。Google在自己的官方博客表示，初期，这一操作系统将定位于上网本、紧凑型以及低成本电脑。这款开源软件将被命名为Chrome OS，谷歌公司于2010年12里奴性月7日（北京时间12月8日2点30分）在美国举行Chrome相关产品发布会，发布会上正式发布Chrome Web store和Chrome OS。</p>
+<p><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/baike/pic/item/8694a4c27d1ed21bae953dafa06eddc451da3f1f.jpg" alt=""></p>
+<h3 id="deepin"><a href="#deepin" class="headerlink" title="deepin"></a>deepin</h3><p>Deepin（原名：Linux Deepin；中文通称：深度操作系统）是由武汉深之度科技有限公司在Debian基础上开发的Linux操作系统，其前身是Hiweed Linux操作系统，于2004年2月28日开始对外发行，可以安装在个人计算机和服务器中。</p>
+<p>Deepin 12.12 正式版本将搭载一个全新的桌面环境。该桌面环境由Deepin 团队开发，以轻型、美观、稳定等作为设计目标。新桌面环境使用 Compiz 作为默认的窗口管理器。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fzkres1.myzaker.com%2F201910%2F5dae5906b15ec02e1c28f7b1_1024.jpg&amp;refer=http%3A%2F%2Fzkres1.myzaker.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754739&amp;t=be9f54a43670d51053a30eec7d91ac18" alt=""></p>
+<h3 id="总结以上五种系统各有各的优点"><a href="#总结以上五种系统各有各的优点" class="headerlink" title="总结以上五种系统各有各的优点"></a>总结以上五种系统各有各的优点</h3><p>运行上deepin会更慢一些，因为deepin的界面做的最好看，其次deepin是国产linux系统，而且是武汉的公司，安装极其简单，所以我就装了deepin操作系统。</p>
+<h2 id="deepin启动盘制作"><a href="#deepin启动盘制作" class="headerlink" title="deepin启动盘制作"></a>deepin启动盘制作</h2><p>deepin v20下载地址<a href="https://www.deepin.org/zh/download/">deep in</a><br>首先下载镜像，其次下载启动盘制作工具，制作启动盘。</p>
+<h2 id="windows分区"><a href="#windows分区" class="headerlink" title="windows分区"></a>windows分区</h2><p>删除一些windows上面不需要的软件和文件，腾出50G的空间，然后通过<a href="https://www.soft-down.net/detail/44/431115.shtml?type=jingzhun">分区助手</a><br>对磁盘进行分区。</p>
+<h2 id="系统安装具体操作步骤"><a href="#系统安装具体操作步骤" class="headerlink" title="系统安装具体操作步骤"></a>系统安装具体操作步骤</h2><p>1.制作启动u盘deepin系统安装盘。就是把deepin.iso烧录到u盘上。<br>这里请一定要先记得在淘宝上买一个扩展坞，因为surface是一款pc平板而合一电脑，为了节约面积，采用了单usb端口。同时安装系统时蓝牙会失效，需要准备有线鼠标、有线键盘。</p>
+<p>2.关闭secureboot.关机后 音量下键+电源三秒，松开电源，见到surface图标后松开音量键进入bios界面。第二项 secureboot 回车 disable它。滑倒最后exit save setting。</p>
+<p>特别注意一点！就是分清楚surface的音量和电源在那不要按错。</p>
+<p>3.进入windows系统，点击setting，在setting 中搜索boot，看到第二项，create and format hard disk partitions. 进入后看到C盘，鼠标右键shrink volumn(分出给deepin 的空间）</p>
+<p>建议采用之前说的分区助手，这种方法分区很容易崩。</p>
+<p>4.从U盘启动。有两种方式：<br>第一种关机后，音量下键+电源3秒，松开电源。见到surface画面后松开音量键。<br>第二种从windows 向左滑，进入setting. 最底下change pc settings.进去后点击最底下的updates and recovery(更新和恢复）选择里面最底下选项。advanced startup. （高级启动）。进入U盘启动。</p>
+<p>5.从U盘启动后。选择第二项，安装deepin. 选择语言，然后选择something else(其他选项）。目的是不要覆盖windows系统。安装系统到我们分出的free space里。<br>点击 free space ，再点击左下角的“+”号。选择逻辑分区，ext4, 给/root.尽量大点。</p>
+<p>再点击 free space ，点击左下角的“+”号。逻辑或主分区随便（我给的逻辑分区），swap area(交换空间）.随便给个几G。英文教程中不给，我是分了，省得它提示我必须给。反正也不少这几个G。</p>
+<p>选择启动盘为windows 所在的那个，一般叫sda 4.</p>
+<p>然后开始安装。重启。</p>
+<h2 id="安装触摸屏驱动"><a href="#安装触摸屏驱动" class="headerlink" title="安装触摸屏驱动"></a>安装触摸屏驱动</h2><h3 id="deepin-1"><a href="#deepin-1" class="headerlink" title="deepin"></a>deepin</h3><p>这里很神奇如果你也装的是deepin操作系统，触摸屏是可以直接使用的，可能因为华为封锁，目前华为用的均为deepin操作系统，华为也有触控笔记本电脑。</p>
+<h3 id="其他linux系统"><a href="#其他linux系统" class="headerlink" title="其他linux系统"></a>其他linux系统</h3><p>请详见<a href="https://github.com/jakeday/linux-surface">github大神</a>的surface驱动安装教程。</p>
+<p>进入系统以后使用Terminal安装了Peter Hunter整理的内核<br><pre class="line-numbers language-none"><code class="language-none">sudo add-apt-repository ppa:tigerite&#x2F;kernel
+
+sudo apt-get update
+
+sudo apt-get install linux-surface<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>然后使用编辑器nano或者gedit编辑/<br><pre class="line-numbers language-none"><code class="language-none">lib&#x2F;udev&#x2F;rules.d&#x2F;50-bluetooth-hci-auto-poweron.rules<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>用#注释掉里面唯一的那一行，再打开/etc/bluetooth/main.conf<br>把#[Policy]<br>改成[Policy]<br>并把最后一排的<br><pre class="line-numbers language-none"><code class="language-none">#AutoEnable&#x3D;false改成AutoEnable&#x3D;true
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;安装rEFIndsudo
+
+apt-add-repository ppa:rodsmith&#x2F;refind
+
+sudo apt-get update
+
+sudo apt-get install refind<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>用Shim给rEFind增加Secure Boot的启动方式<br><pre class="line-numbers language-none"><code class="language-none">refind-install --shim &#x2F;boot&#x2F;efi&#x2F;EFI&#x2F;ubuntu&#x2F;shimx64.efi --localkeys<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>然后把rEFind设为第一启动项refind-mkdefault开启Secure Boot</p>
+<h2 id="蓝牙驱动安装"><a href="#蓝牙驱动安装" class="headerlink" title="蓝牙驱动安装"></a>蓝牙驱动安装</h2><p>蓝牙（Bluetooth），是一种无线个人局域网（Wireless PAN），最初由爱立信创制，后来由蓝牙技术联盟订定技术标准。这个词的来源是10世纪丹麦和挪威国王蓝牙哈拉尔（丹麦语：Harald Blåtand Gormsen），借国王的绰号“Blåtand”当名称，直接翻译成中文为“蓝牙”（blå＝蓝，tand＝牙）。蓝牙是一种通用的射频频率是2.45GHZ的无线电接口，它使带有电子端口的设备能够在小范围内进行无线通信。</p>
+<h3 id="安装应用"><a href="#安装应用" class="headerlink" title="安装应用"></a>安装应用</h3><p>Blueman旨在提供最为常见的蓝牙管理功能。</p>
+<p>命令安装，终端执行：<br><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install blueman
+&#96;&#96;&#96;&#96;
+命令卸载，终端执行：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get remove blueman<br><pre class="line-numbers language-none"><code class="language-none">
+## Hexo安装
+### 安装nodejs:生成静态页面<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get install nodejs<br><pre class="line-numbers language-none"><code class="language-none">### 安装npm：一会用来安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo apt-get insall npm<br><pre class="line-numbers language-none"><code class="language-none">### 正式安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo npm install -g hexo<br><pre class="line-numbers language-none"><code class="language-none">### hexo部署<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>hexo clean<br>hexo g-d<br><pre class="line-numbers language-none"><code class="language-none">## git SSH Linux
+
+打开终端依次输入一下命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>Git Bash Here</p>
+<p>mkdir ~/.ssh</p>
+<p>cd .ssh/</p>
+<p>git config —global  user.name “mmrsl”</p>
+<p>git config —global  user.email “xxx@codekp.cn”<br>```<br>打开id_rsa.pub，在github的账号中进行修改，增加SHH。</p>
+<h1 id="完成后上传，如本文所示，surface双系统完美linux。"><a href="#完成后上传，如本文所示，surface双系统完美linux。" class="headerlink" title="完成后上传，如本文所示，surface双系统完美linux。"></a>完成后上传，如本文所示，surface双系统完美linux。</h1>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>Deep in</tag>
+        <tag>surface</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CSS_层叠样式表笔记</title>
     <url>/2021/11/17/CSS_html/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="CSS-层叠样式表笔记"><a href="#CSS-层叠样式表笔记" class="headerlink" title="CSS_层叠样式表笔记"></a>CSS_层叠样式表笔记</h1><blockquote>
@@ -443,69 +506,6 @@ a :hover &#123;
       </tags>
   </entry>
   <entry>
-    <title>surface完美安装linux操作系统、hexo博客</title>
-    <url>/2021/03/19/Deepin%E7%B3%BB%E7%BB%9F%E4%B8%8Esurface%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="surface完美安装linux操作系统、hexo博客"><a href="#surface完美安装linux操作系统、hexo博客" class="headerlink" title="surface完美安装linux操作系统、hexo博客"></a><center>surface完美安装linux操作系统、hexo博客</center></h1><p>最近由于linux课程需要使用linux系统，于是在ubuntu、kali、Elementary OS、Chrome OS和deepin操作系统中选择一个比较靠谱的。<br><span id="more"></span></p>
-<h2 id="linux操作系统介绍"><a href="#linux操作系统介绍" class="headerlink" title="linux操作系统介绍"></a>linux操作系统介绍</h2><h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><p>作为全球最流行且最有影响力的Linux开源系统之一，Ubuntu自发布以来在应用体验方面：有较大幅度的提升，即使对比Windows、MacOS等操作系统，最新版本的Ubuntu也不逊色。<br><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3931899733,1893021162&amp;fm=26&amp;gp=0.jpg" alt="">  </p>
-<h3 id="kali"><a href="#kali" class="headerlink" title="kali"></a>kali</h3><p>Kali Linux是基于Debian的Linux发行版， 设计用于数字取证操作系统。每一季度更新一次。由Offensive Security Ltd维护和资助。最先由Offensive Security的Mati Aharoni和Devon Kearns通过重写BackTrack来完成，BackTrack是他们之前写的用于取证的Linux发行版 。</p>
-<p>主要是用来渗透网络—所以俗话说kali从入门到入狱。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/3b87e950352ac65c1038fd5662baa5119313b07e1cf7?x-bce-process=image/watermark,image_d2里奴性F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5/format,f_auto" alt=""></p>
-<h3 id="Elementary-OS"><a href="#Elementary-OS" class="headerlink" title="Elementary OS"></a>Elementary OS</h3><p>Elementary OS是基于 Ubuntu 精心打磨美化的桌面 Linux 发行版的一款软件，号称 “最美的 Linux”， 最早是 Ubuntu 的一个美化主题项目，现在成了独立的发行版<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww2.sinaimg.cn%2Fmw1024%2F6595c7c6tw1e7nlcg38qoj211s0lcag0.jpg&amp;refer=http%3A%2F%2Fwww.sina.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754413&amp;t=c4cc435286c020b6845bd352d5a1dd8c" alt=""></p>
-<h3 id="Chrome-OS"><a href="#Chrome-OS" class="headerlink" title="Chrome OS"></a>Chrome OS</h3><p>Chrome OS是一款Google开发的基于PC的操作系统。 Google Chrome OS是一款基于Linux的开源操作系统。Google在自己的官方博客表示，初期，这一操作系统将定位于上网本、紧凑型以及低成本电脑。这款开源软件将被命名为Chrome OS，谷歌公司于2010年12里奴性月7日（北京时间12月8日2点30分）在美国举行Chrome相关产品发布会，发布会上正式发布Chrome Web store和Chrome OS。</p>
-<p><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/baike/pic/item/8694a4c27d1ed21bae953dafa06eddc451da3f1f.jpg" alt=""></p>
-<h3 id="deepin"><a href="#deepin" class="headerlink" title="deepin"></a>deepin</h3><p>Deepin（原名：Linux Deepin；中文通称：深度操作系统）是由武汉深之度科技有限公司在Debian基础上开发的Linux操作系统，其前身是Hiweed Linux操作系统，于2004年2月28日开始对外发行，可以安装在个人计算机和服务器中。</p>
-<p>Deepin 12.12 正式版本将搭载一个全新的桌面环境。该桌面环境由Deepin 团队开发，以轻型、美观、稳定等作为设计目标。新桌面环境使用 Compiz 作为默认的窗口管理器。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fzkres1.myzaker.com%2F201910%2F5dae5906b15ec02e1c28f7b1_1024.jpg&amp;refer=http%3A%2F%2Fzkres1.myzaker.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754739&amp;t=be9f54a43670d51053a30eec7d91ac18" alt=""></p>
-<h3 id="总结以上五种系统各有各的优点"><a href="#总结以上五种系统各有各的优点" class="headerlink" title="总结以上五种系统各有各的优点"></a>总结以上五种系统各有各的优点</h3><p>运行上deepin会更慢一些，因为deepin的界面做的最好看，其次deepin是国产linux系统，而且是武汉的公司，安装极其简单，所以我就装了deepin操作系统。</p>
-<h2 id="deepin启动盘制作"><a href="#deepin启动盘制作" class="headerlink" title="deepin启动盘制作"></a>deepin启动盘制作</h2><p>deepin v20下载地址<a href="https://www.deepin.org/zh/download/">deep in</a><br>首先下载镜像，其次下载启动盘制作工具，制作启动盘。</p>
-<h2 id="windows分区"><a href="#windows分区" class="headerlink" title="windows分区"></a>windows分区</h2><p>删除一些windows上面不需要的软件和文件，腾出50G的空间，然后通过<a href="https://www.soft-down.net/detail/44/431115.shtml?type=jingzhun">分区助手</a><br>对磁盘进行分区。</p>
-<h2 id="系统安装具体操作步骤"><a href="#系统安装具体操作步骤" class="headerlink" title="系统安装具体操作步骤"></a>系统安装具体操作步骤</h2><p>1.制作启动u盘deepin系统安装盘。就是把deepin.iso烧录到u盘上。<br>这里请一定要先记得在淘宝上买一个扩展坞，因为surface是一款pc平板而合一电脑，为了节约面积，采用了单usb端口。同时安装系统时蓝牙会失效，需要准备有线鼠标、有线键盘。</p>
-<p>2.关闭secureboot.关机后 音量下键+电源三秒，松开电源，见到surface图标后松开音量键进入bios界面。第二项 secureboot 回车 disable它。滑倒最后exit save setting。</p>
-<p>特别注意一点！就是分清楚surface的音量和电源在那不要按错。</p>
-<p>3.进入windows系统，点击setting，在setting 中搜索boot，看到第二项，create and format hard disk partitions. 进入后看到C盘，鼠标右键shrink volumn(分出给deepin 的空间）</p>
-<p>建议采用之前说的分区助手，这种方法分区很容易崩。</p>
-<p>4.从U盘启动。有两种方式：<br>第一种关机后，音量下键+电源3秒，松开电源。见到surface画面后松开音量键。<br>第二种从windows 向左滑，进入setting. 最底下change pc settings.进去后点击最底下的updates and recovery(更新和恢复）选择里面最底下选项。advanced startup. （高级启动）。进入U盘启动。</p>
-<p>5.从U盘启动后。选择第二项，安装deepin. 选择语言，然后选择something else(其他选项）。目的是不要覆盖windows系统。安装系统到我们分出的free space里。<br>点击 free space ，再点击左下角的“+”号。选择逻辑分区，ext4, 给/root.尽量大点。</p>
-<p>再点击 free space ，点击左下角的“+”号。逻辑或主分区随便（我给的逻辑分区），swap area(交换空间）.随便给个几G。英文教程中不给，我是分了，省得它提示我必须给。反正也不少这几个G。</p>
-<p>选择启动盘为windows 所在的那个，一般叫sda 4.</p>
-<p>然后开始安装。重启。</p>
-<h2 id="安装触摸屏驱动"><a href="#安装触摸屏驱动" class="headerlink" title="安装触摸屏驱动"></a>安装触摸屏驱动</h2><h3 id="deepin-1"><a href="#deepin-1" class="headerlink" title="deepin"></a>deepin</h3><p>这里很神奇如果你也装的是deepin操作系统，触摸屏是可以直接使用的，可能因为华为封锁，目前华为用的均为deepin操作系统，华为也有触控笔记本电脑。</p>
-<h3 id="其他linux系统"><a href="#其他linux系统" class="headerlink" title="其他linux系统"></a>其他linux系统</h3><p>请详见<a href="https://github.com/jakeday/linux-surface">github大神</a>的surface驱动安装教程。</p>
-<p>进入系统以后使用Terminal安装了Peter Hunter整理的内核<br><pre class="line-numbers language-none"><code class="language-none">sudo add-apt-repository ppa:tigerite&#x2F;kernel
-
-sudo apt-get update
-
-sudo apt-get install linux-surface<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>然后使用编辑器nano或者gedit编辑/<br><pre class="line-numbers language-none"><code class="language-none">lib&#x2F;udev&#x2F;rules.d&#x2F;50-bluetooth-hci-auto-poweron.rules<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>用#注释掉里面唯一的那一行，再打开/etc/bluetooth/main.conf<br>把#[Policy]<br>改成[Policy]<br>并把最后一排的<br><pre class="line-numbers language-none"><code class="language-none">#AutoEnable&#x3D;false改成AutoEnable&#x3D;true
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;安装rEFIndsudo
-
-apt-add-repository ppa:rodsmith&#x2F;refind
-
-sudo apt-get update
-
-sudo apt-get install refind<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>用Shim给rEFind增加Secure Boot的启动方式<br><pre class="line-numbers language-none"><code class="language-none">refind-install --shim &#x2F;boot&#x2F;efi&#x2F;EFI&#x2F;ubuntu&#x2F;shimx64.efi --localkeys<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>然后把rEFind设为第一启动项refind-mkdefault开启Secure Boot</p>
-<h2 id="蓝牙驱动安装"><a href="#蓝牙驱动安装" class="headerlink" title="蓝牙驱动安装"></a>蓝牙驱动安装</h2><p>蓝牙（Bluetooth），是一种无线个人局域网（Wireless PAN），最初由爱立信创制，后来由蓝牙技术联盟订定技术标准。这个词的来源是10世纪丹麦和挪威国王蓝牙哈拉尔（丹麦语：Harald Blåtand Gormsen），借国王的绰号“Blåtand”当名称，直接翻译成中文为“蓝牙”（blå＝蓝，tand＝牙）。蓝牙是一种通用的射频频率是2.45GHZ的无线电接口，它使带有电子端口的设备能够在小范围内进行无线通信。</p>
-<h3 id="安装应用"><a href="#安装应用" class="headerlink" title="安装应用"></a>安装应用</h3><p>Blueman旨在提供最为常见的蓝牙管理功能。</p>
-<p>命令安装，终端执行：<br><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install blueman
-&#96;&#96;&#96;&#96;
-命令卸载，终端执行：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get remove blueman<br><pre class="line-numbers language-none"><code class="language-none">
-## Hexo安装
-### 安装nodejs:生成静态页面<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get install nodejs<br><pre class="line-numbers language-none"><code class="language-none">### 安装npm：一会用来安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo apt-get insall npm<br><pre class="line-numbers language-none"><code class="language-none">### 正式安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo npm install -g hexo<br><pre class="line-numbers language-none"><code class="language-none">### hexo部署<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>hexo clean<br>hexo g-d<br><pre class="line-numbers language-none"><code class="language-none">## git SSH Linux
-
-打开终端依次输入一下命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>Git Bash Here</p>
-<p>mkdir ~/.ssh</p>
-<p>cd .ssh/</p>
-<p>git config —global  user.name “mmrsl”</p>
-<p>git config —global  user.email “xxx@codekp.cn”<br>```<br>打开id_rsa.pub，在github的账号中进行修改，增加SHH。</p>
-<h1 id="完成后上传，如本文所示，surface双系统完美linux。"><a href="#完成后上传，如本文所示，surface双系统完美linux。" class="headerlink" title="完成后上传，如本文所示，surface双系统完美linux。"></a>完成后上传，如本文所示，surface双系统完美linux。</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>Deep in</tag>
-        <tag>surface</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Detection_树莓派</title>
     <url>/2021/06/07/Detection-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Raspberry-Pi-上运行-TensorFlow-Lite-目标检测"><a href="#Raspberry-Pi-上运行-TensorFlow-Lite-目标检测" class="headerlink" title="Raspberry Pi 上运行 TensorFlow Lite 目标检测"></a>Raspberry Pi 上运行 TensorFlow Lite 目标检测</h1> <div style="position:relative; padding-bottom:75%; width:100%; height:0">
@@ -932,6 +932,80 @@ other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></spa
       </categories>
       <tags>
         <tag>目标检测</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux进程断连重新进入该进程方法</title>
+    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
+<ul>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
+</ul>
+<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
+<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
+<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
+<p><code>nohup python3 main.py &amp;</code></p>
+<ol>
+<li>nohup </li>
+</ol>
+<p>加在一个命令的最前面，表示不挂断的运行命令</p>
+<ol>
+<li>&amp;</li>
+</ol>
+<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
+<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
+<ol>
+<li>jobs 查看后台运行的命令</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
+[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ol>
+<li><p>ps查看进程</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
+  PID TTY          TIME CMD
+20712 pts&#x2F;6    00:00:00 bash
+20793 pts&#x2F;6    02:49:24 python3
+22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>kill </p>
+</li>
+</ol>
+<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
+<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
+<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
+<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
+<p>将后台中的命令调至前台继续运行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
+<p>（2）Ctrl + z 命令</p>
+<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
+<p>（3）bg命令</p>
+<p>将一个在后台暂停的命令，变成在后台继续执行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
+<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
+<li>首先后台运行一个进程：</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
+<ul>
+<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
+<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
+</ul>
+<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
+<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
+<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
+<p>linux远程断联后重新进入该进程</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
+</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>研究生课程</tag>
       </tags>
   </entry>
   <entry>
@@ -1756,78 +1830,149 @@ transform_test &#x3D; transforms.Compose([
       </tags>
   </entry>
   <entry>
-    <title>Linux进程断连重新进入该进程方法</title>
-    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
+    <title>My_leetcode</title>
+    <url>/2021/12/03/My-leetcode/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+<h2 id="My-leetcode"><a href="#My-leetcode" class="headerlink" title="My_leetcode"></a>My_leetcode</h2><h3 id="截断句子"><a href="#截断句子" class="headerlink" title="截断句子"></a>截断句子</h3><p>句子 是一个单词列表，列表中的单词之间用单个空格隔开，且不存在前导或尾随空格。每个单词仅由大小写英文字母组成（不含标点符号）。</p>
+<p>例如，”Hello World”、”HELLO” 和 “hello world hello world” 都是句子。<br>给你一个句子 s​​​​​​ 和一个整数 k​​​​​​ ，请你将 s​​ 截断 ​，​​​使截断后的句子仅含 前 k​​​​​​ 个单词。返回 截断 s​​​​​​ 后得到的句子。</p>
 <ul>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
-</ul>
-<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
-<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
-<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
-<p><code>nohup python3 main.py &amp;</code></p>
-<ol>
-<li>nohup </li>
-</ol>
-<p>加在一个命令的最前面，表示不挂断的运行命令</p>
-<ol>
-<li>&amp;</li>
-</ol>
-<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
-<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
-<ol>
-<li>jobs 查看后台运行的命令</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
-[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<ol>
-<li><p>ps查看进程</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
-  PID TTY          TIME CMD
-20712 pts&#x2F;6    00:00:00 bash
-20793 pts&#x2F;6    02:49:24 python3
-22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<li>C++<pre class="line-numbers language-none"><code class="language-none">lass Solution &#123;
+public:
+    string truncateSentence(string s, int k) &#123;
+    string s1;
+    int i,flag&#x3D;0;
+    for(i&#x3D;0;i&lt;s.length();i++)&#123;
+        if(s[i]&#x3D;&#x3D;&#39; &#39;)&#123;
+            flag++;
+        &#125;
+        if(flag&#x3D;&#x3D;k)&#123;
+            break;
+        &#125;
+        
+        s1+&#x3D;s[i];
+    &#125;
+    return s1;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>java<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+    public String truncateSentence(String s, int k) &#123;
+        String[] s1&#x3D;s.split(&quot; &quot;);;
+        String s2&#x3D;&quot;&quot;;
+        int i;
+        for(i&#x3D;0;i&lt;k;i++)&#123;
+            s2&#x3D;s2.concat(s1[i]);
+            if(i&lt;k-1)&#123;
+                s2&#x3D;s2.concat(&quot; &quot;);
+            &#125;&#125;
+        return s2;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
-<li><p>kill </p>
-</li>
-</ol>
-<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
-<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
-<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
-<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
-<p>将后台中的命令调至前台继续运行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
-<p>（2）Ctrl + z 命令</p>
-<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
-<p>（3）bg命令</p>
-<p>将一个在后台暂停的命令，变成在后台继续执行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
-<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
-<li>首先后台运行一个进程：</li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
-<ul>
-<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
-<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
-</ul>
-<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
-<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
-<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
-<p>linux远程断联后重新进入该进程</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
-</a></li>
-</ul>
+<h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><p>链表问题，<br>求和<br>2 3 4<br>3 4 5<br>输出<br>x x x<br>/**</p>
+<p>java<br><pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) &#123;
+        ListNode pre&#x3D;new ListNode(0);
+        ListNode cru&#x3D;pre;
+        int carry&#x3D;0;
+        while(l1!&#x3D;null||l2!&#x3D;null)&#123;
+            int x&#x3D; l1&#x3D;&#x3D;null? 0 : l1.val;
+            int y&#x3D; l2&#x3D;&#x3D;null? 0 : l2.val;
+            int sum&#x3D;0;
+            sum&#x3D;x+y+carry;
+            carry&#x3D;sum&#x2F;10;
+            cru.next&#x3D;new ListNode(sum%10);
+            cru&#x3D;cru.next;
+            if(l1!&#x3D;null)&#123;
+            l1&#x3D;l1.next;
+            &#125;
+            if(l2!&#x3D;null)&#123;
+            l2&#x3D;l2.next;
+            &#125;
+        &#125;
+        if (carry!&#x3D; 0)&#123;
+            cru.next&#x3D;new ListNode(carry);
+        &#125;
+        return pre.next;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>C++<br><pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for singly-linked list.
+ * struct ListNode &#123;
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) &#123;&#125;
+ *     ListNode(int x) : val(x), next(nullptr) &#123;&#125;
+ *     ListNode(int x, ListNode *next) : val(x), next(next) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+#define null ((void *)0)
+class Solution &#123;
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) &#123;
+        ListNode* pre &#x3D; new ListNode(0);
+        ListNode* cur &#x3D; pre;
+        int carry&#x3D;0;
+        while( l1 !&#x3D; null || l2 !&#x3D; null) &#123;
+            int x&#x3D;l1&#x3D;&#x3D;null ? 0:l1-&gt;val;
+            int y&#x3D;l2&#x3D;&#x3D;null ? 0:l2-&gt;val;
+            int sum&#x3D;x+y+carry;
+
+            carry&#x3D;sum&#x2F;10;
+            sum&#x3D;sum%10;
+            cur-&gt;next &#x3D; new ListNode(sum);
+            cur &#x3D; cur-&gt;next;
+            if(l1 !&#x3D; null)
+                l1 &#x3D; l1-&gt;next;
+            if(l2 !&#x3D; null)
+                l2 &#x3D; l2-&gt;next;
+        &#125;
+        if(carry &#x3D;&#x3D; 1) &#123;
+            cur-&gt;next &#x3D; new ListNode(carry);
+        &#125;
+        return pre-&gt;next;
+
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>主要这道题可以理解链表，自己写几遍可以加深一下印象。<br>pre记录最前面的地址，最后pre.next，即可获得第二个地址，就很巧妙。</p>
 ]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>研究生课程</tag>
-      </tags>
   </entry>
   <entry>
     <title>OCR_实时翻译</title>
@@ -1940,6 +2085,178 @@ capture.release()<span aria-hidden="true" class="line-numbers-rows"><span></span
       </categories>
       <tags>
         <tag>OCR</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python_PyWebIO</title>
+    <url>/2021/12/01/Python-PyWebIO/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+<p><h1 align="center" name="pywebio-zh">Python_PyWebIO</h1></p>
+<p align="center">
+    <em>万鲲鹏</em>
+</p>
+
+<p>PyWebIO提供了一系列命令式的交互函数来在浏览器上获取用户输入和进行输出，将浏览器变成了一个“富文本终端”，可以用于构建简单的Web应用或基于浏览器的GUI应用。<br>PyWebIO还可以方便地整合进现有的Web服务，让你不需要编写HTML和JS代码，就可以构建出具有良好可用性的应用。</p>
+<p>功能特性：</p>
+<ul>
+<li>使用同步而不是基于回调的方式获取输入，代码编写逻辑更自然</li>
+<li>非声明式布局，布局方式简单高效</li>
+<li>代码侵入性小，旧脚本代码仅需修改输入输出逻辑便可改造为Web服务</li>
+<li>支持整合到现有的Web服务，目前支持与Flask、Django、Tornado、aiohttp、FastAPI框架集成</li>
+<li>同时支持基于线程的执行模型和基于协程的执行模型</li>
+<li>支持结合第三方库实现数据可视化</li>
+</ul>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>稳定版安装:</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>报错：<br><code>Fatal error in launcher: Unable to create process using</code></p>
+<p>主要是由于直接调用环境导致的遇到这种问题</p>
+<pre class="line-numbers language-none"><code class="language-none">python -m pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="Quickstart"><a href="#Quickstart" class="headerlink" title="Quickstart"></a>Quickstart</h2><p><strong>Hello, world</strong></p>
+<p>这是一个使用PyWebIO计算 <a href="https://en.wikipedia.org/wiki/Body_mass_index">BMI指数</a> 的脚本:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio.input import input, FLOAT
+from pywebio.output import put_text
+
+def bmi():
+    height &#x3D; input(&quot;请输入你的身高(cm)：&quot;, type&#x3D;FLOAT)
+    weight &#x3D; input(&quot;请输入你的体重(kg)：&quot;, type&#x3D;FLOAT)
+
+    BMI &#x3D; weight &#x2F; (height &#x2F; 100) ** 2
+
+    top_status &#x3D; [(14.9, &#39;极瘦&#39;), (18.4, &#39;偏瘦&#39;),
+                  (22.9, &#39;正常&#39;), (27.5, &#39;过重&#39;),
+                  (40.0, &#39;肥胖&#39;), (float(&#39;inf&#39;), &#39;非常肥胖&#39;)]
+
+    for top, status in top_status:
+        if BMI &lt;&#x3D; top:
+            put_text(&#39;你的 BMI 值: %.1f，身体状态：%s&#39; % (BMI, status))
+            break
+
+if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    bmi()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如果没有使用PyWebIO，这只是一个非常简单的脚本，而通过使用PyWebIO提供的输入输出函数，你可以在浏览器中与代码进行交互 <a href="http://pywebio-demos.pywebio.online/bmi">[demo]</a>：</p>
+<p align="center">
+    <a href="http://pywebio-demos.pywebio.online/?pywebio_api=bmi">
+        <img src="https://raw.githubusercontent.com/wang0618/PyWebIO/dev/docs/assets/demo_zh.gif" alt="PyWebIO demo" width="400px"/>
+    </a>
+</p>
+
+<p><strong>作为Web服务提供</strong></p>
+<p>上文BMI程序会在计算完毕后立刻退出，可以使用 <a href="https://pywebio.readthedocs.io/zh_CN/latest/platform.html#pywebio.platform.tornado.start_server"><code>pywebio.start_server()</code></a> 将 <code>bmi()</code> 函数作为Web服务提供：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio import start_server
+from pywebio.input import input, FLOAT
+from pywebio.output import put_text
+
+def bmi():  # bmi() 函数内容不变
+    ...  
+
+if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+    start_server(bmi, port&#x3D;80)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Demos"><a href="#Demos" class="headerlink" title="Demos"></a>Demos</h2><ul>
+<li><a href="http://pywebio-demos.pywebio.online/">基本demo</a> : 包含PyWebIO基本输入输出演示和使用PyWebIO编写的小应用</li>
+<li><a href="http://pywebio-charts.pywebio.online/">数据可视化demo</a> : 使用 bokeh、plotly、pyecharts 等库进行数据可视化</li>
+</ul>
+<h3 id="武汉三维地图"><a href="#武汉三维地图" class="headerlink" title="武汉三维地图"></a>武汉三维地图</h3><pre class="line-numbers language-none"><code class="language-none">from pywebio.output import put_html
+from pyecharts import options as opts
+from pyecharts.charts import Map3D
+from pyecharts.globals import ChartType
+
+example_data &#x3D; [
+    [[119.107078, 36.70925, 1000], [116.587245, 35.415393, 1000]],
+    [[117.000923, 36.675807], [120.355173, 36.082982]],
+    [[118.047648, 36.814939], [118.66471, 37.434564]],
+    [[121.391382, 37.539297], [119.107078, 36.70925]],
+    [[116.587245, 35.415393], [122.116394, 37.509691]],
+    [[119.461208, 35.428588], [118.326443, 35.065282]],
+    [[116.307428, 37.453968], [115.469381, 35.246531]],
+]
+c &#x3D; (
+    Map3D()
+        .add_schema(
+        maptype&#x3D;&quot;武汉&quot;,
+        itemstyle_opts&#x3D;opts.ItemStyleOpts(
+            color&#x3D;&quot;rgb(5,101,123)&quot;,
+            opacity&#x3D;1,
+            border_width&#x3D;0.8,
+            border_color&#x3D;&quot;rgb(62,215,213)&quot;,
+        ),
+        light_opts&#x3D;opts.Map3DLightOpts(
+            main_color&#x3D;&quot;#fff&quot;,
+            main_intensity&#x3D;1.2,
+            is_main_shadow&#x3D;False,
+            main_alpha&#x3D;55,
+            main_beta&#x3D;10,
+            ambient_intensity&#x3D;0.3,
+        ),
+        view_control_opts&#x3D;opts.Map3DViewControlOpts(center&#x3D;[-10, 0, 10]),
+        post_effect_opts&#x3D;opts.Map3DPostEffectOpts(is_enable&#x3D;False),
+    )
+        .add(
+        series_name&#x3D;&quot;&quot;,
+        data_pair&#x3D;example_data,
+        type_&#x3D;ChartType.LINES3D,
+        effect&#x3D;opts.Lines3DEffectOpts(
+            is_show&#x3D;True,
+            period&#x3D;4,
+            trail_width&#x3D;3,
+            trail_length&#x3D;0.5,
+            trail_color&#x3D;&quot;#f00&quot;,
+            trail_opacity&#x3D;1,
+        ),
+        linestyle_opts&#x3D;opts.LineStyleOpts(is_show&#x3D;False, color&#x3D;&quot;#fff&quot;, opacity&#x3D;0),
+    )
+        .set_global_opts(title_opts&#x3D;opts.TitleOpts(title&#x3D;&quot;Map3D-Lines3D&quot;))
+
+)
+
+c.width &#x3D; &quot;100%&quot;
+put_html(c.render_notebook())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p><img src="https://www.mmrsl.cn/download/img/html5/15.jpg" alt=""></p>
+<h2 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h2><p>使用手册和实现文档见 <a href="https://pywebio.readthedocs.io/zh_CN/latest/">https://pywebio.readthedocs.io</a></p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
         <tag>python</tag>
       </tags>
   </entry>
@@ -4481,323 +4798,6 @@ public class TestThread &#123;
       </tags>
   </entry>
   <entry>
-    <title>My_leetcode</title>
-    <url>/2021/12/03/My-leetcode/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  " ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
-
-<h2 id="My-leetcode"><a href="#My-leetcode" class="headerlink" title="My_leetcode"></a>My_leetcode</h2><h3 id="截断句子"><a href="#截断句子" class="headerlink" title="截断句子"></a>截断句子</h3><p>句子 是一个单词列表，列表中的单词之间用单个空格隔开，且不存在前导或尾随空格。每个单词仅由大小写英文字母组成（不含标点符号）。</p>
-<p>例如，”Hello World”、”HELLO” 和 “hello world hello world” 都是句子。<br>给你一个句子 s​​​​​​ 和一个整数 k​​​​​​ ，请你将 s​​ 截断 ​，​​​使截断后的句子仅含 前 k​​​​​​ 个单词。返回 截断 s​​​​​​ 后得到的句子。</p>
-<ul>
-<li>C++<pre class="line-numbers language-none"><code class="language-none">lass Solution &#123;
-public:
-    string truncateSentence(string s, int k) &#123;
-    string s1;
-    int i,flag&#x3D;0;
-    for(i&#x3D;0;i&lt;s.length();i++)&#123;
-        if(s[i]&#x3D;&#x3D;&#39; &#39;)&#123;
-            flag++;
-        &#125;
-        if(flag&#x3D;&#x3D;k)&#123;
-            break;
-        &#125;
-        
-        s1+&#x3D;s[i];
-    &#125;
-    return s1;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>java<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
-    public String truncateSentence(String s, int k) &#123;
-        String[] s1&#x3D;s.split(&quot; &quot;);;
-        String s2&#x3D;&quot;&quot;;
-        int i;
-        for(i&#x3D;0;i&lt;k;i++)&#123;
-            s2&#x3D;s2.concat(s1[i]);
-            if(i&lt;k-1)&#123;
-                s2&#x3D;s2.concat(&quot; &quot;);
-            &#125;&#125;
-        return s2;
-    &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
-<h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><p>链表问题，<br>求和<br>2 3 4<br>3 4 5<br>输出<br>x x x<br>/**</p>
-<p>java<br><pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) &#123;
-        ListNode pre&#x3D;new ListNode(0);
-        ListNode cru&#x3D;pre;
-        int carry&#x3D;0;
-        while(l1!&#x3D;null||l2!&#x3D;null)&#123;
-            int x&#x3D; l1&#x3D;&#x3D;null? 0 : l1.val;
-            int y&#x3D; l2&#x3D;&#x3D;null? 0 : l2.val;
-            int sum&#x3D;0;
-            sum&#x3D;x+y+carry;
-            carry&#x3D;sum&#x2F;10;
-            cru.next&#x3D;new ListNode(sum%10);
-            cru&#x3D;cru.next;
-            if(l1!&#x3D;null)&#123;
-            l1&#x3D;l1.next;
-            &#125;
-            if(l2!&#x3D;null)&#123;
-            l2&#x3D;l2.next;
-            &#125;
-        &#125;
-        if (carry!&#x3D; 0)&#123;
-            cru.next&#x3D;new ListNode(carry);
-        &#125;
-        return pre.next;
-    &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>C++<br><pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for singly-linked list.
- * struct ListNode &#123;
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) &#123;&#125;
- *     ListNode(int x) : val(x), next(nullptr) &#123;&#125;
- *     ListNode(int x, ListNode *next) : val(x), next(next) &#123;&#125;
- * &#125;;
- *&#x2F;
-#define null ((void *)0)
-class Solution &#123;
-public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) &#123;
-        ListNode* pre &#x3D; new ListNode(0);
-        ListNode* cur &#x3D; pre;
-        int carry&#x3D;0;
-        while( l1 !&#x3D; null || l2 !&#x3D; null) &#123;
-            int x&#x3D;l1&#x3D;&#x3D;null ? 0:l1-&gt;val;
-            int y&#x3D;l2&#x3D;&#x3D;null ? 0:l2-&gt;val;
-            int sum&#x3D;x+y+carry;
-
-            carry&#x3D;sum&#x2F;10;
-            sum&#x3D;sum%10;
-            cur-&gt;next &#x3D; new ListNode(sum);
-            cur &#x3D; cur-&gt;next;
-            if(l1 !&#x3D; null)
-                l1 &#x3D; l1-&gt;next;
-            if(l2 !&#x3D; null)
-                l2 &#x3D; l2-&gt;next;
-        &#125;
-        if(carry &#x3D;&#x3D; 1) &#123;
-            cur-&gt;next &#x3D; new ListNode(carry);
-        &#125;
-        return pre-&gt;next;
-
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>主要这道题可以理解链表，自己写几遍可以加深一下印象。<br>pre记录最前面的地址，最后pre.next，即可获得第二个地址，就很巧妙。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Python_PyWebIO</title>
-    <url>/2021/12/01/Python-PyWebIO/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  " ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content:  counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
-
-<p><h1 align="center" name="pywebio-zh">Python_PyWebIO</h1></p>
-<p align="center">
-    <em>万鲲鹏</em>
-</p>
-
-<p>PyWebIO提供了一系列命令式的交互函数来在浏览器上获取用户输入和进行输出，将浏览器变成了一个“富文本终端”，可以用于构建简单的Web应用或基于浏览器的GUI应用。<br>PyWebIO还可以方便地整合进现有的Web服务，让你不需要编写HTML和JS代码，就可以构建出具有良好可用性的应用。</p>
-<p>功能特性：</p>
-<ul>
-<li>使用同步而不是基于回调的方式获取输入，代码编写逻辑更自然</li>
-<li>非声明式布局，布局方式简单高效</li>
-<li>代码侵入性小，旧脚本代码仅需修改输入输出逻辑便可改造为Web服务</li>
-<li>支持整合到现有的Web服务，目前支持与Flask、Django、Tornado、aiohttp、FastAPI框架集成</li>
-<li>同时支持基于线程的执行模型和基于协程的执行模型</li>
-<li>支持结合第三方库实现数据可视化</li>
-</ul>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>稳定版安装:</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>报错：<br><code>Fatal error in launcher: Unable to create process using</code></p>
-<p>主要是由于直接调用环境导致的遇到这种问题</p>
-<pre class="line-numbers language-none"><code class="language-none">python -m pip install  pywebio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="Quickstart"><a href="#Quickstart" class="headerlink" title="Quickstart"></a>Quickstart</h2><p><strong>Hello, world</strong></p>
-<p>这是一个使用PyWebIO计算 <a href="https://en.wikipedia.org/wiki/Body_mass_index">BMI指数</a> 的脚本:</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio.input import input, FLOAT
-from pywebio.output import put_text
-
-def bmi():
-    height &#x3D; input(&quot;请输入你的身高(cm)：&quot;, type&#x3D;FLOAT)
-    weight &#x3D; input(&quot;请输入你的体重(kg)：&quot;, type&#x3D;FLOAT)
-
-    BMI &#x3D; weight &#x2F; (height &#x2F; 100) ** 2
-
-    top_status &#x3D; [(14.9, &#39;极瘦&#39;), (18.4, &#39;偏瘦&#39;),
-                  (22.9, &#39;正常&#39;), (27.5, &#39;过重&#39;),
-                  (40.0, &#39;肥胖&#39;), (float(&#39;inf&#39;), &#39;非常肥胖&#39;)]
-
-    for top, status in top_status:
-        if BMI &lt;&#x3D; top:
-            put_text(&#39;你的 BMI 值: %.1f，身体状态：%s&#39; % (BMI, status))
-            break
-
-if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
-    bmi()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>如果没有使用PyWebIO，这只是一个非常简单的脚本，而通过使用PyWebIO提供的输入输出函数，你可以在浏览器中与代码进行交互 <a href="http://pywebio-demos.pywebio.online/bmi">[demo]</a>：</p>
-<p align="center">
-    <a href="http://pywebio-demos.pywebio.online/?pywebio_api=bmi">
-        <img src="https://raw.githubusercontent.com/wang0618/PyWebIO/dev/docs/assets/demo_zh.gif" alt="PyWebIO demo" width="400px"/>
-    </a>
-</p>
-
-<p><strong>作为Web服务提供</strong></p>
-<p>上文BMI程序会在计算完毕后立刻退出，可以使用 <a href="https://pywebio.readthedocs.io/zh_CN/latest/platform.html#pywebio.platform.tornado.start_server"><code>pywebio.start_server()</code></a> 将 <code>bmi()</code> 函数作为Web服务提供：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from pywebio import start_server
-from pywebio.input import input, FLOAT
-from pywebio.output import put_text
-
-def bmi():  # bmi() 函数内容不变
-    ...  
-
-if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
-    start_server(bmi, port&#x3D;80)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Demos"><a href="#Demos" class="headerlink" title="Demos"></a>Demos</h2><ul>
-<li><a href="http://pywebio-demos.pywebio.online/">基本demo</a> : 包含PyWebIO基本输入输出演示和使用PyWebIO编写的小应用</li>
-<li><a href="http://pywebio-charts.pywebio.online/">数据可视化demo</a> : 使用 bokeh、plotly、pyecharts 等库进行数据可视化</li>
-</ul>
-<h3 id="武汉三维地图"><a href="#武汉三维地图" class="headerlink" title="武汉三维地图"></a>武汉三维地图</h3><pre class="line-numbers language-none"><code class="language-none">from pywebio.output import put_html
-from pyecharts import options as opts
-from pyecharts.charts import Map3D
-from pyecharts.globals import ChartType
-
-example_data &#x3D; [
-    [[119.107078, 36.70925, 1000], [116.587245, 35.415393, 1000]],
-    [[117.000923, 36.675807], [120.355173, 36.082982]],
-    [[118.047648, 36.814939], [118.66471, 37.434564]],
-    [[121.391382, 37.539297], [119.107078, 36.70925]],
-    [[116.587245, 35.415393], [122.116394, 37.509691]],
-    [[119.461208, 35.428588], [118.326443, 35.065282]],
-    [[116.307428, 37.453968], [115.469381, 35.246531]],
-]
-c &#x3D; (
-    Map3D()
-        .add_schema(
-        maptype&#x3D;&quot;武汉&quot;,
-        itemstyle_opts&#x3D;opts.ItemStyleOpts(
-            color&#x3D;&quot;rgb(5,101,123)&quot;,
-            opacity&#x3D;1,
-            border_width&#x3D;0.8,
-            border_color&#x3D;&quot;rgb(62,215,213)&quot;,
-        ),
-        light_opts&#x3D;opts.Map3DLightOpts(
-            main_color&#x3D;&quot;#fff&quot;,
-            main_intensity&#x3D;1.2,
-            is_main_shadow&#x3D;False,
-            main_alpha&#x3D;55,
-            main_beta&#x3D;10,
-            ambient_intensity&#x3D;0.3,
-        ),
-        view_control_opts&#x3D;opts.Map3DViewControlOpts(center&#x3D;[-10, 0, 10]),
-        post_effect_opts&#x3D;opts.Map3DPostEffectOpts(is_enable&#x3D;False),
-    )
-        .add(
-        series_name&#x3D;&quot;&quot;,
-        data_pair&#x3D;example_data,
-        type_&#x3D;ChartType.LINES3D,
-        effect&#x3D;opts.Lines3DEffectOpts(
-            is_show&#x3D;True,
-            period&#x3D;4,
-            trail_width&#x3D;3,
-            trail_length&#x3D;0.5,
-            trail_color&#x3D;&quot;#f00&quot;,
-            trail_opacity&#x3D;1,
-        ),
-        linestyle_opts&#x3D;opts.LineStyleOpts(is_show&#x3D;False, color&#x3D;&quot;#fff&quot;, opacity&#x3D;0),
-    )
-        .set_global_opts(title_opts&#x3D;opts.TitleOpts(title&#x3D;&quot;Map3D-Lines3D&quot;))
-
-)
-
-c.width &#x3D; &quot;100%&quot;
-put_html(c.render_notebook())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p><img src="https://www.mmrsl.cn/download/img/html5/15.jpg" alt=""></p>
-<h2 id="Document"><a href="#Document" class="headerlink" title="Document"></a>Document</h2><p>使用手册和实现文档见 <a href="https://pywebio.readthedocs.io/zh_CN/latest/">https://pywebio.readthedocs.io</a></p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Quantum-Mini-Linux—配置</title>
     <url>/2021/04/13/Quantum-Mini-Linux%E2%80%94%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span>
@@ -6108,21 +6108,6 @@ roomfloor(HIGHT*i,Width*z,Length*j,400,400,300)&#125;
 ]]></content>
   </entry>
   <entry>
-    <title>b站视频分享</title>
-    <url>/2017/11/17/b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=414001980&bvid=BV1TV411z7aB&cid=218691406&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div><br><span id="more"></span></p>
-]]></content>
-      <categories>
-        <category>分享</category>
-      </categories>
-      <tags>
-        <tag>b站视频</tag>
-        <tag>分享</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>b站up主推荐</title>
     <url>/2021/04/14/b%E7%AB%99up%E4%B8%BB%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="position:relative; padding-bottom:75%; width:100%; height:0">
@@ -6244,6 +6229,21 @@ roomfloor(HIGHT*i,Width*z,Length*j,400,400,300)&#125;
       </categories>
       <tags>
         <tag>b站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>b站视频分享</title>
+    <url>/2017/11/17/b%E7%AB%99%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=414001980&bvid=BV1TV411z7aB&cid=218691406&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div><br><span id="more"></span></p>
+]]></content>
+      <categories>
+        <category>分享</category>
+      </categories>
+      <tags>
+        <tag>b站视频</tag>
+        <tag>分享</tag>
       </tags>
   </entry>
   <entry>
@@ -7066,7 +7066,7 @@ if (windowWidth &gt; 768) &#123;
       </tags>
   </entry>
   <entry>
-    <title>iwlist/iwconfig/iw/wpa_supplicant命令</title>
+    <title>iwlist/iwconfig/iw/wpa_supplicant命令及信道可视化</title>
     <url>/2021/12/22/iwlist-iwconfig-iw-wpa-supplicant/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="iwlist-iwconfig-iw-wpa-supplicant命令"><a href="#iwlist-iwconfig-iw-wpa-supplicant命令" class="headerlink" title="iwlist/iwconfig/iw/wpa_supplicant命令"></a>iwlist/iwconfig/iw/wpa_supplicant命令</h1><h2 id="iwlist"><a href="#iwlist" class="headerlink" title="iwlist"></a>iwlist</h2><pre class="line-numbers language-none"><code class="language-none">iwlist wlan0 scan[ning]					列出WiFi扫描结果
 iwlist wlan0 freq[uency]&#x2F;channel		列出当前地区可用频率
@@ -7273,7 +7273,7 @@ from pickle import dumps, loads
 &lt;!-- 通过这个来进行打包发送 --&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>显示效果：</p>
 <h3 id="将数据进行显示"><a href="#将数据进行显示" class="headerlink" title="将数据进行显示"></a>将数据进行显示</h3><p><img src="https://www.mmrsl.cn/download/img/cpu/2.jpg" alt=""><br><img src="https://www.mmrsl.cn/download/img/cpu/3.jpg" alt=""></p>
-<p>参考：</p>
+<p>操作操作，就可以最终实现linux上面的实时检测，不需要tcp，效果更好。<br>参考：</p>
 <ul>
 <li><a href="https://blog.csdn.net/weixin_44498318/article/details/107428543?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164015995016780274118720%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=164015995016780274118720&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-3-107428543.pc_search_insert_es_download_v2&amp;utm_term=iwlist%2Fiwconfig%2Fiw%E5%91%BD%E4%BB%A4&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/weixin_44498318/article/details/107428543?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164015995016780274118720%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=164015995016780274118720&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-3-107428543.pc_search_insert_es_download_v2&amp;utm_term=iwlist%2Fiwconfig%2Fiw%E5%91%BD%E4%BB%A4&amp;spm=1018.2226.3001.4187</a></li>
 </ul>
@@ -7371,135 +7371,6 @@ from pickle import dumps, loads
 <li><a href="https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html">https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html</a></li>
 </ul>
 ]]></content>
-  </entry>
-  <entry>
-    <title>linux_rssi_信号强度获取</title>
-    <url>/2021/07/13/linux-rssi-%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6%E8%8E%B7%E5%8F%96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linuxrssi信号强度获取"><a href="#linuxrssi信号强度获取" class="headerlink" title="linuxrssi信号强度获取"></a>linux<em>rssi</em>信号强度获取</h1><h2 id="测试环境中，无线网卡的接口id为wlan0"><a href="#测试环境中，无线网卡的接口id为wlan0" class="headerlink" title="测试环境中，无线网卡的接口id为wlan0"></a>测试环境中，无线网卡的接口id为wlan0</h2><h2 id="一秒周期查看无线网卡信息"><a href="#一秒周期查看无线网卡信息" class="headerlink" title="一秒周期查看无线网卡信息"></a>一秒周期查看无线网卡信息</h2><p><code>watch -n 1 cat /proc/net/wireless</code></p>
-<h2 id="获取信号强度："><a href="#获取信号强度：" class="headerlink" title="获取信号强度："></a>获取信号强度：</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $3&#125;&#39;</code><br>70.</p>
-<h2 id="获取信号质量：单位dBm"><a href="#获取信号质量：单位dBm" class="headerlink" title="获取信号质量：单位dBm"></a>获取信号质量：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $4&#125;&#39;</code><br>-38.</p>
-<h2 id="网口的背景噪声：单位dBm"><a href="#网口的背景噪声：单位dBm" class="headerlink" title="网口的背景噪声：单位dBm"></a>网口的背景噪声：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $5&#125;&#39;</code></p>
-<p>-256</p>
-<h2 id="网口的传输速率：Mb-s-1000000bps"><a href="#网口的传输速率：Mb-s-1000000bps" class="headerlink" title="网口的传输速率：Mb/s = 1000000bps"></a>网口的传输速率：Mb/s = 1000000bps</h2><p><code>iwconfig wlan0 | sed &#39;s/ /\n/g&#39; | grep -i Rate | sed &#39;s/=/ /g&#39;|awk &#39;&#123;print $2&#125;&#39;</code></p>
-<p>在程序中执行这些命令后需要获取返回结果，最简单的方法是，将命令行结果重定向到一个临时文件，然后读取这个临时文件，从而获得外部命令执行结果。</p>
-<p>参考：</p>
-<ul>
-<li><a href="https://www.jb51.net/LINUXjishu/421311.html">Linux系统中iwconfig命令使用详解</a></li>
-<li><a href="https://blog.csdn.net/lbyyy/article/details/51392629">无线信号强度解析及linux如何查看wifi信号强弱等</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux常用指令</title>
-    <url>/2021/07/28/linux-ssh-scp%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux常用指令"><a href="#linux常用指令" class="headerlink" title="linux常用指令"></a>linux常用指令</h1><ul>
-<li>保存ip地址<pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;hosts
-::1     ip6-localhost ip6-loopback
-fe00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h2><pre class="line-numbers language-none"><code class="language-none">ssh name@ipname<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-</ul>
-<h2 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h2><pre class="line-numbers language-none"><code class="language-none">上传
-scp -r 源地址 name@ipname:目的地址目录
-
-下载
-scp -r name@ipname:目的地址目录 源地址 
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>./ 当前目录<br>～  根目录</p>
-<h3 id="压缩文件指令"><a href="#压缩文件指令" class="headerlink" title="压缩文件指令"></a>压缩文件指令</h3><pre class="line-numbers language-none"><code class="language-none">unzip 文件.zip
-zip -r xxx.zip 文件目录
-tar zxvf 文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h3><pre class="line-numbers language-none"><code class="language-none">ps -ef|grep python   #当前运行的程序PID
-
-tail -f out.log    #持续看输出结果
-
-cat     # 文件内容
-
-pwd   # 当前文件地址
-
-sudo passwd # 修改密码
-
-watch
-
-ifconfig  # 端口
-
-iwconfig # 网卡信息
-
-df -h  # 磁盘占用情况
-
-ls -l  # 详细信息
-
-cd # 进入某文件目录
-
-rm -f filename
-
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h3><pre class="line-numbers language-none"><code class="language-none">scp -r name@ip:&#x2F;home&#x2F;wkp&#x2F;datasets&#x2F;targe&#x2F;images&#x2F;bz_3647.jpg &#x2F;home&#x2F;wkp&#x2F;wan_lab&#x2F;旋转扩充数据集&#x2F;YOLO_code&#x2F;img
-
-scp -r wkp@xmu_1:&#x2F;home&#x2F;wkp&#x2F;datasets&#x2F;targe&#x2F;labels&#x2F;classes.txt &#x2F;home&#x2F;wkp&#x2F;wan_lab&#x2F;旋转扩充数据集&#x2F;YOLO_code&#x2F;label
-
-scp -r wkp@xmu_1:&#x2F;home&#x2F;wkp&#x2F;datasets&#x2F;targe&#x2F;labels&#x2F;3647.txt &#x2F;home&#x2F;wkp&#x2F;wan_lab&#x2F;旋转扩充数据集&#x2F;YOLO_code&#x2F;label
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="wacth"><a href="#wacth" class="headerlink" title="wacth"></a>wacth</h4><pre class="line-numbers language-none"><code class="language-none">Usage: watch [-dhntv] [--differences[&#x3D;cumulative]] [--help] [--interval&#x3D;&lt;n&gt;] [--no-title] [--version] &lt;command&gt;
-  -d, --differences[&#x3D;cumulative]        highlight changes between updates
-                (cumulative means highlighting is cumulative)
-  -h, --help                            print a summary of the options
-  -n, --interval&#x3D;&lt;seconds&gt;              seconds to wait between updates
-  -v, --version                         print the version number
-  -t, --no-title                        turns off showing the header
-
-每隔一秒高亮显示网络链接数的变化情况
-
-watch -n 1 -d netstat -ant 【-n 设置间隔，-d,difference，高亮显示不同】
- 
-   watch -d &#39;ls &#x2F;home&#x2F;omd&#39;       【-d 高亮显示】
- 
-   watch -t &#39;ls &#x2F;home&#x2F;omd&#39;       【-t会关闭watch命令在顶部的时间间隔】
-
-watch -n 1 -d &#39;pstree|grep http&#39;
-
-实时查看模拟攻击客户机建立起来的连接数
- 
-watch -n 1 -d &#39;netstat -an | grep &quot;21&quot; | egrep &quot;192.168.25.100&quot;| wc -l&#39;
- 
-监测当前目录中 scf&#39; 的文件的变化
- 
-watch -d &#39;ls -l|grep scf&#39;
- 
-10秒一次输出系统的平均负载
- 
-watch -n 1 -d &quot;uptime&quot;
-
-
-看网口连接状态
-watch -n 1 iwconfig wlx0ccf89606c44
-
-wlx0ccf89606c44  IEEE 802.11  ESSID:&quot;SSID&quot;  
-          Mode:Managed  Frequency:2.462 GHz  Access Point: EC:26:CA:2A:01:E4   
-          Bit Rate&#x3D;1 Mb&#x2F;s   Tx-Power&#x3D;20 dBm   
-          Retry short limit:7   RTS thr:off   Fragment thr:off
-          Power Management:off
-          Link Quality&#x3D;70&#x2F;70  Signal level&#x3D;-19 dBm  
-          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
-          Tx excessive retries:1  Invalid misc:10   Missed beacon:0
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>目标检测</category>
-      </categories>
-      <tags>
-        <tag>目标检测数据集扩充2</tag>
-      </tags>
   </entry>
   <entry>
     <title>linux下安装pytorch</title>
@@ -7655,6 +7526,112 @@ wlx0ccf89606c44  IEEE 802.11  ESSID:&quot;SSID&quot;
         <tag>linux</tag>
         <tag>嵌入式开发</tag>
         <tag>鸟哥的私房菜学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux常用指令</title>
+    <url>/2021/07/28/linux-ssh-scp%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux常用指令"><a href="#linux常用指令" class="headerlink" title="linux常用指令"></a>linux常用指令</h1><ul>
+<li>保存ip地址<pre class="line-numbers language-none"><code class="language-none">sudo nano &#x2F;etc&#x2F;hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h2><pre class="line-numbers language-none"><code class="language-none">ssh name@ipname<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ul>
+<h2 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h2><pre class="line-numbers language-none"><code class="language-none">上传
+scp -r 源地址 name@ipname:目的地址目录
+
+下载
+scp -r name@ipname:目的地址目录 源地址 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>./ 当前目录<br>～  根目录</p>
+<h3 id="压缩文件指令"><a href="#压缩文件指令" class="headerlink" title="压缩文件指令"></a>压缩文件指令</h3><pre class="line-numbers language-none"><code class="language-none">unzip 文件.zip
+zip -r xxx.zip 文件目录
+tar zxvf 文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h3><pre class="line-numbers language-none"><code class="language-none">ps -ef|grep python   #当前运行的程序PID
+
+tail -f out.log    #持续看输出结果
+
+cat     # 文件内容
+
+pwd   # 当前文件地址
+
+sudo passwd # 修改密码
+
+watch
+
+ifconfig  # 端口
+
+iwconfig # 网卡信息
+
+df -h  # 磁盘占用情况
+
+ls -l  # 详细信息
+
+cd # 进入某文件目录
+
+rm -f filename
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h3><pre class="line-numbers language-none"><code class="language-none">scp -r name@ip:&#x2F;home&#x2F;wkp&#x2F;datasets&#x2F;targe&#x2F;images&#x2F;bz_3647.jpg &#x2F;home&#x2F;wkp&#x2F;wan_lab&#x2F;旋转扩充数据集&#x2F;YOLO_code&#x2F;img
+
+scp -r wkp@xmu_1:&#x2F;home&#x2F;wkp&#x2F;datasets&#x2F;targe&#x2F;labels&#x2F;classes.txt &#x2F;home&#x2F;wkp&#x2F;wan_lab&#x2F;旋转扩充数据集&#x2F;YOLO_code&#x2F;label
+
+scp -r wkp@xmu_1:&#x2F;home&#x2F;wkp&#x2F;datasets&#x2F;targe&#x2F;labels&#x2F;3647.txt &#x2F;home&#x2F;wkp&#x2F;wan_lab&#x2F;旋转扩充数据集&#x2F;YOLO_code&#x2F;label
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="wacth"><a href="#wacth" class="headerlink" title="wacth"></a>wacth</h4><pre class="line-numbers language-none"><code class="language-none">Usage: watch [-dhntv] [--differences[&#x3D;cumulative]] [--help] [--interval&#x3D;&lt;n&gt;] [--no-title] [--version] &lt;command&gt;
+  -d, --differences[&#x3D;cumulative]        highlight changes between updates
+                (cumulative means highlighting is cumulative)
+  -h, --help                            print a summary of the options
+  -n, --interval&#x3D;&lt;seconds&gt;              seconds to wait between updates
+  -v, --version                         print the version number
+  -t, --no-title                        turns off showing the header
+
+每隔一秒高亮显示网络链接数的变化情况
+
+watch -n 1 -d netstat -ant 【-n 设置间隔，-d,difference，高亮显示不同】
+ 
+   watch -d &#39;ls &#x2F;home&#x2F;omd&#39;       【-d 高亮显示】
+ 
+   watch -t &#39;ls &#x2F;home&#x2F;omd&#39;       【-t会关闭watch命令在顶部的时间间隔】
+
+watch -n 1 -d &#39;pstree|grep http&#39;
+
+实时查看模拟攻击客户机建立起来的连接数
+ 
+watch -n 1 -d &#39;netstat -an | grep &quot;21&quot; | egrep &quot;192.168.25.100&quot;| wc -l&#39;
+ 
+监测当前目录中 scf&#39; 的文件的变化
+ 
+watch -d &#39;ls -l|grep scf&#39;
+ 
+10秒一次输出系统的平均负载
+ 
+watch -n 1 -d &quot;uptime&quot;
+
+
+看网口连接状态
+watch -n 1 iwconfig wlx0ccf89606c44
+
+wlx0ccf89606c44  IEEE 802.11  ESSID:&quot;SSID&quot;  
+          Mode:Managed  Frequency:2.462 GHz  Access Point: EC:26:CA:2A:01:E4   
+          Bit Rate&#x3D;1 Mb&#x2F;s   Tx-Power&#x3D;20 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:off
+          Link Quality&#x3D;70&#x2F;70  Signal level&#x3D;-19 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:1  Invalid misc:10   Missed beacon:0
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>目标检测</category>
+      </categories>
+      <tags>
+        <tag>目标检测数据集扩充2</tag>
       </tags>
   </entry>
   <entry>
@@ -8076,6 +8053,29 @@ xset s off<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
 setterm --powersave off<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></p>
 <h2 id="UDP获取信道带宽和绑定网卡"><a href="#UDP获取信道带宽和绑定网卡" class="headerlink" title="UDP获取信道带宽和绑定网卡"></a>UDP获取信道带宽和绑定网卡</h2><p><code>iperf -c 198.168.0.15 -u -R -b 10000m -t 0.3 -f s -f Mbytes -B 192.168.0.21</code></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>linux_rssi_信号强度获取</title>
+    <url>/2021/07/13/linux-rssi-%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6%E8%8E%B7%E5%8F%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linuxrssi信号强度获取"><a href="#linuxrssi信号强度获取" class="headerlink" title="linuxrssi信号强度获取"></a>linux<em>rssi</em>信号强度获取</h1><h2 id="测试环境中，无线网卡的接口id为wlan0"><a href="#测试环境中，无线网卡的接口id为wlan0" class="headerlink" title="测试环境中，无线网卡的接口id为wlan0"></a>测试环境中，无线网卡的接口id为wlan0</h2><h2 id="一秒周期查看无线网卡信息"><a href="#一秒周期查看无线网卡信息" class="headerlink" title="一秒周期查看无线网卡信息"></a>一秒周期查看无线网卡信息</h2><p><code>watch -n 1 cat /proc/net/wireless</code></p>
+<h2 id="获取信号强度："><a href="#获取信号强度：" class="headerlink" title="获取信号强度："></a>获取信号强度：</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $3&#125;&#39;</code><br>70.</p>
+<h2 id="获取信号质量：单位dBm"><a href="#获取信号质量：单位dBm" class="headerlink" title="获取信号质量：单位dBm"></a>获取信号质量：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $4&#125;&#39;</code><br>-38.</p>
+<h2 id="网口的背景噪声：单位dBm"><a href="#网口的背景噪声：单位dBm" class="headerlink" title="网口的背景噪声：单位dBm"></a>网口的背景噪声：单位dBm</h2><p><code>cat /proc/net/wireless |grep wlan0 |awk &#39;&#123;print $5&#125;&#39;</code></p>
+<p>-256</p>
+<h2 id="网口的传输速率：Mb-s-1000000bps"><a href="#网口的传输速率：Mb-s-1000000bps" class="headerlink" title="网口的传输速率：Mb/s = 1000000bps"></a>网口的传输速率：Mb/s = 1000000bps</h2><p><code>iwconfig wlan0 | sed &#39;s/ /\n/g&#39; | grep -i Rate | sed &#39;s/=/ /g&#39;|awk &#39;&#123;print $2&#125;&#39;</code></p>
+<p>在程序中执行这些命令后需要获取返回结果，最简单的方法是，将命令行结果重定向到一个临时文件，然后读取这个临时文件，从而获得外部命令执行结果。</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.jb51.net/LINUXjishu/421311.html">Linux系统中iwconfig命令使用详解</a></li>
+<li><a href="https://blog.csdn.net/lbyyy/article/details/51392629">无线信号强度解析及linux如何查看wifi信号强弱等</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
   </entry>
   <entry>
     <title>linux批量分发_运行_killcode</title>
@@ -9738,6 +9738,28 @@ sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="
       </tags>
   </entry>
   <entry>
+    <title>network map</title>
+    <url>/2021/04/14/nmap/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>network map</category>
+      </categories>
+      <tags>
+        <tag>nmap</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mjpg-streamer</title>
     <url>/2021/11/23/mjpg-streamer/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="mjpg-streamer"><a href="#mjpg-streamer" class="headerlink" title="mjpg-streamer"></a>mjpg-streamer</h1><p> 开源地址：<a href="https://github.com/jacksonliam/mjpg-streamer">https://github.com/jacksonliam/mjpg-streamer</a><br> 这是<a href="http://sourceforge.net/projects/mjpg-streamer/">http://sourceforge.net/projects/mjpg-streamer/</a> 的一个分支，通过 input_raspicam 插件增加了对 Raspberry Pi 相机的支持。<br> mjpg-streamer 是一种命令行应用程序，可将 JPEG 帧从一个或多个输入插件复制到多个输出插件。它可用于通过基于 IP 的网络将 JPEG 文件从网络摄像头流式传输到各种类型的查看器，例如 Chrome、Firefox、Cambozola、VLC、mplayer 和其他能够接收 MJPG 流的软件。</p>
@@ -10005,28 +10027,6 @@ if __name__ &#x3D;&#x3D; &quot;__main__&quot;:
 <p><a href="https://blog.csdn.net/zhengqijun_/article/details/72473177">https://blog.csdn.net/zhengqijun_/article/details/72473177</a></p>
 <p><a href="https://www.cnblogs.com/wanghuaijun/p/8098460.html">https://www.cnblogs.com/wanghuaijun/p/8098460.html</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>network map</title>
-    <url>/2021/04/14/nmap/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="a8ea0b0613c97be02731221932415fecef9d6fc4ac82870e6703d456afa25b54">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041abf7605cc8a36ba7a9436f97a102c45f0783aadbc75f8627903906aba7d2d3b60d630a31eda23bcc87981ed9efcc289185ac0209c84c63f5cb239dd0cf9b0b16a8dc2e4c5a28558308e4574475cf29ac3225e4d7cb17e1abdf52059dfa0b8a0cf610925fcf871d059216dbe02c9a39f300da11597918620e91dc98a0e3bc4f8b9bb17f1d976448ceca00d977df660d01b384501853e0d4aa9b2ba4faf192c2447cc0e8fc09ba39d6137c6109ad98eee5c7702dc1cdf2e7234f54f6a0debbf84f172458a2c9bdb46d7109873bc9dd9651e1932d92d47e71fe4fab80569c3c2e26cce235fad9470b0e1e5c93479a65f83aaa680e21dd533f85844ae08688b55ba9b3b313fa09413e45447086a1ec589f5d2960ab24ef48479afbc18d757dc4118c5c93a8ac61874faa7377634558577c72db777672610c27824eab5f66255b57c85a1b19b9069c722d1f223f12356f13262f03cfbaae031670931ea4db810224286e3cbc0f974b7b307556b4988a3421ff95cbdcb66f0c19b1393517e21a55183af6c6aa62cc1c58f16728b30eede7cc844b176420fc95f18a480b9c1d3afb34234de392f031d76d16c6bcfa22fcf2aac5efe02f04a5a96dac3fc392813d78f5e5c016d125cf6a05b9b641895ce5279504e7030a0008e950fc0343da1e87b085b5cffe0d34e86395b566d9ebcf2e1086d3380ca056a146e4440799f0b1197b4e621a5f3a78e3ff7a6d634874ecf75826404317019ecc8c09ba51b627830fdab4ca8c6ba4c369655bad27f52d5f56a2ebbdcac8e805a1bcdbe9a8fb346b906211f3febdc1d3c95d1c2c96a4664d831476d65b5b1535ea546b724aac8a969ebee721878cd94ef56eca9320395fe07b2b4ff48cafeffe20af2c0d0d68e618b769b4b4b1fdc78cb86bee53a6e4bdd52b247073f34643f4e4d4d3bf20f488bd46fcbc2a9a06f8184b97098d3e09ce85ed2cc47a043f65c5a9c189988c3c991bd756b8b652276fecdafd0b8cb87990ef3003850e48efb79927b3323db9d5951858a73d945d0588b613a858e1c364e828b976210c1acec4f71caab4aa85a34e371c026a2873c00ce7c6e65b708ac68713431ed08bf4cfa863002d7662b5a4b17eb9e733a3d11fe761a92dbccb9ee3c1928adc3680462e18484e6db205b6e40fa8e17b2c42279fa419817094e805b5a1ddfa0a29227f1bb67735a207e703abbf4301e6e7c3502570561f5ce02ca310a2f92507667e923d01c1c925bd57f957a79d4e3bee0189881a5a2b12294c30281ad60f200d34b3be93efa1ff00589b1a0492db311ba7bf6bc0b67cc085eb4529dfa29d5762e7b8d909c799a310cf658fe87f2f6947a9d450500de0f2ebe259668f9ce047a8a237decccfc7419da29e078057efe6122d76776a90ca4ebf83957d06adf30a2d4e058bc8c3f95dae5c250338ae3eebff25db2765f4670a20a644741abbcc23d37317c75fe3bd917661b9106c006de1af6244f41f0aba03e1f92f104d150b08f08da58c0171417e691c34343aafdff39cda3e966d5cdf1780933a4357a38ab838cdf800d7e18331e4f92d25277ccc38fe4b9c6749b863ec96624efeaca6d4be4163b03849f6fb917a4770046ef6d13c9cee6933bdaca5eb6e03debf0c986214839c12dd2450de1986655edb9342caf53289847e38fa03050d6bfdd1a9acd755bd9b2a7a7161bf4e065fd8b36ddc209aa0ad84f46054de440eca443ab00323ea01ea77da57ca2af91e7fb6f50c0b49a3704e04953ca5658a75fa27598c842187c514d8c461b7a27fc08e0cc32e05629253d4d872b0f51dfe57d1ff5bbc807f9540f099b475f5e6eb4bffb402ae280e1234693c29dac4b4e37adc2da5083a8f26cf1a02815c8af4bff11541f80e83198745257a802555fbe7b3bb9cce80c211e0b0855e29cd82d87bf284b6a24fd1a60a7b5678485877d0fd9b74df08a8c9c85936a7c2b5366676c76617f6cb109fcd3c7da45a8024239f03e5ea8d84612c25498869de9c050e40da6ffa1a7e18f3abb0adcfd77b41466a19ef6b982ec4e6254a5975910fa59474962e288e5b05b00b058fbd20c16f71b87d53bb87648ea1a31bb52b3f7845ed758f5ed86ee4567a6a4dbc1a32cb04b3ec3198f64234d362985ba36c1ca5cba34f3fde13a0b199e388efbc104b01652a4a32730f143dc0b65b188b8606178ef4dd8ecbed6303486b055a713d2bb3be215f85cd7f96ea0098475911153064cdb1e898c6fcda306dfbb4fa5ee5dcc66d7a247a573d3f2cf25a9e83b9e012faaba107100aaafe265b82348ff7d2495493bb0f078ca15e6939073cce6cdbff60a71de4bc076c0b3cbca3b47dc78ee97e39df31ac22d44634238903e5f011f9bc079610a4acedc7ab206264daddac07df6e0067e5cce1a95ca7b1bb48d285e90f7e02b5be6cffd9d84a060d7b6a4abf4dc0ba7fbb908e0e625bf79b486d5b3a7b2246f5d9596bbc48c4c5d7cccb4f2a59fdaa1822234f4e3265853552c1349e88be8010d268fa3f104d78846e18c6548c77605486c014b0d3655f4fd1bc22046bb3900ebe4a2b366f78a217647f679bff4b8b93a4a850c6194f7c7cf406163933cc5828d013ffde86683203a2e71ed636860c569ce463c98127fcaa2488ca67cb0106144e668fe727c85a36202b7271fbcfce24055a4efb13a54f8e95fd149e4c1371aa2f2c329e091db9a9ac7d42fb75762a9b0174ffac05bf1087d34f9c272ca1cc5682dc85bb3f8b4d04cf758e5e2ce76f9592933bce193c130cd29e6c2a09c9bb9a7cd93ea20bc72ac418030ad12148f4811be368f9e1b0069208f970146914157c9614ee960ca2260e22277ad9d4d9c469fb1dc579f356203df833fa51943874d3958e93e8f0adfbf5ade9e5cb0096372cfeb00890af7d70b5cb3cf8928673000a421e61bee44358a0e1f5bc14bc76000eb6780b8126df87545215c0d6df49d0f08de6bc515dc78aec1bbe38d4772b25323f11f9e6eeb5d68ae430c3aba9a59383103008ec40c729ed4227b7504cbcbb996978076a0adf583c4cbd84197d73a98be703a18699a5f023f317ecb6776cfe36a305d64630d54b48f279f4fdad006e40d53eaad753ddd314f3362ed7159a0fbf1390960cd3a43a8bb20abf0c45a2ff75b361a461de96668068ca597b86d2139820f799132f7e33a15a622c1313217d1d2ccfe2c9c02a52fd6932c3a5c1c4456d454e9b262b115602220d309fd01d63b8f690c092d785f980b257ca14ea60f14c3ca0687e2e94eeea4db6a4fa85815de53f826d52a9218f45834401f3f9cc680d6779b6127993c3b58c108cbbb6a226e99ebbe22edebeb577a46dac0ab5ccb09243bb965fcf72ffae388609a4ab6875b001c97e006e0519a09caa3efca6e956af104d80d7981819f4ccaf965e500d55ed5f3f7c3155768a4225b61a5f4a93dc0c81f65ab152b248fa06a34466e1c6ed5edff5f6ec248ec5e2597d6f14592de3802f53393c9f902278bd7bb2f2ced3f00c038a5143e23db99b647cd28b9313ff67e17ca0cb4c4b71c361752c09b24f88be41d9a5cb9298f4256043893aae2a4ec2934e8f5d2605228fb2d35d1b33bdca5c8aa2b564b1a8892781258017cc0bbb66ea95c03b7def63fa23555cc0fdcb8d13472493f8b27f4d7d6eef66d9b4990904181bedc7be16e9a21005f3025b3bdd94e78f34c46e6a1ac2b36612c36cf1cc6632c86916b40e01fae8cb56783d0f363ced309edd665e0a1702e2e0b10376479aa17684ae6af5f4640aff757cf30f0c63efab4bb9e652993859ce08ad00f5f74313488444ff88015ea248e52318840178a9d67f88aa68b148dfd027f79fb96c9ff43e260b52ce799a4004dc5c39676a541864cd19f9a1f4b0e7217aeb5059af86b18e140ab5015fde49424895ed726ce7f78adae45be8eda39ee93ecc9ddc764f221563843807d6115de2497e7652cfd3165b9f616686f8472379edc87c6904cb1eb3e066117096a4354fc7e84cfd3b3fbe68aea1f14392050d49f892ec771232d0997b0c2c503933f8ca6fb6a200293fcab5eb40e702a1cac72b919521bfc4173292eae9ae8e5299bc931bece2bf3223a8c066e919b6f7b4aa78641dbd55622e2198b2c52bb4386c6f78d777a57d083debb80288e6cb9b5c14660b5ce90f2a2e69d12af84be4eceba0cc8902e84f2a4bfb670d4acb8e6f821760ba33ad99fd33180c3d70ab56a71ae211c28ac54a617ae03900be6fc01cb9405aaa9ef3cf97ee84c68dd75911c06dd331d3738fb3b6b02da262b39433f19133585dac59116b2b18551b13c8155c6ac718136953df8cc5a22f62f3152e9afbdbaca9e3421fe176f2c1ac2649caec8859fd1dfd8eb4c200037314f1cd37666c232c261e611facd3b9d6310df005c343b97395cb291c0611c813e44bc7b4a949e1cf40593c3c0456458786f704bad999f01e2db077522f329557d1c066fec7a0087f655c10508332213020a56d771d02380e1b1036994459d893c92eb5fc257b6c1feab23847e042fa523485fa88deac22d5077b48a60245e7d1ceecd6e71b092d4f20fe5dc374a8179728470e4cfba60642b3a99f9d0391f92d4f8d5bcdb49ebaea0a77c90ae0d26b0386251e245fffcd3d7cb9ad53eec15c25e5eb3fe57d3d05cd8a917fe45aaaa78f007dcaf4a0aecb2b2776eb73e36b98be4ecd7e796a9b7da08d0e2069b39bc1f8e7b180bce83ac792699f479dd7ccd9128ce78116266c8b9d99d5dd913fad46fa2a9a9ab7f9a54206ab78c8c3eb8e9936ef6927a733c35c7ad2a8bc24b5624a647624b644038416117d530280a261b0d961eb1dc8ce82ec9bfd6afd02ed3832d65b731ea16d037767da049501521db2708e7d3f81dab3df320d41a47a34aadebd9a31f544a4af8960b5f10cf22f083b5c94c2639a198636614ea41b9fd85739f87e6c12a6363a8dd606a8a4d9e3049de9e0b60edf270e7a9cd8ad4bc2b02776da78de2dd672e42157ae6b4c0a4b49d574736887184d892ab0f069b638084fbd089505953d749b20451ccee71ed7efd12f98a6a0f18853d4b58197be2dc7cc42fceec23ab726417bdaf67e0fa000750b6dcb22d019b9862ce92fd21fca9f30e41f068336347cfade30fcd4e89ff0855026c5cba4ded200f63a18a4eafc3af9e0852cb74d17ebcf9191f8875c1336da3e85f02726355615295d1a6ee3da56c03995c55b1ad1755fa94d4431b0cec2c896570b8f39c59d0a6bd3a81be06ca9d790a9f319a507109a795b1b05c046356d90757a1279efc8910d704dd782602a7cad1254b7ef265f2acc214a23ad223b268f6dbc96db842981880fdf22c2dfa6439c2a398905e37571220416dec02113ab1b10baa2f89bd948493c50</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>network map</category>
-      </categories>
-      <tags>
-        <tag>nmap</tag>
-      </tags>
   </entry>
   <entry>
     <title>openwrt_树莓派_mesh自组织网络</title>
@@ -11800,6 +11800,30 @@ export NO_TEST&#x3D;1<span aria-hidden="true" class="line-numbers-rows"><span></
       </tags>
   </entry>
   <entry>
+    <title>个人简历</title>
+    <url>/2020/07/22/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="c24044a225abfa8c6f2bb0a0824ab56734291f3bdab25204939b1606ce7c9898">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041fded3619c9407c4a8ea2c32f3db7a50ae16ca825f2f2ed6ed54526c54ac377a990667edd97ca04cb3362e3e7e32e22a4c08966a17cc56dc56485031f91cfeae02e580dd255436c233b734f733d6eb4d3c20c50fd345e6b546d4a1cea187529b60288a8a79a25612c15af1a04beebd9b4fdd626ea27fb2a2083c2c88ad1a71000d9b2e03099c065a3655cd539c7fe38d052936de2187f6bc677cfd056e8a31c36ea7d2fa4a5c575e3014a75dda3199fb05b448cb207704950b4f169f6754b989f43d282968b9b31cdbd6d247922c88f9eaef9ff92950f52c06f4dd08b5470ee337dc43d5cbbfa3863b310e8537acc273c407d1422a494759acab6abde890b122c349a2acb2eb268da3144eb81163e25df555a56da413a7fc1089944559f93bf9d4747b20bbf434023c3faad8f83d716d17a70b6ac6223f5d7fd9d99dd6f6c3bb699306d139633e6312e260732034711159c20e0e7eff9f584d194a838efd652453c1844441aec8935e4763db6f2c32fa68957a3437dfdb4a6935a5c81a5bfe544a609ab4f4a213db61bceb79f9bf7b6a5d48eb07120bb0b008a24b946282610932cc76f4d02ecbba74432f61d81db8528c9b9aeafb4f661e40a275aa481e10ee2f18391a76b4586c9c54172b5190f5237c79de4ff0fbc591772efb58a28c2bdd73786e8d8160bbdfded6741b979673abcf6e54be73bbb260c75fc0360bc3a1313f9b9aafa892209e3b011d20fbe619f759729a9e79e0e837a599cf6d082d90d0b3a2ce4a9712f815ec5d9e54eddf05600a4cf6edee1806ce77f66f903abde656e904330b9f2bd003d840bea7184ac3c4f8f64536a29abfd29b531b56836d762442564075c0b49da48c55485b4de40e8f73cd9b2e40c05c5d325af5e2feb6841fb85d966a36237d3947d9fa761040e05869d4210b4f6775265487b43bb0d72c2c4e5ec82c5ca5d010035f64c111f3022b0e4d884c81d20c7a7b60ea64fa6102a56c384219fd0385af4a4313f956a023beb363e728b14c1c0a1f309bd8cbc3fa9704fdcda860845455ba24d6f3d0ae0bfda882cfa8609b60e86ead986f4d28b0c7c00091cc05161f405ba55dae5fe15f42ad547c3242ff54adede60c76ae41b3715c9c43949946b74df5226bc47a89bd984be6db13e8ec6676a1421487340a89b9824d559a467555a9ae29bfe4f0cbd267d2520c348b1554d6a31ccf99b050f9fedc3157cee4c1ff15f93cb5905512c584df340e0cddae7903a874e6efc11a0f58ed27cd7141eedaa65d4f8d691edc9b74ae0792885722513d582959c42ca03c99017a16594b9f6e92d960217157a82b677d281558248d81269240b3dc96d19a4abb49e5d20563f1268cc71596a9aac98f8421476d49b82bdc275532e4484aef2453446f0b3f3329bb88ee120bf65317941d36d5a41fc47d656468f864fe560318b36154f8fbb2d311f54d77a5e014f6ce85ee7746ed3e2e04eb6376798e3cbedf612bc6cf59317c4f6a9eaf149b2daf34fb9c5012e0ae89420b1eafa9d8f4dae81e7f196dbd302e09a2ff0dc6edec2f99e0179219f4fcd88cd42bb934bdf08570ce45f8c4450bb6a25ed8e36fd16e4e39c4a0ad0de03e4ac200b15ca51c3bb1bf09b664de16e6c9d45e0c6467103461617abc4c80ed37ecc82b751aa4290102b16f2d7514a7f4cb60d13d342db90e754a09090d7bf553a80acad3911167bc8dedc5e35d20c051eaf58521f0a1bb019622df73ca88131ff51485ea7c03f07ad37332a2194fbc5cca12c541546142140919b46c178e8fbbc117f2de33b9a89a94bead97fa4a389fd7e61b2b493f5cab5bb491d99b3cb30369c9f074d757a76fb2d6a00dee88ae29578be4dbfaf9ad60c1ee86465751221281a386e37431c1c2e8281ec967a6758882968b67804ee253c4f0b7eb33bf0c6a1bc993e2a51f04eba94ad42fdd13d758c73462278ffbdb6a0b371ea974c414b6201edb2c41070c8dcfd1e4177b1da05ad4bf47f844c026ab646bb29e5bcc9c7e46c54f082ef3c5c998b5a0d5da8283807b84250906e468bf8e3648aaac2ec307caa0f9511c8742975ce8d0f27766dd6901338ac06f12a50ee8919b1016407a957e1af25ee1701cf5689fb76c8d21c4009b1c2b32292df278daa09dd52604921500b31608f0a8dfe16f9f78acaf29cdbe7f65418ee3e46975a698cfbc1e658e80ea0d6e736016237eaab4c1972f4e9a36e97a08cb8c702d60a5d8b3aa17ff1bd56495d8846aa8c43018ef39bd832233d079f453908a6b90c6b8bdbe87f407b44f26911f8da71839934a35486c6e2ac062d9eb46d7a0430d3a076f9fce59d6e27af9cafd70eb36e11d07bdeeef182c58b74292a1776f405d3ea3b519b86ec97f5cd367b0ad420bbeff334470e67ccd1d6ee13a6d4f018ec5cf9de64441b2164daf5251aa6d79b749150672a99a17b22311a977c40ca340b46732674a355b38f8e2ca8fcb1b48ae3ab980e26b4d8024efb731793b3bbb0ddc2f583145a4f1e790e891eabbf83df335f09248557463c0a0ab094ed9f64c94ad7af820da7cb991a75df3d8cf90e8d5270393a42931b67e1bcb76db329b06f266898fbdacad95a3b173db35e102d98f443c7b754e6ada5c9ebe39b998ca35f318a9650bab1d0433ecb4d51ec8f88abcb83ccffaa66f12f8821211d12d5b1ab7b338ae01ec0b3cd6df1d79c19080b0d72699fdd02c0d4048d442720b2cb8f402289ef3faed01ea3d4ec7e1c4e8af6dab905b6154c4e734c71778ce5706b8c710afff8f64fa9cffdc9b53c4af45694de5e205277c70facb35d2579d5c3b4cf5a2fb2f703b2ee5432166b79b08c354d984167c59439c26625a781dc40a705d2931c96dea3d248a3d5597059bba2b469df634b2c1b218ae2a2ed5f10287f1a39522a007a6f0d933b567ddf7f389f59b172bdf02098ca296bf1c3f39f1ec43c64b569bee555b19f1c5eac90e4057aceda08aba5ba4a1916349e89e3c6905097ae11fa9a7c3a7b6c7f3eb9ee539e505c4202099d43177d67c991214c5de0c7cb35967fa2a752a0a536574cf15a8c7eeeb0e73530f12984bf4cb003920f9e193bab65f9ebf3e3f385eacc8ec6f83453a43f61c18fa546b48db67ddf72eff101b16d5715f27332b3a517f7bd2935ed30538536ece2e3ee82027c1edb74e9df46d207787a848840ad26215eadee4d8c637ff3d291e25fb215a101566563dd65bec7146dceaa32255b445c57cbc17f28cb2d061260738378c0a3b9560de0102715fa1b7a18cac7aa32fae0bceed791ceeedde7a15d2c194acbb074ed7d17348a1bbdaa587d1e4c976f59cd0203c80666b13b51f1db9e1865071363086d4ada0a3c932d5a5c688bf7575a883704aa42ed6b9bf03407c743fb7a3bbc0e93bd82922696a7edc65f0a84f0b3c32c698f48c84411edec0ed5c5f1bfbbd95f93f0ecf56a122f2ca3d90ffb07214eeeeca86faf10d52dcb42a2e85a93f652dcc75be8aab13e4ab2b6109dd5afa37f1b9219393395757f6cae6d9dcb5bf3f55ef727954936fa4050cfe8f28fed5a4ef58f6be1f16093b7e5098bf5d8e5a97cedce6b612de64806607b7154d746331199850459577d8f730abcf40ca4a56ad8b905d7cf1ee711672961da6d99a092796beecfab0b054bd969248d0b2d0789096260b62f26121e9c7a48806a9f6eb2268ca9bdb58122fb2629fd3ef380a268dfe7e372d08f7ec7920b974c1aeaacfad1dacf4d72b5110b86a77b66fd49081e50f75e4c4e6804b415508f027dae9f0792b7191eb7d675a1fa042dac32ab90e134aebfd208d73d807f3e1530dff45de1cefdf1b64823fc9913189a960c7e8177dff81f873521dcbf732c555f195a8a5ec14768266729e249ae3f21fdd23f115e842c98484df6a387baea0b774f8887ab55d25e91c86ff9eff11c23beb3150fbaaffb0b50a5ba0279173ee34e100201873688cf34a8c1482e98cf392af6a75c6dab508a1039dd01d7915304dd0ce8fb6d036f2f224dd45f548cf1bf662ae522ede84ea5b05587835709244f24470b3686536d70faf0514a5aa188742be2e21ca4ff0b3a3f7cac1d8f42d9a476fb1b2a8a1ae256eee8f69793988655b57cbf65136e6c2f003c58923e7848d6f2b5d3ceecfed7bf68918bfdb8530fcc3199a24bba06b350111347bd10f37a010b0a367c14e87e2c93f67f5cd67fc1a0e13c1dadb3918ad96e97be05fb6c2d0271f5aeb8e6be70e1224ad8bafaf9a203f9fcdff5c6421cf4140ff92dac41fc0dc27ad1ecb3deff4052921c4047d08392784c172b4f52963168b1bd50eace4ce43d066db96e7cd4ab2e8f99ae837cffa99847335bab760f99e2301560831e0e3a0f929a484309ee7a9ee0ab05d959656f85caaca972735d573daece8c4a573f3aabc5fd930cb342c7a343ae7d9711b670fe6f3074d706e4f06100b78b11348b29fcd65bc46f01f1c6c5a003a63f2b37fc8dfed86e1985ef8a12218596acdb71899f112ee34c92430329dd86dbd5b44568956e3fe32be16508dce4e92575116fae00f11755acc5866e42d2e735ceee87acc29cd0963a182d3066323d034e42f6f0d51db757999b836f4a69a71a1b61caead3cef3a1e0a769548acbd29a0bffdb6eb0f321b4ce7c2a5445ee0f452fcd7d844c64576d9a765fcd03b44cdb3dafe9dfd7e3fa66fc35aa752b3f362dc57238a7f728727540cf7cdfd4114cbcbdb1489b1e13f6a46302b7ca938f8b2b8ebc11516f1e2cebfd1c33ab26bfc476c4e95455981df911519050152328afe4b81790eeeb0ac2a53358e4ef7f01ea76dac9875a6e48392c204de03514521afec5b84f8df3c85fc264e67577d959664efacc431142ea785163e19f81608689dec1391604c7e64b8f52e92f940d8752f468dbba1937e6ae3ccf15a030953655c8d3fff61d4bdfac305ea945bfc651c222f9d30ee045b0401a3f45f2f7d977cfe9468054eebf74d52355a406dc7f112b70d76bf38a1fb5d2ca9f9966d74839baba51887196f832ff968cc5bdc8a6806af6cec90c5838aa189c72015d208cca2306befe765969ec9ce2e93999a488f59cf274ad283d11e6fa23db70e1a87e1095b30230a218478637e14bf771e5a3c3924bff48adfb5abf50350e1c5f165a28a7c4b869fc45f2405b8c35c5ed40380b64ab287689009d959eb95adb46aa0220136cbb56cf8dd73464347e3304a9a69dadfa615b98da012a7a44f6ac7abe683d7229610302ec68c7d7a4c336fdc92733533bac3e82c01e3f679d0382454b162be572787868b72b852e93ab50b3e531de8fe95228b700a18501d0c0f71d6aa87902b0db95fb9ae0e2b4b6cb6124a7002d3226e051b43ca172f5a6bbc741619dbe94c2346ce594254dc9345b08d0d8a102efa5825d5b122555387b7d4651accf34622ba43f9f533cd4223fc3c97f5f89159e2dc2a5b8cad4aaa667f0f3883448724400dde25016dcd0c4f9acff699456581c6ce46df4991130494cf2298b32add0b9ef16a8ccb6715129553005c05cf8875536bc7c7a02bdc35d12fe2a86388ad767ed72c005427888c6a606c662567be1513d42c34a6e0f226316b544fd7e1245ebcd6ce82b0262f6397f24fc5959632c11f39f51ef983ce19f8c9ff091e3abe51b888cef7f6177d5314cef2e96aa6694d9fd242765489449288d9091985f68c604aa2b513e394cc61fdcb9bdc649db61bce7f7725139e9b2bbab192d23297b529f49f3d3e157cb8bfbd3b904cedd6e4ece2d8fce4c57b552647ff935e13809f2fd8c446a21a18fdbf053fd1e445474cb2bb5f3caaa55af5fddf05552bc943279c85e7e4217fbe232d53c3a3000c86a25d81c1435c9bea2eb5e4ed7679ebc609161fb18d3d26e4c3d97e0ad8ad13ea0d2ae21feed624566508692b3bd949730c5d1048898abf19b1c36401ced1154f1bd81d7e52c9fedbe82e55dfac18dd1057fd8c0601c87db1c88afc952c4cdb46280e1ba6253ae7a5280a5d92a681d4edea8860479582c0a0e50463d5e4f1a2e8a7753127c5de943c62d2c6f150cf61ae75dd1b74b9da3d2acba536ef84236c79d567a91fd1bd98fcc047f240431574c8735d69b8fa510a6399b3ee373bbe5227e8da751232228fb70ea56ff22f144cf921cafa5d6338318c66c1ac5e987afa02862c801a64482559d36a6ef068334edce7010f0ab58ac5d533d5e1bd5ca3137ec5315a37a2db1f64d753e5ad068c65a001b266c6cc6338964514b376f88cf01ca91e48ba84d2d4575acab9951fa027eb281455ecc50f468b33ef9c045bce86991910d282c24dd88387ca71453f6114f547d0028b9b44fd27ad372cbadaa5c0f4c7bb228cfc65d24eadfffa83e0c13cda19494dd57d2fa5637b925b8e6d840ec2258ca9cf1c0e1464e3cbd028b1685bee268512c40a0c48f3bcfd97596952902df75be8bd5eced1f0c9b0081ea1dc986237951f52c6f8c8cf5a102c86e95528d53e4c589dca18a276c48e5cbf90fe326c665080146f24d1f73d46f3ab469664bf8ae90efcc67a2dcf83f1e20ff1234709ff3e62f744b07a87dab0567ac4bf35d389131ed9476ea2183d06b2ebc73319667d4c493c1b3b3b89fc76575d64185ece972d2df37ad317cd18dcc7d6d22acc5dfc268a02296ac96e1d0e7c4ff2ab74fe2c3aa9db3cae66ba9198f57a03a6bd4dfb1ee4b0f9385baae6c1f599eaf4dd9e68645b18e7d7551eb8657f2defad37601bc0797b4e291dc4e2547421e3f4e2bc2561ee85321219844ebfc025d151d5ddd88f4f8bd6b085f78cf59997e0b83c2180574510fad2c2d0320ad4516aaa7e4fcbe1683ee1b4691678a725bccb7419e1e44ce2aac428a1f572e889da107303c5637ea99169f25341b48f48dc6d06499d660e45e90656294404507a6e7e183aaba089a2e971ec73799a6afeb0ace2e95fe53a7ed02162b8476baac7c7d98ccf7cae4b6e6fc6d965c155bc7dae517cc91ee98d5b83e042313c2981fe6d2fde119c0da593caa32eaf38c60d540ff94622f41fb4c52af5fbf5381833e212a2e07bab20a9406756ee3e7cd69095adc2acc0542c9039d06360164fd70f5332e12a2c37a8c1e5d64a60a4b36d75ec25d6e42550af514d989403ec633eaa36d398ae17ffb112718f7be29a73373351471c3ec6edb66c35c8b5e5465200f3964645bda40129df689d730fd763e31440f9ab75d867f0c0b1a1820111c016d19a39b5e8e899dee92173afe658bed684bdd61a6d2027f43e44a285bca4531973d970308c0415036361de4a12d7f3eb341f0a5a9a4bc8d8d36b0e3e7a23eece836f6dbdd3f6556f0cbde3c56509432f2685794591a64d908b070ad46de6fe5ed1018ec1f412f579ab6f3b721dd27c8fba06add9aa078a7b79dece89c7130f4f92bad175c4895e6f5be2e9ebb04afe0daaab1da0975a2972c77dd7228bc0c16574e04731830ad493579c9ebd3c47a5510ce6401a3a4880a26ff0522273fdc143d87c253be00e97ebae7535a4996918e68ad45b4658efd59e7f1127313b6152fb905b710e0979cb29451a2fcb65e55c933b051eba45e4ba518bbdcef48c32889fc1a5157a73771c98d110fc3849ed954f0c4a06bb6793254932ed4f9c242f516784573cf8ceeb06bdc2b037f48d3df835aaccfcf45a2dffa4760d9c75cac9658583b2d95c58404aa4f0a803872639b3841c4a2c4c29c02dd95d111753c9c9ebeb31902f487c2fbdb395c4ea97821b198a3bf0e517e04c88acfb2555a2aa3538135d87ff0db091275234cd0e524965f1ab3177d05eac67edb22e30703946b1a3842cbc22e0ff45d1bb6bc3bbc502dbe257267dbe40204e7208534f88aa6372b640a320f7dafe3a20b2a0221c761584e786068c8119b1986ba8c532f62ef7dce06be5e472f1aa0f5960dedc0cfc6be144a02624d5907761dd6118293e7185b22e3960ae2ac31834c1ff041ecfb2ccb3d87c5439c6820f656aad4c83e9a520afa8a04149f5ceed1dbfa67a0a2d8fbbd51fd750b7c9a8b5aa07a06bbfd0e1f5c0541a6b81951452b473eae0339fd9869b0587fcd4d0bd0581c11385c56cd7dbff933915b8fe301ef967ee4921f323891cbc131294a978f3f4f5eeb2a99709ebc26a44d5e80c82032aafda99b2306fa5c3f6c1e9f98a32398b3be661f5db0a7545354d665349f59d620148098270ab1229ba043d87fc16d1bf4c164cf610f8e4485900c84bc821f5b87a9aa7868206060546e9ab982bdc09b46e94cb8537969c1b74e956a5b735bef1377069f35157cd0fe4fa9c92118c1ea7c85c6d142f2b3b76d03bfeb00772af044126d209cab593cc936a2329626ec75e04c05bc4ff2ae2c037500c80cd21101590577efa3ee6cfd13ff7e3a9532e9b7e57d4df917004112710e12d6af197b01203118086a89843e7d6f8e73378b443998a8bd91286f08527bf083720de025663c1b06f1e778bff10d0a05aa86c3a9b57de414474e1d91b5e98f8175e343d7af7b2560d14a44adfca086ef71eed452bfeae89b7ff0afe36c2aab64504ef608bf7112208f14d4bc2c02afd5ac300c4495e566a77053a8d8f3fd6dd3f98c0e22ea4bea7948b2a3949dfbb97750e595bc3e1496ed5fadb68247202663f5ba55576faa23d768f56ad1072b061cb8362ac074c43930097c262b2c00425ea48ee37945ad400e26af383ef5ae76ea98af7e4f0921743d1bedf8c6d9989cf55b82ab744e32cae31a2101717ee4ffc8ee5f7b6d88a76bbb5f52914683801eb0af01d6fcfea6ae9e0cda37e8feda3b3b5d21cbd127331f349bd647d243a6b3d0602bad89ac5751cc2b88438916a48004b75ad48cb71c7417f6099afe632c0c8251fc5fb78329896a23b2a949928479396bb47da446a0e7de8ce2b399ce3f595c9125964fc979850554dcb8a806c94105d11aa1bf7c4c3bb9ab6a9b3fc3640b8ff8faa02c4eeec2b37c1f9c86d0d93ecb77a666b183cc679ae84740653644de66407118ec1262dfaef2de8d16218abb838ce9940bb0b998e129866f606918dc65574a00d09ed309ac9ce43069e58a061b5f8445f21bffcd9d82f43cb110e7c44982dfe749536c699763bc4465eaa74099c534c58adf8b05cebe1de240565f4aba6e1bb08d97c69bc184684a5cf5d08d12e5434ffbce84923cecf8c4859b662707c0fc503af5eb449fb104ee6102e944030737447929ad119f6c442e0cd20d35a400b01546e1270218e76c4229d16c6dc5ff404cef3591228616c06d800a97c35026300dc68e08ef0b144ce2ba7e2fc98562de19868bba9f4f8a031ca29fce88a805deb655b7e60936502496d7caec26157734adb1c168a0fd270a7e6db55d0b95605dd40a20e82c9093dac433597b75d1fedae4f7a27ac1f7b554ef0096b30c4fb13b19d32c6763314a6c70096c18469b2cba45fca5feec1cb8ed742aa61d399c44e206508522624470ba6e6353314cdb3b281520971eb4fb49a7bd0161f88eaf2e8c78525b2209234f486039694f9ded7451a3d22bfe5e59149c7799885fedeb373489828a4fd128ba802725f38be533b904a10afa65ee86719f777196a425944f934ba6eb5632d838920dd755462bcf2dc02a6c9d49f72d6339be53b345ae6a4ae3f5a83883c8ab0fe4dee3b4327e531b702d5f921563fa07b9073db24a2ec39233d8e004cb37a0372d01bfbca86d71fb8b65a5cda7b4555201732228034d612fd374be13bac77ca9d5de7fb487d6890729f3e34924aebe8926daa0316cd7c14402dedb9f808786d1719b850a66e7a1dcbbf85d45202cb3784cc22fedbc26c19df05fe2ea37d48636a40c057984ee5b48e4aa5ef8a2cc297cf6e08acf14ad4370680acf26bb3d68e85992070a0f8ccb7094bba90d7cac2a489ed8c4d116b779b221ed0da5a7aabac5acc1ebc115c99d38725ce47d79492505a2ee0e9ffe50344f310b9f69b2e7f387aeee6ba553f25b76d0a9da6dc090109372ef11c448d7bb5f2fe5407d05d3568e7540e144a41c762163fa9eadb3cb6143f23d3dd06b91f78b40abaada0c9f26e6860e610a2b4c3ce4c0b70d562262a5c2ff205fcafb0a949aaf444d6f904276e4e5a48a7f81c07de6534cf53500f593f88dd9b307416a5246e7373dd76ac341c7937070cb1a58992f37925c4a99a9e9c8d6cfc79e9e33af0e9dd8aa6cac8e98535076e83b23cea2cd2e074ddd33c9a0814d8d80dc89d0f7c5851f34e1f5f7c6f5e3207cc045dcab306a542bcf18c30df1f4a7ec8e70ea8775fd058c841578b5704cee361599b3b7495b0a74529e5948de13b9128cec5f3db500e238e182d5e2da96b1dccf29919b698a492e62fda44bb403c07edb6ca3596c4fdbdc8b5300f6127f37cabc49d43b94786fdb9c5a83646194e88fe2be7b054d88b0b1cd2a71fde9fb5b38c027d5550036ad6b6cb1ffcb9d4b9664059ac1ff3aef4588e0aa417801a7b1d9d48e23276d8747bb50b1de53d24d924eff56e2755b326f82dca8f2611d143297ca6e7d2a8979ecd63368619d3024217cbdc7ac9db3446ec1cbe1b08acdc91ed5da7d02366e5d93d717117b0c5aed11625a6a2ae3f9074f8eb727d582a58089f1cc3149ba09f2c69ac5a9701e47c579a562ea237ded7babfa591187c9eed35851490e757c3a7408577e02a8d1302ce18ac60df440de346cb0700be0ae2f69cfb0fbfe8e35965cbc686f6d60cda50a99ecad2ece124af41c376e2d4ae3d1dc89c2393b3a0f64151847b05b6155a913e591df0ec47265580856c08f6f0eca6fec9d643559d3a0fa401cd5204231d12913beaa80371bf3a4c91cca869a1aa398cf6dad64c3b8e9ac56e20621dea97c39fd6683dcea1d9ee6ebbc6ccdad7b3be7b9fad39f7e2cf672cc3b3822f53d5e2126a4fce4688d2fba668bf34b1aa27a27ff43445c988c428f35047115beb8766860292f2d29cd0580b44cb7fd535f2bafeb0ee57a79543583e8edddc5b41a6937ac5007a56a35746b0b462ae1188a92f50f1f32c0816d3c7128aeb6170fd16fac5d510ce2d9d235c3e3149a131e16f4d828b11d8650bfc218fe8b60865586a8de8d25294a53be46e316eb31ecb0808e65970953798628d020b179aadc77bb6191dbbe12516491cf5dedf0e54c26b8df0d630b362b817a5606edb48b8511a436dd4dcf171eac1c5be945125af8379c8e28590a1982d3decf0fe92031363931f90fa50105c1e59ee62cd3a4d77192414e1de63d7077787c61ba99050d4a9503dd0044c75cb0b0e0e1a907886864b35545dcc10f28b292317f9c42a41842b4ad8152ce43f90416eb610744842d5edabc39656922710bcebc05b948dcde81df38b9e8e85ef282aba934cae108e7eeeee44a665738c845551886f7fdaf0165a5d423476c4a966df6ad4e4443e754fa5b3664456a1df385d7c17aaec320fba1473909c3f64994a98f1cde9e1c795e254045205577e29d43664ac7574635ad15a6c3bdaba4dc2cb6488cd0f4380d4f6bc670f7904dc37e8d61a02944d4e9c2d10cf2c1fbe59b1fc8dc73574ff3ae2d13d0cd8a4025c9b2c92303278b597975b3e939f76a67eb574c9d304382e4e5915205e7ad9a73608a398ced1e3b73ec604afc67c91c08a4016d2525de7bde0487f175a0ab23eaec08cdf00cc04fce4d1f66399ff917600c180aef8b12ea13491c4650ecccf06ec033ddc68dfad55e8339a2f542097b8df0e379da6bd823b40311d8eab0ed33b2f7b2eab01695d89ac40295eca1625a26e76b460f7fb3305726727672c5dbf6f177b513cdf682613d560ab7dd549673a00e986cca99e8f986a40d66655d72d453b8f452e4e20bcce53518cc5a3b41147d3915d597ae7a8ecfd84479b98b3b1a7369a23786e6790103669df3f513682c77ab98e93696e749b0ee58e3e68a90ec54d7e828c8018325a7d5a81f3383d429e6b564737a4aca4d68f5b1e6fc209360138420bac0f161c1b63b2e20417ec504faaac08664de6f2dc06882fdb801e7bdca2ff663862f114df9abaddcf02266b2c1080b0923aee814f8305e5cb77393d98a3fb5940a78bfeaa3dde67dbd09d6c256e7e33265500d7916ce8f33d9b660a28e93b596f307b458556b426080b5b2d5893707fb664595b02377f0d08b27b1a4398196e17eb38c8ba7821a67ff502cbec6368ca80ee1241a7355fd82031146d15ab61341c49c043b7405344a14a6afe5ab8856397435507687a0d5458cddd7b47d010951c89da29253f6fd8c649af4f2d88909e6473d3d5cb63931171dabecc55f3f633c5ea89808a6ec6fed1e7e092bff7950b2b3570bce86414c7c09ce55a1ef5cb9354fe03bc143ca369b0f1bcc6c7a94e8b4b01ab1e0f994485192d9b31baf6e1f937c0ca0771a934050d4025de5158318bf77adc8926ecf32fcb071020450c0c538254b08c03a07396d52c026a92b19d51b8fa907050cab5f389d507e9c3fb8ca1dc3901b7dd7e087a9985e1904d3326cf68f5120ce2bc769161e693f82fde2746d138cfbb858fbec339d2b6fba6db8e17b8cf6f56a61f7b9c3626cf04fce5cc30c8420ef3e3534a5a162e009c75354e5693f34c0ac20963563bfa77899fe49c66d1e5f89736ae7f74c3a975e33d73fb76859ef5b5c9376b5720ed13e7005d66e115895af66eb7b9c571f9a375e849a9d3f534e492282fedcf4e05918aebb29f0d07ea98e0612fe93292a7ab963546646bcd6c25a1cc6e261fe09b263876225ef2ce2ee696a93068c88c3790ef1483d2ebec7623a3c45168824d05ed5e602852d2ea1ec9ad913fed020abbfe4757327390d56ca97154fa412a871636e5a0f3eacf42415e1088d549353cf3e590d27720ea5f5eb631bac2d2af0d0cb47c8f42f48f016ff2d8a865cb62315e05d84fc5aeb644d60bc770005873b667de62620398fbe055744be3ac50488fd885b219c3cfc821154c0b9a46d43546c1e1c2e9d2dafbcdb4f23e8b633fcc4eb7dcfa8533c1fa9354781a938012a71fa2560db31e6e6b6db309841557ab1642cad5b9f6281632c8e0d3e61e8c04c4a79479e4440adb001112501b11a7bbc699ebd70b1e2d25452a3ba8e79312f22b683e58a8df87323d0867535f5a44fa5341bb1da6ea51d7937015a2de6fe38f49c4416d691250f8a335d3fd7df6f62ea4d36872da47febeb9ab31ae7952342ca32bc7eef6c3c0c6541c6837e161096ff241a5621b88c141474bdc877bdc5b8cf916df55926df646a28068a01a572d2666d3fcfc931e263318e5a3bab26e46782b1b9ab02884a75559e93bdff02771c32c7ffb37fc7a4101da961d28d3c0f158a6462cbeda173b62e9ff421cb6f90798bc3ee24be18a29ebe1b334097eccee621a1bb54fda9721b934bd8df5db9da8bce2dac2eb466c0b576698ffe9088c506df492388685ac0a4058cb231e6204129d0165d60de574ce80d7fc87683237f7244a595c141f00799cf726c6754048cd7d1764856324e04c274f6366efa4b1ef0be3a1c5d7dcdd78478a86c0e751eef1839422d311105c31f561858251d36fbd825f3fbd955413ec7c4db2fe231cb4cc698d8fe0c265226675cac23e341f1c047222b3972ecb9e3ecac261c85ff0d0f3307bdae83073163cb035830a14880ae2f9c28392899c3a9563f35894b754563190b2d3ff7bd7121fef9dd77c3056566a0b1109eba62b3dc0da758b298f7f615d4fec358db4947c56b320d7c37be01b7594c54e49a3f575a8177213b1f8e317a7728b3f04f8b60e3d840562c2fd343122f5311f2dad2c50e1dda2860303e1460a220a6126bf15fb3df33cc9730e9dd05b02bc68a3b9d5a0eba6e745fa380d31d35e978f3a7680a580a4508d86349c10027e9bfc5447948745986b7e16f43cc5b83a2eba8af69ffbf736c4835cfceec3e502fe3d7d1d5b6514f784ce50b5b2eb4b5c9eccade31612513faa947df1bca063f506620d0b2653798633bf1f2ac2c58c21604ed6f5c49c038e3e2e0e5cb978244dea147eb158fbd8713580e0163b317c47c1676f0bb11a4e522a0ef22464df9c89bd87e9c78545128c819b729ef13d180595218f7d22bc2dcf6317d71886f9b5109631384852447af0000930766e63f178dccfb5f5e1523647bb995738a89000335e4a62127af5b42884773226a3f9f4c5a5c97f98c7cb8a9d5a7b397835a84f9fada9f75433ac7df02d3bf868af7febcba6072ce0d388398ea8b9257c194dbb314ef2df9eeca56bda9dc0dc8e23f06b3b5487f9f6b9427fa1aa569cc0be8125e3ce20c14b76069ec0b7f8df4b75ec8a90de9b5a2ad266bfa62b3631985ea72c1021bdb3dc55b8d45799e8f4d2651f0f738e357793af2b3bb3526ed8dca74e0e6e3add1b5a9ec8a0bd74d6b2c930f1343cb89937fba99b3ec40f55179ba497b893d56a01d82b33febf80066101a99472037c225cb799bbc4d904e21cecc585484c5c754625352322d5f9f88b8af3b54bcf79c57bc81da65253671acc3762f6bc06777dd17ef94b66e0c99fe10f10bba0df9e0c8cd766f691c9c13c446f972fa28624431b3840a306354603ba74137198945d6d8e6ee5c48d7469d3d3a030f23730e362ad786b51f769038ea8ca01604c4f7ae9831f8d44bda9adfdec65accc3d422880d68757a19fddf95aa79e6df7a935a30cfdca7744b60d17dad0cc2d5b4b47c4b6a4b8bc0ee3a965af524422c7d55ca215f47c83de4010444b1d4150888863712e3e51fc319bcd75a3fe70dc4d9ac3623d0038b95fa5cd1e8661a03d722b65b7febaa2026661431dd030d6ead6d967d86fd9570982114a4fe4565c7bb10180de1e69904d25145d30fbdf9c831f9da06437002099e1d8956d4a7d8fb1253f35dac564db52117dbf75ebc0a91ca44d1986c8f80bae160969632333966ebccda7e047508ee3880a41753bedfb5fa2bfa3c80c7606838ca43130cd11e63c507c6d8fc7689a4eb7e51a08ab21bb1ffb6813388e5329f68a5bc437f28fd28b85a7ef1fbdbc1245308826ba573a6ac77c718bbc97c37c8d3e4743d4ddfbaea6346fe7c0b82a8d72b7e4998370bf7be5fb8cf8f1f1962eb333bf0a977fa88c354e0c87b97b7326969963fee91e10c7992f342531398a714f25502dd34095862939622034521381b6baa9421d74a1dc4e718b2e5302a4c53684df87daa0863a33b014f4ee5bc7c0a67568acd52f10e0639e63faff8ac391b19a049b6949ca0fe309f0f8a56aad31fe84566bc13fa53094d4983f843189a725a075a516941dbc8e1cec01c74dabfece6eb98d9032ceb28f498c989f1d1c7f0dd3ff7f957566693a0e54f89b6193d72c23b687bad7755f381d16f84ae8c511557045686efdb1b35ba3b0328bc28b640a354a112286ce3e8bb1d82120799f363fde0da5e0803c74fe753e90b9406d3da9f4d9b4908cf6402f20d6019689cedeac4b929f6186364921cdf75fad1ad078cbd23df6345a90b776a9f959f85393e8607c60bdde697643e751d4f51748282c0f698b2d0e6bdd1b2d3a86b9d30a615dc76f223401080d5e6e77fee309f85ba290d3bdbf68311b58a3f77812f0a584db1516e4c5a06ae97f7dca921f0dc490dc48cc42a1b08f202b0df3c241e0e248cc0d366a51b414e4044ab2f5fe2a11283188931460df102745d12c3a4b97e1d4bb7adbe1105bf6c0e20342ec90fd6ecc74216848640c2fe8b6463744ccf7776cca193b1f1d5ec875965e9b6d342ee12fb3718f715e0904423ca2b9b80ce1a16d9ff3dcd6e08e85bb3fece3fe4126f16d53c02a4b2afa95cda8133d238e52c52766d8111a9b1d2cfbdf25dc03cf7e17cd94032f251ab4885b7388891305696d07024009a16b902128c7ea38a93c7afc57dc8f8bf94f5801138d6dc5b668ffd13dfba473f6f4257f129472896ce551f3ed09bc8929c1de13c416e3d5bc3b1300625e36793d3e69d1c26f1c4a1eba26f4e1984b6f029df22c7a032e3302f4f9cf00dbc6e81b26c2be5af4b1ca6380c60f28fb83ef0b54ebcdb466ca0c4528a2b071491b31855fbcb437dd7e2551afa45caac10fd07b3d839cd25622604ff4209bd01b2f6767743191c89e994d241dd886ff88ec55bd59d96f30f8684a4816e44f11ac96a597792f4949d3bfb53494a52c89aec33c9a60148f4255810f7362e090a48ed54ca701e4f35c22f86c52d086fd0ca34d671132fa677552fadb4b48d155e3289635b2d19c96cffabd3ea08121e70037b91ea9448afc9c427fd69567c48979a2ddf870177d7275b098bbdea8a4d375301dc2c1135563ab04d747450b87197bea55efd57893ea408f7c6c5d3fca7618c589a086320b01261924deb45f68d722d4639d86c70f13b33b8b6d80e4d318b86d69c996e0a74ece7368cd79669cbff80f4cba7e4f0ac7a25f1131f736f75a387f33c1c1a7222edc270d3b9d6d833790a27d949dc0a158bb4d3caba7ec8a36b65851a2bb11984e982b63d56b3e29da1df7f0044e0a6993da3788ef644dfabff47f96bee858b31cf3d341cf29ba69ab3abcabf06486c0787a8dac17058b7496d03061a437c95a3caf509b68540943d4754ec90e0d22aee8a07b4883953499453790a27dfd1b08c2276dab51747ecb28e82aba1f9322c34df5516ebea409a55135982c26fb1352839ecf2565539b9ded89df101ff6083e7b82a1f16d11dd5bd052af62f8bda98e187394f72a3413514802f101264f6f7f0fef292f87d519cfdb2a47b270b287ea037f0886c2d98c40b15fa295de928254cfbbc20170fc9fdf966f0f3f8919a57ed2fbf2c2c36c561ccabe922eebf1cd33c76e3c3b5f06698a8cbd54b6fb3b8db32e857e0039ce33abe70f5cc6d41236a4b2c676e8decd788631479c96a132518c2fcdc3094cd5002fd2bf7b556a58f89bd6f7eb9cb9be2bde432a562f2f90e0a1992f838618f04ce6f373bc4ebedabbac3a77b05c2dbdd3e263f6c6cbabcd7ec175908ad87b8707ba4709472cb8622d8f12773fbcf6881248bea09d94a403a751edd7c5fa89d079872adaf9fd6f108afd82477146fce4545ec001dfc62410cfeeba0e6718360cd0d09575bee180d46b3fc8c500ffeef86c52f7d067517c02b62a04ae9123b9a816852592ca790597fb2a819842ec96ac69cf7c55c5c6ff49e1810e18b46687313d737dae13b47d2dc9f0fcc32128ac1f7e19d1fa3063b1df172555a2c7871609793ed8e2264ca2c6d99fc1b0a16d2783666ccb8b69ff496b9cc001e84db8c7b166608aa9776738787ee49472b762a869f178d475651308670d2ccb5d82d8e9f21cc3d89070d3c9465fff21462baf91b957029ce23d8826ac76ef3907f24ac5643f0a8459a9887be53f4935a19d4cf4a00ce78b667f3cbf61dc21ab3178ee361f6262d5f68aa3383f1beb8c6c3c0c0a1fe78e43e8eb7868f89a679368419b0bdaa97f3fb18b02821e81ce6801a601b029ada853955b938011e9c909d09d2a39d2079ef776b72f8216d46c823b0d04b76f475f1afe6146509a23d960d2b1864f8b822967119199a6f74711726f9a81c56447139c0c63233587d533c157333520aa91f5477cd8ba249ea5f98d8066d2e7f257d64b1ad0b1b99573d056e0143ca2af48aaaed74cc9c75fb17dae97996a2a6717e5613b6a016c3f135d3b51726d9ea33a64c64fe233eaa174e67940f4be0a912167ae9e95b8b3b8d56fc80bae219969ce71c211dca0378e3c134e48f20a0ba8f8206ebc1aa41fda5f15dc2e6e0d81af877ca586e0e011efd5117dad45124f1edd1412c957a9d710107818f515157308bfa26912e13970967dfd48929caa4a1d9acb62259ee75ef2bff7d48099d731e53d8ccbbdae9b0a9262cca8ef1c84dde7ea812ebfe9eaf68686fb5703654b79f08428a2f096f7c1ccd0614c9f46c963596b3f67ce681b9126a32074e397e02407299e95acf6f68a7571dc1b1bbadfb059afba460830e624a1a6b4d28142756ba0e75d2038904040644d7976a4a78bdb830b30e32289374bbecc4d4b5622d46715dfa701d2005644ddfaec90d30f9f2282d9856f4e6e06e184da818e9b4dcb786a8dbeeec55378c447a6575b08a3ae3d95fe0fcc726607ae31a16b88357315bffcb75783c308b46ffa80d834389cc64f135a7b23104237b427f28ec62030771b0bbcdd54583f7be0c4a93d53c854378aa6e2c317862ba93c4a7a8c90b17673abd96c3aab2a5bfee3222dd856529ced6e8429ab87dbb61f8c645f637b0d0de2c9eb366e5ae66de7e892365a82574df57d76a8a77dfea8667af4346eb28b33c3a25294740b0ef5b32bc3b3536a45c97c86ed54216621ff416d7e791dbfb3d82784b5a4aad5d6ede081f9151dac9adf61c83fb6bcd7d6918daa7b5e57f98adb328b5222eb4a37285ef516b40f83ec3bfe95380434976c8b83486d437a1eca9f389c126d8ac75c5f61c5169be76fa4d6d595b19e00740dc3d455074811dffeb6ffd22d5558d735142bae47518dceab67057c67502515f60c71cae96a73ce5879c35730f7378c2a8fbfc4364266632359910350620ec3751d82a850beac37bd73f10a4ff9235d39a467fa17bbb52e0c41d78ff9a429f589fbdbcdfc0fa02ba7b38d6a74f3e27667e0cf943bcd9ec68d2d03f6a9b7d0ee3860ea15e3ee6540b0831ca91107ae78a571aae2acfba40dee707ffa046d48d59a777568dc98c9eec6231bbdfc7efb940e4535839b6733eb123382e737a9fd02fb9dcecd6515fd21795744bda52d98f7074aa9cfc20ff5d8b6ad5989a8f0934c9a52807571d4ebabef9732a960693bc21132c7d018b7b88292e8aa0716b0859697a6281dd332c4b3deebb34a036ed2561bc53cfcec6700fff8553b02cea5361dbe730f22b30b40bf677dd84ed9d3b79671bbd06c2beec90dd338acb80bfc2dc0d98e47038df7668cae110a60aafd8937ee89491f4ae5a931139a88fa3ed96b36a4878d7659b7be44dab3c65422e73c0514744c5f3ecb8b7c5a5c8428c8be1457187822e7a7f6ade8c55f0c3b60193ac8452cf0c3e731e470ddd0213d6792aa9b2cd97f9080b2dd50fefac30631aa632661a4bd73af104ee4d54e489cb2cc2e668474d002789cf8ddb839980cce4e6e1f4b2daf504344e970e80e8d7e3cdd4a085e2668041d79c865cd07921e7af20b9518e8ab7cea2d8e694fafc9b325866b0fcfd3780d4a613444bc03c3e10d035349865a59f3f8dd02da0be911d320bad81d71c72c5c5cb9a53381b95d1a957b1c478a0e631e9ede8f3c7275073ea3c1a3028fa88086e278410ae44e3933c3017e45d3ea59a29e691dd4902de81df366d61feaa0d9efce412f33ea88794e957752ee5c76dc38bfe0dcda8173d2e3b9b86391d32512d944ab1fa2fd4d85aa49098c170b391a7396c6251b2ae1f9a90f07cbe51672f81d49364d4746cbbd731ab9a2e29310623d03d3a89cf308b9b786d0ec9411e6000f62d5b6c95cac8bc4d20741a09949675f0d253076bfaf9bf04eb1d1b39084cafd0d22c096c325f2e3da8a5951b094f71172ecb43396b77aa18f31cdb92f85547629d113a3a0a7a02fabeebfe6abbc61c1efb971d1cad7141b061f0427e01d9aebf247fc811a5304fc22cd879556da35e6436989716d8d404e876b8ca5858a2daf504adcd906605f52c6941c6b5c676c38821448301e658f3111d8ee7f8ba531d6237233bc58d587bfbdb3c4bbbe30bedddb8f298983900dd9ffdd27751685324936233f9a62ce20c7c7782ec8fd4ec1956d1f8484f8fe0e532b57012708747481dfa6d008475dbf85ccb12efe415080a67a9b2fac6ec29912a4d4768102ed4a58d742908aff93eb2afda8e648699f7f11a89c722acc33d2f7ed12fc04f8174510fe182644e54b3db9422bc47a5970e9d07d2ddec438a1f6f576997578c4928565a29d667f59941ee98951266c180fd01f4bc5a35a05e0b243e8800923a136c60ef3fe9dbabfed5bef1824ff626a8417af78b340069d26570e464eaf4867e0283228fe5cff946dbdec2e7eeed0b7ab3fd69ccc8f9cdfbdbb36dd67dba83dfc70d22664c5f783aa51d3dda61104ef8c96c886be5831a81a32f8a20989266a3dd3f80e26254a3eb5a0111d5e8a9580df59b62129dccfba985792f23250e899f734a3929aa68375a35fd4265525220a440580d12b4819970687029e18c44220ddd8fb2d95d8d5ca0c9045d0557cd9823ee0c770fdfb426bdeb5387ae56831c918149b23f738d838172abe8a19bb36940c0673b60b5861a5b718b5c748dfc06324b4c454a20b70c9bff46d0d7376e98d53db485dc1407e0e93da4e6c82b947e9c36239c2cd29edaa023290e33ac05db53ce2ad5612366151da082dc730ebc4b10f35491e4ac8955f02c47046639dfd7a6adc72611aa9fb9186d0ba470e3a4414deffaf133ee42a76eae6b866bfdf585ed6478ae8ad8c7bcf72818a5816341477111f6fe04127fc469de3a9e8e3dca7661d7e12e4bed84ec9d85e638c97e982637199a024a6a561623608e8c717b415bffdd63bcadbe74ac27353523d83a8d254cc73a4e951fae3e331f6e0da941fac45d12615af26cf17eee232720907e21401d9957134e5a403c89a96c7630e653e1de4058e7cef4faa69cf275bec4a6c0827383ca3be93ff22a8bfc2ea9721b6e5ed70caeb027d1594c3c7b33a20b53682c415479f447c3f944b24727bd88e0f7a6ddf5b5c153635351eb2e8291dac37e834e4831f355c68535d7d8b51d0779c866c9025ac64420119215395a8c0fbbf2f611f52dece29b25bafd3baf9c64e0702634c29b94016f294df4704acec560e29424581a47de7736def258632ab0e5b81a084f12d473eaccb8ef5628682e818f37887d0e5cbde45680ef508169c57ec7cf9365a348471570312c19fe31d8f6044879bddfc8f255b5cf92a4edfa18a2aa5df25e56f47db63e5b9082b5073c5b2cbd6dda6c17b887953b355a4a8ec2e8d1e3275b4ebbbe4073e67232c804823ccec01d54327f5da156e93141af0c519f0583ee171770b556ae26a2984dd49213306df16e8a601aef89e6b8dfd9699f878730e8814dd44533af6c346373ebb5012ab7f13c4125f81fd6bb4102c65dcd3644cb1ec4fa0f2ff87c8680938ed2d8431bb79c01a6bd6d7f712af1d9f8288c1b7e80c36b813134b23b97f279dedf573e304d53aa01844fc7afcce415f4026f52fa5a81ad39ee6279f4043fa3d51a6be600650305353746aea2aee9fdf0e541b0c979ee3549bbfd3a63e30ab4b1a819447ea2e6199fc8575b0282f588e035f300837bf5a638ab4b8e44a93cdb30b8aca2ddc367bd7333625c57cc9bcfcf7fe6c42ffbab54d2e9857d53b2367e30b7d483535842f8316acc4a4138f50bcb41f6e4072be92126336d28851bb6224485df9334c9d1f12c8ddc36ed6b7e78504ef84befe5285798959a54a0587a38ddeb0ade31b4ba0d7f70dbeba2f8f9e7fb657194e90bfc39f6eb05004c5a300fd0943fba161329c94e38b770c702d682ee3a149be577e68e88b157040c655662f5538ffced48d64855541adc24a8cd11dae0d25422f509fbada25371d34a4c32fd46436d3a71c7b15a9b2ed0c3de0b77618bb0ef1991961b3d02fec00eda3fd2e486e643e27208f43adf47155f7ec779ebb9a384466f6e6a1b45dfb935b299f5e9a666333a341cd7e7d58de02cb4772ed2380018ff87343f54feb143f4e6c08345ebb1a0752ee5f1e8c917bfb58516eae759aa477e692047c1cb0accd45d6da13c4b68f79daf2433d0fcaaa89dc50f751f40cb5ac17ba0befbba2d754327e0701c428e0a69e51439fdccce89ca6db6c2d7d72fa3c0ae285150557668e8eeef93470130bfbbb827eb3e13edb581ac021c41c55475ebd006e860efc59f005a280d3375a0e7550ada72587e3e7622221dad0504fbac1e07119bf8cfed3c709e7f2edcd492e7871cc0355ec98fb1884d03ad903c7379d9245e5a774d483787eff4a3caf1e9f8466e388f44b08e974cf41908b751d3ee2d4d792822726fd94464008c29c419343556b65d446a73a6ca266c0c7c85fd54ac2902ad97a804464ada4cc88a0c2a8cde1a6c4794b8c557818d40559570940d88bc493d6a3af602497865d4fead8180807917fd33bf0057dd748a32777cd2378f2490ca58e67747fbc8ded56ac6588804bd530783c5dfba41100143aa3f681c6635e7a951b0c38146d1732b77920e8f3ed9629fed0501baaa0b2fa165ee7833289f3575da57c0ced1d708aef6736f22842286c750f8607e4707c52acee25098192a4143c68966498504bb6c021f5e4db9a28a38c779265d1b8f288bada28a48d7e12a7f18021cc274f098b5b7d383005a4cb2a599779ab1b024d4d3aefab9e7560a8ee80fde94c3ee386268427a7b7d291ceb19766349eb9e4cc2616b916283a94ddaee691452b8c0a9d6dfa091e8f62dc85a3b01f722b54674ae9996b79b6d69fd86f1260537bc9d3554bb6764a2dad89d1de47de4b15e09a9592d43605cb6f30d1b04cd448383d8f2aeaeafc2d8b6646dc2ad9de504477e9a212becfc809cef667307919b8a36f46d87eff9a5c6761548278d565ccfc536011957d101237d924526aed66f60de4a40cc8594cb8ba587c4e271b5329c2d33210cbf0014d23b40edbb36276b3aeac282ee4597759a33659e93ba5410bea0bac0ccab5c698f43d026d6f975895b6e46d45785e5fd01dfc0bb4b9fde3323ef02bf2816fc318d527185f9876b84cf60165777a20c6f90f1f72125889802623ff07e21bf08793ef279bd11d6d45e9504b08ca106085f16d30b922de1fbe6dedd56726b27520adce19840d83a9f89292a70da154e5f990d58e39dbb115b49bcf0b97b29d59e86a5ca462295f1b568c3f6531b8276ddbc7027b03ed648966cb010f5fca98a1cd15c3ac7c6f5c9d4baad4dc5e6421af29b012cec8cf51af14530ebcebaf012fef12db69ceff8bfd6ccb07ba58b86190927c33c0d993efe46cfafb719646be701865436ced11c6838a13c9abd9c9abea6a46a6ef14634b32a8701d3ff3881ed1236597053323baba06f5d89f4933f686072de7f401a6e4730da7b1b25624d8aed</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>简历</category>
+      </categories>
+      <tags>
+        <tag>万鲲鹏</tag>
+        <tag>个人简历2019</tag>
+        <tag>加密</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>信息论一个小实例</title>
     <url>/2020/10/23/%E2%80%9C%E4%B8%8D%E9%97%AE%EF%BC%8C%E7%9F%A5%E4%BD%A0%E5%90%8D%E2%80%9D%E7%9A%84%E7%8E%84%E5%AD%A6%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>ssh-keygen -t rsa -C v@mmrsl.cn<br>ssh-keygen -t rsa -C kp@mmrsl.cn</p>
@@ -11937,30 +11961,6 @@ c1<span class="token operator">=</span><span class="token function">input</span>
       <tags>
         <tag>信息论</tag>
         <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>个人简历</title>
-    <url>/2020/07/22/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="c24044a225abfa8c6f2bb0a0824ab56734291f3bdab25204939b1606ce7c9898">6e80dc631eb4208a478324a9c949dcc2178e9710ce232b846f16d147be2fbaff761c7bc0ab5bf070e237845610c79f9f5d544a4c21805e7e5fdf5c2237de676e04cc0dc6c2ba6f8a356cb773c5571a96c5732ebe17489815210ad3e79cce8c2620c27002ea0e664992c1bbbffb938c50f5596751f5b9b956d7a8e9d44a3fc32f0a91d826c2e972cd6a0d82719b224f0ffeefdbd66f306474203efe0cc4c8e43b4103f7e4c0609dd51248d8ac180b231eff74a662a3fd8d73fbb5e7a61afa3737f3d56818ad2141fcf475b779d9a1f041fded3619c9407c4a8ea2c32f3db7a50ae16ca825f2f2ed6ed54526c54ac377a990667edd97ca04cb3362e3e7e32e22a4c08966a17cc56dc56485031f91cfeae02e580dd255436c233b734f733d6eb4d3c20c50fd345e6b546d4a1cea187529b60288a8a79a25612c15af1a04beebd9b4fdd626ea27fb2a2083c2c88ad1a71000d9b2e03099c065a3655cd539c7fe38d052936de2187f6bc677cfd056e8a31c36ea7d2fa4a5c575e3014a75dda3199fb05b448cb207704950b4f169f6754b989f43d282968b9b31cdbd6d247922c88f9eaef9ff92950f52c06f4dd08b5470ee337dc43d5cbbfa3863b310e8537acc273c407d1422a494759acab6abde890b122c349a2acb2eb268da3144eb81163e25df555a56da413a7fc1089944559f93bf9d4747b20bbf434023c3faad8f83d716d17a70b6ac6223f5d7fd9d99dd6f6c3bb699306d139633e6312e260732034711159c20e0e7eff9f584d194a838efd652453c1844441aec8935e4763db6f2c32fa68957a3437dfdb4a6935a5c81a5bfe544a609ab4f4a213db61bceb79f9bf7b6a5d48eb07120bb0b008a24b946282610932cc76f4d02ecbba74432f61d81db8528c9b9aeafb4f661e40a275aa481e10ee2f18391a76b4586c9c54172b5190f5237c79de4ff0fbc591772efb58a28c2bdd73786e8d8160bbdfded6741b979673abcf6e54be73bbb260c75fc0360bc3a1313f9b9aafa892209e3b011d20fbe619f759729a9e79e0e837a599cf6d082d90d0b3a2ce4a9712f815ec5d9e54eddf05600a4cf6edee1806ce77f66f903abde656e904330b9f2bd003d840bea7184ac3c4f8f64536a29abfd29b531b56836d762442564075c0b49da48c55485b4de40e8f73cd9b2e40c05c5d325af5e2feb6841fb85d966a36237d3947d9fa761040e05869d4210b4f6775265487b43bb0d72c2c4e5ec82c5ca5d010035f64c111f3022b0e4d884c81d20c7a7b60ea64fa6102a56c384219fd0385af4a4313f956a023beb363e728b14c1c0a1f309bd8cbc3fa9704fdcda860845455ba24d6f3d0ae0bfda882cfa8609b60e86ead986f4d28b0c7c00091cc05161f405ba55dae5fe15f42ad547c3242ff54adede60c76ae41b3715c9c43949946b74df5226bc47a89bd984be6db13e8ec6676a1421487340a89b9824d559a467555a9ae29bfe4f0cbd267d2520c348b1554d6a31ccf99b050f9fedc3157cee4c1ff15f93cb5905512c584df340e0cddae7903a874e6efc11a0f58ed27cd7141eedaa65d4f8d691edc9b74ae0792885722513d582959c42ca03c99017a16594b9f6e92d960217157a82b677d281558248d81269240b3dc96d19a4abb49e5d20563f1268cc71596a9aac98f8421476d49b82bdc275532e4484aef2453446f0b3f3329bb88ee120bf65317941d36d5a41fc47d656468f864fe560318b36154f8fbb2d311f54d77a5e014f6ce85ee7746ed3e2e04eb6376798e3cbedf612bc6cf59317c4f6a9eaf149b2daf34fb9c5012e0ae89420b1eafa9d8f4dae81e7f196dbd302e09a2ff0dc6edec2f99e0179219f4fcd88cd42bb934bdf08570ce45f8c4450bb6a25ed8e36fd16e4e39c4a0ad0de03e4ac200b15ca51c3bb1bf09b664de16e6c9d45e0c6467103461617abc4c80ed37ecc82b751aa4290102b16f2d7514a7f4cb60d13d342db90e754a09090d7bf553a80acad3911167bc8dedc5e35d20c051eaf58521f0a1bb019622df73ca88131ff51485ea7c03f07ad37332a2194fbc5cca12c541546142140919b46c178e8fbbc117f2de33b9a89a94bead97fa4a389fd7e61b2b493f5cab5bb491d99b3cb30369c9f074d757a76fb2d6a00dee88ae29578be4dbfaf9ad60c1ee86465751221281a386e37431c1c2e8281ec967a6758882968b67804ee253c4f0b7eb33bf0c6a1bc993e2a51f04eba94ad42fdd13d758c73462278ffbdb6a0b371ea974c414b6201edb2c41070c8dcfd1e4177b1da05ad4bf47f844c026ab646bb29e5bcc9c7e46c54f082ef3c5c998b5a0d5da8283807b84250906e468bf8e3648aaac2ec307caa0f9511c8742975ce8d0f27766dd6901338ac06f12a50ee8919b1016407a957e1af25ee1701cf5689fb76c8d21c4009b1c2b32292df278daa09dd52604921500b31608f0a8dfe16f9f78acaf29cdbe7f65418ee3e46975a698cfbc1e658e80ea0d6e736016237eaab4c1972f4e9a36e97a08cb8c702d60a5d8b3aa17ff1bd56495d8846aa8c43018ef39bd832233d079f453908a6b90c6b8bdbe87f407b44f26911f8da71839934a35486c6e2ac062d9eb46d7a0430d3a076f9fce59d6e27af9cafd70eb36e11d07bdeeef182c58b74292a1776f405d3ea3b519b86ec97f5cd367b0ad420bbeff334470e67ccd1d6ee13a6d4f018ec5cf9de64441b2164daf5251aa6d79b749150672a99a17b22311a977c40ca340b46732674a355b38f8e2ca8fcb1b48ae3ab980e26b4d8024efb731793b3bbb0ddc2f583145a4f1e790e891eabbf83df335f09248557463c0a0ab094ed9f64c94ad7af820da7cb991a75df3d8cf90e8d5270393a42931b67e1bcb76db329b06f266898fbdacad95a3b173db35e102d98f443c7b754e6ada5c9ebe39b998ca35f318a9650bab1d0433ecb4d51ec8f88abcb83ccffaa66f12f8821211d12d5b1ab7b338ae01ec0b3cd6df1d79c19080b0d72699fdd02c0d4048d442720b2cb8f402289ef3faed01ea3d4ec7e1c4e8af6dab905b6154c4e734c71778ce5706b8c710afff8f64fa9cffdc9b53c4af45694de5e205277c70facb35d2579d5c3b4cf5a2fb2f703b2ee5432166b79b08c354d984167c59439c26625a781dc40a705d2931c96dea3d248a3d5597059bba2b469df634b2c1b218ae2a2ed5f10287f1a39522a007a6f0d933b567ddf7f389f59b172bdf02098ca296bf1c3f39f1ec43c64b569bee555b19f1c5eac90e4057aceda08aba5ba4a1916349e89e3c6905097ae11fa9a7c3a7b6c7f3eb9ee539e505c4202099d43177d67c991214c5de0c7cb35967fa2a752a0a536574cf15a8c7eeeb0e73530f12984bf4cb003920f9e193bab65f9ebf3e3f385eacc8ec6f83453a43f61c18fa546b48db67ddf72eff101b16d5715f27332b3a517f7bd2935ed30538536ece2e3ee82027c1edb74e9df46d207787a848840ad26215eadee4d8c637ff3d291e25fb215a101566563dd65bec7146dceaa32255b445c57cbc17f28cb2d061260738378c0a3b9560de0102715fa1b7a18cac7aa32fae0bceed791ceeedde7a15d2c194acbb074ed7d17348a1bbdaa587d1e4c976f59cd0203c80666b13b51f1db9e1865071363086d4ada0a3c932d5a5c688bf7575a883704aa42ed6b9bf03407c743fb7a3bbc0e93bd82922696a7edc65f0a84f0b3c32c698f48c84411edec0ed5c5f1bfbbd95f93f0ecf56a122f2ca3d90ffb07214eeeeca86faf10d52dcb42a2e85a93f652dcc75be8aab13e4ab2b6109dd5afa37f1b9219393395757f6cae6d9dcb5bf3f55ef727954936fa4050cfe8f28fed5a4ef58f6be1f16093b7e5098bf5d8e5a97cedce6b612de64806607b7154d746331199850459577d8f730abcf40ca4a56ad8b905d7cf1ee711672961da6d99a092796beecfab0b054bd969248d0b2d0789096260b62f26121e9c7a48806a9f6eb2268ca9bdb58122fb2629fd3ef380a268dfe7e372d08f7ec7920b974c1aeaacfad1dacf4d72b5110b86a77b66fd49081e50f75e4c4e6804b415508f027dae9f0792b7191eb7d675a1fa042dac32ab90e134aebfd208d73d807f3e1530dff45de1cefdf1b64823fc9913189a960c7e8177dff81f873521dcbf732c555f195a8a5ec14768266729e249ae3f21fdd23f115e842c98484df6a387baea0b774f8887ab55d25e91c86ff9eff11c23beb3150fbaaffb0b50a5ba0279173ee34e100201873688cf34a8c1482e98cf392af6a75c6dab508a1039dd01d7915304dd0ce8fb6d036f2f224dd45f548cf1bf662ae522ede84ea5b05587835709244f24470b3686536d70faf0514a5aa188742be2e21ca4ff0b3a3f7cac1d8f42d9a476fb1b2a8a1ae256eee8f69793988655b57cbf65136e6c2f003c58923e7848d6f2b5d3ceecfed7bf68918bfdb8530fcc3199a24bba06b350111347bd10f37a010b0a367c14e87e2c93f67f5cd67fc1a0e13c1dadb3918ad96e97be05fb6c2d0271f5aeb8e6be70e1224ad8bafaf9a203f9fcdff5c6421cf4140ff92dac41fc0dc27ad1ecb3deff4052921c4047d08392784c172b4f52963168b1bd50eace4ce43d066db96e7cd4ab2e8f99ae837cffa99847335bab760f99e2301560831e0e3a0f929a484309ee7a9ee0ab05d959656f85caaca972735d573daece8c4a573f3aabc5fd930cb342c7a343ae7d9711b670fe6f3074d706e4f06100b78b11348b29fcd65bc46f01f1c6c5a003a63f2b37fc8dfed86e1985ef8a12218596acdb71899f112ee34c92430329dd86dbd5b44568956e3fe32be16508dce4e92575116fae00f11755acc5866e42d2e735ceee87acc29cd0963a182d3066323d034e42f6f0d51db757999b836f4a69a71a1b61caead3cef3a1e0a769548acbd29a0bffdb6eb0f321b4ce7c2a5445ee0f452fcd7d844c64576d9a765fcd03b44cdb3dafe9dfd7e3fa66fc35aa752b3f362dc57238a7f728727540cf7cdfd4114cbcbdb1489b1e13f6a46302b7ca938f8b2b8ebc11516f1e2cebfd1c33ab26bfc476c4e95455981df911519050152328afe4b81790eeeb0ac2a53358e4ef7f01ea76dac9875a6e48392c204de03514521afec5b84f8df3c85fc264e67577d959664efacc431142ea785163e19f81608689dec1391604c7e64b8f52e92f940d8752f468dbba1937e6ae3ccf15a030953655c8d3fff61d4bdfac305ea945bfc651c222f9d30ee045b0401a3f45f2f7d977cfe9468054eebf74d52355a406dc7f112b70d76bf38a1fb5d2ca9f9966d74839baba51887196f832ff968cc5bdc8a6806af6cec90c5838aa189c72015d208cca2306befe765969ec9ce2e93999a488f59cf274ad283d11e6fa23db70e1a87e1095b30230a218478637e14bf771e5a3c3924bff48adfb5abf50350e1c5f165a28a7c4b869fc45f2405b8c35c5ed40380b64ab287689009d959eb95adb46aa0220136cbb56cf8dd73464347e3304a9a69dadfa615b98da012a7a44f6ac7abe683d7229610302ec68c7d7a4c336fdc92733533bac3e82c01e3f679d0382454b162be572787868b72b852e93ab50b3e531de8fe95228b700a18501d0c0f71d6aa87902b0db95fb9ae0e2b4b6cb6124a7002d3226e051b43ca172f5a6bbc741619dbe94c2346ce594254dc9345b08d0d8a102efa5825d5b122555387b7d4651accf34622ba43f9f533cd4223fc3c97f5f89159e2dc2a5b8cad4aaa667f0f3883448724400dde25016dcd0c4f9acff699456581c6ce46df4991130494cf2298b32add0b9ef16a8ccb6715129553005c05cf8875536bc7c7a02bdc35d12fe2a86388ad767ed72c005427888c6a606c662567be1513d42c34a6e0f226316b544fd7e1245ebcd6ce82b0262f6397f24fc5959632c11f39f51ef983ce19f8c9ff091e3abe51b888cef7f6177d5314cef2e96aa6694d9fd242765489449288d9091985f68c604aa2b513e394cc61fdcb9bdc649db61bce7f7725139e9b2bbab192d23297b529f49f3d3e157cb8bfbd3b904cedd6e4ece2d8fce4c57b552647ff935e13809f2fd8c446a21a18fdbf053fd1e445474cb2bb5f3caaa55af5fddf05552bc943279c85e7e4217fbe232d53c3a3000c86a25d81c1435c9bea2eb5e4ed7679ebc609161fb18d3d26e4c3d97e0ad8ad13ea0d2ae21feed624566508692b3bd949730c5d1048898abf19b1c36401ced1154f1bd81d7e52c9fedbe82e55dfac18dd1057fd8c0601c87db1c88afc952c4cdb46280e1ba6253ae7a5280a5d92a681d4edea8860479582c0a0e50463d5e4f1a2e8a7753127c5de943c62d2c6f150cf61ae75dd1b74b9da3d2acba536ef84236c79d567a91fd1bd98fcc047f240431574c8735d69b8fa510a6399b3ee373bbe5227e8da751232228fb70ea56ff22f144cf921cafa5d6338318c66c1ac5e987afa02862c801a64482559d36a6ef068334edce7010f0ab58ac5d533d5e1bd5ca3137ec5315a37a2db1f64d753e5ad068c65a001b266c6cc6338964514b376f88cf01ca91e48ba84d2d4575acab9951fa027eb281455ecc50f468b33ef9c045bce86991910d282c24dd88387ca71453f6114f547d0028b9b44fd27ad372cbadaa5c0f4c7bb228cfc65d24eadfffa83e0c13cda19494dd57d2fa5637b925b8e6d840ec2258ca9cf1c0e1464e3cbd028b1685bee268512c40a0c48f3bcfd97596952902df75be8bd5eced1f0c9b0081ea1dc986237951f52c6f8c8cf5a102c86e95528d53e4c589dca18a276c48e5cbf90fe326c665080146f24d1f73d46f3ab469664bf8ae90efcc67a2dcf83f1e20ff1234709ff3e62f744b07a87dab0567ac4bf35d389131ed9476ea2183d06b2ebc73319667d4c493c1b3b3b89fc76575d64185ece972d2df37ad317cd18dcc7d6d22acc5dfc268a02296ac96e1d0e7c4ff2ab74fe2c3aa9db3cae66ba9198f57a03a6bd4dfb1ee4b0f9385baae6c1f599eaf4dd9e68645b18e7d7551eb8657f2defad37601bc0797b4e291dc4e2547421e3f4e2bc2561ee85321219844ebfc025d151d5ddd88f4f8bd6b085f78cf59997e0b83c2180574510fad2c2d0320ad4516aaa7e4fcbe1683ee1b4691678a725bccb7419e1e44ce2aac428a1f572e889da107303c5637ea99169f25341b48f48dc6d06499d660e45e90656294404507a6e7e183aaba089a2e971ec73799a6afeb0ace2e95fe53a7ed02162b8476baac7c7d98ccf7cae4b6e6fc6d965c155bc7dae517cc91ee98d5b83e042313c2981fe6d2fde119c0da593caa32eaf38c60d540ff94622f41fb4c52af5fbf5381833e212a2e07bab20a9406756ee3e7cd69095adc2acc0542c9039d06360164fd70f5332e12a2c37a8c1e5d64a60a4b36d75ec25d6e42550af514d989403ec633eaa36d398ae17ffb112718f7be29a73373351471c3ec6edb66c35c8b5e5465200f3964645bda40129df689d730fd763e31440f9ab75d867f0c0b1a1820111c016d19a39b5e8e899dee92173afe658bed684bdd61a6d2027f43e44a285bca4531973d970308c0415036361de4a12d7f3eb341f0a5a9a4bc8d8d36b0e3e7a23eece836f6dbdd3f6556f0cbde3c56509432f2685794591a64d908b070ad46de6fe5ed1018ec1f412f579ab6f3b721dd27c8fba06add9aa078a7b79dece89c7130f4f92bad175c4895e6f5be2e9ebb04afe0daaab1da0975a2972c77dd7228bc0c16574e04731830ad493579c9ebd3c47a5510ce6401a3a4880a26ff0522273fdc143d87c253be00e97ebae7535a4996918e68ad45b4658efd59e7f1127313b6152fb905b710e0979cb29451a2fcb65e55c933b051eba45e4ba518bbdcef48c32889fc1a5157a73771c98d110fc3849ed954f0c4a06bb6793254932ed4f9c242f516784573cf8ceeb06bdc2b037f48d3df835aaccfcf45a2dffa4760d9c75cac9658583b2d95c58404aa4f0a803872639b3841c4a2c4c29c02dd95d111753c9c9ebeb31902f487c2fbdb395c4ea97821b198a3bf0e517e04c88acfb2555a2aa3538135d87ff0db091275234cd0e524965f1ab3177d05eac67edb22e30703946b1a3842cbc22e0ff45d1bb6bc3bbc502dbe257267dbe40204e7208534f88aa6372b640a320f7dafe3a20b2a0221c761584e786068c8119b1986ba8c532f62ef7dce06be5e472f1aa0f5960dedc0cfc6be144a02624d5907761dd6118293e7185b22e3960ae2ac31834c1ff041ecfb2ccb3d87c5439c6820f656aad4c83e9a520afa8a04149f5ceed1dbfa67a0a2d8fbbd51fd750b7c9a8b5aa07a06bbfd0e1f5c0541a6b81951452b473eae0339fd9869b0587fcd4d0bd0581c11385c56cd7dbff933915b8fe301ef967ee4921f323891cbc131294a978f3f4f5eeb2a99709ebc26a44d5e80c82032aafda99b2306fa5c3f6c1e9f98a32398b3be661f5db0a7545354d665349f59d620148098270ab1229ba043d87fc16d1bf4c164cf610f8e4485900c84bc821f5b87a9aa7868206060546e9ab982bdc09b46e94cb8537969c1b74e956a5b735bef1377069f35157cd0fe4fa9c92118c1ea7c85c6d142f2b3b76d03bfeb00772af044126d209cab593cc936a2329626ec75e04c05bc4ff2ae2c037500c80cd21101590577efa3ee6cfd13ff7e3a9532e9b7e57d4df917004112710e12d6af197b01203118086a89843e7d6f8e73378b443998a8bd91286f08527bf083720de025663c1b06f1e778bff10d0a05aa86c3a9b57de414474e1d91b5e98f8175e343d7af7b2560d14a44adfca086ef71eed452bfeae89b7ff0afe36c2aab64504ef608bf7112208f14d4bc2c02afd5ac300c4495e566a77053a8d8f3fd6dd3f98c0e22ea4bea7948b2a3949dfbb97750e595bc3e1496ed5fadb68247202663f5ba55576faa23d768f56ad1072b061cb8362ac074c43930097c262b2c00425ea48ee37945ad400e26af383ef5ae76ea98af7e4f0921743d1bedf8c6d9989cf55b82ab744e32cae31a2101717ee4ffc8ee5f7b6d88a76bbb5f52914683801eb0af01d6fcfea6ae9e0cda37e8feda3b3b5d21cbd127331f349bd647d243a6b3d0602bad89ac5751cc2b88438916a48004b75ad48cb71c7417f6099afe632c0c8251fc5fb78329896a23b2a949928479396bb47da446a0e7de8ce2b399ce3f595c9125964fc979850554dcb8a806c94105d11aa1bf7c4c3bb9ab6a9b3fc3640b8ff8faa02c4eeec2b37c1f9c86d0d93ecb77a666b183cc679ae84740653644de66407118ec1262dfaef2de8d16218abb838ce9940bb0b998e129866f606918dc65574a00d09ed309ac9ce43069e58a061b5f8445f21bffcd9d82f43cb110e7c44982dfe749536c699763bc4465eaa74099c534c58adf8b05cebe1de240565f4aba6e1bb08d97c69bc184684a5cf5d08d12e5434ffbce84923cecf8c4859b662707c0fc503af5eb449fb104ee6102e944030737447929ad119f6c442e0cd20d35a400b01546e1270218e76c4229d16c6dc5ff404cef3591228616c06d800a97c35026300dc68e08ef0b144ce2ba7e2fc98562de19868bba9f4f8a031ca29fce88a805deb655b7e60936502496d7caec26157734adb1c168a0fd270a7e6db55d0b95605dd40a20e82c9093dac433597b75d1fedae4f7a27ac1f7b554ef0096b30c4fb13b19d32c6763314a6c70096c18469b2cba45fca5feec1cb8ed742aa61d399c44e206508522624470ba6e6353314cdb3b281520971eb4fb49a7bd0161f88eaf2e8c78525b2209234f486039694f9ded7451a3d22bfe5e59149c7799885fedeb373489828a4fd128ba802725f38be533b904a10afa65ee86719f777196a425944f934ba6eb5632d838920dd755462bcf2dc02a6c9d49f72d6339be53b345ae6a4ae3f5a83883c8ab0fe4dee3b4327e531b702d5f921563fa07b9073db24a2ec39233d8e004cb37a0372d01bfbca86d71fb8b65a5cda7b4555201732228034d612fd374be13bac77ca9d5de7fb487d6890729f3e34924aebe8926daa0316cd7c14402dedb9f808786d1719b850a66e7a1dcbbf85d45202cb3784cc22fedbc26c19df05fe2ea37d48636a40c057984ee5b48e4aa5ef8a2cc297cf6e08acf14ad4370680acf26bb3d68e85992070a0f8ccb7094bba90d7cac2a489ed8c4d116b779b221ed0da5a7aabac5acc1ebc115c99d38725ce47d79492505a2ee0e9ffe50344f310b9f69b2e7f387aeee6ba553f25b76d0a9da6dc090109372ef11c448d7bb5f2fe5407d05d3568e7540e144a41c762163fa9eadb3cb6143f23d3dd06b91f78b40abaada0c9f26e6860e610a2b4c3ce4c0b70d562262a5c2ff205fcafb0a949aaf444d6f904276e4e5a48a7f81c07de6534cf53500f593f88dd9b307416a5246e7373dd76ac341c7937070cb1a58992f37925c4a99a9e9c8d6cfc79e9e33af0e9dd8aa6cac8e98535076e83b23cea2cd2e074ddd33c9a0814d8d80dc89d0f7c5851f34e1f5f7c6f5e3207cc045dcab306a542bcf18c30df1f4a7ec8e70ea8775fd058c841578b5704cee361599b3b7495b0a74529e5948de13b9128cec5f3db500e238e182d5e2da96b1dccf29919b698a492e62fda44bb403c07edb6ca3596c4fdbdc8b5300f6127f37cabc49d43b94786fdb9c5a83646194e88fe2be7b054d88b0b1cd2a71fde9fb5b38c027d5550036ad6b6cb1ffcb9d4b9664059ac1ff3aef4588e0aa417801a7b1d9d48e23276d8747bb50b1de53d24d924eff56e2755b326f82dca8f2611d143297ca6e7d2a8979ecd63368619d3024217cbdc7ac9db3446ec1cbe1b08acdc91ed5da7d02366e5d93d717117b0c5aed11625a6a2ae3f9074f8eb727d582a58089f1cc3149ba09f2c69ac5a9701e47c579a562ea237ded7babfa591187c9eed35851490e757c3a7408577e02a8d1302ce18ac60df440de346cb0700be0ae2f69cfb0fbfe8e35965cbc686f6d60cda50a99ecad2ece124af41c376e2d4ae3d1dc89c2393b3a0f64151847b05b6155a913e591df0ec47265580856c08f6f0eca6fec9d643559d3a0fa401cd5204231d12913beaa80371bf3a4c91cca869a1aa398cf6dad64c3b8e9ac56e20621dea97c39fd6683dcea1d9ee6ebbc6ccdad7b3be7b9fad39f7e2cf672cc3b3822f53d5e2126a4fce4688d2fba668bf34b1aa27a27ff43445c988c428f35047115beb8766860292f2d29cd0580b44cb7fd535f2bafeb0ee57a79543583e8edddc5b41a6937ac5007a56a35746b0b462ae1188a92f50f1f32c0816d3c7128aeb6170fd16fac5d510ce2d9d235c3e3149a131e16f4d828b11d8650bfc218fe8b60865586a8de8d25294a53be46e316eb31ecb0808e65970953798628d020b179aadc77bb6191dbbe12516491cf5dedf0e54c26b8df0d630b362b817a5606edb48b8511a436dd4dcf171eac1c5be945125af8379c8e28590a1982d3decf0fe92031363931f90fa50105c1e59ee62cd3a4d77192414e1de63d7077787c61ba99050d4a9503dd0044c75cb0b0e0e1a907886864b35545dcc10f28b292317f9c42a41842b4ad8152ce43f90416eb610744842d5edabc39656922710bcebc05b948dcde81df38b9e8e85ef282aba934cae108e7eeeee44a665738c845551886f7fdaf0165a5d423476c4a966df6ad4e4443e754fa5b3664456a1df385d7c17aaec320fba1473909c3f64994a98f1cde9e1c795e254045205577e29d43664ac7574635ad15a6c3bdaba4dc2cb6488cd0f4380d4f6bc670f7904dc37e8d61a02944d4e9c2d10cf2c1fbe59b1fc8dc73574ff3ae2d13d0cd8a4025c9b2c92303278b597975b3e939f76a67eb574c9d304382e4e5915205e7ad9a73608a398ced1e3b73ec604afc67c91c08a4016d2525de7bde0487f175a0ab23eaec08cdf00cc04fce4d1f66399ff917600c180aef8b12ea13491c4650ecccf06ec033ddc68dfad55e8339a2f542097b8df0e379da6bd823b40311d8eab0ed33b2f7b2eab01695d89ac40295eca1625a26e76b460f7fb3305726727672c5dbf6f177b513cdf682613d560ab7dd549673a00e986cca99e8f986a40d66655d72d453b8f452e4e20bcce53518cc5a3b41147d3915d597ae7a8ecfd84479b98b3b1a7369a23786e6790103669df3f513682c77ab98e93696e749b0ee58e3e68a90ec54d7e828c8018325a7d5a81f3383d429e6b564737a4aca4d68f5b1e6fc209360138420bac0f161c1b63b2e20417ec504faaac08664de6f2dc06882fdb801e7bdca2ff663862f114df9abaddcf02266b2c1080b0923aee814f8305e5cb77393d98a3fb5940a78bfeaa3dde67dbd09d6c256e7e33265500d7916ce8f33d9b660a28e93b596f307b458556b426080b5b2d5893707fb664595b02377f0d08b27b1a4398196e17eb38c8ba7821a67ff502cbec6368ca80ee1241a7355fd82031146d15ab61341c49c043b7405344a14a6afe5ab8856397435507687a0d5458cddd7b47d010951c89da29253f6fd8c649af4f2d88909e6473d3d5cb63931171dabecc55f3f633c5ea89808a6ec6fed1e7e092bff7950b2b3570bce86414c7c09ce55a1ef5cb9354fe03bc143ca369b0f1bcc6c7a94e8b4b01ab1e0f994485192d9b31baf6e1f937c0ca0771a934050d4025de5158318bf77adc8926ecf32fcb071020450c0c538254b08c03a07396d52c026a92b19d51b8fa907050cab5f389d507e9c3fb8ca1dc3901b7dd7e087a9985e1904d3326cf68f5120ce2bc769161e693f82fde2746d138cfbb858fbec339d2b6fba6db8e17b8cf6f56a61f7b9c3626cf04fce5cc30c8420ef3e3534a5a162e009c75354e5693f34c0ac20963563bfa77899fe49c66d1e5f89736ae7f74c3a975e33d73fb76859ef5b5c9376b5720ed13e7005d66e115895af66eb7b9c571f9a375e849a9d3f534e492282fedcf4e05918aebb29f0d07ea98e0612fe93292a7ab963546646bcd6c25a1cc6e261fe09b263876225ef2ce2ee696a93068c88c3790ef1483d2ebec7623a3c45168824d05ed5e602852d2ea1ec9ad913fed020abbfe4757327390d56ca97154fa412a871636e5a0f3eacf42415e1088d549353cf3e590d27720ea5f5eb631bac2d2af0d0cb47c8f42f48f016ff2d8a865cb62315e05d84fc5aeb644d60bc770005873b667de62620398fbe055744be3ac50488fd885b219c3cfc821154c0b9a46d43546c1e1c2e9d2dafbcdb4f23e8b633fcc4eb7dcfa8533c1fa9354781a938012a71fa2560db31e6e6b6db309841557ab1642cad5b9f6281632c8e0d3e61e8c04c4a79479e4440adb001112501b11a7bbc699ebd70b1e2d25452a3ba8e79312f22b683e58a8df87323d0867535f5a44fa5341bb1da6ea51d7937015a2de6fe38f49c4416d691250f8a335d3fd7df6f62ea4d36872da47febeb9ab31ae7952342ca32bc7eef6c3c0c6541c6837e161096ff241a5621b88c141474bdc877bdc5b8cf916df55926df646a28068a01a572d2666d3fcfc931e263318e5a3bab26e46782b1b9ab02884a75559e93bdff02771c32c7ffb37fc7a4101da961d28d3c0f158a6462cbeda173b62e9ff421cb6f90798bc3ee24be18a29ebe1b334097eccee621a1bb54fda9721b934bd8df5db9da8bce2dac2eb466c0b576698ffe9088c506df492388685ac0a4058cb231e6204129d0165d60de574ce80d7fc87683237f7244a595c141f00799cf726c6754048cd7d1764856324e04c274f6366efa4b1ef0be3a1c5d7dcdd78478a86c0e751eef1839422d311105c31f561858251d36fbd825f3fbd955413ec7c4db2fe231cb4cc698d8fe0c265226675cac23e341f1c047222b3972ecb9e3ecac261c85ff0d0f3307bdae83073163cb035830a14880ae2f9c28392899c3a9563f35894b754563190b2d3ff7bd7121fef9dd77c3056566a0b1109eba62b3dc0da758b298f7f615d4fec358db4947c56b320d7c37be01b7594c54e49a3f575a8177213b1f8e317a7728b3f04f8b60e3d840562c2fd343122f5311f2dad2c50e1dda2860303e1460a220a6126bf15fb3df33cc9730e9dd05b02bc68a3b9d5a0eba6e745fa380d31d35e978f3a7680a580a4508d86349c10027e9bfc5447948745986b7e16f43cc5b83a2eba8af69ffbf736c4835cfceec3e502fe3d7d1d5b6514f784ce50b5b2eb4b5c9eccade31612513faa947df1bca063f506620d0b2653798633bf1f2ac2c58c21604ed6f5c49c038e3e2e0e5cb978244dea147eb158fbd8713580e0163b317c47c1676f0bb11a4e522a0ef22464df9c89bd87e9c78545128c819b729ef13d180595218f7d22bc2dcf6317d71886f9b5109631384852447af0000930766e63f178dccfb5f5e1523647bb995738a89000335e4a62127af5b42884773226a3f9f4c5a5c97f98c7cb8a9d5a7b397835a84f9fada9f75433ac7df02d3bf868af7febcba6072ce0d388398ea8b9257c194dbb314ef2df9eeca56bda9dc0dc8e23f06b3b5487f9f6b9427fa1aa569cc0be8125e3ce20c14b76069ec0b7f8df4b75ec8a90de9b5a2ad266bfa62b3631985ea72c1021bdb3dc55b8d45799e8f4d2651f0f738e357793af2b3bb3526ed8dca74e0e6e3add1b5a9ec8a0bd74d6b2c930f1343cb89937fba99b3ec40f55179ba497b893d56a01d82b33febf80066101a99472037c225cb799bbc4d904e21cecc585484c5c754625352322d5f9f88b8af3b54bcf79c57bc81da65253671acc3762f6bc06777dd17ef94b66e0c99fe10f10bba0df9e0c8cd766f691c9c13c446f972fa28624431b3840a306354603ba74137198945d6d8e6ee5c48d7469d3d3a030f23730e362ad786b51f769038ea8ca01604c4f7ae9831f8d44bda9adfdec65accc3d422880d68757a19fddf95aa79e6df7a935a30cfdca7744b60d17dad0cc2d5b4b47c4b6a4b8bc0ee3a965af524422c7d55ca215f47c83de4010444b1d4150888863712e3e51fc319bcd75a3fe70dc4d9ac3623d0038b95fa5cd1e8661a03d722b65b7febaa2026661431dd030d6ead6d967d86fd9570982114a4fe4565c7bb10180de1e69904d25145d30fbdf9c831f9da06437002099e1d8956d4a7d8fb1253f35dac564db52117dbf75ebc0a91ca44d1986c8f80bae160969632333966ebccda7e047508ee3880a41753bedfb5fa2bfa3c80c7606838ca43130cd11e63c507c6d8fc7689a4eb7e51a08ab21bb1ffb6813388e5329f68a5bc437f28fd28b85a7ef1fbdbc1245308826ba573a6ac77c718bbc97c37c8d3e4743d4ddfbaea6346fe7c0b82a8d72b7e4998370bf7be5fb8cf8f1f1962eb333bf0a977fa88c354e0c87b97b7326969963fee91e10c7992f342531398a714f25502dd34095862939622034521381b6baa9421d74a1dc4e718b2e5302a4c53684df87daa0863a33b014f4ee5bc7c0a67568acd52f10e0639e63faff8ac391b19a049b6949ca0fe309f0f8a56aad31fe84566bc13fa53094d4983f843189a725a075a516941dbc8e1cec01c74dabfece6eb98d9032ceb28f498c989f1d1c7f0dd3ff7f957566693a0e54f89b6193d72c23b687bad7755f381d16f84ae8c511557045686efdb1b35ba3b0328bc28b640a354a112286ce3e8bb1d82120799f363fde0da5e0803c74fe753e90b9406d3da9f4d9b4908cf6402f20d6019689cedeac4b929f6186364921cdf75fad1ad078cbd23df6345a90b776a9f959f85393e8607c60bdde697643e751d4f51748282c0f698b2d0e6bdd1b2d3a86b9d30a615dc76f223401080d5e6e77fee309f85ba290d3bdbf68311b58a3f77812f0a584db1516e4c5a06ae97f7dca921f0dc490dc48cc42a1b08f202b0df3c241e0e248cc0d366a51b414e4044ab2f5fe2a11283188931460df102745d12c3a4b97e1d4bb7adbe1105bf6c0e20342ec90fd6ecc74216848640c2fe8b6463744ccf7776cca193b1f1d5ec875965e9b6d342ee12fb3718f715e0904423ca2b9b80ce1a16d9ff3dcd6e08e85bb3fece3fe4126f16d53c02a4b2afa95cda8133d238e52c52766d8111a9b1d2cfbdf25dc03cf7e17cd94032f251ab4885b7388891305696d07024009a16b902128c7ea38a93c7afc57dc8f8bf94f5801138d6dc5b668ffd13dfba473f6f4257f129472896ce551f3ed09bc8929c1de13c416e3d5bc3b1300625e36793d3e69d1c26f1c4a1eba26f4e1984b6f029df22c7a032e3302f4f9cf00dbc6e81b26c2be5af4b1ca6380c60f28fb83ef0b54ebcdb466ca0c4528a2b071491b31855fbcb437dd7e2551afa45caac10fd07b3d839cd25622604ff4209bd01b2f6767743191c89e994d241dd886ff88ec55bd59d96f30f8684a4816e44f11ac96a597792f4949d3bfb53494a52c89aec33c9a60148f4255810f7362e090a48ed54ca701e4f35c22f86c52d086fd0ca34d671132fa677552fadb4b48d155e3289635b2d19c96cffabd3ea08121e70037b91ea9448afc9c427fd69567c48979a2ddf870177d7275b098bbdea8a4d375301dc2c1135563ab04d747450b87197bea55efd57893ea408f7c6c5d3fca7618c589a086320b01261924deb45f68d722d4639d86c70f13b33b8b6d80e4d318b86d69c996e0a74ece7368cd79669cbff80f4cba7e4f0ac7a25f1131f736f75a387f33c1c1a7222edc270d3b9d6d833790a27d949dc0a158bb4d3caba7ec8a36b65851a2bb11984e982b63d56b3e29da1df7f0044e0a6993da3788ef644dfabff47f96bee858b31cf3d341cf29ba69ab3abcabf06486c0787a8dac17058b7496d03061a437c95a3caf509b68540943d4754ec90e0d22aee8a07b4883953499453790a27dfd1b08c2276dab51747ecb28e82aba1f9322c34df5516ebea409a55135982c26fb1352839ecf2565539b9ded89df101ff6083e7b82a1f16d11dd5bd052af62f8bda98e187394f72a3413514802f101264f6f7f0fef292f87d519cfdb2a47b270b287ea037f0886c2d98c40b15fa295de928254cfbbc20170fc9fdf966f0f3f8919a57ed2fbf2c2c36c561ccabe922eebf1cd33c76e3c3b5f06698a8cbd54b6fb3b8db32e857e0039ce33abe70f5cc6d41236a4b2c676e8decd788631479c96a132518c2fcdc3094cd5002fd2bf7b556a58f89bd6f7eb9cb9be2bde432a562f2f90e0a1992f838618f04ce6f373bc4ebedabbac3a77b05c2dbdd3e263f6c6cbabcd7ec175908ad87b8707ba4709472cb8622d8f12773fbcf6881248bea09d94a403a751edd7c5fa89d079872adaf9fd6f108afd82477146fce4545ec001dfc62410cfeeba0e6718360cd0d09575bee180d46b3fc8c500ffeef86c52f7d067517c02b62a04ae9123b9a816852592ca790597fb2a819842ec96ac69cf7c55c5c6ff49e1810e18b46687313d737dae13b47d2dc9f0fcc32128ac1f7e19d1fa3063b1df172555a2c7871609793ed8e2264ca2c6d99fc1b0a16d2783666ccb8b69ff496b9cc001e84db8c7b166608aa9776738787ee49472b762a869f178d475651308670d2ccb5d82d8e9f21cc3d89070d3c9465fff21462baf91b957029ce23d8826ac76ef3907f24ac5643f0a8459a9887be53f4935a19d4cf4a00ce78b667f3cbf61dc21ab3178ee361f6262d5f68aa3383f1beb8c6c3c0c0a1fe78e43e8eb7868f89a679368419b0bdaa97f3fb18b02821e81ce6801a601b029ada853955b938011e9c909d09d2a39d2079ef776b72f8216d46c823b0d04b76f475f1afe6146509a23d960d2b1864f8b822967119199a6f74711726f9a81c56447139c0c63233587d533c157333520aa91f5477cd8ba249ea5f98d8066d2e7f257d64b1ad0b1b99573d056e0143ca2af48aaaed74cc9c75fb17dae97996a2a6717e5613b6a016c3f135d3b51726d9ea33a64c64fe233eaa174e67940f4be0a912167ae9e95b8b3b8d56fc80bae219969ce71c211dca0378e3c134e48f20a0ba8f8206ebc1aa41fda5f15dc2e6e0d81af877ca586e0e011efd5117dad45124f1edd1412c957a9d710107818f515157308bfa26912e13970967dfd48929caa4a1d9acb62259ee75ef2bff7d48099d731e53d8ccbbdae9b0a9262cca8ef1c84dde7ea812ebfe9eaf68686fb5703654b79f08428a2f096f7c1ccd0614c9f46c963596b3f67ce681b9126a32074e397e02407299e95acf6f68a7571dc1b1bbadfb059afba460830e624a1a6b4d28142756ba0e75d2038904040644d7976a4a78bdb830b30e32289374bbecc4d4b5622d46715dfa701d2005644ddfaec90d30f9f2282d9856f4e6e06e184da818e9b4dcb786a8dbeeec55378c447a6575b08a3ae3d95fe0fcc726607ae31a16b88357315bffcb75783c308b46ffa80d834389cc64f135a7b23104237b427f28ec62030771b0bbcdd54583f7be0c4a93d53c854378aa6e2c317862ba93c4a7a8c90b17673abd96c3aab2a5bfee3222dd856529ced6e8429ab87dbb61f8c645f637b0d0de2c9eb366e5ae66de7e892365a82574df57d76a8a77dfea8667af4346eb28b33c3a25294740b0ef5b32bc3b3536a45c97c86ed54216621ff416d7e791dbfb3d82784b5a4aad5d6ede081f9151dac9adf61c83fb6bcd7d6918daa7b5e57f98adb328b5222eb4a37285ef516b40f83ec3bfe95380434976c8b83486d437a1eca9f389c126d8ac75c5f61c5169be76fa4d6d595b19e00740dc3d455074811dffeb6ffd22d5558d735142bae47518dceab67057c67502515f60c71cae96a73ce5879c35730f7378c2a8fbfc4364266632359910350620ec3751d82a850beac37bd73f10a4ff9235d39a467fa17bbb52e0c41d78ff9a429f589fbdbcdfc0fa02ba7b38d6a74f3e27667e0cf943bcd9ec68d2d03f6a9b7d0ee3860ea15e3ee6540b0831ca91107ae78a571aae2acfba40dee707ffa046d48d59a777568dc98c9eec6231bbdfc7efb940e4535839b6733eb123382e737a9fd02fb9dcecd6515fd21795744bda52d98f7074aa9cfc20ff5d8b6ad5989a8f0934c9a52807571d4ebabef9732a960693bc21132c7d018b7b88292e8aa0716b0859697a6281dd332c4b3deebb34a036ed2561bc53cfcec6700fff8553b02cea5361dbe730f22b30b40bf677dd84ed9d3b79671bbd06c2beec90dd338acb80bfc2dc0d98e47038df7668cae110a60aafd8937ee89491f4ae5a931139a88fa3ed96b36a4878d7659b7be44dab3c65422e73c0514744c5f3ecb8b7c5a5c8428c8be1457187822e7a7f6ade8c55f0c3b60193ac8452cf0c3e731e470ddd0213d6792aa9b2cd97f9080b2dd50fefac30631aa632661a4bd73af104ee4d54e489cb2cc2e668474d002789cf8ddb839980cce4e6e1f4b2daf504344e970e80e8d7e3cdd4a085e2668041d79c865cd07921e7af20b9518e8ab7cea2d8e694fafc9b325866b0fcfd3780d4a613444bc03c3e10d035349865a59f3f8dd02da0be911d320bad81d71c72c5c5cb9a53381b95d1a957b1c478a0e631e9ede8f3c7275073ea3c1a3028fa88086e278410ae44e3933c3017e45d3ea59a29e691dd4902de81df366d61feaa0d9efce412f33ea88794e957752ee5c76dc38bfe0dcda8173d2e3b9b86391d32512d944ab1fa2fd4d85aa49098c170b391a7396c6251b2ae1f9a90f07cbe51672f81d49364d4746cbbd731ab9a2e29310623d03d3a89cf308b9b786d0ec9411e6000f62d5b6c95cac8bc4d20741a09949675f0d253076bfaf9bf04eb1d1b39084cafd0d22c096c325f2e3da8a5951b094f71172ecb43396b77aa18f31cdb92f85547629d113a3a0a7a02fabeebfe6abbc61c1efb971d1cad7141b061f0427e01d9aebf247fc811a5304fc22cd879556da35e6436989716d8d404e876b8ca5858a2daf504adcd906605f52c6941c6b5c676c38821448301e658f3111d8ee7f8ba531d6237233bc58d587bfbdb3c4bbbe30bedddb8f298983900dd9ffdd27751685324936233f9a62ce20c7c7782ec8fd4ec1956d1f8484f8fe0e532b57012708747481dfa6d008475dbf85ccb12efe415080a67a9b2fac6ec29912a4d4768102ed4a58d742908aff93eb2afda8e648699f7f11a89c722acc33d2f7ed12fc04f8174510fe182644e54b3db9422bc47a5970e9d07d2ddec438a1f6f576997578c4928565a29d667f59941ee98951266c180fd01f4bc5a35a05e0b243e8800923a136c60ef3fe9dbabfed5bef1824ff626a8417af78b340069d26570e464eaf4867e0283228fe5cff946dbdec2e7eeed0b7ab3fd69ccc8f9cdfbdbb36dd67dba83dfc70d22664c5f783aa51d3dda61104ef8c96c886be5831a81a32f8a20989266a3dd3f80e26254a3eb5a0111d5e8a9580df59b62129dccfba985792f23250e899f734a3929aa68375a35fd4265525220a440580d12b4819970687029e18c44220ddd8fb2d95d8d5ca0c9045d0557cd9823ee0c770fdfb426bdeb5387ae56831c918149b23f738d838172abe8a19bb36940c0673b60b5861a5b718b5c748dfc06324b4c454a20b70c9bff46d0d7376e98d53db485dc1407e0e93da4e6c82b947e9c36239c2cd29edaa023290e33ac05db53ce2ad5612366151da082dc730ebc4b10f35491e4ac8955f02c47046639dfd7a6adc72611aa9fb9186d0ba470e3a4414deffaf133ee42a76eae6b866bfdf585ed6478ae8ad8c7bcf72818a5816341477111f6fe04127fc469de3a9e8e3dca7661d7e12e4bed84ec9d85e638c97e982637199a024a6a561623608e8c717b415bffdd63bcadbe74ac27353523d83a8d254cc73a4e951fae3e331f6e0da941fac45d12615af26cf17eee232720907e21401d9957134e5a403c89a96c7630e653e1de4058e7cef4faa69cf275bec4a6c0827383ca3be93ff22a8bfc2ea9721b6e5ed70caeb027d1594c3c7b33a20b53682c415479f447c3f944b24727bd88e0f7a6ddf5b5c153635351eb2e8291dac37e834e4831f355c68535d7d8b51d0779c866c9025ac64420119215395a8c0fbbf2f611f52dece29b25bafd3baf9c64e0702634c29b94016f294df4704acec560e29424581a47de7736def258632ab0e5b81a084f12d473eaccb8ef5628682e818f37887d0e5cbde45680ef508169c57ec7cf9365a348471570312c19fe31d8f6044879bddfc8f255b5cf92a4edfa18a2aa5df25e56f47db63e5b9082b5073c5b2cbd6dda6c17b887953b355a4a8ec2e8d1e3275b4ebbbe4073e67232c804823ccec01d54327f5da156e93141af0c519f0583ee171770b556ae26a2984dd49213306df16e8a601aef89e6b8dfd9699f878730e8814dd44533af6c346373ebb5012ab7f13c4125f81fd6bb4102c65dcd3644cb1ec4fa0f2ff87c8680938ed2d8431bb79c01a6bd6d7f712af1d9f8288c1b7e80c36b813134b23b97f279dedf573e304d53aa01844fc7afcce415f4026f52fa5a81ad39ee6279f4043fa3d51a6be600650305353746aea2aee9fdf0e541b0c979ee3549bbfd3a63e30ab4b1a819447ea2e6199fc8575b0282f588e035f300837bf5a638ab4b8e44a93cdb30b8aca2ddc367bd7333625c57cc9bcfcf7fe6c42ffbab54d2e9857d53b2367e30b7d483535842f8316acc4a4138f50bcb41f6e4072be92126336d28851bb6224485df9334c9d1f12c8ddc36ed6b7e78504ef84befe5285798959a54a0587a38ddeb0ade31b4ba0d7f70dbeba2f8f9e7fb657194e90bfc39f6eb05004c5a300fd0943fba161329c94e38b770c702d682ee3a149be577e68e88b157040c655662f5538ffced48d64855541adc24a8cd11dae0d25422f509fbada25371d34a4c32fd46436d3a71c7b15a9b2ed0c3de0b77618bb0ef1991961b3d02fec00eda3fd2e486e643e27208f43adf47155f7ec779ebb9a384466f6e6a1b45dfb935b299f5e9a666333a341cd7e7d58de02cb4772ed2380018ff87343f54feb143f4e6c08345ebb1a0752ee5f1e8c917bfb58516eae759aa477e692047c1cb0accd45d6da13c4b68f79daf2433d0fcaaa89dc50f751f40cb5ac17ba0befbba2d754327e0701c428e0a69e51439fdccce89ca6db6c2d7d72fa3c0ae285150557668e8eeef93470130bfbbb827eb3e13edb581ac021c41c55475ebd006e860efc59f005a280d3375a0e7550ada72587e3e7622221dad0504fbac1e07119bf8cfed3c709e7f2edcd492e7871cc0355ec98fb1884d03ad903c7379d9245e5a774d483787eff4a3caf1e9f8466e388f44b08e974cf41908b751d3ee2d4d792822726fd94464008c29c419343556b65d446a73a6ca266c0c7c85fd54ac2902ad97a804464ada4cc88a0c2a8cde1a6c4794b8c557818d40559570940d88bc493d6a3af602497865d4fead8180807917fd33bf0057dd748a32777cd2378f2490ca58e67747fbc8ded56ac6588804bd530783c5dfba41100143aa3f681c6635e7a951b0c38146d1732b77920e8f3ed9629fed0501baaa0b2fa165ee7833289f3575da57c0ced1d708aef6736f22842286c750f8607e4707c52acee25098192a4143c68966498504bb6c021f5e4db9a28a38c779265d1b8f288bada28a48d7e12a7f18021cc274f098b5b7d383005a4cb2a599779ab1b024d4d3aefab9e7560a8ee80fde94c3ee386268427a7b7d291ceb19766349eb9e4cc2616b916283a94ddaee691452b8c0a9d6dfa091e8f62dc85a3b01f722b54674ae9996b79b6d69fd86f1260537bc9d3554bb6764a2dad89d1de47de4b15e09a9592d43605cb6f30d1b04cd448383d8f2aeaeafc2d8b6646dc2ad9de504477e9a212becfc809cef667307919b8a36f46d87eff9a5c6761548278d565ccfc536011957d101237d924526aed66f60de4a40cc8594cb8ba587c4e271b5329c2d33210cbf0014d23b40edbb36276b3aeac282ee4597759a33659e93ba5410bea0bac0ccab5c698f43d026d6f975895b6e46d45785e5fd01dfc0bb4b9fde3323ef02bf2816fc318d527185f9876b84cf60165777a20c6f90f1f72125889802623ff07e21bf08793ef279bd11d6d45e9504b08ca106085f16d30b922de1fbe6dedd56726b27520adce19840d83a9f89292a70da154e5f990d58e39dbb115b49bcf0b97b29d59e86a5ca462295f1b568c3f6531b8276ddbc7027b03ed648966cb010f5fca98a1cd15c3ac7c6f5c9d4baad4dc5e6421af29b012cec8cf51af14530ebcebaf012fef12db69ceff8bfd6ccb07ba58b86190927c33c0d993efe46cfafb719646be701865436ced11c6838a13c9abd9c9abea6a46a6ef14634b32a8701d3ff3881ed1236597053323baba06f5d89f4933f686072de7f401a6e4730da7b1b25624d8aed</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 请输入密码查看更多.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>简历</category>
-      </categories>
-      <tags>
-        <tag>万鲲鹏</tag>
-        <tag>个人简历2019</tag>
-        <tag>加密</tag>
       </tags>
   </entry>
   <entry>
@@ -12117,6 +12117,176 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
         <tag>markdown</tag>
         <tag>hexo</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>多智能体强化学习算法及环境</title>
+    <url>/2021/12/06/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8F%8A%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+<h1 id="多智能体强化学习算法及环境"><a href="#多智能体强化学习算法及环境" class="headerlink" title="多智能体强化学习算法及环境"></a>多智能体强化学习算法及环境</h1><p>Pytorch实现的多智能体强化学习算法，包括IQL、QMIX、VDN、COMA、QTRAN（QTRAN-base和QTRAN-alt）、MAVEN、CommNet、DyMA-CL和G2ANet，这些都是最先进的MARL算法。SMAC是星际争霸II的分散式微观管理场景。</p>
+<h2 id="项目地址："><a href="#项目地址：" class="headerlink" title="项目地址："></a>项目地址：</h2><p><a href="https://github.com/starry-sky6688/StarCraft">https://github.com/starry-sky6688/StarCraft</a></p>
+<p>运行：</p>
+<p><code>python main.py --map=3m --alg=qmix</code></p>
+<p>直接运行 ，然后算法将在map上开始训练。</p>
+<h2 id="MRL环境配置"><a href="#MRL环境配置" class="headerlink" title="MRL环境配置"></a>MRL环境配置</h2><p>星际争霸II 环境： <a href="https://github.com/oxwhirl/smac">https://github.com/oxwhirl/smac</a></p>
+<h3 id="安装星际争霸-II"><a href="#安装星际争霸-II" class="headerlink" title="安装星际争霸 II"></a>安装星际争霸 II</h3><p>SMAC基于星际争霸II的完整游戏（版本&gt;= 3.16.1）。要安装游戏，请按照下面的命令操作。</p>
+<ol>
+<li>Linux</li>
+</ol>
+<p>请使用<a href="https://github.com/Blizzard/s2client-proto#downloads">暴雪的存储库</a>下载 Linux 版本的《星际争霸 II》。默认情况下，游戏应位于目录中。这可以通过设置环境变量来更改。~/StarCraftII/SC2PATH</p>
+<ol>
+<li>MacOS/Windows</li>
+</ol>
+<p>请从Battle.net安装<a href="https://starcraft2.com/zh-tw/">星际争霸 II</a>。免费的入门版也有效。如果您使用默认安装位置，PySC2 将找到最新的二进制文件。否则，与Linux版本类似，您需要使用游戏的正确位置设置环境变量。<code>SC2PATH</code></p>
+<h3 id="SMAC-地图"><a href="#SMAC-地图" class="headerlink" title="SMAC 地图"></a>SMAC 地图</h3><p>SMAC由许多具有预配置地图的战斗场景组成。在SMAC可以使用之前，这些地图需要下载到星际争霸II的目录中。Maps</p>
+<p>下载<a href="https://github.com/oxwhirl/smac/releases/download/v0.1-beta1/SMAC_Maps.zip">SMAC地图</a>并将其解压缩到您的目录中。如果您通过 git 安装了 SMAC，只需将目录从复制到目录中即可。</p>
+<p>在根目录下新建一个文件夹Maps</p>
+<p>将文件保存到星际争霸Maps文件夹内。</p>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p><code>python main.py --map=3m --alg=qmix</code></p>
+<p>环境配置，感觉有点问题，其实修改有个python文件夹里面的地址即可，不需要配置什么环境变量。<br>报错的文件，点进去找到C:修改为F:即可。</p>
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/1.png"/></div>
+<div align=center><video src="https://www.mmrsl.cn/download/video/1.mp4"   controls="controls"></video></div>
+
+
+<div align=center>视频结果</div>
+平均胜率为8次,独立运行3m --difficulty=7(VeryHard)
+
+<div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/overview_3m.png"/></div>
+
+
+
+<h2 id="MADDPG"><a href="#MADDPG" class="headerlink" title="MADDPG"></a>MADDPG</h2><p>git上找到的都运行不了，测试了很久，在<a href="https://github.com/starry-sky6688/MADDPG">https://github.com/starry-sky6688/MADDPG</a> 的基础上改了一下，成功运行。</p>
+<ul>
+<li>对应的论文：<a href="https://arxiv.org/abs/1706.02275">Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments</a></li>
+<li>对应的环境：<a href="https://github.com/openai/multiagent-particle-envs">MPE</a></li>
+</ul>
+<h3 id="多智能体环境"><a href="#多智能体环境" class="headerlink" title="多智能体环境"></a>多智能体环境</h3><p><a href="https://github.com/openai/multiagent-particle-envs">MPE</a></p>
+<ol>
+<li>安装方法1:</li>
+</ol>
+<p><code>cd into the root directory and type pip install -e .</code></p>
+<ol>
+<li>安装方法2:<br><a href="https://www.pettingzoo.ml/mpe">https://www.pettingzoo.ml/mpe</a></li>
+</ol>
+<p><code>pip install pettingzoo[mpe]</code></p>
+<h3 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h3><p>python=3.6.5<br>Multi-Agent Particle Environment(MPE)<br>torch=1.1.0</p>
+<h3 id="运行-1"><a href="#运行-1" class="headerlink" title="运行"></a>运行</h3><p><code>python main.py --scenario-name=simple_tag --evaluate-episodes=10</code></p>
+<div align=center><img width = '500' height ='600' src ="https://www.mmrsl.cn/download/img/xmu/2.png"/></div>
+
+<h3 id="环境列表"><a href="#环境列表" class="headerlink" title="环境列表"></a>环境列表</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>代码中的环境名称</th>
+<th>沟通</th>
+<th>竞争</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>simple</td>
+<td>N</td>
+<td>N</td>
+<td>单个代理看到地标位置，根据它与地标的接近程度进行奖励。不是多代理环境——用于调试策略。</td>
+</tr>
+<tr>
+<td>simple_adversary.py</td>
+<td>（物理欺骗）</td>
+<td>N</td>
+<td>是    1 个对手（红色），N 个优秀代理（绿色），N 个地标（通常 N=2）。所有代理都会观察地标和其他代理的位置。一个地标是“目标地标”（绿色）。好的代理根据其中一个与目标地标的接近程度进行奖励，但如果对手靠近目标地标，则获得负面奖励。对手根据它与目标的接近程度获得奖励，但它不知道哪个地标是目标地标。因此，优秀的代理必须学会“拆分”并覆盖所有地标以欺骗对手。</td>
+</tr>
+<tr>
+<td>simple_crypto.py （秘密交流）</td>
+<td>是</td>
+<td>是</td>
+<td>两个好代理人（爱丽丝和鲍勃），一个对手（夏娃）。Alice 必须通过公共频道向 bob 发送私人消息。Alice 和 bob 会根据 bob 重建消息的程度获得奖励，但如果 eve 能够重建消息，则获得负面奖励。Alice 和 bob 有一个私钥（在每集开始时随机生成），他们必须学会使用它来加密消息。</td>
+</tr>
+<tr>
+<td>simple_push.py （远离）</td>
+<td>N</td>
+<td>是</td>
+<td>1 个代理、1 个对手、1 个地标。代理根据与地标的距离进行奖励。如果对手靠近地标，并且代理远离地标，则它会得到奖励。因此，对手学会将代理推离地标。</td>
+</tr>
+<tr>
+<td>simple_reference.py</td>
+<td>是</td>
+<td>N</td>
+<td>2 个代理，3 个不同颜色的地标。每个代理都想到达他们的目标地标，只有其他代理知道。奖励是集体的。因此，代理必须学会传达另一个代理的目标，并导航到他们的地标。这与 simple_speaker_listener 场景相同，其中两个代理同时是说话者和听众。</td>
+</tr>
+<tr>
+<td>simple_speaker_listener.py （合作交流）</td>
+<td>是</td>
+<td>N</td>
+<td>与 simple_reference 相同，除了一个代理是不动的“说话者”（灰色）（观察其他代理的目标），另一个代理是听者（不能说话，但必须导航到正确的地标）。</td>
+</tr>
+<tr>
+<td>simple_spread.py （合作导航）</td>
+<td>N</td>
+<td>N</td>
+<td>N 个代理，N 个地标。根据任何代理与每个地标的距离对代理进行奖励。如果代理与其他代理发生冲突，则会受到惩罚。因此，代理必须学会在避免碰撞的同时覆盖所有地标。</td>
+</tr>
+<tr>
+<td>simple_tag.py （捕食者-猎物）</td>
+<td>N</td>
+<td>是</td>
+<td>捕食者-猎物环境。好的代理（绿色）速度更快，并且希望避免被对手（红色）击中。对手速度较慢，并希望打击优秀的代理。障碍物（大黑圈）挡住了去路。</td>
+</tr>
+<tr>
+<td>simple_world_comm.py</td>
+<td>是</td>
+<td>是</td>
+<td>在论文随附的视频中看到的环境。与 simple_tag 相同，除了 (1) 有食物（蓝色小球），好代理会因为靠近而获得奖励，（2）我们现在有“森林”，可以将代理隐藏在里面，从外面看不到；(3)有一个“领导对手”，可以随时看到代理人，并可以与其他对手沟通，帮助协调追击。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>通过<code>python main.py --scenario-name=simple_tag --evaluate-episodes=10</code></p>
+<p>修改<code>simple_tag</code>替换环境。</p>
+<h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>在这项任务中，两个蓝色代理通过最小化它们与绿色地标的最近距离（只有一个需要靠近以获得最佳奖励）来获得奖励，同时最大化红色对手与绿色地标的距离。红色对手通过最小化它与绿色地标的距离来获得奖励；然而，在任何给定的试验中，它不知道哪个地标是绿色的，所以它必须跟随蓝色代理。因此，蓝色代理应该学会通过覆盖两个地标来欺骗红色代理。</p>
+<div align=center><img src="https://www.mmrsl.cn/download/img/xmu/1.gif?raw=true" width="20%"> <img src="https://www.mmrsl.cn/download/img/xmu/2.gif?raw=true" width="20%"> <img src="https://www.mmrsl.cn/download/img/xmu/3.gif?raw=true" width="20%"></div>
+
+
+
+<div align=center><video src="https://www.mmrsl.cn/download/img/xmu/1.mp4"   controls="controls"></video></div>]]></content>
   </entry>
   <entry>
     <title>基于深度强化学习的超级马里奥和飞机大战自动控制</title>
@@ -12323,7 +12493,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x6b;&#x70;&#x40;&#109;&#109;&#x72;&#115;&#108;&#46;&#99;&#x6e;">&#x6b;&#x70;&#x40;&#109;&#109;&#x72;&#115;&#108;&#46;&#99;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#x6b;&#112;&#x40;&#109;&#x6d;&#114;&#x73;&#108;&#46;&#99;&#x6e;">&#x6b;&#112;&#x40;&#109;&#x6d;&#114;&#x73;&#108;&#46;&#99;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -12365,176 +12535,6 @@ img {
         <tag>强化学习</tag>
         <tag>Python</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>多智能体强化学习算法及环境</title>
-    <url>/2021/12/06/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8F%8A%E7%8E%AF%E5%A2%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  " ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
-
-<h1 id="多智能体强化学习算法及环境"><a href="#多智能体强化学习算法及环境" class="headerlink" title="多智能体强化学习算法及环境"></a>多智能体强化学习算法及环境</h1><p>Pytorch实现的多智能体强化学习算法，包括IQL、QMIX、VDN、COMA、QTRAN（QTRAN-base和QTRAN-alt）、MAVEN、CommNet、DyMA-CL和G2ANet，这些都是最先进的MARL算法。SMAC是星际争霸II的分散式微观管理场景。</p>
-<h2 id="项目地址："><a href="#项目地址：" class="headerlink" title="项目地址："></a>项目地址：</h2><p><a href="https://github.com/starry-sky6688/StarCraft">https://github.com/starry-sky6688/StarCraft</a></p>
-<p>运行：</p>
-<p><code>python main.py --map=3m --alg=qmix</code></p>
-<p>直接运行 ，然后算法将在map上开始训练。</p>
-<h2 id="MRL环境配置"><a href="#MRL环境配置" class="headerlink" title="MRL环境配置"></a>MRL环境配置</h2><p>星际争霸II 环境： <a href="https://github.com/oxwhirl/smac">https://github.com/oxwhirl/smac</a></p>
-<h3 id="安装星际争霸-II"><a href="#安装星际争霸-II" class="headerlink" title="安装星际争霸 II"></a>安装星际争霸 II</h3><p>SMAC基于星际争霸II的完整游戏（版本&gt;= 3.16.1）。要安装游戏，请按照下面的命令操作。</p>
-<ol>
-<li>Linux</li>
-</ol>
-<p>请使用<a href="https://github.com/Blizzard/s2client-proto#downloads">暴雪的存储库</a>下载 Linux 版本的《星际争霸 II》。默认情况下，游戏应位于目录中。这可以通过设置环境变量来更改。~/StarCraftII/SC2PATH</p>
-<ol>
-<li>MacOS/Windows</li>
-</ol>
-<p>请从Battle.net安装<a href="https://starcraft2.com/zh-tw/">星际争霸 II</a>。免费的入门版也有效。如果您使用默认安装位置，PySC2 将找到最新的二进制文件。否则，与Linux版本类似，您需要使用游戏的正确位置设置环境变量。<code>SC2PATH</code></p>
-<h3 id="SMAC-地图"><a href="#SMAC-地图" class="headerlink" title="SMAC 地图"></a>SMAC 地图</h3><p>SMAC由许多具有预配置地图的战斗场景组成。在SMAC可以使用之前，这些地图需要下载到星际争霸II的目录中。Maps</p>
-<p>下载<a href="https://github.com/oxwhirl/smac/releases/download/v0.1-beta1/SMAC_Maps.zip">SMAC地图</a>并将其解压缩到您的目录中。如果您通过 git 安装了 SMAC，只需将目录从复制到目录中即可。</p>
-<p>在根目录下新建一个文件夹Maps</p>
-<p>将文件保存到星际争霸Maps文件夹内。</p>
-<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p><code>python main.py --map=3m --alg=qmix</code></p>
-<p>环境配置，感觉有点问题，其实修改有个python文件夹里面的地址即可，不需要配置什么环境变量。<br>报错的文件，点进去找到C:修改为F:即可。</p>
-<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/1.png"/></div>
-<div align=center><video src="https://www.mmrsl.cn/download/video/1.mp4"   controls="controls"></video></div>
-
-
-<div align=center>视频结果</div>
-平均胜率为8次,独立运行3m --difficulty=7(VeryHard)
-
-<div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/overview_3m.png"/></div>
-
-
-
-<h2 id="MADDPG"><a href="#MADDPG" class="headerlink" title="MADDPG"></a>MADDPG</h2><p>git上找到的都运行不了，测试了很久，在<a href="https://github.com/starry-sky6688/MADDPG">https://github.com/starry-sky6688/MADDPG</a> 的基础上改了一下，成功运行。</p>
-<ul>
-<li>对应的论文：<a href="https://arxiv.org/abs/1706.02275">Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments</a></li>
-<li>对应的环境：<a href="https://github.com/openai/multiagent-particle-envs">MPE</a></li>
-</ul>
-<h3 id="多智能体环境"><a href="#多智能体环境" class="headerlink" title="多智能体环境"></a>多智能体环境</h3><p><a href="https://github.com/openai/multiagent-particle-envs">MPE</a></p>
-<ol>
-<li>安装方法1:</li>
-</ol>
-<p><code>cd into the root directory and type pip install -e .</code></p>
-<ol>
-<li>安装方法2:<br><a href="https://www.pettingzoo.ml/mpe">https://www.pettingzoo.ml/mpe</a></li>
-</ol>
-<p><code>pip install pettingzoo[mpe]</code></p>
-<h3 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h3><p>python=3.6.5<br>Multi-Agent Particle Environment(MPE)<br>torch=1.1.0</p>
-<h3 id="运行-1"><a href="#运行-1" class="headerlink" title="运行"></a>运行</h3><p><code>python main.py --scenario-name=simple_tag --evaluate-episodes=10</code></p>
-<div align=center><img width = '500' height ='600' src ="https://www.mmrsl.cn/download/img/xmu/2.png"/></div>
-
-<h3 id="环境列表"><a href="#环境列表" class="headerlink" title="环境列表"></a>环境列表</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>代码中的环境名称</th>
-<th>沟通</th>
-<th>竞争</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>simple</td>
-<td>N</td>
-<td>N</td>
-<td>单个代理看到地标位置，根据它与地标的接近程度进行奖励。不是多代理环境——用于调试策略。</td>
-</tr>
-<tr>
-<td>simple_adversary.py</td>
-<td>（物理欺骗）</td>
-<td>N</td>
-<td>是    1 个对手（红色），N 个优秀代理（绿色），N 个地标（通常 N=2）。所有代理都会观察地标和其他代理的位置。一个地标是“目标地标”（绿色）。好的代理根据其中一个与目标地标的接近程度进行奖励，但如果对手靠近目标地标，则获得负面奖励。对手根据它与目标的接近程度获得奖励，但它不知道哪个地标是目标地标。因此，优秀的代理必须学会“拆分”并覆盖所有地标以欺骗对手。</td>
-</tr>
-<tr>
-<td>simple_crypto.py （秘密交流）</td>
-<td>是</td>
-<td>是</td>
-<td>两个好代理人（爱丽丝和鲍勃），一个对手（夏娃）。Alice 必须通过公共频道向 bob 发送私人消息。Alice 和 bob 会根据 bob 重建消息的程度获得奖励，但如果 eve 能够重建消息，则获得负面奖励。Alice 和 bob 有一个私钥（在每集开始时随机生成），他们必须学会使用它来加密消息。</td>
-</tr>
-<tr>
-<td>simple_push.py （远离）</td>
-<td>N</td>
-<td>是</td>
-<td>1 个代理、1 个对手、1 个地标。代理根据与地标的距离进行奖励。如果对手靠近地标，并且代理远离地标，则它会得到奖励。因此，对手学会将代理推离地标。</td>
-</tr>
-<tr>
-<td>simple_reference.py</td>
-<td>是</td>
-<td>N</td>
-<td>2 个代理，3 个不同颜色的地标。每个代理都想到达他们的目标地标，只有其他代理知道。奖励是集体的。因此，代理必须学会传达另一个代理的目标，并导航到他们的地标。这与 simple_speaker_listener 场景相同，其中两个代理同时是说话者和听众。</td>
-</tr>
-<tr>
-<td>simple_speaker_listener.py （合作交流）</td>
-<td>是</td>
-<td>N</td>
-<td>与 simple_reference 相同，除了一个代理是不动的“说话者”（灰色）（观察其他代理的目标），另一个代理是听者（不能说话，但必须导航到正确的地标）。</td>
-</tr>
-<tr>
-<td>simple_spread.py （合作导航）</td>
-<td>N</td>
-<td>N</td>
-<td>N 个代理，N 个地标。根据任何代理与每个地标的距离对代理进行奖励。如果代理与其他代理发生冲突，则会受到惩罚。因此，代理必须学会在避免碰撞的同时覆盖所有地标。</td>
-</tr>
-<tr>
-<td>simple_tag.py （捕食者-猎物）</td>
-<td>N</td>
-<td>是</td>
-<td>捕食者-猎物环境。好的代理（绿色）速度更快，并且希望避免被对手（红色）击中。对手速度较慢，并希望打击优秀的代理。障碍物（大黑圈）挡住了去路。</td>
-</tr>
-<tr>
-<td>simple_world_comm.py</td>
-<td>是</td>
-<td>是</td>
-<td>在论文随附的视频中看到的环境。与 simple_tag 相同，除了 (1) 有食物（蓝色小球），好代理会因为靠近而获得奖励，（2）我们现在有“森林”，可以将代理隐藏在里面，从外面看不到；(3)有一个“领导对手”，可以随时看到代理人，并可以与其他对手沟通，帮助协调追击。</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>通过<code>python main.py --scenario-name=simple_tag --evaluate-episodes=10</code></p>
-<p>修改<code>simple_tag</code>替换环境。</p>
-<h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>在这项任务中，两个蓝色代理通过最小化它们与绿色地标的最近距离（只有一个需要靠近以获得最佳奖励）来获得奖励，同时最大化红色对手与绿色地标的距离。红色对手通过最小化它与绿色地标的距离来获得奖励；然而，在任何给定的试验中，它不知道哪个地标是绿色的，所以它必须跟随蓝色代理。因此，蓝色代理应该学会通过覆盖两个地标来欺骗红色代理。</p>
-<div align=center><img src="https://www.mmrsl.cn/download/img/xmu/1.gif?raw=true" width="20%"> <img src="https://www.mmrsl.cn/download/img/xmu/2.gif?raw=true" width="20%"> <img src="https://www.mmrsl.cn/download/img/xmu/3.gif?raw=true" width="20%"></div>
-
-
-
-<div align=center><video src="https://www.mmrsl.cn/download/img/xmu/1.mp4"   controls="controls"></video></div>]]></content>
   </entry>
   <entry>
     <title>xmu健康打卡ios快捷指令</title>
@@ -13559,6 +13559,20 @@ y &#x3D; rchan(x);
       </tags>
   </entry>
   <entry>
+    <title>深度学习_花书</title>
+    <url>/2020/07/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E8%8A%B1%E4%B9%A6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><span id="more"></span>
+<p>&nbsp;&nbsp; 深度学习(DL, Deep Learning)是机器学习(ML, Machine Learning)领域中一个新的研究方向，它被引入机器学习使其更接近于最初的目标——人工智能(AI, Artificial Intelligence)。<br>&nbsp;&nbsp; 深度学习是学习样本数据的内在规律和表示层次，这些学习过程中获得的信息对诸如文字，图像和声音等数据的解释有很大的帮助。它的最终目标是让机器能够像人一样具有分析学习能力，能够识别文字、图像和声音等数据。 深度学习是一个复杂的机器学习算法，在语音和图像识别方面取得的效果，远远超过先前相关技术。<br>&nbsp;&nbsp; 深度学习在搜索技术，数据挖掘，机器学习，机器翻译，自然语言处理，多媒体学习，语音，推荐和个性化技术，以及其他相关领域都取得了很多成果。深度学习使机器模仿视听和思考等人类的活动，解决了很多复杂的模式识别难题，使得人工智能相关技术取得了很大进步。  </p>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+        <tag>分类器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>百度谷歌搜索引擎索引</title>
     <url>/2020/12/04/%E7%99%BE%E5%BA%A6%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%8B%97%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%B4%A2%E5%BC%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="百度谷歌搜索引擎索引"><a href="#百度谷歌搜索引擎索引" class="headerlink" title="百度谷歌搜索引擎索引"></a><center>百度谷歌搜索引擎索引</center></h2><span id="more"></span>
@@ -13605,20 +13619,6 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
       <tags>
         <tag>hexo</tag>
         <tag>搜索引擎</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度学习_花书</title>
-    <url>/2020/07/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E8%8A%B1%E4%B9%A6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><span id="more"></span>
-<p>&nbsp;&nbsp; 深度学习(DL, Deep Learning)是机器学习(ML, Machine Learning)领域中一个新的研究方向，它被引入机器学习使其更接近于最初的目标——人工智能(AI, Artificial Intelligence)。<br>&nbsp;&nbsp; 深度学习是学习样本数据的内在规律和表示层次，这些学习过程中获得的信息对诸如文字，图像和声音等数据的解释有很大的帮助。它的最终目标是让机器能够像人一样具有分析学习能力，能够识别文字、图像和声音等数据。 深度学习是一个复杂的机器学习算法，在语音和图像识别方面取得的效果，远远超过先前相关技术。<br>&nbsp;&nbsp; 深度学习在搜索技术，数据挖掘，机器学习，机器翻译，自然语言处理，多媒体学习，语音，推荐和个性化技术，以及其他相关领域都取得了很多成果。深度学习使机器模仿视听和思考等人类的活动，解决了很多复杂的模式识别难题，使得人工智能相关技术取得了很大进步。  </p>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-        <tag>分类器</tag>
       </tags>
   </entry>
   <entry>
