@@ -6,7 +6,7 @@
   <link href="http://www.mmrsl.cn/atom.xml" rel="self"/>
   
   <link href="http://www.mmrsl.cn/"/>
-  <updated>2021-12-23T03:28:03.740Z</updated>
+  <updated>2021-12-23T09:22:35.899Z</updated>
   <id>http://www.mmrsl.cn/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>信道丢包率、带宽</title>
+    <link href="http://www.mmrsl.cn/2021/12/23/%E4%BF%A1%E9%81%93%E4%B8%A2%E5%8C%85%E7%8E%87%E3%80%81%E5%B8%A6%E5%AE%BD/"/>
+    <id>http://www.mmrsl.cn/2021/12/23/%E4%BF%A1%E9%81%93%E4%B8%A2%E5%8C%85%E7%8E%87%E3%80%81%E5%B8%A6%E5%AE%BD/</id>
+    <published>2021-12-23T08:39:29.000Z</published>
+    <updated>2021-12-23T09:22:35.899Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="http://www.mmrsl.cn/categories/python/"/>
+    
+    
+    <category term="python" scheme="http://www.mmrsl.cn/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>iwlist/iwconfig/iw/wpa_supplicant命令及信道可视化</title>
     <link href="http://www.mmrsl.cn/2021/12/22/iwlist-iwconfig-iw-wpa-supplicant/"/>
     <id>http://www.mmrsl.cn/2021/12/22/iwlist-iwconfig-iw-wpa-supplicant/</id>
     <published>2021-12-22T08:07:23.000Z</published>
-    <updated>2021-12-23T03:28:03.740Z</updated>
+    <updated>2021-12-23T07:27:47.624Z</updated>
     
     
       
@@ -58,9 +83,9 @@
     <category term="python" scheme="http://www.mmrsl.cn/categories/python/"/>
     
     
-    <category term="树莓派" scheme="http://www.mmrsl.cn/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
-    
     <category term="python" scheme="http://www.mmrsl.cn/tags/python/"/>
+    
+    <category term="树莓派" scheme="http://www.mmrsl.cn/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
   </entry>
   
@@ -462,33 +487,6 @@
     <category term="OCR" scheme="http://www.mmrsl.cn/tags/OCR/"/>
     
     <category term="python" scheme="http://www.mmrsl.cn/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python抓取网页数据</title>
-    <link href="http://www.mmrsl.cn/2021/10/26/python%E6%8A%93%E5%8F%96%E7%BD%91%E9%A1%B5%E6%95%B0%E6%8D%AE/"/>
-    <id>http://www.mmrsl.cn/2021/10/26/python%E6%8A%93%E5%8F%96%E7%BD%91%E9%A1%B5%E6%95%B0%E6%8D%AE/</id>
-    <published>2021-10-26T07:33:41.000Z</published>
-    <updated>2021-10-26T09:24:39.845Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="python" scheme="http://www.mmrsl.cn/categories/python/"/>
-    
-    
-    <category term="python" scheme="http://www.mmrsl.cn/tags/python/"/>
-    
-    <category term="爬虫" scheme="http://www.mmrsl.cn/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
