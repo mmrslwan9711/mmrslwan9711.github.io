@@ -708,66 +708,6 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       </tags>
   </entry>
   <entry>
-    <title>Fusion360学习笔记</title>
-    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
-<pre><code>h1 &#123;
-counter-reset: subsection;
-&#125;
-h2 &#123;
-counter-reset: subsection2;
-&#125;
-h3 &#123;
-counter-reset: subsection3;
-&#125;
-h4 &#123;
-counter-reset: subsection4;
-&#125;
-h1::before &#123;
-counter-increment: section;
-content:  &quot; &quot;;
-&#125;
-
-h2::before &#123;
-counter-increment: subsection;
-content: counter(subsection) &quot; &quot;;
-&#125;
-h3::before &#123;
-counter-increment: subsection2;
-content: counter(subsection) &quot;.&quot; counter(subsection2) ;
-&#125;
-h4::before &#123;
-counter-increment: subsection3;
-content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
-&#125;
-h5::before &#123;
-counter-increment: subsection4;
-content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
-&#125;
-</code></pre><p>&lt;/style&gt;</p>
-<p><style><br>        video {<br>            width: 20%;<br>        }
-</style></p>
-<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
-<ul>
-<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
-</ul>
-<p>下载个人用途版本即可。</p>
-<h2 id="创建草图"><a href="#创建草图" class="headerlink" title="创建草图"></a>创建草图</h2><p>用一张普通图片做背景，然后进行抠图，类似ps。</p>
-<p><img src="https://www.mmrsl.cn/download/img/xmu/5.png" alt=""></p>
-<h2 id="拉伸、圆角、倒角"><a href="#拉伸、圆角、倒角" class="headerlink" title="拉伸、圆角、倒角"></a>拉伸、圆角、倒角</h2><p>可以剪切，拉伸都行，反正最终都可以获得你想要的模型。<br><img src="https://www.mmrsl.cn/download/img/xmu/6.png" alt=""></p>
-<h2 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h2><p>可以选中模型，然后点击外观。</p>
-<p>可选项很多，可以自由选择材质，通俗易懂。</p>
-<h2 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h2><p>最终效果<br><img src="https://www.mmrsl.cn/download/img/xmu/4.png" alt=""></p>
-<h2 id="螺丝刀"><a href="#螺丝刀" class="headerlink" title="螺丝刀"></a>螺丝刀</h2><p><img src="https://www.mmrsl.cn/download/img/xmu/7.png" alt=""></p>
-<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/video/2.mp4"   controls="controls"></video>
-
-<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/video/3.mp4"   controls="controls"></video>
-
-
-<p><img src="https://www.mmrsl.cn/download/img/html5/2.jpg" alt=""></p>
-]]></content>
-  </entry>
-  <entry>
     <title>English_learning</title>
     <url>/2020/07/31/English-learning/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
@@ -881,6 +821,66 @@ If you are talking to a group of managers, you may refer to the disorganized met
       </tags>
   </entry>
   <entry>
+    <title>Fusion360学习笔记</title>
+    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
+<pre><code>h1 &#123;
+counter-reset: subsection;
+&#125;
+h2 &#123;
+counter-reset: subsection2;
+&#125;
+h3 &#123;
+counter-reset: subsection3;
+&#125;
+h4 &#123;
+counter-reset: subsection4;
+&#125;
+h1::before &#123;
+counter-increment: section;
+content:  &quot; &quot;;
+&#125;
+
+h2::before &#123;
+counter-increment: subsection;
+content: counter(subsection) &quot; &quot;;
+&#125;
+h3::before &#123;
+counter-increment: subsection2;
+content: counter(subsection) &quot;.&quot; counter(subsection2) ;
+&#125;
+h4::before &#123;
+counter-increment: subsection3;
+content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
+&#125;
+h5::before &#123;
+counter-increment: subsection4;
+content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
+&#125;
+</code></pre><p>&lt;/style&gt;</p>
+<p><style><br>        video {<br>            width: 20%;<br>        }
+</style></p>
+<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
+<ul>
+<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
+</ul>
+<p>下载个人用途版本即可。</p>
+<h2 id="创建草图"><a href="#创建草图" class="headerlink" title="创建草图"></a>创建草图</h2><p>用一张普通图片做背景，然后进行抠图，类似ps。</p>
+<p><img src="https://www.mmrsl.cn/download/img/xmu/5.png" alt=""></p>
+<h2 id="拉伸、圆角、倒角"><a href="#拉伸、圆角、倒角" class="headerlink" title="拉伸、圆角、倒角"></a>拉伸、圆角、倒角</h2><p>可以剪切，拉伸都行，反正最终都可以获得你想要的模型。<br><img src="https://www.mmrsl.cn/download/img/xmu/6.png" alt=""></p>
+<h2 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h2><p>可以选中模型，然后点击外观。</p>
+<p>可选项很多，可以自由选择材质，通俗易懂。</p>
+<h2 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h2><p>最终效果<br><img src="https://www.mmrsl.cn/download/img/xmu/4.png" alt=""></p>
+<h2 id="螺丝刀"><a href="#螺丝刀" class="headerlink" title="螺丝刀"></a>螺丝刀</h2><p><img src="https://www.mmrsl.cn/download/img/xmu/7.png" alt=""></p>
+<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/video/2.mp4"   controls="controls"></video>
+
+<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/video/3.mp4"   controls="controls"></video>
+
+
+<p><img src="https://www.mmrsl.cn/download/img/html5/2.jpg" alt=""></p>
+]]></content>
+  </entry>
+  <entry>
     <title>LabelImg_使用</title>
     <url>/2021/07/21/LabelImg-%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LabelImg-使用"><a href="#LabelImg-使用" class="headerlink" title="LabelImg_使用"></a>LabelImg_使用</h1><p>LabelImg 是一个图形图像注释工具。</p>
@@ -932,6 +932,901 @@ other<span aria-hidden="true" class="line-numbers-rows"><span></span><span></spa
       </categories>
       <tags>
         <tag>目标检测</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeNet_AlexNet_VGG_ResNet34_on_CIFAR10</title>
+    <url>/2021/11/15/LeNet-AlexNet-VGG-ResNet34-on-CIFAR10/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度"><a href="#LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度" class="headerlink" title="LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度"></a>LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度</h1><p>忽然对CNN卷积神经网络比较感兴趣，于是选择了CIFAR-10数据集进行机器视觉的学习。</p>
+<span id="more"></span>
+<h2 id="CIFAR-10"><a href="#CIFAR-10" class="headerlink" title="CIFAR-10"></a>CIFAR-10</h2><p><img src="https://www.mmrsl.cn/download/img/cifar10/1.png" alt=""></p>
+<p>CIFAR-10是一个更接近普适物体的彩色图像数据集。CIFAR-10 是一个用于识别普适物体的小型数据集。一共包含10 个类别的RGB 彩色图片：飞机（ airplane ）、汽车（ automobile ）、鸟类（ bird ）、猫（ cat ）、鹿（ deer ）、狗（ dog ）、蛙类（ frog ）、马（ horse ）、船（ ship ）和卡车（ truck ）。</p>
+<p>每个图片的尺寸为32 × 32 ，每个类别有6000个图像，数据集中一共有50000 张训练图片和10000 张测试图片。</p>
+<h2 id="MNIST数据集"><a href="#MNIST数据集" class="headerlink" title="MNIST数据集"></a>MNIST数据集</h2><p>MNIST数据集是机器学习领域中非常经典的一个数据集，训练数据集包含 60,000 个样本, 测试数据集包含 10,000 样本. 在 MNIST 数据集中的每张图片由 28 x 28 个像素点构成, 每个像素点用一个灰度值表示. </p>
+<p><img src="https://www.mmrsl.cn/download/img/cifar10/2.png" alt=""></p>
+<h2 id="CIFAR-10和与MNIST之间的区别"><a href="#CIFAR-10和与MNIST之间的区别" class="headerlink" title="CIFAR-10和与MNIST之间的区别"></a>CIFAR-10和与MNIST之间的区别</h2><p>与MNIST数据集中目比， CIFAR-10 真高以下不同点</p>
+<p>(1)、CIFAR-10 是3 通道的彩色RGB 图像，而MNIST 是灰度图像。<br>(2)、CIFAR-10 的图片尺寸为32 × 32 ， 而MNIST 的图片尺寸为28 × 28 ，比MNIST 稍大。<br>(3)、相比于手写字符， CIFAR-10 含有的是现实世界中真实的物体，不仅噪声很大，而且物体的比例、特征都不尽相同，这为识别带来很大困难。直接的线性模型如Softmax 在CIFAR-10 上表现得很差。</p>
+<h2 id="LeNet代码"><a href="#LeNet代码" class="headerlink" title="LeNet代码"></a>LeNet代码</h2><pre class="line-numbers language-none"><code class="language-none">import torch
+import torch.nn as nn
+from torch import optim
+from torch.utils.data import DataLoader
+from torchvision import transforms
+from torchvision import datasets
+from tqdm import tqdm
+
+transform &#x3D; transforms.Compose([
+    transforms.RandomHorizontalFlip(),
+    transforms.ToTensor()
+    ])
+
+# 定义超参数
+BATCH_SIZE &#x3D; 128  # 批的大小
+# CIFAR-10
+train_dataset &#x3D; datasets.CIFAR10(&#39;.&#x2F;data1&#39;, train&#x3D;True, transform&#x3D;transform, download&#x3D;False)
+train_loader &#x3D; DataLoader(train_dataset, batch_size&#x3D;BATCH_SIZE, shuffle&#x3D;True, num_workers&#x3D;0, pin_memory&#x3D;True)
+test_dataset &#x3D; datasets.CIFAR10(&#39;.&#x2F;data1&#39;, train&#x3D;False, transform&#x3D;transform, download&#x3D;False)
+test_loader &#x3D; DataLoader(test_dataset, batch_size&#x3D;BATCH_SIZE, shuffle&#x3D;False, num_workers&#x3D;0, pin_memory&#x3D;True)
+classes &#x3D; (&#39;plane&#39;, &#39;car&#39;, &#39;bird&#39;, &#39;cat&#39;, &#39;deer&#39;, &#39;dog&#39;, &#39;frog&#39;, &#39;horse&#39;, &#39;ship&#39;, &#39;truck&#39;)
+
+# 定义网络模型
+class LeNet(nn.Module):
+    def __init__(self):
+        super(LeNet, self).__init__()
+
+        # 卷积层
+        self.cnn &#x3D; nn.Sequential(
+            # 卷积层1，3通道输入，6个卷积核，核大小5*5
+            # 经过该层图像大小变为32-5+1，28*28
+            # 经2*2最大池化，图像变为14*14
+            nn.Conv2d(3, 6, 5),
+            nn.ReLU(),
+            nn.MaxPool2d(2),
+
+            # 卷积层2，6输入通道，16个卷积核，核大小5*5
+            # 经过该层图像变为14-5+1，10*10
+            # 经2*2最大池化，图像变为5*5
+            nn.Conv2d(6, 16, 5),
+            nn.ReLU(),
+            nn.MaxPool2d(2)
+        )
+
+        # 全连接层
+        self.fc &#x3D; nn.Sequential(
+            # 16个feature，每个feature 5*5
+            nn.Linear(16 * 5 * 5, 120),
+            nn.ReLU(),
+            nn.Linear(120, 84),
+            nn.ReLU(),
+            nn.Linear(84, 10)
+        )
+
+    def forward(self, x):
+        x &#x3D; self.cnn(x)
+
+        # x.size()[0]: batch size
+        x &#x3D; x.view(x.size()[0], -1)
+        x &#x3D; self.fc(x)
+
+        return x
+# 创建模型
+net &#x3D; LeNet().to(&#39;cuda&#39;)
+# 定义优化器和损失函数
+criterion &#x3D; nn.CrossEntropyLoss()  # 交叉式损失函数
+optimizer &#x3D; optim.SGD(net.parameters(), lr&#x3D;0.001, momentum&#x3D;0.9)  # 优化器
+
+
+# 定义轮数
+EPOCHS &#x3D; 50
+
+for epoch in range(EPOCHS):
+    train_loss &#x3D; 0.0
+    for i, (datas, labels) in tqdm(enumerate(train_loader)):
+        datas, labels &#x3D; datas.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
+        # 梯度置零
+        optimizer.zero_grad()
+        # 训练
+        outputs &#x3D; net(datas)
+        # 计算损失
+        loss &#x3D; criterion(outputs, labels)
+        # 反向传播
+        loss.backward()
+        # 参数更新
+        optimizer.step()
+        # 累计损失
+        train_loss +&#x3D; loss.item()
+    print(&quot;Epoch : &#123;&#125; , Batch :&#123;&#125; , Loss : &#123;:.3f&#125;&quot;.format(epoch+1, i+1, train_loss&#x2F;len(train_loader.dataset)))
+
+
+# 保存模型
+PATH &#x3D; &#39;cifar_net.pth&#39;
+torch.save(net.state_dict(), PATH)
+
+# 加载模型
+model &#x3D; net.to(&#39;cuda&#39;)
+model.load_state_dict(torch.load(PATH))     # .load_state_dict() 加载模型
+
+# 测试
+correct &#x3D; 0
+total &#x3D; 0
+with torch.no_grad():
+    for i, (datas, labels) in enumerate(test_loader):
+        datas, labels &#x3D; datas.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
+        # 输出
+        outputs &#x3D; model(datas)  # outputs.data.shape --&gt; torch.Size([128, 10])
+        _, predicted &#x3D; torch.max(outputs.data, dim&#x3D;1)   # 第一个是值的张量，第二个是序号的张量
+        # 累计数据量
+        total +&#x3D; labels.size(0)     # labels.size() --&gt; torch.Size([128]), labels.size(0) --&gt; 128
+        # 比较有多少个预测正确
+        correct +&#x3D; (predicted &#x3D;&#x3D; labels).sum()  # 相同为1，不同为0，利用sum()求总和
+    print(&#39;在10000张测试集图片上的准确率：&#123;:.3f&#125;&#39;.format(correct &#x2F; total * 100))
+
+# 显示每一类预测的概率
+class_correct &#x3D; list(0. for i in range(10))
+total &#x3D; list(0. for i in range(10))
+with torch.no_grad():
+    for (images, labels) in test_loader:
+        # 输出
+        images, labels &#x3D; images.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
+        outputs &#x3D; model(images)
+        # 获取到每一行最大值的索引
+        _, predicted &#x3D; torch.max(outputs.data, dim&#x3D;1)
+        c &#x3D; (predicted &#x3D;&#x3D; labels).squeeze()     # squeeze() 去掉0维[默认]， unsqueeze() 增加一维
+        if labels.shape[0] &#x3D;&#x3D; 128:
+            for i in range(BATCH_SIZE):
+                label &#x3D; labels[i]   # 获取每一个label
+                class_correct[label] +&#x3D; c[i].item()     # 累计True的个数，注意 1+True&#x3D;2， 1+False&#x3D;1
+                total[label] +&#x3D; 1   # 该类总的个数
+
+# 输出正确率
+for i in range(10):
+    print(&#39;正确率 ： %5s : %2d %%&#39; % (classes[i], 100 * class_correct[i] &#x2F; total[i]))
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="AlexNet"><a href="#AlexNet" class="headerlink" title="AlexNet"></a>AlexNet</h2><pre class="line-numbers language-none"><code class="language-none">class AlexNet(nn.Module):
+    def __init__(self, num_classes):
+        super(AlexNet, self).__init__()
+        self.features &#x3D; nn.Sequential(
+            nn.Conv2d(3, 64, kernel_size&#x3D;3, stride&#x3D;2, padding&#x3D;1),  # 修改了这个地方，不知道为什么就对了
+            # raw kernel_size&#x3D;11, stride&#x3D;4, padding&#x3D;2. For use img size 224 * 224.
+            nn.ReLU(inplace&#x3D;True),
+            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2),
+
+            nn.Conv2d(64, 192, kernel_size&#x3D;5, padding&#x3D;2),
+            nn.ReLU(inplace&#x3D;True),
+            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2),
+
+            nn.Conv2d(192, 384, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.ReLU(inplace&#x3D;True),
+
+            nn.Conv2d(384, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.ReLU(inplace&#x3D;True),
+
+            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.ReLU(inplace&#x3D;True),
+            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2), )
+        self.classifier &#x3D; nn.Sequential(
+            nn.Dropout(),
+            nn.Linear(256 * 1 * 1, 4096),
+            nn.ReLU(inplace&#x3D;True),
+            nn.Dropout(),
+            nn.Linear(4096, 4096),
+            nn.ReLU(inplace&#x3D;True),
+            nn.Linear(4096, num_classes), )
+
+    def forward(self, x):
+        x &#x3D; self.features(x)
+        x &#x3D; x.view(x.size(0), 256 * 1 * 1)
+        x &#x3D; self.classifier(x)
+        # return F.log_softmax(inputs, dim&#x3D;3)
+        return x<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="VGG"><a href="#VGG" class="headerlink" title="VGG"></a>VGG</h2><h3 id="VGG16"><a href="#VGG16" class="headerlink" title="VGG16"></a>VGG16</h3><pre class="line-numbers language-none"><code class="language-none">
+# 定义网络模型
+class VGG16(nn.Module):
+    def __init__(self, num_classes&#x3D;1000):
+        super(VGG16, self).__init__()
+        self.features &#x3D; nn.Sequential(
+            # 1
+            nn.Conv2d(3, 64, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(True),
+            # 2
+            nn.Conv2d(64, 64, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+            # 3
+            nn.Conv2d(64, 128, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(128),
+            nn.ReLU(True),
+            # 4
+            nn.Conv2d(128, 128, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(128),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+            # 5
+            nn.Conv2d(128, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(256),
+            nn.ReLU(True),
+            # 6
+            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(256),
+            nn.ReLU(True),
+            # 7
+            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(256),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+            # 8
+            nn.Conv2d(256, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            # 9
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            # 10
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+            # 11
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            # 12
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            # 13
+            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
+            # nn.BatchNorm2d(512),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
+        )
+        self.classifier &#x3D; nn.Sequential(
+            # 14
+            nn.Linear(512, 4096),
+            nn.ReLU(True),
+            nn.Dropout(),
+            # 15
+            nn.Linear(4096, 4096),
+            nn.ReLU(True),
+            nn.Dropout(),
+            # 16
+            nn.Linear(4096, num_classes),
+        )
+        # self.classifier &#x3D; nn.Linear(512, 10)
+
+    def forward(self, x):
+        out &#x3D; self.features(x)
+        out &#x3D; out.view(out.size(0), -1)
+        out &#x3D; self.classifier(out)
+        return out
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="VGG19"><a href="#VGG19" class="headerlink" title="VGG19"></a>VGG19</h3><pre class="line-numbers language-none"><code class="language-none">
+&#39;&#39;&#39;
+创建VGG块
+参数分别为输入通道数，输出通道数，卷积层个数，是否做最大池化
+&#39;&#39;&#39;
+def make_vgg_block(in_channel, out_channel, convs, pool&#x3D;True):
+    net &#x3D; []
+
+    # 不改变图片尺寸卷积
+    net.append(nn.Conv2d(in_channel, out_channel, kernel_size&#x3D;3, padding&#x3D;1))
+    net.append(nn.BatchNorm2d(out_channel))
+    net.append(nn.ReLU(inplace&#x3D;True))
+
+    for i in range(convs - 1):
+        # 不改变图片尺寸卷积
+        net.append(nn.Conv2d(out_channel, out_channel, kernel_size&#x3D;3, padding&#x3D;1))
+        net.append(nn.BatchNorm2d(out_channel))
+        net.append(nn.ReLU(inplace&#x3D;True))
+
+    if pool:
+        # 2*2最大池化，图片变为w&#x2F;2 * h&#x2F;2
+        net.append(nn.MaxPool2d(2))
+
+    return nn.Sequential(*net)
+
+# 定义网络模型
+class VGG19Net(nn.Module):
+    def __init__(self):
+        super(VGG19Net, self).__init__()
+
+        net &#x3D; []
+
+        # 输入32*32，输出16*16
+        net.append(make_vgg_block(3, 64, 2))
+
+        # 输出8*8
+        net.append(make_vgg_block(64, 128, 2))
+
+        # 输出4*4
+        net.append(make_vgg_block(128, 256, 4))
+
+        # 输出2*2
+        net.append(make_vgg_block(256, 512, 4))
+
+        # 无池化层，输出保持2*2
+        net.append(make_vgg_block(512, 512, 4, False))
+
+        self.cnn &#x3D; nn.Sequential(*net)
+
+        self.fc &#x3D; nn.Sequential(
+            # 512个feature，每个feature 2*2
+            nn.Linear(512*2*2, 256),
+            nn.ReLU(),
+
+            nn.Linear(256, 256),
+            nn.ReLU(),
+
+            nn.Linear(256, 10)
+        )
+
+    def forward(self, x):
+        x &#x3D; self.cnn(x)
+        # x.size()[0]: batch size
+        x &#x3D; x.view(x.size()[0], -1)
+        x &#x3D; self.fc(x)
+
+        return x
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="ResNet34"><a href="#ResNet34" class="headerlink" title="ResNet34"></a>ResNet34</h2><h3 id="ResNet34-model1"><a href="#ResNet34-model1" class="headerlink" title="ResNet34 model1"></a>ResNet34 model1</h3><pre class="line-numbers language-none"><code class="language-none">class ResBlock(nn.Module):
+    def __init__(self, in_channels, out_channels, stride&#x3D;1):
+        super(ResBlock, self).__init__()
+
+        # 残差块的第一个卷积
+        # 通道数变换in-&gt;out，每一层（除第一层外）的第一个block
+        # 图片尺寸变换：stride&#x3D;2时，w-3+2 &#x2F; 2 + 1 &#x3D; w&#x2F;2，w&#x2F;2 * w&#x2F;2
+        # stride&#x3D;1时尺寸不变，w-3+2 &#x2F; 1 + 1 &#x3D; w
+        self.conv1 &#x3D; nn.Conv2d(in_channels, out_channels, kernel_size&#x3D;3, stride&#x3D;stride, padding&#x3D;1)
+        self.bn1 &#x3D; nn.BatchNorm2d(out_channels)
+        self.relu &#x3D; nn.ReLU(inplace&#x3D;True)
+
+        # 残差块的第二个卷积
+        # 通道数、图片尺寸均不变
+        self.conv2 &#x3D; nn.Conv2d(out_channels, out_channels, kernel_size&#x3D;3, stride&#x3D;1, padding&#x3D;1)
+        self.bn2 &#x3D; nn.BatchNorm2d(out_channels)
+
+        # 残差块的shortcut
+        # 如果残差块的输入输出通道数不同，则需要变换通道数及图片尺寸，以和residual部分相加
+        # 输出：通道数*2 图片尺寸&#x2F;2
+        if in_channels !&#x3D; out_channels:
+            self.downsample &#x3D; nn.Sequential(
+                nn.Conv2d(in_channels, out_channels, kernel_size&#x3D;1, stride&#x3D;2),
+                nn.BatchNorm2d(out_channels)
+            )
+        else:
+            # 通道数相同，无需做变换，在forward中identity &#x3D; x
+            self.downsample &#x3D; None
+
+    def forward(self, x):
+        identity &#x3D; x
+
+        out &#x3D; self.conv1(x)
+        out &#x3D; self.bn1(out)
+        out &#x3D; self.relu(out)
+
+        out &#x3D; self.conv2(out)
+        out &#x3D; self.bn2(out)
+
+        if self.downsample is not None:
+            identity &#x3D; self.downsample(x)
+
+        out +&#x3D; identity
+        out &#x3D; self.relu(out)
+
+        return out
+
+
+&#39;&#39;&#39;
+# 定义网络模型
+&#39;&#39;&#39;
+#定义网络结构
+
+class ResNet34(nn.Module):
+    def __init__(self, block):
+        super(ResNet34, self).__init__()
+
+        # 初始卷积层核池化层
+        self.first &#x3D; nn.Sequential(
+            # 卷基层1：7*7kernel，2stride，3padding，outmap：32-7+2*3 &#x2F; 2 + 1，16*16
+            nn.Conv2d(3, 64, 7, 2, 3),
+            nn.BatchNorm2d(64),
+            nn.ReLU(inplace&#x3D;True),
+
+            # 最大池化，3*3kernel，1stride（32的原始输入图片较小，不再缩小尺寸），1padding，
+            # outmap：16-3+2*1 &#x2F; 1 + 1，16*16
+            nn.MaxPool2d(3, 1, 1)
+        )
+
+        # 第一层，通道数不变
+        self.layer1 &#x3D; self.make_layer(block, 64, 64, 3, 1)
+
+        # 第2、3、4层，通道数*2，图片尺寸&#x2F;2
+        self.layer2 &#x3D; self.make_layer(block, 64, 128, 4, 2)  # 输出8*8
+        self.layer3 &#x3D; self.make_layer(block, 128, 256, 6, 2)  # 输出4*4
+        self.layer4 &#x3D; self.make_layer(block, 256, 512, 3, 2)  # 输出2*2
+
+        self.avg_pool &#x3D; nn.AvgPool2d(2)  # 输出512*1
+        self.fc &#x3D; nn.Linear(512, 10)
+
+    def make_layer(self, block, in_channels, out_channels, block_num, stride):
+        layers &#x3D; []
+
+        # 每一层的第一个block，通道数可能不同
+        layers.append(block(in_channels, out_channels, stride))
+
+        # 每一层的其他block，通道数不变，图片尺寸不变
+        for i in range(block_num - 1):
+            layers.append(block(out_channels, out_channels, 1))
+
+        return nn.Sequential(*layers)
+
+    def forward(self, x):
+        x &#x3D; self.first(x)
+        x &#x3D; self.layer1(x)
+        x &#x3D; self.layer2(x)
+        x &#x3D; self.layer3(x)
+        x &#x3D; self.layer4(x)
+        x &#x3D; self.avg_pool(x)
+
+        # x.size()[0]: batch size
+        x &#x3D; x.view(x.size()[0], -1)
+        x &#x3D; self.fc(x)
+
+        return x
+# 创建模型
+net &#x3D; ResNet34(ResBlock).to(&#39;cuda&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="ResNet34-model2"><a href="#ResNet34-model2" class="headerlink" title="ResNet34 model2"></a>ResNet34 model2</h3><pre class="line-numbers language-none"><code class="language-none">
+#定义网络结构
+class ResNet34(nn.Module):
+    def __init__(self, block):
+        super(ResNet34, self).__init__()
+
+        # 初始卷积层核池化层
+        self.first &#x3D; nn.Sequential(
+            # 卷基层1：3*3kernel，1stride，1padding，outmap：32-3+1*2 &#x2F; 1 + 1，32*32
+            nn.Conv2d(3, 64, 3, 1, 1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(inplace&#x3D;True),
+
+            # 最大池化，3*3kernel，1stride（保持尺寸），1padding，
+            # outmap：32-3+2*1 &#x2F; 1 + 1，32*32
+            nn.MaxPool2d(3, 1, 1)
+        )
+
+        # 第一层，通道数不变
+        self.layer1 &#x3D; self.make_layer(block, 64, 64, 3, 1)
+
+        # 第2、3、4层，通道数*2，图片尺寸&#x2F;2
+        self.layer2 &#x3D; self.make_layer(block, 64, 128, 4, 2)  # 输出16*16
+        self.layer3 &#x3D; self.make_layer(block, 128, 256, 6, 2)  # 输出8*8
+        self.layer4 &#x3D; self.make_layer(block, 256, 512, 3, 2)  # 输出4*4
+
+        self.avg_pool &#x3D; nn.AvgPool2d(4)  # 输出512*1
+        self.fc &#x3D; nn.Linear(512, 10)
+
+    def make_layer(self, block, in_channels, out_channels, block_num, stride):
+        layers &#x3D; []
+
+        # 每一层的第一个block，通道数可能不同
+        layers.append(block(in_channels, out_channels, stride))
+
+        # 每一层的其他block，通道数不变，图片尺寸不变
+        for i in range(block_num - 1):
+            layers.append(block(out_channels, out_channels, 1))
+
+        return nn.Sequential(*layers)
+
+    def forward(self, x):
+        x &#x3D; self.first(x)
+        x &#x3D; self.layer1(x)
+        x &#x3D; self.layer2(x)
+        x &#x3D; self.layer3(x)
+        x &#x3D; self.layer4(x)
+        x &#x3D; self.avg_pool(x)
+
+        # x.size()[0]: batch size
+        x &#x3D; x.view(x.size()[0], -1)
+        x &#x3D; self.fc(x)
+
+        return x
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>若第一次运行可以<code>train_dataset = datasets.CIFAR10(&#39;./data1&#39;, train=True, transform=transform, download=False)</code>将download改为true.</li>
+<li>其他网络在LeNet基础上替换网络即可运行。</li>
+<li>参考我之前的文章安装环境<a href="https://www.mmrsl.cn/2021/10/22/ubuntu-NVIDIA30xx%E6%98%BE%E5%8D%A1%E5%AE%89%E8%A3%85/">Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装</a></li>
+</ol>
+<h3 id="数据扩充"><a href="#数据扩充" class="headerlink" title="数据扩充"></a>数据扩充</h3><pre class="line-numbers language-none"><code class="language-none">transform &#x3D; transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
+
+transform_train &#x3D; transforms.Compose([
+    # 对原始32*32图像四周各填充4个0像素（40*40），然后随机裁剪成32*32
+    transforms.RandomCrop(32, padding&#x3D;4),
+    # 按0.5的概率水平翻转图片
+    transforms.RandomHorizontalFlip(),
+    transforms.ToTensor(),
+    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
+
+transform_test &#x3D; transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="不同网络测试结果"><a href="#不同网络测试结果" class="headerlink" title="不同网络测试结果"></a>不同网络测试结果</h2><blockquote>
+<p>EPOCHS=50</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>网络类型</th>
+<th>LeNet</th>
+<th>AlexNet</th>
+<th>VGG19</th>
+<th>VGG16</th>
+<th>ResNet34 1</th>
+<th>ResNet34 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>准确度</td>
+<td>58.990%</td>
+<td>64.55%</td>
+<td>84.610%</td>
+<td>83.670%</td>
+<td>78.790%</td>
+<td>85.14%</td>
+</tr>
+<tr>
+<td>loss</td>
+<td>0.009</td>
+<td>0.007</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>plane 准确度</td>
+<td>66%</td>
+<td>81%</td>
+<td>87%</td>
+<td>88%</td>
+<td>83%</td>
+<td>88%</td>
+</tr>
+<tr>
+<td>car 准确度</td>
+<td>70%</td>
+<td>85%</td>
+<td>90%</td>
+<td>90%</td>
+<td>84%</td>
+<td>93%</td>
+</tr>
+<tr>
+<td>bird 准确度</td>
+<td>48%</td>
+<td>56%</td>
+<td>74%</td>
+<td>73%</td>
+<td>69%</td>
+<td>79%</td>
+</tr>
+<tr>
+<td>cat 准确度</td>
+<td>39%</td>
+<td>32%</td>
+<td>67%</td>
+<td>71%</td>
+<td>59%</td>
+<td>70%</td>
+</tr>
+<tr>
+<td>deer 准确度</td>
+<td>58%</td>
+<td>66%</td>
+<td>86%</td>
+<td>86%</td>
+<td>74%</td>
+<td>82%</td>
+</tr>
+<tr>
+<td>dog 准确度</td>
+<td>44%</td>
+<td>46%</td>
+<td>77%</td>
+<td>77%</td>
+<td>68%</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>frog 准确度</td>
+<td>72%</td>
+<td>65%</td>
+<td>90%</td>
+<td>86%</td>
+<td>84%</td>
+<td>89%</td>
+</tr>
+<tr>
+<td>horse 准确度</td>
+<td>65%</td>
+<td>64%</td>
+<td>89%</td>
+<td>83%</td>
+<td>82%</td>
+<td>89%</td>
+</tr>
+<tr>
+<td>ship 准确度</td>
+<td>69%</td>
+<td>79%</td>
+<td>91%</td>
+<td>92%</td>
+<td>89%</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>truck 准确度</td>
+<td>59%</td>
+<td>64%</td>
+<td>90%</td>
+<td>90%</td>
+<td>86%</td>
+<td>90%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>扩充准确度 EPOCHS=50</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>网络类型</th>
+<th>VGG19</th>
+<th>ResNet34 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>准确度</td>
+<td>87.220%</td>
+<td>87.09%</td>
+</tr>
+<tr>
+<td>loss</td>
+<td>0.001</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>plane 准确度</td>
+<td>85%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>car 准确度</td>
+<td>93%</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>bird 准确度</td>
+<td>80%</td>
+<td>82%</td>
+</tr>
+<tr>
+<td>cat 准确度</td>
+<td>76%</td>
+<td>74%</td>
+</tr>
+<tr>
+<td>deer 准确度</td>
+<td>86%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>dog 准确度</td>
+<td>82%</td>
+<td>83%</td>
+</tr>
+<tr>
+<td>frog 准确度</td>
+<td>90%</td>
+<td>91%</td>
+</tr>
+<tr>
+<td>horse 准确度</td>
+<td>88%</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>ship 准确度</td>
+<td>93%</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>truck 准确度</td>
+<td>94%</td>
+<td>91%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>扩充准确度 EPOCHS=100</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">VGG19 在10000张测试集图片上的准确率：88.840
+正确率 ： plane : 91 %
+正确率 ：   car : 96 %
+正确率 ：  bird : 85 %
+正确率 ：   cat : 78 %
+正确率 ：  deer : 88 %
+正确率 ：   dog : 79 %
+正确率 ：  frog : 90 %
+正确率 ： horse : 93 %
+正确率 ：  ship : 94 %
+正确率 ： truck : 90 %
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>网络类型</th>
+<th>VGG19</th>
+<th>ResNet34 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>准确度</td>
+<td>88.84%</td>
+<td>88.05%</td>
+</tr>
+<tr>
+<td>loss</td>
+<td>0.000</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>plane 准确度</td>
+<td>91%</td>
+<td>89%</td>
+</tr>
+<tr>
+<td>car 准确度</td>
+<td>96%</td>
+<td>93%</td>
+</tr>
+<tr>
+<td>bird 准确度</td>
+<td>85%</td>
+<td>82%</td>
+</tr>
+<tr>
+<td>cat 准确度</td>
+<td>78%</td>
+<td>79%</td>
+</tr>
+<tr>
+<td>deer 准确度</td>
+<td>88%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>dog 准确度</td>
+<td>79%</td>
+<td>79%</td>
+</tr>
+<tr>
+<td>frog 准确度</td>
+<td>90%</td>
+<td>91%</td>
+</tr>
+<tr>
+<td>horse 准确度</td>
+<td>93%</td>
+<td>91%</td>
+</tr>
+<tr>
+<td>ship 准确度</td>
+<td>94%</td>
+<td>93%</td>
+</tr>
+<tr>
+<td>truck 准确度</td>
+<td>90%</td>
+<td>93%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>以上结果可以看出<code>ResNet34 2&gt;VGG19&gt;VGG16&gt;ResNet34 1&gt;AlexNet&gt;LeNet</code></p>
+]]></content>
+      <categories>
+        <category>pytorch</category>
+      </categories>
+      <tags>
+        <tag>pytorch</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux进程断连重新进入该进程方法</title>
+    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
+<ul>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
+<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
+</ul>
+<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
+<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
+<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
+<p><code>nohup python3 main.py &amp;</code></p>
+<ol>
+<li>nohup </li>
+</ol>
+<p>加在一个命令的最前面，表示不挂断的运行命令</p>
+<ol>
+<li>&amp;</li>
+</ol>
+<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
+<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
+<ol>
+<li>jobs 查看后台运行的命令</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
+[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ol>
+<li><p>ps查看进程</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
+  PID TTY          TIME CMD
+20712 pts&#x2F;6    00:00:00 bash
+20793 pts&#x2F;6    02:49:24 python3
+22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>kill </p>
+</li>
+</ol>
+<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
+<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
+<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
+<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
+<p>将后台中的命令调至前台继续运行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
+<p>（2）Ctrl + z 命令</p>
+<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
+<p>（3）bg命令</p>
+<p>将一个在后台暂停的命令，变成在后台继续执行</p>
+<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
+<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
+<li>首先后台运行一个进程：</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
+<ul>
+<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
+<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
+</ul>
+<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
+<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
+<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
+<p>linux远程断联后重新进入该进程</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
+</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>研究生课程</category>
+      </categories>
+      <tags>
+        <tag>研究生课程</tag>
       </tags>
   </entry>
   <entry>
@@ -3469,901 +4364,6 @@ public class TestThread &#123;
       <tags>
         <tag>java</tag>
         <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeNet_AlexNet_VGG_ResNet34_on_CIFAR10</title>
-    <url>/2021/11/15/LeNet-AlexNet-VGG-ResNet34-on-CIFAR10/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度"><a href="#LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度" class="headerlink" title="LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度"></a>LeNet、AlexNet、VGG、ResNet34在CIFAR10上的准确度</h1><p>忽然对CNN卷积神经网络比较感兴趣，于是选择了CIFAR-10数据集进行机器视觉的学习。</p>
-<span id="more"></span>
-<h2 id="CIFAR-10"><a href="#CIFAR-10" class="headerlink" title="CIFAR-10"></a>CIFAR-10</h2><p><img src="https://www.mmrsl.cn/download/img/cifar10/1.png" alt=""></p>
-<p>CIFAR-10是一个更接近普适物体的彩色图像数据集。CIFAR-10 是一个用于识别普适物体的小型数据集。一共包含10 个类别的RGB 彩色图片：飞机（ airplane ）、汽车（ automobile ）、鸟类（ bird ）、猫（ cat ）、鹿（ deer ）、狗（ dog ）、蛙类（ frog ）、马（ horse ）、船（ ship ）和卡车（ truck ）。</p>
-<p>每个图片的尺寸为32 × 32 ，每个类别有6000个图像，数据集中一共有50000 张训练图片和10000 张测试图片。</p>
-<h2 id="MNIST数据集"><a href="#MNIST数据集" class="headerlink" title="MNIST数据集"></a>MNIST数据集</h2><p>MNIST数据集是机器学习领域中非常经典的一个数据集，训练数据集包含 60,000 个样本, 测试数据集包含 10,000 样本. 在 MNIST 数据集中的每张图片由 28 x 28 个像素点构成, 每个像素点用一个灰度值表示. </p>
-<p><img src="https://www.mmrsl.cn/download/img/cifar10/2.png" alt=""></p>
-<h2 id="CIFAR-10和与MNIST之间的区别"><a href="#CIFAR-10和与MNIST之间的区别" class="headerlink" title="CIFAR-10和与MNIST之间的区别"></a>CIFAR-10和与MNIST之间的区别</h2><p>与MNIST数据集中目比， CIFAR-10 真高以下不同点</p>
-<p>(1)、CIFAR-10 是3 通道的彩色RGB 图像，而MNIST 是灰度图像。<br>(2)、CIFAR-10 的图片尺寸为32 × 32 ， 而MNIST 的图片尺寸为28 × 28 ，比MNIST 稍大。<br>(3)、相比于手写字符， CIFAR-10 含有的是现实世界中真实的物体，不仅噪声很大，而且物体的比例、特征都不尽相同，这为识别带来很大困难。直接的线性模型如Softmax 在CIFAR-10 上表现得很差。</p>
-<h2 id="LeNet代码"><a href="#LeNet代码" class="headerlink" title="LeNet代码"></a>LeNet代码</h2><pre class="line-numbers language-none"><code class="language-none">import torch
-import torch.nn as nn
-from torch import optim
-from torch.utils.data import DataLoader
-from torchvision import transforms
-from torchvision import datasets
-from tqdm import tqdm
-
-transform &#x3D; transforms.Compose([
-    transforms.RandomHorizontalFlip(),
-    transforms.ToTensor()
-    ])
-
-# 定义超参数
-BATCH_SIZE &#x3D; 128  # 批的大小
-# CIFAR-10
-train_dataset &#x3D; datasets.CIFAR10(&#39;.&#x2F;data1&#39;, train&#x3D;True, transform&#x3D;transform, download&#x3D;False)
-train_loader &#x3D; DataLoader(train_dataset, batch_size&#x3D;BATCH_SIZE, shuffle&#x3D;True, num_workers&#x3D;0, pin_memory&#x3D;True)
-test_dataset &#x3D; datasets.CIFAR10(&#39;.&#x2F;data1&#39;, train&#x3D;False, transform&#x3D;transform, download&#x3D;False)
-test_loader &#x3D; DataLoader(test_dataset, batch_size&#x3D;BATCH_SIZE, shuffle&#x3D;False, num_workers&#x3D;0, pin_memory&#x3D;True)
-classes &#x3D; (&#39;plane&#39;, &#39;car&#39;, &#39;bird&#39;, &#39;cat&#39;, &#39;deer&#39;, &#39;dog&#39;, &#39;frog&#39;, &#39;horse&#39;, &#39;ship&#39;, &#39;truck&#39;)
-
-# 定义网络模型
-class LeNet(nn.Module):
-    def __init__(self):
-        super(LeNet, self).__init__()
-
-        # 卷积层
-        self.cnn &#x3D; nn.Sequential(
-            # 卷积层1，3通道输入，6个卷积核，核大小5*5
-            # 经过该层图像大小变为32-5+1，28*28
-            # 经2*2最大池化，图像变为14*14
-            nn.Conv2d(3, 6, 5),
-            nn.ReLU(),
-            nn.MaxPool2d(2),
-
-            # 卷积层2，6输入通道，16个卷积核，核大小5*5
-            # 经过该层图像变为14-5+1，10*10
-            # 经2*2最大池化，图像变为5*5
-            nn.Conv2d(6, 16, 5),
-            nn.ReLU(),
-            nn.MaxPool2d(2)
-        )
-
-        # 全连接层
-        self.fc &#x3D; nn.Sequential(
-            # 16个feature，每个feature 5*5
-            nn.Linear(16 * 5 * 5, 120),
-            nn.ReLU(),
-            nn.Linear(120, 84),
-            nn.ReLU(),
-            nn.Linear(84, 10)
-        )
-
-    def forward(self, x):
-        x &#x3D; self.cnn(x)
-
-        # x.size()[0]: batch size
-        x &#x3D; x.view(x.size()[0], -1)
-        x &#x3D; self.fc(x)
-
-        return x
-# 创建模型
-net &#x3D; LeNet().to(&#39;cuda&#39;)
-# 定义优化器和损失函数
-criterion &#x3D; nn.CrossEntropyLoss()  # 交叉式损失函数
-optimizer &#x3D; optim.SGD(net.parameters(), lr&#x3D;0.001, momentum&#x3D;0.9)  # 优化器
-
-
-# 定义轮数
-EPOCHS &#x3D; 50
-
-for epoch in range(EPOCHS):
-    train_loss &#x3D; 0.0
-    for i, (datas, labels) in tqdm(enumerate(train_loader)):
-        datas, labels &#x3D; datas.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
-        # 梯度置零
-        optimizer.zero_grad()
-        # 训练
-        outputs &#x3D; net(datas)
-        # 计算损失
-        loss &#x3D; criterion(outputs, labels)
-        # 反向传播
-        loss.backward()
-        # 参数更新
-        optimizer.step()
-        # 累计损失
-        train_loss +&#x3D; loss.item()
-    print(&quot;Epoch : &#123;&#125; , Batch :&#123;&#125; , Loss : &#123;:.3f&#125;&quot;.format(epoch+1, i+1, train_loss&#x2F;len(train_loader.dataset)))
-
-
-# 保存模型
-PATH &#x3D; &#39;cifar_net.pth&#39;
-torch.save(net.state_dict(), PATH)
-
-# 加载模型
-model &#x3D; net.to(&#39;cuda&#39;)
-model.load_state_dict(torch.load(PATH))     # .load_state_dict() 加载模型
-
-# 测试
-correct &#x3D; 0
-total &#x3D; 0
-with torch.no_grad():
-    for i, (datas, labels) in enumerate(test_loader):
-        datas, labels &#x3D; datas.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
-        # 输出
-        outputs &#x3D; model(datas)  # outputs.data.shape --&gt; torch.Size([128, 10])
-        _, predicted &#x3D; torch.max(outputs.data, dim&#x3D;1)   # 第一个是值的张量，第二个是序号的张量
-        # 累计数据量
-        total +&#x3D; labels.size(0)     # labels.size() --&gt; torch.Size([128]), labels.size(0) --&gt; 128
-        # 比较有多少个预测正确
-        correct +&#x3D; (predicted &#x3D;&#x3D; labels).sum()  # 相同为1，不同为0，利用sum()求总和
-    print(&#39;在10000张测试集图片上的准确率：&#123;:.3f&#125;&#39;.format(correct &#x2F; total * 100))
-
-# 显示每一类预测的概率
-class_correct &#x3D; list(0. for i in range(10))
-total &#x3D; list(0. for i in range(10))
-with torch.no_grad():
-    for (images, labels) in test_loader:
-        # 输出
-        images, labels &#x3D; images.to(&#39;cuda&#39;), labels.to(&#39;cuda&#39;)
-        outputs &#x3D; model(images)
-        # 获取到每一行最大值的索引
-        _, predicted &#x3D; torch.max(outputs.data, dim&#x3D;1)
-        c &#x3D; (predicted &#x3D;&#x3D; labels).squeeze()     # squeeze() 去掉0维[默认]， unsqueeze() 增加一维
-        if labels.shape[0] &#x3D;&#x3D; 128:
-            for i in range(BATCH_SIZE):
-                label &#x3D; labels[i]   # 获取每一个label
-                class_correct[label] +&#x3D; c[i].item()     # 累计True的个数，注意 1+True&#x3D;2， 1+False&#x3D;1
-                total[label] +&#x3D; 1   # 该类总的个数
-
-# 输出正确率
-for i in range(10):
-    print(&#39;正确率 ： %5s : %2d %%&#39; % (classes[i], 100 * class_correct[i] &#x2F; total[i]))
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="AlexNet"><a href="#AlexNet" class="headerlink" title="AlexNet"></a>AlexNet</h2><pre class="line-numbers language-none"><code class="language-none">class AlexNet(nn.Module):
-    def __init__(self, num_classes):
-        super(AlexNet, self).__init__()
-        self.features &#x3D; nn.Sequential(
-            nn.Conv2d(3, 64, kernel_size&#x3D;3, stride&#x3D;2, padding&#x3D;1),  # 修改了这个地方，不知道为什么就对了
-            # raw kernel_size&#x3D;11, stride&#x3D;4, padding&#x3D;2. For use img size 224 * 224.
-            nn.ReLU(inplace&#x3D;True),
-            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2),
-
-            nn.Conv2d(64, 192, kernel_size&#x3D;5, padding&#x3D;2),
-            nn.ReLU(inplace&#x3D;True),
-            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2),
-
-            nn.Conv2d(192, 384, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.ReLU(inplace&#x3D;True),
-
-            nn.Conv2d(384, 256, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.ReLU(inplace&#x3D;True),
-
-            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.ReLU(inplace&#x3D;True),
-            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2), )
-        self.classifier &#x3D; nn.Sequential(
-            nn.Dropout(),
-            nn.Linear(256 * 1 * 1, 4096),
-            nn.ReLU(inplace&#x3D;True),
-            nn.Dropout(),
-            nn.Linear(4096, 4096),
-            nn.ReLU(inplace&#x3D;True),
-            nn.Linear(4096, num_classes), )
-
-    def forward(self, x):
-        x &#x3D; self.features(x)
-        x &#x3D; x.view(x.size(0), 256 * 1 * 1)
-        x &#x3D; self.classifier(x)
-        # return F.log_softmax(inputs, dim&#x3D;3)
-        return x<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="VGG"><a href="#VGG" class="headerlink" title="VGG"></a>VGG</h2><h3 id="VGG16"><a href="#VGG16" class="headerlink" title="VGG16"></a>VGG16</h3><pre class="line-numbers language-none"><code class="language-none">
-# 定义网络模型
-class VGG16(nn.Module):
-    def __init__(self, num_classes&#x3D;1000):
-        super(VGG16, self).__init__()
-        self.features &#x3D; nn.Sequential(
-            # 1
-            nn.Conv2d(3, 64, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(64),
-            nn.ReLU(True),
-            # 2
-            nn.Conv2d(64, 64, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(64),
-            nn.ReLU(True),
-            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
-            # 3
-            nn.Conv2d(64, 128, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(128),
-            nn.ReLU(True),
-            # 4
-            nn.Conv2d(128, 128, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(128),
-            nn.ReLU(True),
-            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
-            # 5
-            nn.Conv2d(128, 256, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(256),
-            nn.ReLU(True),
-            # 6
-            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(256),
-            nn.ReLU(True),
-            # 7
-            nn.Conv2d(256, 256, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(256),
-            nn.ReLU(True),
-            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
-            # 8
-            nn.Conv2d(256, 512, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(512),
-            nn.ReLU(True),
-            # 9
-            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(512),
-            nn.ReLU(True),
-            # 10
-            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(512),
-            nn.ReLU(True),
-            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
-            # 11
-            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(512),
-            nn.ReLU(True),
-            # 12
-            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
-            nn.BatchNorm2d(512),
-            nn.ReLU(True),
-            # 13
-            nn.Conv2d(512, 512, kernel_size&#x3D;3, padding&#x3D;1),
-            # nn.BatchNorm2d(512),
-            nn.ReLU(True),
-            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),
-        )
-        self.classifier &#x3D; nn.Sequential(
-            # 14
-            nn.Linear(512, 4096),
-            nn.ReLU(True),
-            nn.Dropout(),
-            # 15
-            nn.Linear(4096, 4096),
-            nn.ReLU(True),
-            nn.Dropout(),
-            # 16
-            nn.Linear(4096, num_classes),
-        )
-        # self.classifier &#x3D; nn.Linear(512, 10)
-
-    def forward(self, x):
-        out &#x3D; self.features(x)
-        out &#x3D; out.view(out.size(0), -1)
-        out &#x3D; self.classifier(out)
-        return out
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="VGG19"><a href="#VGG19" class="headerlink" title="VGG19"></a>VGG19</h3><pre class="line-numbers language-none"><code class="language-none">
-&#39;&#39;&#39;
-创建VGG块
-参数分别为输入通道数，输出通道数，卷积层个数，是否做最大池化
-&#39;&#39;&#39;
-def make_vgg_block(in_channel, out_channel, convs, pool&#x3D;True):
-    net &#x3D; []
-
-    # 不改变图片尺寸卷积
-    net.append(nn.Conv2d(in_channel, out_channel, kernel_size&#x3D;3, padding&#x3D;1))
-    net.append(nn.BatchNorm2d(out_channel))
-    net.append(nn.ReLU(inplace&#x3D;True))
-
-    for i in range(convs - 1):
-        # 不改变图片尺寸卷积
-        net.append(nn.Conv2d(out_channel, out_channel, kernel_size&#x3D;3, padding&#x3D;1))
-        net.append(nn.BatchNorm2d(out_channel))
-        net.append(nn.ReLU(inplace&#x3D;True))
-
-    if pool:
-        # 2*2最大池化，图片变为w&#x2F;2 * h&#x2F;2
-        net.append(nn.MaxPool2d(2))
-
-    return nn.Sequential(*net)
-
-# 定义网络模型
-class VGG19Net(nn.Module):
-    def __init__(self):
-        super(VGG19Net, self).__init__()
-
-        net &#x3D; []
-
-        # 输入32*32，输出16*16
-        net.append(make_vgg_block(3, 64, 2))
-
-        # 输出8*8
-        net.append(make_vgg_block(64, 128, 2))
-
-        # 输出4*4
-        net.append(make_vgg_block(128, 256, 4))
-
-        # 输出2*2
-        net.append(make_vgg_block(256, 512, 4))
-
-        # 无池化层，输出保持2*2
-        net.append(make_vgg_block(512, 512, 4, False))
-
-        self.cnn &#x3D; nn.Sequential(*net)
-
-        self.fc &#x3D; nn.Sequential(
-            # 512个feature，每个feature 2*2
-            nn.Linear(512*2*2, 256),
-            nn.ReLU(),
-
-            nn.Linear(256, 256),
-            nn.ReLU(),
-
-            nn.Linear(256, 10)
-        )
-
-    def forward(self, x):
-        x &#x3D; self.cnn(x)
-        # x.size()[0]: batch size
-        x &#x3D; x.view(x.size()[0], -1)
-        x &#x3D; self.fc(x)
-
-        return x
-
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="ResNet34"><a href="#ResNet34" class="headerlink" title="ResNet34"></a>ResNet34</h2><h3 id="ResNet34-model1"><a href="#ResNet34-model1" class="headerlink" title="ResNet34 model1"></a>ResNet34 model1</h3><pre class="line-numbers language-none"><code class="language-none">class ResBlock(nn.Module):
-    def __init__(self, in_channels, out_channels, stride&#x3D;1):
-        super(ResBlock, self).__init__()
-
-        # 残差块的第一个卷积
-        # 通道数变换in-&gt;out，每一层（除第一层外）的第一个block
-        # 图片尺寸变换：stride&#x3D;2时，w-3+2 &#x2F; 2 + 1 &#x3D; w&#x2F;2，w&#x2F;2 * w&#x2F;2
-        # stride&#x3D;1时尺寸不变，w-3+2 &#x2F; 1 + 1 &#x3D; w
-        self.conv1 &#x3D; nn.Conv2d(in_channels, out_channels, kernel_size&#x3D;3, stride&#x3D;stride, padding&#x3D;1)
-        self.bn1 &#x3D; nn.BatchNorm2d(out_channels)
-        self.relu &#x3D; nn.ReLU(inplace&#x3D;True)
-
-        # 残差块的第二个卷积
-        # 通道数、图片尺寸均不变
-        self.conv2 &#x3D; nn.Conv2d(out_channels, out_channels, kernel_size&#x3D;3, stride&#x3D;1, padding&#x3D;1)
-        self.bn2 &#x3D; nn.BatchNorm2d(out_channels)
-
-        # 残差块的shortcut
-        # 如果残差块的输入输出通道数不同，则需要变换通道数及图片尺寸，以和residual部分相加
-        # 输出：通道数*2 图片尺寸&#x2F;2
-        if in_channels !&#x3D; out_channels:
-            self.downsample &#x3D; nn.Sequential(
-                nn.Conv2d(in_channels, out_channels, kernel_size&#x3D;1, stride&#x3D;2),
-                nn.BatchNorm2d(out_channels)
-            )
-        else:
-            # 通道数相同，无需做变换，在forward中identity &#x3D; x
-            self.downsample &#x3D; None
-
-    def forward(self, x):
-        identity &#x3D; x
-
-        out &#x3D; self.conv1(x)
-        out &#x3D; self.bn1(out)
-        out &#x3D; self.relu(out)
-
-        out &#x3D; self.conv2(out)
-        out &#x3D; self.bn2(out)
-
-        if self.downsample is not None:
-            identity &#x3D; self.downsample(x)
-
-        out +&#x3D; identity
-        out &#x3D; self.relu(out)
-
-        return out
-
-
-&#39;&#39;&#39;
-# 定义网络模型
-&#39;&#39;&#39;
-#定义网络结构
-
-class ResNet34(nn.Module):
-    def __init__(self, block):
-        super(ResNet34, self).__init__()
-
-        # 初始卷积层核池化层
-        self.first &#x3D; nn.Sequential(
-            # 卷基层1：7*7kernel，2stride，3padding，outmap：32-7+2*3 &#x2F; 2 + 1，16*16
-            nn.Conv2d(3, 64, 7, 2, 3),
-            nn.BatchNorm2d(64),
-            nn.ReLU(inplace&#x3D;True),
-
-            # 最大池化，3*3kernel，1stride（32的原始输入图片较小，不再缩小尺寸），1padding，
-            # outmap：16-3+2*1 &#x2F; 1 + 1，16*16
-            nn.MaxPool2d(3, 1, 1)
-        )
-
-        # 第一层，通道数不变
-        self.layer1 &#x3D; self.make_layer(block, 64, 64, 3, 1)
-
-        # 第2、3、4层，通道数*2，图片尺寸&#x2F;2
-        self.layer2 &#x3D; self.make_layer(block, 64, 128, 4, 2)  # 输出8*8
-        self.layer3 &#x3D; self.make_layer(block, 128, 256, 6, 2)  # 输出4*4
-        self.layer4 &#x3D; self.make_layer(block, 256, 512, 3, 2)  # 输出2*2
-
-        self.avg_pool &#x3D; nn.AvgPool2d(2)  # 输出512*1
-        self.fc &#x3D; nn.Linear(512, 10)
-
-    def make_layer(self, block, in_channels, out_channels, block_num, stride):
-        layers &#x3D; []
-
-        # 每一层的第一个block，通道数可能不同
-        layers.append(block(in_channels, out_channels, stride))
-
-        # 每一层的其他block，通道数不变，图片尺寸不变
-        for i in range(block_num - 1):
-            layers.append(block(out_channels, out_channels, 1))
-
-        return nn.Sequential(*layers)
-
-    def forward(self, x):
-        x &#x3D; self.first(x)
-        x &#x3D; self.layer1(x)
-        x &#x3D; self.layer2(x)
-        x &#x3D; self.layer3(x)
-        x &#x3D; self.layer4(x)
-        x &#x3D; self.avg_pool(x)
-
-        # x.size()[0]: batch size
-        x &#x3D; x.view(x.size()[0], -1)
-        x &#x3D; self.fc(x)
-
-        return x
-# 创建模型
-net &#x3D; ResNet34(ResBlock).to(&#39;cuda&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="ResNet34-model2"><a href="#ResNet34-model2" class="headerlink" title="ResNet34 model2"></a>ResNet34 model2</h3><pre class="line-numbers language-none"><code class="language-none">
-#定义网络结构
-class ResNet34(nn.Module):
-    def __init__(self, block):
-        super(ResNet34, self).__init__()
-
-        # 初始卷积层核池化层
-        self.first &#x3D; nn.Sequential(
-            # 卷基层1：3*3kernel，1stride，1padding，outmap：32-3+1*2 &#x2F; 1 + 1，32*32
-            nn.Conv2d(3, 64, 3, 1, 1),
-            nn.BatchNorm2d(64),
-            nn.ReLU(inplace&#x3D;True),
-
-            # 最大池化，3*3kernel，1stride（保持尺寸），1padding，
-            # outmap：32-3+2*1 &#x2F; 1 + 1，32*32
-            nn.MaxPool2d(3, 1, 1)
-        )
-
-        # 第一层，通道数不变
-        self.layer1 &#x3D; self.make_layer(block, 64, 64, 3, 1)
-
-        # 第2、3、4层，通道数*2，图片尺寸&#x2F;2
-        self.layer2 &#x3D; self.make_layer(block, 64, 128, 4, 2)  # 输出16*16
-        self.layer3 &#x3D; self.make_layer(block, 128, 256, 6, 2)  # 输出8*8
-        self.layer4 &#x3D; self.make_layer(block, 256, 512, 3, 2)  # 输出4*4
-
-        self.avg_pool &#x3D; nn.AvgPool2d(4)  # 输出512*1
-        self.fc &#x3D; nn.Linear(512, 10)
-
-    def make_layer(self, block, in_channels, out_channels, block_num, stride):
-        layers &#x3D; []
-
-        # 每一层的第一个block，通道数可能不同
-        layers.append(block(in_channels, out_channels, stride))
-
-        # 每一层的其他block，通道数不变，图片尺寸不变
-        for i in range(block_num - 1):
-            layers.append(block(out_channels, out_channels, 1))
-
-        return nn.Sequential(*layers)
-
-    def forward(self, x):
-        x &#x3D; self.first(x)
-        x &#x3D; self.layer1(x)
-        x &#x3D; self.layer2(x)
-        x &#x3D; self.layer3(x)
-        x &#x3D; self.layer4(x)
-        x &#x3D; self.avg_pool(x)
-
-        # x.size()[0]: batch size
-        x &#x3D; x.view(x.size()[0], -1)
-        x &#x3D; self.fc(x)
-
-        return x
-
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
-<li>若第一次运行可以<code>train_dataset = datasets.CIFAR10(&#39;./data1&#39;, train=True, transform=transform, download=False)</code>将download改为true.</li>
-<li>其他网络在LeNet基础上替换网络即可运行。</li>
-<li>参考我之前的文章安装环境<a href="https://www.mmrsl.cn/2021/10/22/ubuntu-NVIDIA30xx%E6%98%BE%E5%8D%A1%E5%AE%89%E8%A3%85/">Ubuntu系统安装NVIDIARTX30xx显卡驱动，开发环境安装</a></li>
-</ol>
-<h3 id="数据扩充"><a href="#数据扩充" class="headerlink" title="数据扩充"></a>数据扩充</h3><pre class="line-numbers language-none"><code class="language-none">transform &#x3D; transforms.Compose([
-    transforms.ToTensor(),
-    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
-
-transform_train &#x3D; transforms.Compose([
-    # 对原始32*32图像四周各填充4个0像素（40*40），然后随机裁剪成32*32
-    transforms.RandomCrop(32, padding&#x3D;4),
-    # 按0.5的概率水平翻转图片
-    transforms.RandomHorizontalFlip(),
-    transforms.ToTensor(),
-    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
-
-transform_test &#x3D; transforms.Compose([
-    transforms.ToTensor(),
-    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="不同网络测试结果"><a href="#不同网络测试结果" class="headerlink" title="不同网络测试结果"></a>不同网络测试结果</h2><blockquote>
-<p>EPOCHS=50</p>
-</blockquote>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>网络类型</th>
-<th>LeNet</th>
-<th>AlexNet</th>
-<th>VGG19</th>
-<th>VGG16</th>
-<th>ResNet34 1</th>
-<th>ResNet34 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>准确度</td>
-<td>58.990%</td>
-<td>64.55%</td>
-<td>84.610%</td>
-<td>83.670%</td>
-<td>78.790%</td>
-<td>85.14%</td>
-</tr>
-<tr>
-<td>loss</td>
-<td>0.009</td>
-<td>0.007</td>
-<td>0.000</td>
-<td>0.000</td>
-<td>0.00</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>plane 准确度</td>
-<td>66%</td>
-<td>81%</td>
-<td>87%</td>
-<td>88%</td>
-<td>83%</td>
-<td>88%</td>
-</tr>
-<tr>
-<td>car 准确度</td>
-<td>70%</td>
-<td>85%</td>
-<td>90%</td>
-<td>90%</td>
-<td>84%</td>
-<td>93%</td>
-</tr>
-<tr>
-<td>bird 准确度</td>
-<td>48%</td>
-<td>56%</td>
-<td>74%</td>
-<td>73%</td>
-<td>69%</td>
-<td>79%</td>
-</tr>
-<tr>
-<td>cat 准确度</td>
-<td>39%</td>
-<td>32%</td>
-<td>67%</td>
-<td>71%</td>
-<td>59%</td>
-<td>70%</td>
-</tr>
-<tr>
-<td>deer 准确度</td>
-<td>58%</td>
-<td>66%</td>
-<td>86%</td>
-<td>86%</td>
-<td>74%</td>
-<td>82%</td>
-</tr>
-<tr>
-<td>dog 准确度</td>
-<td>44%</td>
-<td>46%</td>
-<td>77%</td>
-<td>77%</td>
-<td>68%</td>
-<td>75%</td>
-</tr>
-<tr>
-<td>frog 准确度</td>
-<td>72%</td>
-<td>65%</td>
-<td>90%</td>
-<td>86%</td>
-<td>84%</td>
-<td>89%</td>
-</tr>
-<tr>
-<td>horse 准确度</td>
-<td>65%</td>
-<td>64%</td>
-<td>89%</td>
-<td>83%</td>
-<td>82%</td>
-<td>89%</td>
-</tr>
-<tr>
-<td>ship 准确度</td>
-<td>69%</td>
-<td>79%</td>
-<td>91%</td>
-<td>92%</td>
-<td>89%</td>
-<td>92%</td>
-</tr>
-<tr>
-<td>truck 准确度</td>
-<td>59%</td>
-<td>64%</td>
-<td>90%</td>
-<td>90%</td>
-<td>86%</td>
-<td>90%</td>
-</tr>
-</tbody>
-</table>
-</div>
-<blockquote>
-<p>扩充准确度 EPOCHS=50</p>
-</blockquote>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>网络类型</th>
-<th>VGG19</th>
-<th>ResNet34 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>准确度</td>
-<td>87.220%</td>
-<td>87.09%</td>
-</tr>
-<tr>
-<td>loss</td>
-<td>0.001</td>
-<td>0.000</td>
-</tr>
-<tr>
-<td>plane 准确度</td>
-<td>85%</td>
-<td>85%</td>
-</tr>
-<tr>
-<td>car 准确度</td>
-<td>93%</td>
-<td>92%</td>
-</tr>
-<tr>
-<td>bird 准确度</td>
-<td>80%</td>
-<td>82%</td>
-</tr>
-<tr>
-<td>cat 准确度</td>
-<td>76%</td>
-<td>74%</td>
-</tr>
-<tr>
-<td>deer 准确度</td>
-<td>86%</td>
-<td>85%</td>
-</tr>
-<tr>
-<td>dog 准确度</td>
-<td>82%</td>
-<td>83%</td>
-</tr>
-<tr>
-<td>frog 准确度</td>
-<td>90%</td>
-<td>91%</td>
-</tr>
-<tr>
-<td>horse 准确度</td>
-<td>88%</td>
-<td>90%</td>
-</tr>
-<tr>
-<td>ship 准确度</td>
-<td>93%</td>
-<td>92%</td>
-</tr>
-<tr>
-<td>truck 准确度</td>
-<td>94%</td>
-<td>91%</td>
-</tr>
-</tbody>
-</table>
-</div>
-<blockquote>
-<p>扩充准确度 EPOCHS=100</p>
-</blockquote>
-<pre class="line-numbers language-none"><code class="language-none">VGG19 在10000张测试集图片上的准确率：88.840
-正确率 ： plane : 91 %
-正确率 ：   car : 96 %
-正确率 ：  bird : 85 %
-正确率 ：   cat : 78 %
-正确率 ：  deer : 88 %
-正确率 ：   dog : 79 %
-正确率 ：  frog : 90 %
-正确率 ： horse : 93 %
-正确率 ：  ship : 94 %
-正确率 ： truck : 90 %
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>网络类型</th>
-<th>VGG19</th>
-<th>ResNet34 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>准确度</td>
-<td>88.84%</td>
-<td>88.05%</td>
-</tr>
-<tr>
-<td>loss</td>
-<td>0.000</td>
-<td>0.000</td>
-</tr>
-<tr>
-<td>plane 准确度</td>
-<td>91%</td>
-<td>89%</td>
-</tr>
-<tr>
-<td>car 准确度</td>
-<td>96%</td>
-<td>93%</td>
-</tr>
-<tr>
-<td>bird 准确度</td>
-<td>85%</td>
-<td>82%</td>
-</tr>
-<tr>
-<td>cat 准确度</td>
-<td>78%</td>
-<td>79%</td>
-</tr>
-<tr>
-<td>deer 准确度</td>
-<td>88%</td>
-<td>85%</td>
-</tr>
-<tr>
-<td>dog 准确度</td>
-<td>79%</td>
-<td>79%</td>
-</tr>
-<tr>
-<td>frog 准确度</td>
-<td>90%</td>
-<td>91%</td>
-</tr>
-<tr>
-<td>horse 准确度</td>
-<td>93%</td>
-<td>91%</td>
-</tr>
-<tr>
-<td>ship 准确度</td>
-<td>94%</td>
-<td>93%</td>
-</tr>
-<tr>
-<td>truck 准确度</td>
-<td>90%</td>
-<td>93%</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>以上结果可以看出<code>ResNet34 2&gt;VGG19&gt;VGG16&gt;ResNet34 1&gt;AlexNet&gt;LeNet</code></p>
-]]></content>
-      <categories>
-        <category>pytorch</category>
-      </categories>
-      <tags>
-        <tag>pytorch</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux进程断连重新进入该进程方法</title>
-    <url>/2021/03/31/Linux%E8%BF%9B%E7%A8%8B%E6%96%AD%E8%BF%9E%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E8%AF%A5%E8%BF%9B%E7%A8%8B%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux进程断连后重新进入该进程"><a href="#Linux进程断连后重新进入该进程" class="headerlink" title="Linux进程断连后重新进入该进程"></a>Linux进程断连后重新进入该进程</h1><h2 id="Putty-or-Xshell"><a href="#Putty-or-Xshell" class="headerlink" title="Putty or Xshell"></a>Putty or Xshell</h2><p>首先推荐这两款软件附下载地址</p>
-<ul>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=putty&amp;fenlei=256&amp;oq=linux%2520nohup%25E5%2590%258E%25E6%2580%258E%25E4%25B9%2588%25E8%25BF%259B%25E5%2585%25A5&amp;rsv_pq=a035ea760005dcd7&amp;rsv_t=2798tx2%2BkxpcNpvxPWiiy5OmKO49HU24tj7gyYA9ux%2FeHi83slME5HXfMhUJ6bBi6f1MApmcD6w&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1242&amp;rsv_sug3=66&amp;rsv_sug1=62&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2217">putty</a></li>
-<li><a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=02003390_2_hao_pg&amp;wd=Xshell&amp;fenlei=256&amp;oq=putty&amp;rsv_pq=b0799f87000715fa&amp;rsv_t=f14bcCxih9eDCmSbfD4GsjdA4Ze6qJeGljF5NTRMBryZiLfHD1G7o8s694yHumKPIvB8FLKiS6U&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=tb&amp;rsv_btype=t&amp;inputT=1642&amp;rsv_sug3=74&amp;rsv_sug1=72&amp;rsv_sug7=100&amp;rsv_sug2=0&amp;rsv_sug4=2664">Xshell</a><h3 id="设置putty字体和全屏显示连接linux"><a href="#设置putty字体和全屏显示连接linux" class="headerlink" title="设置putty字体和全屏显示连接linux"></a>设置putty字体和全屏显示连接linux</h3><img src="https://img-blog.csdnimg.cn/20210331101315844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101324638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210331101359368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>设置成功后就可以进入远程linux系统了。</li>
-</ul>
-<h3 id="进入全屏"><a href="#进入全屏" class="headerlink" title="进入全屏"></a>进入全屏</h3><p>全屏：<kbd>Alt</kbd> + <kbd>Enter</kbd><br><img src="https://img-blog.csdnimg.cn/20210331101530527.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="linux进程"><a href="#linux进程" class="headerlink" title="linux进程"></a>linux进程</h2><p>直接输入python main.py即可调度进行，但是在断开连接后，该进程就会被消除，这很让人头疼。</p>
-<h3 id="后台执行"><a href="#后台执行" class="headerlink" title="后台执行"></a>后台执行</h3><p>一般运行linux上的程序都是执行 .sh 文件（./sh文件），那如果不影响当前CMD窗口的操作，需要后台运行怎么办呢？</p>
-<p>这时就需要借助 nohup 和 &amp; 命令来实现。</p>
-<p><code>nohup python3 main.py &amp;</code></p>
-<ol>
-<li>nohup </li>
-</ol>
-<p>加在一个命令的最前面，表示不挂断的运行命令</p>
-<ol>
-<li>&amp;</li>
-</ol>
-<p>加载一个命令的最后面，表示这个命令放在后台执行</p>
-<h3 id="查看后台运行的命令"><a href="#查看后台运行的命令" class="headerlink" title="查看后台运行的命令"></a>查看后台运行的命令</h3><p>有两个命令可以来查看，ps 和 jobs。区别在于 jobs 只能查看当前终端后台执行的任务，换了终端就看不见了。而ps命令适用于查看瞬时进程的动态，可以看到别的终端的任务。</p>
-<ol>
-<li>jobs 查看后台运行的命令</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">dogandcat$ jobs
-[1]+  Running                 nohup python3 pridict.py &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<ol>
-<li><p>ps查看进程</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;dogandcat$ ps
-  PID TTY          TIME CMD
-20712 pts&#x2F;6    00:00:00 bash
-20793 pts&#x2F;6    02:49:24 python3
-22397 pts&#x2F;6    00:00:00 ps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>kill </p>
-</li>
-</ol>
-<p>（1）通过jobs命令查看jobnum，然后执行   kill %jobnum</p>
-<p>（2）通过ps命令查看进程号PID，然后执行  kill %PID</p>
-<p>如果是前台进程的话，直接执行 Ctrl+c 就可以终止了</p>
-<h3 id="前后台进程的切换与控制"><a href="#前后台进程的切换与控制" class="headerlink" title="前后台进程的切换与控制"></a>前后台进程的切换与控制</h3><p>（1）fg命令</p>
-<p>将后台中的命令调至前台继续运行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnun，然后用 fg %jobnum 将选中的命令调出。</p>
-<p>（2）Ctrl + z 命令</p>
-<p>将一个正在前台执行的命令放到后台，并且处于暂停状态</p>
-<p>（3）bg命令</p>
-<p>将一个在后台暂停的命令，变成在后台继续执行</p>
-<p>如果后台中有多个命令，可以先用jobs查看jobnum，然后用 bg %jobnum 将选中的命令调出继续执行。</p>
-<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><ul>
-<li>首先后台运行一个进程：</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/20210331102625662.png" alt="在这里插入图片描述"></p>
-<ul>
-<li>用jobs找到进程号<br><img src="https://img-blog.csdnimg.cn/20210331102723639.png" alt="在这里插入图片描述"></li>
-<li>fg %1 回到进程<br><img src="https://img-blog.csdnimg.cn/20210331102915834.png" alt="在这里插入图片描述"><br>退出：<kbd>Ctrl</kbd> + <kbd>Z</kbd></li>
-</ul>
-<p>-bg %1 继续执行进程<br><img src="https://img-blog.csdnimg.cn/20210331103034174.png" alt="在这里插入图片描述"></p>
-<h3 id="尝试断开连接后jobs无法找到进程号"><a href="#尝试断开连接后jobs无法找到进程号" class="headerlink" title="尝试断开连接后jobs无法找到进程号"></a>尝试断开连接后jobs无法找到进程号</h3><h2 id="第二次尝试采用GUN-Screen"><a href="#第二次尝试采用GUN-Screen" class="headerlink" title="第二次尝试采用GUN Screen"></a>第二次尝试采用GUN Screen</h2><h3 id="Screen-Python3-main-py"><a href="#Screen-Python3-main-py" class="headerlink" title="Screen Python3 main.py"></a>Screen Python3 main.py</h3><p>创建一个窗口运行python 运行文件<br><img src="https://img-blog.csdnimg.cn/20210331112321190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="Screen-ls"><a href="#Screen-ls" class="headerlink" title="Screen -ls"></a>Screen -ls</h3><p><img src="https://img-blog.csdnimg.cn/20210331112220692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTA4Njcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>找到屏幕号</p>
-<h3 id="screen-r-27884"><a href="#screen-r-27884" class="headerlink" title="screen -r 27884"></a>screen -r 27884</h3><p>进入屏幕号</p>
-<p>linux远程断联后重新进入该进程</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="https://blog.csdn.net/john_hongming/article/details/17219871">linux 关闭远程回话之后保持进程继续
-</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>研究生课程</category>
-      </categories>
-      <tags>
-        <tag>研究生课程</tag>
       </tags>
   </entry>
   <entry>
@@ -8309,49 +8309,6 @@ if __name__&#x3D;&#x3D;&#39;__main__&#39;:
       </tags>
   </entry>
   <entry>
-    <title>Merry Christmas</title>
-    <url>/2020/12/24/merry_christmas/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-</center>
-
-<span id="more"></span>
-<ol>
-<li>git push 方法</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">git init
-git add .
-git commit -m &quot;first commit&quot;
-git remote add origin URL
-git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
-<ol>
-<li>圣诞网站模板分享</li>
-</ol>
-<ul>
-<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
-<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
-</ul>
-<ol>
-<li>电影分享 </li>
-</ol>
-<ul>
-<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
-</ul>
-<center>
-
-
-<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
-      <categories>
-        <category>电影推荐</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>树莓派系统双网卡</title>
     <url>/2021/04/30/linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%8C%E7%BD%91%E5%8D%A1%E5%88%B6%E4%BD%9C/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="抗干扰树莓派操作系统双网卡"><a href="#抗干扰树莓派操作系统双网卡" class="headerlink" title="抗干扰树莓派操作系统双网卡"></a>抗干扰树莓派操作系统双网卡</h1><h2 id="本文主要是讲解如何让一个设备具有两条独立的信道"><a href="#本文主要是讲解如何让一个设备具有两条独立的信道" class="headerlink" title="本文主要是讲解如何让一个设备具有两条独立的信道"></a>本文主要是讲解如何让一个设备具有两条独立的信道</h2><p>首先是我在解决问题中所写的一些东西，就随手的一个笔记。<br><pre class="line-numbers language-none"><code class="language-none">auto lo
@@ -9734,6 +9691,49 @@ sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="
       </categories>
       <tags>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Merry Christmas</title>
+    <url>/2020/12/24/merry_christmas/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+</center>
+
+<span id="more"></span>
+<ol>
+<li>git push 方法</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">git init
+git add .
+git commit -m &quot;first commit&quot;
+git remote add origin URL
+git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
+<ol>
+<li>圣诞网站模板分享</li>
+</ol>
+<ul>
+<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
+<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
+</ul>
+<ol>
+<li>电影分享 </li>
+</ol>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
+</ul>
+<center>
+
+
+<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
+      <categories>
+        <category>电影推荐</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -12515,7 +12515,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#107;&#x70;&#x40;&#x6d;&#109;&#x72;&#115;&#108;&#46;&#99;&#110;">&#107;&#x70;&#x40;&#x6d;&#109;&#x72;&#115;&#108;&#46;&#99;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#58;&#x6b;&#x70;&#x40;&#x6d;&#x6d;&#x72;&#x73;&#x6c;&#x2e;&#x63;&#x6e;">&#x6b;&#x70;&#x40;&#x6d;&#x6d;&#x72;&#x73;&#x6c;&#x2e;&#x63;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -14921,11 +14921,45 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
 <li>这步做完后，最后的元素会是最大的数。</li>
 <li>针对所有的元素重复以上的步骤，除了最后一个。持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</li>
 </ol>
-<p><img src="https://www.mmrsl.cn/download/img/排序算法/冒泡排序.gif" alt=""></p>
+<p><img src="https://www.mmrsl.cn/download/img/排序算法/冒泡排序.gif" alt=""><br><pre class="line-numbers language-none"><code class="language-none">public static void bubbleSort(int arr[]) &#123;
+
+       for(int i &#x3D;0 ; i&lt;arr.length-1 ; i++) &#123; 
+          
+           for(int j&#x3D;0 ; j&lt;arr.length-1-i ; j++) &#123;  
+
+               if(arr[j]&gt;arr[j+1]) &#123;
+                   int temp &#x3D; arr[j];
+                    
+                   arr[j]&#x3D;arr[j+1];
+                    
+                   arr[j+1]&#x3D;temp;
+           &#125;
+           &#125;    
+       &#125;
+   &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
 <h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><ol>
 <li>首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置</li>
 <li>再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。</li>
-<li>重复第二步，直到所有元素均排序完毕。<br><img src="https://www.mmrsl.cn/download/img/排序算法/选择排序.gif" alt=""></li>
+<li>重复第二步，直到所有元素均排序完毕。<br><img src="https://www.mmrsl.cn/download/img/排序算法/选择排序.gif" alt=""><pre class="line-numbers language-none"><code class="language-none">public static void selectionSort(int[] arr)&#123;                
+    for(int i &#x3D; 0; i &lt; arr.length - 1; i++)&#123;
+        &#x2F;&#x2F; 交换次数         
+        &#x2F;&#x2F; 先假设每次循环时，最小数的索引为i            
+        int minIndex &#x3D; i;&#x2F;&#x2F; 每一个元素都和剩下的未排序的元素比较          
+        for(int j &#x3D; i + 1; j &lt; arr.length; j++)&#123;             
+            if(arr[j] &lt; arr[minIndex])&#123;&#x2F;&#x2F;寻找最小数                   
+                minIndex &#x3D; j;&#x2F;&#x2F;将最小数的索引保存                
+            &#125;           
+        &#125;&#x2F;&#x2F;经过一轮循环，就可以找出第一个最小值的索引，然后把最小值放到i的位置           
+        swap(arr, i, minIndex);         
+    &#125;   
+&#125;
+ 
+private static void swap(int[] arr, int i, int j) &#123;     
+    int temp &#x3D; arr[i];      
+    arr[i] &#x3D; arr[j];        
+    arr[j] &#x3D; temp;          
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 </ol>
 <h2 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h2><ol>
 <li>将第一待排序序列第一个元素看做一个有序序列，把第二个元素到最后一个元素当成是未排序序列。</li>
@@ -14933,18 +14967,94 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
 <li>（如果待插入的元素与有序序列中的某个元素相等，则将待插入元素插入到相等元素的后面。）</li>
 </ol>
 <p><img src="https://www.mmrsl.cn/download/img/排序算法/插入排序.gif" alt=""></p>
+<pre class="line-numbers language-none"><code class="language-none">public class Insertion
+&#123;
+    public static void sort(Comparable[] a)
+    &#123;
+        &#x2F;&#x2F;将a[]按升序排列
+        int N&#x3D;a.length;
+        for (int i&#x3D;1;i&lt;N;i++)
+        &#123;
+        &#x2F;&#x2F;将a[i]插入到a[i-1]，a[i-2]，a[i-3]……之中
+            for(int j&#x3D;i;j&gt;0&amp;&amp;(a[j].compareTo(a[j-1])&lt;0);j--)
+            &#123;
+                Comparable temp&#x3D;a[j];
+                a[j]&#x3D;a[j-1];
+                a[j-1]&#x3D;temp;
+            &#125;
+        &#125;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h2><ol>
 <li>选择一个增量序列 t1，t2，……，tk，其中 ti &gt; tj, tk = 1；</li>
 <li>按增量序列个数 k，对序列进行 k 趟排序；每趟排序，根据对应的增量 ti，将待排序列分割成若干长度为 m 的子序列，分别对各子表进行直接插入排序。</li>
-<li>仅增量因子为 1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。<br><img src="https://www.mmrsl.cn/download/img/排序算法/希尔排序.gif" alt=""></li>
+<li>仅增量因子为 1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。<br><img src="https://www.mmrsl.cn/download/img/排序算法/希尔排序.gif" alt=""><pre class="line-numbers language-none"><code class="language-none">public static void main(String[] args)&#123;
+    int[] array&#x3D;&#123;49,38,65,97,76,13,27,49,78,34,12,64,1&#125;;
+    System.out.println(&quot;排序之前：&quot;);
+    for(int i&#x3D;0;i&lt;array.length;i++)&#123;
+        System.out.print(array[i]+&quot; &quot;);
+    &#125;
+    &#x2F;&#x2F;希尔排序
+    int gap &#x3D; array.length;
+    while (true) &#123;    
+        gap &#x2F;&#x3D; 2;   &#x2F;&#x2F;增量每次减半    
+        for (int i &#x3D; 0; i &lt; gap; i++) &#123;        
+            for (int j &#x3D; i + gap; j &lt; array.length; j +&#x3D; gap) &#123;&#x2F;&#x2F;这个循环里其实就是一个插入排序                       
+                int k &#x3D; j - gap;            
+                while (k &gt;&#x3D; 0 &amp;&amp; array[k] &gt; array[k+gap]) &#123;
+                    int temp &#x3D; array[k];
+                    array[k] &#x3D; array[k+gap];
+                    array[k + gap] &#x3D; temp;                
+                    k -&#x3D; gap;            
+                &#125;                
+            &#125;    
+        &#125;    
+        if (gap &#x3D;&#x3D; 1)        
+            break;
+    &#125;
+ 
+    System.out.println();
+    System.out.println(&quot;排序之后：&quot;);
+    for(int i&#x3D;0;i&lt;array.length;i++)&#123;
+        System.out.print(array[i]+&quot; &quot;);
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 </ol>
 <h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h2><ol>
 <li>申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列；</li>
 <li>设定两个指针，最初位置分别为两个已经排序序列的起始位置；</li>
 <li>比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置；</li>
-<li>重复步骤 3 直到某一指针达到序列尾；将另一序列剩下的所有元素直接复制到合并序列尾。<br><img src="https://www.mmrsl.cn/download/img/排序算法/归并排序.gif" alt=""></li>
-</ol>
-<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><ol>
+<li>重复步骤 3 直到某一指针达到序列尾；将另一序列剩下的所有元素直接复制到合并序列尾。<br><img src="https://www.mmrsl.cn/download/img/排序算法/归并排序.gif" alt=""><pre class="line-numbers language-none"><code class="language-none">package MergeSort;
+public class MergeSort &#123;   
+    public static int[] mergeSort(int[] nums, int l, int h) &#123;
+        if (l &#x3D;&#x3D; h)
+            return new int[] &#123; nums[l] &#125;;
+         
+        int mid &#x3D; l + (h - l) &#x2F; 2;
+        int[] leftArr &#x3D; mergeSort(nums, l, mid); &#x2F;&#x2F;左有序数组
+        int[] rightArr &#x3D; mergeSort(nums, mid + 1, h); &#x2F;&#x2F;右有序数组
+        int[] newNum &#x3D; new int[leftArr.length + rightArr.length]; &#x2F;&#x2F;新有序数组
+         
+        int m &#x3D; 0, i &#x3D; 0, j &#x3D; 0; 
+        while (i &lt; leftArr.length &amp;&amp; j &lt; rightArr.length) &#123;
+            newNum[m++] &#x3D; leftArr[i] &lt; rightArr[j] ? leftArr[i++] : rightArr[j++];
+        &#125;
+        while (i &lt; leftArr.length)
+            newNum[m++] &#x3D; leftArr[i++];
+        while (j &lt; rightArr.length)
+            newNum[m++] &#x3D; rightArr[j++];
+        return newNum;
+    &#125;
+    public static void main(String[] args) &#123;
+        int[] nums &#x3D; new int[] &#123; 9, 8, 7, 6, 5, 4, 3, 2, 10 &#125;;
+        int[] newNums &#x3D; mergeSort(nums, 0, nums.length - 1);
+        for (int x : newNums) &#123;
+            System.out.println(x);
+        &#125;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2></li>
 <li>从数列中挑出一个元素，称为 “基准”（pivot）;</li>
 <li>重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面（相同的数可以到任一边）。</li>
 <li>在这个分区退出之后，该基准就处于数列的中间位置。</li>
@@ -15031,22 +15141,134 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
 <li>花O(n)的时间扫描一下整个序列 A，获取最小值 min 和最大值 </li>
 <li>max开辟一块新的空间创建新的数组 B，长度为 ( max - min + 1)</li>
 <li>数组 B 中 index 的元素记录的值是 A 中某元素出现的次数</li>
-<li>最后输出目标整数序列，具体的逻辑是遍历数组 B，输出相应元素以及对应的个数<br><img src="https://www.mmrsl.cn/download/img/排序算法/计数排序.gif" alt=""></li>
-</ol>
-<h2 id="桶排序"><a href="#桶排序" class="headerlink" title="桶排序"></a>桶排序</h2><ol>
-<li>设置固定数量的空桶。</li>
+<li><p>最后输出目标整数序列，具体的逻辑是遍历数组 B，输出相应元素以及对应的个数<br><img src="https://www.mmrsl.cn/download/img/排序算法/计数排序.gif" alt=""></p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;针对c数组的大小，优化过的计数排序
+publicclassCountSort&#123;
+    publicstaticvoidmain(String[]args)&#123;
+      &#x2F;&#x2F;排序的数组
+        int a[]&#x3D;&#123;100,93,97,92,96,99,92,89,93,97,90,94,92,95&#125;;
+        int b[]&#x3D;countSort(a);
+        for(inti:b)&#123;
+           System.out.print(i+&quot;&quot;);
+        &#125;
+        System.out.println();
+    &#125;
+    public static int[] countSort(int[]a)&#123;
+        int b[] &#x3D; new int[a.length];
+        int max &#x3D; a[0],min &#x3D; a[0];
+        for(int i:a)&#123;
+            if(i&gt;max)&#123;
+                max&#x3D;i;
+            &#125;
+            if(i&lt;min)&#123;
+                min&#x3D;i;
+            &#125;
+        &#125;&#x2F;&#x2F;这里k的大小是要排序的数组中，元素大小的极值差+1
+        int k&#x3D;max-min+1;
+        int c[]&#x3D;new int[k];
+        for(int i&#x3D;0;i&lt;a.length;++i)&#123;
+            c[a[i]-min]+&#x3D;1;&#x2F;&#x2F;优化过的地方，减小了数组c的大小
+        &#125;
+        for(int i&#x3D;1;i&lt;c.length;++i)&#123;
+            c[i]&#x3D;c[i]+c[i-1];
+        &#125;
+        for(int i&#x3D;a.length-1;i&gt;&#x3D;0;--i)&#123;
+            b[--c[a[i]-min]]&#x3D;a[i];&#x2F;&#x2F;按存取的方式取出c的元素
+        &#125;
+    return b;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="桶排序"><a href="#桶排序" class="headerlink" title="桶排序"></a>桶排序</h2></li>
+<li><p>设置固定数量的空桶。</p>
+</li>
 <li>把数据放到对应的桶中。</li>
 <li>对每个不为空的桶中数据进行排序。</li>
-<li>拼接不为空的桶中数据，得到结果<br><img src="https://www.mmrsl.cn/download/img/排序算法/桶排序.gif" alt=""></li>
-</ol>
-<h2 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h2><ol>
+<li>拼接不为空的桶中数据，得到结果<br><img src="https://www.mmrsl.cn/download/img/排序算法/桶排序.gif" alt=""><pre class="line-numbers language-none"><code class="language-none">public static void basket(int data[])&#x2F;&#x2F;data为待排序数组
+&#123;
+int n&#x3D;data.length;
+int bask[][]&#x3D;new int[10][n];
+int index[]&#x3D;new int[10];
+int max&#x3D;Integer.MIN_VALUE;
+for(int i&#x3D;0;i&lt;n;i++)
+&#123;
+max&#x3D;max&gt;(Integer.toString(data[i]).length())?max:(Integer.toString(data[i]).length());
+&#125;
+String str;
+for(int i&#x3D;max-1;i&gt;&#x3D;0;i--)
+&#123;
+for(int j&#x3D;0;j&lt;n;j++)
+&#123;
+str&#x3D;&quot;&quot;;
+if(Integer.toString(data[j]).length()&lt;max)
+&#123;
+for(int k&#x3D;0;k&lt;max-Integer.toString(data[j]).length();k++)
+str+&#x3D;&quot;0&quot;;
+&#125;
+str+&#x3D;Integer.toString(data[j]);
+bask[str.charAt(i)-&#39;0&#39;][index[str.charAt(i)-&#39;0&#39;]++]&#x3D;data[j];
+&#125;
+int pos&#x3D;0;
+for(int j&#x3D;0;j&lt;10;j++)
+&#123;
+for(int k&#x3D;0;k&lt;index[j];k++)
+&#123;
+data[pos++]&#x3D;bask[j][k];
+&#125;
+&#125;
+for(intx&#x3D;0;x&lt;10;x++)index[x]&#x3D;0;
+&#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h2></li>
 <li>将所有待比较数值（正整数）统一为同样的数位长度，数位较短的数前面补零</li>
 <li>从最低位开始，依次进行一次排序</li>
 <li>从最低位排序一直到最高位排序完成以后, 数列就变成一个有序序列<br><img src="https://www.mmrsl.cn/download/img/排序算法/基数排序.gif" alt=""></li>
 </ol>
+<pre class="line-numbers language-none"><code class="language-none">public class RadixSort
+&#123;
+    public static void sort(int[] number, int d) &#x2F;&#x2F;d表示最大的数有多少位
+    &#123;
+        intk &#x3D; 0;
+        intn &#x3D; 1;
+        intm &#x3D; 1; &#x2F;&#x2F;控制键值排序依据在哪一位
+        int[][]temp &#x3D; newint[10][number.length]; &#x2F;&#x2F;数组的第一维表示可能的余数0-9
+        int[]order &#x3D; newint[10]; &#x2F;&#x2F;数组order[i]用来表示该位是i的数的个数
+        while(m &lt;&#x3D; d)
+        &#123;
+            for(inti &#x3D; 0; i &lt; number.length; i++)
+            &#123;
+                intlsd &#x3D; ((number[i] &#x2F; n) % 10);
+                temp[lsd][order[lsd]] &#x3D; number[i];
+                order[lsd]++;
+            &#125;
+            for(inti &#x3D; 0; i &lt; 10; i++)
+            &#123;
+                if(order[i] !&#x3D; 0)
+                    for(intj &#x3D; 0; j &lt; order[i]; j++)
+                    &#123;
+                        number[k] &#x3D; temp[i][j];
+                        k++;
+                    &#125;
+                order[i] &#x3D; 0;
+            &#125;
+            n *&#x3D; 10;
+            k &#x3D; 0;
+            m++;
+        &#125;
+    &#125;
+    public static void main(String[] args)
+    &#123;
+        int[]data &#x3D;
+        &#123;73, 22, 93, 43, 55, 14, 28, 65, 39, 81, 33, 100&#125;;
+        RadixSort.sort(data, 3);
+        for(inti &#x3D; 0; i &lt; data.length; i++)
+        &#123;
+            System.out.print(data[i] + &quot;&quot;);
+        &#125;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="排序算法比较"><a href="#排序算法比较" class="headerlink" title="排序算法比较"></a>排序算法比较</h2><p><img src="https://www.mmrsl.cn/download/img/排序算法/1.png" alt=""></p>
 <h3 id="参考地址："><a href="#参考地址：" class="headerlink" title="参考地址："></a>参考地址：</h3><ul>
-<li><a href="https://www.zhihu.com/question/21318658/answer/1268219135">https://www.zhihu.com/question/21318658/answer/1268219135</a></li>
+<li>知乎：<a href="https://www.zhihu.com/question/21318658/answer/1268219135">https://www.zhihu.com/question/21318658/answer/1268219135</a></li>
 <li>百度百科：<a href="https://baike.baidu.com/item/%E5%A0%86%E6%8E%92%E5%BA%8F">https://baike.baidu.com/item/%E5%A0%86%E6%8E%92%E5%BA%8F</a></li>
 </ul>
 ]]></content>

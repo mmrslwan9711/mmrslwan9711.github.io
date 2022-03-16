@@ -561,14 +561,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    3.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    14 分
                 </div>
                 
 
@@ -597,11 +597,45 @@
 <li>这步做完后，最后的元素会是最大的数。</li>
 <li>针对所有的元素重复以上的步骤，除了最后一个。持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</li>
 </ol>
-<p><img src="https://www.mmrsl.cn/download/img/排序算法/冒泡排序.gif" alt=""></p>
+<p><img src="https://www.mmrsl.cn/download/img/排序算法/冒泡排序.gif" alt=""><br><pre class="line-numbers language-none"><code class="language-none">public static void bubbleSort(int arr[]) &#123;
+
+       for(int i &#x3D;0 ; i&lt;arr.length-1 ; i++) &#123; 
+          
+           for(int j&#x3D;0 ; j&lt;arr.length-1-i ; j++) &#123;  
+
+               if(arr[j]&gt;arr[j+1]) &#123;
+                   int temp &#x3D; arr[j];
+                    
+                   arr[j]&#x3D;arr[j+1];
+                    
+                   arr[j+1]&#x3D;temp;
+           &#125;
+           &#125;    
+       &#125;
+   &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
 <h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><ol>
 <li>首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置</li>
 <li>再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。</li>
-<li>重复第二步，直到所有元素均排序完毕。<br><img src="https://www.mmrsl.cn/download/img/排序算法/选择排序.gif" alt=""></li>
+<li>重复第二步，直到所有元素均排序完毕。<br><img src="https://www.mmrsl.cn/download/img/排序算法/选择排序.gif" alt=""><pre class="line-numbers language-none"><code class="language-none">public static void selectionSort(int[] arr)&#123;                
+    for(int i &#x3D; 0; i &lt; arr.length - 1; i++)&#123;
+        &#x2F;&#x2F; 交换次数         
+        &#x2F;&#x2F; 先假设每次循环时，最小数的索引为i            
+        int minIndex &#x3D; i;&#x2F;&#x2F; 每一个元素都和剩下的未排序的元素比较          
+        for(int j &#x3D; i + 1; j &lt; arr.length; j++)&#123;             
+            if(arr[j] &lt; arr[minIndex])&#123;&#x2F;&#x2F;寻找最小数                   
+                minIndex &#x3D; j;&#x2F;&#x2F;将最小数的索引保存                
+            &#125;           
+        &#125;&#x2F;&#x2F;经过一轮循环，就可以找出第一个最小值的索引，然后把最小值放到i的位置           
+        swap(arr, i, minIndex);         
+    &#125;   
+&#125;
+ 
+private static void swap(int[] arr, int i, int j) &#123;     
+    int temp &#x3D; arr[i];      
+    arr[i] &#x3D; arr[j];        
+    arr[j] &#x3D; temp;          
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 </ol>
 <h2 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h2><ol>
 <li>将第一待排序序列第一个元素看做一个有序序列，把第二个元素到最后一个元素当成是未排序序列。</li>
@@ -609,18 +643,94 @@
 <li>（如果待插入的元素与有序序列中的某个元素相等，则将待插入元素插入到相等元素的后面。）</li>
 </ol>
 <p><img src="https://www.mmrsl.cn/download/img/排序算法/插入排序.gif" alt=""></p>
+<pre class="line-numbers language-none"><code class="language-none">public class Insertion
+&#123;
+    public static void sort(Comparable[] a)
+    &#123;
+        &#x2F;&#x2F;将a[]按升序排列
+        int N&#x3D;a.length;
+        for (int i&#x3D;1;i&lt;N;i++)
+        &#123;
+        &#x2F;&#x2F;将a[i]插入到a[i-1]，a[i-2]，a[i-3]……之中
+            for(int j&#x3D;i;j&gt;0&amp;&amp;(a[j].compareTo(a[j-1])&lt;0);j--)
+            &#123;
+                Comparable temp&#x3D;a[j];
+                a[j]&#x3D;a[j-1];
+                a[j-1]&#x3D;temp;
+            &#125;
+        &#125;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h2><ol>
 <li>选择一个增量序列 t1，t2，……，tk，其中 ti &gt; tj, tk = 1；</li>
 <li>按增量序列个数 k，对序列进行 k 趟排序；每趟排序，根据对应的增量 ti，将待排序列分割成若干长度为 m 的子序列，分别对各子表进行直接插入排序。</li>
-<li>仅增量因子为 1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。<br><img src="https://www.mmrsl.cn/download/img/排序算法/希尔排序.gif" alt=""></li>
+<li>仅增量因子为 1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。<br><img src="https://www.mmrsl.cn/download/img/排序算法/希尔排序.gif" alt=""><pre class="line-numbers language-none"><code class="language-none">public static void main(String[] args)&#123;
+    int[] array&#x3D;&#123;49,38,65,97,76,13,27,49,78,34,12,64,1&#125;;
+    System.out.println(&quot;排序之前：&quot;);
+    for(int i&#x3D;0;i&lt;array.length;i++)&#123;
+        System.out.print(array[i]+&quot; &quot;);
+    &#125;
+    &#x2F;&#x2F;希尔排序
+    int gap &#x3D; array.length;
+    while (true) &#123;    
+        gap &#x2F;&#x3D; 2;   &#x2F;&#x2F;增量每次减半    
+        for (int i &#x3D; 0; i &lt; gap; i++) &#123;        
+            for (int j &#x3D; i + gap; j &lt; array.length; j +&#x3D; gap) &#123;&#x2F;&#x2F;这个循环里其实就是一个插入排序                       
+                int k &#x3D; j - gap;            
+                while (k &gt;&#x3D; 0 &amp;&amp; array[k] &gt; array[k+gap]) &#123;
+                    int temp &#x3D; array[k];
+                    array[k] &#x3D; array[k+gap];
+                    array[k + gap] &#x3D; temp;                
+                    k -&#x3D; gap;            
+                &#125;                
+            &#125;    
+        &#125;    
+        if (gap &#x3D;&#x3D; 1)        
+            break;
+    &#125;
+ 
+    System.out.println();
+    System.out.println(&quot;排序之后：&quot;);
+    for(int i&#x3D;0;i&lt;array.length;i++)&#123;
+        System.out.print(array[i]+&quot; &quot;);
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 </ol>
 <h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h2><ol>
 <li>申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列；</li>
 <li>设定两个指针，最初位置分别为两个已经排序序列的起始位置；</li>
 <li>比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置；</li>
-<li>重复步骤 3 直到某一指针达到序列尾；将另一序列剩下的所有元素直接复制到合并序列尾。<br><img src="https://www.mmrsl.cn/download/img/排序算法/归并排序.gif" alt=""></li>
-</ol>
-<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><ol>
+<li>重复步骤 3 直到某一指针达到序列尾；将另一序列剩下的所有元素直接复制到合并序列尾。<br><img src="https://www.mmrsl.cn/download/img/排序算法/归并排序.gif" alt=""><pre class="line-numbers language-none"><code class="language-none">package MergeSort;
+public class MergeSort &#123;   
+    public static int[] mergeSort(int[] nums, int l, int h) &#123;
+        if (l &#x3D;&#x3D; h)
+            return new int[] &#123; nums[l] &#125;;
+         
+        int mid &#x3D; l + (h - l) &#x2F; 2;
+        int[] leftArr &#x3D; mergeSort(nums, l, mid); &#x2F;&#x2F;左有序数组
+        int[] rightArr &#x3D; mergeSort(nums, mid + 1, h); &#x2F;&#x2F;右有序数组
+        int[] newNum &#x3D; new int[leftArr.length + rightArr.length]; &#x2F;&#x2F;新有序数组
+         
+        int m &#x3D; 0, i &#x3D; 0, j &#x3D; 0; 
+        while (i &lt; leftArr.length &amp;&amp; j &lt; rightArr.length) &#123;
+            newNum[m++] &#x3D; leftArr[i] &lt; rightArr[j] ? leftArr[i++] : rightArr[j++];
+        &#125;
+        while (i &lt; leftArr.length)
+            newNum[m++] &#x3D; leftArr[i++];
+        while (j &lt; rightArr.length)
+            newNum[m++] &#x3D; rightArr[j++];
+        return newNum;
+    &#125;
+    public static void main(String[] args) &#123;
+        int[] nums &#x3D; new int[] &#123; 9, 8, 7, 6, 5, 4, 3, 2, 10 &#125;;
+        int[] newNums &#x3D; mergeSort(nums, 0, nums.length - 1);
+        for (int x : newNums) &#123;
+            System.out.println(x);
+        &#125;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2></li>
 <li>从数列中挑出一个元素，称为 “基准”（pivot）;</li>
 <li>重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面（相同的数可以到任一边）。</li>
 <li>在这个分区退出之后，该基准就处于数列的中间位置。</li>
@@ -707,22 +817,134 @@
 <li>花O(n)的时间扫描一下整个序列 A，获取最小值 min 和最大值 </li>
 <li>max开辟一块新的空间创建新的数组 B，长度为 ( max - min + 1)</li>
 <li>数组 B 中 index 的元素记录的值是 A 中某元素出现的次数</li>
-<li>最后输出目标整数序列，具体的逻辑是遍历数组 B，输出相应元素以及对应的个数<br><img src="https://www.mmrsl.cn/download/img/排序算法/计数排序.gif" alt=""></li>
-</ol>
-<h2 id="桶排序"><a href="#桶排序" class="headerlink" title="桶排序"></a>桶排序</h2><ol>
-<li>设置固定数量的空桶。</li>
+<li><p>最后输出目标整数序列，具体的逻辑是遍历数组 B，输出相应元素以及对应的个数<br><img src="https://www.mmrsl.cn/download/img/排序算法/计数排序.gif" alt=""></p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;针对c数组的大小，优化过的计数排序
+publicclassCountSort&#123;
+    publicstaticvoidmain(String[]args)&#123;
+      &#x2F;&#x2F;排序的数组
+        int a[]&#x3D;&#123;100,93,97,92,96,99,92,89,93,97,90,94,92,95&#125;;
+        int b[]&#x3D;countSort(a);
+        for(inti:b)&#123;
+           System.out.print(i+&quot;&quot;);
+        &#125;
+        System.out.println();
+    &#125;
+    public static int[] countSort(int[]a)&#123;
+        int b[] &#x3D; new int[a.length];
+        int max &#x3D; a[0],min &#x3D; a[0];
+        for(int i:a)&#123;
+            if(i&gt;max)&#123;
+                max&#x3D;i;
+            &#125;
+            if(i&lt;min)&#123;
+                min&#x3D;i;
+            &#125;
+        &#125;&#x2F;&#x2F;这里k的大小是要排序的数组中，元素大小的极值差+1
+        int k&#x3D;max-min+1;
+        int c[]&#x3D;new int[k];
+        for(int i&#x3D;0;i&lt;a.length;++i)&#123;
+            c[a[i]-min]+&#x3D;1;&#x2F;&#x2F;优化过的地方，减小了数组c的大小
+        &#125;
+        for(int i&#x3D;1;i&lt;c.length;++i)&#123;
+            c[i]&#x3D;c[i]+c[i-1];
+        &#125;
+        for(int i&#x3D;a.length-1;i&gt;&#x3D;0;--i)&#123;
+            b[--c[a[i]-min]]&#x3D;a[i];&#x2F;&#x2F;按存取的方式取出c的元素
+        &#125;
+    return b;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="桶排序"><a href="#桶排序" class="headerlink" title="桶排序"></a>桶排序</h2></li>
+<li><p>设置固定数量的空桶。</p>
+</li>
 <li>把数据放到对应的桶中。</li>
 <li>对每个不为空的桶中数据进行排序。</li>
-<li>拼接不为空的桶中数据，得到结果<br><img src="https://www.mmrsl.cn/download/img/排序算法/桶排序.gif" alt=""></li>
-</ol>
-<h2 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h2><ol>
+<li>拼接不为空的桶中数据，得到结果<br><img src="https://www.mmrsl.cn/download/img/排序算法/桶排序.gif" alt=""><pre class="line-numbers language-none"><code class="language-none">public static void basket(int data[])&#x2F;&#x2F;data为待排序数组
+&#123;
+int n&#x3D;data.length;
+int bask[][]&#x3D;new int[10][n];
+int index[]&#x3D;new int[10];
+int max&#x3D;Integer.MIN_VALUE;
+for(int i&#x3D;0;i&lt;n;i++)
+&#123;
+max&#x3D;max&gt;(Integer.toString(data[i]).length())?max:(Integer.toString(data[i]).length());
+&#125;
+String str;
+for(int i&#x3D;max-1;i&gt;&#x3D;0;i--)
+&#123;
+for(int j&#x3D;0;j&lt;n;j++)
+&#123;
+str&#x3D;&quot;&quot;;
+if(Integer.toString(data[j]).length()&lt;max)
+&#123;
+for(int k&#x3D;0;k&lt;max-Integer.toString(data[j]).length();k++)
+str+&#x3D;&quot;0&quot;;
+&#125;
+str+&#x3D;Integer.toString(data[j]);
+bask[str.charAt(i)-&#39;0&#39;][index[str.charAt(i)-&#39;0&#39;]++]&#x3D;data[j];
+&#125;
+int pos&#x3D;0;
+for(int j&#x3D;0;j&lt;10;j++)
+&#123;
+for(int k&#x3D;0;k&lt;index[j];k++)
+&#123;
+data[pos++]&#x3D;bask[j][k];
+&#125;
+&#125;
+for(intx&#x3D;0;x&lt;10;x++)index[x]&#x3D;0;
+&#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h2></li>
 <li>将所有待比较数值（正整数）统一为同样的数位长度，数位较短的数前面补零</li>
 <li>从最低位开始，依次进行一次排序</li>
 <li>从最低位排序一直到最高位排序完成以后, 数列就变成一个有序序列<br><img src="https://www.mmrsl.cn/download/img/排序算法/基数排序.gif" alt=""></li>
 </ol>
+<pre class="line-numbers language-none"><code class="language-none">public class RadixSort
+&#123;
+    public static void sort(int[] number, int d) &#x2F;&#x2F;d表示最大的数有多少位
+    &#123;
+        intk &#x3D; 0;
+        intn &#x3D; 1;
+        intm &#x3D; 1; &#x2F;&#x2F;控制键值排序依据在哪一位
+        int[][]temp &#x3D; newint[10][number.length]; &#x2F;&#x2F;数组的第一维表示可能的余数0-9
+        int[]order &#x3D; newint[10]; &#x2F;&#x2F;数组order[i]用来表示该位是i的数的个数
+        while(m &lt;&#x3D; d)
+        &#123;
+            for(inti &#x3D; 0; i &lt; number.length; i++)
+            &#123;
+                intlsd &#x3D; ((number[i] &#x2F; n) % 10);
+                temp[lsd][order[lsd]] &#x3D; number[i];
+                order[lsd]++;
+            &#125;
+            for(inti &#x3D; 0; i &lt; 10; i++)
+            &#123;
+                if(order[i] !&#x3D; 0)
+                    for(intj &#x3D; 0; j &lt; order[i]; j++)
+                    &#123;
+                        number[k] &#x3D; temp[i][j];
+                        k++;
+                    &#125;
+                order[i] &#x3D; 0;
+            &#125;
+            n *&#x3D; 10;
+            k &#x3D; 0;
+            m++;
+        &#125;
+    &#125;
+    public static void main(String[] args)
+    &#123;
+        int[]data &#x3D;
+        &#123;73, 22, 93, 43, 55, 14, 28, 65, 39, 81, 33, 100&#125;;
+        RadixSort.sort(data, 3);
+        for(inti &#x3D; 0; i &lt; data.length; i++)
+        &#123;
+            System.out.print(data[i] + &quot;&quot;);
+        &#125;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="排序算法比较"><a href="#排序算法比较" class="headerlink" title="排序算法比较"></a>排序算法比较</h2><p><img src="https://www.mmrsl.cn/download/img/排序算法/1.png" alt=""></p>
 <h3 id="参考地址："><a href="#参考地址：" class="headerlink" title="参考地址："></a>参考地址：</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21318658/answer/1268219135">https://www.zhihu.com/question/21318658/answer/1268219135</a></li>
+<li>知乎：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21318658/answer/1268219135">https://www.zhihu.com/question/21318658/answer/1268219135</a></li>
 <li>百度百科：<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%A0%86%E6%8E%92%E5%BA%8F">https://baike.baidu.com/item/%E5%A0%86%E6%8E%92%E5%BA%8F</a></li>
 </ul>
 
@@ -1322,7 +1544,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">139.3k</span>&nbsp;字
+                class="white-color">140.6k</span>&nbsp;字
             
             
             
@@ -1648,6 +1870,21 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 
 </html>
