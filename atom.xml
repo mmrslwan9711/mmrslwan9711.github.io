@@ -42,6 +42,25 @@
   </entry>
   
   <entry>
+    <title>java随笔</title>
+    <link href="http://www.mmrsl.cn/2022/02/16/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84java/"/>
+    <id>http://www.mmrsl.cn/2022/02/16/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84java/</id>
+    <published>2022-02-16T07:48:23.000Z</published>
+    <updated>2022-03-16T09:33:08.440Z</updated>
+    
+    
+    <summary type="html">面经随笔...</summary>
+    
+    
+    
+    <category term="java" scheme="http://www.mmrsl.cn/categories/java/"/>
+    
+    
+    <category term="java" scheme="http://www.mmrsl.cn/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>信道丢包率、带宽</title>
     <link href="http://www.mmrsl.cn/2021/12/23/%E4%BF%A1%E9%81%93%E4%B8%A2%E5%8C%85%E7%8E%87%E3%80%81%E5%B8%A6%E5%AE%BD/"/>
     <id>http://www.mmrsl.cn/2021/12/23/%E4%BF%A1%E9%81%93%E4%B8%A2%E5%8C%85%E7%8E%87%E3%80%81%E5%B8%A6%E5%AE%BD/</id>
@@ -458,33 +477,6 @@
     <category term="python" scheme="http://www.mmrsl.cn/tags/python/"/>
     
     <category term="paramiko" scheme="http://www.mmrsl.cn/tags/paramiko/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>openwrt_树莓派_mesh自组织网络</title>
-    <link href="http://www.mmrsl.cn/2021/11/06/openwrt-%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
-    <id>http://www.mmrsl.cn/2021/11/06/openwrt-%E6%A0%91%E8%8E%93%E6%B4%BE/</id>
-    <published>2021-11-06T01:45:26.000Z</published>
-    <updated>2021-11-10T07:20:23.236Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="python" scheme="http://www.mmrsl.cn/categories/python/"/>
-    
-    
-    <category term="python" scheme="http://www.mmrsl.cn/tags/python/"/>
-    
-    <category term="pyqt5" scheme="http://www.mmrsl.cn/tags/pyqt5/"/>
     
   </entry>
   
