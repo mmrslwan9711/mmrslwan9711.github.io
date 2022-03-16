@@ -6,7 +6,7 @@
   <link href="http://www.mmrsl.cn/atom.xml" rel="self"/>
   
   <link href="http://www.mmrsl.cn/"/>
-  <updated>2022-03-16T08:13:51.330Z</updated>
+  <updated>2022-03-16T08:27:08.980Z</updated>
   <id>http://www.mmrsl.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>排序算法_java</title>
+    <title>排序算法</title>
     <link href="http://www.mmrsl.cn/2022/03/16/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95-java/"/>
     <id>http://www.mmrsl.cn/2022/03/16/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95-java/</id>
     <published>2022-03-16T07:48:23.000Z</published>
-    <updated>2022-03-16T08:13:51.330Z</updated>
+    <updated>2022-03-16T08:27:08.980Z</updated>
     
     
       
@@ -38,8 +38,6 @@
     
     
     <category term="java" scheme="http://www.mmrsl.cn/tags/java/"/>
-    
-    <category term="算法" scheme="http://www.mmrsl.cn/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   

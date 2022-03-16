@@ -443,69 +443,6 @@ a :hover &#123;
       </tags>
   </entry>
   <entry>
-    <title>surface完美安装linux操作系统、hexo博客</title>
-    <url>/2021/03/19/Deepin%E7%B3%BB%E7%BB%9F%E4%B8%8Esurface%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="surface完美安装linux操作系统、hexo博客"><a href="#surface完美安装linux操作系统、hexo博客" class="headerlink" title="surface完美安装linux操作系统、hexo博客"></a><center>surface完美安装linux操作系统、hexo博客</center></h1><p>最近由于linux课程需要使用linux系统，于是在ubuntu、kali、Elementary OS、Chrome OS和deepin操作系统中选择一个比较靠谱的。<br><span id="more"></span></p>
-<h2 id="linux操作系统介绍"><a href="#linux操作系统介绍" class="headerlink" title="linux操作系统介绍"></a>linux操作系统介绍</h2><h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><p>作为全球最流行且最有影响力的Linux开源系统之一，Ubuntu自发布以来在应用体验方面：有较大幅度的提升，即使对比Windows、MacOS等操作系统，最新版本的Ubuntu也不逊色。<br><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3931899733,1893021162&amp;fm=26&amp;gp=0.jpg" alt="">  </p>
-<h3 id="kali"><a href="#kali" class="headerlink" title="kali"></a>kali</h3><p>Kali Linux是基于Debian的Linux发行版， 设计用于数字取证操作系统。每一季度更新一次。由Offensive Security Ltd维护和资助。最先由Offensive Security的Mati Aharoni和Devon Kearns通过重写BackTrack来完成，BackTrack是他们之前写的用于取证的Linux发行版 。</p>
-<p>主要是用来渗透网络—所以俗话说kali从入门到入狱。</p>
-<p><img src="https://bkimg.cdn.bcebos.com/pic/3b87e950352ac65c1038fd5662baa5119313b07e1cf7?x-bce-process=image/watermark,image_d2里奴性F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5/format,f_auto" alt=""></p>
-<h3 id="Elementary-OS"><a href="#Elementary-OS" class="headerlink" title="Elementary OS"></a>Elementary OS</h3><p>Elementary OS是基于 Ubuntu 精心打磨美化的桌面 Linux 发行版的一款软件，号称 “最美的 Linux”， 最早是 Ubuntu 的一个美化主题项目，现在成了独立的发行版<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww2.sinaimg.cn%2Fmw1024%2F6595c7c6tw1e7nlcg38qoj211s0lcag0.jpg&amp;refer=http%3A%2F%2Fwww.sina.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754413&amp;t=c4cc435286c020b6845bd352d5a1dd8c" alt=""></p>
-<h3 id="Chrome-OS"><a href="#Chrome-OS" class="headerlink" title="Chrome OS"></a>Chrome OS</h3><p>Chrome OS是一款Google开发的基于PC的操作系统。 Google Chrome OS是一款基于Linux的开源操作系统。Google在自己的官方博客表示，初期，这一操作系统将定位于上网本、紧凑型以及低成本电脑。这款开源软件将被命名为Chrome OS，谷歌公司于2010年12里奴性月7日（北京时间12月8日2点30分）在美国举行Chrome相关产品发布会，发布会上正式发布Chrome Web store和Chrome OS。</p>
-<p><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/baike/pic/item/8694a4c27d1ed21bae953dafa06eddc451da3f1f.jpg" alt=""></p>
-<h3 id="deepin"><a href="#deepin" class="headerlink" title="deepin"></a>deepin</h3><p>Deepin（原名：Linux Deepin；中文通称：深度操作系统）是由武汉深之度科技有限公司在Debian基础上开发的Linux操作系统，其前身是Hiweed Linux操作系统，于2004年2月28日开始对外发行，可以安装在个人计算机和服务器中。</p>
-<p>Deepin 12.12 正式版本将搭载一个全新的桌面环境。该桌面环境由Deepin 团队开发，以轻型、美观、稳定等作为设计目标。新桌面环境使用 Compiz 作为默认的窗口管理器。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fzkres1.myzaker.com%2F201910%2F5dae5906b15ec02e1c28f7b1_1024.jpg&amp;refer=http%3A%2F%2Fzkres1.myzaker.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754739&amp;t=be9f54a43670d51053a30eec7d91ac18" alt=""></p>
-<h3 id="总结以上五种系统各有各的优点"><a href="#总结以上五种系统各有各的优点" class="headerlink" title="总结以上五种系统各有各的优点"></a>总结以上五种系统各有各的优点</h3><p>运行上deepin会更慢一些，因为deepin的界面做的最好看，其次deepin是国产linux系统，而且是武汉的公司，安装极其简单，所以我就装了deepin操作系统。</p>
-<h2 id="deepin启动盘制作"><a href="#deepin启动盘制作" class="headerlink" title="deepin启动盘制作"></a>deepin启动盘制作</h2><p>deepin v20下载地址<a href="https://www.deepin.org/zh/download/">deep in</a><br>首先下载镜像，其次下载启动盘制作工具，制作启动盘。</p>
-<h2 id="windows分区"><a href="#windows分区" class="headerlink" title="windows分区"></a>windows分区</h2><p>删除一些windows上面不需要的软件和文件，腾出50G的空间，然后通过<a href="https://www.soft-down.net/detail/44/431115.shtml?type=jingzhun">分区助手</a><br>对磁盘进行分区。</p>
-<h2 id="系统安装具体操作步骤"><a href="#系统安装具体操作步骤" class="headerlink" title="系统安装具体操作步骤"></a>系统安装具体操作步骤</h2><p>1.制作启动u盘deepin系统安装盘。就是把deepin.iso烧录到u盘上。<br>这里请一定要先记得在淘宝上买一个扩展坞，因为surface是一款pc平板而合一电脑，为了节约面积，采用了单usb端口。同时安装系统时蓝牙会失效，需要准备有线鼠标、有线键盘。</p>
-<p>2.关闭secureboot.关机后 音量下键+电源三秒，松开电源，见到surface图标后松开音量键进入bios界面。第二项 secureboot 回车 disable它。滑倒最后exit save setting。</p>
-<p>特别注意一点！就是分清楚surface的音量和电源在那不要按错。</p>
-<p>3.进入windows系统，点击setting，在setting 中搜索boot，看到第二项，create and format hard disk partitions. 进入后看到C盘，鼠标右键shrink volumn(分出给deepin 的空间）</p>
-<p>建议采用之前说的分区助手，这种方法分区很容易崩。</p>
-<p>4.从U盘启动。有两种方式：<br>第一种关机后，音量下键+电源3秒，松开电源。见到surface画面后松开音量键。<br>第二种从windows 向左滑，进入setting. 最底下change pc settings.进去后点击最底下的updates and recovery(更新和恢复）选择里面最底下选项。advanced startup. （高级启动）。进入U盘启动。</p>
-<p>5.从U盘启动后。选择第二项，安装deepin. 选择语言，然后选择something else(其他选项）。目的是不要覆盖windows系统。安装系统到我们分出的free space里。<br>点击 free space ，再点击左下角的“+”号。选择逻辑分区，ext4, 给/root.尽量大点。</p>
-<p>再点击 free space ，点击左下角的“+”号。逻辑或主分区随便（我给的逻辑分区），swap area(交换空间）.随便给个几G。英文教程中不给，我是分了，省得它提示我必须给。反正也不少这几个G。</p>
-<p>选择启动盘为windows 所在的那个，一般叫sda 4.</p>
-<p>然后开始安装。重启。</p>
-<h2 id="安装触摸屏驱动"><a href="#安装触摸屏驱动" class="headerlink" title="安装触摸屏驱动"></a>安装触摸屏驱动</h2><h3 id="deepin-1"><a href="#deepin-1" class="headerlink" title="deepin"></a>deepin</h3><p>这里很神奇如果你也装的是deepin操作系统，触摸屏是可以直接使用的，可能因为华为封锁，目前华为用的均为deepin操作系统，华为也有触控笔记本电脑。</p>
-<h3 id="其他linux系统"><a href="#其他linux系统" class="headerlink" title="其他linux系统"></a>其他linux系统</h3><p>请详见<a href="https://github.com/jakeday/linux-surface">github大神</a>的surface驱动安装教程。</p>
-<p>进入系统以后使用Terminal安装了Peter Hunter整理的内核<br><pre class="line-numbers language-none"><code class="language-none">sudo add-apt-repository ppa:tigerite&#x2F;kernel
-
-sudo apt-get update
-
-sudo apt-get install linux-surface<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>然后使用编辑器nano或者gedit编辑/<br><pre class="line-numbers language-none"><code class="language-none">lib&#x2F;udev&#x2F;rules.d&#x2F;50-bluetooth-hci-auto-poweron.rules<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>用#注释掉里面唯一的那一行，再打开/etc/bluetooth/main.conf<br>把#[Policy]<br>改成[Policy]<br>并把最后一排的<br><pre class="line-numbers language-none"><code class="language-none">#AutoEnable&#x3D;false改成AutoEnable&#x3D;true
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;安装rEFIndsudo
-
-apt-add-repository ppa:rodsmith&#x2F;refind
-
-sudo apt-get update
-
-sudo apt-get install refind<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>用Shim给rEFind增加Secure Boot的启动方式<br><pre class="line-numbers language-none"><code class="language-none">refind-install --shim &#x2F;boot&#x2F;efi&#x2F;EFI&#x2F;ubuntu&#x2F;shimx64.efi --localkeys<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>然后把rEFind设为第一启动项refind-mkdefault开启Secure Boot</p>
-<h2 id="蓝牙驱动安装"><a href="#蓝牙驱动安装" class="headerlink" title="蓝牙驱动安装"></a>蓝牙驱动安装</h2><p>蓝牙（Bluetooth），是一种无线个人局域网（Wireless PAN），最初由爱立信创制，后来由蓝牙技术联盟订定技术标准。这个词的来源是10世纪丹麦和挪威国王蓝牙哈拉尔（丹麦语：Harald Blåtand Gormsen），借国王的绰号“Blåtand”当名称，直接翻译成中文为“蓝牙”（blå＝蓝，tand＝牙）。蓝牙是一种通用的射频频率是2.45GHZ的无线电接口，它使带有电子端口的设备能够在小范围内进行无线通信。</p>
-<h3 id="安装应用"><a href="#安装应用" class="headerlink" title="安装应用"></a>安装应用</h3><p>Blueman旨在提供最为常见的蓝牙管理功能。</p>
-<p>命令安装，终端执行：<br><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install blueman
-&#96;&#96;&#96;&#96;
-命令卸载，终端执行：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get remove blueman<br><pre class="line-numbers language-none"><code class="language-none">
-## Hexo安装
-### 安装nodejs:生成静态页面<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get install nodejs<br><pre class="line-numbers language-none"><code class="language-none">### 安装npm：一会用来安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo apt-get insall npm<br><pre class="line-numbers language-none"><code class="language-none">### 正式安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo npm install -g hexo<br><pre class="line-numbers language-none"><code class="language-none">### hexo部署<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>hexo clean<br>hexo g-d<br><pre class="line-numbers language-none"><code class="language-none">## git SSH Linux
-
-打开终端依次输入一下命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>Git Bash Here</p>
-<p>mkdir ~/.ssh</p>
-<p>cd .ssh/</p>
-<p>git config —global  user.name “mmrsl”</p>
-<p>git config —global  user.email “xxx@codekp.cn”<br>```<br>打开id_rsa.pub，在github的账号中进行修改，增加SHH。</p>
-<h1 id="完成后上传，如本文所示，surface双系统完美linux。"><a href="#完成后上传，如本文所示，surface双系统完美linux。" class="headerlink" title="完成后上传，如本文所示，surface双系统完美linux。"></a>完成后上传，如本文所示，surface双系统完美linux。</h1>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>Deep in</tag>
-        <tag>surface</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Detection_树莓派</title>
     <url>/2021/06/07/Detection-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Raspberry-Pi-上运行-TensorFlow-Lite-目标检测"><a href="#Raspberry-Pi-上运行-TensorFlow-Lite-目标检测" class="headerlink" title="Raspberry Pi 上运行 TensorFlow Lite 目标检测"></a>Raspberry Pi 上运行 TensorFlow Lite 目标检测</h1> <div style="position:relative; padding-bottom:75%; width:100%; height:0">
@@ -583,176 +520,66 @@ cd tflite1<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
       </tags>
   </entry>
   <entry>
-    <title>Fusion360学习笔记</title>
-    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
-<pre><code>h1 &#123;
-counter-reset: subsection;
-&#125;
-h2 &#123;
-counter-reset: subsection2;
-&#125;
-h3 &#123;
-counter-reset: subsection3;
-&#125;
-h4 &#123;
-counter-reset: subsection4;
-&#125;
-h1::before &#123;
-counter-increment: section;
-content:  &quot; &quot;;
-&#125;
+    <title>surface完美安装linux操作系统、hexo博客</title>
+    <url>/2021/03/19/Deepin%E7%B3%BB%E7%BB%9F%E4%B8%8Esurface%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="surface完美安装linux操作系统、hexo博客"><a href="#surface完美安装linux操作系统、hexo博客" class="headerlink" title="surface完美安装linux操作系统、hexo博客"></a><center>surface完美安装linux操作系统、hexo博客</center></h1><p>最近由于linux课程需要使用linux系统，于是在ubuntu、kali、Elementary OS、Chrome OS和deepin操作系统中选择一个比较靠谱的。<br><span id="more"></span></p>
+<h2 id="linux操作系统介绍"><a href="#linux操作系统介绍" class="headerlink" title="linux操作系统介绍"></a>linux操作系统介绍</h2><h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><p>作为全球最流行且最有影响力的Linux开源系统之一，Ubuntu自发布以来在应用体验方面：有较大幅度的提升，即使对比Windows、MacOS等操作系统，最新版本的Ubuntu也不逊色。<br><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3931899733,1893021162&amp;fm=26&amp;gp=0.jpg" alt="">  </p>
+<h3 id="kali"><a href="#kali" class="headerlink" title="kali"></a>kali</h3><p>Kali Linux是基于Debian的Linux发行版， 设计用于数字取证操作系统。每一季度更新一次。由Offensive Security Ltd维护和资助。最先由Offensive Security的Mati Aharoni和Devon Kearns通过重写BackTrack来完成，BackTrack是他们之前写的用于取证的Linux发行版 。</p>
+<p>主要是用来渗透网络—所以俗话说kali从入门到入狱。</p>
+<p><img src="https://bkimg.cdn.bcebos.com/pic/3b87e950352ac65c1038fd5662baa5119313b07e1cf7?x-bce-process=image/watermark,image_d2里奴性F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5/format,f_auto" alt=""></p>
+<h3 id="Elementary-OS"><a href="#Elementary-OS" class="headerlink" title="Elementary OS"></a>Elementary OS</h3><p>Elementary OS是基于 Ubuntu 精心打磨美化的桌面 Linux 发行版的一款软件，号称 “最美的 Linux”， 最早是 Ubuntu 的一个美化主题项目，现在成了独立的发行版<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww2.sinaimg.cn%2Fmw1024%2F6595c7c6tw1e7nlcg38qoj211s0lcag0.jpg&amp;refer=http%3A%2F%2Fwww.sina.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754413&amp;t=c4cc435286c020b6845bd352d5a1dd8c" alt=""></p>
+<h3 id="Chrome-OS"><a href="#Chrome-OS" class="headerlink" title="Chrome OS"></a>Chrome OS</h3><p>Chrome OS是一款Google开发的基于PC的操作系统。 Google Chrome OS是一款基于Linux的开源操作系统。Google在自己的官方博客表示，初期，这一操作系统将定位于上网本、紧凑型以及低成本电脑。这款开源软件将被命名为Chrome OS，谷歌公司于2010年12里奴性月7日（北京时间12月8日2点30分）在美国举行Chrome相关产品发布会，发布会上正式发布Chrome Web store和Chrome OS。</p>
+<p><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/baike/pic/item/8694a4c27d1ed21bae953dafa06eddc451da3f1f.jpg" alt=""></p>
+<h3 id="deepin"><a href="#deepin" class="headerlink" title="deepin"></a>deepin</h3><p>Deepin（原名：Linux Deepin；中文通称：深度操作系统）是由武汉深之度科技有限公司在Debian基础上开发的Linux操作系统，其前身是Hiweed Linux操作系统，于2004年2月28日开始对外发行，可以安装在个人计算机和服务器中。</p>
+<p>Deepin 12.12 正式版本将搭载一个全新的桌面环境。该桌面环境由Deepin 团队开发，以轻型、美观、稳定等作为设计目标。新桌面环境使用 Compiz 作为默认的窗口管理器。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fzkres1.myzaker.com%2F201910%2F5dae5906b15ec02e1c28f7b1_1024.jpg&amp;refer=http%3A%2F%2Fzkres1.myzaker.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1618754739&amp;t=be9f54a43670d51053a30eec7d91ac18" alt=""></p>
+<h3 id="总结以上五种系统各有各的优点"><a href="#总结以上五种系统各有各的优点" class="headerlink" title="总结以上五种系统各有各的优点"></a>总结以上五种系统各有各的优点</h3><p>运行上deepin会更慢一些，因为deepin的界面做的最好看，其次deepin是国产linux系统，而且是武汉的公司，安装极其简单，所以我就装了deepin操作系统。</p>
+<h2 id="deepin启动盘制作"><a href="#deepin启动盘制作" class="headerlink" title="deepin启动盘制作"></a>deepin启动盘制作</h2><p>deepin v20下载地址<a href="https://www.deepin.org/zh/download/">deep in</a><br>首先下载镜像，其次下载启动盘制作工具，制作启动盘。</p>
+<h2 id="windows分区"><a href="#windows分区" class="headerlink" title="windows分区"></a>windows分区</h2><p>删除一些windows上面不需要的软件和文件，腾出50G的空间，然后通过<a href="https://www.soft-down.net/detail/44/431115.shtml?type=jingzhun">分区助手</a><br>对磁盘进行分区。</p>
+<h2 id="系统安装具体操作步骤"><a href="#系统安装具体操作步骤" class="headerlink" title="系统安装具体操作步骤"></a>系统安装具体操作步骤</h2><p>1.制作启动u盘deepin系统安装盘。就是把deepin.iso烧录到u盘上。<br>这里请一定要先记得在淘宝上买一个扩展坞，因为surface是一款pc平板而合一电脑，为了节约面积，采用了单usb端口。同时安装系统时蓝牙会失效，需要准备有线鼠标、有线键盘。</p>
+<p>2.关闭secureboot.关机后 音量下键+电源三秒，松开电源，见到surface图标后松开音量键进入bios界面。第二项 secureboot 回车 disable它。滑倒最后exit save setting。</p>
+<p>特别注意一点！就是分清楚surface的音量和电源在那不要按错。</p>
+<p>3.进入windows系统，点击setting，在setting 中搜索boot，看到第二项，create and format hard disk partitions. 进入后看到C盘，鼠标右键shrink volumn(分出给deepin 的空间）</p>
+<p>建议采用之前说的分区助手，这种方法分区很容易崩。</p>
+<p>4.从U盘启动。有两种方式：<br>第一种关机后，音量下键+电源3秒，松开电源。见到surface画面后松开音量键。<br>第二种从windows 向左滑，进入setting. 最底下change pc settings.进去后点击最底下的updates and recovery(更新和恢复）选择里面最底下选项。advanced startup. （高级启动）。进入U盘启动。</p>
+<p>5.从U盘启动后。选择第二项，安装deepin. 选择语言，然后选择something else(其他选项）。目的是不要覆盖windows系统。安装系统到我们分出的free space里。<br>点击 free space ，再点击左下角的“+”号。选择逻辑分区，ext4, 给/root.尽量大点。</p>
+<p>再点击 free space ，点击左下角的“+”号。逻辑或主分区随便（我给的逻辑分区），swap area(交换空间）.随便给个几G。英文教程中不给，我是分了，省得它提示我必须给。反正也不少这几个G。</p>
+<p>选择启动盘为windows 所在的那个，一般叫sda 4.</p>
+<p>然后开始安装。重启。</p>
+<h2 id="安装触摸屏驱动"><a href="#安装触摸屏驱动" class="headerlink" title="安装触摸屏驱动"></a>安装触摸屏驱动</h2><h3 id="deepin-1"><a href="#deepin-1" class="headerlink" title="deepin"></a>deepin</h3><p>这里很神奇如果你也装的是deepin操作系统，触摸屏是可以直接使用的，可能因为华为封锁，目前华为用的均为deepin操作系统，华为也有触控笔记本电脑。</p>
+<h3 id="其他linux系统"><a href="#其他linux系统" class="headerlink" title="其他linux系统"></a>其他linux系统</h3><p>请详见<a href="https://github.com/jakeday/linux-surface">github大神</a>的surface驱动安装教程。</p>
+<p>进入系统以后使用Terminal安装了Peter Hunter整理的内核<br><pre class="line-numbers language-none"><code class="language-none">sudo add-apt-repository ppa:tigerite&#x2F;kernel
 
-h2::before &#123;
-counter-increment: subsection;
-content: counter(subsection) &quot; &quot;;
-&#125;
-h3::before &#123;
-counter-increment: subsection2;
-content: counter(subsection) &quot;.&quot; counter(subsection2) ;
-&#125;
-h4::before &#123;
-counter-increment: subsection3;
-content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
-&#125;
-h5::before &#123;
-counter-increment: subsection4;
-content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
-&#125;
-</code></pre><p>&lt;/style&gt;</p>
-<p><style><br>        video {<br>            width: 20%;<br>        }
-</style></p>
-<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
-<ul>
-<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
-</ul>
-<p>下载个人用途版本即可。</p>
-<h2 id="创建草图"><a href="#创建草图" class="headerlink" title="创建草图"></a>创建草图</h2><p>用一张普通图片做背景，然后进行抠图，类似ps。</p>
-<p><img src="https://www.mmrsl.cn/download/img/xmu/5.png" alt=""></p>
-<h2 id="拉伸、圆角、倒角"><a href="#拉伸、圆角、倒角" class="headerlink" title="拉伸、圆角、倒角"></a>拉伸、圆角、倒角</h2><p>可以剪切，拉伸都行，反正最终都可以获得你想要的模型。<br><img src="https://www.mmrsl.cn/download/img/xmu/6.png" alt=""></p>
-<h2 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h2><p>可以选中模型，然后点击外观。</p>
-<p>可选项很多，可以自由选择材质，通俗易懂。</p>
-<h2 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h2><p>最终效果<br><img src="https://www.mmrsl.cn/download/img/xmu/4.png" alt=""></p>
-<h2 id="螺丝刀"><a href="#螺丝刀" class="headerlink" title="螺丝刀"></a>螺丝刀</h2><p><img src="https://www.mmrsl.cn/download/img/xmu/7.png" alt=""></p>
-<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/video/2.mp4"   controls="controls"></video>
+sudo apt-get update
 
-<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/video/3.mp4"   controls="controls"></video>
+sudo apt-get install linux-surface<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>然后使用编辑器nano或者gedit编辑/<br><pre class="line-numbers language-none"><code class="language-none">lib&#x2F;udev&#x2F;rules.d&#x2F;50-bluetooth-hci-auto-poweron.rules<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>用#注释掉里面唯一的那一行，再打开/etc/bluetooth/main.conf<br>把#[Policy]<br>改成[Policy]<br>并把最后一排的<br><pre class="line-numbers language-none"><code class="language-none">#AutoEnable&#x3D;false改成AutoEnable&#x3D;true
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;安装rEFIndsudo
 
+apt-add-repository ppa:rodsmith&#x2F;refind
 
-<p><img src="https://www.mmrsl.cn/download/img/html5/2.jpg" alt=""></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>English_learning</title>
-    <url>/2020/07/31/English-learning/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<p>本处选取于考研真题及专业八级英语真题进行学习，每日进行翻译一篇<br>  其中特殊句式采用不同颜色进行了标记</p>
-</blockquote>
-<!-- > 
-<font face="黑体">我是黑体字</font>
-<font face="微软雅黑">我是微软雅黑</font>
-<font face="STCAIYUN">我是华文彩云</font>
-<font color=red>我是红色</font>
-<font color=#008000>我是绿色</font>
-<font color=Blue>我是蓝色</font>
-<font size=5>我是尺寸</font>
-<font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font> -->
-<span id="more"></span>
-<h1 id="第一篇"><a href="#第一篇" class="headerlink" title=" 第一篇 "></a><center> 第一篇 </center></h1><h3 id="2020-07-31"><a href="#2020-07-31" class="headerlink" title="2020_07_31"></a><p align="right">2020_07_31</p></h3><font face="黑体" color=black size=4>
-&nbsp;&nbsp;It was 3:45 in the morning when the vote was finally taken. After six months of arguing and final 16 hours of hot parliamentary debates, Australia’s Northern Territory became the first legal authority in the world to allow doctors to take the lives of <font face="黑体" color=yellow size=4>incurably ill patients who wish to die.</font> The measure passed by the convincing vote of 15 to 10. Almost immediately word flashed on the Internet and was picked up, half a world away, <font face="黑体" color=red size=4>by John Hofsess, executive director of the Right to Die Society of Canada.</font> He sent it on by way of the group’s online service, Death NET. Says Hofsess: <font face="黑体" color=green size=4>“We posted bulletins all day long, because of course this isn’t just something that happened in Australia. It’s world history.”</font>
+sudo apt-get update
 
-<p>&nbsp;&nbsp;直到凌晨3:45分的时候投票才最终被确定。经过四个小时的争论和最后16个小时的议会讨论，澳大利亚北方地区成为世界上第一个允许医生终结那些无法治愈疾病希望死亡人们的生命的合法当局。这个措施以一个令人信服的投票比15:10通过。几乎这个消息立刻被显示到了网上，被John Hofsess加拿大有权死亡协会执行性理事得知。他通过组织的网络服务器将这条信息发布到了死亡网上。John Hofsess说我们长时间的发布公告，因为当然这不仅仅是一些发生在澳大利亚的事情，这是世界的历史时刻。</p>
-<p>&nbsp;&nbsp; The full import may take a while to sink in. The NT Rights of the Terminally Ill Law has left physicians and citizens alike trying to deal with its moral and practical implications. <font face="黑体" color=yellow size=4>Some have breathed sighs of relief, others, including churches, right-to-life groups and the Australian Medical Association, bitterly attacked the bill and the hurry of its passage.</font> But the tide is unlikely to turn back. In Australia—where an aging population, life-extending technology and changing community attitudes have all played their part—other states are going to consider making a similar law to deal with euthanasia (安乐死). In the US and Canada, where the right-to-die movement is gathering strength, observers are waiting for the dominoes (多米诺骨牌) to start falling.</p>
-<p>&nbsp;&nbsp;完全的理解可能需要一定的时间。晚期病人澳大利亚北方当局权利法案已经让医生和市民试图去解决他的到的和实际的影响。一些人如释重负，其他人包括教堂，生命正确组织和澳大利亚医学会，强烈地抨击这项法案和这项法案的仓促通过。但是这种趋势已经无法扭转。在澳大利亚验证老龄化的地区，生命羊场技术和改变社区态度已经扮演好了他们的角色，其他州正在考虑实施一个相似度法律去解决安乐死。在美国和加拿大死亡有道运动正在增长能量，观察者正在等待着多米诺骨牌效应开始崩塌。</p>
-<p>&nbsp;&nbsp;Under the new Northern Territory law, <font face="黑体" color=red size=4>an adult patient can request death — probably by a deadly injection or pill — to put an end to suffering. The patient must be diagnosed (诊断) as Terminally Ill by two doctors.</font> After a “cooling off” period of seven days, the patient can sign a certificate of request. After 48 hours the wish for death can be met. For Lloyd Nickson, a 54-year-old Darwin resident suffering from lung cancer, the NT Rights of Terminally Ill Law means he can get on with living without the haunting fear of his suffering: a terrifying death from his breathing condition. “I’m not afraid of dying from a spiritual point of view, but what I was afraid of was how I’d go, because I’ve watched people die in the hospital fighting for oxygen and clawing at their masks,” he says.</p>
-<p>&nbsp;&nbsp;在新北方当局权利法案下，一个成年患者可以请求死亡，可能是通过注射或者药物去终结这种苦难。病人一定要同时被两名医生被诊断为晚期疾病。在一个星期的“冷静期”后，换这可以签署一份请求确认书。在48小时后死亡的愿望将被得以满足。对于Lloyd Nickson一个54岁 Darwin（达尔文市）市民正在遭受肺癌的苦难，澳大利亚北方当局晚期病人权利法案意味着他能够继续生活不用魂牵梦萦的恐惧这种苦难- -一个因为呼吸状况导致的可怕死亡。他说:“从心灵一个点去看，我并不害怕死亡，但是我十分担心我是怎么走的，因为我曾经看到人们死在医院里为了氧气而斗争用手抓他们的面具”</p>
-<p>&lt;/font&gt;</p>
-<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
-<h1 id="第二篇"><a href="#第二篇" class="headerlink" title=" 第二篇 "></a><center> 第二篇 </center></h1><h3 id="2020-08-01"><a href="#2020-08-01" class="headerlink" title="2020_08_01"></a><p align="right">2020_08_01</p></h3><font face="黑体" color=black size=4>
-&nbsp;&nbsp;Much of the language used to describe monetary policy, such as steering the economy to a soft landing or a touch on the brakes, makes itself sound like a precise science. Nothing could be further from the truth. <font face="黑体" color=red size=4>The link between interest rates and inflation is uncertain. And there are long, variable lags before policy changes have any effect on the economy. </font><font face="黑体" color=yellow size=4>Hence there is an analogy that likens the conduct of monetary policy to driving a car with a blackened windscreen, a cracked rearview mirror and a faulty steering wheel.</font>
+sudo apt-get install refind<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>用Shim给rEFind增加Secure Boot的启动方式<br><pre class="line-numbers language-none"><code class="language-none">refind-install --shim &#x2F;boot&#x2F;efi&#x2F;EFI&#x2F;ubuntu&#x2F;shimx64.efi --localkeys<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>然后把rEFind设为第一启动项refind-mkdefault开启Secure Boot</p>
+<h2 id="蓝牙驱动安装"><a href="#蓝牙驱动安装" class="headerlink" title="蓝牙驱动安装"></a>蓝牙驱动安装</h2><p>蓝牙（Bluetooth），是一种无线个人局域网（Wireless PAN），最初由爱立信创制，后来由蓝牙技术联盟订定技术标准。这个词的来源是10世纪丹麦和挪威国王蓝牙哈拉尔（丹麦语：Harald Blåtand Gormsen），借国王的绰号“Blåtand”当名称，直接翻译成中文为“蓝牙”（blå＝蓝，tand＝牙）。蓝牙是一种通用的射频频率是2.45GHZ的无线电接口，它使带有电子端口的设备能够在小范围内进行无线通信。</p>
+<h3 id="安装应用"><a href="#安装应用" class="headerlink" title="安装应用"></a>安装应用</h3><p>Blueman旨在提供最为常见的蓝牙管理功能。</p>
+<p>命令安装，终端执行：<br><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install blueman
+&#96;&#96;&#96;&#96;
+命令卸载，终端执行：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get remove blueman<br><pre class="line-numbers language-none"><code class="language-none">
+## Hexo安装
+### 安装nodejs:生成静态页面<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>sudo apt-get install nodejs<br><pre class="line-numbers language-none"><code class="language-none">### 安装npm：一会用来安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo apt-get insall npm<br><pre class="line-numbers language-none"><code class="language-none">### 正式安装hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>sudo npm install -g hexo<br><pre class="line-numbers language-none"><code class="language-none">### hexo部署<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>hexo clean<br>hexo g-d<br><pre class="line-numbers language-none"><code class="language-none">## git SSH Linux
 
-<p>&nbsp;&nbsp;很多的语言被用来描述货币政策，例如引导经济软着陆、轻踩刹车，让这听起来像一个<br>清晰的科学，没有什么能够比真想离的更远了。在利率和通货膨胀率之间的关系是不确定的。因此货币政策的改变影响经济上有很长的随机的滞后。所以这里有一个类比说货币政策的实施就像开着一辆有破挡风玻璃、一个破裂的后视镜和一个有问题的方向盘的车。</p>
-<p>&nbsp;&nbsp;Given all these disadvantages, central bankers seem to have had much to boast about of late. <font face="黑体" color=green size=4>Average inflation in the big seven industrial economies fell to a mere 2.3% last year, close to its lowest level in 30 years, before rising slightly to 2.5% this July.</font> This is a long way below the double-digit rates which many countries experienced in the 1970s and early 1980s.</p>
-<p>&nbsp;&nbsp;考虑到这些不利条件，中央银行似乎有很多值得夸耀的地方。去年，七月在轻微的增长百分之2.5之前，七大工业国经济平均通货膨胀率下降到2.3，接近他们三十年时间里的最低点。这远低于许多国家在1970-1980年代初经历的两位数利率。</p>
-<p>&nbsp;&nbsp;<font face="黑体" color=pink size=4>It is also less than most forecasters had predicted. In late 1994 the panel of economists which The Economist polls each month said that America’s inflation rate would average 3.5% in 1995. </font>In fact, it fell to 2.6% in August, and is expected to average only about 3% for the year as a whole. In Britain and Japan inflation is running half a percentage point below the rate predicted at the end of last year. This is no flash in the pan; over the past couple of years, inflation has been consistently lower than expected in Britain and America.</p>
-<p>&nbsp;&nbsp; 这也低于大多数预测者的预测，在1994年年末经济学家每月进行调查的经济学家小组说，1995年美国的通货膨胀率平均为3.5.事实上，他在八月跌落到2.6，并且它整年的期望平均仅仅只有大约百分之3.5，在英国和日本通货膨胀利率点低于在去年年末预测值的0.5个百分点。这不是盘子里的一个闪光点，在过去的几年里，英国和美国的通货膨胀率持续低于它的预期值。</p>
-<p>&nbsp;&nbsp;<font face="黑体" color=purple size=4>Economists have been particularly surprised by favourable inflation figures in Britain and the United States, since conventional measures suggest that both economies, and especially America’s, have little productive slack.</font> America’s capacity utilisation, for example, hit historically high levels earlier this year, and its jobless rate (5.6% in August) has fallen below most estimates of the natural rate of unemployment-the rate below which inflation has taken off on the past.</p>
-<p>&nbsp;&nbsp;经济学家对英国和美国有利的通货膨胀数字感到特别惊讶，因为传统的措施建议说经济尤其是美国有很少的生产萧条。美国能源利用率，举个例子，在早几年的时候达到了历史的最高值，并且他的失业率降低到了大多数估计值（8月5.6%）跌落到了大多数自然失业率估计值，在过去如果失业率低于自然失业率通货膨胀将会起跳。</p>
-<p>&nbsp;&nbsp;Why has inflation proved so mild? <font face="黑体" color=red size=4>The most thrilling explanation is, unfortunately, a little defective. Some economists argue that powerful structural changes in the world have upended the old economic models that were based upon the historical link between growth and inflation.</font></p>
-<p>&nbsp;&nbsp;为什么通货膨胀率检测的如此温和？最令人兴奋的解释是不幸的是有一些缺陷。一些经济学家争辩说世界上强有力的结构性改变，颠倒了旧的经济形势基于关于增长和通货膨胀之间的历史联系。</p>
-<p>&lt;/font&gt;</p>
-<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
-<h1 id="第三篇"><a href="#第三篇" class="headerlink" title=" 第三篇 "></a><center> 第三篇 </center></h1><h3 id="2020-08-03"><a href="#2020-08-03" class="headerlink" title="2020_08_03"></a><p align="right">2020_08_03</p></h3><font face="黑体" color=black size=4>
-
-&nbsp;&nbsp;In the first year or so of Web business, most of the action has revolved around efforts to Lap the consumer market. More recently, as the Web proved to be more than a fashion. companies have started to buy and sell products and services with one another. Such business-to-business sales make sense because business people typically know what product they’re looking for.
-
-&nbsp;&nbsp;大约在电子商务的第一年，大多数的行为都是围绕顾客市场的努力。最近，网站证明是不仅仅是时尚。公司开始相互的去购买、销售产品和服务。例如，公司对公司的销售因为"老板通常都知道他们需要的产品是什么？"而有意义。
-
-&nbsp;&nbsp;Nonetheless, many companies still hesitate to use the Web because of doubts about its reliability. "Businesses need to feel they can trust the pathway between them and the supplier," says senior analyst Blane Erwin of Forrester Research. Some companies are limiting the risk by conducting online transactions only with established business partners who are given access to the company's private intranet.
-
-&nbsp;&nbsp;虽然如此，很多的公司仍然犹豫去利用网络因为对他的可靠性表示怀疑。福雷斯特研究公司的高级分析师布兰·埃温说：“公司需要去感到他们能够想象他们和供货商之间的信任”。一些公司限制于风险，只和已经建立的且提供公司特殊网络通道的生意伙伴引导网络接口。
-
-&nbsp;&nbsp;Another major shift in the model for Internet commerce concerns the technology available for marketing. Until recently, Internet marketing activities have focused on strategies to "pull" customers into sites. In the past year, however, software companies have developed tools chat allow companies to "push" information directly out to consumers, transmitting marketing messages directly to targeted customers, Most notably, the Pointcast Network uses a screen saver to deliver a continually updated stream of news and advertisements to subscribers' computer monitors. Subscribers can customize the information they want to receive and proceed directly to a company's Web site. Companies such as Virtual Vineyards are already starting to use similar technologies to push messages to customers about special sales, product offering, or other events.But push technology has earned the contempt of many Web users.<font face="黑体" color=yellow size=4> Online culture thinks highly of the notion that the information flowing onto the screen comes there by specific request. </font>  Once commercial promotion begins to fill the screen uninvited, the distinction between the Web and television fades. Thar's a prospect that horrifies Net purists.
-
-&nbsp;&nbsp;互联网商业模式的另一个重大转变涉及可用于营销的技术。直到最近，互联网市场活动关注于直接拉顾客到网页中。在过去的几年里，虽然软件公司建立工具让公司交流去直接推送信息给顾客，直接向目标客服传递营销信息。订阅者可以自定义他们想要接收的信息，并直接进入公司网站。最值得注意的是，定点广播网站用一系列的节约装置去投递关于向订阅者的计算机广告，新闻和广告持续的更新数据。订阅者可以定制他们想要的信息和直接进入他们的公司网站。公司例如虚拟Vineyards已经准备好开始用一个相似的技术去推送关于特殊销售的信息给顾客。产品的提供和其他事件，但是推送技术已经遭到了很多网民的蔑视。网络文化将信息流入屏幕通过特殊的请求的概念看的很高。一旦商业的提升开始未经邀请的充满屏幕，网络和电视的边界将会逐渐消失。这是一个可怕的网络纯粹主义者的前景。 
-
-
-
-&nbsp;&nbsp;But it is hardly inevitable that companies on the Web will need to resort to push strategies to make money, The examples of Virtual Vineyards, Amazon.com and other pioneers show that a Web site selling the right. kind of products with the right mix of interactivity, hospitality, and security will attract online customers, And the cost of computing power continues to free fall, which is a good sign for any enterprise setting up shop m silicon. People looking back 5 or 10 years from now may well wonder why so few companies took the online plunge.
-
-&nbsp;&nbsp;但是这是十分困难的不可避免的说网络公司将需要去求助于直接推送获取利益，例如虚拟葡萄园、亚马逊和其他开发者表明了网站销售正确性。具有正确的交互性组合产品，医疗和安全将会吸引网络顾客，并且计算机成本消耗的持续降低，这对于任何一个商家建立自己的网络商店都是好的标志。人们从现在开始回顾过去的五到十年可能会怀疑为什么如此少的公司在网上投入。
-
-</font>
-
-<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
-<h1 id="第四篇"><a href="#第四篇" class="headerlink" title=" 第四篇 "></a><center> 第四篇 </center></h1><h3 id="2020-08-04"><a href="#2020-08-04" class="headerlink" title="2020_08_04"></a><p align="right">2020_08_04</p></h3><font face="黑体" color=black size=4>
-&nbsp;&nbsp;In the last half of the nineteenth century .<font face="黑体" color=pink size=4>"capital" and "labour" were enlarging and perfecting their rival organisations on modern lines. </font><font face="黑体" color=red size=4>Many an old firm was replaced by a limited liability company with a bureaucracy of salaried managers. </font> <font face="黑体" color=yellow size=4>The change met the technical requirements of the new age by engaging a large professional element and prevented the decline in efficiency that so commonly spoiled the fortunes of family firms in the second and third generation after the energetic founders. </font> It was moreover a step away from individual initiative, towards collectivism and municipal and state-owned business. The railway companies, though still private business managed for the benefit of shareholders, were very unlike old family business. <font face="黑体" color=green size=4>At the same time the great municipalities went into business to supply lighting, trams and other services to the taxpayers.</font> 
-
-<p>&nbsp;&nbsp;在19世纪下半叶，资本和劳工都在以现代的方式扩充和完善他们的对立机构。很多老的公司（坚固）已经被具有领薪经理的行政系统有限责任公司所代替，这种变化符合技术对于新时代通过聘用大量专业群体去防止效率的下降因为通常在精力充沛的创始人后的第二代和第三代会毁掉家族企业的财富)的需求。并且这也是远离个人行动朝向集体主义和市营和国营企业迈出的第一步。铁路企业尽管仍然是为股东利益经营的特殊企业，却十分不像传统的家族企业。在同样的时间里大城市的市政府进也开始从事实业，提供照明、有轨电车和其他服务给纳税人。</p>
-<p>&nbsp;&nbsp;<font face="黑体" color=red size=4>The growth of the limited liability company and municipal business had important consequences. Such large, impersonal manipulation of capital and industry greatly increased the numbers and importance of shareholders as a class,</font> an element in national life representing irresponsible wealth detached from the land and the duties of the landowners, and almost equally detached from the responsible management of business. All through the nineteenth century, America, Africa, India, Australia and parts of Europe were being developed by British capital, and British shareholders were thus enriched by the world’s movement towards industrialisation. <font face="黑体" color=yellow size=4>Towns like Bournemouth and Eastbourne sprang up to house large “comfortable” classes who had retired on their incomes, </font>and who had no relation to the rest of the community except that of drawing dividends and occasionally attending a shareholders’meeting to dictate their orders to the management. On the other hand “shareholding” meant leisure and freedom which were used by many of the later Victorians for the highest purpose of a great civilization.</p>
-<p>&nbsp;&nbsp;有限责任公司的增长和市营企业都有很重要的影响。如此大的，非个人的资本和企业的操纵极大的增加了股东作为一个群体的重要性和数量。国民生活中的一个重要组成部分，代表了不负责任的财富从土地和土地所有者的责任中分开。全部通过十九世纪，美国，非洲，印度和澳大利亚和部分的欧洲正在通过英国的资本建立，并且英国股东相信通过世界工业化运动将会变的富有。像B和E两座城市迅速崛起，给大量那些通过收入退休和那些与群体没有关系除了领取股票利息和偶尔的参加股东会议向主管人员指定他们的命令，的“舒适”群体定居。在另一反面，股权意味着闲暇和自由，这也习惯于被很多维多利亚末期人民认为是伟大文明的最高目标。</p>
-<p>&nbsp;&nbsp;<font face="黑体" color=pink size=4>The “shareholders” as such had no knowledge of the lives, thoughts or needs of the workmen employed by the company in which be held shares, and his influence on the relations of capital and labour was not good. </font>The paid manager acting for the company was in more direct relation with the men and their demands,<font face="黑体" color=green size=4>but even be had seldom that familiar personal knowledge of’ the workmen which the employer had often had under the more patriarchal system of the old family business now passing away. </font>Indeed the mere size of operations and the numbers of workmen involved rendered such personal relations impossible. Fortunately, however, the increasing power and organisation of the trade unions, at least in all skilled trades, enabled the workmen to meet on equal terms the managers of the companies who employed them. The cruel discipline of the strike and lockout taught the two parties to respect each other’s strength and understand the value of fair negotiation.</p>
-<p>&nbsp;&nbsp;严格来说股东对于他们持有股票公司所雇佣的员工的生活，思想和需求没有任何了解，并且他们对资本和劳工之间的的影响并不好。雇佣经理代表公司是一种与雇员和他们决定更加直接的联系，但是尽管如此雇佣经理对工人很少有亲近的个人的了解，而在那些正遭到淘汰的旧式家族家长制企业中，雇主通常对工人的个人情况有非常亲近的了解。确实仅仅是经营规模和员工数量使提供成为这样的个人关系是不可能的。然而幸运的是日益增长的势力和工会组织。至少在技能行业赋予工人在一个平等位置和雇主公司经历进行会谈。罢工和关店残酷的教训教会双方去尊重彼此的能力和理解公平谈判的价值。</p>
-<p>&lt;/font&gt;</p>
-<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
-<h1 id="第五篇"><a href="#第五篇" class="headerlink" title=" 第五篇 "></a><center> 第五篇 </center></h1><h3 id="2020-08-05"><a href="#2020-08-05" class="headerlink" title="2020_08_05"></a><p align="right">2020_08_05</p></h3><font face="黑体" color=black size=4>
-&nbsp;&nbsp;If you intend using humor in your talk to make people smile, you must know how to identify shared experiences and problems. Your humor must be relevant to the audience and should help to show them that you are one of them or that you understand their situation and are in sympathy with their point of view. Depending on whom you are addressing, the problems will be different.       
-If you are talking to a group of managers, you may refer to the disorganized methods of their secretaries; alternatively if you are addressing secretaries, you may want to comment on their disorganized bosses.
-
-&nbsp;&nbsp;如果你想要在你的谈话中利用幽默让人们微笑，你一定知道如何去辨别分享经验和问题。你的幽默必须和听众有关，应该帮助向他们去表明说你是其中之一或者说你理解他们的处境并且对他们的观点表示同情。取决于你的地址，问题将会变的不一样。如果你谈话的是组织的管理者，你可能指的是他们秘书杂乱无章的地方，或者如果你跟秘书谈话，你可能想要去评价他们杂乱无章的老板。
-
-&nbsp;&nbsp;Here is an example, which I heard at a nurses' convention, of a story which works well because the audience all shared the same view of doctors. A man arrives in heaven and is being shown around by St. Peter. He sees wonderful accommodations, beautiful gardens, sunny weather, and so on. Everyone is very peaceful, polite and friendly until, waiting in a line for lunch, the new arrival is suddenly pushed aside by a man in a black coat, who rushes to the head of the line, grabs his food and stomps over to a table by himself. "Who is that?" the new arrival asked St. Peter. "Oh, that's God." came the reply, "but sometimes he thinks he's a doctor."
-
-&nbsp;&nbsp;这里是一个例子，我曾经在护士的谈话中听到，一个十分有用的故事因为听众都在分享关于医生的相同观点。有一个人到达天堂并且被StP带着四处逛逛。他看到完美的诊疗室，美丽的花园，阳关灿烂的天气等等。每个人都十分的祥和，有礼貌并且友善，直到在排队等待午饭的时候，一个穿着白色大衣的新到达者冲到队伍最前方突然推开他在一旁，抓住他的食物并且快速一个人跺着脚走到一张桌子旁。”那是谁？”新来的人问圣彼得。”“哦，那是上帝。”回答说，“但有时他认为自己是个医生。”
-
-&nbsp;&nbsp;If you are part of the group which you are addressing, you will be in a position to know the experiences and problems which are common to all of you and it'll be appropriate for you to make a passing remark about the inedible canteen food or the chairman's notorious bad taste in ties. With other audiences you mustn't attempt to cut in with humor as they will resent an outsider making disparaging remarks about their canteen or their chairman. You will be on safer ground if you stick to scapegoats like the Post Office or the telephone system.
-
-&nbsp;&nbsp;如果你是正在谈论组织的一份子，你将会在一个位置去知道所有你相同的经验和问题，并且这将会很适合你去做一个关于食堂难以下咽的食物通过的评价，或者领导臭名昭著对于领带的坏品味。伴随着其他的听众，你一定不要试图插入幽默当他们将要憎恨一个局外人对他们的食堂或他们的主席说贬义的话。你将会处于一个安全的组织如果你选择当一个像邮局和电话系统一样的替罪羊。
-
-
-
-
-&nbsp;&nbsp;If you feel awkward being humorous, you must practice so that it becomes more natural. Include a few casual and apparently off-the-cuff(即兴的)remarks which you can deliver in a relaxed and unforced manner. Often it's the delivery which causes the audience to smile, so speak slowly and remember that a raised eyebrow or an unbelieving look may help to show that you are making a light-hearted remark.
-
-&nbsp;&nbsp;如果你感觉明白了幽默，你一定要练习以便这将会变的自然。包括一些随意的，明显是即兴的评价，你可以用轻松和不受强迫的方式表达出来。通常是演讲让听众微笑。所以说慢点并且记住说扬起眉毛或是一个不相信的表情可能有助于表明你在说轻松愉快的话。
-
-&nbsp;&nbsp;Look for the humor. It often comes from the unexpected. A twist on a familiar quote "If at first you don't succeed, give up" or a play on words or on a situation. Search for exaggeration and understatements. Look at your talk and pick out a few words or sentences which you can turn about and inject with humor.
-
-&nbsp;&nbsp;寻找幽默，他总是来源于意想不到。一对双胞胎在一个熟悉的引语“如果在你第一次没有成功，放弃”，或者玩弄语言或情境。寻找夸张和轻描淡写。观察你的言论选取一些语言或者你可以再说一次并且注入幽默的句子。
-
-
-
-</font>
-
-<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
-]]></content>
+打开终端依次输入一下命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>Git Bash Here</p>
+<p>mkdir ~/.ssh</p>
+<p>cd .ssh/</p>
+<p>git config —global  user.name “mmrsl”</p>
+<p>git config —global  user.email “xxx@codekp.cn”<br>```<br>打开id_rsa.pub，在github的账号中进行修改，增加SHH。</p>
+<h1 id="完成后上传，如本文所示，surface双系统完美linux。"><a href="#完成后上传，如本文所示，surface双系统完美linux。" class="headerlink" title="完成后上传，如本文所示，surface双系统完美linux。"></a>完成后上传，如本文所示，surface双系统完美linux。</h1>]]></content>
       <categories>
-        <category>英语</category>
+        <category>linux</category>
+        <category>hexo</category>
       </categories>
       <tags>
-        <tag>英语</tag>
-        <tag>英语阅读</tag>
-        <tag>markdown</tag>
+        <tag>Deep in</tag>
+        <tag>surface</tag>
       </tags>
   </entry>
   <entry>
@@ -879,6 +706,179 @@ plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
         <tag>OCR</tag>
         <tag>python</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>English_learning</title>
+    <url>/2020/07/31/English-learning/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>本处选取于考研真题及专业八级英语真题进行学习，每日进行翻译一篇<br>  其中特殊句式采用不同颜色进行了标记</p>
+</blockquote>
+<!-- > 
+<font face="黑体">我是黑体字</font>
+<font face="微软雅黑">我是微软雅黑</font>
+<font face="STCAIYUN">我是华文彩云</font>
+<font color=red>我是红色</font>
+<font color=#008000>我是绿色</font>
+<font color=Blue>我是蓝色</font>
+<font size=5>我是尺寸</font>
+<font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font> -->
+<span id="more"></span>
+<h1 id="第一篇"><a href="#第一篇" class="headerlink" title=" 第一篇 "></a><center> 第一篇 </center></h1><h3 id="2020-07-31"><a href="#2020-07-31" class="headerlink" title="2020_07_31"></a><p align="right">2020_07_31</p></h3><font face="黑体" color=black size=4>
+&nbsp;&nbsp;It was 3:45 in the morning when the vote was finally taken. After six months of arguing and final 16 hours of hot parliamentary debates, Australia’s Northern Territory became the first legal authority in the world to allow doctors to take the lives of <font face="黑体" color=yellow size=4>incurably ill patients who wish to die.</font> The measure passed by the convincing vote of 15 to 10. Almost immediately word flashed on the Internet and was picked up, half a world away, <font face="黑体" color=red size=4>by John Hofsess, executive director of the Right to Die Society of Canada.</font> He sent it on by way of the group’s online service, Death NET. Says Hofsess: <font face="黑体" color=green size=4>“We posted bulletins all day long, because of course this isn’t just something that happened in Australia. It’s world history.”</font>
+
+<p>&nbsp;&nbsp;直到凌晨3:45分的时候投票才最终被确定。经过四个小时的争论和最后16个小时的议会讨论，澳大利亚北方地区成为世界上第一个允许医生终结那些无法治愈疾病希望死亡人们的生命的合法当局。这个措施以一个令人信服的投票比15:10通过。几乎这个消息立刻被显示到了网上，被John Hofsess加拿大有权死亡协会执行性理事得知。他通过组织的网络服务器将这条信息发布到了死亡网上。John Hofsess说我们长时间的发布公告，因为当然这不仅仅是一些发生在澳大利亚的事情，这是世界的历史时刻。</p>
+<p>&nbsp;&nbsp; The full import may take a while to sink in. The NT Rights of the Terminally Ill Law has left physicians and citizens alike trying to deal with its moral and practical implications. <font face="黑体" color=yellow size=4>Some have breathed sighs of relief, others, including churches, right-to-life groups and the Australian Medical Association, bitterly attacked the bill and the hurry of its passage.</font> But the tide is unlikely to turn back. In Australia—where an aging population, life-extending technology and changing community attitudes have all played their part—other states are going to consider making a similar law to deal with euthanasia (安乐死). In the US and Canada, where the right-to-die movement is gathering strength, observers are waiting for the dominoes (多米诺骨牌) to start falling.</p>
+<p>&nbsp;&nbsp;完全的理解可能需要一定的时间。晚期病人澳大利亚北方当局权利法案已经让医生和市民试图去解决他的到的和实际的影响。一些人如释重负，其他人包括教堂，生命正确组织和澳大利亚医学会，强烈地抨击这项法案和这项法案的仓促通过。但是这种趋势已经无法扭转。在澳大利亚验证老龄化的地区，生命羊场技术和改变社区态度已经扮演好了他们的角色，其他州正在考虑实施一个相似度法律去解决安乐死。在美国和加拿大死亡有道运动正在增长能量，观察者正在等待着多米诺骨牌效应开始崩塌。</p>
+<p>&nbsp;&nbsp;Under the new Northern Territory law, <font face="黑体" color=red size=4>an adult patient can request death — probably by a deadly injection or pill — to put an end to suffering. The patient must be diagnosed (诊断) as Terminally Ill by two doctors.</font> After a “cooling off” period of seven days, the patient can sign a certificate of request. After 48 hours the wish for death can be met. For Lloyd Nickson, a 54-year-old Darwin resident suffering from lung cancer, the NT Rights of Terminally Ill Law means he can get on with living without the haunting fear of his suffering: a terrifying death from his breathing condition. “I’m not afraid of dying from a spiritual point of view, but what I was afraid of was how I’d go, because I’ve watched people die in the hospital fighting for oxygen and clawing at their masks,” he says.</p>
+<p>&nbsp;&nbsp;在新北方当局权利法案下，一个成年患者可以请求死亡，可能是通过注射或者药物去终结这种苦难。病人一定要同时被两名医生被诊断为晚期疾病。在一个星期的“冷静期”后，换这可以签署一份请求确认书。在48小时后死亡的愿望将被得以满足。对于Lloyd Nickson一个54岁 Darwin（达尔文市）市民正在遭受肺癌的苦难，澳大利亚北方当局晚期病人权利法案意味着他能够继续生活不用魂牵梦萦的恐惧这种苦难- -一个因为呼吸状况导致的可怕死亡。他说:“从心灵一个点去看，我并不害怕死亡，但是我十分担心我是怎么走的，因为我曾经看到人们死在医院里为了氧气而斗争用手抓他们的面具”</p>
+<p>&lt;/font&gt;</p>
+<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
+<h1 id="第二篇"><a href="#第二篇" class="headerlink" title=" 第二篇 "></a><center> 第二篇 </center></h1><h3 id="2020-08-01"><a href="#2020-08-01" class="headerlink" title="2020_08_01"></a><p align="right">2020_08_01</p></h3><font face="黑体" color=black size=4>
+&nbsp;&nbsp;Much of the language used to describe monetary policy, such as steering the economy to a soft landing or a touch on the brakes, makes itself sound like a precise science. Nothing could be further from the truth. <font face="黑体" color=red size=4>The link between interest rates and inflation is uncertain. And there are long, variable lags before policy changes have any effect on the economy. </font><font face="黑体" color=yellow size=4>Hence there is an analogy that likens the conduct of monetary policy to driving a car with a blackened windscreen, a cracked rearview mirror and a faulty steering wheel.</font>
+
+<p>&nbsp;&nbsp;很多的语言被用来描述货币政策，例如引导经济软着陆、轻踩刹车，让这听起来像一个<br>清晰的科学，没有什么能够比真想离的更远了。在利率和通货膨胀率之间的关系是不确定的。因此货币政策的改变影响经济上有很长的随机的滞后。所以这里有一个类比说货币政策的实施就像开着一辆有破挡风玻璃、一个破裂的后视镜和一个有问题的方向盘的车。</p>
+<p>&nbsp;&nbsp;Given all these disadvantages, central bankers seem to have had much to boast about of late. <font face="黑体" color=green size=4>Average inflation in the big seven industrial economies fell to a mere 2.3% last year, close to its lowest level in 30 years, before rising slightly to 2.5% this July.</font> This is a long way below the double-digit rates which many countries experienced in the 1970s and early 1980s.</p>
+<p>&nbsp;&nbsp;考虑到这些不利条件，中央银行似乎有很多值得夸耀的地方。去年，七月在轻微的增长百分之2.5之前，七大工业国经济平均通货膨胀率下降到2.3，接近他们三十年时间里的最低点。这远低于许多国家在1970-1980年代初经历的两位数利率。</p>
+<p>&nbsp;&nbsp;<font face="黑体" color=pink size=4>It is also less than most forecasters had predicted. In late 1994 the panel of economists which The Economist polls each month said that America’s inflation rate would average 3.5% in 1995. </font>In fact, it fell to 2.6% in August, and is expected to average only about 3% for the year as a whole. In Britain and Japan inflation is running half a percentage point below the rate predicted at the end of last year. This is no flash in the pan; over the past couple of years, inflation has been consistently lower than expected in Britain and America.</p>
+<p>&nbsp;&nbsp; 这也低于大多数预测者的预测，在1994年年末经济学家每月进行调查的经济学家小组说，1995年美国的通货膨胀率平均为3.5.事实上，他在八月跌落到2.6，并且它整年的期望平均仅仅只有大约百分之3.5，在英国和日本通货膨胀利率点低于在去年年末预测值的0.5个百分点。这不是盘子里的一个闪光点，在过去的几年里，英国和美国的通货膨胀率持续低于它的预期值。</p>
+<p>&nbsp;&nbsp;<font face="黑体" color=purple size=4>Economists have been particularly surprised by favourable inflation figures in Britain and the United States, since conventional measures suggest that both economies, and especially America’s, have little productive slack.</font> America’s capacity utilisation, for example, hit historically high levels earlier this year, and its jobless rate (5.6% in August) has fallen below most estimates of the natural rate of unemployment-the rate below which inflation has taken off on the past.</p>
+<p>&nbsp;&nbsp;经济学家对英国和美国有利的通货膨胀数字感到特别惊讶，因为传统的措施建议说经济尤其是美国有很少的生产萧条。美国能源利用率，举个例子，在早几年的时候达到了历史的最高值，并且他的失业率降低到了大多数估计值（8月5.6%）跌落到了大多数自然失业率估计值，在过去如果失业率低于自然失业率通货膨胀将会起跳。</p>
+<p>&nbsp;&nbsp;Why has inflation proved so mild? <font face="黑体" color=red size=4>The most thrilling explanation is, unfortunately, a little defective. Some economists argue that powerful structural changes in the world have upended the old economic models that were based upon the historical link between growth and inflation.</font></p>
+<p>&nbsp;&nbsp;为什么通货膨胀率检测的如此温和？最令人兴奋的解释是不幸的是有一些缺陷。一些经济学家争辩说世界上强有力的结构性改变，颠倒了旧的经济形势基于关于增长和通货膨胀之间的历史联系。</p>
+<p>&lt;/font&gt;</p>
+<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
+<h1 id="第三篇"><a href="#第三篇" class="headerlink" title=" 第三篇 "></a><center> 第三篇 </center></h1><h3 id="2020-08-03"><a href="#2020-08-03" class="headerlink" title="2020_08_03"></a><p align="right">2020_08_03</p></h3><font face="黑体" color=black size=4>
+
+&nbsp;&nbsp;In the first year or so of Web business, most of the action has revolved around efforts to Lap the consumer market. More recently, as the Web proved to be more than a fashion. companies have started to buy and sell products and services with one another. Such business-to-business sales make sense because business people typically know what product they’re looking for.
+
+&nbsp;&nbsp;大约在电子商务的第一年，大多数的行为都是围绕顾客市场的努力。最近，网站证明是不仅仅是时尚。公司开始相互的去购买、销售产品和服务。例如，公司对公司的销售因为"老板通常都知道他们需要的产品是什么？"而有意义。
+
+&nbsp;&nbsp;Nonetheless, many companies still hesitate to use the Web because of doubts about its reliability. "Businesses need to feel they can trust the pathway between them and the supplier," says senior analyst Blane Erwin of Forrester Research. Some companies are limiting the risk by conducting online transactions only with established business partners who are given access to the company's private intranet.
+
+&nbsp;&nbsp;虽然如此，很多的公司仍然犹豫去利用网络因为对他的可靠性表示怀疑。福雷斯特研究公司的高级分析师布兰·埃温说：“公司需要去感到他们能够想象他们和供货商之间的信任”。一些公司限制于风险，只和已经建立的且提供公司特殊网络通道的生意伙伴引导网络接口。
+
+&nbsp;&nbsp;Another major shift in the model for Internet commerce concerns the technology available for marketing. Until recently, Internet marketing activities have focused on strategies to "pull" customers into sites. In the past year, however, software companies have developed tools chat allow companies to "push" information directly out to consumers, transmitting marketing messages directly to targeted customers, Most notably, the Pointcast Network uses a screen saver to deliver a continually updated stream of news and advertisements to subscribers' computer monitors. Subscribers can customize the information they want to receive and proceed directly to a company's Web site. Companies such as Virtual Vineyards are already starting to use similar technologies to push messages to customers about special sales, product offering, or other events.But push technology has earned the contempt of many Web users.<font face="黑体" color=yellow size=4> Online culture thinks highly of the notion that the information flowing onto the screen comes there by specific request. </font>  Once commercial promotion begins to fill the screen uninvited, the distinction between the Web and television fades. Thar's a prospect that horrifies Net purists.
+
+&nbsp;&nbsp;互联网商业模式的另一个重大转变涉及可用于营销的技术。直到最近，互联网市场活动关注于直接拉顾客到网页中。在过去的几年里，虽然软件公司建立工具让公司交流去直接推送信息给顾客，直接向目标客服传递营销信息。订阅者可以自定义他们想要接收的信息，并直接进入公司网站。最值得注意的是，定点广播网站用一系列的节约装置去投递关于向订阅者的计算机广告，新闻和广告持续的更新数据。订阅者可以定制他们想要的信息和直接进入他们的公司网站。公司例如虚拟Vineyards已经准备好开始用一个相似的技术去推送关于特殊销售的信息给顾客。产品的提供和其他事件，但是推送技术已经遭到了很多网民的蔑视。网络文化将信息流入屏幕通过特殊的请求的概念看的很高。一旦商业的提升开始未经邀请的充满屏幕，网络和电视的边界将会逐渐消失。这是一个可怕的网络纯粹主义者的前景。 
+
+
+
+&nbsp;&nbsp;But it is hardly inevitable that companies on the Web will need to resort to push strategies to make money, The examples of Virtual Vineyards, Amazon.com and other pioneers show that a Web site selling the right. kind of products with the right mix of interactivity, hospitality, and security will attract online customers, And the cost of computing power continues to free fall, which is a good sign for any enterprise setting up shop m silicon. People looking back 5 or 10 years from now may well wonder why so few companies took the online plunge.
+
+&nbsp;&nbsp;但是这是十分困难的不可避免的说网络公司将需要去求助于直接推送获取利益，例如虚拟葡萄园、亚马逊和其他开发者表明了网站销售正确性。具有正确的交互性组合产品，医疗和安全将会吸引网络顾客，并且计算机成本消耗的持续降低，这对于任何一个商家建立自己的网络商店都是好的标志。人们从现在开始回顾过去的五到十年可能会怀疑为什么如此少的公司在网上投入。
+
+</font>
+
+<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
+<h1 id="第四篇"><a href="#第四篇" class="headerlink" title=" 第四篇 "></a><center> 第四篇 </center></h1><h3 id="2020-08-04"><a href="#2020-08-04" class="headerlink" title="2020_08_04"></a><p align="right">2020_08_04</p></h3><font face="黑体" color=black size=4>
+&nbsp;&nbsp;In the last half of the nineteenth century .<font face="黑体" color=pink size=4>"capital" and "labour" were enlarging and perfecting their rival organisations on modern lines. </font><font face="黑体" color=red size=4>Many an old firm was replaced by a limited liability company with a bureaucracy of salaried managers. </font> <font face="黑体" color=yellow size=4>The change met the technical requirements of the new age by engaging a large professional element and prevented the decline in efficiency that so commonly spoiled the fortunes of family firms in the second and third generation after the energetic founders. </font> It was moreover a step away from individual initiative, towards collectivism and municipal and state-owned business. The railway companies, though still private business managed for the benefit of shareholders, were very unlike old family business. <font face="黑体" color=green size=4>At the same time the great municipalities went into business to supply lighting, trams and other services to the taxpayers.</font> 
+
+<p>&nbsp;&nbsp;在19世纪下半叶，资本和劳工都在以现代的方式扩充和完善他们的对立机构。很多老的公司（坚固）已经被具有领薪经理的行政系统有限责任公司所代替，这种变化符合技术对于新时代通过聘用大量专业群体去防止效率的下降因为通常在精力充沛的创始人后的第二代和第三代会毁掉家族企业的财富)的需求。并且这也是远离个人行动朝向集体主义和市营和国营企业迈出的第一步。铁路企业尽管仍然是为股东利益经营的特殊企业，却十分不像传统的家族企业。在同样的时间里大城市的市政府进也开始从事实业，提供照明、有轨电车和其他服务给纳税人。</p>
+<p>&nbsp;&nbsp;<font face="黑体" color=red size=4>The growth of the limited liability company and municipal business had important consequences. Such large, impersonal manipulation of capital and industry greatly increased the numbers and importance of shareholders as a class,</font> an element in national life representing irresponsible wealth detached from the land and the duties of the landowners, and almost equally detached from the responsible management of business. All through the nineteenth century, America, Africa, India, Australia and parts of Europe were being developed by British capital, and British shareholders were thus enriched by the world’s movement towards industrialisation. <font face="黑体" color=yellow size=4>Towns like Bournemouth and Eastbourne sprang up to house large “comfortable” classes who had retired on their incomes, </font>and who had no relation to the rest of the community except that of drawing dividends and occasionally attending a shareholders’meeting to dictate their orders to the management. On the other hand “shareholding” meant leisure and freedom which were used by many of the later Victorians for the highest purpose of a great civilization.</p>
+<p>&nbsp;&nbsp;有限责任公司的增长和市营企业都有很重要的影响。如此大的，非个人的资本和企业的操纵极大的增加了股东作为一个群体的重要性和数量。国民生活中的一个重要组成部分，代表了不负责任的财富从土地和土地所有者的责任中分开。全部通过十九世纪，美国，非洲，印度和澳大利亚和部分的欧洲正在通过英国的资本建立，并且英国股东相信通过世界工业化运动将会变的富有。像B和E两座城市迅速崛起，给大量那些通过收入退休和那些与群体没有关系除了领取股票利息和偶尔的参加股东会议向主管人员指定他们的命令，的“舒适”群体定居。在另一反面，股权意味着闲暇和自由，这也习惯于被很多维多利亚末期人民认为是伟大文明的最高目标。</p>
+<p>&nbsp;&nbsp;<font face="黑体" color=pink size=4>The “shareholders” as such had no knowledge of the lives, thoughts or needs of the workmen employed by the company in which be held shares, and his influence on the relations of capital and labour was not good. </font>The paid manager acting for the company was in more direct relation with the men and their demands,<font face="黑体" color=green size=4>but even be had seldom that familiar personal knowledge of’ the workmen which the employer had often had under the more patriarchal system of the old family business now passing away. </font>Indeed the mere size of operations and the numbers of workmen involved rendered such personal relations impossible. Fortunately, however, the increasing power and organisation of the trade unions, at least in all skilled trades, enabled the workmen to meet on equal terms the managers of the companies who employed them. The cruel discipline of the strike and lockout taught the two parties to respect each other’s strength and understand the value of fair negotiation.</p>
+<p>&nbsp;&nbsp;严格来说股东对于他们持有股票公司所雇佣的员工的生活，思想和需求没有任何了解，并且他们对资本和劳工之间的的影响并不好。雇佣经理代表公司是一种与雇员和他们决定更加直接的联系，但是尽管如此雇佣经理对工人很少有亲近的个人的了解，而在那些正遭到淘汰的旧式家族家长制企业中，雇主通常对工人的个人情况有非常亲近的了解。确实仅仅是经营规模和员工数量使提供成为这样的个人关系是不可能的。然而幸运的是日益增长的势力和工会组织。至少在技能行业赋予工人在一个平等位置和雇主公司经历进行会谈。罢工和关店残酷的教训教会双方去尊重彼此的能力和理解公平谈判的价值。</p>
+<p>&lt;/font&gt;</p>
+<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
+<h1 id="第五篇"><a href="#第五篇" class="headerlink" title=" 第五篇 "></a><center> 第五篇 </center></h1><h3 id="2020-08-05"><a href="#2020-08-05" class="headerlink" title="2020_08_05"></a><p align="right">2020_08_05</p></h3><font face="黑体" color=black size=4>
+&nbsp;&nbsp;If you intend using humor in your talk to make people smile, you must know how to identify shared experiences and problems. Your humor must be relevant to the audience and should help to show them that you are one of them or that you understand their situation and are in sympathy with their point of view. Depending on whom you are addressing, the problems will be different.       
+If you are talking to a group of managers, you may refer to the disorganized methods of their secretaries; alternatively if you are addressing secretaries, you may want to comment on their disorganized bosses.
+
+&nbsp;&nbsp;如果你想要在你的谈话中利用幽默让人们微笑，你一定知道如何去辨别分享经验和问题。你的幽默必须和听众有关，应该帮助向他们去表明说你是其中之一或者说你理解他们的处境并且对他们的观点表示同情。取决于你的地址，问题将会变的不一样。如果你谈话的是组织的管理者，你可能指的是他们秘书杂乱无章的地方，或者如果你跟秘书谈话，你可能想要去评价他们杂乱无章的老板。
+
+&nbsp;&nbsp;Here is an example, which I heard at a nurses' convention, of a story which works well because the audience all shared the same view of doctors. A man arrives in heaven and is being shown around by St. Peter. He sees wonderful accommodations, beautiful gardens, sunny weather, and so on. Everyone is very peaceful, polite and friendly until, waiting in a line for lunch, the new arrival is suddenly pushed aside by a man in a black coat, who rushes to the head of the line, grabs his food and stomps over to a table by himself. "Who is that?" the new arrival asked St. Peter. "Oh, that's God." came the reply, "but sometimes he thinks he's a doctor."
+
+&nbsp;&nbsp;这里是一个例子，我曾经在护士的谈话中听到，一个十分有用的故事因为听众都在分享关于医生的相同观点。有一个人到达天堂并且被StP带着四处逛逛。他看到完美的诊疗室，美丽的花园，阳关灿烂的天气等等。每个人都十分的祥和，有礼貌并且友善，直到在排队等待午饭的时候，一个穿着白色大衣的新到达者冲到队伍最前方突然推开他在一旁，抓住他的食物并且快速一个人跺着脚走到一张桌子旁。”那是谁？”新来的人问圣彼得。”“哦，那是上帝。”回答说，“但有时他认为自己是个医生。”
+
+&nbsp;&nbsp;If you are part of the group which you are addressing, you will be in a position to know the experiences and problems which are common to all of you and it'll be appropriate for you to make a passing remark about the inedible canteen food or the chairman's notorious bad taste in ties. With other audiences you mustn't attempt to cut in with humor as they will resent an outsider making disparaging remarks about their canteen or their chairman. You will be on safer ground if you stick to scapegoats like the Post Office or the telephone system.
+
+&nbsp;&nbsp;如果你是正在谈论组织的一份子，你将会在一个位置去知道所有你相同的经验和问题，并且这将会很适合你去做一个关于食堂难以下咽的食物通过的评价，或者领导臭名昭著对于领带的坏品味。伴随着其他的听众，你一定不要试图插入幽默当他们将要憎恨一个局外人对他们的食堂或他们的主席说贬义的话。你将会处于一个安全的组织如果你选择当一个像邮局和电话系统一样的替罪羊。
+
+
+
+
+&nbsp;&nbsp;If you feel awkward being humorous, you must practice so that it becomes more natural. Include a few casual and apparently off-the-cuff(即兴的)remarks which you can deliver in a relaxed and unforced manner. Often it's the delivery which causes the audience to smile, so speak slowly and remember that a raised eyebrow or an unbelieving look may help to show that you are making a light-hearted remark.
+
+&nbsp;&nbsp;如果你感觉明白了幽默，你一定要练习以便这将会变的自然。包括一些随意的，明显是即兴的评价，你可以用轻松和不受强迫的方式表达出来。通常是演讲让听众微笑。所以说慢点并且记住说扬起眉毛或是一个不相信的表情可能有助于表明你在说轻松愉快的话。
+
+&nbsp;&nbsp;Look for the humor. It often comes from the unexpected. A twist on a familiar quote "If at first you don't succeed, give up" or a play on words or on a situation. Search for exaggeration and understatements. Look at your talk and pick out a few words or sentences which you can turn about and inject with humor.
+
+&nbsp;&nbsp;寻找幽默，他总是来源于意想不到。一对双胞胎在一个熟悉的引语“如果在你第一次没有成功，放弃”，或者玩弄语言或情境。寻找夸张和轻描淡写。观察你的言论选取一些语言或者你可以再说一次并且注入幽默的句子。
+
+
+
+</font>
+
+<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
+]]></content>
+      <categories>
+        <category>英语</category>
+      </categories>
+      <tags>
+        <tag>英语</tag>
+        <tag>英语阅读</tag>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Fusion360学习笔记</title>
+    <url>/2021/11/19/Fusion360%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><style><br>    body {<br>    counter-reset: section;<br>    }</p>
+<pre><code>h1 &#123;
+counter-reset: subsection;
+&#125;
+h2 &#123;
+counter-reset: subsection2;
+&#125;
+h3 &#123;
+counter-reset: subsection3;
+&#125;
+h4 &#123;
+counter-reset: subsection4;
+&#125;
+h1::before &#123;
+counter-increment: section;
+content:  &quot; &quot;;
+&#125;
+
+h2::before &#123;
+counter-increment: subsection;
+content: counter(subsection) &quot; &quot;;
+&#125;
+h3::before &#123;
+counter-increment: subsection2;
+content: counter(subsection) &quot;.&quot; counter(subsection2) ;
+&#125;
+h4::before &#123;
+counter-increment: subsection3;
+content:  counter(subsection2) &quot;.&quot; counter(subsection3) ;
+&#125;
+h5::before &#123;
+counter-increment: subsection4;
+content:  counter(subsection) &quot;.&quot; counter(subsection2) &quot;.&quot; counter(subsection3)&quot;.&quot; counter(subsection4) ;
+&#125;
+</code></pre><p>&lt;/style&gt;</p>
+<p><style><br>        video {<br>            width: 20%;<br>        }
+</style></p>
+<h1 id="Fusion360学习笔记"><a href="#Fusion360学习笔记" class="headerlink" title="Fusion360学习笔记"></a>Fusion360学习笔记</h1><p>貌似个人学习者可以免费使用这款软件，该软件主要是用来3d建模，给3d打印机进行打印。</p>
+<ul>
+<li><a href="https://www.autodesk.com/products/fusion-360/personal">https://www.autodesk.com/products/fusion-360/personal</a></li>
+</ul>
+<p>下载个人用途版本即可。</p>
+<h2 id="创建草图"><a href="#创建草图" class="headerlink" title="创建草图"></a>创建草图</h2><p>用一张普通图片做背景，然后进行抠图，类似ps。</p>
+<p><img src="https://www.mmrsl.cn/download/img/xmu/5.png" alt=""></p>
+<h2 id="拉伸、圆角、倒角"><a href="#拉伸、圆角、倒角" class="headerlink" title="拉伸、圆角、倒角"></a>拉伸、圆角、倒角</h2><p>可以剪切，拉伸都行，反正最终都可以获得你想要的模型。<br><img src="https://www.mmrsl.cn/download/img/xmu/6.png" alt=""></p>
+<h2 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h2><p>可以选中模型，然后点击外观。</p>
+<p>可选项很多，可以自由选择材质，通俗易懂。</p>
+<h2 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h2><p>最终效果<br><img src="https://www.mmrsl.cn/download/img/xmu/4.png" alt=""></p>
+<h2 id="螺丝刀"><a href="#螺丝刀" class="headerlink" title="螺丝刀"></a>螺丝刀</h2><p><img src="https://www.mmrsl.cn/download/img/xmu/7.png" alt=""></p>
+<h2 id="黄鹤楼建模"><a href="#黄鹤楼建模" class="headerlink" title="黄鹤楼建模"></a>黄鹤楼建模</h2><video src="https://www.mmrsl.cn/download/video/2.mp4"   controls="controls"></video>
+
+<h2 id="长江大桥建模"><a href="#长江大桥建模" class="headerlink" title="长江大桥建模"></a>长江大桥建模</h2><video src="https://www.mmrsl.cn/download/video/3.mp4"   controls="controls"></video>
+
+
+<p><img src="https://www.mmrsl.cn/download/img/html5/2.jpg" alt=""></p>
+]]></content>
   </entry>
   <entry>
     <title>LabelImg_使用</title>
@@ -7066,6 +7066,99 @@ if (windowWidth &gt; 768) &#123;
       </tags>
   </entry>
   <entry>
+    <title>js_web_3D_模型设计</title>
+    <url>/2021/11/18/js_web_3D_%E6%A8%A1%E5%9E%8B%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+<h1 id="jsweb-3D模型设计"><a href="#jsweb-3D模型设计" class="headerlink" title="jsweb_3D模型设计"></a>js<em>web_3D</em>模型设计</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><pre><code>首先参考一下别人怎么做的3d模型，站在巨人的肩膀上看看要怎么操作。
+</code></pre><h3 id="chrome浏览器下的网站"><a href="#chrome浏览器下的网站" class="headerlink" title="chrome浏览器下的网站"></a>chrome浏览器下的网站</h3><p><a href="https://www.hightopo.com/demo/CementFactory/">https://www.hightopo.com/demo/CementFactory/</a><br><a href="https://www.hightopo.com/demo/3DRoom/index.html">https://www.hightopo.com/demo/3DRoom/index.html</a><br>原文链接在：<a href="https://www.cnblogs.com/xhload3d/p/8577889.html">hightopo</a></p>
+<h3 id="查看源码F12"><a href="#查看源码F12" class="headerlink" title="查看源码F12"></a>查看源码F12</h3><p>可以看到单个的js文件，除此以外看不到其他，因此<br><img src="https://www.mmrsl.cn/download/img/html5/3.png" alt=""><br>可以一行一行的下载但这样很麻烦，因此可以考虑用谷歌插件一键下载。</p>
+<h3 id="Save-All-Resources"><a href="#Save-All-Resources" class="headerlink" title="Save All Resources"></a>Save All Resources</h3><p><img src="https://www.mmrsl.cn/download/img/html5/4.png" alt=""><br><strong>使用方法：</strong><br><img src="https://www.mmrsl.cn/download/img/html5/5.png" alt=""><br>下载以后如图所示<br><img src="https://www.mmrsl.cn/download/img/html5/6.png" alt=""></p>
+<h2 id="详细阅读代码后"><a href="#详细阅读代码后" class="headerlink" title="详细阅读代码后"></a>详细阅读代码后</h2><p>可以发现以门为例：<br><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;二楼
+    HIGHT&#x3D;200
+    &#x2F;&#x2F; 创建墙体
+    var wall2 &#x3D; new ht.CSGShape();
+    wall2.setClosePath(true);
+    wall2.setTall(240);
+    wall2.setElevation(HIGHT+360);
+    wall2.setThickness(20);
+    wall2.setPoints([
+        &#123;x: -400, y: -600&#125;,
+        &#123;x: 400, y: -600&#125;,
+        &#123;x: 400, y: 600&#125;,
+        &#123;x: -400, y: 600&#125;
+    ]);
+    wall2.s(&#123;
+        &#39;shape.border.width&#39;: 20,
+        &#39;shape.border.color&#39;: &#39;#898989&#39;,
+        &#39;all.color&#39;: &#39;#5D5D5D&#39;,
+        &#39;front.color&#39;: &#39;lightgray&#39;,
+        &#39;back.color&#39;: &#39;lightgray&#39;,
+        &#39;csg.color&#39;: &#39;#DDDDDD&#39;
+    &#125;);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<blockquote>
+<p>可以设置墙的长宽高和厚度还有位置，即可制作第二层第三层直到n层的一个建筑物如图所示：</p>
+</blockquote>
+<p><img src="https://www.mmrsl.cn/download/img/html5/7.png" alt=""></p>
+<blockquote>
+<p>可以访问地址，以上述方法获取我修改后的源码：</p>
+</blockquote>
+<p><a href="https://www.mmrsl.cn/3droom/">3droom</a></p>
+<h2 id="进行一些优化，即可做出不一样的地图"><a href="#进行一些优化，即可做出不一样的地图" class="headerlink" title="进行一些优化，即可做出不一样的地图"></a>进行一些优化，即可做出不一样的地图</h2><p>如下图所示：<br><img src="https://www.mmrsl.cn/download/img/html5/8.png" alt=""></p>
+<p><a href="https://www.mmrsl.cn/3droom2/">3droom2</a></p>
+<h2 id="添加obj"><a href="#添加obj" class="headerlink" title="添加obj"></a>添加obj</h2><blockquote>
+<p>对于复杂的模型，需要用软件进行建模</p>
+</blockquote>
+<p>导入OBJ格式功能需要引入ht-obj.js的插件扩展包，本手册的大部分例子由于需要读取OBJ文件，浏览器存在跨域安全的限制， 因此需要通过Web方式发布来阅读本手册，或者修改浏览器的参数，例如对于Chrome浏览器可通过增加 —allow-file-access-from-files的启动参数。<br><img src="https://www.mmrsl.cn/download/img/html5/9.png" alt=""></p>
+<p>如果不这样操作，显示出来的图片就是花的。</p>
+<h2 id="ht-3d学习资料"><a href="#ht-3d学习资料" class="headerlink" title="ht 3d学习资料"></a>ht 3d学习资料</h2><ul>
+<li><a href="https://www.hightopo.com/guide/doc/ht.widget.TreeView.html">ht 说明手册</a></li>
+<li><a href="https://www.hightopo.com/guide/guide/core/3d/ht-3d-guide.html">HT for Web 3D 手册</a></li>
+<li><a href="https://www.hightopo.com/guide/guide/core/theme/ht-theme-guide.html">HT for Web 风格手册</a></li>
+<li><a href="https://blog.csdn.net/xhload3d/article/details/52323746">https://blog.csdn.net/xhload3d/article/details/52323746</a></li>
+<li><a href="https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html">https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>iwlist/iwconfig/iw/wpa_supplicant命令及信道可视化</title>
     <url>/2021/12/22/iwlist-iwconfig-iw-wpa-supplicant/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="iwlist-iwconfig-iw-wpa-supplicant命令"><a href="#iwlist-iwconfig-iw-wpa-supplicant命令" class="headerlink" title="iwlist/iwconfig/iw/wpa_supplicant命令"></a>iwlist/iwconfig/iw/wpa_supplicant命令</h1><h2 id="iwlist"><a href="#iwlist" class="headerlink" title="iwlist"></a>iwlist</h2><pre class="line-numbers language-none"><code class="language-none">iwlist wlan0 scan[ning]					列出WiFi扫描结果
@@ -7279,99 +7372,6 @@ from pickle import dumps, loads
 ]]></content>
   </entry>
   <entry>
-    <title>js_web_3D_模型设计</title>
-    <url>/2021/11/18/js_web_3D_%E6%A8%A1%E5%9E%8B%E8%AE%BE%E8%AE%A1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  " ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content:  counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
-
-<h1 id="jsweb-3D模型设计"><a href="#jsweb-3D模型设计" class="headerlink" title="jsweb_3D模型设计"></a>js<em>web_3D</em>模型设计</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><pre><code>首先参考一下别人怎么做的3d模型，站在巨人的肩膀上看看要怎么操作。
-</code></pre><h3 id="chrome浏览器下的网站"><a href="#chrome浏览器下的网站" class="headerlink" title="chrome浏览器下的网站"></a>chrome浏览器下的网站</h3><p><a href="https://www.hightopo.com/demo/CementFactory/">https://www.hightopo.com/demo/CementFactory/</a><br><a href="https://www.hightopo.com/demo/3DRoom/index.html">https://www.hightopo.com/demo/3DRoom/index.html</a><br>原文链接在：<a href="https://www.cnblogs.com/xhload3d/p/8577889.html">hightopo</a></p>
-<h3 id="查看源码F12"><a href="#查看源码F12" class="headerlink" title="查看源码F12"></a>查看源码F12</h3><p>可以看到单个的js文件，除此以外看不到其他，因此<br><img src="https://www.mmrsl.cn/download/img/html5/3.png" alt=""><br>可以一行一行的下载但这样很麻烦，因此可以考虑用谷歌插件一键下载。</p>
-<h3 id="Save-All-Resources"><a href="#Save-All-Resources" class="headerlink" title="Save All Resources"></a>Save All Resources</h3><p><img src="https://www.mmrsl.cn/download/img/html5/4.png" alt=""><br><strong>使用方法：</strong><br><img src="https://www.mmrsl.cn/download/img/html5/5.png" alt=""><br>下载以后如图所示<br><img src="https://www.mmrsl.cn/download/img/html5/6.png" alt=""></p>
-<h2 id="详细阅读代码后"><a href="#详细阅读代码后" class="headerlink" title="详细阅读代码后"></a>详细阅读代码后</h2><p>可以发现以门为例：<br><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;二楼
-    HIGHT&#x3D;200
-    &#x2F;&#x2F; 创建墙体
-    var wall2 &#x3D; new ht.CSGShape();
-    wall2.setClosePath(true);
-    wall2.setTall(240);
-    wall2.setElevation(HIGHT+360);
-    wall2.setThickness(20);
-    wall2.setPoints([
-        &#123;x: -400, y: -600&#125;,
-        &#123;x: 400, y: -600&#125;,
-        &#123;x: 400, y: 600&#125;,
-        &#123;x: -400, y: 600&#125;
-    ]);
-    wall2.s(&#123;
-        &#39;shape.border.width&#39;: 20,
-        &#39;shape.border.color&#39;: &#39;#898989&#39;,
-        &#39;all.color&#39;: &#39;#5D5D5D&#39;,
-        &#39;front.color&#39;: &#39;lightgray&#39;,
-        &#39;back.color&#39;: &#39;lightgray&#39;,
-        &#39;csg.color&#39;: &#39;#DDDDDD&#39;
-    &#125;);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<blockquote>
-<p>可以设置墙的长宽高和厚度还有位置，即可制作第二层第三层直到n层的一个建筑物如图所示：</p>
-</blockquote>
-<p><img src="https://www.mmrsl.cn/download/img/html5/7.png" alt=""></p>
-<blockquote>
-<p>可以访问地址，以上述方法获取我修改后的源码：</p>
-</blockquote>
-<p><a href="https://www.mmrsl.cn/3droom/">3droom</a></p>
-<h2 id="进行一些优化，即可做出不一样的地图"><a href="#进行一些优化，即可做出不一样的地图" class="headerlink" title="进行一些优化，即可做出不一样的地图"></a>进行一些优化，即可做出不一样的地图</h2><p>如下图所示：<br><img src="https://www.mmrsl.cn/download/img/html5/8.png" alt=""></p>
-<p><a href="https://www.mmrsl.cn/3droom2/">3droom2</a></p>
-<h2 id="添加obj"><a href="#添加obj" class="headerlink" title="添加obj"></a>添加obj</h2><blockquote>
-<p>对于复杂的模型，需要用软件进行建模</p>
-</blockquote>
-<p>导入OBJ格式功能需要引入ht-obj.js的插件扩展包，本手册的大部分例子由于需要读取OBJ文件，浏览器存在跨域安全的限制， 因此需要通过Web方式发布来阅读本手册，或者修改浏览器的参数，例如对于Chrome浏览器可通过增加 —allow-file-access-from-files的启动参数。<br><img src="https://www.mmrsl.cn/download/img/html5/9.png" alt=""></p>
-<p>如果不这样操作，显示出来的图片就是花的。</p>
-<h2 id="ht-3d学习资料"><a href="#ht-3d学习资料" class="headerlink" title="ht 3d学习资料"></a>ht 3d学习资料</h2><ul>
-<li><a href="https://www.hightopo.com/guide/doc/ht.widget.TreeView.html">ht 说明手册</a></li>
-<li><a href="https://www.hightopo.com/guide/guide/core/3d/ht-3d-guide.html">HT for Web 3D 手册</a></li>
-<li><a href="https://www.hightopo.com/guide/guide/core/theme/ht-theme-guide.html">HT for Web 风格手册</a></li>
-<li><a href="https://blog.csdn.net/xhload3d/article/details/52323746">https://blog.csdn.net/xhload3d/article/details/52323746</a></li>
-<li><a href="https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html">https://www.hightopo.com/guide/guide/plugin/obj/ht-obj-guide.html</a></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
     <title>linux_rssi_信号强度获取</title>
     <url>/2021/07/13/linux-rssi-%E4%BF%A1%E5%8F%B7%E5%BC%BA%E5%BA%A6%E8%8E%B7%E5%8F%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linuxrssi信号强度获取"><a href="#linuxrssi信号强度获取" class="headerlink" title="linuxrssi信号强度获取"></a>linux<em>rssi</em>信号强度获取</h1><h2 id="测试环境中，无线网卡的接口id为wlan0"><a href="#测试环境中，无线网卡的接口id为wlan0" class="headerlink" title="测试环境中，无线网卡的接口id为wlan0"></a>测试环境中，无线网卡的接口id为wlan0</h2><h2 id="一秒周期查看无线网卡信息"><a href="#一秒周期查看无线网卡信息" class="headerlink" title="一秒周期查看无线网卡信息"></a>一秒周期查看无线网卡信息</h2><p><code>watch -n 1 cat /proc/net/wireless</code></p>
@@ -7546,6 +7546,36 @@ wlx0ccf89606c44  IEEE 802.11  ESSID:&quot;SSID&quot;
       </tags>
   </entry>
   <entry>
+    <title>linux嵌入式开发_1</title>
+    <url>/2020/07/30/linux%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91-1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux基础"><a href="#linux基础" class="headerlink" title="linux基础"></a><strong>linux基础</strong></h1><h2 id="linux是什么？"><a href="#linux是什么？" class="headerlink" title="linux是什么？"></a>linux是什么？</h2><span id="more"></span>
+<ul>
+<li>linux是一款开源操作系统，开放了整组的调用接口给程序猿进行开发和使用。linux操作系统包含内核和系统调用，并不包含应用程序。由于linux的架构继承了unix良好传统，因此越来越多的开发者选择使用linux并为之设计了许多应用级软件。</li>
+</ul>
+<h2 id="开发环境的搭建"><a href="#开发环境的搭建" class="headerlink" title="开发环境的搭建"></a>开发环境的搭建</h2><ul>
+<li>开发环境需要用到交叉开发模式，这一点书上有很详细的介绍，包括硬件环境和软件环境的构建都写的十分清楚，所以这篇文章主要是写一下我在中间遇到的一些问题以及解决方法。虚拟机的话我用的是Ubuntu18.04版本，安装虚拟机啥的网上资源很多，直接百度就行。</li>
+</ul>
+<h2 id="linux下的环境搭建"><a href="#linux下的环境搭建" class="headerlink" title="linux下的环境搭建"></a>linux下的环境搭建</h2><h3 id="1、修改Ubuntu的一些配置"><a href="#1、修改Ubuntu的一些配置" class="headerlink" title="1、修改Ubuntu的一些配置"></a>1、修改Ubuntu的一些配置</h3><ul>
+<li><p>切换国内镜像源</p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp; 在使用apt命令安装包时，因为系统自带下载源在国外服务器上，所以需要切换为国内镜像源才能提升下载速度。这里有一篇博客详细说明了如何直接根据终端命令修改其配置文件，从而达到修改下载源的目的.或者，，，，你也可以直接用Ubuntu的图形界面去修改，步骤如下： 显示应用程序-&gt;软件和更新-&gt;下载自主服务器改为其他，然后选择合适的镜像源就行了，这里我选择的是阿里的镜像源。</p>
+</li>
+<li><p>修改语言和设置汉语输入法</p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp; 懒得写，直接贴别人博客了</p>
+</li>
+</ul>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/langshi_2011/article/details/78993781">Linux Ubuntu系统设置成中文语言</a></p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/sparkstrike/article/details/81487271">Linux.Ubuntu.中文输入法设置</a></p>
+]]></content>
+      <categories>
+        <category>程序设计</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>嵌入式开发</tag>
+        <tag>鸟哥的私房菜学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux学习笔记</title>
     <url>/2021/03/26/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux操作系统学习笔记"><a href="#linux操作系统学习笔记" class="headerlink" title="linux操作系统学习笔记"></a><center>linux操作系统学习笔记</center></h1><h1 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h1><h2 id="linux常用命令"><a href="#linux常用命令" class="headerlink" title="linux常用命令"></a>linux常用命令</h2><h3 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h3><p><img src="https://www.runoob.com/wp-content/uploads/2014/06/d0c50-linux2bfile2bsystem2bhierarchy.jpg" alt=""></p>
@@ -7624,36 +7654,6 @@ wlx0ccf89606c44  IEEE 802.11  ESSID:&quot;SSID&quot;
       <tags>
         <tag>linux</tag>
         <tag>嵌入式开发</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux嵌入式开发_1</title>
-    <url>/2020/07/30/linux%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91-1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux基础"><a href="#linux基础" class="headerlink" title="linux基础"></a><strong>linux基础</strong></h1><h2 id="linux是什么？"><a href="#linux是什么？" class="headerlink" title="linux是什么？"></a>linux是什么？</h2><span id="more"></span>
-<ul>
-<li>linux是一款开源操作系统，开放了整组的调用接口给程序猿进行开发和使用。linux操作系统包含内核和系统调用，并不包含应用程序。由于linux的架构继承了unix良好传统，因此越来越多的开发者选择使用linux并为之设计了许多应用级软件。</li>
-</ul>
-<h2 id="开发环境的搭建"><a href="#开发环境的搭建" class="headerlink" title="开发环境的搭建"></a>开发环境的搭建</h2><ul>
-<li>开发环境需要用到交叉开发模式，这一点书上有很详细的介绍，包括硬件环境和软件环境的构建都写的十分清楚，所以这篇文章主要是写一下我在中间遇到的一些问题以及解决方法。虚拟机的话我用的是Ubuntu18.04版本，安装虚拟机啥的网上资源很多，直接百度就行。</li>
-</ul>
-<h2 id="linux下的环境搭建"><a href="#linux下的环境搭建" class="headerlink" title="linux下的环境搭建"></a>linux下的环境搭建</h2><h3 id="1、修改Ubuntu的一些配置"><a href="#1、修改Ubuntu的一些配置" class="headerlink" title="1、修改Ubuntu的一些配置"></a>1、修改Ubuntu的一些配置</h3><ul>
-<li><p>切换国内镜像源</p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp; 在使用apt命令安装包时，因为系统自带下载源在国外服务器上，所以需要切换为国内镜像源才能提升下载速度。这里有一篇博客详细说明了如何直接根据终端命令修改其配置文件，从而达到修改下载源的目的.或者，，，，你也可以直接用Ubuntu的图形界面去修改，步骤如下： 显示应用程序-&gt;软件和更新-&gt;下载自主服务器改为其他，然后选择合适的镜像源就行了，这里我选择的是阿里的镜像源。</p>
-</li>
-<li><p>修改语言和设置汉语输入法</p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp; 懒得写，直接贴别人博客了</p>
-</li>
-</ul>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/langshi_2011/article/details/78993781">Linux Ubuntu系统设置成中文语言</a></p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="https://blog.csdn.net/sparkstrike/article/details/81487271">Linux.Ubuntu.中文输入法设置</a></p>
-]]></content>
-      <categories>
-        <category>程序设计</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>嵌入式开发</tag>
-        <tag>鸟哥的私房菜学习</tag>
       </tags>
   </entry>
   <entry>
@@ -9222,49 +9222,6 @@ iptables-restore &lt; &#x2F;etc&#x2F;iptables.ipv4.nat
       </tags>
   </entry>
   <entry>
-    <title>Merry Christmas</title>
-    <url>/2020/12/24/merry_christmas/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
-</div>
-</center>
-
-<span id="more"></span>
-<ol>
-<li>git push 方法</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">git init
-git add .
-git commit -m &quot;first commit&quot;
-git remote add origin URL
-git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
-<ol>
-<li>圣诞网站模板分享</li>
-</ol>
-<ul>
-<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
-<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
-</ul>
-<ol>
-<li>电影分享 </li>
-</ol>
-<ul>
-<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
-</ul>
-<center>
-
-
-<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
-      <categories>
-        <category>电影推荐</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux系统通信功率信道修改方法</title>
     <url>/2021/04/22/linux%E7%B3%BB%E7%BB%9F%E9%80%9A%E4%BF%A1%E5%8A%9F%E7%8E%87%E4%BF%A1%E9%81%93%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="linux系统通信功率信道修改方法"><a href="#linux系统通信功率信道修改方法" class="headerlink" title="linux系统通信功率信道修改方法"></a>linux系统通信功率信道修改方法</h1><h2 id="配置频段"><a href="#配置频段" class="headerlink" title="配置频段"></a>配置频段</h2><h3 id="可以先查看有哪些频段："><a href="#可以先查看有哪些频段：" class="headerlink" title="可以先查看有哪些频段："></a>可以先查看有哪些频段：</h3><p><code>iwlist channel</code> </p>
@@ -9734,6 +9691,49 @@ sudo create_ap -n wlan0 pi_wifi MyPassWord -c 11<span aria-hidden="true" class="
       </categories>
       <tags>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Merry Christmas</title>
+    <url>/2020/12/24/merry_christmas/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Merry-Christmas"><a href="#Merry-Christmas" class="headerlink" title="Merry Christmas"></a><center>Merry Christmas</center></h1><center>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=45996894&bvid=BV1xb411e7ru&cid=80590947&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
+</center>
+
+<span id="more"></span>
+<ol>
+<li>git push 方法</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">git init
+git add .
+git commit -m &quot;first commit&quot;
+git remote add origin URL
+git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>本过程可以参考我为大家寻找的教程<a href="https://www.codekp.cn/2020/12/12/%E8%A1%A8%E7%99%BD%E7%BD%91%E7%AB%99%E3%80%81%E7%BD%97%E7%9B%98%E6%97%B6%E9%92%9F%E6%95%99%E7%A8%8B/">如何优雅的制作表白网站和罗盘时钟</a></p>
+<ol>
+<li>圣诞网站模板分享</li>
+</ol>
+<ul>
+<li><a href="https://www.codekp.cn/Chrismas/index.html">demo</a></li>
+<li><a href="https://github.com/mmrslwan1110/Chrismas">源码</a></li>
+</ul>
+<ol>
+<li>电影分享 </li>
+</ol>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/play/ep258944?theme=movie%3Ffrom%3Dsearch&amp;seid=16305206199116632162">love actually</a></li>
+</ul>
+<center>
+
+
+<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋!"></a><a href="https://christmasexperiments.com/">彩蛋!</a></h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h6 id="一个假装不存在的彩蛋"><a href="#一个假装不存在的彩蛋" class="headerlink" title="一个假装不存在的彩蛋"></a><a href="https://interview.ueno.co/">一个假装不存在的彩蛋</a></h6>]]></content>
+      <categories>
+        <category>电影推荐</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -12311,6 +12311,176 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </tags>
   </entry>
   <entry>
+    <title>多智能体强化学习算法及环境</title>
+    <url>/2021/12/06/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8F%8A%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
+    body {
+    counter-reset: section;
+    }
+
+    h1 {
+    counter-reset: subsection;
+    }
+    h2 {
+    counter-reset: subsection2;
+    }
+    h3 {
+    counter-reset: subsection3;
+    }
+    h4 {
+    counter-reset: subsection4;
+    }
+    h1::before {
+    counter-increment: section;
+    content:  " ";
+    }
+
+    h2::before {
+    counter-increment: subsection;
+    content: counter(subsection) " ";
+    }
+    h3::before {
+    counter-increment: subsection2;
+    content: counter(subsection) "." counter(subsection2) ;
+    }
+    h4::before {
+    counter-increment: subsection3;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
+    }
+    h5::before {
+    counter-increment: subsection4;
+    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
+    }
+</style>
+
+<h1 id="多智能体强化学习算法及环境"><a href="#多智能体强化学习算法及环境" class="headerlink" title="多智能体强化学习算法及环境"></a>多智能体强化学习算法及环境</h1><p>Pytorch实现的多智能体强化学习算法，包括IQL、QMIX、VDN、COMA、QTRAN（QTRAN-base和QTRAN-alt）、MAVEN、CommNet、DyMA-CL和G2ANet，这些都是最先进的MARL算法。SMAC是星际争霸II的分散式微观管理场景。</p>
+<h2 id="项目地址："><a href="#项目地址：" class="headerlink" title="项目地址："></a>项目地址：</h2><p><a href="https://github.com/starry-sky6688/StarCraft">https://github.com/starry-sky6688/StarCraft</a></p>
+<p>运行：</p>
+<p><code>python main.py --map=3m --alg=qmix</code></p>
+<p>直接运行 ，然后算法将在map上开始训练。</p>
+<h2 id="MRL环境配置"><a href="#MRL环境配置" class="headerlink" title="MRL环境配置"></a>MRL环境配置</h2><p>星际争霸II 环境： <a href="https://github.com/oxwhirl/smac">https://github.com/oxwhirl/smac</a></p>
+<h3 id="安装星际争霸-II"><a href="#安装星际争霸-II" class="headerlink" title="安装星际争霸 II"></a>安装星际争霸 II</h3><p>SMAC基于星际争霸II的完整游戏（版本&gt;= 3.16.1）。要安装游戏，请按照下面的命令操作。</p>
+<ol>
+<li>Linux</li>
+</ol>
+<p>请使用<a href="https://github.com/Blizzard/s2client-proto#downloads">暴雪的存储库</a>下载 Linux 版本的《星际争霸 II》。默认情况下，游戏应位于目录中。这可以通过设置环境变量来更改。~/StarCraftII/SC2PATH</p>
+<ol>
+<li>MacOS/Windows</li>
+</ol>
+<p>请从Battle.net安装<a href="https://starcraft2.com/zh-tw/">星际争霸 II</a>。免费的入门版也有效。如果您使用默认安装位置，PySC2 将找到最新的二进制文件。否则，与Linux版本类似，您需要使用游戏的正确位置设置环境变量。<code>SC2PATH</code></p>
+<h3 id="SMAC-地图"><a href="#SMAC-地图" class="headerlink" title="SMAC 地图"></a>SMAC 地图</h3><p>SMAC由许多具有预配置地图的战斗场景组成。在SMAC可以使用之前，这些地图需要下载到星际争霸II的目录中。Maps</p>
+<p>下载<a href="https://github.com/oxwhirl/smac/releases/download/v0.1-beta1/SMAC_Maps.zip">SMAC地图</a>并将其解压缩到您的目录中。如果您通过 git 安装了 SMAC，只需将目录从复制到目录中即可。</p>
+<p>在根目录下新建一个文件夹Maps</p>
+<p>将文件保存到星际争霸Maps文件夹内。</p>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p><code>python main.py --map=3m --alg=qmix</code></p>
+<p>环境配置，感觉有点问题，其实修改有个python文件夹里面的地址即可，不需要配置什么环境变量。<br>报错的文件，点进去找到C:修改为F:即可。</p>
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/1.png"/></div>
+<div align=center><video src="https://www.mmrsl.cn/download/video/1.mp4"   controls="controls"></video></div>
+
+
+<div align=center>视频结果</div>
+平均胜率为8次,独立运行3m --difficulty=7(VeryHard)
+
+<div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/overview_3m.png"/></div>
+
+
+
+<h2 id="MADDPG"><a href="#MADDPG" class="headerlink" title="MADDPG"></a>MADDPG</h2><p>git上找到的都运行不了，测试了很久，在<a href="https://github.com/starry-sky6688/MADDPG">https://github.com/starry-sky6688/MADDPG</a> 的基础上改了一下，成功运行。</p>
+<ul>
+<li>对应的论文：<a href="https://arxiv.org/abs/1706.02275">Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments</a></li>
+<li>对应的环境：<a href="https://github.com/openai/multiagent-particle-envs">MPE</a></li>
+</ul>
+<h3 id="多智能体环境"><a href="#多智能体环境" class="headerlink" title="多智能体环境"></a>多智能体环境</h3><p><a href="https://github.com/openai/multiagent-particle-envs">MPE</a></p>
+<ol>
+<li>安装方法1:</li>
+</ol>
+<p><code>cd into the root directory and type pip install -e .</code></p>
+<ol>
+<li>安装方法2:<br><a href="https://www.pettingzoo.ml/mpe">https://www.pettingzoo.ml/mpe</a></li>
+</ol>
+<p><code>pip install pettingzoo[mpe]</code></p>
+<h3 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h3><p>python=3.6.5<br>Multi-Agent Particle Environment(MPE)<br>torch=1.1.0</p>
+<h3 id="运行-1"><a href="#运行-1" class="headerlink" title="运行"></a>运行</h3><p><code>python main.py --scenario-name=simple_tag --evaluate-episodes=10</code></p>
+<div align=center><img width = '500' height ='600' src ="https://www.mmrsl.cn/download/img/xmu/2.png"/></div>
+
+<h3 id="环境列表"><a href="#环境列表" class="headerlink" title="环境列表"></a>环境列表</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>代码中的环境名称</th>
+<th>沟通</th>
+<th>竞争</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>simple</td>
+<td>N</td>
+<td>N</td>
+<td>单个代理看到地标位置，根据它与地标的接近程度进行奖励。不是多代理环境——用于调试策略。</td>
+</tr>
+<tr>
+<td>simple_adversary.py</td>
+<td>（物理欺骗）</td>
+<td>N</td>
+<td>是    1 个对手（红色），N 个优秀代理（绿色），N 个地标（通常 N=2）。所有代理都会观察地标和其他代理的位置。一个地标是“目标地标”（绿色）。好的代理根据其中一个与目标地标的接近程度进行奖励，但如果对手靠近目标地标，则获得负面奖励。对手根据它与目标的接近程度获得奖励，但它不知道哪个地标是目标地标。因此，优秀的代理必须学会“拆分”并覆盖所有地标以欺骗对手。</td>
+</tr>
+<tr>
+<td>simple_crypto.py （秘密交流）</td>
+<td>是</td>
+<td>是</td>
+<td>两个好代理人（爱丽丝和鲍勃），一个对手（夏娃）。Alice 必须通过公共频道向 bob 发送私人消息。Alice 和 bob 会根据 bob 重建消息的程度获得奖励，但如果 eve 能够重建消息，则获得负面奖励。Alice 和 bob 有一个私钥（在每集开始时随机生成），他们必须学会使用它来加密消息。</td>
+</tr>
+<tr>
+<td>simple_push.py （远离）</td>
+<td>N</td>
+<td>是</td>
+<td>1 个代理、1 个对手、1 个地标。代理根据与地标的距离进行奖励。如果对手靠近地标，并且代理远离地标，则它会得到奖励。因此，对手学会将代理推离地标。</td>
+</tr>
+<tr>
+<td>simple_reference.py</td>
+<td>是</td>
+<td>N</td>
+<td>2 个代理，3 个不同颜色的地标。每个代理都想到达他们的目标地标，只有其他代理知道。奖励是集体的。因此，代理必须学会传达另一个代理的目标，并导航到他们的地标。这与 simple_speaker_listener 场景相同，其中两个代理同时是说话者和听众。</td>
+</tr>
+<tr>
+<td>simple_speaker_listener.py （合作交流）</td>
+<td>是</td>
+<td>N</td>
+<td>与 simple_reference 相同，除了一个代理是不动的“说话者”（灰色）（观察其他代理的目标），另一个代理是听者（不能说话，但必须导航到正确的地标）。</td>
+</tr>
+<tr>
+<td>simple_spread.py （合作导航）</td>
+<td>N</td>
+<td>N</td>
+<td>N 个代理，N 个地标。根据任何代理与每个地标的距离对代理进行奖励。如果代理与其他代理发生冲突，则会受到惩罚。因此，代理必须学会在避免碰撞的同时覆盖所有地标。</td>
+</tr>
+<tr>
+<td>simple_tag.py （捕食者-猎物）</td>
+<td>N</td>
+<td>是</td>
+<td>捕食者-猎物环境。好的代理（绿色）速度更快，并且希望避免被对手（红色）击中。对手速度较慢，并希望打击优秀的代理。障碍物（大黑圈）挡住了去路。</td>
+</tr>
+<tr>
+<td>simple_world_comm.py</td>
+<td>是</td>
+<td>是</td>
+<td>在论文随附的视频中看到的环境。与 simple_tag 相同，除了 (1) 有食物（蓝色小球），好代理会因为靠近而获得奖励，（2）我们现在有“森林”，可以将代理隐藏在里面，从外面看不到；(3)有一个“领导对手”，可以随时看到代理人，并可以与其他对手沟通，帮助协调追击。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>通过<code>python main.py --scenario-name=simple_tag --evaluate-episodes=10</code></p>
+<p>修改<code>simple_tag</code>替换环境。</p>
+<h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>在这项任务中，两个蓝色代理通过最小化它们与绿色地标的最近距离（只有一个需要靠近以获得最佳奖励）来获得奖励，同时最大化红色对手与绿色地标的距离。红色对手通过最小化它与绿色地标的距离来获得奖励；然而，在任何给定的试验中，它不知道哪个地标是绿色的，所以它必须跟随蓝色代理。因此，蓝色代理应该学会通过覆盖两个地标来欺骗红色代理。</p>
+<div align=center><img src="https://www.mmrsl.cn/download/img/xmu/1.gif?raw=true" width="20%"> <img src="https://www.mmrsl.cn/download/img/xmu/2.gif?raw=true" width="20%"> <img src="https://www.mmrsl.cn/download/img/xmu/3.gif?raw=true" width="20%"></div>
+
+
+
+<div align=center><video src="https://www.mmrsl.cn/download/img/xmu/1.mp4"   controls="controls"></video></div>]]></content>
+  </entry>
+  <entry>
     <title>基于深度强化学习的超级马里奥和飞机大战自动控制</title>
     <url>/2021/03/15/%E5%9F%BA%E4%BA%8E%E6%B7%B1%E5%BA%A6%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B6%85%E7%BA%A7%E9%A9%AC%E9%87%8C%E5%A5%A5%E5%92%8C%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
@@ -12515,7 +12685,7 @@ img {
 <p>（4-1）</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/7cbbf0c5032dc6d6d54a09572e25b786.png" alt=""></p>
 <p>图7 超级马里奥兄弟实验模型图</p>
-<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#x6b;&#x70;&#64;&#x6d;&#x6d;&#114;&#x73;&#108;&#46;&#x63;&#110;">&#x6b;&#x70;&#64;&#x6d;&#x6d;&#114;&#x73;&#108;&#46;&#x63;&#110;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
+<h3 id="5-2-实验结果"><a href="#5-2-实验结果" class="headerlink" title="5.2 实验结果"></a><strong>5.2 实验结果</strong></h3><p>本文对超级马里奥兄弟，加入深度强化学习，并对模型进行训练，马里奥13个动作、状态数为7056个图像和位置信息所构成的1行7057列的矩阵。本文对该游戏分别训练了100次、8000次、10000次。保存实验在100次训练、8000次训练、100000次训练实验后的结果，最终可以从以下地址访问:<br>如果通过两个网址均无法访问，请联系：<a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x6b;&#x70;&#x40;&#109;&#x6d;&#x72;&#115;&#x6c;&#46;&#99;&#x6e;">&#x6b;&#x70;&#x40;&#109;&#x6d;&#x72;&#115;&#x6c;&#46;&#99;&#x6e;</a>。其中对模型进行了5000次训练，其每次训练的总回报率如下所示：</p>
 <p><img src="https://www.mmrsl.cn/download/img/media/8002b34fd908da6a21643a9ca89b2f8e.png" alt=""></p>
 <p>图8 超级马里奥兄弟实验结果图</p>
 <h3 id="5-3结果分析"><a href="#5-3结果分析" class="headerlink" title="5.3结果分析"></a><strong>5.3结果分析</strong></h3><p>由超级马里奥的例子说明了如何通过深度强化学习在该游戏环境下训练智能体。当智能体与环境交互时，通过大量的反复实验和迭代来更改策略。由该实验结果图显示，在相同训练次数的情况下，深度强化学习相比于深度学习可以获得更高的奖励分数，且随着训练次数的增加，深度强化学习相比于深度学习获得奖励的优势愈加明显，这同样说明深度强化学习可以在游戏中出色地完成智能体的自动控制。</p>
@@ -12557,176 +12727,6 @@ img {
         <tag>强化学习</tag>
         <tag>Python</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>多智能体强化学习算法及环境</title>
-    <url>/2021/12/06/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8F%8A%E7%8E%AF%E5%A2%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  " ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
-
-<h1 id="多智能体强化学习算法及环境"><a href="#多智能体强化学习算法及环境" class="headerlink" title="多智能体强化学习算法及环境"></a>多智能体强化学习算法及环境</h1><p>Pytorch实现的多智能体强化学习算法，包括IQL、QMIX、VDN、COMA、QTRAN（QTRAN-base和QTRAN-alt）、MAVEN、CommNet、DyMA-CL和G2ANet，这些都是最先进的MARL算法。SMAC是星际争霸II的分散式微观管理场景。</p>
-<h2 id="项目地址："><a href="#项目地址：" class="headerlink" title="项目地址："></a>项目地址：</h2><p><a href="https://github.com/starry-sky6688/StarCraft">https://github.com/starry-sky6688/StarCraft</a></p>
-<p>运行：</p>
-<p><code>python main.py --map=3m --alg=qmix</code></p>
-<p>直接运行 ，然后算法将在map上开始训练。</p>
-<h2 id="MRL环境配置"><a href="#MRL环境配置" class="headerlink" title="MRL环境配置"></a>MRL环境配置</h2><p>星际争霸II 环境： <a href="https://github.com/oxwhirl/smac">https://github.com/oxwhirl/smac</a></p>
-<h3 id="安装星际争霸-II"><a href="#安装星际争霸-II" class="headerlink" title="安装星际争霸 II"></a>安装星际争霸 II</h3><p>SMAC基于星际争霸II的完整游戏（版本&gt;= 3.16.1）。要安装游戏，请按照下面的命令操作。</p>
-<ol>
-<li>Linux</li>
-</ol>
-<p>请使用<a href="https://github.com/Blizzard/s2client-proto#downloads">暴雪的存储库</a>下载 Linux 版本的《星际争霸 II》。默认情况下，游戏应位于目录中。这可以通过设置环境变量来更改。~/StarCraftII/SC2PATH</p>
-<ol>
-<li>MacOS/Windows</li>
-</ol>
-<p>请从Battle.net安装<a href="https://starcraft2.com/zh-tw/">星际争霸 II</a>。免费的入门版也有效。如果您使用默认安装位置，PySC2 将找到最新的二进制文件。否则，与Linux版本类似，您需要使用游戏的正确位置设置环境变量。<code>SC2PATH</code></p>
-<h3 id="SMAC-地图"><a href="#SMAC-地图" class="headerlink" title="SMAC 地图"></a>SMAC 地图</h3><p>SMAC由许多具有预配置地图的战斗场景组成。在SMAC可以使用之前，这些地图需要下载到星际争霸II的目录中。Maps</p>
-<p>下载<a href="https://github.com/oxwhirl/smac/releases/download/v0.1-beta1/SMAC_Maps.zip">SMAC地图</a>并将其解压缩到您的目录中。如果您通过 git 安装了 SMAC，只需将目录从复制到目录中即可。</p>
-<p>在根目录下新建一个文件夹Maps</p>
-<p>将文件保存到星际争霸Maps文件夹内。</p>
-<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p><code>python main.py --map=3m --alg=qmix</code></p>
-<p>环境配置，感觉有点问题，其实修改有个python文件夹里面的地址即可，不需要配置什么环境变量。<br>报错的文件，点进去找到C:修改为F:即可。</p>
-<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/1.png"/></div>
-<div align=center><video src="https://www.mmrsl.cn/download/video/1.mp4"   controls="controls"></video></div>
-
-
-<div align=center>视频结果</div>
-平均胜率为8次,独立运行3m --difficulty=7(VeryHard)
-
-<div align=center><img width = '600' height ='300' src ="https://www.mmrsl.cn/download/img/xmu/overview_3m.png"/></div>
-
-
-
-<h2 id="MADDPG"><a href="#MADDPG" class="headerlink" title="MADDPG"></a>MADDPG</h2><p>git上找到的都运行不了，测试了很久，在<a href="https://github.com/starry-sky6688/MADDPG">https://github.com/starry-sky6688/MADDPG</a> 的基础上改了一下，成功运行。</p>
-<ul>
-<li>对应的论文：<a href="https://arxiv.org/abs/1706.02275">Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments</a></li>
-<li>对应的环境：<a href="https://github.com/openai/multiagent-particle-envs">MPE</a></li>
-</ul>
-<h3 id="多智能体环境"><a href="#多智能体环境" class="headerlink" title="多智能体环境"></a>多智能体环境</h3><p><a href="https://github.com/openai/multiagent-particle-envs">MPE</a></p>
-<ol>
-<li>安装方法1:</li>
-</ol>
-<p><code>cd into the root directory and type pip install -e .</code></p>
-<ol>
-<li>安装方法2:<br><a href="https://www.pettingzoo.ml/mpe">https://www.pettingzoo.ml/mpe</a></li>
-</ol>
-<p><code>pip install pettingzoo[mpe]</code></p>
-<h3 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h3><p>python=3.6.5<br>Multi-Agent Particle Environment(MPE)<br>torch=1.1.0</p>
-<h3 id="运行-1"><a href="#运行-1" class="headerlink" title="运行"></a>运行</h3><p><code>python main.py --scenario-name=simple_tag --evaluate-episodes=10</code></p>
-<div align=center><img width = '500' height ='600' src ="https://www.mmrsl.cn/download/img/xmu/2.png"/></div>
-
-<h3 id="环境列表"><a href="#环境列表" class="headerlink" title="环境列表"></a>环境列表</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>代码中的环境名称</th>
-<th>沟通</th>
-<th>竞争</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>simple</td>
-<td>N</td>
-<td>N</td>
-<td>单个代理看到地标位置，根据它与地标的接近程度进行奖励。不是多代理环境——用于调试策略。</td>
-</tr>
-<tr>
-<td>simple_adversary.py</td>
-<td>（物理欺骗）</td>
-<td>N</td>
-<td>是    1 个对手（红色），N 个优秀代理（绿色），N 个地标（通常 N=2）。所有代理都会观察地标和其他代理的位置。一个地标是“目标地标”（绿色）。好的代理根据其中一个与目标地标的接近程度进行奖励，但如果对手靠近目标地标，则获得负面奖励。对手根据它与目标的接近程度获得奖励，但它不知道哪个地标是目标地标。因此，优秀的代理必须学会“拆分”并覆盖所有地标以欺骗对手。</td>
-</tr>
-<tr>
-<td>simple_crypto.py （秘密交流）</td>
-<td>是</td>
-<td>是</td>
-<td>两个好代理人（爱丽丝和鲍勃），一个对手（夏娃）。Alice 必须通过公共频道向 bob 发送私人消息。Alice 和 bob 会根据 bob 重建消息的程度获得奖励，但如果 eve 能够重建消息，则获得负面奖励。Alice 和 bob 有一个私钥（在每集开始时随机生成），他们必须学会使用它来加密消息。</td>
-</tr>
-<tr>
-<td>simple_push.py （远离）</td>
-<td>N</td>
-<td>是</td>
-<td>1 个代理、1 个对手、1 个地标。代理根据与地标的距离进行奖励。如果对手靠近地标，并且代理远离地标，则它会得到奖励。因此，对手学会将代理推离地标。</td>
-</tr>
-<tr>
-<td>simple_reference.py</td>
-<td>是</td>
-<td>N</td>
-<td>2 个代理，3 个不同颜色的地标。每个代理都想到达他们的目标地标，只有其他代理知道。奖励是集体的。因此，代理必须学会传达另一个代理的目标，并导航到他们的地标。这与 simple_speaker_listener 场景相同，其中两个代理同时是说话者和听众。</td>
-</tr>
-<tr>
-<td>simple_speaker_listener.py （合作交流）</td>
-<td>是</td>
-<td>N</td>
-<td>与 simple_reference 相同，除了一个代理是不动的“说话者”（灰色）（观察其他代理的目标），另一个代理是听者（不能说话，但必须导航到正确的地标）。</td>
-</tr>
-<tr>
-<td>simple_spread.py （合作导航）</td>
-<td>N</td>
-<td>N</td>
-<td>N 个代理，N 个地标。根据任何代理与每个地标的距离对代理进行奖励。如果代理与其他代理发生冲突，则会受到惩罚。因此，代理必须学会在避免碰撞的同时覆盖所有地标。</td>
-</tr>
-<tr>
-<td>simple_tag.py （捕食者-猎物）</td>
-<td>N</td>
-<td>是</td>
-<td>捕食者-猎物环境。好的代理（绿色）速度更快，并且希望避免被对手（红色）击中。对手速度较慢，并希望打击优秀的代理。障碍物（大黑圈）挡住了去路。</td>
-</tr>
-<tr>
-<td>simple_world_comm.py</td>
-<td>是</td>
-<td>是</td>
-<td>在论文随附的视频中看到的环境。与 simple_tag 相同，除了 (1) 有食物（蓝色小球），好代理会因为靠近而获得奖励，（2）我们现在有“森林”，可以将代理隐藏在里面，从外面看不到；(3)有一个“领导对手”，可以随时看到代理人，并可以与其他对手沟通，帮助协调追击。</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>通过<code>python main.py --scenario-name=simple_tag --evaluate-episodes=10</code></p>
-<p>修改<code>simple_tag</code>替换环境。</p>
-<h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>在这项任务中，两个蓝色代理通过最小化它们与绿色地标的最近距离（只有一个需要靠近以获得最佳奖励）来获得奖励，同时最大化红色对手与绿色地标的距离。红色对手通过最小化它与绿色地标的距离来获得奖励；然而，在任何给定的试验中，它不知道哪个地标是绿色的，所以它必须跟随蓝色代理。因此，蓝色代理应该学会通过覆盖两个地标来欺骗红色代理。</p>
-<div align=center><img src="https://www.mmrsl.cn/download/img/xmu/1.gif?raw=true" width="20%"> <img src="https://www.mmrsl.cn/download/img/xmu/2.gif?raw=true" width="20%"> <img src="https://www.mmrsl.cn/download/img/xmu/3.gif?raw=true" width="20%"></div>
-
-
-
-<div align=center><video src="https://www.mmrsl.cn/download/img/xmu/1.mp4"   controls="controls"></video></div>]]></content>
   </entry>
   <entry>
     <title>xmu健康打卡ios快捷指令</title>
@@ -13289,193 +13289,6 @@ print(list2)
       <tags>
         <tag>微信小程序</tag>
         <tag>js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>排序算法_java</title>
-    <url>/2022/03/16/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95-java/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><style>
-    body {
-    counter-reset: section;
-    }
-
-    h1 {
-    counter-reset: subsection;
-    }
-    h2 {
-    counter-reset: subsection2;
-    }
-    h3 {
-    counter-reset: subsection3;
-    }
-    h4 {
-    counter-reset: subsection4;
-    }
-    h1::before {
-    counter-increment: section;
-    content:  " ";
-    }
-
-    h2::before {
-    counter-increment: subsection;
-    content: counter(subsection) " ";
-    }
-    h3::before {
-    counter-increment: subsection2;
-    content: counter(subsection) "." counter(subsection2) ;
-    }
-    h4::before {
-    counter-increment: subsection3;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3) ;
-    }
-    h5::before {
-    counter-increment: subsection4;
-    content:  counter(subsection) "." counter(subsection2) "." counter(subsection3)"." counter(subsection4) ;
-    }
-</style>
-
-
-<h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><ol>
-<li>比较相邻的元素。如果第一个比第二个大，就交换他们两个。</li>
-<li>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。</li>
-<li>这步做完后，最后的元素会是最大的数。</li>
-<li>针对所有的元素重复以上的步骤，除了最后一个。持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</li>
-</ol>
-<p><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/冒泡排序.gif" alt=""></p>
-<h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><ol>
-<li>首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置</li>
-<li>再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。</li>
-<li>重复第二步，直到所有元素均排序完毕。<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/选择排序.gif" alt=""></li>
-</ol>
-<h2 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h2><ol>
-<li>将第一待排序序列第一个元素看做一个有序序列，把第二个元素到最后一个元素当成是未排序序列。</li>
-<li>从头到尾依次扫描未排序序列，将扫描到的每个元素插入有序序列的适当位置。</li>
-<li>（如果待插入的元素与有序序列中的某个元素相等，则将待插入元素插入到相等元素的后面。）</li>
-</ol>
-<p><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/插入排序.gif" alt=""></p>
-<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h2><ol>
-<li>选择一个增量序列 t1，t2，……，tk，其中 ti &gt; tj, tk = 1；</li>
-<li>按增量序列个数 k，对序列进行 k 趟排序；每趟排序，根据对应的增量 ti，将待排序列分割成若干长度为 m 的子序列，分别对各子表进行直接插入排序。</li>
-<li>仅增量因子为 1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/希尔排序.gif" alt=""></li>
-</ol>
-<h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h2><ol>
-<li>申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列；</li>
-<li>设定两个指针，最初位置分别为两个已经排序序列的起始位置；</li>
-<li>比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置；</li>
-<li>重复步骤 3 直到某一指针达到序列尾；将另一序列剩下的所有元素直接复制到合并序列尾。<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/归并排序.gif" alt=""></li>
-</ol>
-<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><ol>
-<li>从数列中挑出一个元素，称为 “基准”（pivot）;</li>
-<li>重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面（相同的数可以到任一边）。</li>
-<li>在这个分区退出之后，该基准就处于数列的中间位置。</li>
-<li>这个称为分区（partition）操作；</li>
-<li>递归地（recursive）把小于基准值元素的子数列和大于基准值元素的子数列排序；<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/快速排序.gif" alt=""></li>
-</ol>
-<h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><ol>
-<li>创建一个堆 H[0……n-1]；</li>
-<li>把堆首（最大值）和堆尾互换；</li>
-<li>把堆的尺寸缩小 1，并调用 shift_down(0)，目的是把新的数组顶端数据调整到相应位置；</li>
-<li>重复步骤 2，直到堆的尺寸为 1。<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/堆排序.gif" alt=""></li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">public class HelloWorld &#123;
-	   &#x2F;**
-    * 选择排序-堆排序
-    * @param array 待排序数组
-    * @return 已排序数组
-    *&#x2F;
-    public static int[] heapSort(int[] array) &#123;
-        &#x2F;&#x2F;这里元素的索引是从0开始的,所以最后一个非叶子结点array.length&#x2F;2 - 1
-        for (int i &#x3D; array.length &#x2F; 2 - 1; i &gt;&#x3D; 0; i--) &#123;  
-            adjustHeap(array, i, array.length);  &#x2F;&#x2F;调整堆
-        &#125;
-  
-        &#x2F;&#x2F; 上述逻辑，建堆结束
-        &#x2F;&#x2F; 下面，开始排序逻辑
-        for (int j &#x3D; array.length - 1; j &gt; 0; j--) &#123;
-            &#x2F;&#x2F; 元素交换,作用是去掉大顶堆
-            &#x2F;&#x2F; 把大顶堆的根元素，放到数组的最后；换句话说，就是每一次的堆调整之后，都会有一个元素到达自己的最终位置
-            swap(array, 0, j);
-            &#x2F;&#x2F; 元素交换之后，毫无疑问，最后一个元素无需再考虑排序问题了。
-            &#x2F;&#x2F; 接下来我们需要排序的，就是已经去掉了部分元素的堆了，这也是为什么此方法放在循环里的原因
-            &#x2F;&#x2F; 而这里，实质上是自上而下，自左向右进行调整的
-            adjustHeap(array, 0, j);
-        &#125;
-        return array;
-    &#125;
-  
-    &#x2F;**
-    * 整个堆排序最关键的地方
-    * @param array 待组堆
-    * @param i 起始结点
-    * @param length 堆的长度
-    *&#x2F;
-    public static void adjustHeap(int[] array, int i, int length) &#123;
-        &#x2F;&#x2F; 先把当前元素取出来，因为当前元素可能要一直移动
-        int temp &#x3D; array[i];
-        for (int k &#x3D; 2 * i + 1; k &lt; length; k &#x3D; 2 * k + 1) &#123;  &#x2F;&#x2F;2*i+1为左子树i的左子树(因为i是从0开始的),2*k+1为k的左子树
-            &#x2F;&#x2F; 让k先指向子节点中最大的节点
-            if (k + 1 &lt; length &amp;&amp; array[k] &lt; array[k + 1]) &#123;  &#x2F;&#x2F;如果有右子树,并且右子树大于左子树
-                k++;
-            &#125;
-            &#x2F;&#x2F;如果发现结点(左右子结点)大于根结点，则进行值的交换
-            if (array[k] &gt; temp) &#123;
-                swap(array, i, k);
-                &#x2F;&#x2F; 如果子节点更换了，那么，以子节点为根的子树会受到影响,所以，循环对子节点所在的树继续进行判断
-                    i  &#x3D;  k;
-                        &#125; else &#123;  &#x2F;&#x2F;不用交换，直接终止循环
-                break;
-            &#125;
-        &#125;
-    &#125;
-  
-    &#x2F;**
-    * 交换元素
-    * @param arr
-    * @param a 元素的下标
-    * @param b 元素的下标
-    *&#x2F;
-    public static void swap(int[] arr, int a, int b) &#123;
-        int temp &#x3D; arr[a];
-        arr[a] &#x3D; arr[b];
-        arr[b] &#x3D; temp;
-    &#125;
-	
-    public static void main(String []args) &#123;
-		int [] A&#x3D;new int []&#123;1,6,8,9,6,3,4,8,6,3,1,5,2,3,5&#125;;
-		A&#x3D;heapSort(A)
-		for(int i&#x3D;0;i&lt;A.length;i++)
-       	System.out.println(A[i]);
-    &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="计数排序"><a href="#计数排序" class="headerlink" title="计数排序"></a>计数排序</h2><ol>
-<li>花O(n)的时间扫描一下整个序列 A，获取最小值 min 和最大值 </li>
-<li>max开辟一块新的空间创建新的数组 B，长度为 ( max - min + 1)</li>
-<li>数组 B 中 index 的元素记录的值是 A 中某元素出现的次数</li>
-<li>最后输出目标整数序列，具体的逻辑是遍历数组 B，输出相应元素以及对应的个数<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/计数排序.gif" alt=""></li>
-</ol>
-<h2 id="桶排序"><a href="#桶排序" class="headerlink" title="桶排序"></a>桶排序</h2><ol>
-<li>设置固定数量的空桶。</li>
-<li>把数据放到对应的桶中。</li>
-<li>对每个不为空的桶中数据进行排序。</li>
-<li>拼接不为空的桶中数据，得到结果<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/桶排序.gif" alt=""></li>
-</ol>
-<h2 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h2><ol>
-<li>将所有待比较数值（正整数）统一为同样的数位长度，数位较短的数前面补零</li>
-<li>从最低位开始，依次进行一次排序</li>
-<li>从最低位排序一直到最高位排序完成以后, 数列就变成一个有序序列<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/基数排序.gif" alt=""></li>
-</ol>
-<h2 id="排序算法比较"><a href="#排序算法比较" class="headerlink" title="排序算法比较"></a>排序算法比较</h2><p><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/1.png" alt=""></p>
-<h3 id="参考地址："><a href="#参考地址：" class="headerlink" title="参考地址："></a>参考地址：</h3><ul>
-<li><a href="https://www.zhihu.com/question/21318658/answer/1268219135">https://www.zhihu.com/question/21318658/answer/1268219135</a></li>
-<li>百度百科：<a href="https://baike.baidu.com/item/%E5%A0%86%E6%8E%92%E5%BA%8F">https://baike.baidu.com/item/%E5%A0%86%E6%8E%92%E5%BA%8F</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -15097,6 +14910,151 @@ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;mmrslwan1110&#x2F;Clock.
       </categories>
       <tags>
         <tag>读书笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>排序算法</title>
+    <url>/2022/03/16/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95-java/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><ol>
+<li>比较相邻的元素。如果第一个比第二个大，就交换他们两个。</li>
+<li>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。</li>
+<li>这步做完后，最后的元素会是最大的数。</li>
+<li>针对所有的元素重复以上的步骤，除了最后一个。持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</li>
+</ol>
+<p><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/冒泡排序.gif" alt=""></p>
+<h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><ol>
+<li>首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置</li>
+<li>再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。</li>
+<li>重复第二步，直到所有元素均排序完毕。<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/选择排序.gif" alt=""></li>
+</ol>
+<h2 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h2><ol>
+<li>将第一待排序序列第一个元素看做一个有序序列，把第二个元素到最后一个元素当成是未排序序列。</li>
+<li>从头到尾依次扫描未排序序列，将扫描到的每个元素插入有序序列的适当位置。</li>
+<li>（如果待插入的元素与有序序列中的某个元素相等，则将待插入元素插入到相等元素的后面。）</li>
+</ol>
+<p><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/插入排序.gif" alt=""></p>
+<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h2><ol>
+<li>选择一个增量序列 t1，t2，……，tk，其中 ti &gt; tj, tk = 1；</li>
+<li>按增量序列个数 k，对序列进行 k 趟排序；每趟排序，根据对应的增量 ti，将待排序列分割成若干长度为 m 的子序列，分别对各子表进行直接插入排序。</li>
+<li>仅增量因子为 1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/希尔排序.gif" alt=""></li>
+</ol>
+<h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h2><ol>
+<li>申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列；</li>
+<li>设定两个指针，最初位置分别为两个已经排序序列的起始位置；</li>
+<li>比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置；</li>
+<li>重复步骤 3 直到某一指针达到序列尾；将另一序列剩下的所有元素直接复制到合并序列尾。<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/归并排序.gif" alt=""></li>
+</ol>
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><ol>
+<li>从数列中挑出一个元素，称为 “基准”（pivot）;</li>
+<li>重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面（相同的数可以到任一边）。</li>
+<li>在这个分区退出之后，该基准就处于数列的中间位置。</li>
+<li>这个称为分区（partition）操作；</li>
+<li>递归地（recursive）把小于基准值元素的子数列和大于基准值元素的子数列排序；<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/快速排序.gif" alt=""></li>
+</ol>
+<h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><ol>
+<li>创建一个堆 H[0……n-1]；</li>
+<li>把堆首（最大值）和堆尾互换；</li>
+<li>把堆的尺寸缩小 1，并调用 shift_down(0)，目的是把新的数组顶端数据调整到相应位置；</li>
+<li>重复步骤 2，直到堆的尺寸为 1。<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/堆排序.gif" alt=""></li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">public class HelloWorld &#123;
+	   &#x2F;**
+    * 选择排序-堆排序
+    * @param array 待排序数组
+    * @return 已排序数组
+    *&#x2F;
+    public static int[] heapSort(int[] array) &#123;
+        &#x2F;&#x2F;这里元素的索引是从0开始的,所以最后一个非叶子结点array.length&#x2F;2 - 1
+        for (int i &#x3D; array.length &#x2F; 2 - 1; i &gt;&#x3D; 0; i--) &#123;  
+            adjustHeap(array, i, array.length);  &#x2F;&#x2F;调整堆
+        &#125;
+  
+        &#x2F;&#x2F; 上述逻辑，建堆结束
+        &#x2F;&#x2F; 下面，开始排序逻辑
+        for (int j &#x3D; array.length - 1; j &gt; 0; j--) &#123;
+            &#x2F;&#x2F; 元素交换,作用是去掉大顶堆
+            &#x2F;&#x2F; 把大顶堆的根元素，放到数组的最后；换句话说，就是每一次的堆调整之后，都会有一个元素到达自己的最终位置
+            swap(array, 0, j);
+            &#x2F;&#x2F; 元素交换之后，毫无疑问，最后一个元素无需再考虑排序问题了。
+            &#x2F;&#x2F; 接下来我们需要排序的，就是已经去掉了部分元素的堆了，这也是为什么此方法放在循环里的原因
+            &#x2F;&#x2F; 而这里，实质上是自上而下，自左向右进行调整的
+            adjustHeap(array, 0, j);
+        &#125;
+        return array;
+    &#125;
+  
+    &#x2F;**
+    * 整个堆排序最关键的地方
+    * @param array 待组堆
+    * @param i 起始结点
+    * @param length 堆的长度
+    *&#x2F;
+    public static void adjustHeap(int[] array, int i, int length) &#123;
+        &#x2F;&#x2F; 先把当前元素取出来，因为当前元素可能要一直移动
+        int temp &#x3D; array[i];
+        for (int k &#x3D; 2 * i + 1; k &lt; length; k &#x3D; 2 * k + 1) &#123;  &#x2F;&#x2F;2*i+1为左子树i的左子树(因为i是从0开始的),2*k+1为k的左子树
+            &#x2F;&#x2F; 让k先指向子节点中最大的节点
+            if (k + 1 &lt; length &amp;&amp; array[k] &lt; array[k + 1]) &#123;  &#x2F;&#x2F;如果有右子树,并且右子树大于左子树
+                k++;
+            &#125;
+            &#x2F;&#x2F;如果发现结点(左右子结点)大于根结点，则进行值的交换
+            if (array[k] &gt; temp) &#123;
+                swap(array, i, k);
+                &#x2F;&#x2F; 如果子节点更换了，那么，以子节点为根的子树会受到影响,所以，循环对子节点所在的树继续进行判断
+                    i  &#x3D;  k;
+                        &#125; else &#123;  &#x2F;&#x2F;不用交换，直接终止循环
+                break;
+            &#125;
+        &#125;
+    &#125;
+  
+    &#x2F;**
+    * 交换元素
+    * @param arr
+    * @param a 元素的下标
+    * @param b 元素的下标
+    *&#x2F;
+    public static void swap(int[] arr, int a, int b) &#123;
+        int temp &#x3D; arr[a];
+        arr[a] &#x3D; arr[b];
+        arr[b] &#x3D; temp;
+    &#125;
+	
+    public static void main(String []args) &#123;
+		int [] A&#x3D;new int []&#123;1,6,8,9,6,3,4,8,6,3,1,5,2,3,5&#125;;
+		A&#x3D;heapSort(A)
+		for(int i&#x3D;0;i&lt;A.length;i++)
+       	System.out.println(A[i]);
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="计数排序"><a href="#计数排序" class="headerlink" title="计数排序"></a>计数排序</h2><ol>
+<li>花O(n)的时间扫描一下整个序列 A，获取最小值 min 和最大值 </li>
+<li>max开辟一块新的空间创建新的数组 B，长度为 ( max - min + 1)</li>
+<li>数组 B 中 index 的元素记录的值是 A 中某元素出现的次数</li>
+<li>最后输出目标整数序列，具体的逻辑是遍历数组 B，输出相应元素以及对应的个数<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/计数排序.gif" alt=""></li>
+</ol>
+<h2 id="桶排序"><a href="#桶排序" class="headerlink" title="桶排序"></a>桶排序</h2><ol>
+<li>设置固定数量的空桶。</li>
+<li>把数据放到对应的桶中。</li>
+<li>对每个不为空的桶中数据进行排序。</li>
+<li>拼接不为空的桶中数据，得到结果<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/桶排序.gif" alt=""></li>
+</ol>
+<h2 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h2><ol>
+<li>将所有待比较数值（正整数）统一为同样的数位长度，数位较短的数前面补零</li>
+<li>从最低位开始，依次进行一次排序</li>
+<li>从最低位排序一直到最高位排序完成以后, 数列就变成一个有序序列<br><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/基数排序.gif" alt=""></li>
+</ol>
+<h2 id="排序算法比较"><a href="#排序算法比较" class="headerlink" title="排序算法比较"></a>排序算法比较</h2><p><img src="https://www.mmrsl.cn/download/img/source/download/img/排序算法/1.png" alt=""></p>
+<h3 id="参考地址："><a href="#参考地址：" class="headerlink" title="参考地址："></a>参考地址：</h3><ul>
+<li><a href="https://www.zhihu.com/question/21318658/answer/1268219135">https://www.zhihu.com/question/21318658/answer/1268219135</a></li>
+<li>百度百科：<a href="https://baike.baidu.com/item/%E5%A0%86%E6%8E%92%E5%BA%8F">https://baike.baidu.com/item/%E5%A0%86%E6%8E%92%E5%BA%8F</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
       </tags>
   </entry>
 </search>
